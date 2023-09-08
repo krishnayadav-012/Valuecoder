@@ -1,0 +1,50 @@
+@import "default.3.0.scss";
+@import "default.2.0.scss";
+@import "index.3.0.scss";
+@import "services.3.0.scss";
+@import "contact.3.0.scss";
+.stories {
+    padding: 160px 0 80px;
+    .container {
+        width: 90%;
+        max-width: auto;
+        .content {
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                color: #212121;
+                margin-bottom: 40px;
+            }
+            .link {
+                margin-bottom: 30px;
+                a {
+                    margin-right: 20px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #909090;
+                }
+                .active {
+                    color: $green;
+                    text-decoration: underline;
+                }
+            }
+            .btns {
+                .btn {
+                    border-radius: 5px !important;
+                    border: 1px solid #D1D1E1;
+                    padding: 4px 16px !important;
+                    margin: 8px 8px 8px 0 !important;
+                    display: inline-block;
+                    font-size: 14px;
+                    background-color: #f2f2f2;
+                }
+            }
+        }
+    }
+}
+
+.clr-white {
+    margin-top: 30px;
+    color: #fff !important;
+    font-weight: 500 !important;
+}

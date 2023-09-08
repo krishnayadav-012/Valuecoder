@@ -1,0 +1,141 @@
+@import "default.3.0.scss";
+@import "default.2.0.scss";
+@import "hire.3.0.scss";
+@import "index.3.0.scss";
+@import "contact.3.0.scss";
+.sftwre-serv {
+    .sftwre-prdct3 {
+        padding: 0px !important;
+        flex-basis: 48% !important;
+    }
+    .sftwre-dev3 {
+        border-top: 0 !important;
+        background-color: transparent !important;
+        flex-basis: 48% !important;
+    }
+}
+
+.custom-app {
+    padding: 100px 80px;
+    background-color: #222040;
+    .container {
+        width: 90%;
+        margin: auto;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            .col {
+                flex-basis: 48%;
+                padding-right: 30px;
+                .content {
+                    display: flex;
+                    align-items: flex-start;
+                    h2 {
+                        font-size: 36px;
+                        line-height: 60px;
+                        color: #fff;
+                        padding-right: 30px;
+                    }
+                    div {
+                        span {
+                            width: 60px;
+                            height: 60px;
+                            display: inline-block;
+                            border: 1px solid #D1D1E1;
+                            position: relative;
+                            &::after {
+                                content: url('../images/right-arrow.png');
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+                .content2 {
+                    p {
+                        font-size: 14px !important;
+                        line-height: 28px !important;
+                        color: #EAEAEA;
+                    }
+                    margin-bottom: 30px;
+                }
+                .flx {
+                    display: flex;
+                    justify-content: space-between;
+                    ul {
+                        flex-basis: 48%;
+                        list-style: none;
+                        li {
+                            font-size: 13px;
+                            line-height: 28px;
+                            color: #EAEAEA;
+                            padding-left: 20px;
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 10px;
+                                left: 0;
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background-color: #FFB81D;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .custom-app {
+        .container {
+            .row {
+                .col {
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    .content {
+                        h2 {
+                            font-size: 24px;
+                            line-height: 48px;
+                        }
+                    }
+                }
+            }
+            width: 100%;
+            padding: 0;
+        }
+        padding: 60px 40px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .custom-app {
+        .container {
+            .row {
+                flex-direction: column;
+                .col {
+                    flex-basis: 100%;
+                    padding-right: 0;
+                    &:last-child {
+                        margin-top: 30px;
+                    }
+                    .content {
+                        h2 {
+                            font-size: 24px;
+                            line-height: 48px;
+                        }
+                    }
+                }
+            }
+            width: 100%;
+            padding: 0;
+        }
+        padding: 60px 40px;
+    }
+}

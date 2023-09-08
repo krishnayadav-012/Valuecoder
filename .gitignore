@@ -1,0 +1,8 @@
+*/\.htaccess
+.htaccess
+/wp/*
+/wp/wp-config.php
+/wp/wp-admin/*
+/wp/wp-includes/*
+/wp/wp-content/uploads/*
+/wp/wp-content/upgrade/*

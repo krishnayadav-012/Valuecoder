@@ -1,0 +1,44 @@
+.contact-us-section .input-field {
+    border: 1px solid #E0E0E0 !important;
+    border-radius: 8px !important;
+    color: #000 !important;
+    &::placeholder {
+        color: #828282;
+        font-weight: normal !important;
+        font-size: 14px;
+        font-family: "noto_sansmedium", sans-serif;
+    }
+}
+
+.contact-us-section .pdding {
+    padding: 0 !important;
+}
+
+.book-free-consult {
+    background-color: #fff !important;
+}
+
+.contact-us-section #drop-area .button {
+    color: #828282 !important;
+}
+
+.contact-us-section .form-control {
+    border: 1px solid #E0E0E0 !important;
+    padding: 15px 35px 15px 15px;
+    border-radius: 8px !important;
+}
+
+.contact-us-section .verror .form-control {
+    border-color: #dc0019 !important;
+}
+
+.contact-us-section .verror .input-field {
+    border-color: #fff !important;
+}
+
+.checkout-submit {
+    font-family: "noto_sansmedium", sans-serif;
+    &:hover {
+        background-color: #ffb81d !important;
+    }
+}

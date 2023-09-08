@@ -1,0 +1,43 @@
+@import "default.3.0.scss";
+@import "default.2.0.scss";
+@import "services.3.0.scss";
+@import "index.3.0.scss";
+@import "contact.3.0.scss";
+.serv-banner2 {
+    background: linear-gradient(rgba(4, 12, 23, 0.7), rgba(4, 12, 23, 0.7)), url('../images/serv-banner2.png');
+}
+
+.bgwhite {
+    background-color: #fff !important;
+}
+
+.solutions {
+    .row-flex6 {
+        align-items: flex-start !important;
+        gap: 20px;
+        .col {
+            .pbNew {
+                min-height: 230px;
+                padding-bottom: 60px !important;
+            }
+        }
+    }
+}
+
+.full-width-two-column {
+    padding-top: 0 !important;
+}
+
+@media only screen and (max-width:560px) {
+    .solutions {
+        .row-flex6 {
+            align-items: flex-start !important;
+            gap: 20px;
+            .col {
+                .pbNew {
+                    padding-bottom: 60px !important;
+                }
+            }
+        }
+    }
+}
