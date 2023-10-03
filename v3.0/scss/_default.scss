@@ -583,7 +583,7 @@ strong {
   }
 
   .logo-box-outer {
-    background: url(../images/header-client-logo-sprite-for-light.svg) 0 0
+    background: url(../images/banner-client-logo.svg) 0 0
       no-repeat;
     width: calc(100% - 240px);
     height: 69px;
@@ -1562,6 +1562,29 @@ textarea {
   position: initial !important;
 }
 
+.related-tags-section {
+  h3 {
+    text-transform: uppercase;
+  }
+  a {
+    display: inline-block;
+    background: rgba(232, 227, 227, 0.32);
+    border: 1px solid #d1d1e1;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 14px 25px;
+    color: #212121;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 20px 0 0;
+    &:hover,
+    &.active {
+      background: rgba(255, 173, 0, 0.15);
+      color: #212121;
+      border-color: #ffad00;
+    }
+  }
+}
+
 //END//
 
 // Media Query Start From Here*/
@@ -1589,6 +1612,15 @@ textarea {
       a {
         margin-left: 5px;
       }
+    }
+  }
+  .related-tags-section {
+    .tags-outer {
+      margin-top: 10px;
+    }
+    a {
+      margin: 20px 10px 0 0;
+      padding: 12px 20px;
     }
   }
 }
@@ -2216,6 +2248,14 @@ textarea {
         width: 2px;
         left: 5px;
       }
+    }
+  }
+
+  .related-tags-section {
+    text-align: center;
+    a {
+      margin: 8px 5px 0 0;
+      padding: 5px 15px;
     }
   }
 

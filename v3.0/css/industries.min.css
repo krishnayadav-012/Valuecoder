@@ -407,7 +407,7 @@ strong {
   .client-logo-box-section .dis-flex {
     align-items: center; }
   .client-logo-box-section .logo-box-outer {
-    background: url(../images/header-client-logo-sprite-for-light.svg) 0 0 no-repeat;
+    background: url(../images/banner-client-logo.svg) 0 0 no-repeat;
     width: calc(100% - 240px);
     height: 69px;
     background-size: 100%; }
@@ -1040,6 +1040,23 @@ textarea {
 .customer-column-section .client-video-section iframe {
   position: initial !important; }
 
+.related-tags-section h3 {
+  text-transform: uppercase; }
+.related-tags-section a {
+  display: inline-block;
+  background: rgba(232, 227, 227, 0.32);
+  border: 1px solid #d1d1e1;
+  border-radius: 40px;
+  text-decoration: none;
+  padding: 14px 25px;
+  color: #212121;
+  transition: all 0.3s ease-in-out;
+  margin: 20px 20px 0 0; }
+  .related-tags-section a:hover, .related-tags-section a.active {
+    background: rgba(255, 173, 0, 0.15);
+    color: #212121;
+    border-color: #ffad00; }
+
 @media only screen and (max-width: 1600px) {
   .container {
     max-width: 1380px; }
@@ -1055,7 +1072,13 @@ textarea {
   .footer .divider {
     margin: 0 1px; }
   .footer .footer-last a {
-    margin-left: 5px; } }
+    margin-left: 5px; }
+
+  .related-tags-section .tags-outer {
+    margin-top: 10px; }
+  .related-tags-section a {
+    margin: 20px 10px 0 0;
+    padding: 12px 20px; } }
 @media only screen and (max-width: 1440px) {
   .container {
     max-width: 1260px; }
@@ -1448,6 +1471,12 @@ textarea {
       height: 12px;
       width: 2px;
       left: 5px; }
+
+  .related-tags-section {
+    text-align: center; }
+    .related-tags-section a {
+      margin: 8px 5px 0 0;
+      padding: 5px 15px; }
 
   .footer .star-icon {
     margin: 0 auto; }
@@ -3473,6 +3502,13 @@ body.page-template-template-testimonials .client-video-section iframe,
             overflow: hidden; }
             .header-two .menu ul li .menu-mega .devops .dis-flex .flex-3 a:last-child {
               margin: 0; }
+      .header-two .menu ul li .menu-mega .single-row-ico .dis-flex {
+        max-width: 400px; }
+        .header-two .menu ul li .menu-mega .single-row-ico .dis-flex .flex-3 a {
+          align-items: flex-start;
+          flex-direction: column; }
+      .header-two .menu ul li .menu-mega .single-row-ico .menuicon {
+        top: 5px; }
       .header-two .menu ul li .menu-mega .w-900 {
         max-width: 970px;
         margin: 0 auto; }
@@ -3628,6 +3664,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 
 .header-two .menu ul li .menu-mega .devops .menuicon {
   top: 0; }
+
+.header-two .menu ul li .menu-mega .single-row-ico .menuicon {
+  top: 5px; }
 
 .header-two .menu ul li .menu-mega .devops a {
   display: flex;
@@ -3815,7 +3854,7 @@ body.page-template-template-testimonials .client-video-section iframe,
     max-width: 170px; }
 
   .header-two .menu ul li.for-product {
-    min-width: 210px; }
+    min-width: 230px; }
 
   .header-two .menu ul li.for-product .small-menu-inner {
     padding: 10px 20px 30px; }
@@ -3827,7 +3866,7 @@ body.page-template-template-testimonials .client-video-section iframe,
     right: 24%; } }
 @media only screen and (max-width: 1240px) {
   .header-two .menu ul li.for-product .small-menu-inner {
-    padding: 10px 10px 30px; }
+    padding: 10px 20px 30px; }
 
   .header-two .menu ul li.for-product .small-menu-inner a {
     padding-left: 38px; } }
@@ -4012,6 +4051,8 @@ body.page-template-template-testimonials .client-video-section iframe,
             .header-two .menu ul li .menu-mega .devops .dis-flex .flex-3 {
               box-shadow: none;
               border-radius: 0; }
+          .header-two .menu ul li .menu-mega .single-row-ico .dis-flex {
+            max-width: 100%; }
           .header-two .menu ul li .menu-mega .detail-list,
           .header-two .menu ul li .menu-mega .flex-4,
           .header-two .menu ul li .menu-mega .flex-3 {
