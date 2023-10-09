@@ -4564,5 +4564,10 @@ body.page-template-template-testimonials .client-video-section iframe,
               height: 40px; }
           .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .trial-faq-section .trial-faq-outer .trial-accordion-content {
             padding-right: 40px; } }
+@media only screen and (max-width: 479px) {
+  .slide-logo .logo-section {
+    width: 100%; }
+    .slide-logo .logo-section .glide__slide {
+      height: auto; } }
 
 /*# sourceMappingURL=trial-days.css.map */

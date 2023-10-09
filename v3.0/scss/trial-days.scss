@@ -675,3 +675,14 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 479px) {
+  .slide-logo{
+    .logo-section {
+      width:100%;
+      .glide__slide{height: auto;}
+    }
+  }
+   
+}
