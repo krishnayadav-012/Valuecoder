@@ -44,7 +44,18 @@
             <div class="form-right-box">
               <div class="head">
                 <h3>Build Your Remote Team</h3>
-                <p>Get 2 week risk-free trial <span class="open-free-trial"></span></p>
+                <div class="info-wrap">
+                  <p>Try Before, Commit Later </p>
+                  <div class="info">
+                    <div class="info-content">
+                      <h4>What happens after you contact us? </h4>
+                      <p>Our solution experts will answer your questions in a 
+                        secure online meeting. 
+                      </p>
+                      <a class="kmore" href="#">Know More</a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="top-right-form-box">
                 <form id="contact-form-section" action="https://www.valuecoders.com/sendmail1.php"
@@ -155,14 +166,40 @@
                       </div>
                     </div>
                   </div>
-                  <div class="user-input checkout text-center">
-                    <input type="hidden" name="Uploadedfilename" id="Uploadedfilename" value="">
-                    <input type="hidden" name="frmqueryString" value="">
-                    <input type="hidden" name="page_url" value="https://www.valuecoders.com/">
-                    <input type="hidden" name="vc_csrf" value="">
-                    <button type="submit" id="submitButton" class="checkout-submit green-bdr-btn"
-                      value="Hire Software Developers ">Hire Software Developers <i
-                      class="arrow-icon green"></i></a></button>
+                  <div class="button-section margin-t-50">
+                    <div>
+                      <div class="cta-wrap">
+                        <div class="user-input cta-btn checkout text-center">
+                          <input type="hidden" name="Uploadedfilename" id="sbUploadedfilename" value="">
+                          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                          <input type="hidden" name="frmqueryString" value="">
+                          <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/hire-developers">
+                          <button type="submit" id="hire-submitButton" class="checkout-submit" value="Start My Trial">
+                          Start My Trial</button>
+                          <span class="arrow-wrap">
+                          <span class="arrow primera"></span>
+                          <span class="arrow segunda next"></span>
+                          <span class="arrow last"></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="info-wrap">
+                        Learn How Trial Works
+                        <div class="info">
+                          <div class="info-content">
+                            <h4>What happens after you contact us? </h4>
+                            <p>Our solution experts will answer your questions in a 
+                              secure online meeting. 
+                            </p>
+                            <a class="kmore" href="#">Know More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="devide">OR</span>
+                    <div class="free-con">
+                      <a href="javascript:void(0)"  target="_self">Request Free Consultation</a>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -397,12 +434,39 @@
     <section class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
       <div class="container">
         <div class="head-txt text-center">
-          <h2>Let’s Discuss Your Project</h2>
-          <p>Get free consultation and let us know your project idea to turn it into an amazing digital product.
+          <h2>Try Before, Commit Later</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
           </p>
         </div>
-        <div class="text-center margin-t-50">
-          <a class="green-btn" href="https://www.valuecoders.com/v2wp/contact">Talk To Our Experts <i class="arrow-icon"></i></a>
+        <div class="button-section margin-t-50 ustify-center">
+          <div class="btn-div">
+            <div class="cta-btn">
+              <a href="javascript:void(0)" id="cta" onclick="call_demows();">
+              Start 7 Days Free Trial
+              <span class="arrow-wrap">
+              <span class="arrow primera"></span>
+              <span class="arrow segunda next"></span>
+              <span class="arrow last"></span>
+              </span>
+              </a>
+            </div>
+            <div class="info-wrap">
+              Learn How Trial Works
+              <div class="info">
+                <div class="info-content">
+                  <h4>What happens after you contact us? </h4>
+                  <p>Our solution experts will answer your questions in a 
+                    secure online meeting. 
+                  </p>
+                  <a class="kmore" href="#">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="devide">OR</span>
+          <div class="free-con">
+            <a href="javascript:void(0)" target="_self">Request Free Consultation</a>
+          </div>
         </div>
       </div>
     </section>
@@ -476,7 +540,7 @@
             <h2>Software Development Services Company</h2>
             <p>From startups to big enterprises, development organizations to digital agencies, and SMEs to Governments, we cater varied software requirements. Our commitment to quality has enabled us to lead the market, becoming the top software development service company.</p>
             <ul>
-            <li><a href="https://www.workstatus.io/" target="_blank" class="a-dotted">Workstatus<sup>TM</sup></a> powered Proof of Work</li>
+              <li><a href="https://www.workstatus.io/" target="_blank" class="a-dotted">Workstatus<sup>TM</sup></a> powered Proof of Work</li>
               <li class="exp">Experienced</li>
               <li>Flexible engagement options</li>
               <li>160 man hours guaranteed</li>
@@ -538,6 +602,113 @@
         </div>
         <div class="text-center margin-t-50">
           <a class="green-btn" href="https://www.valuecoders.com/v2wp/contact">Hire Software Experts <i class="arrow-icon"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="accordion-section how-process  padding-t-120">
+      <div class="dis-flex accordian-row">
+        <div class="col-left">
+          <div class="head-txt">
+            <h2>How does the process work?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            </p>
+          </div>
+          <div class="image-wrap">
+            <picture class="soft-img">
+              <source type="image/webp" srcset="images/process-image.png">
+              <source type="image/png" srcset="images/process-image.png">
+              <img loading="lazy" src="images/process-image.png" width="774" height="774" alt="valuecoders">
+            </picture>
+          </div>
+        </div>
+        <div class="col-right padding-b-120 content-col">
+          <div class="process-step">
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="images/step-icon01.png">
+                  <source type="image/png" srcset="images/step-icon01.png">
+                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 1</span>
+                <h4>Initial Consultation</h4>
+                <ul>
+                  <li>Discuss your project requirements, scope, and objectives with our team.</li>
+                  <li>Understand the skills and expertise needed for your project.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="images/step-icon01.png">
+                  <source type="image/png" srcset="images/step-icon01.png">
+                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 2</span>
+                <h4>Initial Consultation</h4>
+                <ul>
+                  <li>Discuss your project requirements, scope, and objectives with our team.</li>
+                  <li>Understand the skills and expertise needed for your project.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="images/step-icon01.png">
+                  <source type="image/png" srcset="images/step-icon01.png">
+                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 3</span>
+                <h4>Initial Consultation</h4>
+                <ul>
+                  <li>Discuss your project requirements, scope, and objectives with our team.</li>
+                  <li>Understand the skills and expertise needed for your project.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="images/step-icon01.png">
+                  <source type="image/png" srcset="images/step-icon01.png">
+                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 4</span>
+                <h4>Initial Consultation</h4>
+                <ul>
+                  <li>Discuss your project requirements, scope, and objectives with our team.</li>
+                  <li>Understand the skills and expertise needed for your project.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="images/step-icon01.png">
+                  <source type="image/png" srcset="images/step-icon01.png">
+                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 5</span>
+                <h4>Initial Consultation</h4>
+                <ul>
+                  <li>Discuss your project requirements, scope, and objectives with our team.</li>
+                  <li>Understand the skills and expertise needed for your project.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -886,6 +1057,7 @@
     </section>
     <?php require_once '../include/footer.php'; ?>
     <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
+    <script src='https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/js/glider.min-v2.js?ver=1.09.0' id='vc-glider-js'></script>
     <script>
       var accorItem = document.getElementsByClassName("accordionItem");
       var faqHD   = document.getElementsByClassName("accordion-toggle");

@@ -9,6 +9,7 @@
 @import "_tech-stacks";
 @import "_three-column";
 @import "_cta-structure";
+@import "_new-version-changes";
 @import "_menu-v3.12";
 @import "_footer-form";
 
@@ -774,6 +775,76 @@
 
 //New Hire Tech updated Section End//
 
+
+
+/*Hire Section Updates for version 2*/
+
+
+.how-process{
+  .process-step {
+    position: relative;
+    margin: 50px 0 0;
+    .step-sec {
+      margin: 0 0 40px;
+      position: relative;
+      .step-icon { flex-basis: 70px;
+       
+        img {
+          margin: 0;
+        }
+      }
+      .step-desc {flex-basis: calc(100% - 70px);
+        .step-no {
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #3f3f3f;
+          margin: 0 0 10px;
+        }
+        h4 {
+          margin: 0 0 10px;
+          color: #3f3f3f;
+          font-size: 20px;
+        }
+        ul {
+          li {
+           position: relative;
+            flex-basis: 100%;
+            padding-left:15px;
+            margin: 0 0 10px;
+            line-height: 26px;
+            &:before{content: "";
+              width: 5px;
+              height: 5px;
+              background-color: #656565;
+              border-radius: 50%;
+              position: absolute;
+              left: 0;
+              top: 9px;}
+          }
+        }
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 40px;
+      border-left: 1px dashed #d1d1e1;
+      width: 1px;
+      height: 83%;
+    }
+  }
+}
+
+
+
+/*Hire Section Updates for version 2 ends*/
+
 @media only screen and (max-width: 1600px) {
   .related-tags-section {
     .tags-outer {
@@ -1151,6 +1222,12 @@
         margin-top: 3px;}
     }
   }
+
+
+
+ 
+
+
 }
 
   .left-circlist-right-img-section {
@@ -1310,6 +1387,37 @@
     .logo-box {
       margin: 0 0 10px;
       &.logo3{display: none;}
+    }
+  }
+
+
+
+  .how-process{
+    .process-step {
+      margin:30px 0 0;
+      .step-sec {
+        margin: 0 0 30px;
+        .step-icon { flex-basis:60px;
+         
+          
+        }
+        .step-desc {flex-basis: calc(100% - 60px);
+         
+          h4 {
+            font-size: 18px;
+          }
+          ul {
+            li {
+          
+              line-height: 24px;
+              
+            }
+          }
+        }
+  
+       
+      }
+      
     }
   }
 }

@@ -52,11 +52,11 @@
         color: $gray;
         margin-top: 10px;
       }
-      .open-free-trial {
+      .open-free-trial {margin-left: 10px;
         &::after {
-          width: 20px;
-          height: 20px;
-          background: url(../images/union-icon.png) 0 0 no-repeat;
+          width: 14px;
+           height: 15px;
+          background: url(../images/info-icon.svg) 0 0 no-repeat;
           border: 0;
           border-radius: 0;
         }
@@ -282,8 +282,9 @@
     }
 
     .checkout-submit {
-      font-family: "noto_sansmedium", sans-serif;
+      font-family: "Noto Sans";
       display: flex;
+      min-width: 202px;
       align-items: center;
       justify-content: center;
       position: relative;
@@ -420,6 +421,8 @@
           max-width: 360px;
         }
       }
+      .checkout-submit{font-family: sans-serif;}
+      
     }
   }
 }
