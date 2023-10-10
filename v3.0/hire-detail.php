@@ -167,7 +167,7 @@
                     </div>
                   </div>
                   <div class="button-section margin-t-50">
-                    <div>
+                    <div class="btn-div">
                       <div class="cta-wrap">
                         <div class="user-input cta-btn checkout text-center">
                           <input type="hidden" name="Uploadedfilename" id="sbUploadedfilename" value="">

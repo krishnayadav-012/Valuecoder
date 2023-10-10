@@ -3377,7 +3377,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   align-items: baseline;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  flex-wrap: wrap; }
   .button-section .nccr {
     font-size: 13px;
     display: block;
@@ -3441,6 +3442,37 @@ body.page-template-template-testimonials .client-video-section iframe,
 @media only screen and (max-width: 991px) {
   .second-level-section .form-right-box .head .info-wrap .info .info-content {
     width: 280px; } }
+@media only screen and (max-width: 767px) {
+  .button-section .btn-div {
+    flex-basis: 100%;
+    text-align: center; }
+    .button-section .btn-div .cta-wrap {
+      justify-content: center; }
+    .button-section .btn-div .cta-btn {
+      justify-content: center; }
+  .button-section .nccr {
+    font-size: 13px;
+    display: block;
+    margin: 20px 0 0;
+    text-align: center; }
+  .button-section .devide {
+    width: 100%;
+    text-align: center;
+    padding: 5px; }
+    .button-section .devide:before {
+      width: 16px;
+      height: 1px;
+      display: inline-block;
+      position: initial;
+      margin-right: 5px;
+      vertical-align: middle; }
+    .button-section .devide:after {
+      width: 16px;
+      height: 1px;
+      display: inline-block;
+      position: initial;
+      margin-left: 5px;
+      vertical-align: middle; } }
 .cta-wrap {
   display: flex;
   align-items: center; }
