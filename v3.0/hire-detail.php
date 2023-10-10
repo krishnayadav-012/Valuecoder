@@ -626,7 +626,7 @@
             <div class="step-sec dis-flex">
               <div class="step-icon">
                 <picture>
-                  <source type="image/webp" srcset="images/step-icon01.png">
+                  <source type="image/webp" srcset="images/step-icon01.webp">
                   <source type="image/png" srcset="images/step-icon01.png">
                   <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
                 </picture>
@@ -643,9 +643,9 @@
             <div class="step-sec dis-flex">
               <div class="step-icon">
                 <picture>
-                  <source type="image/webp" srcset="images/step-icon01.png">
-                  <source type="image/png" srcset="images/step-icon01.png">
-                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                  <source type="image/webp" srcset="images/step-icon02.webp">
+                  <source type="image/png" srcset="images/step-icon02.png">
+                  <img loading="lazy" src="images/step-icon02.png" width="40" height="40" alt="valuecoders">
                 </picture>
               </div>
               <div class="step-desc">
@@ -660,9 +660,9 @@
             <div class="step-sec dis-flex">
               <div class="step-icon">
                 <picture>
-                  <source type="image/webp" srcset="images/step-icon01.png">
-                  <source type="image/png" srcset="images/step-icon01.png">
-                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                  <source type="image/webp" srcset="images/step-icon03.webp">
+                  <source type="image/png" srcset="images/step-icon03.png">
+                  <img loading="lazy" src="images/step-icon03.png" width="40" height="40" alt="valuecoders">
                 </picture>
               </div>
               <div class="step-desc">
@@ -677,9 +677,9 @@
             <div class="step-sec dis-flex">
               <div class="step-icon">
                 <picture>
-                  <source type="image/webp" srcset="images/step-icon01.png">
-                  <source type="image/png" srcset="images/step-icon01.png">
-                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                  <source type="image/webp" srcset="images/step-icon04.webp">
+                  <source type="image/png" srcset="images/step-icon04.png">
+                  <img loading="lazy" src="images/step-icon04.png" width="40" height="40" alt="valuecoders">
                 </picture>
               </div>
               <div class="step-desc">
@@ -694,9 +694,9 @@
             <div class="step-sec dis-flex">
               <div class="step-icon">
                 <picture>
-                  <source type="image/webp" srcset="images/step-icon01.png">
-                  <source type="image/png" srcset="images/step-icon01.png">
-                  <img loading="lazy" src="images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                  <source type="image/webp" srcset="images/step-icon05.webp">
+                  <source type="image/png" srcset="images/step-icon05.png">
+                  <img loading="lazy" src="images/step-icon05.png" width="40" height="40" alt="valuecoders">
                 </picture>
               </div>
               <div class="step-desc">
