@@ -501,6 +501,20 @@
     <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="text/javascript"></script>
     <script src='https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/js/glider.min-v2.js?ver=1.09.0' id='vc-glider-js'></script>
     <script>
+
+window.addEventListener("scroll", function () {
+    document.querySelectorAll(".trial-answer").forEach(function (e) {
+        if (document.documentElement.scrollTop >= e.getBoundingClientRect().top + window.scrollY - 100) {
+            let t = e.getAttribute("id");
+            document.querySelectorAll(".question-list li a").forEach(function (e) {
+                e.classList.remove("active");
+            }),
+                document.querySelector('.question-list li a[href="#' + t + '"]').classList.add("active");
+        }
+    });
+});
+        
+
       var $window = window,
         buyerGiude = document.getElementById("trial-section");
         if (buyerGiude) {
@@ -537,6 +551,8 @@
           this.parentNode.className = "trial-accordion-item-outer active";
         }
         }
+
+
         
         
     </script>

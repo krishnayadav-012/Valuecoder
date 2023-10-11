@@ -43,7 +43,7 @@
           <div class="flex-2">
             <div class="form-right-box">
               <div class="head">
-                <h3>Build Your Remote Team</h3>
+                <h3>Start Your 7-Days Trial</h3>
                 <div class="info-wrap">
                   <p>Try Before, Commit Later </p>
                   <div class="info">

@@ -361,7 +361,7 @@
 
                 ul,
                 ol {
-                  margin: 20px 0 0;
+                  margin:0;
                   padding-left: 0;
                   li {
                     margin: 10px 0 0;
@@ -446,7 +446,7 @@
               .step-sec {
                 margin: 0 0 30px;
                 .step-icon {
-                  flex-basis: 40px;
+                  flex-basis: 70px;
                 }
                 .step-desc {
                   width: calc(100% - 70px);
