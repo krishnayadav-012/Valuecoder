@@ -3433,6 +3433,25 @@ body.page-template-template-testimonials .client-video-section iframe,
 .bg-blue-linear .info-wrap .info .info-content p {
   color: #000 !important; }
 
+.contact-us-section .info-wrap {
+  justify-content: left; }
+.contact-us-section .info {
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer; }
+  .contact-us-section .info:after {
+    content: "";
+    width: 14px;
+    height: 15px;
+    background: url(../images/info-icon2.svg) 0 0 no-repeat;
+    position: absolute;
+    top: 1px;
+    transform: translateY(-50%);
+    left: 0; }
+  .contact-us-section .info .info-content {
+    box-shadow: 4px 4px 30px 0px rgba(227, 233, 245, 0.9); }
+
 @media only screen and (max-width: 1320px) {
   .info-wrap .info .info-content {
     width: 280px; } }
