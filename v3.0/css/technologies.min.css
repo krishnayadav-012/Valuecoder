@@ -5330,7 +5330,8 @@ body.page-template-template-testimonials .client-video-section iframe,
       font-size: 14px;
       line-height: 22px;
       color: #9b9b9b;
-      margin-top: 10px; }
+      margin-top: 5px;
+      margin-bottom: 0; }
     .second-level-section .form-right-box .head .open-free-trial {
       margin-left: 10px; }
       .second-level-section .form-right-box .head .open-free-trial::after {

@@ -1546,7 +1546,8 @@ body.page-template-template-testimonials .client-video-section iframe,
       font-size: 14px;
       line-height: 22px;
       color: #9b9b9b;
-      margin-top: 10px; }
+      margin-top: 5px;
+      margin-bottom: 0; }
     .second-level-section .form-right-box .head .open-free-trial {
       margin-left: 10px; }
       .second-level-section .form-right-box .head .open-free-trial::after {
@@ -3451,6 +3452,9 @@ body.page-template-template-testimonials .client-video-section iframe,
     left: 0; }
   .contact-us-section .info .info-content {
     box-shadow: 4px 4px 30px 0px rgba(227, 233, 245, 0.9); }
+
+.second-level-section .info-wrap .info:after {
+  top: 1px; }
 
 @media only screen and (max-width: 1320px) {
   .info-wrap .info .info-content {

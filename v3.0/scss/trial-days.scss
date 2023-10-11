@@ -396,6 +396,127 @@
   }
 }
 
+.info-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .info {
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: "";
+      width: 14px;
+      height: 15px;
+      background: url(../images/info-icon.svg) 0 0 no-repeat;
+      position: absolute;
+      top: -4px;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    .info-content {
+      width: 315px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 4px 4px 30px 0px rgba(227, 233, 245, 0.38);
+
+      padding: 15px;
+      position: absolute;
+
+      top: 25px;
+      left: -75px;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      visibility: hidden;
+      text-align: left;
+      line-height: initial;
+      z-index: 9;
+      h4 {
+        font-size: 14px;
+        color: $black;
+        margin: 0 0 5px;
+      }
+      p {
+        font-size: 11px;
+        color: $black;
+        line-height: 160%;
+        margin: 0 0 5px;
+        font-weight: normal;
+      }
+
+      .kmore {
+        font-size: 11px;
+        margin: 10px 0 0;
+        text-decoration: underline;
+        position: relative;
+        color: $black;
+        &:after {
+          content: "";
+          background: url(../images/know-arrow.png) 0 0 no-repeat;
+          width: 8px;
+          display: inline-block;
+          height: 8px;
+          margin-left: 5px;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          text-decoration: none;
+          color: $black;
+          &:after {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      &:before {
+        content: "";
+        clear: both;
+        display: block;
+        background: url(../images/poly.svg) 0 0 no-repeat;
+        background-size: 100%;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: -15px;
+        left: 70px;
+      }
+    }
+
+    &:hover {
+      .info-content {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.contact-us-section {
+  .info-wrap{justify-content: left;
+}
+  .info {
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: "";
+      width: 14px;
+      height: 15px;
+      background: url(../images/info-icon2.svg) 0 0 no-repeat;
+      position: absolute;
+      top: 1px;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    .info-content{box-shadow: 4px 4px 30px 0px rgba(227, 233, 245, 0.90);}
+  }
+
+}
+
 /*Trial Section Ends Here*/
 
 @media only screen and (max-width: 1600px) {
@@ -458,6 +579,13 @@
             }
           }
         }
+      }
+    }
+  }
+  .info-wrap {
+    .info {
+      .info-content {
+        width: 280px;
       }
     }
   }
