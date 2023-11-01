@@ -65,7 +65,7 @@
                       <div class="lbl-row">
                         <label for="cont_name">Full Name*</label>
                       </div>
-                      <div class="user-input verror">
+                      <div class="user-input">
                         <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name"
                           class="input-field" value="" name="user-name">
                         <small>Please Fill Name</small>
@@ -155,17 +155,7 @@
                       </div>
                     </div>
                   </div>
-                  <div id="gloader" class="gal-loader show-me active">
-                    <div class="loader"></div>
-                    <div id="gallery" class="gallery">
-                      <div>
-                        <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-img/def-thumb.png"
-                          height="55" width="55">
-                        <button type="button" onclick="return removeMe(this,this.value);"
-                          value="1662016272_agile-dev-img-1.jpg,">X</button>
-                      </div>
-                    </div>
-                  </div>
+                  
                   <div class="button-section margin-t-50">
                     <div class="btn-div">
                       <div class="cta-wrap">
@@ -1045,138 +1035,137 @@
       </div>
     </section>
     <section class="contact-us-section padding-t-120 padding-b-120">
-    <div class="container">
-  <div class="dis-flex justify-sb">
-    <div class="left-box">
-      <h2>Start Your 7-day Trial</h2>
-      <div class="info-wrap">Try Before, Commit Later <div class="info">
-                          <div class="info-content">
-                            <h4>What happens after you contact us? </h4>
-                            <p>Our solution experts will answer your questions in a 
-                              secure online meeting. 
-                            </p>
-                            <a class="kmore" href="#">Know More</a>
-                          </div>
-                        </div></div>
-      <div class="side-dash1 list-box">
-        <h3>Fill up your details</h3>
-        <p>Get Custom Solutions, Recommendations, Estimates.</p>
-      </div>
-      <div class="side-dash2 list-box">
-        <h3>What's next?</h3>
-        <p>One of our Account Managers will contact you shortly</p>
-        <div class="dis-flex  items-center award-logo">
-          <div class="logo-box">
-            <picture>
-              <img loading="lazy" src="images/footer-aw-01.svg" alt="Valuecoders" width="75" height="46"> 
-            </picture>
+      <div class="container">
+        <div class="dis-flex justify-sb">
+          <div class="left-box">
+            <h2>Start Your 7-day Trial</h2>
+            <div class="info-wrap">
+              Try Before, Commit Later 
+              <div class="info">
+                <div class="info-content">
+                  <h4>What happens after you contact us? </h4>
+                  <p>Our solution experts will answer your questions in a 
+                    secure online meeting. 
+                  </p>
+                  <a class="kmore" href="#">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="side-dash1 list-box">
+              <h3>Fill up your details</h3>
+              <p>Get Custom Solutions, Recommendations, Estimates.</p>
+            </div>
+            <div class="side-dash2 list-box">
+              <h3>What's next?</h3>
+              <p>One of our Account Managers will contact you shortly</p>
+              <div class="dis-flex  items-center award-logo">
+                <div class="logo-box">
+                  <picture>
+                    <img loading="lazy" src="images/footer-aw-01.svg" alt="Valuecoders" width="75" height="46"> 
+                  </picture>
+                </div>
+                <div class="logo-box">
+                  <picture>
+                    <img loading="lazy" src="images/footer-aw-02.svg" alt="Valuecoders" width="90" height="22"> 
+                  </picture>
+                </div>
+                <div class="logo-box">
+                  <picture>
+                    <img loading="lazy" src="images/footer-aw-03.svg" alt="Valuecoders" width="114" height="35"> 
+                  </picture>
+                </div>
+                <div class="logo-box">
+                  <picture>
+                    <img loading="lazy" src="images/footer-aw-04.svg" alt="Valuecoders" width="84" height="34"> 
+                  </picture>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="logo-box">
-            <picture>
-              <img loading="lazy" src="images/footer-aw-02.svg" alt="Valuecoders" width="90" height="22"> 
-            </picture>
-          </div>
-          <div class="logo-box">
-            <picture>
-              <img loading="lazy" src="images/footer-aw-03.svg" alt="Valuecoders" width="114" height="35"> 
-            </picture>
-          </div>
-          <div class="logo-box">
-            <picture>
-              <img loading="lazy" src="images/footer-aw-04.svg" alt="Valuecoders" width="84" height="34"> 
-            </picture>
+          <div class="right-box">
+            <form id="contact-form-section" action="https://www.valuecoders.com/v2wp/sendmail1.php" class="contact-form-section"
+              enctype="multipart/form-data" method="POST" onsubmit="return vcCmnFormValidation(false);">
+              <div class="form-inner dis-flex">
+                <div class="form-text-cont">
+                  <div class="user-input">
+                    <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name" class="input-field"
+                      value="" name="user-name">
+                    <small>Error Message</small>
+                  </div>
+                </div>
+                <div class="form-text-cont">
+                  <div class="user-input">
+                    <input type="text" autocomplete="off" id="cont_email" placeholder="Email Address" class="input-field"
+                      value="" name="user-email">
+                    <small>Error Message</small>
+                  </div>
+                </div>
+                <div class="form-text-cont">
+                  <div class="user-input">
+                    <input type="text" autocomplete="off" class="input-field" id="cont_phpne" placeholder="Phone Number"
+                      value="" name="user-phone">
+                    <small>Error Message</small>
+                  </div>
+                </div>
+                <div class="form-text-cont cont_country_section">
+                  <div class="user-input">
+                    <input class="input-field input-skype" autocomplete="off" id="cont_country" type="text"
+                      placeholder="Country" value="" name="user-country">
+                    <small>Error Message</small>
+                  </div>
+                </div>
+                <div class="form-text-cont width-full">
+                  <div class="user-input form-control verror">
+                    <textarea class="input-field comment-input" autocomplete="off" id="user-req" placeholder="Project Brief"
+                      name="user-req"></textarea>
+                    <small>Please Fill Requirement</small>
+                    <div class="drop-input attachment_brw" id="uploadcontact">
+                      <div id="dropcontact"></div>
+                    </div>
+                    <div id="drop-area">
+                      <input type="file" name="files[]" id="fileElem" multiple=""
+                        accept="image/*,application/pdf,.psd,.zip,.docx,.xlsx,.xls,.txt"
+                        onchange="handleFiles(this.files)" style="display:none;">
+                      <button class="button" id="browse-btn" type="button"
+                        onclick="document.getElementById('fileElem').click()">BROWSE | DROP FILES HERE</button>
+                      <input type="hidden" name="up-counter" id="uplcounter" value="0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <p id="file-type-error"></p>
+              <div class="form-group qz-captcha">
+                <div class="qz-wrap">
+                  <div class="quizQ">
+                    <span id="j-quiz">9 + 6</span>
+                    <a href="javascript:void(0);" class="refreshbtn" onclick="generateWsQuiz();"></a>
+                  </div>
+                  <span class="equal">=</span>
+                  <div class="quizAns">
+                    <input type="number" name="captcha" placeholder="??" id="j-quiz-ans" onkeypress="cap_limit(event, this);">
+                    <span class="error" id="captchaerror"></span>
+                  </div>
+                </div>
+                <div class="cta-wrap">
+                  <div class="user-input cta-btn checkout">
+                    <input type="hidden" name="Uploadedfilename" id="Uploadedfilename" value="">
+                    <input type="hidden" name="frmqueryString" value="">
+                    <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
+                    <input type="hidden" name="vc_csrf" value="">
+                    <input type="submit" id="submitButton cta" class="checkout-submit" value="Start My Trial">
+                    <span class="arrow-wrap">
+                    <span class="arrow primera"></span>
+                    <span class="arrow segunda next"></span>
+                    <span class="arrow last"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-    <div class="right-box">
-    <form id="contact-form-section" action="https://www.valuecoders.com/v2wp/sendmail1.php" class="contact-form-section"
-   enctype="multipart/form-data" method="POST" onsubmit="return vcCmnFormValidation(false);">
-   <div class="form-inner dis-flex">
-      <div class="form-text-cont">
-         <div class="user-input">
-            <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name" class="input-field"
-               value="" name="user-name">
-            <small>Error Message</small>
-         </div>
-      </div>
-      <div class="form-text-cont">
-         <div class="user-input">
-            <input type="text" autocomplete="off" id="cont_email" placeholder="Email Address" class="input-field"
-               value="" name="user-email">
-            <small>Error Message</small>
-         </div>
-      </div>
-      <div class="form-text-cont">
-         <div class="user-input">
-            <input type="text" autocomplete="off" class="input-field" id="cont_phpne" placeholder="Phone Number"
-               value="" name="user-phone">
-            <small>Error Message</small>
-         </div>
-      </div>
-      <div class="form-text-cont cont_country_section">
-         <div class="user-input">
-            <input class="input-field input-skype" autocomplete="off" id="cont_country" type="text"
-               placeholder="Country" value="" name="user-country">
-            <small>Error Message</small>
-         </div>
-      </div>
-      <div class="form-text-cont width-full">
-         <div class="user-input form-control verror">
-            <textarea class="input-field comment-input" autocomplete="off" id="user-req" placeholder="Project Brief"
-               name="user-req"></textarea>
-            <small>Please Fill Requirement</small>
-            <div class="drop-input attachment_brw" id="uploadcontact">
-               <div id="dropcontact"></div>
-            </div>
-            <div id="drop-area">
-               <input type="file" name="files[]" id="fileElem" multiple=""
-                  accept="image/*,application/pdf,.psd,.zip,.docx,.xlsx,.xls,.txt"
-                  onchange="handleFiles(this.files)" style="display:none;">
-               <button class="button" id="browse-btn" type="button"
-                  onclick="document.getElementById('fileElem').click()">BROWSE | DROP FILES HERE</button>
-               <input type="hidden" name="up-counter" id="uplcounter" value="0">
-            </div>
-         </div>
-      </div>
-   </div>
-   <div id="gloader" class="gal-loader">
-      <div class="loader"></div>
-      <div id="gallery"></div>
-   </div>
-   <p id="file-type-error"></p>
-   <div class="form-group qz-captcha">
-      <div class="qz-wrap">
-         <div class="quizQ">
-            <span id="j-quiz">9 + 6</span>
-            <a href="javascript:void(0);" class="refreshbtn" onclick="generateWsQuiz();"></a>
-         </div>
-         <span class="equal">=</span>
-         <div class="quizAns">
-            <input type="number" name="captcha" placeholder="??" id="j-quiz-ans" onkeypress="cap_limit(event, this);">
-            <span class="error" id="captchaerror"></span>
-         </div>
-      </div>
-      <div class="cta-wrap">
-         <div class="user-input cta-btn checkout">
-            <input type="hidden" name="Uploadedfilename" id="Uploadedfilename" value="">
-            <input type="hidden" name="frmqueryString" value="">
-            <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
-            <input type="hidden" name="vc_csrf" value="">
-            <input type="submit" id="submitButton cta" class="checkout-submit" value="Start My Trial">
-            <span class="arrow-wrap">
-            <span class="arrow primera"></span>
-            <span class="arrow segunda next"></span>
-            <span class="arrow last"></span>
-            </span>
-         </div>
-      </div>
-   </div>
-</form>
-    </div>
-  </div>
-</div>
-
     </section>
     <section class="related-tags-section padding-t-50 padding-b-50 bg-light">
       <div class="container">
@@ -1187,7 +1176,7 @@
       </div>
     </section>
     <?php require_once '../include/footer.php'; ?>
-    <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
+    <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="text/javascript"></script>
     <script src='https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/js/glider.min-v2.js?ver=1.09.0' id='vc-glider-js'></script>
     <script>
       var accorItem = document.getElementsByClassName("accordionItem");

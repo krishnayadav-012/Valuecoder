@@ -2813,7 +2813,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   .header-two .hiremenu .hr-list-item a {
     color: #9f9f9f !important;
     text-transform: uppercase;
-    margin: 0 0 30px; }
+    margin: 0 0 20px; }
 
 .header-two .menu ul li.for-product {
   margin-top: 20px; }
@@ -4175,8 +4175,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   .slide-logo .logo-heading {
     flex-basis: 100%;
     margin: 0 0 25px; }
+    .slide-logo .logo-heading strong {
+      color: #ffad00; }
   .slide-logo .logo-section {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto; }
     .slide-logo .logo-section .glide__slide {
       height: 70px; }
@@ -4269,7 +4271,8 @@ body.page-template-template-testimonials .client-video-section iframe,
           .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer p {
             margin: 0 0 20px; }
           .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer img {
-            margin-top: 50px; }
+            margin-top: 50px;
+            width: 100%; }
           .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .trial-row {
             margin: 35px 0 0; }
             .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .trial-row .trial-col {
@@ -4283,7 +4286,8 @@ body.page-template-template-testimonials .client-video-section iframe,
                 background: #f8f8f8;
                 padding: 20px 20px 35px; }
                 .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .trial-row .trial-col .box img {
-                  margin: 0 0 20px; }
+                  margin: 0 0 20px;
+                  width: auto; }
                 .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .trial-row .trial-col .box h3 {
                   border-top: 1px solid #d1d1e1;
                   padding: 20px 0 0;
@@ -4297,7 +4301,8 @@ body.page-template-template-testimonials .client-video-section iframe,
               .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .process-step .step-sec .step-icon {
                 flex-basis: 70px; }
                 .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .process-step .step-sec .step-icon img {
-                  margin: 0; }
+                  margin: 0;
+                  width: auto; }
               .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .process-step .step-sec .step-desc {
                 flex-basis: calc(100% - 70px); }
                 .seven-days-trial .trial-wrap .trial-sticky .right-bar .trial-answer .process-step .step-sec .step-desc .step-no {

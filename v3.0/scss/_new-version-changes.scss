@@ -297,4 +297,36 @@
     
   } 
 
+  second-level-section{
+    .form-right-box{
+      .head{
+        .info-wrap {
+          .info {
+            .info-content {
+              width:220px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width:479px) {
+
+.second-level-section{
+  .form-right-box{
+    .head{
+      .info-wrap {
+        .info {
+          .info-content {
+            width: 168px;
+          }
+        }
+      }
+    }
+  }
+} 
+
 }

@@ -3549,7 +3549,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   .header-two .hiremenu .hr-list-item a {
     color: #9f9f9f !important;
     text-transform: uppercase;
-    margin: 0 0 30px; }
+    margin: 0 0 20px; }
 
 .header-two .menu ul li.for-product {
   margin-top: 20px; }
@@ -5569,16 +5569,35 @@ body.page-template-template-testimonials .client-video-section iframe,
     color: #000;
     border-color: #d9d9d9; }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1700px) {
   .second-level-section .form-right-box .top-right-form-box {
-    padding: 20px 20px 40px; }
+    padding: 15px 25px 30px; }
+  .second-level-section .form-right-box .head {
+    padding: 15px 0; }
   .second-level-section .form-right-box .form-text-cont {
     margin-top: 15px;
     padding: 0 6px; }
     .second-level-section .form-right-box .form-text-cont .input-field {
-      padding: 12px; }
+      padding: 10px; }
+    .second-level-section .form-right-box .form-text-cont .comment-input {
+      height: 40px; }
   .second-level-section .form-right-box .textarea-box .user-input {
-    padding: 15px 12px; } }
+    padding: 10px; }
+  .second-level-section .form-right-box .checkout-submit {
+    height: 52px; }
+
+  .button-section {
+    margin-top: 40px; } }
+@media only screen and (max-width: 1600px) {
+  .second-level-section .form-right-box .top-right-form-box {
+    padding: 15px 25px 30px; }
+  .second-level-section .form-right-box .form-text-cont {
+    margin-top: 15px;
+    padding: 0 6px; }
+    .second-level-section .form-right-box .form-text-cont .input-field {
+      padding: 10px; }
+  .second-level-section .form-right-box .textarea-box .user-input {
+    padding: 12px 10px; } }
 @media only screen and (max-width: 1320px) {
   .second-level-section .form-right-box .form-text-cont label {
     font-size: 12px;
@@ -5598,7 +5617,9 @@ body.page-template-template-testimonials .client-video-section iframe,
     left: 0;
     max-width: 360px; }
   .second-level-section .form-right-box .checkout-submit {
-    font-family: sans-serif; } }
+    font-family: sans-serif; }
+  .second-level-section .button-section {
+    margin-top: 30px; } }
 .hero-section {
   padding: 117px 0 80px;
   background-size: cover;

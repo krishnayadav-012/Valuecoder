@@ -18,7 +18,7 @@
         <div class="content-wrap">
           <div class="dis-flex">
             <div class="left-box">
-              <h1>How Does It work?</h1>
+              <h1>How Does It work? Test</h1>
               <p>ValueCoders was founded in 2004 with the goal of providing the highest quality software services available on the market today. Since then, we’ve developed and launched thousands of software products that look beautiful and work flawlessly, garnering rave reviews from our clients along the way.
               </p>
               <p>But how do we achieve such consistent results? ValueCoders has always taken a very professional & result-oriented approach, which might interest you as well.</p>

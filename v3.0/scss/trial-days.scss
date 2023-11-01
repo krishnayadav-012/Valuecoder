@@ -75,10 +75,11 @@
   .logo-heading {
     flex-basis: 100%;
     margin: 0 0 25px;
+    strong{color:$yellow;}
   }
 
   .logo-section {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 
     .glide {
@@ -196,6 +197,7 @@
           }
           img {
             margin-top: 50px;
+            width:100%;
           }
 
           .trial-row {
@@ -213,6 +215,7 @@
                 padding: 20px 20px 35px;
                 img {
                   margin: 0 0 20px;
+                  width: auto;
                 }
                 h3 {
                   border-top: 1px solid #d1d1e1;
@@ -233,6 +236,7 @@
                 flex-basis: 70px;
                 img {
                   margin: 0;
+                  width: auto;
                 }
               }
               .step-desc {flex-basis: calc(100% - 70px);
