@@ -1,13 +1,14 @@
 @import "_default";
 @import "_three-column";
-@import "_tech-stacks";
+@import "_solutions-section";
 @import "_animated-techstacks";
+@import "_industry-section";
 @import "_accordion";
 @import "_glider";
 @import "_case-studies";
 @import "_industries-columns";
 @import "_menu-v3.12";
-@import "_cta-structure";
+@import "_testimonials";
 @import "_ctabtn-structure";
 @import "_custom-cta";
 @import "_intent-popup";
@@ -158,7 +159,6 @@
 }
 
 
-
 .counter-column-section {
   .dis-flex {
     .left-sec {
@@ -192,7 +192,39 @@
  
 }
 
+.slide-logo {
+  padding: 39px 0;
+  text-align: center;
+  .dis-flex {
+    overflow: hidden;
+  }
+  .logo-heading {    position: relative;
+    flex-basis: 100%;
+    margin: 0 0 25px;
+    display: inline-flex;
+    align-items: center;
+    h4{color: #52606D; font-size: 20px; margin:0 35px;}
+    flex-basis: 100%;
+    margin: 0 0 25px; justify-content: center;
+    
+    strong{color:$yellow;}
 
+    &:before{width:200px; content:''; height: 0.197px; background:rgba(5, 22, 77, 0.4); display: inline-block;}
+    &:after{width:200px; content:''; height: 0.197px;  background:rgba(5, 22, 77, 0.4); display: inline-block;}
+
+  }
+
+  .logo-section {
+    width: 1200px;
+    margin: 0 auto 30px;
+    border-bottom:1px solid rgba(5, 22, 77, 0.4);
+    .glide {
+      &__slide {
+        height: 70px;
+      }
+    }
+  }
+}
 
 .not-found-section {
   height: 95vh;
@@ -245,6 +277,7 @@
     &:after{ margin-left:15px;}
   }
 }
+
 
 //New Home Page Ends Here*/
 

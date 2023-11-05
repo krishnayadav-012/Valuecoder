@@ -65,18 +65,13 @@
             <span class="error" id="captchaerror"></span>
          </div>
       </div>
-      <div class="cta-wrap">
-         <div class="user-input cta-btn checkout">
+      <div class="btn-sec">
+         <div class="user-input btn rounded checkout">
             <input type="hidden" name="Uploadedfilename" id="Uploadedfilename" value="">
             <input type="hidden" name="frmqueryString" value="">
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
-            <input type="submit" id="submitButton cta" class="checkout-submit" value="Enquire Now">
-            <span class="arrow-wrap">
-            <span class="arrow primera"></span>
-            <span class="arrow segunda next"></span>
-            <span class="arrow last"></span>
-            </span>
+            <input type="submit" id="submitButton cta" class="checkout-submit text-white" value="Enquire Now">
          </div>
       </div>
    </div>

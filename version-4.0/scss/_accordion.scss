@@ -175,18 +175,20 @@
         li {
           position: relative;
           margin-bottom: 15px;
-          padding-left: 20px;
+          padding-left:25px;
           flex-basis: 48%;
           line-height: 25px;
           &:before {
             content: "";
-            width: 10px;
-            height: 10px;
-            background-color: #ffb81d;
-            border-radius: 50%;
+            background: url(../images/acr-list.svg) no-repeat center;
+            width: 19px;
+            height: 18px;
             position: absolute;
             left: 0;
-            top: 8px;
+            top: 4px;
+          }
+          a{color: #656565;
+            &:hover{text-decoration: underline;}
           }
         }
       }

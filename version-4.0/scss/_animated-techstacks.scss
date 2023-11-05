@@ -167,7 +167,7 @@
 }
 
 .animate-slide-to-left {
-  animation: slide_to_left 50s linear infinite
+  animation: slide_to_left 10s linear infinite
 }
 
 @keyframes slide_to_right {
@@ -181,7 +181,7 @@
 }
 
 .animate-slide-to-right {
-  animation: slide_to_right 50s linear infinite
+  animation: slide_to_right 10s linear infinite
 }
 
 @keyframes counterclockwise {
