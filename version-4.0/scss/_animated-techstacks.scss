@@ -215,5 +215,36 @@
 }
 
 
+@media only screen and (max-width: 991px) {
+  .tech-section {
+    .tech-row{ height:60px;
+      .tech-stack{
+        ul{
+          li{font-size:45px;  line-height:55px; padding-right: 50px;
+          }
+          }
+      }
+      }
+  
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tech-section {
+    .tech-row{ height:50px;
+      .tech-stack{
+        ul{
+          li{font-size:35px;  line-height:50px; padding-right:30px;
+          }
+          }
+      }
+      }
+  
+  }
+}
+
+
+
+
 
 
