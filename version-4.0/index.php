@@ -678,7 +678,9 @@
       </div>
     </section>
     <section class="industry-section">
-      <div class="container"><div class="ind-title">Industries</div></div>
+      <div class="container">
+        <div class="ind-title">Industries</div>
+      </div>
       <div class="changingTileWrap">
         <img class="bannerIMG" src=" " alt="Tile">
         <div class="tileFloat industry-slider glider-contain">
@@ -766,8 +768,6 @@
         </div>
       </div>
     </section>
-
-
     <section class="solution bg-light padding-t-120 padding-b-120">
       <div class="container">
         <div class="head-txt text-center">
@@ -815,9 +815,6 @@
         </div>
       </div>
     </section>
-
-
-
     <section class="faq-section padding-t-120 padding-b-120">
       <div class="container">
         <div class="head-txt text-center">
@@ -983,15 +980,13 @@
         </div>
       </div>
     </section>
-    
-    
     <section class="testimonial-section bg-light padding-t-120 padding-b-120">
       <div class="container">
       <div class="head-txt text-center">
-          <h2>What Our Clients Have to Say About Us</h2>
-          <p>We are grateful for our clients’ trust in us, and we take great pride in delivering quality solutions that exceed their expectations. Here is what some of them have to say about us:
-          </p>
-        </div>
+        <h2>What Our Clients Have to Say About Us</h2>
+        <p>We are grateful for our clients’ trust in us, and we take great pride in delivering quality solutions that exceed their expectations. Here is what some of them have to say about us:
+        </p>
+      </div>
       <div class="testlider glide margin-t-80">
         <div class="glide__track" data-glide-el="track">
           <div class="glide__slides">
@@ -1078,44 +1073,50 @@
         <div class="glide__bullets" data-glide-el="controls[nav]">
           <button class="glide__bullet" data-glide-dir="=0">
             <div class="btnsec">
-              <div class="btnimg"><picture>
-                    <source type="image/webp" srcset="images/jameskaly.png">
-                    <source type="image/png" srcset="images/jameskaly.jpg">
-                    <img loading="lazy" src="images/jameskaly.jpg"
-                      alt="Testimonials" width="68" height="69">
-                  </picture></div>
+              <div class="btnimg">
+                <picture>
+                  <source type="image/webp" srcset="images/jameskaly.png">
+                  <source type="image/png" srcset="images/jameskaly.jpg">
+                  <img loading="lazy" src="images/jameskaly.jpg"
+                    alt="Testimonials" width="68" height="69">
+                </picture>
+              </div>
               <div class="btncont">
-              <h3>James Kelly</h3>
-              <p>President of Sales</p>
-             </div>
+                <h3>James Kelly</h3>
+                <p>President of Sales</p>
+              </div>
             </div>
           </button>
           <button class="glide__bullet" data-glide-dir="=1">
-          <div class="btnsec">
-              <div class="btnimg"><picture>
-                    <source type="image/webp" srcset="images/jameskaly.png">
-                    <source type="image/png" srcset="images/jameskaly.jpg">
-                    <img loading="lazy" src="images/jameskaly.jpg"
-                      alt="Testimonials" width="68" height="69">
-                  </picture></div>
+            <div class="btnsec">
+              <div class="btnimg">
+                <picture>
+                  <source type="image/webp" srcset="images/jameskaly.png">
+                  <source type="image/png" srcset="images/jameskaly.jpg">
+                  <img loading="lazy" src="images/jameskaly.jpg"
+                    alt="Testimonials" width="68" height="69">
+                </picture>
+              </div>
               <div class="btncont">
-              <h3>James Kelly</h3>
-              <p>President of Sales</p>
-             </div>
+                <h3>James Kelly</h3>
+                <p>President of Sales</p>
+              </div>
             </div>
           </button>
           <button class="glide__bullet" data-glide-dir="=2">
-          <div class="btnsec">
-              <div class="btnimg"><picture>
-                    <source type="image/webp" srcset="images/jameskaly.png">
-                    <source type="image/png" srcset="images/jameskaly.jpg">
-                    <img loading="lazy" src="images/jameskaly.jpg"
-                      alt="Testimonials" width="68" height="69">
-                  </picture></div>
+            <div class="btnsec">
+              <div class="btnimg">
+                <picture>
+                  <source type="image/webp" srcset="images/jameskaly.png">
+                  <source type="image/png" srcset="images/jameskaly.jpg">
+                  <img loading="lazy" src="images/jameskaly.jpg"
+                    alt="Testimonials" width="68" height="69">
+                </picture>
+              </div>
               <div class="btncont">
-              <h3>James Kelly</h3>
-              <p>President of Sales</p>
-             </div>
+                <h3>James Kelly</h3>
+                <p>President of Sales</p>
+              </div>
             </div>
           </button>
         </div>

@@ -616,16 +616,18 @@ textarea {
   .faq-section .head-txt h2 {
     text-transform: capitalize; }
 .faq-section .faq-outer {
-  margin-top: 60px; }
+  max-width: 970px;
+  margin: 60px auto 0; }
 .faq-section .faq-accordion-item-outer {
-  position: relative;
-  margin-top: 40px; }
+  position: relative; }
   .faq-section .faq-accordion-item-outer.active .faq-accordion-content {
     display: block; }
   .faq-section .faq-accordion-item-outer.active .open-icon {
     display: none; }
   .faq-section .faq-accordion-item-outer.active .faq-accordion-toggle::after {
     display: none; }
+  .faq-section .faq-accordion-item-outer:nth-child(1) .faq-accordion-toggle {
+    border-top: 0; }
 .faq-section .faq-accordion-toggle {
   display: block;
   text-decoration: none;
@@ -633,10 +635,11 @@ textarea {
   align-items: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  padding: 0 30px 0 40px;
+  padding: 30px 40px 20px 0;
   position: relative;
-  font-weight: 600;
-  color: #3f3f3f; }
+  font-weight: 400;
+  color: #3f3f3f;
+  border-top: 1px solid #eeeeee; }
   .faq-section .faq-accordion-toggle a {
     display: contents; }
   .faq-section .faq-accordion-toggle::before {
@@ -644,25 +647,25 @@ textarea {
     clear: both;
     display: block;
     background: #ffb81d;
-    height: 4px;
-    width: 20px;
-    border-radius: 4px;
+    height: 3px;
+    width: 18px;
+    border-radius: 3px;
     position: absolute;
-    left: 0; }
+    right: 0; }
   .faq-section .faq-accordion-toggle::after {
     content: "";
     clear: both;
     display: block;
     background: #ffb81d;
-    height: 20px;
-    width: 4px;
-    border-radius: 4px;
+    height: 18px;
+    width: 3px;
+    border-radius: 3px;
     position: absolute;
-    left: 8px; }
+    right: 8px; }
 .faq-section .faq-accordion-content {
   display: none;
   padding-top: 5px;
-  padding-left: 50px; }
+  padding: 0 0 30px; }
   .faq-section .faq-accordion-content p {
     margin: 10px 0 0; }
   .faq-section .faq-accordion-content ul,
