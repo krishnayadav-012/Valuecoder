@@ -701,7 +701,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile-box ind-box" id="tile-2"
+            <div class="tile-box  ind-box" id="tile-2"
               data-img-hover="images/homeindus-02.png">
               <div class="tile-box-in">
                 <div class="tileHeadMain"><a
@@ -749,6 +749,52 @@
             </div>
             <div class="tile-box ind-box" id="tile-5"
               data-img-hover="images/homeindus-01.png">
+              <div class="tile-box-in">
+                <div class="tileHeadMain"><a href="#"
+                  class="stretched-link">Logistics & Transport </a></div>
+                <div class="floatingTileInfo">
+                  <div class="tileHead">Logistics & Transport</div>
+                  <p>Leverage our deep domain expertise to develop digital solutions that simplify complex and</p>
+                  <div class="cta-box"><a class="stretched-link"
+                    href="#">Learn
+                    more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile-box ind-box" id="tile-6"
+              data-img-hover="images/homeindus-02.png">
+              <div class="tile-box-in">
+                <div class="tileHeadMain"><a
+                  href="#"
+                  class="stretched-link">Travel & Tourism</a></div>
+                <div class="floatingTileInfo">
+                  <div class="tileHead">Travel & Tourism</div>
+                  <p>Our travel application development team understands the terms of the industry and helps,....</p>
+                  <div class="cta-box"><a class="stretched-link"
+                    href="#">Learn
+                    more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile-box ind-box" id="tile-7"
+              data-img-hover="images/homeindus-03.png">
+              <div class="tile-box-in">
+                <div class="tileHeadMain"><a href="#"
+                  class="stretched-link d-flex align-items-center">Banking & Finance</a></div>
+                <div class="floatingTileInfo">
+                  <div class="tileHead">Banking & Finance</div>
+                  <p>We provide custom software services to fintech and financial organizations,....</p>
+                  <div class="cta-box"><a class="stretched-link"
+                    href="#">Learn
+                    more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile-box ind-box" id="tile-8"
+              data-img-hover="images/homeindus-04.png">
               <div class="tile-box-in">
                 <div class="tileHeadMain"><a href="#"
                   class="stretched-link">Logistics & Transport </a></div>
@@ -1180,15 +1226,15 @@
                     });
                     window._ = new Glider(document.querySelector(".industry-slider .glider"), {
                         slidesToShow: 4,
-                        slidesToScroll: 1,
+                        slidesToScroll: 4,
                         draggable: true,
                         scrollLock: false,
                         dots: ".industry-slider .dots",
                         dragDistance: false,
                         arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-      },
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                      },
             
                         responsive: [{
                                 breakpoint: 320,
@@ -1232,7 +1278,8 @@
             
                 });
             
-               
+         
+      
       
       
             //industry Section script
@@ -1283,7 +1330,6 @@
               // industry slider
       
               
-      
       
               
               var accorItem = document.getElementsByClassName("accordionItem");
