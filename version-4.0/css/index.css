@@ -4286,6 +4286,8 @@ a {
     justify-content: space-between; }
     .testimonial-section .testlider .test-row .cust-img-box {
       flex-basis: 40%; }
+      .testimonial-section .testlider .test-row .cust-img-box img {
+        width: 100%; }
     .testimonial-section .testlider .test-row .client-videos {
       flex-basis: 40%;
       position: relative; }
