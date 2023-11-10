@@ -20,7 +20,7 @@
 
   .img-box {
     position: relative;
-    padding: 140px 50px 40px;
+    padding: 140px 40px 40px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     height: 100%;
@@ -30,13 +30,8 @@
       content: "";
       width: 100%;
       height: 100%;
-      background: linear-gradient(
-        180deg,
-        rgba(7, 0, 153, 0) -10.67%,
-        rgba(7, 3, 68, 0.87) 58.9%
-      );
+      background: #00000024;
       z-index: -1;
-      opacity: 0;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -53,7 +48,11 @@
         }
       }
       &:after {
-        opacity: 1;
+        background: linear-gradient(
+          180deg,
+          rgba(7, 0, 153, 0) -10.67%,
+          rgba(7, 3, 68, 0.87) 58.9%
+        );
       }
 
       a {
@@ -67,14 +66,22 @@
 
     h3 {
       color: $white;
+      a{ color: $white;
+      &:hover{color:$yellow;}
+      }
     }
 
     p {
-      line-height: 26px;
-      margin: 10px 0;
+     
+      margin: 10px 0 20px;
       color: #fff;
       font-weight: 400;
       transition: all 0.3s ease-in-out;
+      overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+   line-clamp: 2; 
+   -webkit-box-orient: vertical;
     }
 
     a {
@@ -120,7 +127,7 @@
 @media only screen and (max-width: 1780px) {
   .img-column-section {
     .img-box {
-      padding: 110px 40px 30px;
+      padding: 110px 30px 30px;
     }
   }
 }
@@ -145,7 +152,7 @@
   @media only screen and (max-width: 1440px) {
     .img-column-section {
       .img-box {
-        padding: 80px 40px 30px;
+        padding: 80px 20px 30px;
       }
     }
   }

@@ -75,9 +75,12 @@
 	justify-content: flex-end !important;
 	padding: 25px;
 	background: linear-gradient(180deg, rgba(12, 20, 49, 0) 0%, #0c1431 100%);
-	transition: all .75s ease;
+	transition: all 0 ease .3s;
   }
   
+
+  .tile-box:hover{background: linear-gradient(180deg,rgba(0,0,0,.32),rgba(0,0,0,.64));}
+
   .tile-box:hover .tileHeadMain {
 	display: none;
   }
@@ -95,6 +98,9 @@
 	color: $white;
 	position: relative;
   }
+
+  .tile-box .tileHead a{color: $white;}
+  .tile-box .tileHead a:hover{color:$yellow;}
   
   .tile-box .tileHead:before,
   .tile-box .tileHeadMain:before {
@@ -118,10 +124,7 @@
 	visibility: visible;
   }
 
-  .tile-box:hover.active .floatingTileInfo {
-	bottom: 0;
-	visibility: visible;
-  }
+ 
 
   .tile-box.active .tileHeadMain{display:none;}
   
@@ -254,7 +257,7 @@
   
   @media only screen and (max-width: 767px) {
 	.industry-section {
-	  min-height: 500px;
+	  min-height: 400px;
 	}
 	.industry-section .glider {
 	  background: linear-gradient(180deg, rgba(12, 20, 49, 0) 0%, #0c1431 100%);

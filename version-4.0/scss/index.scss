@@ -8,10 +8,10 @@
 @import "_case-studies";
 @import "_industries-columns";
 @import "_menu-v3.12";
-@import "_testimonials";
 @import "_ctabtn-structure";
 @import "_custom-cta";
 @import "_intent-popup";
+@import "_testimonials";
 @import "_footer-form";
 
 .hero-section {
@@ -88,14 +88,20 @@
   }
   .logo-heading {
     position: relative;
-    flex-basis: 100%;
+    width: 90%;
     margin: 0 0 25px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    background: #fff;
     h4 {
       color: #52606d;
       font-size: 20px;
-      margin: 0 35px;
+      margin: 0 35px; background:$white;
+      position: relative;
+
+      span{margin: 0 35px; background:$white;}
+    
     }
     flex-basis: 100%;
     margin: 0 0 25px;
@@ -106,23 +112,23 @@
     }
 
     &:before {
-      width: 200px;
+      width: 90%;
       content: "";
       height: 0.197px;
       background: rgba(5, 22, 77, 0.4);
-      display: inline-block;
+      position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     }
-    &:after {
-      width: 200px;
-      content: "";
-      height: 0.197px;
-      background: rgba(5, 22, 77, 0.4);
-      display: inline-block;
-    }
+
+    
+    
   }
 
   .logo-section {
-    width: 1200px;
+    width: 90%;
     margin: 0 auto 30px;
     border-bottom: 1px solid rgba(5, 22, 77, 0.4);
     .glide {
@@ -231,14 +237,18 @@
           padding: 12px;
           border: 1px solid #eee9e9;
           border-radius: 5px;
+          margin:0 0 14px;
           .aw-icon {
-            min-height: 36px;
-            margin: 0 0 8px;
+            min-height:50px;
+            margin: 0 0 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            img {
+            img.normal-mode {
               display: block;
+            }
+            img.hover-mode {
+              display: none;
             }
           }
           p {
@@ -250,8 +260,17 @@
           }
           &:hover {
             background: #fff;
+            cursor: default;
             p {
               opacity: 1;
+            }
+            .aw-icon{
+              img.normal-mode {
+                display: none;
+              }
+              img.hover-mode {
+                display: block;
+              }
             }
           }
         }

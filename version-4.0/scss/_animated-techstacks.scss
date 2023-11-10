@@ -3,9 +3,9 @@
 .tech-section {display:flex;width: 100%;
   flex-direction: column;
   gap: 15px;
-  .tech-row{position: relative; overflow: hidden; height:70px;
+  .tech-row{position: relative; overflow: hidden; height:75px;
     .tech-stack{
-      ul{display:flex; min-width: 200%; justify-content: space-around; position: absolute;
+      ul{display:flex; min-width: 150%; justify-content: center; position: absolute;
         li{font-size:60px;
           font-weight: 700;
           line-height:65px; padding-right: 60px; color:#05164D; opacity: 0.2;
@@ -212,6 +212,22 @@
 
 .hover\:pause:hover {
   animation-play-state: paused;
+}
+
+@media only screen and (max-width: 1220px) {
+
+.tech-section {
+  .tech-row{
+    .tech-stack{
+      ul{
+        li{font-size:50px;
+        }
+        }
+    }
+    }
+
+}
+
 }
 
 

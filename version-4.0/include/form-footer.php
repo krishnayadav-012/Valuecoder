@@ -71,7 +71,7 @@
             <input type="hidden" name="frmqueryString" value="">
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
-            <input type="submit" id="submitButton cta" class="checkout-submit text-white" value="Enquire Now">
+            <input type="submit" id="submitButton cta" class="checkout-submit" value="Enquire Now">
          </div>
       </div>
    </div>
