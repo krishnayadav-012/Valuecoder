@@ -258,6 +258,8 @@
   @media only screen and (max-width: 767px) {
 	.industry-section {
 	  min-height: 400px;
+	  .glider-prev{background-size: 100%; width: 20px; height: 20px; left:10px;}
+	  .glider-next{background-size: 100%; width: 20px; height: 20px; right:10px;}
 	}
 	.industry-section .glider {
 	  background: linear-gradient(180deg, rgba(12, 20, 49, 0) 0%, #0c1431 100%);
@@ -270,5 +272,6 @@
 	  font-size: 60px;
 	  font-family: sans-serif;
 	}
+	.floatingTileInfo{padding:20px;}
   }
   

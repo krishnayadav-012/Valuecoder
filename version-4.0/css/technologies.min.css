@@ -888,7 +888,7 @@ textarea {
   .for-client-logo-box .logo-box {
     width: 109px;
     height: 57px;
-    background: url(../images/home-partner-logo.svg) 0 0 no-repeat;
+    background: url(../images/home-partner-logo.png) 0 0 no-repeat;
     display: inline-block; }
     .for-client-logo-box .logo-box.logo2 {
       background-position: -111px 0; }
@@ -992,6 +992,10 @@ textarea {
     right: 0;
     width: 304px;
     height: 475px; }
+  .experts-talk-first-section .button-section {
+    justify-content: center; }
+    .experts-talk-first-section .button-section .btn-sec {
+      justify-content: center; }
 
 .experts-talk-second-section {
   position: relative;
@@ -2760,7 +2764,7 @@ body.page-template-template-testimonials .client-video-section iframe,
       border-radius: 50%;
       position: absolute;
       left: 0;
-      top: 8px; }
+      top: 6px; }
 .three-column-icon-section a {
   text-decoration: none; }
   .three-column-icon-section a:hover {
@@ -2905,9 +2909,6 @@ body.page-template-template-testimonials .client-video-section iframe,
       .header-two .btn-sec .btn:hover .text-white {
         color: #05164d; }
 
-@media only screen and (max-width: 991px) {
-  .btn-sec {
-    justify-content: center; } }
 @media only screen and (max-width: 991px) {
   .btn-sec .btn {
     font-size: 16px;
@@ -4211,7 +4212,13 @@ body.page-template-template-testimonials .client-video-section iframe,
 
   .header-two .menu ul li.for-product .menu-mega a {
     height: initial;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+
+  .header-two .btn-sec .btn {
+    margin-left: 0; }
+
+  .header-two .btn-sec {
+    justify-content: center; } }
 .img-column-section .col-box {
   overflow: hidden;
   flex-basis: calc(33.33% - 30px);
@@ -5331,9 +5338,6 @@ body.page-template-template-testimonials .client-video-section iframe,
       .btn-sec .btn:hover .text-white {
         color: #05164d; }
 
-@media only screen and (max-width: 991px) {
-  .btn-sec {
-    justify-content: center; } }
 @media only screen and (max-width: 991px) {
   .btn-sec .btn {
     font-size: 16px;

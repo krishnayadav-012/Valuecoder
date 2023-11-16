@@ -1348,8 +1348,9 @@ textarea {
   .logo-box {
     width: 109px;
     height: 57px;
-    background: url(../images/home-partner-logo.svg) 0 0 no-repeat;
+    background: url(../images/home-partner-logo.png) 0 0 no-repeat;
     display: inline-block;
+    
 
     &.logo2 {
       background-position: -111px 0;
@@ -1490,6 +1491,9 @@ textarea {
     right: 0;
     width: 304px;
     height: 475px;
+  }
+  .button-section{justify-content: center;
+  .btn-sec{justify-content: center;}
   }
 }
 

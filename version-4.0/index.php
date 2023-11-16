@@ -14,7 +14,6 @@
       <?php require_once './include/header-files.php'; ?>
       <link rel="preload stylesheet" type="text/css" href="./css/index.css" defer />
       <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
-      <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" defer />
    </head>
    <body>
       <?php require_once './include/menu-v3.12.php'; ?>
@@ -50,16 +49,26 @@
                         <div class="glide__slides">
                            <div class="glide__slide">
                               <picture>
-                                 <img loading="lazy" src="images/banner-client-logo.svg" width="1107" height="61" alt="valuecoders">
+                                 <img loading="lazy" src="images/banner-client-logo.svg" width="" height="" alt="valuecoders">
+                              </picture>
+                           </div>
+                           <div class="glide__slide">
+                              <picture>
+                                 <img loading="lazy" src="images/banner-client-logo-2.png" width="" height="" alt="valuecoders">
                               </picture>
                            </div>
                         </div>
+                        
                      </div>
+                     
                   </div>
+                  
                </div>
             </div>
          </div>
       </div>
+
+
       <section class="accordion-section  padding-t-120">
          <div class="dis-flex accordian-row">
             <div class="col-left">
@@ -255,7 +264,7 @@
             <div class="flex-2 right-box">
                <div class="client-section">
                   <div class="client-row">
-                     <div class="client-stack animate-slide-to-left hover:pause">
+                     <div class="client-stack award-animate-slide-to-left hover:pause">
                         <ul>
                            <li>
                               <picture>
@@ -317,7 +326,7 @@
                      </div>
                   </div>
                   <div class="client-row">
-                     <div class="client-stack animate-slide-to-right hover:pause">
+                     <div class="client-stack award-animate-slide-to-right hover:pause">
                         <ul>
                            <li>
                               <picture>
@@ -379,7 +388,7 @@
                      </div>
                   </div>
                   <div class="client-row">
-                     <div class="client-stack animate-slide-to-left hover:pause">
+                     <div class="client-stack award-animate-slide-to-left hover:pause">
                         <ul>
                            <li>
                               <picture>
@@ -441,7 +450,7 @@
                      </div>
                   </div>
                   <div class="client-row">
-                     <div class="client-stack animate-slide-to-right hover:pause">
+                     <div class="client-stack award-animate-slide-to-right hover:pause">
                         <ul>
                            <li>
                               <picture>
@@ -1254,6 +1263,7 @@
          new Glide(".testlider", {
         type: "carousel",
         autoplay: 5000,
+        startAt: 0,
         hoverpause: false,
         gap: 0
       }).mount();         
@@ -1262,8 +1272,10 @@
                      new Glide('.logoslide', {
                        type: 'carousel',
                        autoplay: 1,
-                       animationDuration: 9000,
+                       animationDuration: 10000,
                        animationTimingFunc: 'linear',
+                       gap: 0,
+                       startAt: 0,
                        perView: 1 }).
                      mount();
                      //# sourceURL=pen.js

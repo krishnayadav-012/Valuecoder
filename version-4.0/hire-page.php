@@ -13,15 +13,16 @@
       content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
     <?php require_once '../include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/hirepage.min.css" defer />
+    <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
   </head>
   <body>
     <?php require_once './include/menu-v3.12.php'; ?>
-    <section class="second-level-section">
+    <section class="second-level-section" style="background-image:url(images/hire-banner.png);">
       <div class="container">
         <div class="breadcrumbs">
           <a href="#">Home</a> Hire Software Developers
         </div>
-        <div class="dis-flex">
+        <div class="dis-flex justify-sb">
           <div class="left-box flex-2 tick-icon-list">
             <div class="for-client-logo-box  dis-flex">
               <div class="logo-box logo1"></div>
@@ -29,437 +30,434 @@
               <div class="logo-box logo3"></div>
               <div class="logo-box logo4"></div>
             </div>
-            <h1>Hire Top <span>Mobile App Developers</span> in India</h1>
-            <h2>Hire Top 1% Dedicated Mobile App Developers, No Freelancers</h2>
-            <p>Hire India’s <strong>best mobile app developers</strong> for <a
-              href="https://www.valuecoders.com/mobile-application-development">custom mobile app
-              development</a>, migration, ongoing maintenance, management, and deployment services. You
-              can also set up a dedicated/remote team of mobile app developers/programmers on flexible
-              engagement options.
+            <h1>Hire Dedicated Developers</h1>
+            <h2>Top 1% Dedicated Angular Developers. Pre-vetted Experts. No Freelancers</h2>
+            <p>Hire pre-vetted and highly experienced Angular developers from ValueCoders. They're skilled in every Angular version, from 2.0.0 to 15.0.0.
             </p>
-            <p>Our <strong>offshore mobile app developers</strong> use leading-edge technologies such as
-              <strong>React Native, Flutter, iOS, Android, Kotlin</strong>, etc., to deliver secure, scalable,
-              and interactive mobile applications that meet your specific business requirements.
+            <p>Choose us for proven talent and top-notch expertise. Get started with ValueCoders and elevate your project!
             </p>
             <ul>
-            <li>Proof of Work based timesheets (Powered by <a href="https://www.workstatus.io/" class="a-dotted" target="_blank">Workstatus<sup>TM</sup></a>)</li>
-              <li>IP Rights &amp; NDA (Non disclosure Agreement) protection</li>
-              <li>ISO 9001:2008 certified processes</li>
-              <li>On-time delivery</li>
-              <li>Best code practices</li>
+              <li>IP Rights and NDA protection</li>
+              <li>No legal employment liability, no recruitment expense</li>
+              <li>Proof of Work based timesheets (Powered by <a href="https://www.workstatus.io/" class="a-dotted" target="_blank">Workstatus<sup>TM</sup></a>)</li>
             </ul>
-          </div>
-          <div class="flex-2">
-            <div class="form-right-box">
-              <div class="head">
-                <h3>Build Your Remote Team</h3>
-                <p>Get 2 week risk-free trial <span class="open-free-trial"></span></p>
+            <div class="button-section margin-t-50">
+              <div class="btn-div">
+                <div class="btn-sec">
+                  <a class="btn rounded" href="https://calendly.com/valuecoders/7-day-trial"><span class="text-white">Start 7 Days Free Trial</span></a>
+                </div>
+                <div class="info-wrap">
+                  Learn How Trial Works
+                  <div class="info">
+                    <div class="info-content">
+                      <h4>What happens after you contact us? </h4>
+                      <p>Our solution experts will answer your questions in a secure online meeting.</p>
+                      <a class="kmore" href="https://www.valuecoders.com/hire-developers/7-day-trial">Know More</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="top-right-form-box">
-                <form id="contact-form-section" action="https://www.valuecoders.com/sendmail1.php"
-                  class="contact-form-section" enctype="multipart/form-data" method="POST">
-                  <div class="form-inner dis-flex">
-                    <div class="form-text-cont">
-                      <div class="lbl-row">
-                        <label for="cont_name">Full Name*</label>
-                      </div>
-                      <div class="user-input verror">
-                        <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name"
-                          class="input-field" value="" name="user-name">
-                        <small>Please Fill Name</small>
-                      </div>
-                    </div>
-                    <div class="form-text-cont">
-                      <div class="lbl-row">
-                        <label for="cont_email">Email Address*</label>
-                      </div>
-                      <div class="user-input">
-                        <input type="text" autocomplete="off" id="cont_email"
-                          placeholder="Email Address" class="input-field" value=""
-                          name="user-email">
-                        <small>Error Message</small>
-                      </div>
-                    </div>
-                    <div class="form-text-cont">
-                      <div class="lbl-row">
-                        <label for="cont_phpne">Phone no*</label>
-                      </div>
-                      <div class="user-input">
-                        <input type="text" autocomplete="off" class="input-field" id="cont_phpne"
-                          placeholder="Phone Number" value="" name="user-phone">
-                        <small>Please Fill Phone</small>
-                      </div>
-                    </div>
-                    <div class="form-text-cont cont_country_section">
-                      <div class="lbl-row">
-                        <label for="cont_country">Country*</label>
-                      </div>
-                      <div class="user-input">
-                        <input class="input-field input-skype" autocomplete="off" id="cont_country"
-                          type="text" placeholder="Country" value="" name="user-country">
-                        <small>Please Fill Country</small>
-                        <!-- country box -->
-                        <div id="cont_countryautocomplete-list" class="autocomplete-items has-data">
-                          <div><strong>A</strong>fghanistan<input type="hidden"
-                            value="Afghanistan"></div>
-                          <div><strong>A</strong>lbania<input type="hidden" value="Albania"></div>
-                          <div><strong>A</strong>lgeria<input type="hidden" value="Algeria"></div>
-                          <div><strong>A</strong>ndorra<input type="hidden" value="Andorra"></div>
-                          <div><strong>A</strong>ngola<input type="hidden" value="Angola"></div>
-                          <div><strong>A</strong>nguilla<input type="hidden" value="Anguilla">
-                          </div>
-                          <div><strong>A</strong>ntigua &amp; Barbuda<input type="hidden"
-                            value="Antigua &amp; Barbuda"></div>
-                          <div><strong>A</strong>rgentina<input type="hidden" value="Argentina">
-                          </div>
-                          <div><strong>A</strong>rmenia<input type="hidden" value="Armenia"></div>
-                          <div><strong>A</strong>ruba<input type="hidden" value="Aruba"></div>
-                          <div><strong>A</strong>ustralia<input type="hidden" value="Australia">
-                          </div>
-                          <div><strong>A</strong>ustria<input type="hidden" value="Austria"></div>
-                          <div><strong>A</strong>zerbaijan<input type="hidden" value="Azerbaijan">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="textarea-box">
-                      <div class="form-text-cont width-full">
-                        <div class="lbl-row">
-                          <label for="cont_brief">Project Brief</label>
-                        </div>
-                        <div class="user-input verror">
-                          <textarea class="input-field comment-input" autocomplete="off"
-                            id="user-req" placeholder="Enter your Project Brief"
-                            name="user-req"></textarea>
-                          <small>Please Fill Requirement</small>
-                          <div class="drop-input attachment_brw" id="uploadcontact">
-                            <div id="dropcontact"></div>
-                          </div>
-                          <div id="drop-area" class="drop-area">
-                            <input type="file" name="files[]" id="fileElem" class="fileElem"
-                              multiple
-                              accept="image/*,application/pdf,.psd,.zip,.docx,.xlsx,.xls,.txt"
-                              onchange="if (!window.__cfRLUnblockHandlers) return false; handleFiles(this.files)"
-                              data-cf-modified-a09047a294114ce6b67051e1-="">
-                            <button class="button" id="browse-btn" type="button"
-                              onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('fileElem').click()"
-                              data-cf-modified-a09047a294114ce6b67051e1-="">BROWSE | DROP
-                            FILES HERE</button>
-                            <input type="hidden" name="up-counter" id="uplcounter" value="0">
-                            <progress style="display: none;" id="progress-bar" max=100
-                              value=0></progress>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="gloader" class="gal-loader show-me active">
-                    <div class="loader"></div>
-                    <div id="gallery" class="gallery">
-                      <div>
-                        <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-img/def-thumb.png"
-                          height="55" width="55">
-                        <button type="button" onclick="return removeMe(this,this.value);"
-                          value="1662016272_agile-dev-img-1.jpg,">X</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cta-wrap margin-t-50 justify-center">
-                    <div class="user-input cta-btn checkout text-center">
-                      <input type="hidden" name="Uploadedfilename" id="Uploadedfilename" value="">
-                      <input type="hidden" name="frmqueryString" value="">
-                      <input type="hidden" name="page_url" value="https://www.valuecoders.com/">
-                      <input type="hidden" name="vc_csrf" value="">
-                      <input type="submit" id="submitButton cta" class="checkout-submit"
-                        value="Hire Software Developers "> <span class="arrow-wrap">
-                      <span class="arrow primera"></span>
-                      <span class="arrow segunda next"></span>
-                      <span class="arrow last"></span>
-                      </span></button>
-                    </div>
-                  </div>
-                </form>
+              <span class="devide">OR</span>
+              <div class="free-con">
+                <a href="https://calendly.com/valuecoders/dedicated-teams" target="_self">Request Free Consultation</a>
               </div>
             </div>
+          </div>
+          <div class="flex-2 right-box">
+            <picture>
+              <source type="image/webp" srcset="images/hire-bannerright.png">
+              <source type="image/png" srcset="images/hire-bannerright.png">
+              <img loading="lazy" src="images/hire-bannerright.png" alt="Valuecoders" width="689" height="477"> 
+            </picture>
           </div>
         </div>
       </div>
     </section>
-    <div class="client-logo-box-section dis-flex items-center justify-sb">
+    <div class="slide-logo  dis-flex items-center justify-sb">
       <div class="container">
         <div class="dis-flex">
           <div class="logo-heading">
-            <h4>Trusted by startups<br> and Fortune 500 companies</h4>
+            <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
           </div>
-          <div class="logo-box-outer dis-flex">
+          <div class="logo-section">
+            <div class="logoslide">
+              <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                  <div class="glide__slide">
+                    <picture>
+                      <img loading="lazy" src="images/banner-client-logo.svg" width="" height="" alt="valuecoders">
+                    </picture>
+                  </div>
+                  <div class="glide__slide">
+                    <picture>
+                      <img loading="lazy" src="images/banner-client-logo-2.png" width="" height="" alt="valuecoders">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <section class="left-circlist-right-img-section padding-t-120 padding-b-120">
+    <section class="three-column-icon-section padding-t-120 padding-b-120">
       <div class="container">
-        <div class="head-txt text-center">
-          <h2>Why Hire Developers From ValueCoders?</h2>
-          <p>If you aspire to accelerate business growth using cutting-edge software, our Indian software programmers and developers can transform your vision into reality. Hire a software programmer from us and get tailored solutions that grow your business by improving overall ROI, enhancing productivity, and slashing operational costs.</p>
+        <div class="dis-flex top-content">
+          <div class="flex-2">
+            <h2>Expertise of Our Angular Developers</h2>
+          </div>
+          <div class="flex-2">
+            <p>Our Angular offshore programmers have successfully delivered diverse Angular development projects over the years. Our services are centered around leveraging optimal latest web frameworks to develop Angular-based robust solutions for our vast clientele.</p>
+          </div>
         </div>
-        <div class="dis-flex  col-box-outer">
-          <div class="row-box dis-flex justify-sb items-center">
-            <div class="flex-2">
-              <h3>High quality/cost ratio</h3>
-              <ul>
-                <li><strong>Hire Silicon Valley caliber at half the cost</strong>
-                  Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.
-                </li>
-                <li><strong>100+ skills available</strong>
-                  Hire React, Node, Python, Angular, Swift, React Native, Android, Java, Rails, Golang, DevOps, ML, Data Engineers, and more.
-                </li>
-                <li><strong>Zero risk (2 weeks risk</strong>
-                  If you decide to stop within two weeks, you pay nothing.
-                </li>
-              </ul>
-            </div>
-            <div class="flex-2">
-              <div class="img-box">
-                <picture>
-                  <source type="image/webp" srcset="<?=HOST_URL?>images/why-hire-img-1.webp">
-                  <source type="image/png" srcset="<?=HOST_URL?>images/why-hire-img-1.png">
-                  <img loading="lazy" src="<?=HOST_URL?>images/why-hire-img-1.png" alt="Valuecoders" width="689" height="477"> 
-                </picture>
-              </div>
+        <div class="dis-flex col-box-outer margin-t-50">
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
             </div>
           </div>
-          <div class="row-box  dis-flex justify-sb items-center">
-            <div class="flex-2">
-              <h3>Rigorous Vetting</h3>
-              <ul>
-                <li><strong>5+ hours of tests and interviews</strong>
-                  More rigorous than Silicon Valley job interviews. We test for 100+ skills, data structures, algorithms, systems design, software specializations & frameworks.
-                </li>
-                <li><strong>Seniority tests</strong>
-                  We select excellent communicators who can proactively take ownership of business and product objectives without micromanagement.
-                </li>
-              </ul>
-            </div>
-            <div class="flex-2">
-              <div class="img-box">
-                <picture>
-                  <source type="image/webp" srcset="<?=HOST_URL?>images/why-hire-img-2.webp">
-                  <source type="image/png" srcset="<?=HOST_URL?>images/why-hire-img-2.png">
-                  <img loading="lazy" src="<?=HOST_URL?>images/why-hire-img-2.png" alt="Valuecoders" width="649" height="462"> 
-                </picture>
-              </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
             </div>
           </div>
-          <div class="row-box dis-flex justify-sb items-center">
-            <div class="flex-2">
-              <h3>Effective collaboration</h3>
-              <ul>
-                <li><strong>Daily updates</strong>
-                  Turing’s Workspace gives you even more visibility into your remote developer’s work with automatic time tracking & virtual daily stand-ups.
-                </li>
-                <li><strong>Easy to manage</strong>
-                  High visibility makes Turing developers easy to manage and ensures that they constantly work on what’s most valuable to you.
-                </li>
-                <li><strong>Match your timezone</strong>
-                  Our developers match your time zone and overlap a minimum of 4 hours with your workday.
-                </li>
-              </ul>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
             </div>
-            <div class="flex-2">
-              <div class="img-box">
-                <picture>
-                  <source type="image/webp" srcset="<?=HOST_URL?>images/why-hire-img-3.webp">
-                  <source type="image/png" srcset="<?=HOST_URL?>images/why-hire-img-3.png">
-                  <img loading="lazy" src="<?=HOST_URL?>images/why-hire-img-3.png" alt="Valuecoders" width="804" height="616"> 
-                </picture>
-              </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="technology-tab-section bg-light padding-t-120 padding-b-120">
+    <section class="table-list-section bg-light padding-t-150 padding-b-150">
+      <div class="container">
+        <div class="dis-flex top-content">
+          <div class="flex-2">
+            <h2>Comparative Analysis</h2>
+          </div>
+          <div class="flex-2">
+            <p>ValueCoders stands out as the top choice for clients when weighed against in-house developers, freelance experts, and freelancing platforms, and here's why:</p>
+          </div>
+        </div>
+        <div class="dis-flex col-box-outer margin-t-100">
+          <div class="flex-4 table-list">
+            <ul>
+              <li class="title clr-white">Parameters</li>
+              <li>Time to get right developers</li>
+              <li>Time to start a project</li>
+              <li>Recurring cost of training &amp; benefits</li>
+              <li>Time to scale size of the team</li>
+              <li>Pricing (weekly average)</li>
+              <li>Project failure risk</li>
+              <li>Developers backed by a delivery team</li>
+            </ul>
+          </div>
+          <div class="flex-4 table-list">
+            <ul>
+              <li class="title">ValueCoders</li>
+              <li>1 day - 2 weeks</li>
+              <li>1 day - 2 weeks</li>
+              <li>0</li>
+              <li>1 day - 2 weeks</li>
+              <li>1.5X</li>
+              <li>Extremely low (we have 98% success ratio)</li>
+              <li>Yes</li>
+            </ul>
+          </div>
+          <div class="flex-4 table-list">
+            <ul>
+              <li class="title clr-white">In-house Developers</li>
+              <li>4 - 12 weeks</li>
+              <li>2 - 10 weeks</li>
+              <li>$10,000 -$30,000</li>
+              <li>4 - 16 weeks</li>
+              <li>2X</li>
+              <li>Low</li>
+              <li>Some</li>
+            </ul>
+          </div>
+          <div class="flex-4 table-list">
+            <ul>
+              <li class="title clr-white">Freelance<span class="sub-title">(Upwork, Toptal etc.)</span></li>
+              <li>4 - 8 weeks</li>
+              <li>2-4 weeks</li>
+              <li>0</li>
+              <li>1 - 12 weeks</li>
+              <li>High</li>
+              <li>Very High</li>
+              <li>No</li>
+            </ul>
+          </div>
+        </div>
+        <div class="view-more margin-t-50 text-center"><a href="#">View More</a></div>
+      </div>
+    </section>
+    <section class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
       <div class="container">
         <div class="head-txt text-center">
-          <h2>Our Diverse Technology Competency</h2>
-          <p>ValueCoders is dedicated to engineering optimal technology solutions that augment overall gains for global clients. We have a strong team of Indian software programmers experienced in diverse technology sets ranging from mobility, web development, Blockchain, AI, and more.</p>
+          <h2>Try Before, Commit Later</h2>
+          <p>Start your 7-day trial today and discover the perfect fit for your project needs.</p>
         </div>
-        <div id="tabs3" class="tab-contents no-js margin-t-50">
-          <div class="tab-nav">
-            <a href="#" class="tab-link is-active">Technology</a>
-            <a href="#" class="tab-link">By Role</a>
-          </div>
-          <div class="tab-content is-active">
-            <!-- tabl 1 -->
-            <div class="tech-stacks">
-              <div class="dis-flex col-box-outer margin-t-50">
-                <div class="flex-3 col-box">
-                  <div class="inner-box">
-                    <h3>Backend</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Android</a>
-                      </li>
-                      <li>
-                        <a href="#">iOS</a>
-                      </li>
-                      <li>
-                        <a href="#">React Native</a>
-                      </li>
-                      <li>
-                        <a href="#">Swift</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="flex-3 col-box">
-                  <div class="inner-box">
-                    <h3>JS &amp; Frontend</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Angular</a>
-                      </li>
-                      <li>
-                        <a href="#">React Native</a>
-                      </li>
-                      <li>
-                        <a href="#">React</a>
-                      </li>
-                      <li>
-                        <a href="#">MEAN</a>
-                      </li>
-                      <li>
-                        <a href="#">Power BI</a>
-                      </li>
-                      <li>
-                        <a href="#">HTML</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="flex-3 col-box">
-                  <div class="inner-box">
-                    <h3>Backend</h3>
-                    <ul>
-                      <li>
-                        <a href="#">PHP</a>
-                      </li>
-                      <li>
-                        <a href="#">Python</a>
-                      </li>
-                      <li>
-                        <a href="#">Laravel</a>
-                      </li>
-                      <li>
-                        <a href="#">MEAN Stack</a>
-                      </li>
-                      <li>
-                        <a href="#">Django</a>
-                      </li>
-                      <li>
-                        <a href="#">Firebase</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="flex-3 col-box">
-                  <div class="inner-box">
-                    <h3>Backend</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Android</a>
-                      </li>
-                      <li>
-                        <a href="#">iOS</a>
-                      </li>
-                      <li>
-                        <a href="#">React Native</a>
-                      </li>
-                      <li>
-                        <a href="#">Swift</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="flex-3 col-box">
-                  <div class="inner-box">
-                    <h3>JS &amp; Frontend</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Angular</a>
-                      </li>
-                      <li>
-                        <a href="#">React Native</a>
-                      </li>
-                      <li>
-                        <a href="#">React</a>
-                      </li>
-                      <li>
-                        <a href="#">MEAN</a>
-                      </li>
-                      <li>
-                        <a href="#">Power BI</a>
-                      </li>
-                      <li>
-                        <a href="#">HTML</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="flex-3 col-box">
-                  <div class="inner-box">
-                    <h3>Backend</h3>
-                    <ul>
-                      <li>
-                        <a href="#">PHP</a>
-                      </li>
-                      <li>
-                        <a href="#">Python</a>
-                      </li>
-                      <li>
-                        <a href="#">Laravel</a>
-                      </li>
-                      <li>
-                        <a href="#">MEAN Stack</a>
-                      </li>
-                      <li>
-                        <a href="#">Django</a>
-                      </li>
-                      <li>
-                        <a href="#">Firebase</a>
-                      </li>
-                    </ul>
-                  </div>
+        <div class="button-section margin-t-50 ustify-center">
+          <div class="btn-div">
+            <div class="btn-sec">
+              <a href="https://calendly.com/valuecoders/7-day-trial" class="btn rounded">
+              <span class="text-white"> Start 7-day Free Trial</span>
+              </a>
+            </div>
+            <div class="info-wrap">
+              Learn How Trial Works
+              <div class="info">
+                <div class="info-content">
+                  <h4>What happens after you contact us? </h4>
+                  <p>Our solution experts will answer your questions in a secure online meeting.</p>
+                  <a class="kmore" href="https://www.valuecoders.com/v2wp/hire-developers/7-day-trial">Know More</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-content">
-            <div class="three-column-icon-section">
-              <div class="dis-flex col-box-outer margin-t-50">
-                <div class="flex-3 box-3 has-anchor">
-                  <div class="box bg-blue-opacity-light">
-                    <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
-                    <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
-                    <a class="box-anchor" href="/application-maintenance">Support &amp; Maintenance</a>
-                  </div>
-                </div>
-                <div class="flex-3 box-3 has-anchor">
-                  <div class="box bg-blue-opacity-light">
-                    <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
-                    <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
-                    <a class="box-anchor" href="/application-maintenance">Support &amp; Maintenance</a>
-                  </div>
-                </div>
-                <div class="flex-3 box-3 has-anchor">
-                  <div class="box bg-blue-opacity-light">
-                    <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
-                    <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
-                    <a class="box-anchor" href="/application-maintenance">Support &amp; Maintenance</a>
-                  </div>
-                </div>
-              </div>
+          <span class="devide">OR</span>
+          <div class="free-con">
+            <a href="https://calendly.com/valuecoders/dedicated-teams" target="_self">Request Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="three-column-icon-section padding-t-120 padding-b-120">
+      <div class="container">
+        <div class="dis-flex top-content">
+          <div class="flex-2">
+            <h2>Why Angular For Building Web Apps?</h2>
+          </div>
+          <div class="flex-2">
+            <p>Angular is an open-source, performance-centric, scalable, secure, and clean web development platform that enables Angular developers to build dynamic end products.</p>
+          </div>
+        </div>
+        <div class="dis-flex col-box-outer margin-t-50">
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
             </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+          <div class="flex-3 box-3 has-vlink">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+              <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+              <span class="box-link"><a href="/application-maintenance">Support &amp; Maintenance</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="accordion-section bg-blue-linear  padding-t-120">
+      <div class="dis-flex accordian-row">
+        <div class="col-left">
+          <div class="head-txt">
+            <h2>Leverage The Technical Expertise Of Our Angular Developers</h2>
+            <p>With diverse technical expertise, our certified Angular developers craft solutions that fit your unique business needs.
+            </p>
+          </div>
+          <picture class="soft-img">
+            <source type="image/webp" srcset="images/hire-detail-image.png">
+            <source type="image/png" srcset="images/hire-detail-image.png">
+            <img loading="lazy" src="images/hire-detail-image.png" width="668" height="978" alt="valuecoders">
+          </picture>
+        </div>
+        <div class="col-right padding-b-120 content-col">
+          <div class="inner-box">
+            <h3>Version Control</h3>
+            <ul>
+              <li>
+                <a href="#">Fuse</a>
+              </li>
+              <li>
+                <a href="#">Wordpress+ Angular</a>
+              </li>
+              <li>
+                <a href="#">CleanUI</a>
+              </li>
+              <li>
+                <a href="#">CleanUI</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-box">
+            <h3>Libraries </h3>
+            <ul>
+              <li>
+                <a href="#">Angular7/8 Custom Create Libraries</a>
+              </li>
+              <li>
+                <a href="#">RXJS</a>
+              </li>
+              <li>
+                <a href="#">FullCalendar</a>
+              </li>
+              <li>
+                <a href="#">@Types/ Fabric (For Canvas)</a>
+              </li>
+              <li>
+                <a href="#">For Cropping -@Types/Cropperjs</a>
+              </li>
+              <li>
+                <a href="#">@Types/ Googlemaps</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-box">
+            <h3>Libraries </h3>
+            <ul>
+              <li>
+                <a href="#">APIs</a>
+              </li>
+              <li>
+                <a href="#">Facebook API</a>
+              </li>
+              <li>
+                <a href="#">Instagram API</a>
+              </li>
+              <li>
+                <a href="#">Youtube API</a>
+              </li>
+              <li>
+                <a href="#">Apple Music API</a>
+              </li>
+              <li>
+                <a href="#">Google API</a>
+              </li>
+              <li>
+                <a href="#">Jira REST API</a>
+              </li>
+              <li>
+                <a href="#">GitHUB API</a>
+              </li>
+              <li>
+                <a href="#">SoundCloud API</a>
+              </li>
+              <li>
+                <a href="#">Spotify API</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-box">
+            <h3>Platforms </h3>
+            <ul>
+              <li>
+                <a href="#">Firebase</a>
+              </li>
+              <li>
+                <a href="#">Docker</a>
+              </li>
+              <li>
+                <a href="#">Dapr</a>
+              </li>
+              <li>
+                <a href="#">Heroku</a>
+              </li>
+              <li>
+                <a href="#">Azure</a>
+              </li>
+              <li>
+                <a href="#">AWS Lambda</a>
+              </li>
+              <li>
+                <a href="#">Amazon Web Services (AWS)</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-box">
+            <h3>Framework </h3>
+            <ul>
+              <li>
+                <a href="#">Angular JS</a>
+              </li>
+              <li>
+                <a href="#">Angular2+</a>
+              </li>
+              <li>
+                <a href="#">NGRX (Angular+ Redux)</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-box">
+            <h3>Backend </h3>
+            <ul>
+              <li>
+                <a href="#">Ruby On Rails</a>
+              </li>
+              <li>
+                <a href="#">Node</a>
+              </li>
+              <li>
+                <a href="#">Laravel</a>
+              </li>
+              <li>
+                <a href="#">Java</a>
+              </li>
+              <li>
+                <a href="#">Golang</a>
+              </li>
+              <li>
+                <a href="#">.Net</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -467,12 +465,31 @@
     <section class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
       <div class="container">
         <div class="head-txt text-center">
-          <h2>Hire Top 1% Software Developers</h2>
-          <p>95%+ of our clients give us either a Raving Fan or Most Satisfied Rating. Hire your offshore team with us today!
-          </p>
+          <h2>Try Before, Commit Later</h2>
+          <p>Start your 7-day trial today and discover the perfect fit for your project needs.</p>
         </div>
-        <div class="text-center margin-t-50">
-          <a class="green-btn" href="https://www.valuecoders.com/v2wp/contact">Start Your 2 Weeks Free Trial Now <i class="arrow-icon"></i></a>
+        <div class="button-section margin-t-50 ustify-center">
+          <div class="btn-div">
+            <div class="btn-sec">
+              <a href="https://calendly.com/valuecoders/7-day-trial" class="btn rounded">
+              <span class="text-white"> Start 7-day Free Trial</span>
+              </a>
+            </div>
+            <div class="info-wrap">
+              Learn How Trial Works
+              <div class="info">
+                <div class="info-content">
+                  <h4>What happens after you contact us? </h4>
+                  <p>Our solution experts will answer your questions in a secure online meeting.</p>
+                  <a class="kmore" href="https://www.valuecoders.com/v2wp/hire-developers/7-day-trial">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="devide">OR</span>
+          <div class="free-con">
+            <a href="https://calendly.com/valuecoders/dedicated-teams" target="_self">Request Free Consultation</a>
+          </div>
         </div>
       </div>
     </section>
@@ -480,8 +497,8 @@
       <div class="dis-flex accordian-row">
         <div class="col-left">
           <div class="head-txt">
-            <h2>Why Hire Software Developers <br>In India?</h2>
-            <p>India is a global hub of IT talent, so hiring talented developers from India has many benefits
+            <h2>How We Ensure Code Quality</h2>
+            <p>Code quality is our cornerstone: we employ rigorous testing, thorough reviews, and best practices to ensure impeccable software that stands the test of time.
             </p>
           </div>
           <picture class="soft-img">
@@ -494,14 +511,22 @@
           <div class="accordionItem active">
             <h3 class="accordion-toggle">A Pool of Expert Developers</h3>
             <div class="accordion-content">
-              <p>When you decide to hire software developers in India, you actually get access to a large pool of certified & talented, software programmers
-              </p>
+              <ul>
+                <li>Following Coding Guidelines and Leveraging Style Checking Tools</li>
+                <li>Prioritizing Data Security Practices</li>
+                <li>Employing Descriptive Variable Names and In-Code Comments</li>
+                <li>Comprehensive Code Documentation</li>
+                <li>Breaking Code into Concise, Focused Units</li>
+                <li>Harnessing Frameworks' APIs, Third-Party Libraries, and Version Control Tools</li>
+                <li>Ensuring Code Portability Across Platforms</li>
+                <li>Achieving Reasonable Standardization and Automation</li>
+              </ul>
             </div>
           </div>
           <div class="accordionItem">
-            <h3 class="accordion-toggle">English Speaking Programmers</h3>
+            <h3 class="accordion-toggle">Upholding Coding Best Practices</h3>
             <div class="accordion-content">
-              <p>We offer end-to-end software outsourcing services from initial consulting to development & deployment. Our expertise helps businesses launch new products faster, modernize existing....
+              <p>When you decide to hire software developers in India, you actually get access to a large pool of certified & talented, software programmers
               </p>
             </div>
           </div>
@@ -537,26 +562,515 @@
       </div>
       </div>
     </section>
-    <section class="global-companies hire-global padding-t-120 padding-b-120">
+    <section class="three-column-icon-section padding-t-120 padding-b-120">
       <div class="container">
-        <div class="dis-flex justify-sb items-center">
-          <div class="flex-2 content-box">
-            <h2>Top Companies World Wide Trust ValueCoders For Hiring Software Developers</h2>
-            <p>We have helped companies of all sizes and industries set up offshore software development teams. From startups to software companies and digital transformation agencies – you name it! Here, you can get a glimpse of some of our satisfied clients. We provide them with:</p>
-            <ul>
-              <li>Client-centric approach</li>
-              <li>Cutting edge infrastructure</li>
-              <li>Best-in-class project management</li>
-              <li>Time-zone compatibility</li>
-              <li>Global quality standards</li>
-            </ul>
+        <div class="dis-flex top-content">
+          <div class="flex-2">
+            <h2>Why Angular For Building Web Apps?</h2>
           </div>
-          <div class="flex-2 image-box">
-            <picture>
-              <source type="image/webp" srcset="images/global-companies.png">
-              <source type="image/png" srcset="images/global-companies.png">
-              <img loading="lazy" src="images/global-companies.png" width="647" height="411" alt="valuecoders">
-            </picture>
+          <div class="flex-2">
+            <p>Angular is an open-source, performance-centric, scalable, secure, and clean web development platform that enables Angular developers to build dynamic end products.</p>
+          </div>
+        </div>
+        <div class="dis-flex col-box-outer margin-t-50">
+          <div class="flex-3 box-3">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Web apps</a></h3>
+              <ul>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-3 box-3">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">Of various complexity</a></h3>
+              <ul>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-3 box-3">
+            <div class="box bg-blue-opacity-light">
+              <h3><a href="/application-maintenance">For all groups of end-users</a></h3>
+              <ul>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Single Page Applications (SPA)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client-img-section dark-client-section bg-blue-linear padding-t-120 padding-b-120">
+      <div class="container">
+      <div class="dis-flex justify-sb items-center">
+        <div class="flex-2 left-box">
+          <div class="head-txt">
+            <h5>WE ARE INDIA’S</h5>
+            <h2>Experience Excellence with ValueCoders</h2>
+            <p>Embrace the transformative power of technology with ValueCoders, where our expertise meets your vision. </p>
+            <p>From startups to big enterprises, development organizations to digital agencies, and SMEs to Governments, we cater to varied software requirements, delivering tailor-made solutions that drive innovation, efficiency, and growth.</p>
+          </div>
+          <ul>
+            <li>Ongoing internal L&amp;D programs </li>
+            <li>Experienced product development</li>
+            <li>Transparency &amp; accountability</li>
+            <li>Daily/weekly/monthly reporting</li>
+            <li>Ongoing internal L&amp;D programs</li>
+            <li>Experienced product development</li>
+          </ul>
+        </div>
+        <div class="flex-2 right-box">
+          <div class="client-section">
+            <div class="client-row">
+              <div class="client-stack award-animate-slide-to-left hover:pause">
+                <ul>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo.webp">
+                      <source type="image/png" srcset="images/comp-logo.png">
+                      <img loading="lazy" src="images/comp-logo.png" alt="Valuecoders" width="76" height="29">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo2.webp">
+                      <source type="image/png" srcset="images/comp-logo2.png">
+                      <img loading="lazy" src="images/comp-logo2.png" alt="Valuecoders" width="100" height="15">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo3.webp">
+                      <source type="image/png" srcset="images/comp-logo3.png">
+                      <img loading="lazy" src="images/comp-logo3.png" alt="Valuecoders" width="64" height="18">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo4.webp">
+                      <source type="image/png" srcset="images/comp-logo4.png">
+                      <img loading="lazy" src="images/comp-logo4.png" alt="Valuecoders" width="45" height="31">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo.webp">
+                      <source type="image/png" srcset="images/comp-logo.png">
+                      <img loading="lazy" src="images/comp-logo.png" alt="Valuecoders" width="76" height="29">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo2.webp">
+                      <source type="image/png" srcset="images/comp-logo2.png">
+                      <img loading="lazy" src="images/comp-logo2.png" alt="Valuecoders" width="100" height="15">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo3.webp">
+                      <source type="image/png" srcset="images/comp-logo3.png">
+                      <img loading="lazy" src="images/comp-logo3.png" alt="Valuecoders" width="64" height="18">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo4.webp">
+                      <source type="image/png" srcset="images/comp-logo4.png">
+                      <img loading="lazy" src="images/comp-logo4.png" alt="Valuecoders" width="45" height="31">
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="client-row">
+              <div class="client-stack award-animate-slide-to-right hover:pause">
+                <ul>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo5.webp">
+                      <source type="image/png" srcset="images/comp-logo5.png">
+                      <img loading="lazy" src="images/comp-logo5.png" alt="Valuecoders" width="61" height="26">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo6.webp">
+                      <source type="image/png" srcset="images/comp-logo6.png">
+                      <img loading="lazy" src="images/comp-logo6.png" alt="Valuecoders" width="87" height="44">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo7.webp">
+                      <source type="image/png" srcset="images/comp-logo7.png">
+                      <img loading="lazy" src="images/comp-logo7.png" alt="Valuecoders" width="56" height="23">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo8.webp">
+                      <source type="image/png" srcset="images/comp-logo8.png">
+                      <img loading="lazy" src="images/comp-logo8.png" alt="Valuecoders" width="93" height="50">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo5.webp">
+                      <source type="image/png" srcset="images/comp-logo5.png">
+                      <img loading="lazy" src="images/comp-logo5.png" alt="Valuecoders" width="61" height="26">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo6.webp">
+                      <source type="image/png" srcset="images/comp-logo6.png">
+                      <img loading="lazy" src="images/comp-logo6.png" alt="Valuecoders" width="87" height="44">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo7.webp">
+                      <source type="image/png" srcset="images/comp-logo7.png">
+                      <img loading="lazy" src="images/comp-logo7.png" alt="Valuecoders" width="56" height="23">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo8.webp">
+                      <source type="image/png" srcset="images/comp-logo8.png">
+                      <img loading="lazy" src="images/comp-logo8.png" alt="Valuecoders" width="93" height="50">
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="client-row">
+              <div class="client-stack award-animate-slide-to-left hover:pause">
+                <ul>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo9.webp">
+                      <source type="image/png" srcset="images/comp-logo.png">
+                      <img loading="lazy" src="images/comp-logo9.png" alt="Valuecoders" width="68" height="35">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo10.webp">
+                      <source type="image/png" srcset="images/comp-logo10.png">
+                      <img loading="lazy" src="images/comp-logo10.png" alt="Valuecoders" width="63" height="28">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo11.webp">
+                      <source type="image/png" srcset="images/comp-logo11.png">
+                      <img loading="lazy" src="images/comp-logo11.png" alt="Valuecoders" width="82" height="26">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo12.webp">
+                      <source type="image/png" srcset="images/comp-logo12.png">
+                      <img loading="lazy" src="images/comp-logo12.png" alt="Valuecoders" width="63" height="24">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo9.webp">
+                      <source type="image/png" srcset="images/comp-logo.png">
+                      <img loading="lazy" src="images/comp-logo9.png" alt="Valuecoders" width="68" height="35">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo10.webp">
+                      <source type="image/png" srcset="images/comp-logo10.png">
+                      <img loading="lazy" src="images/comp-logo10.png" alt="Valuecoders" width="63" height="28">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo11.webp">
+                      <source type="image/png" srcset="images/comp-logo11.png">
+                      <img loading="lazy" src="images/comp-logo11.png" alt="Valuecoders" width="82" height="26">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source type="image/webp" srcset="images/comp-logo12.webp">
+                      <source type="image/png" srcset="images/comp-logo12.png">
+                      <img loading="lazy" src="images/comp-logo12.png" alt="Valuecoders" width="63" height="24">
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="award-sc margin-t-50">
+              <h5>Awards & Certifications -</h5>
+              <div class="award-row">
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-01.svg" alt="Valuecoders" width="62" height="38">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-02.svg" alt="Valuecoders" width="50" height="40">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-03.svg" alt="Valuecoders" width="96" height="35">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+                <div class="award-col">
+                  <span class="aw-icon">
+                    <picture>
+                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
+                    </picture>
+                  </span>
+                  <p>From startups to big enterprises, development </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="counter-column-section bg-blue-linear padding-t-70 padding-b-70">
+      <div class="container">
+        <div class="dis-flex justify-sb">
+          <div class="left-sec">
+            <div class="head-txt">
+              <h2>Got a Project in Mind?</h2>
+              <p>Drop us a line and we'll get back to you immediately to schedule a call and discuss your needs personally.
+              </p>
+            </div>
+            <div class="btn-sec margin-t-50">
+              <a class="btn rounded"><span class="text-white">Get Started</span></a>
+            </div>
+          </div>
+          <div class="right-sec">
+            <div class="cir-sec">
+              <div class="cir-box">
+                <div class="text-wrap">
+                  <span class="display">4,200+</span>
+                  <span class="paragraph">Projects Launched</span>
+                  <svg viewBox="0 0 100 100" class="animate-spin-slow wheel-sc">
+                    <path id=":R8pm9lm:" fill="none" d="M0,50a50,50 0 1,1 100,0a50,50 0 1,1 -100,0"></path>
+                    <text class="origin-center">
+                      <textPath class="fill-text" textLength="292" href="#:R8pm9lm:">projects executed successfully</textPath>
+                    </text>
+                  </svg>
+                </div>
+              </div>
+              <div class="cir-box">
+                <div class="text-wrap">
+                  <span class="display">19+</span>
+                  <span class="paragraph">Years Experience</span>
+                  <svg viewBox="0 0 100 100" class="animate-spin-slow wheel-sc">
+                    <path id=":R8pm9lm:" fill="none" d="M0,50a50,50 0 1,1 100,0a50,50 0 1,1 -100,0"></path>
+                    <text class="origin-center">
+                      <textPath class="fill-text" textLength="292" href="#:R8pm9lm:">Years Of Experience in this feild</textPath>
+                    </text>
+                  </svg>
+                </div>
+              </div>
+              <div class="cir-box">
+                <div class="text-wrap">
+                  <span class="display">25,000+</span>
+                  <span class="paragraph">Satisfied <br>Customers</span>
+                  <svg viewBox="0 0 100 100" class="animate-spin-slow wheel-sc">
+                    <path id=":R8pm9lm:" fill="none" d="M0,50a50,50 0 1,1 100,0a50,50 0 1,1 -100,0"></path>
+                    <text class="origin-center">
+                      <textPath class="fill-text" textLength="292" href="#:R8pm9lm:">Total No. of Satisfied Customers</textPath>
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sample-profile-no-img-section padding-t-120 padding-b-120">
+      <div class="container">
+        <div class="head-txt text-center">
+          <h2>Collaborate With The Top 1% PHP Developers In India</h2>
+          <p>Hire a team of PHP developers from ValueCoders and collaborate to build world-class web applications.
+          </p>
+        </div>
+        <div class="dis-flex justify-center sample-block-outer">
+          <div class="flex-3">
+            <div class="sample-block bg-voilet">
+              <h3>Junior PHP Developer</h3>
+              <h4 class="clr-white">$1500 - $2500</h4>
+              <h5 class="clr-white">1-3 Years</h5>
+            </div>
+          </div>
+          <div class="flex-3">
+            <div class="sample-block bg-voilet">
+              <h3>Junior PHP Developer</h3>
+              <h4 class="clr-white">$1500 - $2500</h4>
+              <h5 class="clr-white">1-3 Years</h5>
+            </div>
+          </div>
+          <div class="flex-3">
+            <div class="sample-block bg-voilet">
+              <h3>Junior PHP Developer</h3>
+              <h4 class="clr-white">$1500 - $2500</h4>
+              <h5 class="clr-white">1-3 Years</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="process-work padding-t-150 padding-b-150">
+      <div class="container">
+        <div class="dis-flex accordian-row justify-sb">
+          <div class="flex-2 col-left">
+            <div class="head-txt text-center">
+              <h2>How We Hire Developers?</h2>
+              <p>With a five-step hiring process in place, we are committed to onboarding<br> exceptionally productive engineers.</p>
+            </div>
+            <div class="image-wrap">
+              <picture class="soft-img">
+                <img loading="lazy" src="images/hire-pro-image.svg"  width="621" height="468" alt="valuecoders">
+              </picture>
+            </div>
+          </div>
+          <div class="flex-2 col-right">
+            <div class="head-txt text-center">
+              <h2>Hire Developers from ValueCoders?</h2>
+              <p>Take a look at the simple and straightforward process to hire software developers from ValueCoders.</p>
+            </div>
+            <div class="process-step">
+              <div class="step-sec dis-flex">
+                <div class="step-wrap">
+                  <div class="step-icon">
+                    <picture>
+                      <source type="image/webp" srcset="images/hire-pro01.png">
+                      <source type="image/png" srcset="images/hire-pro01.png">
+                      <img loading="lazy" src="images/hire-pro01.png" alt="Valuecoders" width="89" height="100">
+                    </picture>
+                  </div>
+                  <div class="step-desc">
+                    <span class="step-no">STEP 1</span>
+                    <h4>Inquiry</h4>
+                    <p>We assess project alignment for potential collaboration.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-sec dis-flex">
+                <div class="step-wrap">
+                  <div class="step-icon">
+                    <picture>
+                      <source type="image/webp" srcset="images/hire-pro02.png">
+                      <source type="image/png" srcset="images/hire-pro02.png">
+                      <img loading="lazy" src="images/hire-pro02.png" alt="Valuecoders" width="89" height="100">
+                    </picture>
+                  </div>
+                  <div class="step-desc">
+                    <span class="step-no">STEP 2</span>
+                    <h4>Developer Selection</h4>
+                    <p>We select developers from our tech pool as per project needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-sec dis-flex">
+                <div class="step-wrap">
+                  <div class="step-icon">
+                    <picture>
+                      <source type="image/webp" srcset="images/hire-pro03.png">
+                      <source type="image/png" srcset="images/hire-pro03.png">
+                      <img loading="lazy" src="images/hire-pro03.png" alt="Valuecoders" width="89" height="100">
+                    </picture>
+                  </div>
+                  <div class="step-desc">
+                    <span class="step-no">STEP 3</span>
+                    <h4>Integration</h4>
+                    <p>Upon ETA approval, developers start with direct task assignment.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-sec dis-flex">
+                <div class="step-wrap">
+                  <div class="step-icon">
+                    <picture>
+                      <source type="image/webp" srcset="images/hire-pro04.png">
+                      <source type="image/png" srcset="images/hire-pro04.png">
+                      <img loading="lazy" src="images/hire-pro04.png" alt="Valuecoders" width="89" height="100">
+                    </picture>
+                  </div>
+                  <div class="step-desc">
+                    <span class="step-no">STEP 4</span>
+                    <h4>Scaling</h4>
+                    <p>Modify team size as needed, aided by an account manager.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -564,44 +1078,30 @@
     <section class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
       <div class="container">
         <div class="head-txt text-center">
-          <h2>Access top software developers to achieve new milestones</h2>
-          <p>Get access to an exclusive pool of the most talented software developers to develop a variety of applications
-          </p>
+          <h2>Try Before, Commit Later</h2>
+          <p>Start your 7-day trial today and discover the perfect fit for your project needs.</p>
         </div>
-        <div class="text-center margin-t-50">
-          <a class="green-btn" href="https://www.valuecoders.com/v2wp/contact">Hire Software Experts <i class="arrow-icon"></i></a>
-        </div>
-      </div>
-    </section>
-    <section class="four-step-with-icon-section bg-light padding-t-120 padding-b-120">
-      <div class="container">
-        <div class="head-txt text-center">
-          <h2>How does our 2-week trial work?</h2>
-          <p>We offer a 2 week no-obligation trial to try the engineer(s) and ensure mutual fitment before adding
-            to your team. If you like the services, you can pay for the time and continue on! Simple and
-            transparent, isn't it?
-          </p>
-        </div>
-        <div class="dis-flex col-box-outer margin-t-100 hiring-step-sprite">
-          <div class="flex-4 icon-box">
-            <i class="icon icon1"></i>
-            <h3>Inquiry</h3>
-            <p>We get on a call to understand your requirements and evaluate mutual fitment.</p>
+        <div class="button-section margin-t-50 ustify-center">
+          <div class="btn-div">
+            <div class="btn-sec">
+              <a href="https://calendly.com/valuecoders/7-day-trial" class="btn rounded">
+              <span class="text-white"> Start 7-day Free Trial</span>
+              </a>
+            </div>
+            <div class="info-wrap">
+              Learn How Trial Works
+              <div class="info">
+                <div class="info-content">
+                  <h4>What happens after you contact us? </h4>
+                  <p>Our solution experts will answer your questions in a secure online meeting.</p>
+                  <a class="kmore" href="https://www.valuecoders.com/v2wp/hire-developers/7-day-trial">Know More</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flex-4 icon-box">
-            <i class="icon icon2"></i>
-            <h3>Select Software Developers</h3>
-            <p>Hire best software developers from our in-house tech pool. Interview & shortlist candidates to quickly find the perfect fit for your team.</p>
-          </div>
-          <div class="flex-4 icon-box">
-            <i class="icon icon4"></i>
-            <h3>Team Integration</h3>
-            <p>Our developers are now a part of your team. Assign tasks and receive daily updates for seamless collaboration and accountability.</p>
-          </div>
-          <div class="flex-4 icon-box final-step">
-            <i class="icon icon5"></i>
-            <h3>Team Scaling</h3>
-            <p>We give you the flexibility to scale your team, be expanding or reducing team size.</p>
+          <span class="devide">OR</span>
+          <div class="free-con">
+            <a href="https://calendly.com/valuecoders/dedicated-teams" target="_self">Request Free Consultation</a>
           </div>
         </div>
       </div>
@@ -985,61 +1485,74 @@
     </section>
     <?php require_once '../include/footer.php'; ?>
     <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
     <script>
-      var accorItem = document.getElementsByClassName("accordionItem");
-      var faqHD   = document.getElementsByClassName("accordion-toggle");
-      for (i = 0; i < faqHD.length; i++) {
-          faqHD[i].addEventListener("click", dataAccordionItem, false);
-      }
-      function dataAccordionItem(){
-          if( this.parentNode.classList.contains('active') ){
-              this.parentNode.className = "accordionItem";
-              return;
-          }
-          //let itemClass = this.parentNode.className;
-          for (i = 0; i < accorItem.length; i++) {
-              accorItem[i].className = "accordionItem";
-          }    
-          if (this.parentNode.className == "accordionItem") {        
-              this.parentNode.className = "accordionItem active";
-          }
-      }
+      new Glide('.logoslide', {
+                             type: 'carousel',
+                             autoplay: 1,
+                             animationDuration: 10000,
+                             animationTimingFunc: 'linear',
+                             gap: 0,
+                             startAt: 0,
+                             perView: 1 }).
+                           mount();
+                           //# sourceURL=pen.js
       
-      
-            // client slider
-      window.addEventListener("load", function () {
-          if(document.querySelector(".client-testimonial-slider")){
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
-              var glider = Glider(this);
-          });
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
-          window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              draggable: false,
-              scrollLock: false,
-              dots: ".client-testimonial-slider .dots",
-              arrows: false,
-              dragDistance: false,
-              // arrows: {
-              //     prev: '.glider-prev',
-              //     next: '.glider-next'
-              //   },
-              responsive: [
-                  { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
-                  { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                  { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-              ],
-          });
-          }
-      });
+            var accorItem = document.getElementsByClassName("accordionItem");
+            var faqHD   = document.getElementsByClassName("accordion-toggle");
+            for (i = 0; i < faqHD.length; i++) {
+                faqHD[i].addEventListener("click", dataAccordionItem, false);
+            }
+            function dataAccordionItem(){
+                if( this.parentNode.classList.contains('active') ){
+                    this.parentNode.className = "accordionItem";
+                    return;
+                }
+                //let itemClass = this.parentNode.className;
+                for (i = 0; i < accorItem.length; i++) {
+                    accorItem[i].className = "accordionItem";
+                }    
+                if (this.parentNode.className == "accordionItem") {        
+                    this.parentNode.className = "accordionItem active";
+                }
+            }
             
             
-            
-            
-            
+                  // client slider
+            window.addEventListener("load", function () {
+                if(document.querySelector(".client-testimonial-slider")){
+                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
+                    var glider = Glider(this);
+                });
+                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
+                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
+                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
+                window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    draggable: false,
+                    scrollLock: false,
+                    dots: ".client-testimonial-slider .dots",
+                    arrows: false,
+                    dragDistance: false,
+                    // arrows: {
+                    //     prev: '.glider-prev',
+                    //     next: '.glider-next'
+                    //   },
+                    responsive: [
+                        { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
+                        { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                        { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                    ],
+                });
+                }
+            });
+                  
+                  
+                  
+                  
+                  
+                
           
     </script>
   </body>

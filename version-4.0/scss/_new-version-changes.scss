@@ -99,7 +99,6 @@
 .button-section {
   display: flex;
   align-items: baseline;
-  justify-content: center;
   position: relative;
   flex-wrap: wrap;
 
@@ -297,7 +296,13 @@
     
   } 
 
-  second-level-section{
+  .info-wrap {
+    .info{
+      .info-content{width: 188px; left: -75px;}
+    }
+  } 
+
+  .second-level-section{
     .form-right-box{
       .head{
         .info-wrap {
@@ -328,5 +333,7 @@
     }
   }
 } 
+
+
 
 }
