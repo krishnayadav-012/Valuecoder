@@ -65,7 +65,7 @@
           </div>
           <div class="flex-2 right-box">
             <picture>
-              <source type="image/webp" srcset="images/hire-bannerright.png">
+              <source type="image/webp" srcset="images/hire-bannerright.webp">
               <source type="image/png" srcset="images/hire-bannerright.png">
               <img loading="lazy" src="images/hire-bannerright.png" alt="Valuecoders" width="689" height="477"> 
             </picture>
@@ -77,7 +77,7 @@
       <div class="container">
         <div class="dis-flex">
           <div class="logo-heading">
-            <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
+            <h4><span>Trusted by startups and Fortune <strong>500</strong> whcompanies</span></h4>
           </div>
           <div class="logo-section">
             <div class="logoslide">
@@ -100,6 +100,85 @@
         </div>
       </div>
     </div>
+    <section class="left-circlist-right-img-section padding-t-120 padding-b-120 default-light">
+      <div class="container">
+        <div class="head-txt text-center">
+          <h2>Why Hire Developers From ValueCoders?</h2>
+          <p>If you aspire to accelerate business growth using cutting-edge software, our Indian software programmers and developers can transform your vision into reality. Hire a software programmer from us and get tailored solutions that grow your business by improving overall ROI, enhancing productivity, and slashing operational costs.</p>
+        </div>
+        <div class="dis-flex  col-box-outer">
+          <div class="row-box dis-flex justify-sb items-center">
+            <div class="flex-2">
+              <h3>High quality/cost ratio</h3>
+              <ul>
+                <li><strong>Hire Silicon Valley caliber at half the cost</strong>
+                  Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.
+                </li>
+                <li><strong>100+ skills available</strong>
+                  Hire React, Node, Python, Angular, Swift, React Native, Android, Java, Rails, Golang, DevOps, ML, Data Engineers, and more.
+                </li>
+              </ul>
+            </div>
+            <div class="flex-2">
+              <div class="img-box">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-1.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-1.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-1.png" alt="Valuecoders" width="689" height="477"> 
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="row-box  dis-flex justify-sb items-center">
+            <div class="flex-2">
+              <h3>Rigorous Vetting</h3>
+              <ul>
+                <li><strong>5+ hours of tests and interviews</strong>
+                  More rigorous than Silicon Valley job interviews. We test for 100+ skills, data structures, algorithms, systems design, software specializations &amp; frameworks.
+                </li>
+                <li><strong>Seniority tests</strong>
+                  We select excellent communicators who can proactively take ownership of business and product objectives without micromanagement.
+                </li>
+              </ul>
+            </div>
+            <div class="flex-2">
+              <div class="img-box">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-2.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-2.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-2.png" alt="Valuecoders" width="649" height="462"> 
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="row-box dis-flex justify-sb items-center">
+            <div class="flex-2">
+              <h3>Effective collaboration</h3>
+              <ul>
+                <li><strong>Daily updates</strong>
+                  Turing’s Workspace gives you even more visibility into your remote developer’s work with automatic time tracking &amp; virtual daily stand-ups.
+                </li>
+                <li><strong>Easy to manage</strong>
+                  High visibility makes Turing developers easy to manage and ensures that they constantly work on what’s most valuable to you.
+                </li>
+                <li><strong>Match your timezone</strong>
+                  Our developers match your time zone and overlap a minimum of 4 hours with your workday.
+                </li>
+              </ul>
+            </div>
+            <div class="flex-2">
+              <div class="img-box">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-3.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-3.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/why-hire-img-3.png" alt="Valuecoders" width="804" height="616"> 
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="three-column-icon-section padding-t-120 padding-b-120">
       <div class="container">
         <div class="dis-flex top-content">
@@ -217,6 +296,314 @@
           </div>
         </div>
         <div class="view-more margin-t-50 text-center"><a href="#">View More</a></div>
+      </div>
+    </section>
+    <section class="technology-tab-section bg-light padding-t-120 padding-b-120">
+      <div class="container">
+        <div class="head-txt text-center">
+          <h2>Our Diverse Technology Competency</h2>
+          <p>ValueCoders is dedicated to engineering optimal technology solutions that augment overall gains for global clients. We have a strong team of Indian software programmers experienced in diverse technology sets ranging from mobility, web development, Blockchain, AI, and more.</p>
+        </div>
+        <div id="tabs3" class="tab-contents no-js margin-t-100">
+          <div class="tab-nav">
+            <a href="#" class="tab-link is-active">Technology</a>
+            <a href="#" class="tab-link">By Role</a>
+          </div>
+          <div class="tab-content is-active">
+            <!-- tabl 1 -->
+            <div class="tech-stacks">
+              <div class="dis-flex col-box-outer margin-t-50">
+                <div class="flex-3 col-box">
+                  <div class="inner-box">
+                    <h3>Backend</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Android</a>
+                      </li>
+                      <li>
+                        <a href="#">iOS</a>
+                      </li>
+                      <li>
+                        <a href="#">React Native</a>
+                      </li>
+                      <li>
+                        <a href="#">Swift</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex-3 col-box">
+                  <div class="inner-box">
+                    <h3>JS &amp; Frontend</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Angular</a>
+                      </li>
+                      <li>
+                        <a href="#">React Native</a>
+                      </li>
+                      <li>
+                        <a href="#">React</a>
+                      </li>
+                      <li>
+                        <a href="#">MEAN</a>
+                      </li>
+                      <li>
+                        <a href="#">Power BI</a>
+                      </li>
+                      <li>
+                        <a href="#">HTML</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex-3 col-box">
+                  <div class="inner-box">
+                    <h3>Backend</h3>
+                    <ul>
+                      <li>
+                        <a href="#">PHP</a>
+                      </li>
+                      <li>
+                        <a href="#">Python</a>
+                      </li>
+                      <li>
+                        <a href="#">Laravel</a>
+                      </li>
+                      <li>
+                        <a href="#">MEAN Stack</a>
+                      </li>
+                      <li>
+                        <a href="#">Django</a>
+                      </li>
+                      <li>
+                        <a href="#">Firebase</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex-3 col-box">
+                  <div class="inner-box">
+                    <h3>Backend</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Android</a>
+                      </li>
+                      <li>
+                        <a href="#">iOS</a>
+                      </li>
+                      <li>
+                        <a href="#">React Native</a>
+                      </li>
+                      <li>
+                        <a href="#">Swift</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex-3 col-box">
+                  <div class="inner-box">
+                    <h3>JS &amp; Frontend</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Angular</a>
+                      </li>
+                      <li>
+                        <a href="#">React Native</a>
+                      </li>
+                      <li>
+                        <a href="#">React</a>
+                      </li>
+                      <li>
+                        <a href="#">MEAN</a>
+                      </li>
+                      <li>
+                        <a href="#">Power BI</a>
+                      </li>
+                      <li>
+                        <a href="#">HTML</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex-3 col-box">
+                  <div class="inner-box">
+                    <h3>Backend</h3>
+                    <ul>
+                      <li>
+                        <a href="#">PHP</a>
+                      </li>
+                      <li>
+                        <a href="#">Python</a>
+                      </li>
+                      <li>
+                        <a href="#">Laravel</a>
+                      </li>
+                      <li>
+                        <a href="#">MEAN Stack</a>
+                      </li>
+                      <li>
+                        <a href="#">Django</a>
+                      </li>
+                      <li>
+                        <a href="#">Firebase</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="three-column-icon-section">
+              <div class="dis-flex col-box-outer margin-t-50">
+                <div class="flex-3 box-3 has-anchor">
+                  <div class="box bg-blue-opacity-light">
+                    <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+                    <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+                    <a class="box-anchor" href="/application-maintenance">Support &amp; Maintenance</a>
+                  </div>
+                </div>
+                <div class="flex-3 box-3 has-anchor">
+                  <div class="box bg-blue-opacity-light">
+                    <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+                    <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+                    <a class="box-anchor" href="/application-maintenance">Support &amp; Maintenance</a>
+                  </div>
+                </div>
+                <div class="flex-3 box-3 has-anchor">
+                  <div class="box bg-blue-opacity-light">
+                    <h3><a href="/application-maintenance">Support &amp; Maintenance</a></h3>
+                    <p>We offer Django support and maintenance services to serve your needs round the clock. Our Django experts offer you prompt support and resolve any issues you may face with your web application. </p>
+                    <a class="box-anchor" href="/application-maintenance">Support &amp; Maintenance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="accordion-section how-process  padding-t-120">
+      <div class="dis-flex accordian-row">
+        <div class="col-left">
+          <div class="head-txt">
+            <h2>How Does the Process Work?</h2>
+            <p>Take advantage of 7-day trial to assess the performance of our recommended professionals and determine if they align with your project requirements.</p>
+          </div>
+          <div class="image-wrap" style="height: 1053px;">
+            <picture class="soft-img">
+              <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/process-image.png">
+              <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/process-image.png">
+              <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/process-image.png" width="774" height="774" alt="valuecoders">
+            </picture>
+          </div>
+        </div>
+        <div class="col-right padding-b-120 content-col">
+          <div class="process-step">
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon01.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon01.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon01.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 1</span>
+                <h4>Initial Consultation</h4>
+                <ul>
+                  <li>Discuss your project requirements, scope, and objectives with our team.</li>
+                  <li>Understand the skills and expertise needed for your project.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/dev-img/step-icon06.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/dev-img/step-icon06.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/dev-img/step-icon06.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 2</span>
+                <h4>Paperwork and Standard Agreement</h4>
+                <ul>
+                  <li>Review and sign the necessary paperwork and agreements to proceed with the trial.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon02.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon02.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon02.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 3</span>
+                <h4>Selection &amp; Onboarding</h4>
+                <ul>
+                  <li>Based on the consultation, we'll recommend professionals that best fit your needs.</li>
+                  <li>Begin the 7-day trial to evaluate their performance firsthand.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon03.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon03.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon03.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 4</span>
+                <h4>Transparent Tracking with Workstatus™</h4>
+                <ul>
+                  <li>Once onboarded, track progress, hours, and tasks in real time.</li>
+                  <li>Ensure every hour is productive and aligns with your project goals.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon04.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon04.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon04.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 5</span>
+                <h4>Feedback &amp; Iteration</h4>
+                <ul>
+                  <li>Regular check-ins to discuss progress, challenges, and feedback.</li>
+                  <li>Continuous improvement based on your feedback and project evolution.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-sec dis-flex">
+              <div class="step-icon">
+                <picture>
+                  <source type="image/webp" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon05.webp">
+                  <source type="image/png" srcset="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon05.png">
+                  <img loading="lazy" src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/v3.0/images/step-icon05.png" width="40" height="40" alt="valuecoders">
+                </picture>
+              </div>
+              <div class="step-desc">
+                <span class="step-no">STEP 6</span>
+                <h4>Seamless Transition</h4>
+                <ul>
+                  <li>If satisfied after the trial, seamlessly transition into a full-time engagement.</li>
+                  <li>If you choose not to continue, there's no obligation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
@@ -589,7 +976,7 @@
           </div>
           <div class="flex-3 box-3">
             <div class="box bg-blue-opacity-light">
-              <h3><a href="/application-maintenance">Of various complexity</a></h3>
+              <h3><a href="/application-maintenance">Of various whcomplexity</a></h3>
               <ul>
                 <li>Single Page Applications (SPA)</li>
                 <li>Single Page Applications (SPA)</li>
@@ -618,287 +1005,238 @@
         </div>
       </div>
     </section>
-    <section class="client-img-section dark-client-section bg-blue-linear padding-t-120 padding-b-120">
+    <section class="client-img-section dark-client-section padding-t-120 padding-b-120">
       <div class="container">
       <div class="dis-flex justify-sb items-center">
-        <div class="flex-2 left-box">
-          <div class="head-txt">
-            <h5>WE ARE INDIA’S</h5>
-            <h2>Experience Excellence with ValueCoders</h2>
-            <p>Embrace the transformative power of technology with ValueCoders, where our expertise meets your vision. </p>
-            <p>From startups to big enterprises, development organizations to digital agencies, and SMEs to Governments, we cater to varied software requirements, delivering tailor-made solutions that drive innovation, efficiency, and growth.</p>
-          </div>
-          <ul>
-            <li>Ongoing internal L&amp;D programs </li>
-            <li>Experienced product development</li>
-            <li>Transparency &amp; accountability</li>
-            <li>Daily/weekly/monthly reporting</li>
-            <li>Ongoing internal L&amp;D programs</li>
-            <li>Experienced product development</li>
-          </ul>
+      <div class="flex-2 left-box">
+        <div class="head-txt">
+          <h5>WE ARE INDIA’S</h5>
+          <h2>Experience Excellence with ValueCoders</h2>
+          <p>Embrace the transformative power of technology with ValueCoders, where our expertise meets your vision. </p>
+          <p>From startups to big enterprises, development organizations to digital agencies, and SMEs to Governments, we cater to varied software requirements, delivering tailor-made solutions that drive innovation, efficiency, and growth.</p>
         </div>
-        <div class="flex-2 right-box">
-          <div class="client-section">
-            <div class="client-row">
-              <div class="client-stack award-animate-slide-to-left hover:pause">
-                <ul>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo.webp">
-                      <source type="image/png" srcset="images/comp-logo.png">
-                      <img loading="lazy" src="images/comp-logo.png" alt="Valuecoders" width="76" height="29">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo2.webp">
-                      <source type="image/png" srcset="images/comp-logo2.png">
-                      <img loading="lazy" src="images/comp-logo2.png" alt="Valuecoders" width="100" height="15">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo3.webp">
-                      <source type="image/png" srcset="images/comp-logo3.png">
-                      <img loading="lazy" src="images/comp-logo3.png" alt="Valuecoders" width="64" height="18">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo4.webp">
-                      <source type="image/png" srcset="images/comp-logo4.png">
-                      <img loading="lazy" src="images/comp-logo4.png" alt="Valuecoders" width="45" height="31">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo.webp">
-                      <source type="image/png" srcset="images/comp-logo.png">
-                      <img loading="lazy" src="images/comp-logo.png" alt="Valuecoders" width="76" height="29">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo2.webp">
-                      <source type="image/png" srcset="images/comp-logo2.png">
-                      <img loading="lazy" src="images/comp-logo2.png" alt="Valuecoders" width="100" height="15">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo3.webp">
-                      <source type="image/png" srcset="images/comp-logo3.png">
-                      <img loading="lazy" src="images/comp-logo3.png" alt="Valuecoders" width="64" height="18">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo4.webp">
-                      <source type="image/png" srcset="images/comp-logo4.png">
-                      <img loading="lazy" src="images/comp-logo4.png" alt="Valuecoders" width="45" height="31">
-                    </picture>
-                  </li>
-                </ul>
-              </div>
+        <ul>
+          <li>Ongoing internal L&amp;D programs </li>
+          <li>Experienced product development</li>
+          <li>Transparency &amp; accountability</li>
+          <li>Daily/weekly/monthly reporting</li>
+          <li>Ongoing internal L&amp;D programs</li>
+          <li>Experienced product development</li>
+        </ul>
+      </div>
+      <div class="flex-2 right-box">
+        <div class="client-section">
+          <div class="client-row">
+            <div class="client-stack award-animate-slide-to-left hover:pause">
+              <ul>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo.png" alt="Valuecoders" width="76" height="29">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo2.png" alt="Valuecoders" width="113" height="17">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo3.png" alt="Valuecoders" width="85" height="28">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo4.png" alt="Valuecoders" width="68" height="46">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo5.png" alt="Valuecoders" width="91" height="40">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo6.png" alt="Valuecoders" width="98" height="49">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo7.png" alt="Valuecoders" width="80" height="33">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo8.png" alt="Valuecoders" width="110" height="50">
+                  </picture>
+                </li>
+              </ul>
             </div>
-            <div class="client-row">
-              <div class="client-stack award-animate-slide-to-right hover:pause">
-                <ul>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo5.webp">
-                      <source type="image/png" srcset="images/comp-logo5.png">
-                      <img loading="lazy" src="images/comp-logo5.png" alt="Valuecoders" width="61" height="26">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo6.webp">
-                      <source type="image/png" srcset="images/comp-logo6.png">
-                      <img loading="lazy" src="images/comp-logo6.png" alt="Valuecoders" width="87" height="44">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo7.webp">
-                      <source type="image/png" srcset="images/comp-logo7.png">
-                      <img loading="lazy" src="images/comp-logo7.png" alt="Valuecoders" width="56" height="23">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo8.webp">
-                      <source type="image/png" srcset="images/comp-logo8.png">
-                      <img loading="lazy" src="images/comp-logo8.png" alt="Valuecoders" width="93" height="50">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo5.webp">
-                      <source type="image/png" srcset="images/comp-logo5.png">
-                      <img loading="lazy" src="images/comp-logo5.png" alt="Valuecoders" width="61" height="26">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo6.webp">
-                      <source type="image/png" srcset="images/comp-logo6.png">
-                      <img loading="lazy" src="images/comp-logo6.png" alt="Valuecoders" width="87" height="44">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo7.webp">
-                      <source type="image/png" srcset="images/comp-logo7.png">
-                      <img loading="lazy" src="images/comp-logo7.png" alt="Valuecoders" width="56" height="23">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo8.webp">
-                      <source type="image/png" srcset="images/comp-logo8.png">
-                      <img loading="lazy" src="images/comp-logo8.png" alt="Valuecoders" width="93" height="50">
-                    </picture>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="client-row">
+            <div class="client-stack award-animate-slide-to-right hover:pause">
+              <ul>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo9.png" alt="Valuecoders" width="83" height="82">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo10.png" alt="Valuecoders" width="63" height="29">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo11.png" alt="Valuecoders" width="102" height="32">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo12.png" alt="Valuecoders" width="92" height="53">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo13.png" alt="Valuecoders" width="61" height="26">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo14.png" alt="Valuecoders" width="87" height="44">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo15.png" alt="Valuecoders" width="94" height="38">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo16.png" alt="Valuecoders" width="93" height="50">
+                  </picture>
+                </li>
+              </ul>
             </div>
-            <div class="client-row">
-              <div class="client-stack award-animate-slide-to-left hover:pause">
-                <ul>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo9.webp">
-                      <source type="image/png" srcset="images/comp-logo.png">
-                      <img loading="lazy" src="images/comp-logo9.png" alt="Valuecoders" width="68" height="35">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo10.webp">
-                      <source type="image/png" srcset="images/comp-logo10.png">
-                      <img loading="lazy" src="images/comp-logo10.png" alt="Valuecoders" width="63" height="28">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo11.webp">
-                      <source type="image/png" srcset="images/comp-logo11.png">
-                      <img loading="lazy" src="images/comp-logo11.png" alt="Valuecoders" width="82" height="26">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo12.webp">
-                      <source type="image/png" srcset="images/comp-logo12.png">
-                      <img loading="lazy" src="images/comp-logo12.png" alt="Valuecoders" width="63" height="24">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo9.webp">
-                      <source type="image/png" srcset="images/comp-logo.png">
-                      <img loading="lazy" src="images/comp-logo9.png" alt="Valuecoders" width="68" height="35">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo10.webp">
-                      <source type="image/png" srcset="images/comp-logo10.png">
-                      <img loading="lazy" src="images/comp-logo10.png" alt="Valuecoders" width="63" height="28">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo11.webp">
-                      <source type="image/png" srcset="images/comp-logo11.png">
-                      <img loading="lazy" src="images/comp-logo11.png" alt="Valuecoders" width="82" height="26">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source type="image/webp" srcset="images/comp-logo12.webp">
-                      <source type="image/png" srcset="images/comp-logo12.png">
-                      <img loading="lazy" src="images/comp-logo12.png" alt="Valuecoders" width="63" height="24">
-                    </picture>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="client-row">
+            <div class="client-stack award-animate-slide-to-left hover:pause">
+              <ul>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo17.png" alt="Valuecoders" width="104" height="30">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo18.png" alt="Valuecoders" width="96" height="30">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo19.png" alt="Valuecoders" width="50" height="50">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo20.png" alt="Valuecoders" width="82" height="49">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo21.png" alt="Valuecoders" width="109" height="27">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo22.png" alt="Valuecoders" width="103" height="54">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo23.png" alt="Valuecoders" width="94" height="50">
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <img loading="lazy" src="images/whcomp-logo24.png" alt="Valuecoders" width="100" height="33">
+                  </picture>
+                </li>
+              </ul>
             </div>
-            <div class="award-sc margin-t-50">
-              <h5>Awards & Certifications -</h5>
-              <div class="award-row">
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-01.svg" alt="Valuecoders" width="62" height="38">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-02.svg" alt="Valuecoders" width="50" height="40">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-03.svg" alt="Valuecoders" width="96" height="35">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
-                <div class="award-col">
-                  <span class="aw-icon">
-                    <picture>
-                      <img loading="lazy" src="images/aw-04.svg" alt="Valuecoders" width="96" height="15">
-                    </picture>
-                  </span>
-                  <p>From startups to big enterprises, development </p>
-                </div>
+          </div>
+          <div class="award-sc margin-t-50">
+            <h5>Awards &amp; Certifications -</h5>
+            <div class="award-row">
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-01.svg" alt="Valuecoders" width="58" height="38">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-02.svg" alt="Valuecoders" width="53" height="40">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-03.svg" alt="Valuecoders" width="96" height="33">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-04.svg" alt="Valuecoders" width="96" height="15">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-05.svg" alt="Valuecoders" width="36" height="36">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-06.svg" alt="Valuecoders" width="81" height="34">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-07.svg" alt="Valuecoders" width="53" height="45">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
+              </div>
+              <div class="award-col">
+                <span class="aw-icon">
+                  <picture>
+                    <img class="normal-mode" loading="lazy" src="images/whaw-08.svg" alt="Valuecoders" width="29" height="50">
+                  </picture>
+                </span>
+                <p>From startups to big enterprises, development </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="counter-column-section bg-blue-linear padding-t-70 padding-b-70">
+    <section class="counter-column-section bg-blue-linear bg-dark padding-t-70 padding-b-70">
       <div class="container">
         <div class="dis-flex justify-sb">
           <div class="left-sec">
@@ -1121,9 +1459,9 @@
                 <a href="#ug2" class="tab-link">What are the benefits of outsourcing software product
                 development services in India?</a>
                 <a href="#ug3" class="tab-link">What questions should you ask before hiring a software
-                product development company in India?</a>
+                product development whcompany in India?</a>
                 <a href="#ug4" class="tab-link">What mistakes to avoid while choosing software product
-                development companies?</a>
+                development whcompanies?</a>
               </div>
             </div>
           </div>
@@ -1135,7 +1473,7 @@
                 problems.
               </p>
               <p>There are three different kinds of software products provided by <span>product development
-                services companies</span>: shrink-wrapped products, embedded/systems products, and
+                services whcompanies</span>: shrink-wrapped products, embedded/systems products, and
                 enterprise applications. Additionally, software product development involves several
                 different stages, such as requirements gathering, design, development, testing, and
                 deployment.
@@ -1164,39 +1502,39 @@
                 <li><strong>Peace of Mind :</strong> Finally, outsourcing gives you the peace of mind that
                   comes with knowing that your project is in good hands. When you outsource software
                   product development services, you can be confident that your <span>product development
-                  engineering</span> will be completed on time and to a high standard.
+                  engineering</span> will be whcompleted on time and to a high standard.
                 </li>
               </ul>
             </div>
             <div class="tab-content" id="ug3">
-              <h3>What questions should you ask before hiring a software product development company in India?
+              <h3>What questions should you ask before hiring a software product development whcompany in India?
               </h3>
-              <p>Before hiring a software product development company in India, it is important to ask a few
-                key questions. Firstly, you should ask about the experience of the company and its team. It
-                is also important to ask about the company’s process for developing software products.
+              <p>Before hiring a software product development whcompany in India, it is important to ask a few
+                key questions. Firstly, you should ask about the experience of the whcompany and its team. It
+                is also important to ask about the whcompany’s process for developing software products.
               </p>
-              <p>Additionally, you should inquire about the company’s pricing structure and what kind of
+              <p>Additionally, you should inquire about the whcompany’s pricing structure and what kind of
                 payment terms they offer. Finally, you should ask for some examples of previous work that
-                the company has completed. Asking these questions will help you narrow down your options and
-                choose the best software product development company for your needs.
+                the whcompany has whcompleted. Asking these questions will help you narrow down your options and
+                choose the best software product development whcompany for your needs.
               </p>
             </div>
             <div class="tab-content" id="ug4">
-              <h3>What mistakes to avoid while choosing software product development companies?</h3>
+              <h3>What mistakes to avoid while choosing software product development whcompanies?</h3>
               <p>There are a few mistakes that you should avoid when choosing a software product development
-                company.
+                whcompany.
               </p>
               <p><strong>Choosing the cheapest solution</strong>: You get what you pay for when it comes to
                 software product development. If you choose the cheapest option, you may end up with a
                 subpar product that does not meet your needs.
               </p>
               <p><strong>Not doing your research</strong>: It is important to do your research and ask around
-                before selecting a software product development company. You should read reviews and talk to
-                other businesses that have used the company’s services to get a better idea of what they can
+                before selecting a software product development whcompany. You should read reviews and talk to
+                other businesses that have used the whcompany’s services to get a better idea of what they can
                 offer.
               </p>
-              <p><strong>Selecting a company without experience</strong>: When selecting among the top
-                software product development companies, you should ensure that they have experience
+              <p><strong>Selecting a whcompany without experience</strong>: When selecting among the top
+                software product development whcompanies, you should ensure that they have experience
                 developing the type of software you need. Otherwise, you may end up with a team that is not
                 familiar with the development process, and this could lead to delays or a subpar product.
               </p>
@@ -1241,7 +1579,7 @@
               </a>
               <h3>Elearning Application</h3>
               <p>The smart integrated platform is founded on the pillars of providing application access to
-                parents so that they can also see their children's accomplishments.
+                parents so that they can also see their children's acwhcomplishments.
               </p>
               <div class="dis-flex other-details">
                 <div class="flex-2 clr-white">Core tech</div>
@@ -1370,105 +1708,165 @@
         </div>
       </div>
     </section>
-    <section class="client-video-section bg-light padding-t-120 padding-b-120">
+    <section class="testimonial-section bg-light padding-t-120 padding-b-120">
       <div class="container">
-        <div class="head-txt text-center">
-          <h2>What Our Valuable Clients Say About Us</h2>
-          <p>We are grateful for our clients&#8217; trust in us, and we take great pride in delivering quality
-            solutions that exceed their expectations. Here is what some of them have to say about us:
-          </p>
-        </div>
-        <div class="glider-contain client-testimonial-slider">
-          <div class="glider">
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312"
-                  src="https://www.youtube.com/embed/d78gD-wwVTg?autoplay=1?rel=0"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/02/client-video-2.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/d78gD-wwVTg?autoplay=1?rel=0><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/e7nbilPZzBE?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/02/client-video-3.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/e7nbilPZzBE?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
+      <div class="head-txt text-center">
+        <h2>What Our Clients Have to Say About Us</h2>
+        <p>We are grateful for our clients’ trust in us, and we take great pride in delivering quality solutions that exceed their expectations. Here is what some of them have to say about us:
+        </p>
+      </div>
+      <div class="testlider glide margin-t-80">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <div class="slide-item">
+              <div class="test-row">
+                <div class="client-videos" id="cvbox-1">
+                  <div class="client-video-box">
+                    <iframe class="yt-player"  id="ytiframe-1" style="display:none;"></iframe>
+                    <a class="frame-mask" href="javascript:void(0);" onclick="playTetiVideo(1, 'https://www.youtube.com/embed/aErqOtvMClY?autoplay=1', this)">
+                      <picture>
+                        <source type="image/png" srcset="images/slider-image.png">
+                        <img loading="lazy" src="images/slider-image.png" alt="Valuecoders" width="436" height="290">
+                      </picture>
+                      <div class="playBtn">
+                        <div class="playsc"><span class="playicon"></span></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="content-box">
+                  <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
+                  <h5>James Kelly</h5>
+                  <span class="designtn">Co-founder, James Kelly</span>
+                  <span class="star-image"></span>
+                </div>
               </div>
             </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/W7Bxt2Up0NQ?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/05/client-video-7.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/W7Bxt2Up0NQ?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/aErqOtvMClY?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/02/client-video-1.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/aErqOtvMClY?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
+            <div class="slide-item">
+              <div class="test-row">
+                <div class="cust-img-box">
+                  <picture>
+                    <source type="image/webp" srcset="images/slider-image.png">
+                    <source type="image/png" srcset="images/slider-image.jpg">
+                    <img loading="lazy" src="images/slider-image.jpg"
+                      alt="Testimonials" width="436" height="290">
+                  </picture>
+                </div>
+                <div class="content-box">
+                  <p>I have been using invoicera for about 5 years and found it fantastic whenusing it on phone while Travelling.</p>
+                  <h5>Dave Edworthy</h5>
+                  <span class="designtn">Co-founder, James Kelly</span>
+                  <span class="star-image"></span>
+                </div>
               </div>
             </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/QCIMuRQkfKU?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/05/client-video-8.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/QCIMuRQkfKU?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
+            <div class="slide-item">
+              <div class="test-row">
+                <div class="cust-img-box">
+                  <picture>
+                    <source type="image/webp" srcset="images/slider-image.png">
+                    <source type="image/png" srcset="images/slider-image.jpg">
+                    <img loading="lazy" src="images/slider-image.jpg"
+                      alt="Testimonials" width="436" height="290">
+                  </picture>
+                </div>
+                <div class="content-box">
+                  <p>I have been using invoicera for about 5 years and found it fantastic whenusing it on phone while Travelling.</p>
+                  <h5>Dave Edworthy</h5>
+                  <span class="designtn">Co-founder, James Kelly</span>
+                  <span class="star-image"></span>
+                </div>
               </div>
             </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/oVbfGyMPq50?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/05/client-video-5.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/oVbfGyMPq50?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
+            <div class="slide-item">
+              <div class="test-row">
+                <div class="cust-img-box">
+                  <picture>
+                    <source type="image/webp" srcset="images/slider-image.png">
+                    <source type="image/png" srcset="images/slider-image.jpg">
+                    <img loading="lazy" src="images/slider-image.jpg"
+                      alt="Testimonials" width="436" height="290">
+                  </picture>
+                </div>
+                <div class="content-box">
+                  <p>I have been using invoicera for about 5 years and found it fantastic whenusing it on phone while Travelling.</p>
+                  <h5>Dave Edworthy</h5>
+                  <span class="designtn">Co-founder, Miracle Choice</span>
+                  <span class="star-image"></span>
+                </div>
               </div>
             </div>
           </div>
-          <button aria-label="Previous" class="glider-prev vlazy"></button>
-          <button aria-label="Next" class="glider-next vlazy"></button>
-          <div role="tablist" class="dots"></div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0">
+              <div class="btnsec">
+                <div class="btnimg">
+                  <picture>
+                    <source type="image/webp" srcset="images/jameskaly.png">
+                    <source type="image/png" srcset="images/jameskaly.jpg">
+                    <img loading="lazy" src="images/jameskaly.jpg"
+                      alt="Testimonials" width="68" height="69">
+                  </picture>
+                </div>
+                <div class="btncont">
+                  <h3>James Kelly</h3>
+                  <p>President of Sales</p>
+                </div>
+              </div>
+            </button>
+            <button class="glide__bullet" data-glide-dir="=1">
+              <div class="btnsec">
+                <div class="btnimg">
+                  <picture>
+                    <source type="image/webp" srcset="images/jameskaly.png">
+                    <source type="image/png" srcset="images/jameskaly.jpg">
+                    <img loading="lazy" src="images/jameskaly.jpg"
+                      alt="Testimonials" width="68" height="69">
+                  </picture>
+                </div>
+                <div class="btncont">
+                  <h3>James Kelly</h3>
+                  <p>President of Sales</p>
+                </div>
+              </div>
+            </button>
+            <button class="glide__bullet" data-glide-dir="=2">
+              <div class="btnsec">
+                <div class="btnimg">
+                  <picture>
+                    <source type="image/webp" srcset="images/jameskaly.png">
+                    <source type="image/png" srcset="images/jameskaly.jpg">
+                    <img loading="lazy" src="images/jameskaly.jpg"
+                      alt="Testimonials" width="68" height="69">
+                  </picture>
+                </div>
+                <div class="btncont">
+                  <h3>Mohammed Mirza</h3>
+                  <p>Co-founder, Miracle Choice</p>
+                </div>
+              </div>
+            </button>
+            <button class="glide__bullet" data-glide-dir="=3">
+              <div class="btnsec">
+                <div class="btnimg">
+                  <picture>
+                    <source type="image/webp" srcset="images/jameskaly.png">
+                    <source type="image/png" srcset="images/jameskaly.jpg">
+                    <img loading="lazy" src="images/jameskaly.jpg"
+                      alt="Testimonials" width="68" height="69">
+                  </picture>
+                </div>
+                <div class="btncont">
+                  <h3>James Kelly</h3>
+                  <p>President of Sales</p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="glide__arrows glidenav" data-glide-el="controls">
+          <button class="arw left glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+          <button class="arw right glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
         </div>
       </div>
     </section>
@@ -1487,73 +1885,80 @@
     <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
     <script>
+      new Glide(".testlider", {
+       type: "carousel",
+       autoplay: 5000,
+       startAt: 0,
+       hoverpause: false,
+       gap: 0
+      }).mount();   
       new Glide('.logoslide', {
-                             type: 'carousel',
-                             autoplay: 1,
-                             animationDuration: 10000,
-                             animationTimingFunc: 'linear',
-                             gap: 0,
-                             startAt: 0,
-                             perView: 1 }).
-                           mount();
-                           //# sourceURL=pen.js
+                            type: 'carousel',
+                            autoplay: 1,
+                            animationDuration: 10000,
+                            animationTimingFunc: 'linear',
+                            gap: 0,
+                            startAt: 0,
+                            perView: 1 }).
+                          mount();
+                          //# sourceURL=pen.js
       
-            var accorItem = document.getElementsByClassName("accordionItem");
-            var faqHD   = document.getElementsByClassName("accordion-toggle");
-            for (i = 0; i < faqHD.length; i++) {
-                faqHD[i].addEventListener("click", dataAccordionItem, false);
-            }
-            function dataAccordionItem(){
-                if( this.parentNode.classList.contains('active') ){
-                    this.parentNode.className = "accordionItem";
-                    return;
-                }
-                //let itemClass = this.parentNode.className;
-                for (i = 0; i < accorItem.length; i++) {
-                    accorItem[i].className = "accordionItem";
-                }    
-                if (this.parentNode.className == "accordionItem") {        
-                    this.parentNode.className = "accordionItem active";
-                }
-            }
-            
-            
-                  // client slider
-            window.addEventListener("load", function () {
-                if(document.querySelector(".client-testimonial-slider")){
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
-                    var glider = Glider(this);
-                });
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
-                window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    draggable: false,
-                    scrollLock: false,
-                    dots: ".client-testimonial-slider .dots",
-                    arrows: false,
-                    dragDistance: false,
-                    // arrows: {
-                    //     prev: '.glider-prev',
-                    //     next: '.glider-next'
-                    //   },
-                    responsive: [
-                        { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
-                        { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                        { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                    ],
-                });
-                }
-            });
-                  
-                  
-                  
-                  
-                  
-                
-          
+           var accorItem = document.getElementsByClassName("accordionItem");
+           var faqHD   = document.getElementsByClassName("accordion-toggle");
+           for (i = 0; i < faqHD.length; i++) {
+               faqHD[i].addEventListener("click", dataAccordionItem, false);
+           }
+           function dataAccordionItem(){
+               if( this.parentNode.classList.contains('active') ){
+                   this.parentNode.className = "accordionItem";
+                   return;
+               }
+               //let itemClass = this.parentNode.className;
+               for (i = 0; i < accorItem.length; i++) {
+                   accorItem[i].className = "accordionItem";
+               }    
+               if (this.parentNode.className == "accordionItem") {        
+                   this.parentNode.className = "accordionItem active";
+               }
+           }
+           
+           
+                 // client slider
+           window.addEventListener("load", function () {
+               if(document.querySelector(".client-testimonial-slider")){
+               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
+                   var glider = Glider(this);
+               });
+               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
+               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
+               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
+               window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
+                   slidesToShow: 3,
+                   slidesToScroll: 1,
+                   draggable: false,
+                   scrollLock: false,
+                   dots: ".client-testimonial-slider .dots",
+                   arrows: false,
+                   dragDistance: false,
+                   // arrows: {
+                   //     prev: '.glider-prev',
+                   //     next: '.glider-next'
+                   //   },
+                   responsive: [
+                       { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
+                       { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                   ],
+               });
+               }
+           });
+                 
+                 
+                 
+                 
+                 
+               
+         
     </script>
   </body>
 </html>

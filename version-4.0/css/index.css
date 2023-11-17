@@ -1937,6 +1937,8 @@ body.page-template-template-testimonials .client-video-section iframe,
       font-size: 35px;
       line-height: 50px;
       padding-right: 30px; } }
+.counter-column-section.bg-dark {
+  background: #0D184B; }
 .counter-column-section .dis-flex .left-sec {
   flex-basis: 40%; }
 .counter-column-section .dis-flex .right-sec {
@@ -2122,14 +2124,48 @@ body.page-template-template-testimonials .client-video-section iframe,
         .client-img-section .right-box .award-sc .award-row .award-col:hover .aw-icon img.hover-mode {
           display: block; }
 
-.dark-client-section .left-box h5 {
-  color: #ffb81d; }
-.dark-client-section .left-box p {
-  color: rgba(255, 255, 255, 0.8) !important; }
-.dark-client-section .left-box ul li {
-  color: rgba(255, 255, 255, 0.8); }
-.dark-client-section .right-box .award-sc h5 {
-  color: #ffffff; }
+.dark-client-section {
+  background: #09143d; }
+  .dark-client-section .left-box h2 {
+    color: #ffffff; }
+  .dark-client-section .left-box h5 {
+    color: #ffb81d; }
+  .dark-client-section .left-box p {
+    color: rgba(255, 255, 255, 0.8) !important; }
+  .dark-client-section .left-box ul li {
+    color: rgba(255, 255, 255, 0.8); }
+  .dark-client-section .left-box a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline; }
+    .dark-client-section .left-box a:hover {
+      color: #ffffff;
+      text-decoration: none; }
+  .dark-client-section .right-box .client-section .client-row .client-stack ul li {
+    background: rgba(15, 31, 87, 0.7); }
+    .dark-client-section .right-box .client-section .client-row .client-stack ul li img {
+      vertical-align: middle; }
+    .dark-client-section .right-box .client-section .client-row .client-stack ul li:hover {
+      color: #ffad00; }
+  .dark-client-section .right-box .award-sc h5 {
+    color: #ffffff; }
+  .dark-client-section .right-box .award-sc .award-row .award-col {
+    border: 1px solid rgba(4, 17, 66, 0.62);
+    background: #101e55; }
+    .dark-client-section .right-box .award-sc .award-row .award-col .aw-icon img.normal-mode {
+      display: block;
+      opacity: 0.5; }
+    .dark-client-section .right-box .award-sc .award-row .award-col p {
+      color: #ffffff;
+      opacity: 0.5; }
+    .dark-client-section .right-box .award-sc .award-row .award-col:hover {
+      border: 1px solid rgba(156, 164, 195, 0.37);
+      cursor: default;
+      background: #101e55; }
+      .dark-client-section .right-box .award-sc .award-row .award-col:hover p {
+        opacity: 1; }
+      .dark-client-section .right-box .award-sc .award-row .award-col:hover .aw-icon img.normal-mode {
+        display: block;
+        opacity: 1; }
 
 @keyframes slide_to_left {
   0% {
