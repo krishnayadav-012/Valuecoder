@@ -24,17 +24,10 @@
               <h1>Our Software Engineering Process</h1>
               <p>At ValueCoders, we believe in delivering excellence through a systematic approach to software development.<br> Our process is transparent, efficient, and tailored to your unique needs.
               </p>
-              <div class="cta-wrap margin-t-50">
-                <div class="cta-btn">
-                  <a href="">
-                  Book a Free Consultation
-                  <span class="arrow-wrap">
-                  <span class="arrow primera"></span>
-                  <span class="arrow segunda next"></span>
-                  <span class="arrow last"></span>
-                  </span>
-                  </a>
-                </div>
+              <div class="btn-sec margin-t-50 ">
+                <a href="https://www.valuecoders.com/v2wp/contact" class="btn rounded">
+                <span class="text-white">Contact Us</span>
+                </a>
               </div>
             </div>
           </div>
@@ -556,17 +549,8 @@
               <p>Get free consultation and let us know your project idea to turn it into an amazing digital product.
               </p>
             </div>
-            <div class="cta-wrap margin-t-50">
-              <div class="cta-btn">
-                <a href id="cta">
-                Talk To Our Experts
-                <span class="arrow-wrap">
-                <span class="arrow primera"></span>
-                <span class="arrow segunda next"></span>
-                <span class="arrow last"></span>
-                </span>
-                </a>
-              </div>
+            <div class="btn-sec margin-t-50">
+              <a href="https://www.valuecoders.com/v2wp/contact" class="btn rounded"><span class="text-white">Get Started</span></a>
             </div>
           </div>
           <div class="right-sec">
@@ -744,12 +728,6 @@
           });
           }
       });
-            
-            
-            
-            
-            
-          
     </script>
   </body>
 </html>

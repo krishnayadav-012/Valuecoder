@@ -1739,6 +1739,73 @@ body.page-template-template-testimonials .client-video-section iframe,
     .tab-scroll-section ul li:before,
     .tab-scroll-section ol li:before {
       top: 7px; } }
+.slide-logo {
+  padding: 39px 0;
+  text-align: center; }
+  .slide-logo .dis-flex {
+    overflow: hidden; }
+  .slide-logo .logo-heading {
+    position: relative;
+    width: 90%;
+    margin: 0 0 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    flex-basis: 100%;
+    margin: 0 0 25px;
+    justify-content: center; }
+    .slide-logo .logo-heading h4 {
+      color: #52606d;
+      font-size: 20px;
+      margin: 0 35px;
+      background: #ffffff;
+      position: relative; }
+      .slide-logo .logo-heading h4 span {
+        margin: 0 35px;
+        background: #ffffff; }
+    .slide-logo .logo-heading strong {
+      color: #ffad00; }
+    .slide-logo .logo-heading:before {
+      width: 90%;
+      content: "";
+      height: 0.197px;
+      background: rgba(5, 22, 77, 0.4);
+      position: absolute;
+      top: 15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+  .slide-logo .logo-section {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(5, 22, 77, 0.4); }
+    .slide-logo .logo-section .glide__slide {
+      height: 70px; }
+      .slide-logo .logo-section .glide__slide img {
+        width: 100%;
+        vertical-align: middle; }
+
+@media only screen and (max-width: 479px) {
+  .slide-logo {
+    display: none;
+    padding: 30px 0; }
+    .slide-logo .logo-heading {
+      margin: 0 0 20px;
+      margin: 0 0 20px;
+      justify-content: center; }
+      .slide-logo .logo-heading h4 {
+        font-size: 18px;
+        margin: 0 20px; }
+      .slide-logo .logo-heading:before {
+        display: none; }
+      .slide-logo .logo-heading:after {
+        display: none; }
+    .slide-logo .logo-section {
+      width: 100%;
+      margin: 0 auto; }
+      .slide-logo .logo-section .glide__slide {
+        height: auto; } }
 .header-two .btn-sec {
   display: flex;
   align-items: center;

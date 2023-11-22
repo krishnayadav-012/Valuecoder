@@ -22,17 +22,10 @@
               <p>ValueCoders was founded in 2004 with the goal of providing the highest quality software services available on the market today. Since then, we’ve developed and launched thousands of software products that look beautiful and work flawlessly, garnering rave reviews from our clients along the way.
               </p>
               <p>But how do we achieve such consistent results? ValueCoders has always taken a very professional & result-oriented approach, which might interest you as well.</p>
-              <div class="cta-wrap margin-t-50">
-                <div class="cta-btn">
-                  <a href="">
-                  Book a Free Consultation
-                  <span class="arrow-wrap">
-                  <span class="arrow primera"></span>
-                  <span class="arrow segunda next"></span>
-                  <span class="arrow last"></span>
-                  </span>
-                  </a>
-                </div>
+              <div class="btn-sec margin-t-50 ">
+                <a href="https://www.valuecoders.com/v2wp/contact" class="btn rounded">
+                <span class="text-white">Contact Us</span>
+                </a>
               </div>
             </div>
             <!-- <div class="for-client-logo-box  dis-flex">
