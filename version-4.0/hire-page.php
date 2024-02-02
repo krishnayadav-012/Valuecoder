@@ -235,7 +235,7 @@
         </div>
       </div>
     </section>
-    <section class="table-list-section bg-light padding-t-150 padding-b-150">
+    <section class="table-list-section show-all bg-light padding-t-150 padding-b-150">
       <div class="container">
         <div class="dis-flex top-content">
           <div class="flex-2">

@@ -1,3 +1,23 @@
+<div class="popup-section">
+  <div id="intentPopup" class="popup-wrapper exit-intent-popup visible">
+    <div class="popWrap">
+      <div class="popup-content">
+        <span class="closeicon" onclick="closeIntPopUp('intentPopup', false);">
+        <img loading="lazy" src="https://www.valuecoders.com/blog/wp-content/themes/valuecoders/images/cross-image.svg" alt="Valuecoders" width="11" height="11"></span>
+        <h2>Stay With Us</h2>
+        <h3>Are you looking for the perfect
+          partner for your next software project?
+        </h3>
+        <p>Let's discuss how we can bring your vision to life.</p>
+        <div class="ctasec">
+          <a href="https://www.valuecoders.com/contact" class="book-btn" data-wpel-link="internal" target="_blank" rel="follow">Book a Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <footer class="footer bg-jacarta">
   <div class="container">
     <div class="dis-flex">
