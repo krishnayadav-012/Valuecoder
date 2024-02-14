@@ -190,65 +190,8 @@
             </div>
          </div>
       </section>
-      <section class="global-counter padding-t-120 padding-b-120">
-         <div class="container">
-            <div class="dis-flex justify-sb items-center">
-               <div class="flex-2 content-box top-content tick-icon-list">
-                  <small>We Are India’s</small>
-                  <h2>Software Development Services Company</h2>
-                  <p>From startups to big enterprises, development organizations to digital agencies, and SMEs to Governments, we cater varied software requirements. Our commitment to quality has enabled us to lead the market, becoming the top software development service company.</p>
-                  <ul>
-                     <li>Experienced software developers</li>
-                     <li>Flexible engagement options</li>
-                     <li>Cost-effective solutions</li>
-                     <li>Daily/weekly/monthly reporting</li>
-                     <li>160 man hours guaranteed</li>
-                     <li>Smooth communication</li>
-                     <li>Complementary development manager</li>
-                     <li>Ongoing internal L&D programs</li>
-                  </ul>
-                  <h4>Awards &amp; Certifications -</h4>
-                  <div class="award-logo dis-flex">
-                     <div class="logo-box logo1"></div>
-                     <div class="logo-box logo2"></div>
-                     <div class="logo-box logo3"></div>
-                     <div class="logo-box logo4"></div>
-                     <div class="logo-box logo5"></div>
-                  </div>
-               </div>
-               <div class="flex-2 image-box">
-                  <picture>
-                     <img loading="lazy" src="images/counter-image.svg" width="543" height="500" alt="valuecoders">
-                  </picture>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="global-companies padding-b-120">
-         <div class="container">
-            <div class="dis-flex justify-sb items-center">
-               <div class="flex-2 image-box">
-                  <picture>
-                     <source type="image/webp" srcset="images/global-companies.png">
-                     <source type="image/png" srcset="images/global-companies.png">
-                     <img loading="lazy" src="images/global-companies.png" width="647" height="411" alt="valuecoders">
-                  </picture>
-               </div>
-               <div class="flex-2 content-box top-content">
-                  <h2>We Have Worked For Some Wonderful Companies Globally</h2>
-                  <p>As a successful software development company, we have worked with all kinds of businesses, i.e., startups, SMEs, enterprises, and big brands.</p>
-                  <ul>
-                     <li>Client-centric approach</li>
-                     <li>Cutting edge infrastructure</li>
-                     <li>Best-in-class project management</li>
-                     <li>Time-zone compatibility</li>
-                     <li>Ongoing learning &amp; development programs for teams</li>
-                     <li>Global quality standards</li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </section>
+      <?php require_once 'include/global-clients.php'; ?>
+      <?php require_once 'include/counter-column.php'; ?>
       <section class="faq-section bg-light padding-t-120 padding-b-120">
          <div class="container">
             <div class="head-txt text-center">

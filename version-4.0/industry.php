@@ -11,6 +11,8 @@
     <?php require_once '../include/header-files.php'; ?>
     <link rel="preload" as="image" href="../images/healthcare-banner.webp"/>
     <link rel="preload stylesheet" type="text/css" href="./css/industries.min.css" defer/>
+    <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
+
   </head>
   <body id="themeAdd">
     <?php require_once './include/menu-v3.12.php'; ?>
@@ -32,17 +34,37 @@
         </div>
       </div>
     </section>
-    <div class="client-logo-box-section dis-flex items-center justify-sb">
+
+
+    <div class="slide-logo  dis-flex items-center justify-sb">
       <div class="container">
         <div class="dis-flex">
           <div class="logo-heading">
-            <h4>Trusted by startups<br> and Fortune 500 companies</h4>
+            <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
           </div>
-          <div class="logo-box-outer dis-flex">
+          <div class="logo-section">
+            <div class="logoslide">
+              <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                  <div class="glide__slide">
+                    <picture>
+                      <img loading="lazy" src="images/banner-client-logo.svg" width="" height="" alt="valuecoders">
+                    </picture>
+                  </div>
+                  <div class="glide__slide">
+                    <picture>
+                      <img loading="lazy" src="images/banner-client-logo-2.png" width="" height="" alt="valuecoders">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+
     <section class="three-column-icon-section bg-light padding-t-120 padding-b-120">
       <div class="container">
         <div class="dis-flex top-content">
@@ -500,64 +522,11 @@
       </div>
     </section>
 
-    <section class="global-counter padding-t-120 padding-b-120 bg-light">
-      <div class="container">
-        <div class="dis-flex justify-sb items-center">
-          <div class="flex-2 content-box tick-icon-list">
-            <h2>Why ValueCoders For Healthcare App Development Services?</h2>
-            <p>ValueCoders provides reliable healthcare application development services with faster response time and better return on investment. Hire a well-trained healthcare mobile app development team with experts in offering mobile healthcare applications development services and delivering innovative, best-in-class results. As one of the leading application development companies for healthcare, we make sure you receive innovative and customized services according to the requirements.</p>
-            <ul>
-              <li>Expertise in big data & BI</li>
-              <li>Regulatory standards & compliance</li>
-              <li>Healthcare domain knowledge</li>
-              <li>160 man hours guaranteed</li>
-              <li>Extensive mobile UX expertise</li>
-              <li>ISO 9001:2008 certified processes</li>
-              <li>Data security & privacy</li>
-              <li>Daily/weekly/ monthly reporting</li>
-            </ul>
-            <h4>Awards &amp; Certifications -</h4>
-            <div class="award-logo dis-flex">
-              <div class="logo-box logo1"></div>
-              <div class="logo-box logo2"></div>
-              <div class="logo-box logo3"></div>
-              <div class="logo-box logo4"></div>
-              <div class="logo-box logo5"></div>
-            </div>
-          </div>
-          <div class="flex-2 image-box">
-            <picture>
-              <img loading="lazy" src="images/counter-image.svg" width="543" height="500" alt="valuecoders">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="global-companies padding-b-120 bg-light">
-      <div class="container">
-        <div class="dis-flex justify-sb items-center">
-          <div class="flex-2 image-box">
-            <picture>
-              <source type="image/webp" srcset="images/global-companies.png">
-              <source type="image/png" srcset="images/global-companies.png">
-              <img loading="lazy" src="images/global-companies.png" width="647" height="411" alt="valuecoders">
-            </picture>
-          </div>
-          <div class="flex-2 content-box">
-            <h2>We Have Worked For Some Wonderful Companies Globally</h2>
-            <p>As a successful software development company, we have worked with all kinds of businesses, i.e., startups, SMEs, enterprises, and big brands.</p>
-            <ul>
-              <li>Client-centric approach</li>
-              <li>Cutting edge infrastructure</li>
-              <li>Best-in-class project management</li>
-              <li>Time-zone compatibility</li>
-              <li>Ongoing learning &amp; development programs for teams</li>
-              <li>Global quality standards</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php require_once 'include/global-clients.php'; ?>
+    <?php require_once 'include/counter-column.php'; ?>
+
+
+
     <section class="tab-scroll-section padding-t-150 padding-b-150">
       <div class="container">
         <div class="head-txt text-center">
@@ -859,8 +828,19 @@
       <?php require_once 'include/contact-form.php'; ?>
     </section>
     <?php require_once 'include/footer.php'; ?>
-    <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
+    <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=11.22.1" id="vc-script-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
     <script>
+      new Glide('.logoslide', {
+                    type: 'carousel',
+                    autoplay: 1,
+                    animationDuration: 10000,
+                    animationTimingFunc: 'linear',
+                    gap: 0,
+                    startAt: 0,
+                    perView: 1 }).
+                  mount(); 
+                  
       var accorItem = document.getElementsByClassName("accordionItem");
       var faqHD   = document.getElementsByClassName("accordion-toggle");
       for (i = 0; i < faqHD.length; i++) {

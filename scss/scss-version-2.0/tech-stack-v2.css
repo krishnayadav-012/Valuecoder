@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$contentDay".
-        on line 30 of C:\xampp\htdocs\valuecoders-v2\scss\scss-version-2.0\tech-stack-v2.scss
+        on line 30 of C:\xampp\htdocs\valuecoders\scss\scss-version-2.0\tech-stack-v2.scss
 
 25:         padding-bottom: 20px;
 26:         text-align: center;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$contentDay".
 35:             position: absolute;
 
 Backtrace:
-C:\xampp\htdocs\valuecoders-v2\scss\scss-version-2.0\tech-stack-v2.scss:30
+C:\xampp\htdocs\valuecoders\scss\scss-version-2.0\tech-stack-v2.scss:30
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$contentDay\".\A         on line 30 of C:\xampp\htdocs\valuecoders-v2\scss\scss-version-2.0\tech-stack-v2.scss\A \A 25:         padding-bottom: 20px;\A 26:         text-align: center;\A 27:         font-weight: 500;\A 28:         font-size: 20px;\A 29:         line-height: 27px;\A 30:         color: $contentDay;\A 31:         opacity: 0.6;\A 32:         text-decoration: none;\A 33:         &::after {\A 34:             content: \"\";\A 35:             position: absolute;"; }
+  content: "Error: Undefined variable: \"$contentDay\".\A         on line 30 of C:\xampp\htdocs\valuecoders\scss\scss-version-2.0\tech-stack-v2.scss\A \A 25:         padding-bottom: 20px;\A 26:         text-align: center;\A 27:         font-weight: 500;\A 28:         font-size: 20px;\A 29:         line-height: 27px;\A 30:         color: $contentDay;\A 31:         opacity: 0.6;\A 32:         text-decoration: none;\A 33:         &::after {\A 34:             content: \"\";\A 35:             position: absolute;"; }

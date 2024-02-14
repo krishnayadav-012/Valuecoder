@@ -10,6 +10,8 @@
     <meta property="og:title" content="Partner | Why ValueCoders - @ValueCoders" />
     <?php require_once '../include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/partner.min.css" defer />
+    <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
+
   </head>
   <body id="themeAdd">
     <?php require_once './include/menu-v3.12.php'; ?>
@@ -39,21 +41,29 @@
         </div>
       </div>
     </section>
-    <div class="client-logo-box-section dis-flex items-center justify-sb">
+    <div class="slide-logo  dis-flex items-center justify-sb">
       <div class="container">
         <div class="dis-flex">
           <div class="logo-heading">
-            <h4>Trusted by startups<br> and Fortune 500 companies</h4>
+            <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
           </div>
-          <div class="logo-box-outer dis-flex">
-            <div class="logo-box logo1"></div>
-            <div class="logo-box logo2"></div>
-            <div class="logo-box logo3"></div>
-            <div class="logo-box logo4"></div>
-            <div class="logo-box logo5"></div>
-            <div class="logo-box logo6"></div>
-            <div class="logo-box logo7"></div>
-            <div class="logo-box logo8"></div>
+          <div class="logo-section">
+            <div class="logoslide">
+              <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                  <div class="glide__slide">
+                    <picture>
+                      <img loading="lazy" src="images/banner-client-logo.svg" width="" height="" alt="valuecoders">
+                    </picture>
+                  </div>
+                  <div class="glide__slide">
+                    <picture>
+                      <img loading="lazy" src="images/banner-client-logo-2.png" width="" height="" alt="valuecoders">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -204,8 +214,20 @@
     </section>
 
     <?php require_once '../include/footer.php'; ?>
-    <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
+    <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=11.22.1" id="vc-script-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
     <script>
+      new Glide('.logoslide', {
+                    type: 'carousel',
+                    autoplay: 1,
+                    animationDuration: 10000,
+                    animationTimingFunc: 'linear',
+                    gap: 0,
+                    startAt: 0,
+                    perView: 1 }).
+                  mount();    
+
+                
       var accorItem = document.getElementsByClassName("accordionItem");
       var faqHD   = document.getElementsByClassName("accordion-toggle");
       for (i = 0; i < faqHD.length; i++) {
