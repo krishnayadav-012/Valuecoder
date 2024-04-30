@@ -23,7 +23,7 @@
           <div class="dis-flex">
             <div class="left-box">
               <h1>Software Development Services</h1>
-              <p>Businesses need <a href="">reliable software</a> development services to automate and digitalize processes. As a leading software<br> development service provider for over 18 years, we’ve exceeded the expectations of 2500+ clients who sought out our expertise. 
+              <p>With years of experience in the IT industry, ValueCoders focuses on providing complete outsourced product development services. We focus on creating high-quality software products that stand out. 
               </p>
               <ul>
                 <li>Top 1% Industry-talent</li>
@@ -75,6 +75,11 @@
         </div>
       </div>
     </div>
+
+
+
+
+
     <section class="three-column-icon-section padding-t-120 padding-b-120">
       <div class="container">
         <div class="dis-flex top-content">
