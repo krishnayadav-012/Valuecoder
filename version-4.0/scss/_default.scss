@@ -141,6 +141,7 @@ h2 {
   font-weight: 600;
   color: #05164d;
   margin: 0 0 20px;
+  
 }
 
 h3 {
@@ -601,6 +602,7 @@ strong {
 
 ::placeholder {
   color: #9b9b9b;
+  font-family: "Noto Sans", sans-serif;
 }
 
 // Chrome, Safari, Edge, Opera
@@ -1012,7 +1014,7 @@ textarea {
 }
 
 .footer {
-  background: $bgVoilet;
+  background:#040F34;
   padding: 20px 0;
 
   span,

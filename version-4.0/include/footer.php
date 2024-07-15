@@ -1,5 +1,5 @@
 <div class="popup-section">
-  <div id="intentPopup" class="popup-wrapper exit-intent-popup visible">
+  <div id="intentPopup" class="popup-wrapper exit-intent-popup">
     <div class="popWrap">
       <div class="popup-content">
         <span class="closeicon" onclick="closeIntPopUp('intentPopup', false);">

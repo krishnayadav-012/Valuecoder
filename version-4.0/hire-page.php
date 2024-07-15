@@ -30,6 +30,11 @@
               <div class="logo-box logo3"></div>
               <div class="logo-box logo4"></div>
             </div>
+            <div class="three-logo dis-flex">
+              <div class="logo-box logo1"></div>
+              <div class="logo-box logo2"></div>
+              <div class="logo-box logo3"></div>
+            </div>
             <h1>Hire Dedicated Developers</h1>
             <h2>Top 1% Dedicated Angular Developers. Pre-vetted Experts. No Freelancers</h2>
             <p>Hire pre-vetted and highly experienced Angular developers from ValueCoders. They're skilled in every Angular version, from 2.0.0 to 15.0.0.

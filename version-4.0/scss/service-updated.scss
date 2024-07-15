@@ -312,7 +312,6 @@
 }
 
 .slide-logo {
-  padding-bottom: 0;
   .logo-section {
     border: none;
     padding: 0;
@@ -328,6 +327,8 @@
     }
   }
 }
+
+.testimonial-section{background:$white !important;}
 
 .tailored-tech {
 
@@ -443,6 +444,7 @@
   
   }
   }
+  .glider {width:100% !important;}
 
   .glider-prev {
     background: url(../images/tail-prev.svg) no-repeat center;
@@ -480,6 +482,10 @@
 }
 
 @media only screen and (max-width: 1600px) {
+
+
+
+
 }
 @media only screen and (max-width: 1440px) {
   .hero-section {
@@ -489,6 +495,24 @@
       }
     }
   }
+  .banner-section{
+    .banner-wrap{
+      .left-sec {
+        .banner-content{
+          h1{font-size: 50px; line-height: 65px;}
+        }
+      }
+    }
+  }
+  
+  
+  .tailored-tech{
+    .glider-next{top:80%;}
+    .glider-prev{top: 80%;}
+  }
+
+
+
 }
 
 @media only screen and (max-width: 1366px) {
@@ -521,6 +545,7 @@
       }
     }
   }
+  .banner-section {padding-top: 110px;}
 }
 
 @media only screen and (max-width: 991px) {
@@ -547,7 +572,7 @@
   .banner-section {
     width: 100%;
     min-height: initial;
-
+    padding-top: 90px;
     .banner-wrap {
       .left-sec {
         flex-basis: 100%;
@@ -740,7 +765,8 @@
 
       .right-sec {
         .flip-section {
-          gap: 5px;
+          gap:0;
+          justify-content: space-between;
         }
         .flip-card {
           width: 160px;

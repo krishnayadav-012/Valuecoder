@@ -5,30 +5,30 @@
       <p>Guaranteed response within 8 business hours.</p>
       <div class="side-dash1 list-box">
         <h3>Fill up your details</h3>
-        <p>Get Custom Solutions, Recommendations, Estimates.</p>
+        <p>Get Custom Solutions, Recommendations,<br> Estimates.</p>
       </div>
       <div class="side-dash2 list-box">
         <h3>What's next?</h3>
-        <p>One of our Account Managers will contact you shortly</p>
+        <p>One of our Account Managers will contact you<br> shortly</p>
         <div class="dis-flex  items-center award-logo">
           <div class="logo-box">
             <picture>
-              <img loading="lazy" src="images/footer-aw-01.svg" alt="Valuecoders" width="75" height="46"> 
+              <img loading="lazy" src="images/footer-aw-01.svg" alt="Valuecoders" width="107" height="60"> 
             </picture>
           </div>
           <div class="logo-box">
             <picture>
-              <img loading="lazy" src="images/footer-aw-02.svg" alt="Valuecoders" width="90" height="22"> 
+              <img loading="lazy" src="images/footer-aw-02.svg" alt="Valuecoders" width="107" height="60"> 
             </picture>
           </div>
           <div class="logo-box">
             <picture>
-              <img loading="lazy" src="images/footer-aw-03.svg" alt="Valuecoders" width="114" height="35"> 
+              <img loading="lazy" src="images/footer-aw-03.svg" alt="Valuecoders" width="107" height="60"> 
             </picture>
           </div>
           <div class="logo-box">
             <picture>
-              <img loading="lazy" src="images/footer-aw-04.svg" alt="Valuecoders" width="84" height="34"> 
+              <img loading="lazy" src="images/footer-aw-04.svg" alt="Valuecoders" width="107" height="60"> 
             </picture>
           </div>
         </div>

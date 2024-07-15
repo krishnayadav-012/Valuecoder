@@ -26,7 +26,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .breadcrumbs{margin-bottom:20px;}
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
 
   h1 {
     margin-bottom: 10px;
@@ -72,7 +74,32 @@
   .left-box {
     padding: 0 0 60px;
     flex-basis: 45%;
-    .for-client-logo-box{margin-bottom: 20px;}
+    .for-client-logo-box {
+      margin-bottom: 20px;
+    }
+
+    .three-logo {
+      margin-bottom: 20px;
+
+      .logo-box {
+        width: 151px;
+        height: 86px;
+        background-size: 151px !important;
+        margin-right: 15px;
+        display: inline-block;
+
+        &.logo1 {
+          background: url(../images/hire-logo1.svg) 0 0 no-repeat;
+        }
+        &.logo2 {
+          background: url(../images/hire-logo2.svg) 0 0 no-repeat;
+        }
+        &.logo3 {
+          background: url(../images/hire-logo3.svg) 0 0 no-repeat;
+        }
+      }
+    }
+
     h2 {
       font-size: 16px;
       line-height: 28px;
@@ -83,7 +110,7 @@
       margin-bottom: 15px;
     }
     ul {
-      margin:20px 0 0;
+      margin: 20px 0 0;
       li {
         flex-basis: 100%;
       }
@@ -109,7 +136,10 @@
   }
 }
 
-.for-client-logo-box .logo-box{background: url(../images/hire-partner-logo.png) 0 0 no-repeat;  background-size: cover;}
+.for-client-logo-box .logo-box {
+  background: url(../images/hire-partner-logo.png) 0 0 no-repeat;
+  background-size: cover;
+}
 
 .table-list-section {
   .col-box-outer {
@@ -142,7 +172,9 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      &:nth-child(n+7){display:none;}
+      &:nth-child(n + 7) {
+        display: none;
+      }
       &:last-child {
         border-bottom: 0;
       }
@@ -196,13 +228,14 @@
     }
   }
 
-  &.show-all{
+  &.show-all {
     .table-list {
       li {
-        &:nth-child(n){display:block;}
+        &:nth-child(n) {
+          display: block;
+        }
       }
-      
-    } 
+    }
   }
 }
 
@@ -1007,11 +1040,9 @@
   .second-level-section {
     .left-box {
       p {
-        margin-bottom:15px;
+        margin-bottom: 15px;
       }
     }
-
-
   }
 
   .no-icon-updated {
@@ -1065,9 +1096,18 @@
 }
 
 @media only screen and (max-width: 1320px) {
+  .second-level-section {
+    .left-box {
+      flex-basis: 47%;
 
-  .second-level-section{
-    .left-box{flex-basis: 47%}
+      .three-logo {
+        .logo-box {
+          width: 121px;
+          height: 69px;
+          background-size: 120px !important;
+        }
+      }
+    }
   }
 
   .open-free-trial {
@@ -1166,7 +1206,7 @@
         justify-content: center;
       }
       .free-con {
-       text-align: center;
+        text-align: center;
       }
     }
 
@@ -1326,6 +1366,15 @@
     .left-box {
       .free-con {
         width: 100%;
+      }
+      .three-logo {
+        .logo-box {
+          width: 100px;
+          height: 55px;
+          background-size: 100px !important;
+          height: 60px;
+          margin-right: 10px;
+        }
       }
     }
 
