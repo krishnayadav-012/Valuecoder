@@ -317,6 +317,55 @@
         </div>
       </div>
     </section>
+
+
+    <section id="pxl-ppc-table" class="table-list-section show-all bg-light padding-t-120 padding-b-120">
+<div class="container">
+<div class="heading text-center"><h2>DevOps Packages</h2>
+<p>Our DevOps solutions are tailored to address the unique challenges faced by software product companies, providing you with the tools and expertise needed to streamline your operations and accelerate your development cycles.</p>
+</div>
+<div class="table-wrap">
+  <div class="dis-flex col-box-outer margin-t-100">
+    <div class="flex-5 table-list">
+      <ul>
+        <li class="title clr-white">Feature/Metric</li><li class="">Price</li><li class="">CI/CD Projects</li><li class="">Automated Testing Frameworks</li><li class="">Configuration Management</li><li class="">Containerization &amp; Orchestration</li><li class="m-hdn">Infrastructure as Code (IaC)</li><li class="m-hdn">Monitoring &amp; Logging</li><li class="m-hdn">Incident Management &amp; Response</li><li class="m-hdn">Disaster Recovery Planning</li><li class="m-hdn">Security &amp; Compliance Automation</li><li class="m-hdn">Cost Optimization</li>        <li class="more-spc">Need more information?<br>
+          <a href="https://www.pixelcrayons.com/staging/contact-us" class="ts">Talk to Sales</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-5 table-list">
+      <ul>
+        <li class="title">Starter</li><li class="more-txt">$500/month</li><li class="">5</li><li class="">Basic</li><li class="">Basic</li><li class="">x</li><li class="m-hdn">x</li><li class="m-hdn">Basic</li><li class="m-hdn">Basic</li><li class="m-hdn">Basic</li><li class="m-hdn">Basic</li><li class="m-hdn">x</li>        <li class="more-spc"><a href="https://calendly.com/pixelcrayons/project-discovery" class="gtstart">Get Started</a></li>
+      </ul>
+    </div>
+    <div class="flex-5 table-list">
+      <ul>
+        <li class="title">Business</li><li class="more-txt">$1200/month</li><li class="">10</li><li class="">Intermediate</li><li class="">Intermediate</li><li class="">Docker</li><li class="m-hdn">Terraform</li><li class="m-hdn">Intermediate</li><li class="m-hdn">Intermediate</li><li class="m-hdn">Intermediate</li><li class="m-hdn">Intermediate</li><li class="m-hdn">Monthly</li>        <li class="more-spc"><a href="https://calendly.com/pixelcrayons/project-discovery" class="gtstart">Get Started</a></li>
+      </ul>
+    </div>
+    <div class="flex-5 table-list">
+      <ul>
+        <li class="title">Enterprise</li><li class="more-txt">$2500/month</li><li class="">Unlimited</li><li class="">Advanced</li><li class="">Advanced</li><li class="">Docker + Kubernetes</li><li class="m-hdn">Terraform + CloudFormation</li><li class="m-hdn">Advanced</li><li class="m-hdn">Advanced</li><li class="m-hdn">Advanced</li><li class="m-hdn">Advanced</li><li class="m-hdn">Bi-Weekly</li>        <li class="more-spc"><a href="https://calendly.com/pixelcrayons/project-discovery" class="gtstart">Get Started</a></li>
+      </ul>
+    </div>
+
+        <div class="flex-5 table-list">
+      <ul>
+        <li class="title">Custom</li><li class="more-txt">Quote</li><li class="">Custom</li><li class="">Custom</li><li class="">Custom</li><li class="">Custom</li><li class="m-hdn">Custom</li><li class="m-hdn">Custom</li><li class="m-hdn">Custom</li><li class="m-hdn">Custom</li><li class="m-hdn">Custom</li><li class="m-hdn">Custom</li>        <li class="more-spc"><a href="https://calendly.com/pixelcrayons/project-discovery" class="gtstart">Get Started</a></li>
+      </ul>
+    </div>
+      </div>
+</div>
+<div class="view-more margin-t-50 text-center">
+  <a href="javascript:void(0);" onclick="_morePPCTable();" class="active">
+    <img loading="lazy" class="gt-dwn" src="https://www.pixelcrayons.com/staging/wp-content/themes/pixelcrayons/dev-img/scroll-img.png" alt="Pixelcrayons" width="34" height="34">
+    <img loading="lazy" class="gt-up" src="https://www.pixelcrayons.com/staging/wp-content/themes/pixelcrayons/dev-img/scroll-img-up.png" alt="Pixelcrayons" width="34" height="34">
+  </a>
+</div>
+</div>
+</section>
+
+
     <section class="technology-section-ser bg-light ">
       <div class="dis-flex">
         <div class="left-box  padding-t-120 padding-b-120">

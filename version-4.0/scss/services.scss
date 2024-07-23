@@ -7,6 +7,7 @@
 @import "_counter-column-section";
 @import "_award-section";
 @import "_tech-stacks";
+@import "_common-table";
 @import "_guide-topic";
 @import "_case-studies";
 @import "_hiring-models";
@@ -427,85 +428,7 @@
   }
 }
 
-.table-list-section {
-  .col-box-outer {
-    border: 1px solid rgba(142, 142, 142, 0.25);
-    border-radius: 8px;
-  }
-  .table-list {
-    .title {
-      font-size: 20px;
-      font-weight: 600;
-    }
-    li {
-      border-bottom: 1px solid rgba(142, 142, 142, 0.25);
-      border-right: 1px solid rgba(142, 142, 142, 0.25);
-      padding: 0 5px;
-      list-style: none;
-      text-align: center;
-      font-size: 20px;
-      min-height: 130px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &:last-child {
-        border-bottom: 0;
-      }
-    }
-    &:first-child {
-      ul {
-        li {
-          text-align: left;
-          padding-left: 76px;
-          justify-content: flex-start;
-        }
-      }
-    }
-  }
-  .bg-row-yellow {
-    background-color: $darkYellow;
-    color: $themeMidNight;
-    border: 1px solid $white;
-    li {
-      border-bottom: 1px solid $white;
-      font-weight: 500;
-    }
-  }
-  &.for-yellow-head {
-    .table-list {
-      li {
-        &:first-child {
-          background-color: #2f2d51;
-        }
-      }
-      &:first-child {
-        ul {
-          li {
-            &:first-child {
-              border-radius: 8px 0 0 8px;
-            }
-          }
-        }
-      }
-      &:last-child {
-        li {
-          &:first-child {
-            border-radius: 0 8px 8px 0;
-          }
-        }
-      }
-    }
-    .bg-row-yellow {
-      border: 2px solid $white;
-      li {
-        &:first-child {
-          background-color: #ffcd61;
-          border-bottom: 2px solid $white;
-        }
-      }
-    }
-  }
-}
+
 
 .technology-section-ser {
   .left-box {
@@ -1155,24 +1078,7 @@
       padding-left: calc(50vw - 690px);
     }
   }
-  .table-list-section {
-    .table-list {
-      &:first-child {
-        ul {
-          li {
-            padding-left: 26px;
-          }
-        }
-      }
-      .title {
-        font-size: 18px;
-      }
-      li {
-        font-size: 16px;
-        min-height: 70px;
-      }
-    }
-  }
+  
   .technology-section-ser {
     .left-box {
       padding-left: calc(50vw - 690px);
@@ -1677,17 +1583,7 @@
       }
     }
   }
-  .table-list-section {
-    .table-list {
-      &:first-child {
-        ul {
-          li {
-            padding-left: 15px;
-          }
-        }
-      }
-    }
-  }
+ 
   .technology-section-ser {
     .left-box {
       flex-basis: 100%;
@@ -1913,39 +1809,7 @@
       flex-basis: 100%;
     }
   }
-  .table-list-section {
-    .col-box-outer {
-      border-right: 0;
-      flex-wrap: nowrap;
-      border-radius: 0;
-    }
-    .table-list {
-      flex-basis: 25%;
-      &:first-child {
-        ul {
-          li {
-            padding-left: 5px;
-          }
-        }
-      }
-      li {
-        font-size: 12px;
-      }
-      .title {
-        font-size: 14px;
-      }
-    }
-    &.for-yellow-head {
-      .bg-row-yellow {
-        border: 1px solid $white;
-        li {
-          &:first-child {
-            border-bottom: 1px solid $white;
-          }
-        }
-      }
-    }
-  }
+ 
   .step-icon-img-section {
     .icon-box {
       padding-right: 0;

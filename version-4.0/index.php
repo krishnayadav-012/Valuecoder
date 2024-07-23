@@ -1230,7 +1230,7 @@
     </section>
     <?php require_once 'include/footer.php'; ?>
     <div class="popup-section">
-      <div id="intentPopup" class="popup-wrapper">
+      <div id="intentPopup" class="popup-wrapper" style="display:block">
         <div class="popWrap">
           <div class="popup-content">
             <span class="closeicon">
