@@ -337,165 +337,162 @@
           }
         }
 
-.rate-section{
-  .rating-section{padding:30px 10px 0; margin:30px 0 0; border-top:1px dotted rgba(0, 0, 0, 0.3)
-    ;
+        .rate-section {
+          .rating-section {
+            padding: 30px 10px 0;
+            margin: 30px 0 0;
+            border-top: 1px dotted rgba(0, 0, 0, 0.3);
 
-    &:first-child{margin-top:10px;}
-              h3{font-size: 22px;
-                line-height: 30px;
-                color: rgba(5, 22, 77, 0.9);
-                margin: 0 0 8px;}
-                p{font-size: 14px; line-height: 20px;}
-                .rate-star{margin:20px 0 0;
-                p{font-size: 18px; line-height: 25px; color:rgba(101, 101, 101, 1);}
-
-                .rating { 
-                  border: none;
-                  float: left;
-                }
-                
-                .rating > input { display: none; } 
-                .rating > label:before { 
-                  margin: 5px;
-                  font-size: 1.25em;
-                  font-family: FontAwesome;
-                  display: inline-block;
-                  content: "\f005";
-                }
-                
-                .rating > .half:before { 
-                  content: "\f089";
-                  position: absolute;
-                }
-                
-                .rating > label { 
-                  color: #ddd; 
-                 float: right; 
-                }
-                
-                /***** CSS Magic to Highlight Stars on Hover *****/
-                
-                .rating > input:checked ~ label, /* show gold star when clicked */
-                .rating:not(:checked) > label:hover, /* hover current star */
-                .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-                
-                .rating > input:checked + label:hover, /* hover current star when changing rating */
-                .rating > input:checked ~ label:hover,
-                .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-                .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-
-
-                }
-
-
-.unstyled {margin:10px 0 0;
-  li{margin:0 0 15px;}
-  .styled-checkbox {
-    position: absolute; 
-    opacity: 0; 
-
-    & + label {
-      position: relative;
-      cursor: pointer;
-      padding: 0;
-    }
-
-    // Box.
-    & + label:before {
-      content: "";
-      margin-right: 10px;
-      display: inline-block;
-      vertical-align: text-top;
-      width: 20px;
-      height: 20px;
-      background: white;
-      background: white;
-      border: 1px solid rgba(174, 174, 174, 1);
-      border-radius: 4px;
-    }
-
-   
-    &:hover + label:before {
-      background: rgba(255, 173, 0, 1);
-    }
-
-  
-    &:checked + label:before {
-      background: rgba(255, 173, 0, 1);
-    }
-
-  
-    &:disabled + label {
-      color: #b8b8b8;
-      cursor: auto;
-    }
-
- 
-    &:disabled + label:before {
-      box-shadow: none;
-      background: #ddd;
-    }
-
- 
-    &:checked + label:after {
-      content: "";
-      width: 14px;
-      height: 10px;
-      background: url(../images/check-c.svg) 0 0 no-repeat;
-      position: absolute;
-
-      top: 6px;
-      left: 5px;
-    }
-  }
-}
-               
-
-
-
-
+            &:first-child {
+              margin-top: 10px;
             }
-}
-       
 
+            .rate-star {
+              p {
+                font-size: 18px;
+                line-height: 30px;
+              }
+              .star-rating {
+                display: flex;
+                flex-direction: row-reverse;
+                font-size: 1.5em;
+                justify-content: left;
 
+                text-align: center;
 
+                input {
+                  display: none;
+                }
 
+                label {
+                  color: #ccc;
+                  cursor: pointer;
+                  position: relative;
+                  &:before {
+                    content: "";
+                    width: 24px;
+                    height: 22px;
+                    background: url(../images/star-rate.svg) 0 0 no-repeat;
+                    display: inline-block;
+                    margin-right: 8px;
+                  }
+                }
+              }
+
+              .star-rating :checked ~ label {
+                &:before {
+                  width: 24px;
+                  height: 22px;
+                  background: url(../images/fill-star.svg) 0 0 no-repeat;
+                  display: inline-block;
+                }
+              }
+
+              .star-rating label:hover,
+              .star-rating label:hover ~ label {
+                &:before {
+                  width: 24px;
+                  height: 22px;
+                  background: url(../images/fill-star.svg) 0 0 no-repeat;
+                  display: inline-block;
+                }
+              }
+            }
+
+            h3 {
+              font-size: 22px;
+              line-height: 30px;
+              color: rgba(5, 22, 77, 0.9);
+              margin: 0 0 8px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+
+            .unstyled {
+              margin: 10px 0 0;
+              li {
+                margin: 0 0 15px;
+              }
+              .styled-checkbox {
+                position: absolute;
+                opacity: 0;
+
+                & + label {
+                  position: relative;
+                  cursor: pointer;
+                  padding: 0;
+                }
+
+                // Box.
+                & + label:before {
+                  content: "";
+                  margin-right: 10px;
+                  display: inline-block;
+                  vertical-align: text-top;
+                  width: 20px;
+                  height: 20px;
+                  background: white;
+                  background: white;
+                  border: 1px solid rgba(174, 174, 174, 1);
+                  border-radius: 4px;
+                }
+
+                &:hover + label:before {
+                  background: rgba(255, 173, 0, 1);
+                }
+
+                &:checked + label:before {
+                  background: rgba(255, 173, 0, 1);
+                }
+
+                &:disabled + label {
+                  color: #b8b8b8;
+                  cursor: auto;
+                }
+
+                &:disabled + label:before {
+                  box-shadow: none;
+                  background: #ddd;
+                }
+
+                &:checked + label:after {
+                  content: "";
+                  width: 14px;
+                  height: 10px;
+                  background: url(../images/check-c.svg) 0 0 no-repeat;
+                  position: absolute;
+
+                  top: 6px;
+                  left: 5px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
-
-
-
-
-
 // Media Query Start From Here
 
 @media only screen and (max-width: 1600px) {
-  
- 
 }
 
 @media only screen and (max-width: 1440px) {
 }
 
 @media only screen and (max-width: 1320px) {
-  
 }
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 991px) {
- 
 }
 
 @media only screen and (max-width: 767px) {
-  
-
 }
 
 @media only screen and (max-width: 479px) {
- 
 }

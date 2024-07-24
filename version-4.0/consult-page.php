@@ -169,8 +169,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="popup-section consult-popup">
       <div id="intentPopup" class="popup-wrapper" style="display:block;">
         <div class="popWrap">
@@ -201,59 +199,53 @@
                 </div>
               </form>
             </div>
-<div class="rate-section">
-            <div class="rating-section">
-            <h3>Feedback on Initial Discussions</h3>
-            <p>How satisfied were you with the initial connection and communication with our team? Rating Scale (1-5, where 1 is very dissatisfied and 5 is very satisfied)</p>
-           <div class="rate-star">
-            <p>How would you rate our team's persistence and follow-up?</p>
-            <div class="star-rating">
-            <fieldset class="rating">
-    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset>
-    </div>
-           </div>
-          </div>
-          <div class="rating-section">
-            <h3>Reasons for Not Proceeding</h3>
-            <p>What are the main reasons for not proceeding with the project at this time? Checkboxes (multiple selections allowed)</p>
-            <ul class="unstyled centered">
-  <li>
-    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
-    <label for="styled-checkbox-1">Budget constraints</label>
-  </li>
-  <li>
-    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
-    <label for="styled-checkbox-2">Timeline issues</label>
-  </li>
-  <li>
-    <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
-    <label for="styled-checkbox-3">Not a priority at the moment</label>
-  </li>
-  <li>
-    <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
-    <label for="styled-checkbox-4">Waiting for internal approvals</label>
-  </li>
-</ul>
-          </div>
-
-
-</div>
+            <div class="rate-section">
+              <div class="rating-section">
+                <h3>Feedback on Initial Discussions</h3>
+                <p>How satisfied were you with the initial connection and communication with our team? Rating Scale (1-5, where 1 is very dissatisfied and 5 is very satisfied)</p>
+                <div class="rate-star">
+                  <p>How would you rate our team's persistence and follow-up?</p>
+                  <div class="star-rating">
+                    <input type="radio" id="5-stars" name="rating" value="5" />
+                    <label for="5-stars" class="star"></label>
+                    <input type="radio" id="4-stars" name="rating" value="4" />
+                    <label for="4-stars" class="star"></label>
+                    <input type="radio" id="3-stars" name="rating" value="3" />
+                    <label for="3-stars" class="star"></label>
+                    <input type="radio" id="2-stars" name="rating" value="2" />
+                    <label for="2-stars" class="star"></label>
+                    <input type="radio" id="1-star" name="rating" value="1" />
+                    <label for="1-star" class="star"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="rating-section">
+                <h3>Reasons for Not Proceeding</h3>
+                <p>What are the main reasons for not proceeding with the project at this time? Checkboxes (multiple selections allowed)</p>
+                <ul class="unstyled centered">
+                  <li>
+                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                    <label for="styled-checkbox-1">Budget constraints</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                    <label for="styled-checkbox-2">Timeline issues</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
+                    <label for="styled-checkbox-3">Not a priority at the moment</label>
+                  </li>
+                  <li>
+                    <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                    <label for="styled-checkbox-4">Waiting for internal approvals</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=11.22.1" id="vc-script-js"></script>
   </body>
 </html>

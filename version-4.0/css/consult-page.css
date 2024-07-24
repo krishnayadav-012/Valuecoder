@@ -3291,6 +3291,39 @@ body.page-template-template-testimonials .client-video-section iframe,
     border-top: 1px dotted rgba(0, 0, 0, 0.3); }
     .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section:first-child {
       margin-top: 10px; }
+    .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star p {
+      font-size: 18px;
+      line-height: 30px; }
+    .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: 1.5em;
+      justify-content: left;
+      text-align: center; }
+      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating input {
+        display: none; }
+      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating label {
+        color: #ccc;
+        cursor: pointer;
+        position: relative; }
+        .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating label:before {
+          content: "";
+          width: 24px;
+          height: 22px;
+          background: url(../images/star-rate.svg) 0 0 no-repeat;
+          display: inline-block;
+          margin-right: 8px; }
+    .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating :checked ~ label:before {
+      width: 24px;
+      height: 22px;
+      background: url(../images/fill-star.svg) 0 0 no-repeat;
+      display: inline-block; }
+    .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating label:hover:before,
+    .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .star-rating label:hover ~ label:before {
+      width: 24px;
+      height: 22px;
+      background: url(../images/fill-star.svg) 0 0 no-repeat;
+      display: inline-block; }
     .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section h3 {
       font-size: 22px;
       line-height: 30px;
@@ -3299,40 +3332,6 @@ body.page-template-template-testimonials .client-video-section iframe,
     .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section p {
       font-size: 14px;
       line-height: 20px; }
-    .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star {
-      margin: 20px 0 0;
-      /***** CSS Magic to Highlight Stars on Hover *****/
-      /* hover previous stars in list */ }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star p {
-        font-size: 18px;
-        line-height: 25px;
-        color: #656565; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating {
-        border: none;
-        float: left; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > input {
-        display: none; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > label:before {
-        margin: 5px;
-        font-size: 1.25em;
-        font-family: FontAwesome;
-        display: inline-block;
-        content: "\f005"; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > .half:before {
-        content: "\f089";
-        position: absolute; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > label {
-        color: #ddd;
-        float: right; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > input:checked ~ label,
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating:not(:checked) > label:hover,
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating:not(:checked) > label:hover ~ label {
-        color: #FFD700; }
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > input:checked + label:hover,
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > input:checked ~ label:hover,
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > label:hover ~ input:checked ~ label,
-      .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .rate-star .rating > input:checked ~ label:hover ~ label {
-        color: #FFED85; }
     .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .unstyled {
       margin: 10px 0 0; }
       .consult-popup .popup-wrapper .popWrap .popup-content .rate-section .rating-section .unstyled li {
