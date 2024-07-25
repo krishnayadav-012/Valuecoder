@@ -13,6 +13,7 @@
       content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/consult-page.css" defer />
+    <link rel="preload stylesheet" type="text/css" href="css/nice-select2.css" />
   </head>
   <body>
     <header class="header-two sc-up">
@@ -130,8 +131,37 @@
                   <div class="form-group">
                     <div class="user-input">
                       <label>Expected Turnaround Time *</label>
-                      <input type="text" class="form-input" id="ft-email" placeholder="Select Expected Turnaround Time" name="user-email" maxlength="50">
-                      <small></small>
+                      <select class="wide selectize" name="we-help" id="select-wehelp" style="display:none;">
+                        <option value="">Select</option>
+                        <option value="Software Development" title="For custom software development and fixed cost projects.">Software Development</option>
+                        <option value="Team Extension" title="Augment your team with expert software engineers.">Team Extension (Staff Augmentation)</option>
+                        <option value="Dedicated Software Team" title="Dedicated autonomous software product engineering teams comprising of multiple skills.">Dedicated Software Team</option>
+                        <option value="Other Technology Needs" title="Any other world-class technology solution that you may need.">Other Technology Needs</option>
+                        <option value="None of the above" title="Connect with our business consultant to discuss your requirements.">None of the above</option>
+                      </select>
+                      <div class="nice-select form-input wide selectize" tabindex="0">
+                        <span class="current">Select Expected Turnaround Time</span>
+                        <div class="nice-select-dropdown">
+                          <ul class="list">
+                            <li data-value="Software Development" class="option null">
+                              Software Development
+                            </li>
+                            <li data-value="Team Extension" class="option null">
+                              Team Extension (Staff Augmentation)
+                            </li>
+                            <li data-value="Dedicated Software Team" class="option null">
+                              Dedicated Software Team
+                            </li>
+                            <li data-value="Other Technology Needs" class="option null">
+                              Other Technology Needs
+                            </li>
+                            <li data-value="None of the above" class="option null">
+                              None of the above
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <small>Error Message</small>
                     </div>
                   </div>
                   <div class="form-group">
@@ -170,7 +200,7 @@
       </div>
     </div>
     <div class="popup-section consult-popup">
-      <div id="intentPopup" class="popup-wrapper" style="display:block;">
+      <div id="intentPopup" class="popup-wrapper">
         <div class="popWrap">
           <div class="popup-content">
             <span class="closeicon">

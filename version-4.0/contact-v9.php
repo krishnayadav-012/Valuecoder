@@ -369,7 +369,7 @@
 
            <div class="client-section">
             <div class="client-row">
-              <div class="client-stack award-animate-slide-to-left hover:pause">
+              <div class="client-stack">
                 <ul>
                   <li>
                     <picture>
