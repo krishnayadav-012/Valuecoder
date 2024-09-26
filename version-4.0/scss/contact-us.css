@@ -416,7 +416,8 @@ strong {
   color: #ffffff; }
 
 ::placeholder {
-  color: #9b9b9b; }
+  color: #9b9b9b;
+  font-family: "Noto Sans", sans-serif; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -695,7 +696,7 @@ textarea {
   text-transform: initial; }
 
 .footer {
-  background: #05164d;
+  background: #040F34;
   padding: 20px 0; }
   .footer span,
   .footer h4,
@@ -1929,7 +1930,7 @@ body.page-template-template-testimonials .client-video-section iframe,
         line-height: 26px;
         color: #212121;
         display: block;
-        margin-top: 20px; }
+        margin-top: 15px; }
         .header-two .menu ul li .menu-mega .middle-list a.active, .header-two .menu ul li .menu-mega .middle-list a:hover,
         .header-two .menu ul li .menu-mega .last-list a.active,
         .header-two .menu ul li .menu-mega .last-list a:hover {
@@ -2246,9 +2247,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   align-items: center; }
 
-.header-two .menu ul li .menu-mega .last-list a.margin-t-40 {
-  margin-top: 20px; }
-
 @media only screen and (min-width: 1200px) {
   .header-two > .container {
     max-width: 1900px; } }
@@ -2319,8 +2317,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   .header-two .menu ul li.small-menu .active-pcat {
     color: #fff; }
 
-  .header-two .menu ul li .menu-mega .flex-3 a, .header-two .menu ul li .menu-mega .detail-list a {
-    margin: 0 0 25px; } }
+  .header-two .menu ul li .menu-mega .last-list a.margin-t-40 {
+    margin-top: 25px; } }
 @media only screen and (max-width: 1470px) {
   .header-two {
     padding: 20px 0; }
@@ -2367,17 +2365,18 @@ body.page-template-template-testimonials .client-video-section iframe,
         margin: 0 0 15px;
         font-size: 12px; }
     .header-two .menu ul li .menu-mega .last-list.for-padding {
-      padding: 25px 30px; }
+      padding: 20px 25px; }
     .header-two .menu ul li .menu-mega .last-list a {
       font-size: 12px;
-      margin: 0 0 8px; }
+      margin: 0 0 12px;
+      line-height: 20px; }
     .header-two .menu ul li .menu-mega .last-list .head {
       margin: 0 0 15px;
       font-size: 12px; }
     .header-two .menu ul li .menu-mega .middle-list a {
       font-size: 14px; }
     .header-two .menu ul li .menu-mega .header-menu.for-padding {
-      padding: 25px 30px; }
+      padding: 20px 25px; }
     .header-two .large img {
       max-width: 190px; } }
 @media only screen and (max-width: 1439px) {
@@ -2446,7 +2445,19 @@ body.page-template-template-testimonials .client-video-section iframe,
     padding: 10px 20px 30px; }
 
   .header-two .menu ul li.for-product .small-menu-inner a {
-    padding-left: 38px; } }
+    padding-left: 38px; }
+
+  .header-two .menu ul li .menu-mega .header-menu.for-padding {
+    padding: 15px 20px; }
+
+  .header-two .menu ul li .menu-mega .last-list a {
+    margin: 0 0 8px; }
+
+  .header-two .menu ul li .menu-mega .last-list a.margin-t-40 {
+    margin-top: 10px; }
+
+  .header-two .menu ul li .menu-mega .middle-list a, .header-two .menu ul li .menu-mega .last-list a {
+    line-height: 22px; } }
 @media only screen and (max-width: 1140px) {
   .header-two .menu ul li.for-product {
     min-width: auto; } }
