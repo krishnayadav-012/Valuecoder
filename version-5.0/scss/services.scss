@@ -17,6 +17,12 @@
 @import "_accordion";
 @import "_counter-column-section";
 
+@import "_hiremodel-tab";
+
+
+
+
+
 @import "_common-table";
 @import "_guide-topic";
 @import "_case-studies";
@@ -256,6 +262,112 @@
     }
   }
 }
+
+
+
+
+
+.hiring-models{
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+    display: none; /* Hide all slides initially */
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #007bff; /* Active dot color */
+}
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+
+}
+
+
+
+
+
+
 
 .tailored-tech {
   .tailored-out {

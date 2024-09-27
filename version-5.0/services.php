@@ -10,7 +10,6 @@
     <meta property="og:title" content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/services.min.css" defer />
-    <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
   </head>
   <body id="themeAdd">
     <?php require_once './include/menu-tabversion.php'; ?>
@@ -1482,6 +1481,123 @@
         </div>
       </div>
     </section>
+
+
+
+    <section class="hire-model-tab bg-light padding-t-120 padding-b-120">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Choose From Our Hiring Models </h2>
+          <p>With us, you can choose from multiple hiring models that best suit your needs
+          </p>
+        </div>
+        <div class="hire-tabs-section margin-t-50">
+          <div class="tab-row">
+            <nav id="hiring-models" class="tab-nav">
+              <div class="tab-scroll">
+                <div class="tablist active" data-tab="#tab01"><a href="#tab01">
+                Dedicated Team</a>
+                </div>
+                <div class="tablist" data-tab="#tab02"><a href="#tab02">
+                Team Augmentation</a>
+                </div>
+                <div class="tablist" data-tab="#tab03"><a href="#tab03">
+                Project Based</a>
+                </div>
+              </div>
+            </nav>
+            <div class="bcontents">
+              <div id="tab01" class="tab-contents active">
+                <div class="dis-flex">
+                 
+                  <div class="content-box">
+                    <h3>Dedicated Team</h3>
+                    <h4>(also known as product engineering teams)</h4>
+                    <p>It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers,
+                    QA engineers, and other roles) capable of delivering technology.
+                    </p>
+                    <p><strong>Benefits of Dedicated Team</strong></p>
+                    <ul>
+                      <li>Agile processes</li>
+                      <li>Transparent pricing</li>
+                      <li>Monthly billing</li>
+                      <li>Maximum flexibility</li>
+                    </ul>
+                    
+                  </div>
+                  <div class="image-box">
+                    <picture>
+                      <source type="image/webp" srcset="./images/hire-model.png">
+                      <source type="image/png" srcset="./images/hire-model.png">
+                      <img loading="lazy" src="./images/hire-model.png"
+                        alt="valuecoders" width="581" height="387">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div id="tab02" class="tab-contents">
+                <div class="dis-flex">
+                 
+                  <div class="content-box">
+                    <h3>Team Augmentation</h3>
+                    <h4>(also known as product engineering teams)</h4>
+                    <p>It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers,
+                    QA engineers, and other roles) capable of delivering technology.
+                    </p>
+                    <p><strong>Benefits of Dedicated Team</strong></p>
+                    <ul>
+                      <li>Agile processes</li>
+                      <li>Transparent pricing</li>
+                      <li>Monthly billing</li>
+                      <li>Maximum flexibility</li>
+                    </ul>
+                    
+                  </div>
+                  <div class="image-box">
+                    <picture>
+                      <source type="image/webp" srcset="./images/hire-model.png">
+                      <source type="image/png" srcset="./images/hire-model.png">
+                      <img loading="lazy" src="./images/hire-model.png"
+                        alt="valuecoders" width="581" height="387">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div id="tab03" class="tab-contents">
+                <div class="dis-flex">
+                  <div class="content-box">
+                    <h3>Project Based</h3>
+                    <h4>(also known as product engineering teams)</h4>
+                    <p>It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers,
+                    QA engineers, and other roles) capable of delivering technology.
+                    </p>
+                    <p><strong>Benefits of Dedicated Team</strong></p>
+                    <ul>
+                      <li>Agile processes</li>
+                      <li>Transparent pricing</li>
+                      <li>Monthly billing</li>
+                      <li>Maximum flexibility</li>
+                    </ul>
+                    
+                  </div>
+                  <div class="image-box">
+                    <picture>
+                      <source type="image/webp" srcset="./images/hire-model.png">
+                      <source type="image/png" srcset="./images/hire-model.png">
+                      <img loading="lazy" src="./images/hire-model.png"
+                        alt="valuecoders" width="581" height="387">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
     <section class="full-width-two-column  padding-b-150">
       <div class="dis-flex ">
         <div class="flex-2 col-box">
@@ -2356,7 +2472,7 @@
       // Initialize Glider with previous and next buttons
       new Glider(gliderElement, {
         slidesToShow: 4, // Default slides to show
-        slidesToScroll: 1, // Default slides to scroll
+        slidesToScroll: 4, // Default slides to scroll
         draggable: true,
         scrollLock: false,
         dots: ".technology-slider .dots", // Dots selector for pagination
@@ -2409,9 +2525,8 @@
       }
       });
       }
-      
-      
-      
+
+
       const vcTailerd = document.getElementById("tailored-slide");
           if( vcTailerd ){
           window.addEventListener("load", function() {
@@ -2470,6 +2585,64 @@
           });
             
       }
+
+
+
+
+
+
+
+
+      var tabMC       = document.querySelectorAll("#hiring-models .tablist");
+                  var tabPanesMc  = document.getElementsByClassName("tab-contents");
+                  function activateTabFx(e){
+                  e.preventDefault();  
+                  tabMC.forEach(function(label, index){
+                   label.classList.remove("active");
+                  });
+                  
+                  [].forEach.call(tabPanesMc, function(pane, index){
+                   pane.classList.remove("active");
+                  }); 
+                  
+                  if( e.target === this || this.contains(e.target)){
+                   var clickedTab = this.getAttribute("data-tab");
+                   this.classList.add("active");
+                   document.querySelector(clickedTab).classList.add("active");
+                  }    
+                  }
+                  
+                  tabMC.forEach(function(label, index){
+                  label.addEventListener("click", activateTabFx);
+                  }); 
+
+     
+
+
+
+
+
+
+
+
+
+
+  
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
       
       
       
@@ -2575,5 +2748,52 @@
                 
           
     </script>
+
+
+<script>
+    const tabs = document.querySelectorAll('.tab');
+    const gliderContainer = document.querySelector('.glider');
+    let glider;
+
+    // Initialize Glider
+    function initializeGlider() {
+        glider = new Glider(gliderContainer, {
+            slidesToShow: 1,
+            dots: '.dots',
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: '.dots',
+                    }
+                }
+            ]
+        });
+    }
+
+    // Tab Click Event
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (event) => {
+            event.preventDefault();
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const tabIndex = tab.getAttribute('data-tab') - 1;
+            glider.scrollTo(tabIndex);
+        });
+    });
+
+    // Initialize the Glider when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeGlider();
+    });
+</script>
   </body>
 </html>
