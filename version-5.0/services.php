@@ -10,6 +10,7 @@
     <meta property="og:title" content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/services.min.css" defer />
+    <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
   </head>
   <body id="themeAdd">
     <?php require_once './include/menu-tabversion.php'; ?>
@@ -80,7 +81,7 @@
       <div class="container">
         <div class="entire-sticky">
           <div class="left-column">
-            <div class="service-section">
+            <div class="service-section" id="our-services">
               <div class="heading">
                 <h2>Software Product Development Services</h2>
                 <p>Driven by the top 1% of software engineering talent in India, we deliver robust, scalable, and reliable software product solutions to clients across the globe.</p>
@@ -141,7 +142,7 @@
                 </div>
               </div>
             </div>
-            <div class="lets-discuss-pro bg-blue-linear  margin-t-70  ">
+            <div class="lets-discuss-pro bg-blue-linear  margin-t-70" id="portfolio">
               <div class="dis-flex justify-sb">
                 <div class="left-sec">
                   <div class="head-txt">
@@ -164,7 +165,7 @@
                 </div>
               </div>
             </div>
-            <div class="software-work padding-t-70">
+            <div class="software-work padding-t-70" id="industry">
               <div class="heading">
                 <h2>We Have Worked on 50+ Types of Software</h2>
                 <p>Discover the core practices that drive our efficient and successful software development projects.</p>
@@ -406,16 +407,22 @@
             <div class="toc-sec">
               <h4>Table of Contents</h4>
               <div class="toc-wrap">
-                <p><a href="#about">Our Services</a></p>
-                <p><a href="#about">Portfolio</a></p>
+                <p><a href="#our-services">Our Services</a></p>
+                <p><a href="#portfolio">Portfolio</a></p>
                 <p><a href="#about">Why Us</a></p>
-                <p><a href="#about">Industries Served</a></p>
-                <p><a href="#about">Tech Stacks</a></p>
-                <p><a href="#about">Development Cost</a> </p>
-                <p><a href="#about">Our Process</a></p>
-                <p><a href="#about">Hiring Models</a></p>
-                <p><a href="#about">Guide Topics</a></p>
-                <p><a href="#about">FAQs</a></p>
+                <p><a href="#industry">Industries Served</a></p>
+                <p><a href="#techstacks">Tech Stacks</a></p>
+                <p><a href="#dev-cost">Development Cost</a> </p>
+                <p><a href="#process">Our Process</a></p>
+                <p><a href="#hiremodels">Hiring Models</a></p>
+                <p><a href="#guide">Guide Topics</a></p>
+                <p><a href="#faq">FAQs</a></p>
+              </div>
+            </div>
+            <div class="sticky-button">
+              <div class="sticky-cta">
+                <p>Have pressing questions about your project?</p>
+                <a class="gtexprt" href="#">Get Expert Advice</a>
               </div>
             </div>
           </div>
@@ -797,14 +804,14 @@
         </div>
       </div>
     </section>
-    <section class="tech-stack-section bg-light padding-t-120 padding-b-120">
+    <section class="tech-stack-section bg-light padding-t-120 padding-b-120" id="techstacks">
       <div class="container">
         <div class="head-txt text-center">
           <h2>Tech Stacks We Use</h2>
           <p>The cost of software development depends on various factors such as service scope, sourcing model, technical design pattern, and software complexity.</p>
         </div>
-        <div class="dis-flex glider-contain technology-slider">
-          <div class="glider" id="technology-glider">
+        <div class="dis-flex glider-contain technology-slider" id="technology-glider">
+          <div class="glider">
             <div class="flex-3 col-box">
               <div class="inner-box">
                 <h3>Front-end programming languages & frameworks</h3>
@@ -1011,139 +1018,14 @@
                 </ul>
               </div>
             </div>
-            <div class="flex-3 col-box">
-              <div class="inner-box">
-                <h3>Backend</h3>
-                <ul>
-                  <li>
-                    <a href="#">PHP</a>
-                  </li>
-                  <li>
-                    <a href="#">Python</a>
-                  </li>
-                  <li>
-                    <a href="#">Laravel</a>
-                  </li>
-                  <li>
-                    <a href="#">MEAN Stack</a>
-                  </li>
-                  <li>
-                    <a href="#">Django</a>
-                  </li>
-                  <li>
-                    <a href="#">Firebase</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-3 col-box">
-              <div class="inner-box">
-                <h3>Backend</h3>
-                <ul>
-                  <li>
-                    <a href="#">PHP</a>
-                  </li>
-                  <li>
-                    <a href="#">Python</a>
-                  </li>
-                  <li>
-                    <a href="#">Laravel</a>
-                  </li>
-                  <li>
-                    <a href="#">MEAN Stack</a>
-                  </li>
-                  <li>
-                    <a href="#">Django</a>
-                  </li>
-                  <li>
-                    <a href="#">Firebase</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-3 col-box">
-              <div class="inner-box">
-                <h3>Backend</h3>
-                <ul>
-                  <li>
-                    <a href="#">PHP</a>
-                  </li>
-                  <li>
-                    <a href="#">Python</a>
-                  </li>
-                  <li>
-                    <a href="#">Laravel</a>
-                  </li>
-                  <li>
-                    <a href="#">MEAN Stack</a>
-                  </li>
-                  <li>
-                    <a href="#">Django</a>
-                  </li>
-                  <li>
-                    <a href="#">Firebase</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-3 col-box">
-              <div class="inner-box">
-                <h3>Backend</h3>
-                <ul>
-                  <li>
-                    <a href="#">PHP</a>
-                  </li>
-                  <li>
-                    <a href="#">Python</a>
-                  </li>
-                  <li>
-                    <a href="#">Laravel</a>
-                  </li>
-                  <li>
-                    <a href="#">MEAN Stack</a>
-                  </li>
-                  <li>
-                    <a href="#">Django</a>
-                  </li>
-                  <li>
-                    <a href="#">Firebase</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-3 col-box">
-              <div class="inner-box">
-                <h3>Backend</h3>
-                <ul>
-                  <li>
-                    <a href="#">PHP</a>
-                  </li>
-                  <li>
-                    <a href="#">Python</a>
-                  </li>
-                  <li>
-                    <a href="#">Laravel</a>
-                  </li>
-                  <li>
-                    <a href="#">MEAN Stack</a>
-                  </li>
-                  <li>
-                    <a href="#">Django</a>
-                  </li>
-                  <li>
-                    <a href="#">Firebase</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
-          <button aria-label="Previous" class="arrow glider-prev">«</button>
+          <button aria-label="Previous" class="arrow  glider-prev">«</button>
           <button aria-label="Next" class="arrow glider-next">»</button>
           <div role="tablist" class="dots"></div>
         </div>
       </div>
     </section>
-    <section class="software-costing padding-t-120 padding-b-120">
+    <section class="software-costing padding-t-120 padding-b-120" id="dev-cost">
       <div class="container">
         <div class="head-txt text-center">
           <h2>Cost of Software Development Services</h2>
@@ -1285,7 +1167,7 @@
         </div>
       </div>
     </section>
-    <section class="tailored-tech bg-light padding-t-120 padding-b-120">
+    <section class="tailored-tech bg-light padding-t-120 padding-b-120" id="">
       <div class="container">
         <div class="dis-flex tailored-out">
           <div class="left-section">
@@ -1428,7 +1310,7 @@
         </div>
       </div>
     </section>
-    <section class="development-phase padding-t-120 padding-b-120">
+    <section class="development-phase padding-t-120 padding-b-120" id="process">
       <div class="container">
         <div class="head-txt text-center">
           <h2>Our Process</h2>
@@ -1481,10 +1363,7 @@
         </div>
       </div>
     </section>
-
-
-
-    <section class="hire-model-tab bg-light padding-t-120 padding-b-120">
+    <section class="hire-model-tab bg-light padding-t-120 padding-b-120" id="hiremodels">
       <div class="container">
         <div class="heading text-center">
           <h2>Choose From Our Hiring Models </h2>
@@ -1496,25 +1375,24 @@
             <nav id="hiring-models" class="tab-nav">
               <div class="tab-scroll">
                 <div class="tablist active" data-tab="#tab01"><a href="#tab01">
-                Dedicated Team</a>
+                  Dedicated Team</a>
                 </div>
                 <div class="tablist" data-tab="#tab02"><a href="#tab02">
-                Team Augmentation</a>
+                  Team Augmentation</a>
                 </div>
                 <div class="tablist" data-tab="#tab03"><a href="#tab03">
-                Project Based</a>
+                  Project Based</a>
                 </div>
               </div>
             </nav>
             <div class="bcontents">
               <div id="tab01" class="tab-contents active">
                 <div class="dis-flex">
-                 
                   <div class="content-box">
                     <h3>Dedicated Team</h3>
                     <h4>(also known as product engineering teams)</h4>
                     <p>It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers,
-                    QA engineers, and other roles) capable of delivering technology.
+                      QA engineers, and other roles) capable of delivering technology.
                     </p>
                     <p><strong>Benefits of Dedicated Team</strong></p>
                     <ul>
@@ -1523,7 +1401,6 @@
                       <li>Monthly billing</li>
                       <li>Maximum flexibility</li>
                     </ul>
-                    
                   </div>
                   <div class="image-box">
                     <picture>
@@ -1537,12 +1414,11 @@
               </div>
               <div id="tab02" class="tab-contents">
                 <div class="dis-flex">
-                 
                   <div class="content-box">
                     <h3>Team Augmentation</h3>
                     <h4>(also known as product engineering teams)</h4>
                     <p>It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers,
-                    QA engineers, and other roles) capable of delivering technology.
+                      QA engineers, and other roles) capable of delivering technology.
                     </p>
                     <p><strong>Benefits of Dedicated Team</strong></p>
                     <ul>
@@ -1551,7 +1427,6 @@
                       <li>Monthly billing</li>
                       <li>Maximum flexibility</li>
                     </ul>
-                    
                   </div>
                   <div class="image-box">
                     <picture>
@@ -1569,7 +1444,7 @@
                     <h3>Project Based</h3>
                     <h4>(also known as product engineering teams)</h4>
                     <p>It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers,
-                    QA engineers, and other roles) capable of delivering technology.
+                      QA engineers, and other roles) capable of delivering technology.
                     </p>
                     <p><strong>Benefits of Dedicated Team</strong></p>
                     <ul>
@@ -1578,7 +1453,6 @@
                       <li>Monthly billing</li>
                       <li>Maximum flexibility</li>
                     </ul>
-                    
                   </div>
                   <div class="image-box">
                     <picture>
@@ -1595,9 +1469,6 @@
         </div>
       </div>
     </section>
-
-
-
     <section class="full-width-two-column  padding-b-150">
       <div class="dis-flex ">
         <div class="flex-2 col-box">
@@ -1694,7 +1565,7 @@
         </div>
       </div>
     </section>
-    <section class="tab-scroll-section padding-t-120 padding-b-120">
+    <section class="tab-scroll-section padding-t-120 padding-b-120" id="guide">
       <div class="container">
         <div class="head-txt text-center">
           <h2>Ultimate User Guide to Understand Custom<br> Software Development</h2>
@@ -1828,7 +1699,7 @@
         </div>
       </div>
     </section>
-    <section class="faq-section padding-t-120 padding-b-120">
+    <section class="faq-section padding-t-120 padding-b-120" id="faq">
       <div class="container">
         <div class="head-txt text-center">
           <h2>Frequently Asked Questions</h2>
@@ -2028,402 +1899,34 @@
         </div>
       </div>
     </section>
-    <section id="pxl-ppc-table" class="serv-pricing-tbl show-all bg-light padding-t-120 padding-b-120">
-      <div class="container">
-        <div class="heading text-center">
-          <h2>DevOps Packages</h2>
-          <p>Our DevOps solutions are tailored to address the unique challenges faced by software product companies, providing you with the tools and expertise needed to streamline your operations and accelerate your development cycles.</p>
-        </div>
-        <div class="table-wrap">
-          <div class="dis-flex col-box-outer margin-t-100">
-            <div class="flex-5 table-list">
-              <ul>
-                <li class="title clr-white">Feature/Metric</li>
-                <li class="">Price</li>
-                <li class="">CI/CD Projects</li>
-                <li class="">Automated Testing Frameworks</li>
-                <li class="">Configuration Management</li>
-                <li class="">Containerization &amp; Orchestration</li>
-                <li class="m-hdn">Infrastructure as Code (IaC)</li>
-                <li class="m-hdn">Monitoring &amp; Logging</li>
-                <li class="m-hdn">Incident Management &amp; Response</li>
-                <li class="m-hdn">Disaster Recovery Planning</li>
-                <li class="m-hdn">Security &amp; Compliance Automation</li>
-                <li class="m-hdn">Cost Optimization</li>
-                <li class="more-spc">
-                  <p>Need more information?  <a href="https://www.pixelcrayons.com/staging/contact-us" class="ts">Talk to Sales</a></p>
-                </li>
-              </ul>
-            </div>
-            <div class="flex-5 table-list">
-              <ul>
-                <li class="title">Starter</li>
-                <li class="more-txt">$500/month</li>
-                <li class="">5</li>
-                <li class="">Basic</li>
-                <li class="">Basic</li>
-                <li class="">x</li>
-                <li class="m-hdn">x</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">x</li>
-                <li class="more-spc">
-                  <div class="btn-sec">
-                    <a class="btn rounded"><span class="text-white">Get Started</span></a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="flex-5 table-list">
-              <ul>
-                <li class="title">Starter</li>
-                <li class="more-txt">$500/month</li>
-                <li class="">5</li>
-                <li class="">Basic</li>
-                <li class="">Basic</li>
-                <li class="">x</li>
-                <li class="m-hdn">x</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">x</li>
-                <li class="more-spc">
-                  <div class="btn-sec">
-                    <a class="btn rounded"><span class="text-white">Get Started</span></a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="flex-5 table-list">
-              <ul>
-                <li class="title">Starter</li>
-                <li class="more-txt">$500/month</li>
-                <li class="">5</li>
-                <li class="">Basic</li>
-                <li class="">Basic</li>
-                <li class="">x</li>
-                <li class="m-hdn">x</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">x</li>
-                <li class="more-spc">
-                  <div class="btn-sec">
-                    <a class="btn rounded"><span class="text-white">Get Started</span></a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="flex-5 table-list">
-              <ul>
-                <li class="title">Starter</li>
-                <li class="more-txt">$500/month</li>
-                <li class="">5</li>
-                <li class="">Basic</li>
-                <li class="">Basic</li>
-                <li class="">x</li>
-                <li class="m-hdn">x</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">Basic</li>
-                <li class="m-hdn">x</li>
-                <li class="more-spc">
-                  <div class="btn-sec">
-                    <a class="btn rounded"><span class="text-white">Get Started</span></a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="view-more margin-t-50 text-center">
-          <a href="javascript:void(0);" onclick="_moreVCTable();" class="active">
-          <img loading="lazy" class="gt-dwn" src="images/scroll-img.png" alt="vc" width="34" height="34">
-          <img loading="lazy" class="gt-up" src="images/scroll-img-up.png" alt="vc" width="34" height="34">
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="technology-section-ser bg-light ">
-      <div class="dis-flex">
-        <div class="left-box  padding-t-120 padding-b-120">
-          <h2>Technologies We Deploy In 
-            Android App Development
-          </h2>
-          <p>Being a top-notch Android development company, our dedicated development team integrates highly advanced and trending technologies into our Android app development solutions.</p>
-          <h3>.NET Technologies</h3>
-          <ul>
-            <li><a href="#">Product Engineering</a></li>
-            <li><a href="#">Internet of Things</a></li>
-            <li><a href="#">Big Data</a></li>
-            <li><a href="#">Artificial Intelligence /Machine Learning</a></li>
-            <li><a href="#">Cloud Development</a></li>
-            <li><a href="#">Blockchain Technology</a></li>
-          </ul>
-        </div>
-        <div class="right-box">
-          <picture>
-            <source type="image/webp" srcset="images/technology-app.png">
-            <source type="image/png" srcset="images/technology-app.png">
-            <img loading="lazy" src="images/technology-app.png" width="695" height="607" alt="valuecoders">
-          </picture>
-        </div>
-      </div>
-    </section>
-    <section class="three-column-icon-section padding-t-120 padding-b-120" id="v3-why-choose">
-      <div class="container">
-      <div class="dis-flex top-content">
-        <div class="flex-2">
-          <h2>Leverage the Technical Expertise Of Our Computer Vision Software Developers</h2>
-        </div>
-        <div class="flex-2">
-          <p>Our developers possess extensive technical expertise in the field, allowing us to provide cutting-edge solutions. They have a deep understanding of the complex algorithms, frameworks, and technologies required to build high-performing computer vision applications, enabling us to deliver solutions that meet your expectations and drive business growth.</p>
-        </div>
-        <div class="image-sec margin-t-80">
-          <picture>
-            <img class="desktop" loading="lazy" src="images/vision-image.svg" width="1282" height="266" alt="valuecoders">
-          </picture>
-        </div>
-      </div>
-    </section>
-    <section class="accordion-section bg-blue-linear  padding-t-120">
-      <div class="dis-flex accordian-row">
-        <div class="col-left">
-          <div class="head-txt">
-            <h2>Bringing Innovation with Latest<br> Tech Stack</h2>
-            <p>We are a software development firm with strong teams of experienced developers who work across different technologies like Artificial Intelligence (AI), Robotic Process Automation(RPA), and Internet-of-Things (IoT). Our diverse background allows us to create innovative solutions for various industries.
-            </p>
-          </div>
-          <picture class="soft-img">
-            <source type="image/webp" srcset="images/service-image.png">
-            <source type="image/png" srcset="images/service-image.png">
-            <img loading="lazy" src="images/service-image.png" width="690" height="297" alt="valuecoders">
-          </picture>
-        </div>
-        <div class="col-right padding-b-120">
-          <div class="accordionItem active">
-            <h3 class="accordion-toggle">Artificial Intelligence (AI)</h3>
-            <div class="accordion-content">
-              <p>Our team of experts has in-depth understanding &amp; extensive experience with predictive modeling, data mining, computer vision &amp; natural language processing. We can help your business workflows become more intelligent by using AI to reduce human effort in operations while increasing operational efficiency!
-              </p>
-            </div>
-          </div>
-          <div class="accordionItem">
-            <h3 class="accordion-toggle">Robotic Process Automation (RPA)</h3>
-            <div class="accordion-content">
-              <p>We offer end-to-end software outsourcing services from initial consulting to development &amp; deployment. Our expertise helps businesses launch new products faster, modernize existing....
-              </p>
-            </div>
-          </div>
-          <div class="accordionItem">
-            <h3 class="accordion-toggle">Internet of Things (IoT)</h3>
-            <div class="accordion-content">
-              <p>We offer end-to-end software outsourcing services from initial consulting to development &amp; deployment. Our expertise helps businesses launch new products faster, modernize existing....
-              </p>
-            </div>
-          </div>
-          <div class="accordionItem">
-            <h3 class="accordion-toggle">Augmented Reality &amp; Virtual Reality (AR/VR)</h3>
-            <div class="accordion-content">
-              <p>We offer end-to-end software outsourcing services from initial consulting to development &amp; deployment. Our expertise helps businesses launch new products faster, modernize existing....
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="accordion-section  padding-t-120">
-      <div class="dis-flex accordian-row">
-        <div class="col-left">
-          <div class="head-txt">
-            <h2>Our Business Intelligence Data Science Consulting Process</h2>
-            <p>We follow a specific process for data science and analytics services, which includes the following steps:
-            </p>
-          </div>
-          <picture class="soft-img">
-            <source type="image/webp" srcset="images/service-image.png">
-            <source type="image/png" srcset="images/service-image.png">
-            <img loading="lazy" src="images/service-image.png" width="690" height="297" alt="valuecoders">
-          </picture>
-        </div>
-        <div class="col-right content-col w-100 padding-b-120">
-          <ul>
-            <li>During data preparation, ETL  Extract, Transform, and Load tools may generate cron jobs, background jobs, SQL Packages (SSIS), shell scripts, etc. that regularly update data in the data warehouse.</li>
-            <li>Our team builds customized data intelligence tools using internal data (CSV, MS-Access, CRM, and ERP data), Archive data, External data(Analytics, 3rd Party API), SAP, etc. Below is the technical architect diagram for the business intelligence practice built by our SQL Server team using SSAS and SSRS.</li>
-            <li>Our team builds customized data intelligence tools using internal data (CSV, MS-Access, CRM, and ERP data), Archive data, External data(Analytics, 3rd Party API), SAP, etc. Below is the technical architect diagram for the business intelligence practice built by our SQL Server team using SSAS and SSRS.</li>
-            <li>Our team builds customized data intelligence tools using internal data (CSV, MS-Access, CRM, and ERP data), Archive data, External data(Analytics, 3rd Party API), SAP, etc. Below is the technical architect diagram for the business intelligence practice built by our SQL Server team using SSAS and SSRS.</li>
-            <li>Our team builds customized data intelligence tools using internal data (CSV, MS-Access, CRM, and ERP data), Archive data, External data(Analytics, 3rd Party API), SAP, etc. Below is the technical architect diagram for the business intelligence practice built by our SQL Server team using SSAS and SSRS.</li>
-            <li>Our team builds customized data intelligence tools using internal data (CSV, MS-Access, CRM, and ERP data), Archive data, External data(Analytics, 3rd Party API), SAP, etc. Below is the technical architect diagram for the business intelligence practice built by our SQL Server team using SSAS and SSRS.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="numbering-box-section three-column-icon-section bg-light padding-t-120 padding-b-120">
-      <div class="container">
-        <div class="head-txt text-center">
-          <h2>Business Intelligence Consulting ValueCoders Offers</h2>
-          <p>Our BI consultants help companies operate in the increasingly data-centric environment to derive strategic business value from data of multiple origins</p>
-        </div>
-        <div class="dis-flex col-box-outer margin-t-50">
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>ETL Services</h3>
-              <p>We collect, read, and migrate large volumes of raw data from multiple data sources and across disparate platforms and load that into a single database, data store, or warehouse for easy access.</p>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>Background Jobs</h3>
-              <p>Background processes manage scheduled SQL jobs, SSIS packages, Azure web jobs, and cron jobs that reconcile data from multiple data sources into one DB.</p>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3><a href="/digital-transformation-services">Data Transformation</a></h3>
-              <p>Unlike other Clouds, it is a first-party service on Azure that integrates seamlessly with other Azure services such as event hubs and Cosmos DB.</p>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>Data Modeling</h3>
-              <p>By creating fact, dimension, and non-relational DB, we reduce data errors and redundancy. This cleaned, formatted, and well-analyzed data can help you predict future industry trends and shape your strategies accordingly.</p>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3><a href="/microsoft-power-bi-development-services-company">Power BI Integration</a></h3>
-              <p>Our BI experts support on-premise solutions using Power BI reporting tools, such as DirectQuery, Advance DAX formulas for nested conditions, and dynamic parameters and filters.</p>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>Tableau Integration</h3>
-              <p>Tableau Integration enables anyone to analyze data with intuitive drag &amp; drop products and create different types of visualization(charts) using large amounts of data without disturbing the performance of the dashboards.</p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="text-center margin-t-100"></div>-->
-      </div>
-    </section>
-    <section class="client-video-section bg-light padding-t-120 padding-b-120">
-      <div class="container">
-        <div class="head-txt text-center">
-          <h2>What Our Valuable Clients Say About Us</h2>
-          <p>We are grateful for our clients&#8217; trust in us, and we take great pride in delivering quality
-            solutions that exceed their expectations. Here is what some of them have to say about us:
-          </p>
-        </div>
-        <div class="glider-contain client-testimonial-slider">
-          <div class="glider">
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312"
-                  src="https://www.youtube.com/embed/d78gD-wwVTg?autoplay=1?rel=0"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/02/client-video-2.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/d78gD-wwVTg?autoplay=1?rel=0><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/e7nbilPZzBE?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/02/client-video-3.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/e7nbilPZzBE?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/W7Bxt2Up0NQ?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/05/client-video-7.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/W7Bxt2Up0NQ?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/aErqOtvMClY?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/02/client-video-1.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/aErqOtvMClY?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/QCIMuRQkfKU?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/05/client-video-8.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/QCIMuRQkfKU?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-            <div class="client-videos shadow-box">
-              <div class="client-video-box">
-                <iframe width="483" height="312" src="https://www.youtube.com/embed/oVbfGyMPq50?autoplay=1"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}a{display:flex;align-items:center;justify-content:center;}.iframe-bg{background:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/05/client-video-5.webp) top center no-repeat;background-size:cover;width:100%;height:100%;}</style><a href=https://www.youtube.com/embed/oVbfGyMPq50?autoplay=1><span class='iframe-bg'></span></a>"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen title="Testimonial Image"></iframe>
-              </div>
-              <div class="client-description bg-white">
-                <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                <i class="star-rating"></i>
-                <h3>Mohammed Mirza</h3>
-                <span class="detail">Director, LOCALMASTERCHEFS LTD</span>
-              </div>
-            </div>
-          </div>
-          <button aria-label="Previous" class="glider-prev vlazy"></button>
-          <button aria-label="Next" class="glider-next vlazy"></button>
-          <div role="tablist" class="dots"></div>
-        </div>
-      </div>
-    </section>
     <section class="contact-us-section padding-t-120 padding-b-120">
       <?php require_once 'include/contact-form.php'; ?>
     </section>
     <section class="related-tags-section padding-t-50 padding-b-50 bg-light">
       <div class="container">
+        <h2>More about Web</h2>
         <h3>Related Services :</h3>
         <div class="tags-outer">
           <a href="#">.NET</a> <a href="#">C/C++</a> <a href="#">Django</a> <a href="#">Firebase</a> <a href="#">Golang</a> <a href="#">GraphQL</a> <a href="#">Java</a> <a href="#">Laravel</a> <a href="#">Python</a> <a href="#">Java</a> <a href="#">Laravel</a>
         </div>
+        <h3>Insights</h3>
+        <div class="tags-outer">
+          <a href="#">.NET</a> <a href="#">C/C++</a> <a href="#">Django</a> <a href="#">Firebase</a> <a href="#">Golang</a> <a href="#">GraphQL</a> <a href="#">Java</a> <a href="#">Laravel</a> <a href="#">Python</a> <a href="#">Java</a> <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+          <a href="#">Laravel</a><a href="#">Laravel</a>
+          <a href="#">Laravel</a>
+        </div>
       </div>
     </section>
-    <?php require_once '../include/footer.php'; ?>
+    <?php require_once 'include/footer.php'; ?>
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1723115778"></script>
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/glider.min-v2.js?ver=11.22.1" id="vc-glider-js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
@@ -2464,6 +1967,7 @@
       });
       
       
+      
       if (document.getElementById("technology-glider")) {
       window.addEventListener("load", function() {
       // Ensure the glider element is present before initializing
@@ -2477,6 +1981,7 @@
         scrollLock: false,
         dots: ".technology-slider .dots", // Dots selector for pagination
         dragDistance: true, // Enable dragging with mouse/touch
+      
       
         // Arrows for navigation
         arrows: {
@@ -2525,74 +2030,15 @@
       }
       });
       }
-
-
-      const vcTailerd = document.getElementById("tailored-slide");
-          if( vcTailerd ){
-          window.addEventListener("load", function() {
-           document.querySelector("#tailored-slide .glider").addEventListener("glider-slide-visible",
-           function(event) {
-           var glider = Glider(this);
-           });
-           window._ = new Glider(document.querySelector("#tailored-slide .glider"), {
-               slidesToShow: 3,
-               slidesToScroll: 3,
-               draggable: true,
-               scrollLock: false,
-               dots: "#tailored-slide .dots",
-               dragDistance: false,
-               arrows: { 
-          prev: '.tail-prev',
-          next: '.tail-next'
-          },
-          
-               responsive: [{
-                       breakpoint: 320,
-                       settings: {
-                           slidesToShow: 1,
-                           duration: 2.25
-                       }
-                   },
-                   {
-                       breakpoint: 767,
-                       settings: {
-                           slidesToShow: 1,
-                           itemWidth: 150,
-                           duration: 1.25
-                       }
-                   },
-                   {
-                       breakpoint: 1024,
-                       settings: {
-                           slidesToShow: 2,
-                           itemWidth: 150,
-                           duration: 1.25
-                       }
-                   },
-                   {
-                       breakpoint: 1400,
-                       settings: {
-                           slidesToShow: 3,
-                           itemWidth: 150,
-                           duration: 3
-                       }
-                   },
-               ],
-             
-          
-           });
       
-          });
-            
-      }
-
-
-
-
-
-
-
-
+      
+      
+      
+      
+      
+      
+      
+      
       var tabMC       = document.querySelectorAll("#hiring-models .tablist");
                   var tabPanesMc  = document.getElementsByClassName("tab-contents");
                   function activateTabFx(e){
@@ -2615,112 +2061,8 @@
                   tabMC.forEach(function(label, index){
                   label.addEventListener("click", activateTabFx);
                   }); 
-
-     
-
-
-
-
-
-
-
-
-
-
-  
       
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-      
-      function playTetiVideo( iframeID, vsource, e){
-      let allArrow = document.querySelectorAll(".yt-player");
-      if( allArrow ){
-        [].forEach.call(allArrow, function(el) {
-            el.style.display = "none";
-            el.setAttribute("src", "");
-        });    
-      }
-      
-      let cVideo = document.querySelectorAll(".client-videos");
-      if( cVideo ){
-        [].forEach.call(cVideo, function(el) {
-            el.classList.remove = "active";
-        });    
-      }
-      let thisCol = document.getElementById("cvbox-"+iframeID);
-      thisCol.classList.add = "active";
-      
-      let thisFrame = document.getElementById("ytiframe-"+iframeID);
-      thisFrame.style.display = "block";
-      thisFrame.setAttribute("src", vsource);   
-      }
-      
-      
-                var accorItem = document.getElementsByClassName("accordionItem");
-                var faqHD   = document.getElementsByClassName("accordion-toggle");
-                for (i = 0; i < faqHD.length; i++) {
-                faqHD[i].addEventListener("click", dataAccordionItem, false);
-                }
-                function dataAccordionItem(){
-                if( this.parentNode.classList.contains('active') ){
-                this.parentNode.className = "accordionItem";
-                return;
-                }
-                //let itemClass = this.parentNode.className;
-                for (i = 0; i < accorItem.length; i++) {
-                accorItem[i].className = "accordionItem";
-                }    
-                if (this.parentNode.className == "accordionItem") {        
-                this.parentNode.className = "accordionItem active";
-                }
-                }
-                // client slider
-                window.addEventListener("load", function () {
-                if(document.querySelector(".client-testimonial-slider")){
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
-                var glider = Glider(this);
-                });
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
-                document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
-                window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                draggable: false,
-                scrollLock: false,
-                dots: ".client-testimonial-slider .dots",
-                arrows: false,
-                dragDistance: false,
-                // arrows: {
-                //     prev: '.glider-prev',
-                //     next: '.glider-next'
-                //   },
-                responsive: [
-                { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
-                { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                ],
-                });
-                }
-                });
               
         
     </script>
@@ -2748,52 +2090,5 @@
                 
           
     </script>
-
-
-<script>
-    const tabs = document.querySelectorAll('.tab');
-    const gliderContainer = document.querySelector('.glider');
-    let glider;
-
-    // Initialize Glider
-    function initializeGlider() {
-        glider = new Glider(gliderContainer, {
-            slidesToShow: 1,
-            dots: '.dots',
-            draggable: true,
-            arrows: {
-                prev: '.glider-prev',
-                next: '.glider-next'
-            },
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: '.dots',
-                    }
-                }
-            ]
-        });
-    }
-
-    // Tab Click Event
-    tabs.forEach(tab => {
-        tab.addEventListener('click', (event) => {
-            event.preventDefault();
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            const tabIndex = tab.getAttribute('data-tab') - 1;
-            glider.scrollTo(tabIndex);
-        });
-    });
-
-    // Initialize the Glider when the DOM is fully loaded
-    document.addEventListener('DOMContentLoaded', () => {
-        initializeGlider();
-    });
-</script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 .hire-model-tab {
- 
-  .hire-tabs-section{
+  .hire-tabs-section {
     .tab-row {
       display: flex;
       justify-content: space-between;
@@ -33,22 +32,21 @@
             font-size: 18px;
             color: #414141;
             font-weight: 500;
-            padding:10px 35px;
+            padding: 10px 35px;
             position: relative;
             display: inline-block;
-            border-radius:50px;
+            border-radius: 50px;
             cursor: pointer;
-            
           }
           &:hover {
             a {
-              background:#E8E8E8;
+              background: #e8e8e8;
             }
           }
         }
         .tablist.active {
           a {
-            background:#E8E8E8;
+            background: #e8e8e8;
           }
         }
       }
@@ -58,8 +56,10 @@
     }
     .bcontents {
       flex-basis: 100%;
-      padding:40px 50px; background:#fff; border-radius:20px;
-     
+      padding: 40px 50px;
+      background: #fff;
+      border-radius: 20px;
+
       .tab-contents {
         display: none;
         text-align: center;
@@ -73,12 +73,23 @@
             h3 {
               margin: 0;
             }
-            h4{font-size: 14px; font-style: italic; font-weight:500; color:#3F3F3F; margin:0 0 20px; padding:0 0 20px; border-bottom:1px solid #DFDFDF;}
+            h4 {
+              font-size: 14px;
+              font-style: italic;
+              font-weight: 500;
+              color: #3f3f3f;
+              margin: 0 0 20px;
+              padding: 0 0 20px;
+              border-bottom: 1px solid #dfdfdf;
+            }
             p {
               margin: 0 0 20px;
-              strong{color:#212121; font-weight: 500;}
+              strong {
+                color: #212121;
+                font-weight: 500;
+              }
             }
-           
+
             ul {
               margin: 0 0 20px;
               li {
@@ -96,11 +107,10 @@
                 }
               }
             }
-           
           }
 
           .image-box {
-            flex-basis:50%;
+            flex-basis: 50%;
           }
         }
       }
@@ -108,87 +118,95 @@
         display: block;
       }
     }
-    
   }
- 
 }
 
-
-
-
-
 @media (max-width: 1440px) {
-  
 }
 
 @media (max-width: 1380px) {
 }
 
-@media (max-width: 1024px) {
-
-  
- 
-}
-
 @media (max-width: 979px) {
- 
-}
-
-@media (max-width: 767px) {
-  .service-tab {
-    background: #fff;
-    .service-tabs-section {
+  .hire-model-tab {
+    .hire-tabs-section {
       .tab-nav {
-        list-style-type: none;
-        flex-basis: 100%;
-        width: 100%;
-        position: relative;
-
-
-        .tab-scroll {margin:0 0 30px;
+        .tab-scroll {
+          padding: 0 0 30px;
           .tablist {
+            margin: 0 20px;
+
             a {
-              font-size: 16px;
-              line-height: 26px;
-              padding: 0 5px 5px;
-              margin:0 0 5px;
-              text-align: center;
+              font-size: 15px;
+              padding: 10px 20px;
             }
           }
         }
-        .is-arrow {
-          margin-left: 10px;
-        }
       }
       .bcontents {
+        padding: 30px;
         .tab-contents {
           .dis-flex {
-            .content-box {order:1;
-              flex-basis: 100%;
+            .content-box {
               h3 {
-                margin: 0 0 10px;
+                margin: 0;
+              }
+              h4 {
+                font-size: 13px;
+                margin: 0 0 16px;
+                padding: 0 0 15px;
               }
               p {
                 margin: 0 0 15px;
               }
-              ul {
-                margin: 0 0 15px;
-              }
-              .know-more-link{margin:20px 0 0;}
-            }
-
-            .image-box {
-              flex-basis: 100%;
-              margin:30px 0 0;
-              order:2;
             }
           }
         }
       }
     }
-    
   }
+}
 
+@media (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+  .hire-model-tab {
+    .hire-tabs-section {
+      .tab-nav {
+        .tab-scroll {
+          padding: 0 0 20px;
+          .tablist {
+            margin: 5px;
+
+            a {
+              font-size: 14px;
+              padding: 8px 15px;
+            }
+          }
+        }
+      }
+      .bcontents {
+        padding: 20px;
+
+        .tab-contents {
+          .dis-flex {
+            .content-box {
+              flex-basis: 100%;
+              ul {
+                li {
+                  padding-left: 25px;
+                }
+              }
+            }
+            .image-box {
+              flex-basis: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 479px) {

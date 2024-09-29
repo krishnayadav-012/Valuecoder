@@ -64,7 +64,7 @@ html {
     color: #BDB7B7 !important; }
 
 .bg-royal-linear {
-  background: linear-gradient(180deg, #05164D 0%, #0C33B3 100%); }
+  background: linear-gradient(90deg, #05164D 0%, #0C33B3 100%); }
 
 h1 {
   font-size: 42px;
@@ -1263,6 +1263,9 @@ textarea {
   .margin-t-70,
   .margin-t-60 {
     margin-top: 40px; }
+
+  .padding-t-50 {
+    padding-top: 30px; }
 
   .head-small {
     font-size: 18px;
