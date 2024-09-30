@@ -439,7 +439,7 @@
         </div>
       </div>
     </section>
-    <section class="client-img-section bglight padding-t-120 padding-b-120 page-scroll">
+    <section id="toc-hb" class="client-img-section bglight padding-t-120 padding-b-120 page-scroll">
       <div class="container">
       <div class="dis-flex justify-sb items-center">
         <div class="flex-2 left-box">
@@ -2234,28 +2234,41 @@ function toggleMenu(){
     hamburgermenu.classList.toggle('active'); // Toggle the menu visibility
 }
 
-// Show hamburger when scrolling reaches a specific section
-const sectionToTrigger = document.querySelector('.page-scroll'); // Section that triggers the menu
-const hamburger = document.getElementById('hamburger');
+// // Show hamburger when scrolling reaches a specific section
+// const sectionToTrigger = document.querySelector('.page-scroll'); // Section that triggers the menu
+// const hamburger = document.getElementById('hamburger');
 
-// Observer to detect when the specified section comes into view
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // When the section is in view, show the hamburger
-            hamburger.classList.add('show');
-            document.body.classList.add("bingooo");
+// // Observer to detect when the specified section comes into view
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             // When the section is in view, show the hamburger
+//             hamburger.classList.add('show');
+//             document.body.classList.add("bingooo");
             
-        } else {
-            // Hide hamburger when the section is out of view
-            hamburger.classList.remove('show');
-            document.body.classList.remove("bingooo");
-        }
-    });
-}, { threshold: 0.1 }); // Adjust threshold as needed
+//         } else {
+//             // Hide hamburger when the section is out of view
+//             hamburger.classList.remove('show');
+//             document.body.classList.remove("bingooo");
+//         }
+//     });
+// }, { threshold: 0.1 }); // Adjust threshold as needed
 
-// Observe the section to trigger the hamburger menu
-observer.observe(sectionToTrigger);
+// // Observe the section to trigger the hamburger menu
+// observer.observe(sectionToTrigger);
+
+document.addEventListener('DOMContentLoaded', function () {
+var targetElement = document.getElementById('toc-hb');
+  window.addEventListener('scroll', function () {
+      var scrollPos = window.scrollY || window.pageYOffset;
+      var targetOffset = targetElement.offsetTop;
+      if (scrollPos > targetOffset) {
+          document.body.classList.add('hb-toc');
+      } else {
+          document.body.classList.remove('hb-toc');
+      }
+  });
+});
 
 
 
