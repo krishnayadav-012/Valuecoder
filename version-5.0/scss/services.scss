@@ -285,61 +285,73 @@
   }
 }
 
-
-
 .hamburger {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  width: 45px;
+  height: 45px;
+  padding: 9px 10px 10px;
+  background: $white;
+  border-radius: 10px;
+  top: 110px;
+  right: 15px;
   cursor: pointer;
   z-index: 1000;
-  display: none; /* Hidden initially */
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  .ham-icon {
+    background: url(../images/ham-01.svg) no-repeat center;
+    width: 18px;
+    height: 17px;
+    background-size: 100%;
+ 
+  }
+  &.show{
+    .ham-icon{ background: url(../images/ham-02.svg) no-repeat center;}
+   }
 }
 
-.hamburger .line {
-  width: 35px;
-  height: 4px;
-  background-color: black;
-  margin: 6px 0;
-  transition: 0.4s;
+.hb-toc {
+  .right-column {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    min-height: 65%;
+    background-color: $white;
+    box-shadow: 0px 40px 20px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(221, 221, 221, 0.83);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+    padding: 20px;
+ 
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    .sticky-button {
+      display: none;
+    }
+  }
+
+  .fixfull-section .entire-sticky .right-column.active {
+    margin-right: 20px;
+    width: 220px;
+    top: 165px;
+  }
+  .fixfull-section .entire-sticky .right-column {
+    top: 165px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
-
-/* Menu styling */
-.right-column {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #f1f1f1;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 0.4s ease;
-}
-
-
-
-.right-column.active {
-  transform: translateX(0);
-  
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* When hamburger is shown after reaching section */
-.hamburger.show {
-  display: block;
-}
-
-
-
-
-
-
 
 @media (max-width: 1440px) {
   .hero-section {
@@ -468,6 +480,7 @@ html {
       display: none;
     }
   }
+  .hb-toc .hamburger{display:none;}
 }
 @media (max-width: 767px) {
   .hero-section {

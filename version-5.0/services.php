@@ -14,16 +14,12 @@
   </head>
   <body id="themeAdd">
     <?php require_once './include/menu-tabversion.php'; ?>
-
-
-<!-- Hamburger Button -->
-<div class="hamburger" id="hamburger" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+    <!-- Hamburger Button -->
+    <div class="container">
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+     <span class="ham-icon"></span>
+      </div>
     </div>
-
-
     <section class="hero-section" style="background-image:url(images/service-banner.png);">
       <div class="container">
         <div class="content-wrap">
@@ -2075,10 +2071,6 @@
         </div>
       </div>
     </section>
-
-
-
-
     <?php require_once 'include/footer.php'; ?>
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1723115778"></script>
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/glider.min-v2.js?ver=11.22.1" id="vc-glider-js"></script>
@@ -2226,40 +2218,19 @@
                   tabMC.forEach(function(label, index){
                   label.addEventListener("click", activateTabFx);
                   }); 
-
-
-// Function to toggle the hamburger menu
-function toggleMenu(){
-    const hamburgermenu = document.getElementById('right-column');
-    hamburgermenu.classList.toggle('active'); // Toggle the menu visibility
-}
-
-// // Show hamburger when scrolling reaches a specific section
-// const sectionToTrigger = document.querySelector('.page-scroll'); // Section that triggers the menu
-// const hamburger = document.getElementById('hamburger');
-
-// // Observer to detect when the specified section comes into view
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             // When the section is in view, show the hamburger
-//             hamburger.classList.add('show');
-//             document.body.classList.add("bingooo");
-            
-//         } else {
-//             // Hide hamburger when the section is out of view
-//             hamburger.classList.remove('show');
-//             document.body.classList.remove("bingooo");
-//         }
-//     });
-// }, { threshold: 0.1 }); // Adjust threshold as needed
-
-// // Observe the section to trigger the hamburger menu
-// observer.observe(sectionToTrigger);
-
-document.addEventListener('DOMContentLoaded', function () {
-var targetElement = document.getElementById('toc-hb');
-  window.addEventListener('scroll', function () {
+      
+      
+      // Function to toggle the hamburger menu
+      function toggleMenu() {
+      const hamburgerMenu = document.getElementById('right-column');
+      const hamburgerButton = document.getElementById('hamburger');
+      hamburgerMenu.classList.toggle('active');
+      hamburgerButton.classList.toggle('show');
+      }
+      
+      document.addEventListener('DOMContentLoaded', function () {
+      var targetElement = document.getElementById('toc-hb');
+      window.addEventListener('scroll', function () {
       var scrollPos = window.scrollY || window.pageYOffset;
       var targetOffset = targetElement.offsetTop;
       if (scrollPos > targetOffset) {
@@ -2267,16 +2238,15 @@ var targetElement = document.getElementById('toc-hb');
       } else {
           document.body.classList.remove('hb-toc');
       }
-  });
-});
-
-
-
+      });
+      });
+      
+      
+      
                 
       
         
     </script>
-    
     <script id=&quot;rendered-js&quot; >
       new Glide(".testlider", {
       type: "carousel",
