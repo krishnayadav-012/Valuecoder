@@ -23,17 +23,6 @@
         <div class="line"></div>
     </div>
 
-    <!-- Menu -->
-    <div id="menu" class="menu hidden">
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-            <li><a href="#section4">Section 4</a></li>
-        </ul>
-    </div>
-
-
 
     <section class="hero-section" style="background-image:url(images/service-banner.png);">
       <div class="container">
