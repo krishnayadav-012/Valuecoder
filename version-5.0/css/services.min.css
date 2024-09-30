@@ -4146,7 +4146,7 @@ body.page-template-template-testimonials .client-video-section iframe,
     justify-content: center; }
     .hire-model-tab .hire-tabs-section .tab-nav .tab-scroll .tablist {
       padding: 0;
-      margin: 0 30px; }
+      margin: 0 5px; }
       .hire-model-tab .hire-tabs-section .tab-nav .tab-scroll .tablist a {
         height: 100%;
         font-size: 18px;
@@ -5882,6 +5882,46 @@ body.page-template-template-testimonials .client-video-section iframe,
     background: #ffffff;
     color: #05164d;
     border-color: #ffad00; }
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  /* Hidden initially */ }
+
+.hamburger .line {
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+/* Menu styling */
+.right-column {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f1f1f1;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.4s ease; }
+
+.right-column.active {
+  transform: translateX(0); }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth; }
+
+/* When hamburger is shown after reaching section */
+.hamburger.show {
+  display: block; }
 
 @media (max-width: 1440px) {
   .hero-section .content-wrap .left-box h1 {

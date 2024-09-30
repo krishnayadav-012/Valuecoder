@@ -14,6 +14,27 @@
   </head>
   <body id="themeAdd">
     <?php require_once './include/menu-tabversion.php'; ?>
+
+
+<!-- Hamburger Button -->
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu" class="menu hidden">
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>
+    </div>
+
+
+
     <section class="hero-section" style="background-image:url(images/service-banner.png);">
       <div class="container">
         <div class="content-wrap">
@@ -429,7 +450,7 @@
         </div>
       </div>
     </section>
-    <section class="client-img-section bglight padding-t-120 padding-b-120">
+    <section class="client-img-section bglight padding-t-120 padding-b-120 page-scroll">
       <div class="container">
       <div class="dis-flex justify-sb items-center">
         <div class="flex-2 left-box">
@@ -2065,6 +2086,10 @@
         </div>
       </div>
     </section>
+
+
+
+
     <?php require_once 'include/footer.php'; ?>
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1723115778"></script>
     <script defer src="https://www.valuecoders.com/wp-content/themes/valuecoders/js/glider.min-v2.js?ver=11.22.1" id="vc-glider-js"></script>
@@ -2212,6 +2237,40 @@
                   tabMC.forEach(function(label, index){
                   label.addEventListener("click", activateTabFx);
                   }); 
+
+
+// Function to toggle the hamburger menu
+function toggleMenu(){
+    const hamburgermenu = document.getElementById('right-column');
+    hamburgermenu.classList.toggle('active'); // Toggle the menu visibility
+}
+
+// Show hamburger when scrolling reaches a specific section
+const sectionToTrigger = document.querySelector('.page-scroll'); // Section that triggers the menu
+const hamburger = document.getElementById('hamburger');
+
+// Observer to detect when the specified section comes into view
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // When the section is in view, show the hamburger
+            hamburger.classList.add('show');
+            document.body.classList.add("bingooo");
+            
+        } else {
+            // Hide hamburger when the section is out of view
+            hamburger.classList.remove('show');
+            document.body.classList.remove("bingooo");
+        }
+    });
+}, { threshold: 0.1 }); // Adjust threshold as needed
+
+// Observe the section to trigger the hamburger menu
+observer.observe(sectionToTrigger);
+
+
+
+                
       
         
     </script>
