@@ -95,7 +95,8 @@
       }
     }
 
-    .arrow {
+    .tech-prev,
+    .tech-next{
       background: #fff url(../images/arrow-tech.png) 0 0 no-repeat;
       width: 45px;
       height: 45px;
@@ -116,7 +117,7 @@
         background-color: $yellow;
       }
 
-      &.glider-next {
+      &.tech-next {
         left: auto;
         right: -15px;
         transform: rotate(180deg);
@@ -164,7 +165,8 @@
         }
       }
 
-      .arrow {
+      .tech-prev,
+      .tech-next {
         width: 40px;
         height: 40px;
         left: -15px;
@@ -201,7 +203,8 @@
         display: block;
       }
 
-      .arrow {
+      .tech-prev,
+      .tech-next  {
         display: none;
       }
     }

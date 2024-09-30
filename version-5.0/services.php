@@ -804,6 +804,145 @@
         </div>
       </div>
     </section>
+    <section class="indcater-section  padding-t-120 padding-b-120" >
+      <div class="container">
+        <div class="head-txt text-center">
+          <h2>Industries We Cater To</h2>
+          <p>The cost of software development depends on various factors such as service scope, sourcing model.</p>
+        </div>
+        <div class="dis-flex glider-contain indcater-slider" id="induscater-glider">
+          <div class="glider">
+            <div class="flex-3  ind-box">
+              <div class="ind-column">
+                <div class="ind-image">
+                  <img loading="lazy" src="images/healthcare-ind.png" width="427" height="480" alt="valuecoders">
+                  <h3>Healthcare</h3>
+                </div>
+                <div class="service-content">
+                  <h3>Travel & Tourism</h3>
+                  <p>Our travel application development team understands the terms...</p>
+                  <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-3  ind-box">
+              <div class="ind-column">
+                <div class="ind-image small-img">
+                  <img loading="lazy" src="images/ind-sm01.png" width="426" height="234" alt="valuecoders">
+                  <h3>Travel & Tourism</h3>
+                </div>
+                <div class="service-content">
+                  <h3>Travel & Tourism</h3>
+                  <p>Our travel application development team understands the terms...</p>
+                  <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                </div>
+              </div>
+              <div class="ind-flex">
+                <div class="ind-column w-50">
+                  <div class="ind-image small-img">
+                    <img loading="lazy" src="images/ind-sm02.png" width="203" height="234" alt="valuecoders">
+                    <h3>Travel & Tourism</h3>
+                  </div>
+                  <div class="service-content">
+                    <h3>Travel & Tourism</h3>
+                    <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                  </div>
+                </div>
+                <div class="ind-column w-50">
+                  <div class="ind-image small-img">
+                    <img loading="lazy" src="images/ind-sm02.png" width="203" height="234" alt="valuecoders">
+                    <h3>Travel & Tourism</h3>
+                  </div>
+                  <div class="service-content">
+                    <h3>Travel & Tourism</h3>
+                    <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-3  ind-box">
+              <div class="ind-column">
+                <div class="ind-image">
+                  <img loading="lazy" src="images/healthcare-ind.png" width="427" height="480" alt="valuecoders">
+                  <h3>Healthcare</h3>
+                </div>
+                <div class="service-content">
+                  <h3>Travel & Tourism</h3>
+                  <p>Our travel application development team understands the terms...</p>
+                  <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-3  ind-box">
+              <div class="ind-column">
+                <div class="ind-image">
+                  <img loading="lazy" src="images/healthcare-ind.png" width="427" height="480" alt="valuecoders">
+                  <h3>Healthcare</h3>
+                </div>
+                <div class="service-content">
+                  <h3>Travel & Tourism</h3>
+                  <p>Our travel application development team understands the terms...</p>
+                  <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-3  ind-box">
+              <div class="ind-column">
+                <div class="ind-image small-img">
+                  <img loading="lazy" src="images/ind-sm01.png" width="426" height="234" alt="valuecoders">
+                  <h3>Travel & Tourism</h3>
+                </div>
+                <div class="service-content">
+                  <h3>Travel & Tourism</h3>
+                  <p>Our travel application development team understands the terms...</p>
+                  <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                </div>
+              </div>
+              <div class="ind-flex">
+                <div class="ind-column w-50">
+                  <div class="ind-image small-img">
+                    <img loading="lazy" src="images/ind-sm02.png" width="203" height="234" alt="valuecoders">
+                    <h3>Travel & Tourism</h3>
+                  </div>
+                  <div class="service-content">
+                    <h3>Travel & Tourism</h3>
+                    <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                  </div>
+                </div>
+                <div class="ind-column w-50">
+                  <div class="ind-image small-img">
+                    <img loading="lazy" src="images/ind-sm02.png" width="203" height="234" alt="valuecoders">
+                    <h3>Travel & Tourism</h3>
+                  </div>
+                  <div class="service-content">
+                    <h3>Travel & Tourism</h3>
+                    <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-3  ind-box">
+              <div class="ind-column">
+                <div class="ind-image">
+                  <img loading="lazy" src="images/healthcare-ind.png" width="427" height="480" alt="valuecoders">
+                  <h3>Healthcare</h3>
+                </div>
+                <div class="service-content">
+                  <h3>Travel & Tourism</h3>
+                  <p>Our travel application development team understands the terms...</p>
+                  <div class="cta-box"><a class="stretched-link" href="https://www.valuecoders.com/staging/industries/healthcare-software-development-services">Learn more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow-btn">
+            <button aria-label="Previous" class="ind-prev  glider-prev">«</button>
+            <button aria-label="Next" class="ind-next glider-next">»</button>
+          </div>
+          <div role="tablist" class="dots"></div>
+        </div>
+      </div>
+    </section>
     <section class="tech-stack-section bg-light padding-t-120 padding-b-120" id="techstacks">
       <div class="container">
         <div class="head-txt text-center">
@@ -1019,8 +1158,8 @@
               </div>
             </div>
           </div>
-          <button aria-label="Previous" class="arrow  glider-prev">«</button>
-          <button aria-label="Next" class="arrow glider-next">»</button>
+          <button aria-label="Previous" class="tech-prev  glider-prev">«</button>
+          <button aria-label="Next" class="tech-next glider-next">»</button>
           <div role="tablist" class="dots"></div>
         </div>
       </div>
@@ -1967,34 +2106,51 @@
       });
       
       
+      const vcIndustries = document.getElementById("induscater-glider");
+      if( vcIndustries ){
+      window.addEventListener("load", function() {
+      document.querySelector(".indcater-slider .glider").addEventListener("glider-slide-visible",
+      function(event){ var glider = Glider(this); });
+      window._ = new Glider(document.querySelector(".indcater-slider .glider"), {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      draggable: true,
+      scrollLock: false,
+      dots: ".indcater-slider .dots",
+      dragDistance: true,
+      arrows: { prev: '.ind-prev', next: '.ind-next' },
+      responsive: [
+      { breakpoint: 320,settings: {slidesToShow:1, duration:2.25} },
+      { breakpoint: 767,settings: {slidesToShow:2, itemWidth:150, duration:1.25} },
+      { breakpoint: 1024,settings: {slidesToShow: 3,itemWidth: 150,duration: 1.25} },
+      { breakpoint: 1400,settings: {slidesToShow: 3,itemWidth: 150,duration: 3} },
+      ],
+      });
+      });
+      }
+      
       
       if (document.getElementById("technology-glider")) {
       window.addEventListener("load", function() {
-      // Ensure the glider element is present before initializing
       var gliderElement = document.querySelector(".technology-slider .glider");
       if (gliderElement) {
-      // Initialize Glider with previous and next buttons
+      
       new Glider(gliderElement, {
-        slidesToShow: 4, // Default slides to show
-        slidesToScroll: 4, // Default slides to scroll
+        slidesToShow: 4, 
+        slidesToScroll: 4,
         draggable: true,
         scrollLock: false,
-        dots: ".technology-slider .dots", // Dots selector for pagination
-        dragDistance: true, // Enable dragging with mouse/touch
+        dots: ".technology-slider .dots",
+        dragDistance: true,
       
-      
-        // Arrows for navigation
-        arrows: {
-          prev: ".glider-prev", // Link to previous button
-          next: ".glider-next"  // Link to next button
-        },
+        arrows: { prev: '.tech-prev', next: '.tech-next' },
       
         responsive: [
           {
             breakpoint: 320,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1, // Scroll 1 slide at a time
+              slidesToScroll: 1,
               duration: 0.25
             }
           },
@@ -2002,7 +2158,7 @@
             breakpoint: 767,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 1, // Scroll 1 slide at a time
+              slidesToScroll: 1,
               itemWidth: 150,
               duration: 0.25
             }
@@ -2011,7 +2167,7 @@
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 1, // Scroll 1 slide at a time
+              slidesToScroll: 1,
               itemWidth: 150,
               duration: 0.25
             }
@@ -2020,7 +2176,7 @@
             breakpoint: 1400,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 1, // Scroll 1 slide at a time
+              slidesToScroll: 1,
               itemWidth: 150,
               duration: 0.25
             }
@@ -2030,11 +2186,6 @@
       }
       });
       }
-      
-      
-      
-      
-      
       
       
       
@@ -2062,10 +2213,9 @@
                   label.addEventListener("click", activateTabFx);
                   }); 
       
-      
-              
         
     </script>
+    
     <script id=&quot;rendered-js&quot; >
       new Glide(".testlider", {
       type: "carousel",
