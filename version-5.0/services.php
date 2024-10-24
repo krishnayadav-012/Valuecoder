@@ -186,6 +186,8 @@
                         <ul>
                           <li>EHR/EMR</li>
                           <li>Healthcare information system (HIS)</li>
+                          <li>Healthcare information system (HIS)</li>
+                          <li>Healthcare information system (HIS)</li>
                         </ul>
                       </div>
                       <div class="card-body expandable-content">

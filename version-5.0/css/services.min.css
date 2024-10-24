@@ -2895,7 +2895,10 @@ body.page-template-template-testimonials .client-video-section iframe,
         margin-bottom: 10px;
         padding-left: 23px;
         flex-basis: 100%;
-        color: #666666; }
+        color: #666666;
+        display: none; }
+        .software-work .soft-wrap .soft-row .soft-card ul li:nth-child(-n+2) {
+          display: list-item; }
         .software-work .soft-wrap .soft-row .soft-card ul li:before {
           content: "";
           width: 15px;
@@ -2906,6 +2909,8 @@ body.page-template-template-testimonials .client-video-section iframe,
           position: absolute;
           left: 0;
           top: 3px; }
+    .software-work .soft-wrap .soft-row .soft-card.show-li ul li {
+      display: block; }
     .software-work .soft-wrap .soft-row .soft-card h3 {
       margin: 0 0 15px; }
     .software-work .soft-wrap .soft-row .soft-card .expandable-content {

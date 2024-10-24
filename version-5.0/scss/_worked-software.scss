@@ -32,6 +32,8 @@
           padding-left: 23px;
           flex-basis: 100%;
           color: #666666;
+          display: none;
+          &:nth-child(-n+2) {display: list-item;}
         &:before{content: "";
           width: 15px;
           height: 15px;
@@ -42,6 +44,12 @@
           left: 0;
           top: 3px;}
         }
+        }
+
+        &.show-li{
+          ul{
+            li{display: block;}
+          }
         }
     
     h3{margin:0 0 15px;}
