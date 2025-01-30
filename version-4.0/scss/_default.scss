@@ -11,6 +11,7 @@ $yellow: #ffad00;
 $themeMidNight: #05164d;
 $themeDarkNight: #05164d;
 $dodgerBlue: #2684ff;
+
 $monaLisa: #fe8686;
 $jacarta: #373660;
 $gray: #9b9b9b;
@@ -32,7 +33,7 @@ $darkWhiteGray: #e5e5e5;
 $bglight: #f8f8f8;
 $greyBannerfont: #bdb7b7;
 
-
+@import "_footer-section";
 @media only screen and (min-width: 768px) {
   // fonts
   @media only screen and (min-width: 768px) {
@@ -1025,278 +1026,7 @@ textarea {
   }
 }
 
-.footer {
-  background:#040F34;
-  padding: 20px 0;
 
-  span,
-  h4,
-  .client-outer,
-  .star-outer,
-  a {
-    font-size: 14px;
-    color: $suvaGray;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-  }
-
-  a {
-    &:hover {
-      color: $white;
-      opacity: 0.8;
-    }
-  }
-
-  .copy,
-  .star-outer,
-  .footer-link,
-  .client-outer,
-  .theme-setting {
-    display: block;
-  }
-
-  .footer-link {
-    margin-top: 7px;
-  }
-
-  .theme-setting {
-    margin-top: 13px;
-    display: none;
-  }
-
-  .divider {
-    margin: 0 8px;
-  }
-
-  .dis-flex {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .resources-links {
-    margin-top: 4px;
-    display: block;
-  }
-
-  .footer-left {
-    flex-basis: 50%;
-  }
-
-  .footer-middle {
-    flex-basis: 32%;
-    padding-left: 30px;
-    color: $suvaGray;
-  }
-
-  .footer-last {
-    flex-basis: 18%;
-    text-align: center;
-    padding-left: 20px;
-
-    picture {
-      margin-bottom: 12px;
-      display: block;
-      img {
-        display: block;
-        margin-left: 20px;
-      }
-    }
-
-    a {
-      display: inline-block;
-      margin-left: 12px;
-
-      &:hover {
-        .social-icon {
-          &.facebook {
-            background-position: 0 -49px;
-          }
-
-          &.twitter {
-            background-position: -43px -49px;
-          }
-
-          &.linked-in {
-            background-position: -86px -49px;
-          }
-
-          &.insta {
-            background-position: -129px -49px;
-          }
-
-          &.you-tube {
-            background-position: -173px -49px;
-          }
-        }
-      }
-    }
-  }
-
-  .icon {
-    background: url(../images/footer-icons.png) 0 -34px no-repeat;
-    width: 14px;
-    height: 10px;
-    display: inline-block;
-
-    &.icon2 {
-      background-position: -29px -34px;
-    }
-
-    &.icon3 {
-      background-position: -58px -34px;
-    }
-  }
-
-  .darkimg {
-    .icon2 {
-      background-position: -29px -108px;
-    }
-  }
-
-  .autoimg {
-    .icon3 {
-      background-position: -58px -108px;
-    }
-  }
-
-  .theme {
-    margin-right: 20px;
-  }
-
-  .social-icon {
-    background: url(../images/social-icon-sprite.png) 0 0 no-repeat;
-    width: 31px;
-    height: 31px;
-    display: inline-block;
-
-    &.facebook {
-      background-position: 0 0;
-    }
-
-    &.twitter {
-      background-position: -43px 0;
-    }
-
-    &.linked-in {
-      background-position: -86px 0;
-    }
-
-    &.insta {
-      background-position: -129px 0;
-    }
-
-    &.you-tube {
-      background-position: -173px 0;
-    }
-  }
-
-  .star-icon {
-    background: url(../images/footer-icons.png) 0 0 no-repeat;
-    width: 18px;
-    height: 15px;
-    display: inline-block;
-
-    &:last-child {
-      margin-right: 10px;
-    }
-  }
-
-  .star-hover {
-    .star-icon {
-      background-position: -90px -28px;
-      cursor: pointer;
-    }
-  }
-
-  .one {
-    .star-icon {
-      &:nth-child(1) {
-        background-position: 0 0;
-      }
-    }
-  }
-
-  .two {
-    .star-icon {
-      &:nth-child(1),
-      &:nth-child(2) {
-        background-position: 0 0;
-      }
-    }
-  }
-
-  .three {
-    .star-icon {
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3) {
-        background-position: 0 0;
-      }
-    }
-  }
-
-  .four {
-    .star-icon {
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(4) {
-        background-position: 0 0;
-      }
-    }
-  }
-
-  .five {
-    .star-icon {
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5) {
-        background-position: 0 0;
-      }
-    }
-  }
-
-  .rate-us {
-    border: 1px solid $darkYellow;
-    border-radius: 6px;
-    padding: 6px 26px;
-    display: inline-block;
-    color: $darkYellow;
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      border: 1px solid $yellow;
-      color: $yellow;
-    }
-  }
-
-  .client-outer {
-    margin-top: 12px;
-  }
-
-  .dark-theme {
-    color: $white;
-    // font-weight: 500;
-  }
-
-  .lighter-theme,
-  .dark-theme,
-  .auto-theme {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      color: $white;
-    }
-  }
-
-  .dark-theme.darkimg {
-    font-weight: 600;
-  }
-}
 
 // breadcrumbs
 .breadcrumbs {
@@ -1626,17 +1356,7 @@ textarea {
     line-height: 44px;
   }
 
-  .footer {
-    .divider {
-      margin: 0 1px;
-    }
-
-    .footer-last {
-      a {
-        margin-left: 5px;
-      }
-    }
-  }
+  
   .related-tags-section {
     .tags-outer {
       margin-top: 10px;
@@ -1675,11 +1395,8 @@ textarea {
     }
   }
 
-  .footer {
-    .rate-us {
-      padding: 6px 14px;
-    }
-  }
+ 
+  
 
   .for-client-logo-box {
     i {
@@ -1735,18 +1452,7 @@ textarea {
     }
   }
 
-  .footer {
-    span,
-    .client-outer,
-    .star-outer,
-    a {
-      font-size: 12px;
-    }
-
-    .footer-last {
-      padding-left: 0;
-    }
-  }
+ 
 
   .experts-talk-first-section {
     &:after {
@@ -1812,37 +1518,7 @@ textarea {
     }
   }
 
-  .footer {
-    .footer-left {
-      flex-basis: 55%;
-    }
-
-    .footer-middle {
-      flex-basis: 40%;
-      text-align: center;
-    }
-
-    .footer-last {
-      flex-basis: 100%;
-      text-align: center;
-      margin-top: 40px;
-      picture {
-        img {
-          margin: 0 auto;
-        }
-      }
-    }
-
-    .star-icon {
-      margin: 0 auto 4px;
-    }
-
-    .rate-us {
-      max-width: 140px;
-      margin: 0 auto 5px;
-      display: block;
-    }
-  }
+ 
 
   .for-client-logo-box {
     i {
@@ -2277,31 +1953,7 @@ textarea {
     }
   }
 
-  .footer {
-    .star-icon {
-      margin: 0 auto;
-    }
-
-    .footer-left {
-      flex-basis: 100%;
-    }
-
-    .footer-middle {
-      flex-basis: 100%;
-      padding-left: 0;
-      margin-top: 30px;
-    }
-
-    .footer-last {
-      margin-top: 30px;
-    }
-
-    span,
-    a {
-      line-height: 22px;
-    }
-  }
-
+ 
   .for-client-logo-box {
     margin-bottom: 20px;
     .logo-box {

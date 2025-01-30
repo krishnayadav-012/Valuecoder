@@ -18,64 +18,146 @@
 </div>
 
 
-<footer class="footer bg-jacarta">
+<footer class="footer">
   <div class="container">
-    <div class="dis-flex">
-      <div class="footer-left">
-        <span class="copy">Copyright © 2004 - 2022. All Rights Reserved. ValueCoders.com</span>
-        <!-- footer-link -->
-        <div class="footer-link">
-          <a href="<?php echo $site_url; ?>partnership-program">Become a Partner</a> <span class="divider">|</span> 
-          <a href="<?php echo $site_url; ?>privacy-policy">Privacy Policy</a> <span class="divider">|</span> 
-          <a href="<?php echo $site_url; ?>terms-of-service">Terms of Service</a> <span class="divider">|</span> 
-          <a href="<?php echo $site_url; ?>why-india">Why India?</a> <span class="divider">|</span> 
-          <!-- <a href="<?php echo $site_url; ?>faq">FAQ</a> <span class="divider">|</span> 
-            <a href="<?php echo $site_url; ?>disclaimer">Disclaimer</a> <span class="divider">|</span> 
-            <a href="<?php echo $site_url; ?>gdpr-compliance">GDPR</a> <span class="divider">|</span> 
-            <a href="<?php echo $site_url; ?>valuecoders-vs-toptal-vs-upwork">Upwork vs Toptal vs ValueCoders</a>
-            <span class="divider">|</span>
-            <a href="<?php echo $site_url; ?>rentacoder-vs-freelancer-vs-valuecoder">Rentacoder vs Freelancer vs ValueCoders</a>
-            <span class="divider">|</span>
-            <a href="<?php echo $site_url; ?>valuecoders-vs-remote-vs-deel">ValueCoders vs Remote vs Deel</a> -->
+    <div class="dis-flex footer-top">
+      <div class="count-sec">
+        <div class="count-col">
+          <h5>24,859,684+</h5>
+          <p>LEADS DRIVEN FOR CLIENTS</p>
         </div>
-        <div class="resources-links">
-          <h4>Resources:</h4>
-          <a href="<?php echo $site_url; ?>why-india">Software Development in India</a> <span class="divider">|</span> 
-          <a href="<?php echo $site_url; ?>hire-developers">Hire Indian Developers</a> <span class="divider">|</span> 
-          <!-- <a href="<?php echo $site_url; ?>benefits-of-hiring-remote-developers">Hiring Remote Developers</a> <span class="divider">|</span> 
-            <a href="<?php echo $site_url; ?>hire-startup-developers">How to Hire Software Developers for Startups</a> <span class="divider">|</span> 
-            <a href="<?php echo $site_url; ?>it-outsourcing-services">IT Outsourcing</a> -->
+        <div class="count-col">
+          <h5>$6,021,182,299+</h5>
+          <p>REVENUE DRIVEN FOR CLIENTS</p>
         </div>
-        <div class="theme-setting nav-toggle">
-          <span class="theme">Theme</span> <span class="lighter-theme" id="themeBtn"><i class="icon icon1"></i> Light</span> <span class="divider">|</span> <span class="dark-theme" id="themeDarkBtn"><i class="icon icon2"></i> Dark</span> <span class="divider">|</span> <span class="auto-theme" id="themeAuto"><i class="icon icon3"></i> Auto</span>
+        <div class="count-col">
+          <h5>3,212,407</h5>
+          <p>HOURS OF EXPERTISE</p>
+        </div>
+        <div class="count-col">
+          <h5>675+</h5>
+          <p>EXPERTS ON STAFF</p>
         </div>
       </div>
-      <div class="footer-middle">
-        <div class="star-outer">
-          <span class="star-inner star-hover three">
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          </span>
-          4.9 out of 5.0 by
-        </div>
-        <div class="client-outer">
-          <a href="https://www.valuecoders.com/" class="rate-us">Rate us</a> 1218 clients on over 10800+ projects
+      <div class="subs-box">
+        <h3>Discover how we can 
+          help your business grow
+        </h3>
+        <div class="cta-wrap  justify-center">
+          <div class="cta-btn">
+            <div class="btn-sec">
+              <a href="https://www.valuecoders.com/contact" class="btn rounded" data-wpel-link="internal" target="_blank" rel="follow"><span class="text-white">Get Started</span></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-last">
-        <picture>
-          <source type="image/webp" srcset="<?=HOST_URL?>images/cmmi-logo.webp">
-          <source type="image/png" srcset="<?=HOST_URL?>images/cmmi-logo.png">
-          <img loading="lazy" src="<?=HOST_URL?>images/cmmi-logo.png" alt="Valuecoders" width="63" height="47">
-        </picture>
-        <a href="https://www.facebook.com/ValueCoders"><i class="social-icon facebook"></i></a>
-        <a href="https://twitter.com/ValueCoders"><i class="social-icon twitter"></i></a>
-        <a href="https://www.linkedin.com/company/valuecoders"><i class="social-icon linked-in"></i></a>
-        <a href="https://www.instagram.com/valuecodersofficial_/?igshid=qfk286mq0wee"><i class="social-icon insta"></i></a>
-        <a href="https://www.youtube.com/channel/UCCnijyLczGPUGI8aBkK3pTw?sub_confirmation=1"><i class="social-icon you-tube"></i></a>
+    </div>
+    <div class="dis-flex footer-middle">
+      <div class="flex-5">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://www.valuecoders.com/about" data-wpel-link="internal" target="_blank" rel="follow">About Us</a></li>
+          <li><a href="https://www.valuecoders.com/in-media" data-wpel-link="internal" target="_blank" rel="follow">In Media</a></li>
+          <li><a href="https://www.valuecoders.com/case-studies/" data-wpel-link="internal" target="_blank" rel="follow">Case Studies</a></li>
+          <li><a href="https://www.valuecoders.com/blog/" data-wpel-link="internal" target="_blank" rel="follow">Our Blog</a></li>
+          <li><a href="https://www.valuecoders.com/testimonials" data-wpel-link="internal" target="_blank" rel="follow">Testimonial &amp; Clients</a></li>
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4>Our Expertise</h4>
+        <ul>
+          <li><a href="https://www.valuecoders.com/outsource-software-product-development-services" data-wpel-link="internal" target="_blank" rel="follow">Software Product Engineering</a></li>
+          <li><a href="https://www.valuecoders.com/application-development" data-wpel-link="internal" target="_blank" rel="follow">Application Development</a></li>
+          <li><a href="https://www.valuecoders.com/it-staff-augmentation-services" data-wpel-link="internal" target="_blank" rel="follow">Staff Augmentation</a></li>
+          <li><a href="https://www.valuecoders.com/ecommerce-development-services" data-wpel-link="internal" target="_blank" rel="follow">eCommerce Development</a></li>
+          <li><a href="https://www.valuecoders.com/cloud-services" data-wpel-link="internal" target="_blank" rel="follow">Cloud Services</a></li>
+          <li><a href="https://www.valuecoders.com/ai" data-wpel-link="internal" target="_blank" rel="follow">AI &amp; ML</a></li>
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4>Hire Developers</h4>
+        <ul>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-ai-engineers" data-wpel-link="internal" target="_blank" rel="follow">Hire AI Engineers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-backend-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Backend Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-front-end-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Frontend Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-ecommerce-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire eCommerce Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-blockchain-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Blockchain Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-mobile-app-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Mobile Developers</a></li>          
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="https://www.valuecoders.com/offshore-software-development-center-india" data-wpel-link="internal" target="_blank" rel="follow">Offshore Development Center</a></li>
+          <li><a href="https://www.valuecoders.com/offshore-software-development-services-company" data-wpel-link="internal" target="_blank" rel="follow">Offshore Software Development</a></li>
+          <li><a href="https://www.valuecoders.com/nearshore-software-development-services" data-wpel-link="internal" target="_blank" rel="follow">Nearshore Software Development</a></li>
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4>Clients We Serve</h4>
+        <ul>
+          <li><a href="https://www.valuecoders.com/startup-product-development" data-wpel-link="internal" target="_blank" rel="follow">For Startups</a></li>
+          <li><a href="https://www.valuecoders.com/enterprise-software-development-services" data-wpel-link="internal" target="_blank" rel="follow">For Enterprises</a></li>
+          <li><a href="https://www.valuecoders.com/agencies-software-development-services" data-wpel-link="internal" target="_blank" rel="follow">For Agencies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dis-flex footer-bottom">
+      <div class="flex-3 logo-box">
+        <h3>PROUDLY BROUGHT TO YOU BY ValueCoders</h3>
+        <div class="dis-flex">
+          <a href="https://www.invoicera.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="images/inv-logo.svg" width="156" height="40" alt="Invoicera">
+            </picture>
+          </a>
+          <a href="https://www.workstatus.io/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+            <img loading="lazy" src="images/ws-logo.svg" width="188" height="26" alt="Workstatus"> 
+          </picture>
+          </a>
+        </div>
+      </div>
+      <div class="flex-3 social-box">
+        <h3>Follow Us</h3>
+        <div class="dis-flex">
+          <a href="https://www.linkedin.com/company/valuecoders" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="images/soc-01.svg" width="29" height="29" alt="linkedin">
+            </picture>
+          </a>
+          <a href="https://www.facebook.com/ValueCoders" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="images/soc-02.svg" width="29" height="29" alt="facebook">
+            </picture>
+          </a>
+          <a href="https://twitter.com/ValueCoders" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="images/soc-03.svg" width="29" height="29" alt="twitter">
+            </picture>
+          </a>
+          <a href="https://www.instagram.com/valuecodersofficial_/?igshid=qfk286mq0wee" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="images/soc-04.svg" width="29" height="29" alt="instagram">
+            </picture>
+          </a>
+          <a href="https://www.youtube.com/channel/UCCnijyLczGPUGI8aBkK3pTw?sub_confirmation=1" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="images/soc-05.svg" width="29" height="29" alt="youtube">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="flex-3 copyright">
+        <a href="https://www.valuecoders.com/" target="_blank" data-wpel-link="internal" rel="follow">
+          <picture>
+            <img loading="lazy" src="images/vc-logo.svg" width="191" height="42" alt="Logo">
+          </picture>
+        </a>
+        <p>Copyright © 2004 - 2025 Valuecoders, <br>All Rights Reserved. A Vinove Company.
+        </p>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625" title="DMCA.com Protection Status" style="margin-left:0;margin-top: 20px; display:block" class="dmca-badge">
+        <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
     </div>
   </div>

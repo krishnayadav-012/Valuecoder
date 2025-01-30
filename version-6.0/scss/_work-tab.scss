@@ -1,0 +1,107 @@
+.tabs-section {
+  background: linear-gradient(180deg, #FFF8EA 0%, #FFF8EA 100%);
+
+
+  .tab-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .tabs-container {
+    flex-basis: 45%;
+
+    .tabs {
+      list-style: none;
+      padding: 0;
+      margin: 40px 0 0;
+      display: flex;
+      background: #fff;
+      box-shadow: 20px 30px 50px 0px #0000000D;
+      border:1px solid #DBDBDB;
+      max-width: 500px;
+      justify-content: space-between;
+      padding: 15px;
+      border-radius: 10px;
+      gap: 20px;
+
+      .tab {
+        border: none;
+        padding: 10px;
+        font-size: $font-18;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background 0.3s;
+        color:$darkblack;
+        display: flex;
+        flex-wrap:wrap;
+        img{margin-right:5px; vertical-align: middle;}
+
+        .normal{display:inline-block;}
+        .hover{display:none;}
+
+        &.active, &:hover{
+          background: linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
+          color: $white;
+          .hover{display:inline-block;}
+          .normal{display:none;}
+        }
+      }
+    }
+
+    .tab-content {margin:40px 0 0;
+      .content {
+        display: none;
+
+        h3 {
+          font-size: 1.5rem;
+          margin: 10px 0;
+        }
+
+        p {
+          font-weight: 500;
+        }
+
+        ul{margin:40px  0 0; display:flex; flex-wrap: wrap;
+        li{  flex-basis: 48%;  margin-bottom: 10px; font-weight: $medium-font;
+          padding-left: 30px;
+          position: relative;
+        &:before{content: "";
+          background: url(../images/home-images/listing.svg) no-repeat center;
+          width: 20px;
+          height: 20px;
+          background-size: 100%;
+          position: absolute;
+          left: 0;
+          top: 4px;}
+          a{color:#656565; text-decoration: underline;
+
+            &:hover{text-decoration: none;}
+          
+          }
+        }
+        }
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    flex-basis: 40%;
+    text-align: right;
+
+    .tab-image {
+      display: none;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

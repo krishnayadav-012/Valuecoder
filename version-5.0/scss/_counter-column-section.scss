@@ -5,7 +5,7 @@
       flex-basis: 40%;
     }
 
-    .right-sec { flex-basis: 45%;
+    .right-sec { flex-basis: 50%;
       .cir-sec {
         display: flex;
         width: 100%;
@@ -19,7 +19,7 @@
           justify-content: center;
           .text-wrap {
             width: 100%;
-            padding: 20px;
+            padding: 10px;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -43,8 +43,8 @@
             .wheel-sc {
               position: absolute;
               line-height: 1.5rem;
-              padding: 0.625em;
-              padding: 0.625em;
+              //padding: 0.625em;
+              padding: 15px;
               overflow: visible;
               letter-spacing: 6px;
             }
