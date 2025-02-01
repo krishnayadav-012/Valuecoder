@@ -132,6 +132,8 @@ html {
     color: $gray !important;
   }
 }
+ 
+.light-background{background:#F4F4F4;}
 
 
 
@@ -912,11 +914,13 @@ textarea {
 
   .faq-outer {
     max-width: 970px;
-    margin:60px auto 0;
+  
   }
 
   .faq-accordion-item-outer {
-    position: relative;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    margin: 0 0 20px;
     &.active {
       .faq-accordion-content {
         display: block;
@@ -940,11 +944,12 @@ textarea {
     align-items: center;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    padding: 30px 40px 20px 0;
+    padding: 20px 40px 20px 20px;
     position: relative;
-    font-weight: 400;
-    color: #3f3f3f;
-    border-top: 1px solid rgba(238, 238, 238, 1);
+    font-weight: 600;
+    color: #110302;
+    border-bottom: 1px solid #E4E4E4;
+    margin: 0;
    
     a {
       display: contents;
@@ -958,7 +963,7 @@ textarea {
       width: 18px;
       border-radius: 3px;
       position: absolute;
-      right: 0;
+      right: 12px;
     }
 
     &::after {
@@ -970,17 +975,19 @@ textarea {
       width: 3px;
       border-radius: 3px;
       position: absolute;
-      right: 8px;
+      right: 20px;
     }
   }
 
   .faq-accordion-content {
     display: none;
-    padding-top: 5px;
-    padding: 0 0 30px;
+    padding: 20px;
+    border-bottom: 2px solid $yellow;
 
     p {
-      margin: 10px 0 0;
+      margin: 0 0 10px;
+      font-weight: $normal-font;
+      color:#5E6373;
     }
 
     ul,
@@ -1909,7 +1916,7 @@ textarea {
 
   .faq-section {
     .faq-outer {
-      margin-top: 40px;
+     
     }
     .faq-accordion-content {
       p {

@@ -1172,65 +1172,85 @@
       </div>
     </section>
 
+    <section class="latest-insight light-background  padding-t-120 padding-b-120">
+  <div class="container">
+    <div class="top-section b-100">
+      <div class="dis-flex items-center justify-sb  top-content">
+        <div class="flex-2">
+          <h2>Solutions We Deliver</h2>
+          <p>We deliver robust, scalable, and reliable software product solutions to clients across the globe driven by the top 1% of software engineering talent in India.</p>
+        </div>
+        <div class="flex-2 text-right">
+          <a href="#" class="is-arrow">Find Out More</a>
+        </div>
+      </div>
+    </div>
+    <div class="insight-row">
+      <div class="card">
+        <div class="card-image">
+          <span class="category">AI & ML</span>
+          <picture>
+            <source type="image/webp" srcset="images/home-images/insight-01.png">
+            <img loading="lazy" src="images/home-images/insight-01.png"width="400" height="200">
+          </picture>
+        </div>
+        <div class="card-content">
+          <h3>Red Flags in Software Outsourcing: 7 Warning Signs You Can’t Ignore</h3>
+          <p>So, you decided to outsource your software development project....</p>
+          <div class="author">
+            <img src="images/home-images/author.svg" alt="Author avatar">
+            <span>by Ankita</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <span class="category">AI & ML</span>
+          <picture>
+            <source type="image/webp" srcset="images/home-images/insight-01.png">
+            <img loading="lazy" src="images/home-images/insight-01.png"width="400" height="200">
+          </picture>
+        </div>
+        <div class="card-content">
+          <h3>Red Flags in Software Outsourcing: 7 Warning Signs You Can’t Ignore</h3>
+          <p>So, you decided to outsource your software development project....</p>
+          <div class="author">
+            <img src="images/home-images/author.svg" alt="Author avatar">
+            <span>by Ankita</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <span class="category">AI & ML</span>
+          <picture>
+            <source type="image/webp" srcset="images/home-images/insight-01.png">
+            <img loading="lazy" src="images/home-images/insight-01.png"width="400" height="200">
+          </picture>
+        </div>
+        <div class="card-content">
+          <h3>Red Flags in Software Outsourcing: 7 Warning Signs You Can’t Ignore</h3>
+          <p>So, you decided to outsource your software development project....</p>
+          <div class="author">
+            <img src="images/home-images/author.svg" alt="Author avatar">
+            <span>by Ankita</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 
     
-    <section class="solution bg-light padding-t-120 padding-b-120">
-      <div class="container">
-        <div class="head-txt text-center">
-          <h2>Powerful Solutions for Your Digital Success</h2>
-          <p>At ValueCoders, we offer cutting-edge software solutions tailored to meet the unique needs of your business. Our goal is to empower businesses of all sizes with innovative technologies that streamline operations, deliver exceptional results, and drive growth.
-          </p>
-        </div>
-        <div class="dis-flex col-box-outer margin-t-80">
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>Startups</h3>
-              <p>Software solutions designed to help startups streamline their operations and scale their businesses.</p>
-              <ul>
-                <li>Scalable solutions that grow with your business</li>
-                <li>Affordable options that won’t break the bank</li>
-                <li>Customizable software to meet your unique needs</li>
-              </ul>
-              <div class="exbtn"><a class="explore-btn" href="">Explore More</a></div>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>Enterprises</h3>
-              <p>Software solutions designed to help enterprises optimize their operations and improve their bottom line.</p>
-              <ul>
-                <li>Efficient solutions that automate repetitive tasks</li>
-                <li>Seamless integration with existing systems</li>
-                <li>Real-time data and analytics for data-driven decisions</li>
-              </ul>
-              <div class="exbtn"><a class="explore-btn" href="">Explore More</a></div>
-            </div>
-          </div>
-          <div class="flex-3 box-3">
-            <div class="box">
-              <h3>Agencies</h3>
-              <p>Software solutions designed to help agencies streamline their workflows and deliver better results for their clients.</p>
-              <ul>
-                <li>Collaborative solutions for team members</li>
-                <li>Customizable software to tailor to your needs and clients</li>
-                <li>Detailed reporting and analytics to track progress</li>
-              </ul>
-              <div class="exbtn"><a class="explore-btn" href="">Explore More</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="faq-section padding-t-120 padding-b-120">
       <div class="container">
-        <div class="head-txt text-center">
+       
+        <div class="top-section b-100">
           <h2>Frequently Asked Questions</h2>
-          <p>Here are answers to some questions related to hiring PHP developers or PHP technology which are
-            frequently asked by our clients.
-          </p>
+          <p>Here are some questions related to software outsourcing that our clients frequently ask:
         </div>
         <div class="faq-outer" itemscope itemtype="https://schema.org/FAQPage">
           <div class="faq-accordion-item-outer active" itemscope itemprop="mainEntity"
@@ -1293,102 +1313,7 @@
         </div>
       </div>
     </section>
-    <section class="full-width-two-column  padding-b-150">
-      <div class="dis-flex ">
-        <div class="flex-2 col-box">
-          <div class="dis-flex">
-            <div class="flex-2 od-row">
-              <div class="img-box img1 vlazy"
-                style="background-image:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/04/Finance-Mobile-Application-480_463.webp)">
-              </div>
-            </div>
-            <div class="flex-2 bg-light-theme content-box">
-              <a href="#" class="caseStudy">
-              Case Study
-              </a>
-              <h3>Finance Mobile Application</h3>
-              <p>This finance mobile application is developed for fast and quick transactions and is also
-                helpful in loan applications.
-              </p>
-              <div class="dis-flex other-details">
-                <div class="flex-2 clr-white">Core tech</div>
-                <div class="flex-2">Flutter</div>
-              </div>
-              <a href="https://www.valuecoders.com/case-studies/finance-mobile-application/"
-                title="Finance Mobile Application" class="learn-more margin-t-50">Learn More <i
-                class="round-arrow-icon"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-2 col-box">
-          <div class="img-box img2 vlazy"
-            style="background-image:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/04/Elearning-Application-Mobile-Application-956_463.webp)">
-            <div class="content-box">
-              <a href="#" class="caseStudy">
-              Case Study
-              </a>
-              <h3>Elearning Application</h3>
-              <p>The smart integrated platform is founded on the pillars of providing application access to
-                parents so that they can also see their children's accomplishments.
-              </p>
-              <div class="dis-flex other-details">
-                <div class="flex-2 clr-white">Core tech</div>
-                <div class="flex-2">c#, Swift</div>
-              </div>
-              <a href="https://www.valuecoders.com/case-studies/elearning-application/"
-                title="Elearning Application" class="learn-more margin-t-50">Learn More <i
-                class="round-arrow-icon"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-2 col-box">
-          <div class="img-box img2 vlazy"
-            style="background-image:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/04/Online-Store-For-Motorbikes-956_463.webp)">
-            <div class="content-box">
-              <a href="#" class="caseStudy">
-              Case Study
-              </a>
-              <h3>Online Store For Motorbikes</h3>
-              <p>The client wanted to build a web portal where customers could purchase motorcycles online and
-                dealers could access and manage their agent accounts.
-              </p>
-              <div class="dis-flex other-details">
-                <div class="flex-2 clr-white">Core tech</div>
-                <div class="flex-2">React JS</div>
-              </div>
-              <a href="https://www.valuecoders.com/case-studies/motokaart/"
-                title="Online Store For Motorbikes" class="learn-more margin-t-50">Learn More <i
-                class="round-arrow-icon"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-2 col-box">
-          <div class="dis-flex">
-            <div class="flex-2 od-row">
-              <div class="img-box img1 vlazy"
-                style="background-image:url(https://www.valuecoders.com/v2wp/wp-content/uploads/2022/04/Money-transfer-application-480_463.webp)">
-              </div>
-            </div>
-            <div class="flex-2 bg-light-theme content-box">
-              <a href="#" class="caseStudy">
-              Case Study
-              </a>
-              <h3>Money Transfer Application</h3>
-              <p>This Payment Application is a Hybrid (iOS and Android) Mobile Application. Users can transfer
-                money instantly in different countries of...
-              </p>
-              <div class="dis-flex other-details">
-                <div class="flex-2 clr-white">Core tech</div>
-                <div class="flex-2">Android, IOS</div>
-              </div>
-              <a href="https://www.valuecoders.com/case-studies/money-transfer-application/"
-                title="Money Transfer Application" class="learn-more margin-t-50">Learn More <i
-                class="round-arrow-icon"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section class="testimonial-section bg-light padding-t-120 padding-b-120">
       <div class="container">
       <div class="head-txt text-center">
