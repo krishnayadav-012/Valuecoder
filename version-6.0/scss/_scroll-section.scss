@@ -1,8 +1,8 @@
-.service-scroller{
+.service-scroller {
   display: flex;
   justify-content: center;
 
-  .service-wrap{
+  .service-wrap {
     display: flex;
     width: 100%;
     gap: 20px;
@@ -16,14 +16,36 @@
       top: 150px;
       height: fit-content;
 
-      .top-section{text-align: left;}
+      .top-section {
+        text-align: left;
+      }
 
-     .ser-button{margin:40px 0 0; background:#FAFAFA; border:1px solid #EAEAEA; padding:30px; border-radius: 10px; min-height: 310px;
-    h2{font-size: 32px; line-height: 40px; margin:0 0 10px;
-    strong{color:$yellow; }
-    }
-    
-    }
+      .ser-button {
+        margin: 40px 0 0;
+        background: #fafafa;
+        border: 1px solid #eaeaea;
+        padding: 30px;
+        border-radius: 10px;
+        min-height: 310px;
+        position: relative;
+
+        h2 {
+          font-size: 32px;
+          line-height: 40px;
+          margin: 0 0 10px;
+          strong {
+            color: $yellow;
+          }
+        }
+        &:after{content: "";
+          background: url(../images/home-images/button-bg.png) no-repeat center;
+          width: 219px;
+          height: 161px;
+          background-size: 100%;
+          position: absolute;
+          right: 0;
+          bottom:0;}
+      }
     }
 
     .right-panel {
@@ -36,15 +58,15 @@
         display: flex;
         flex-direction: column;
 
-        background: #FCFCFC;
-        border:1px solid #F3F1F1;
+        background: #fcfcfc;
+        border: 1px solid #f3f1f1;
         border-radius: 5px;
         padding: 25px;
         position: relative;
 
         .img-sec {
           width: 100%;
-          margin:0 0 10px;
+          margin: 0 0 10px;
 
           img {
             width: 40px;
@@ -53,23 +75,24 @@
         }
 
         .text-box {
-        
-
           h3 {
             color: $darkblack;
             position: relative;
 
-            a{color:$darkblack; text-decoration: underline;
-              &:hover{text-decoration: none;}
+            a {
+              color: $darkblack;
+              text-decoration: underline;
+              &:hover {
+                text-decoration: none;
               }
-            
+            }
           }
           p {
             color: #666666;
           }
-          ul {margin:20px 0 0;
-            display: flex
-        ;
+          ul {
+            margin: 20px 0 0;
+            display: flex;
             flex-wrap: wrap;
             li {
               flex-basis: 48%;
@@ -78,11 +101,11 @@
               padding-left: 30px;
               position: relative;
               font-weight: $normal-font;
-              
 
               &:before {
                 content: "";
-                background: url(../images/home-images/listing.svg) no-repeat center;
+                background: url(../images/home-images/listing.svg) no-repeat
+                  center;
                 width: 20px;
                 height: 20px;
                 background-size: 100%;
@@ -93,46 +116,65 @@
             }
           }
 
-        a{color:#656565; text-decoration: underline;
-        &:hover{text-decoration: none;}
+          a {
+            color: #656565;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+          }
         }
 
-        
-
-        }
-
-        &:after{ content: "";
+        &:after {
+          content: "";
           background: url(../images/home-images/hover-arrow.svg) no-repeat;
           width: 40px;
           height: 46px;
           background-size: 100%;
           position: absolute;
           right: 30px;
-          top: 30px;}
+          top: 30px;
+        }
 
-         &:nth-child(2n) {
-          background: linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
+        &:nth-child(2n) {
+          background: $gradient;
 
-          .text-box{
-            h3{color:$white;
-            a{color:$white; text-decoration: underline;
-            &:hover{text-decoration: none;}
-            }
-            }
-            p, li{color:$white;}
-            ul{
-              li{
-                &:before{ background: url(../images/home-images/blue-list.svg) no-repeat center;}
+          .text-box {
+            h3 {
+              color: $white;
+              a {
+                color: $white;
+                text-decoration: underline;
+                &:hover {
+                  text-decoration: none;
+                }
               }
             }
-            a{color:$white; text-decoration: underline;
-              &:hover{text-decoration: none;}
+            p,
+            li {
+              color: $white;
+            }
+            ul {
+              li {
+                &:before {
+                  background: url(../images/home-images/blue-list.svg) no-repeat
+                    center;
+                }
               }
+            }
+            a {
+              color: $white;
+              text-decoration: underline;
+              &:hover {
+                text-decoration: none;
+              }
+            }
           }
 
-          &:after{   background: url(../images/home-images/hover-blue.svg) no-repeat;}
+          &:after {
+            background: url(../images/home-images/hover-blue.svg) no-repeat;
+          }
         }
-       
       }
     }
   }
@@ -140,7 +182,7 @@
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
-  .service-scroller{
+  .service-scroller {
     padding: 0;
   }
 }
@@ -151,8 +193,8 @@
 @media (max-width: 1024px) {
 }
 @media (max-width: 980px) {
-  .service-scroller{
-    .service-wrap{
+  .service-scroller {
+    .service-wrap {
       gap: 15px;
       padding-left: 25px;
       padding-right: 25px;
@@ -173,8 +215,8 @@
 }
 
 @media (max-width: 767px) {
-  .service-scroller{
-    .service-wrap{
+  .service-scroller {
+    .service-wrap {
       gap: 0;
       flex-wrap: wrap;
       border-radius: 20px;
@@ -190,11 +232,13 @@
         gap: 20px;
         .content-box {
           border-radius: 20px;
-          padding:15px;
+          padding: 15px;
           .text-box {
             padding: 0;
-            h3{
-              &:before{top:0;}
+            h3 {
+              &:before {
+                top: 0;
+              }
             }
           }
         }

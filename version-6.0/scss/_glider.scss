@@ -5,13 +5,11 @@
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: none;
+	overflow: hidden;
 	&::-webkit-scrollbar {
 		opacity: 0;
 		height: 0;
-	}
-	&::-moz-scrollbar {
-		opacity: 0;
-		height: 0;
+		display: none;
 	}
 }
 .glider-contain {
@@ -36,61 +34,46 @@
 	cursor: pointer;
 	color: #ccc;
 	border-radius: 999px;
-	background: #ccc;
+	background: transparent;
 	width: 12px;
 	height: 12px;
 	margin: 7px;
 	&:focus {
-		background: #ddd;
+		background: #F76600;
 	}
 	&:hover {
-		background: #ddd;
+		background: #F76600;
 	}
 }
+.glider-prev,
 .glider-next {
 	border: 0;
 	padding: 0;
 	user-select: none;
 	outline: 0;
 	position: absolute;
-	background: 0 0;
 	z-index: 2;
 	font-size: 30px;
 	text-decoration: none;
-	left: -10px;
-	top: 35%;
+	top: 40%;
+    transform: translateY(-50%);
 	cursor: pointer;
 	color: #212121;
 	opacity: 1;
 	line-height: 1;
 	transition: opacity .5s cubic-bezier(.17,.67,.83,.67),color .5s cubic-bezier(.17,.67,.83,.67);
-	right: -10px;
-	left: auto;
-	background: url(../images/button-icons-sprite.png) -53px -80px no-repeat;
-    width: 10px;
-    height: 20px;
+    width: 65px;
+    height: 65px;
+}
+.glider-next {
+	right: 10px;
+	background: url(../images/right-slide-btn.png) 0 0 no-repeat;
+	background-size: 100%;
 }
 .glider-prev {
-	border: 0;
-	padding: 0;
-	user-select: none;
-	outline: 0;
-	position: absolute;
-	background: 0 0;
-	z-index: 2;
-	font-size: 30px;
-	text-decoration: none;
-	left: -10px;
-	top: 35%;
-	cursor: pointer;
-	color: #212121;
-	opacity: 1;
-	line-height: 1;
-	transition: opacity .5s cubic-bezier(.17,.67,.83,.67),color .5s cubic-bezier(.17,.67,.83,.67);
-	background: url(../images/button-icons-sprite.png) -53px -80px no-repeat;
-    width: 10px;
-    height: 20px;
-    transform: rotate(180deg);
+	background: url(../images/left-slide-btn.png) 0 0 no-repeat;
+	background-size: 100%;
+    // transform: rotate(180deg);
 }
 .glider.draggable {
 	user-select: none;
@@ -100,7 +83,6 @@
 		img {
 			user-select: none;
 			pointer-events: none;
-			width:100%;
 		}
 	}
 }
@@ -135,8 +117,17 @@
 	padding: 0;
 }
 .glider-dot.active {
-	background: #a89cc8;
+	background: #fff;
 }
+.day {
+	.glider-next {
+		background-position: -53px 0;
+	}
+	.glider-prev {
+		background-position: -53px 0;
+	}
+}
+
 @media (max-width:36em) {
 	.glider {
 		&::-webkit-scrollbar {

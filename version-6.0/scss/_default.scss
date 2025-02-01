@@ -41,6 +41,7 @@ $medium-font:500;
 $semi-bold:600;
 $bold:700;
 $navy-blue:#05164D;
+$gradient:linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
 
 @import "_footer-section";
 
@@ -131,6 +132,8 @@ html {
     color: $gray !important;
   }
 }
+
+
 
 h1 {
   font-size: 70px;

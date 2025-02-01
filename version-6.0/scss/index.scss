@@ -2,22 +2,32 @@
 @import "_three-column";
 @import "_counter-award";
 @import "_work-tab";
-@import "_scroll-section";
+@import "_scroll-section"; 
+@import "_button-section"; 
+@import "_it-initiative"; 
+@import "_glider";
+@import "_solution-slider";
+@import "_excellence";
+@import "_indstries-slider-section";
+@import "_home-techstack";
+
+
+
 
 
 
 @import "_solutions-section";
-@import "_animated-techstacks";
-@import "_counter-column-section";
-@import "_award-section";
-@import "_industry-section";
-@import "_accordion";
-@import "_glider";
+
+
+
+
+
+
 @import "_case-studies";
-@import "_industries-columns";
+
 @import "_menu-v3.12";
 @import "_ctabtn-structure";
-@import "_custom-cta";
+
 @import "_intent-popup";
 @import "_testimonials";
 @import "_footer-form";
@@ -219,8 +229,20 @@
 .top-section{
   h6{color:$yellow; font-weight: $bold; text-transform: uppercase; margin:0 0 10px;} 
   p{font-size: $font-18;}
+
+  &.b-100{max-width: 100%;
+    margin: auto;
+    padding: 0 0 100px;
+    text-align: center;}
 }
 
+
+.gradient-bg{background:$gradient;
+  .top-section{
+    h2{color:$white;}
+    p{color:#BDB7B7;}
+  }
+}
 
 
 .btn-container {
@@ -232,15 +254,15 @@ margin-top:30px;
     padding: 14px 16px; 
     cursor: pointer;
     position: relative;
-    background:$yellow;
+    background:$white;
     color:$navy-blue;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: $medium-font;
     border-radius: 50px;
   
-  &:after{content: "";
-    background: url(../images/home-images/white-cta.svg) no-repeat;
+  &:after{content: ""; background: url(../images/home-images/yellow-cta.svg) no-repeat;
+    
     width: 26px;
     height: 26px;
     background-size: 100%; display:inline-block;
@@ -248,9 +270,18 @@ margin-top:30px;
    }
   
     &:hover {
-      background-color: $navy-blue;
-      color:$white;
-      &:after{ background: url(../images/home-images/yellow-cta.svg) no-repeat;}
+      background-color: $yellow;
+      color:$navy-blue;;
+      &:after{background: url(../images/home-images/blue-cta.svg) no-repeat;}
+    }
+
+    &.yellow{  background:$yellow; color:$navy-blue;
+    &:after{background: url(../images/home-images/white-cta.svg) no-repeat;}
+    &:hover{background:$navy-blue; color:$white;
+    
+      &:after{background: url(../images/home-images/yellow-cta.svg) no-repeat;}
+    
+    }
     }
     
   }
