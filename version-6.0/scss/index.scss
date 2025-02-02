@@ -2,21 +2,20 @@
 @import "_three-column";
 @import "_counter-award";
 @import "_work-tab";
-@import "_scroll-section"; 
-@import "_button-section"; 
-@import "_it-initiative"; 
+@import "_scroll-section";
+@import "_button-section";
+@import "_it-initiative";
 @import "_glider";
 @import "_solution-slider";
 @import "_excellence";
 @import "_indstries-slider-section";
 @import "_home-techstack";
+
+@import "_success-slider";
 @import "_latest-insight";
 @import "_client-testimonials";
 
-
-
 @import "_menu-v3.12";
-
 
 @import "_intent-popup";
 
@@ -24,14 +23,18 @@
 
 .hero-section {
   padding: 145px 0 70px;
-  height:100vh;
+  height: 100vh;
   // min-height: calc(80vh - 95px);
   align-items: center;
   position: relative;
   display: flex;
   display: -webkit-flex;
-  background: linear-gradient(0deg, rgba(2, 9, 10, 0.8) 0%, rgba(1, 7, 29, 0.8) 56%, rgba(2, 18, 71, 0.9) 100%);
-
+  background: linear-gradient(
+    0deg,
+    rgba(2, 9, 10, 0.8) 0%,
+    rgba(1, 7, 29, 0.8) 56%,
+    rgba(2, 18, 71, 0.9) 100%
+  );
 
   #background-video {
     width: 100%;
@@ -45,13 +48,12 @@
     z-index: -1;
   }
 
-  .dis-flex{align-items: center;
-  
-  
+  .dis-flex {
+    align-items: center;
+
     .left-box {
       flex-basis: 70%;
-  
-  
+
       h1 {
         margin-bottom: 15px;
         font-size: 70px;
@@ -59,10 +61,10 @@
         color: $white;
         font-weight: 600;
       }
-    
+
       p {
-        margin-top:20px;
-        color:rgba(252, 252, 252, 0.87);
+        margin-top: 20px;
+        color: rgba(252, 252, 252, 0.87);
         font-size: $font-18;
         font-weight: 400;
         &:first-of-type {
@@ -70,19 +72,19 @@
         }
       }
 
-
       ul {
         list-style: none;
         margin-top: 20px;
         li {
           position: relative;
           margin: 0 0 15px;
-          color:rgba(252, 252, 252, 0.87);
+          color: rgba(252, 252, 252, 0.87);
           padding-left: 30px;
           font-size: 16px;
           line-height: 28px;
 
-          &:before{    content: "";
+          &:before {
+            content: "";
             background: url(../images/home-images/list-icon.svg) no-repeat;
             width: 20px;
             height: 20px;
@@ -90,33 +92,27 @@
             position: absolute;
             top: 5px;
             left: 0;
-            }
-      
+          }
         }
       }
-    
-     
-    
+
       a {
         color: $white;
-        &:hover{text-decoration: underline;}
+        &:hover {
+          text-decoration: underline;
+        }
       }
-    
-  
-     .for-client-logo-box{margin:60px 0 0;}
-  
-  
-  
-    }
-  
-  
-  }
 
+      .for-client-logo-box {
+        margin: 60px 0 0;
+      }
+    }
+  }
 
   .scroll-next {
     width: 36px;
     height: 54px;
-    border: 5px solid #BACAF3;
+    border: 5px solid #bacaf3;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -169,14 +165,7 @@
       bottom: -26px;
     }
   }
-
- 
-
-
-
 }
-
-
 
 @keyframes up-down {
   0% {
@@ -192,9 +181,8 @@
   }
 }
 
-
-
-.is-arrow{    display: block;
+.is-arrow {
+  display: block;
   text-decoration: underline;
   color: $navy-blue;
   text-align: left;
@@ -202,86 +190,106 @@
   font-weight: $normal-font;
   font-size: $font-18;
 
-&:after{    content: "";
-  background: url(../images/home-images/arrow.svg) no-repeat center;
-  width: 11px;
-  display: inline-block;
-  height: 11px;
-  margin-left: 8px;
-  transition: all 0.3s ease-in-out;}
+  &:after {
+    content: "";
+    background: url(../images/home-images/arrow.svg) no-repeat center;
+    width: 11px;
+    display: inline-block;
+    height: 11px;
+    margin-left: 8px;
+    transition: all 0.3s ease-in-out;
+  }
 
-  &:hover{text-decoration: none;
-    &:after{margin-left: 15px;}
+  &:hover {
+    text-decoration: none;
+    &:after {
+      margin-left: 15px;
+    }
   }
 }
 
+.top-section {
+  h6 {
+    color: $yellow;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  p {
+    font-size: $font-18;
+  }
 
-.top-section{
-  h6{color:$yellow; font-weight: $bold; text-transform: uppercase; margin:0 0 10px;} 
-  p{font-size: $font-18;}
-
-  &.b-100{max-width: 100%;
+  &.b-100 {
+    max-width: 100%;
     margin: auto;
     padding: 0 0 100px;
-    text-align: center;}
-}
-
-
-.gradient-bg{background:$gradient;
-  .top-section{
-    h2{color:$white;}
-    p{color:#BDB7B7;}
+    text-align: center;
   }
 }
 
+.gradient-bg {
+  background: $gradient;
+  .top-section {
+    h2 {
+      color: $white;
+    }
+    p {
+      color: #bdb7b7;
+    }
+  }
+}
 
 .btn-container {
-margin-top:30px;
-
+  margin-top: 30px;
 
   .cta-button {
     display: inline-flex;
-    padding: 14px 16px; 
+    padding: 14px 16px;
     cursor: pointer;
     position: relative;
-    background:$white;
-    color:$navy-blue;
+    background: $white;
+    color: $navy-blue;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: $medium-font;
     border-radius: 50px;
-  
-  &:after{content: ""; background: url(../images/home-images/yellow-cta.svg) no-repeat;
-    
-    width: 26px;
-    height: 26px;
-    background-size: 100%; display:inline-block;
-    margin-left:10px;
-   }
-  
+
+    &:after {
+      content: "";
+      background: url(../images/home-images/yellow-cta.svg) no-repeat;
+
+      width: 26px;
+      height: 26px;
+      background-size: 100%;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
     &:hover {
       background-color: $yellow;
-      color:$navy-blue;;
-      &:after{background: url(../images/home-images/blue-cta.svg) no-repeat;}
+      color: $navy-blue;
+      &:after {
+        background: url(../images/home-images/blue-cta.svg) no-repeat;
+      }
     }
 
-    &.yellow{  background:$yellow; color:$navy-blue;
-    &:after{background: url(../images/home-images/white-cta.svg) no-repeat;}
-    &:hover{background:$navy-blue; color:$white;
-    
-      &:after{background: url(../images/home-images/yellow-cta.svg) no-repeat;}
-    
+    &.yellow {
+      background: $yellow;
+      color: $navy-blue;
+      &:after {
+        background: url(../images/home-images/white-cta.svg) no-repeat;
+      }
+      &:hover {
+        background: $navy-blue;
+        color: $white;
+
+        &:after {
+          background: url(../images/home-images/yellow-cta.svg) no-repeat;
+        }
+      }
     }
-    }
-    
   }
-
-
 }
-
-
-
-
 
 .not-found-section {
   height: 95vh;
@@ -347,8 +355,6 @@ margin-top:30px;
 // Media Query Start From Here
 
 @media only screen and (max-width: 1600px) {
- 
-
   .not-found-section {
     .suggest {
       font-size: 28px;
@@ -484,4 +490,3 @@ margin-top:30px;
 }
 
 //Not Required
-
