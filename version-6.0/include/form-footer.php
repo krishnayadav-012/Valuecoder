@@ -3,6 +3,7 @@
    <div class="form-inner dis-flex">
       <div class="form-text-cont">
          <div class="user-input">
+         <label>Full Name</label>
             <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name" class="input-field"
                value="" name="user-name">
             <small>Error Message</small>
@@ -10,6 +11,7 @@
       </div>
       <div class="form-text-cont">
          <div class="user-input">
+            <label>Email</label>
             <input type="text" autocomplete="off" id="cont_email" placeholder="Email Address" class="input-field"
                value="" name="user-email">
             <small>Error Message</small>
@@ -17,6 +19,7 @@
       </div>
       <div class="form-text-cont">
          <div class="user-input">
+         <label>Phone No.</label>
             <input type="text" autocomplete="off" class="input-field" id="cont_phpne" placeholder="Phone Number"
                value="" name="user-phone">
             <small>Error Message</small>
@@ -24,6 +27,7 @@
       </div>
       <div class="form-text-cont cont_country_section">
          <div class="user-input">
+            <label>Select Country</label>
             <input class="input-field input-skype" autocomplete="off" id="cont_country" type="text"
                placeholder="Country" value="" name="user-country">
             <small>Error Message</small>
@@ -31,6 +35,7 @@
       </div>
       <div class="form-text-cont width-full">
          <div class="user-input form-control verror">
+            <label>Your Requirements</label>
             <textarea class="input-field comment-input" autocomplete="off" id="user-req" placeholder="Project Brief"
                name="user-req"></textarea>
             <small>Please Fill Requirement</small>
@@ -42,7 +47,7 @@
                   accept="image/*,application/pdf,.psd,.zip,.docx,.xlsx,.xls,.txt"
                   onchange="handleFiles(this.files)" style="display:none;">
                <button class="button" id="browse-btn" type="button"
-                  onclick="document.getElementById('fileElem').click()">BROWSE | DROP FILES HERE</button>
+                  onclick="document.getElementById('fileElem').click()">Browse | Drop Files Here</button>
                <input type="hidden" name="up-counter" id="uplcounter" value="0">
             </div>
          </div>
@@ -65,13 +70,13 @@
             <span class="error" id="captchaerror"></span>
          </div>
       </div>
-      <div class="btn-sec">
-         <div class="user-input btn rounded checkout">
+      <div class="btn-container">
+         <div class="user-input">
             <input type="hidden" name="Uploadedfilename" id="Uploadedfilename" value="">
             <input type="hidden" name="frmqueryString" value="">
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
-            <input type="submit" id="submitButton cta" class="checkout-submit" value="Enquire Now">
+            <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now">
          </div>
       </div>
    </div>

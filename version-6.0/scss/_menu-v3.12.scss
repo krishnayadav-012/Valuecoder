@@ -458,6 +458,7 @@ $font16: 16px;
           transition: all 0.3s ease;
           margin-left: 30px;
           font-size: $font16;
+          line-height: 22px;
           cursor: pointer;
           &::before {
             transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);

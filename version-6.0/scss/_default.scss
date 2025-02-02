@@ -914,6 +914,7 @@ textarea {
 
   .faq-outer {
     max-width: 970px;
+    margin:0  auto;
   
   }
 
@@ -921,7 +922,8 @@ textarea {
     border: 1px solid #E4E4E4;
     border-radius: 5px;
     margin: 0 0 20px;
-    &.active {
+    padding:0 20px;
+    &.active {border-bottom: 2px solid $yellow;
       .faq-accordion-content {
         display: block;
       }
@@ -944,7 +946,7 @@ textarea {
     align-items: center;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    padding: 20px 40px 20px 20px;
+    padding: 20px 20px 20px 0;
     position: relative;
     font-weight: 600;
     color: #110302;
@@ -963,7 +965,7 @@ textarea {
       width: 18px;
       border-radius: 3px;
       position: absolute;
-      right: 12px;
+      right: 0;
     }
 
     &::after {
@@ -975,14 +977,14 @@ textarea {
       width: 3px;
       border-radius: 3px;
       position: absolute;
-      right: 20px;
+      right: 7px;
     }
   }
 
   .faq-accordion-content {
     display: none;
-    padding: 20px;
-    border-bottom: 2px solid $yellow;
+    padding: 20px 0;
+    
 
     p {
       margin: 0 0 10px;

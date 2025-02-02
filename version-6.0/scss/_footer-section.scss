@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  background: #fffcf1;
-  padding: 30px 0 40px;
+  background: $gradient;
+  padding: 30px 0 0;
   .footer-top {
     padding: 0 0 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
@@ -15,121 +15,28 @@
       .count-col {
         margin-right: 40px;
         h5 {
-          color: #000000;
+          color: #fff;
           font-size: 20px;
           margin: 0 0 10px;
+          font-weight: 600;
         }
         p {
-          color: rgba(0, 0, 0, 0.6);
+          color: #b9b9b9;
           font-size: 14px;
           line-height: 24px;
           margin: 0;
-        }
-        .subs-box {
-          background: #ffad00;
-          position: relative;
-          padding: 20px 40px;
-          flex-basis: 30%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-direction: column;
-          text-align: center;
-          border-radius: 30px;
-          overflow: hidden;
-          h3 {
-            font-size: 18px;
-            line-height: 26px;
-            font-weight: 500;
-            color: $white;
-          }
-          &:before {
-            content: "";
-            background: url(../images/subs-shape01.png) no-repeat;
-            width: 75px;
-            height: 65px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background-size: 100%;
-          }
-          &:after {
-            content: "";
-            background: url(../images/subs-shape02.png) no-repeat;
-            width: 40px;
-            height: 65px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            background-size: 100%;
-          }
+          font-weight: 400;
         }
       }
     }
 
     .subs-box {
-      background: #ffad00;
-      position: relative;
-      padding: 20px 40px;
       flex-basis: 30%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-      text-align: center;
-      border-radius: 30px;
-      overflow: hidden;
 
-      h3{  font-size: 18px;
-        line-height: 26px;
-        font-weight: 500;
-        color: $white;}
-
-      .white-btn {
-        background: var(--blue);
-        border-color: var(--blue);
-        border-radius: 15px;
-        font-size: 14px;
-        padding: 12px 30px;
-        line-height: 1;
-        font-weight: 500;
-        &:hover {
-          background: #05164d;
-          color: $white;
-          border-color: #05164d;
-        }
-      }
-
-      .cta-wrap {
-        margin: 15px 0 0;
-
-        .btn-sec {
-          .btn {
-            background: #fff;
-            padding: 13px 80px 13px 30px;
-            font-size: 16px;
-            &.rounded {
-              .text-white {
-                color: #05164d;
-              }
-              &:before {
-                background: #05164d url(../images/white-icon.svg) 0 0 no-repeat;
-                top: 4px;
-                width: 40px;
-                height: 40px;
-                background-position: center right 12px;
-              }
-            }
-            &:hover {
-              border-color: #05164d;
-              background: #05164d;
-              opacity: 1;
-              .text-white {
-                color: #fff;
-              }
-            }
-          }
-        }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
       }
     }
   }
@@ -148,19 +55,20 @@
     h4 {
       font-size: 18px;
 
-      color: $black;
-      font-weight: 600;
+      color: #ffffff;
+      font-weight: 500;
     }
     ul {
       li {
         margin: 10px 0 0;
-        color: rgba(0, 0, 0, 0.6);
+        color: #b9b9b9;
         font-size: 16px;
         line-height: 26px;
+        font-weight: 400;
         a {
-          color: rgba(0, 0, 0, 0.6);
+          color: #b9b9b9;
           &:hover {
-            color: $black;
+            color: #fff;
           }
         }
       }
@@ -169,20 +77,21 @@
 
   .footer-bottom {
     padding: 40px 0 0;
-    gap: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
     justify-content: space-between;
-    .flex-3 {
-      flex-basis: auto;
+    .flex-4 {
+      flex-basis: 15%;
     }
     h3 {
       font-size: 15px;
       line-height: 24px;
-      color: $black;
+      color: #b9b9b9;
       font-weight: 400;
       margin: 0 0 22px;
     }
     .logo-box {
+      flex-basis: 31%;
       .dis-flex {
         a {
           margin-right: 30px;
@@ -192,19 +101,67 @@
         }
       }
     }
-    .social-box{
-      .dis-flex{
-        a{margin-right:20px;}
+    .social-box {
+      .dis-flex {
+        a {
+          margin-right: 10px;
+        }
       }
     }
     .copyright {
-      p {
+    }
+
+    .footer-rating {
+      color: #b9b9b9;
+      flex-basis: 35%;
+
+      .star-outer a {
         font-size: 14px;
-        line-height: 22px;
-        color: rgba(0, 0, 0, 0.6);
-        margin: 0;
+        color: #b9b9b9;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a {
+        &:hover {
+          color: $white;
+          opacity: 0.8;
+        }
+      }
+
+      .star-icon {
+        background: url(../images/home-images/footer-icons.png) 0 0 no-repeat;
+        width: 18px;
+        height: 15px;
+        display: inline-block;
+      }
+
+      .client-outer {
+        margin-top: 12px;
+      }
+
+      .rate-us {
+        border: 1px solid #ffb81d;
+        border-radius: 6px;
+        padding: 5px 18px;
+        display: inline-block;
+        color: #ffb81d;
+        margin-right: 10px;
+        transition: all 0.3s ease-in-out;
       }
     }
+  }
+
+  .footer-copyright {
+    background: $navy-blue;
+
+    margin: 40px 0 0;
+    color: #8d8d8d;
+    text-align: center;
+    padding: 10px 0;
+
+    font-size: 12px;
+    line-height: 1;
   }
 }
 
@@ -280,14 +237,14 @@
     .footer-top {
       .count-sec {
         .count-col {
-       p{font-size: 12px;}
-       line-height: 24px;
+          p {
+            font-size: 12px;
+          }
+          line-height: 24px;
         }
       }
     }
-
   }
-
 }
 
 @media (max-width: 1023px) {
@@ -372,7 +329,6 @@
             margin: 0 0 5px;
           }
         }
-        
       }
       .subs-box {
         flex-basis: 100%;
