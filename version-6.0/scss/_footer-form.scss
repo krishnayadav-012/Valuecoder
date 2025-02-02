@@ -134,7 +134,7 @@
 
     h2{margin:0 0 10px;}
 
-    .top-section{margin:0 0 30px;}
+    .top-section{margin:0 0 50px;}
  
   }
 
@@ -268,10 +268,10 @@
     font-size: 12px;
   }
 
-  .btn-container{
-    .cta-button{border:0; background:$yellow url(../images/home-images/white-cta.svg) no-repeat;
+  .btn-container{margin-top: 0;
+    .cta-button{background: #ffad00 url(../images/home-images/white-cta.svg) no-repeat right 15px center; border:none; padding: 16px 50px 16px 20px;
     
-    
+    &:hover{background: $navy-blue url(../images/home-images/yellow-cta.svg) no-repeat right 15px center; color:$white;}
     
     }
   }
