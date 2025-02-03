@@ -1,4 +1,3 @@
-
 //
 // Variables
 //
@@ -33,18 +32,16 @@ $darkWhiteGray: #e5e5e5;
 $bglight: #f8f8f8;
 $greyBannerfont: #bdb7b7;
 
-
-$darkblack:#110302;
-$font-18:18px;
-$normal-font:400;
-$medium-font:500;
-$semi-bold:600;
-$bold:700;
-$navy-blue:#05164D;
-$gradient:linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
+$darkblack: #110302;
+$font-18: 18px;
+$normal-font: 400;
+$medium-font: 500;
+$semi-bold: 600;
+$bold: 700;
+$navy-blue: #05164d;
+$gradient: linear-gradient(90deg, #05164d 0%, #0c33b3 100%);
 
 @import "_footer-section";
-
 
 @media only screen and (min-width: 768px) {
   @font-face {
@@ -66,17 +63,16 @@ $gradient:linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Lexend Deca";
+    src: url("../fonts/LexendDeca-SemiBold.woff2") format("woff2"),
+      url("../fonts/LexendDeca-SemiBold.woff") format("woff"),
+      url("../fonts/LexendDeca-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: "Lexend Deca";
-  src: url("../fonts/LexendDeca-SemiBold.woff2") format("woff2"),
-    url("../fonts/LexendDeca-SemiBold.woff") format("woff"),
-    url("../fonts/LexendDeca-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-  
   @font-face {
     font-family: "Lexend Deca";
     src: url("../fonts/LexendDeca-Bold.woff2") format("woff2"),
@@ -86,9 +82,7 @@ $gradient:linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
     font-style: normal;
     font-display: swap;
   }
-  
-  }
-
+}
 
 // default classes
 * {
@@ -132,16 +126,16 @@ html {
     color: $gray !important;
   }
 }
- 
-.light-background{background:#F4F4F4;}
 
-
+.light-background {
+  background: #f4f4f4;
+}
 
 h1 {
   font-size: 70px;
   line-height: 1.5;
   color: $yellow;
-  font-weight:$semi-bold;
+  font-weight: $semi-bold;
 }
 
 h2 {
@@ -150,7 +144,6 @@ h2 {
   font-weight: 700;
   color: $darkblack;
   margin: 0 0 15px;
-  
 }
 
 h3 {
@@ -171,11 +164,9 @@ h6 {
   font-size: 18px;
 }
 
-
-
 p {
   font-size: 16px;
-  color: #5E6373;
+  color: #5e6373;
   line-height: 28px;
   font-weight: $medium-font;
   margin: 0 0 15px;
@@ -600,8 +591,7 @@ strong {
   }
 
   .logo-box-outer {
-    background: url(../images/banner-client-logo.svg) 0 0
-      no-repeat;
+    background: url(../images/banner-client-logo.svg) 0 0 no-repeat;
     width: calc(100% - 240px);
     height: 69px;
     background-size: 100%;
@@ -914,16 +904,16 @@ textarea {
 
   .faq-outer {
     max-width: 970px;
-    margin:0  auto;
-  
+    margin: 0 auto;
   }
 
   .faq-accordion-item-outer {
-    border: 1px solid #E4E4E4;
+    border: 1px solid #e4e4e4;
     border-radius: 5px;
     margin: 0 0 20px;
-    padding:0 20px;
-    &.active {border-bottom: 2px solid $yellow;
+    padding: 0 20px;
+    &.active {
+      border-bottom: 2px solid $yellow;
       .faq-accordion-content {
         display: block;
       }
@@ -936,7 +926,9 @@ textarea {
         display: none;
       }
     }
-    &:nth-child(1) .faq-accordion-toggle{border-top:0;}
+    &:nth-child(1) .faq-accordion-toggle {
+      border-top: 0;
+    }
   }
 
   .faq-accordion-toggle {
@@ -950,9 +942,9 @@ textarea {
     position: relative;
     font-weight: 600;
     color: #110302;
-    border-bottom: 1px solid #E4E4E4;
+    border-bottom: 1px solid #e4e4e4;
     margin: 0;
-   
+
     a {
       display: contents;
     }
@@ -984,12 +976,11 @@ textarea {
   .faq-accordion-content {
     display: none;
     padding: 20px 0;
-    
 
     p {
       margin: 0 0 10px;
       font-weight: $normal-font;
-      color:#5E6373;
+      color: #5e6373;
     }
 
     ul,
@@ -1032,8 +1023,6 @@ textarea {
     }
   }
 }
-
-
 
 // breadcrumbs
 .breadcrumbs {
@@ -1101,7 +1090,6 @@ textarea {
     height: 57px;
     background: url(../images/home-partner-logo.png) 0 0 no-repeat;
     display: inline-block;
-    
 
     &.logo2 {
       background-position: -111px 0;
@@ -1243,8 +1231,11 @@ textarea {
     width: 304px;
     height: 475px;
   }
-  .button-section{justify-content: center;
-  .btn-sec{justify-content: center;}
+  .button-section {
+    justify-content: center;
+    .btn-sec {
+      justify-content: center;
+    }
   }
 }
 
@@ -1347,15 +1338,150 @@ textarea {
 
 //END//
 
+//Deafult changes for version 6 home page//
+
+.is-arrow {
+  display: block;
+  text-decoration: underline;
+  color: $navy-blue;
+  text-align: left;
+  margin: 40px 0 0;
+  font-weight: $normal-font;
+  font-size: $font-18;
+
+  &:after {
+    content: "";
+    background: url(../images/home-images/arrow.svg) no-repeat center;
+    width: 11px;
+    display: inline-block;
+    height: 11px;
+    margin-left: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+    &:after {
+      margin-left: 15px;
+    }
+  }
+}
+
+.top-section {
+  h6 {
+    color: $yellow;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  p {
+    font-size: $font-18;
+  }
+
+  &.b-100 {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 0 100px;
+    text-align: center;
+  }
+}
+
+.gradient-bg {
+  background: $gradient;
+  .top-section {
+    h2 {
+      color: $white;
+    }
+    p {
+      color: #bdb7b7;
+    }
+  }
+}
+
+.btn-container {
+  margin-top: 30px;
+
+  .cta-button {
+    display: inline-flex;
+    padding: 14px 16px;
+    cursor: pointer;
+    position: relative;
+    background: $white;
+    color: $navy-blue;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: $medium-font;
+    border-radius: 50px;
+
+    &:after {
+      content: "";
+      background: url(../images/home-images/yellow-cta.svg) no-repeat;
+
+      width: 26px;
+      height: 26px;
+      background-size: 100%;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background-color: $yellow;
+      color: $navy-blue;
+      &:after {
+        background: url(../images/home-images/blue-cta.svg) no-repeat;
+      }
+    }
+
+    &.yellow {
+      background: $yellow;
+      color: $navy-blue;
+      &:after {
+        background: url(../images/home-images/white-cta.svg) no-repeat;
+      }
+      &:hover {
+        background: $navy-blue;
+        color: $white;
+
+        &:after {
+          background: url(../images/home-images/yellow-cta.svg) no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.explore-btn {
+  position: relative;
+  color: $bgVoilet;
+  font-weight: 500;
+  text-decoration: underline;
+  &:after {
+    content: "";
+    background: url(../images/explore-btn.svg) no-repeat center;
+    width: 11px;
+    position: absolute;
+    height: 11px;
+    margin-left: 8px;
+    top: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &:after {
+      margin-left: 15px;
+    }
+  }
+}
+
+//Default Changes Finish//
+
 // Media Query Start From Here*/
 
 @media only screen and (max-width: 1600px) {
   .container {
     max-width: 1380px;
   }
-  
 
-  
   .related-tags-section {
     .tags-outer {
       margin-top: 10px;
@@ -1393,9 +1519,6 @@ textarea {
       max-width: 1160px;
     }
   }
-
- 
-  
 
   .for-client-logo-box {
     i {
@@ -1450,8 +1573,6 @@ textarea {
       font-size: 12px;
     }
   }
-
- 
 
   .experts-talk-first-section {
     &:after {
@@ -1516,8 +1637,6 @@ textarea {
       }
     }
   }
-
- 
 
   .for-client-logo-box {
     i {
@@ -1918,7 +2037,6 @@ textarea {
 
   .faq-section {
     .faq-outer {
-     
     }
     .faq-accordion-content {
       p {
@@ -1952,7 +2070,6 @@ textarea {
     }
   }
 
- 
   .for-client-logo-box {
     margin-bottom: 20px;
     .logo-box {
@@ -1975,121 +2092,120 @@ $color_2: #05164d;
 $color_3: #666;
 $color_4: #fff;
 $background-color_1: #000;
-$background-color_2: rgba(0,0,0,.6);
+$background-color_2: rgba(0, 0, 0, 0.6);
 $border-color_1: #ffad00;
 $border-color_2: #05164d;
 
 .popup-section {
-	width: 100%;
-	.popup-wrapper {
-		z-index: 999;
-		display: none;
-		position: fixed;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: $background-color_1;
-		background-color: $background-color_2;
-		.popWrap {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			.popup-content {
-				width: 612px;
-				background: #fff;
-				border-radius: 25px;
-				padding: 36px 70px;
-				text-align: center;
-				position: relative;
-				h2 {
-					color: $color_1;
-					font-weight: 700;
-					font-size: 32px;
-					margin: 0 0 5px;
-					line-height: 40px;
-				}
-				h3 {
-					font-size: 24px;
-					line-height: 32px;
-					font-weight: 600;
-					margin: 0 0 15px;
-					color: $color_2;
-				}
-				p {
-					color: $color_3;
-				}
-				.ctasec {
-					margin: 20px 0 0;
-					a {
-						display: inline-block;
-						border: 1px solid #05164d;
-						margin: 15px auto 0;
-						padding: 15px 20px;
-						font-weight: 500;
-						color: $color_2;
-						border-radius: 8px;
-						min-width: 376px;
-						&:hover {
-							background: #05164d;
-							color: $color_4;
-							border-color: $border-color_2;
-						}
-					}
-					a.book-btn {
-						background: #ffad00;
-						border-color: $border-color_1;
-					}
-				}
-				.closeicon {
-					cursor: pointer;
-					position: absolute;
-					right: 18px;
-					top: 10px;
-					background: 0 0;
-				}
-			}
-		}
-	}
-	.exit-intent-popup {
-		display: none;
-	}
-	.exit-intent-popup.visible {
-		display: block;
-	}
+  width: 100%;
+  .popup-wrapper {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color_1;
+    background-color: $background-color_2;
+    .popWrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .popup-content {
+        width: 612px;
+        background: #fff;
+        border-radius: 25px;
+        padding: 36px 70px;
+        text-align: center;
+        position: relative;
+        h2 {
+          color: $color_1;
+          font-weight: 700;
+          font-size: 32px;
+          margin: 0 0 5px;
+          line-height: 40px;
+        }
+        h3 {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 600;
+          margin: 0 0 15px;
+          color: $color_2;
+        }
+        p {
+          color: $color_3;
+        }
+        .ctasec {
+          margin: 20px 0 0;
+          a {
+            display: inline-block;
+            border: 1px solid #05164d;
+            margin: 15px auto 0;
+            padding: 15px 20px;
+            font-weight: 500;
+            color: $color_2;
+            border-radius: 8px;
+            min-width: 376px;
+            &:hover {
+              background: #05164d;
+              color: $color_4;
+              border-color: $border-color_2;
+            }
+          }
+          a.book-btn {
+            background: #ffad00;
+            border-color: $border-color_1;
+          }
+        }
+        .closeicon {
+          cursor: pointer;
+          position: absolute;
+          right: 18px;
+          top: 10px;
+          background: 0 0;
+        }
+      }
+    }
+  }
+  .exit-intent-popup {
+    display: none;
+  }
+  .exit-intent-popup.visible {
+    display: block;
+  }
 }
 @media only screen and (max-width: 991px) {
-	.popup-section {
-		.popup-wrapper {
-			.popWrap {
-				.popup-content {
-					width: 90%;
-					border-radius: 20px;
-					padding: 30px 35px;
-					h2 {
-						font-size: 27px;
-						line-height: 32px;
-					}
-					h3 {
-						font-size: 18px;
-						line-height: 26px;
-						margin: 0 0 10px;
-					}
-					.ctasec {
-						margin: 20px 0 0;
-						a {
-							padding: 12px 20px;
-							margin: 10px 0 0;
-							min-width: auto;
-						}
-					}
-				}
-			}
-		}
-	}
+  .popup-section {
+    .popup-wrapper {
+      .popWrap {
+        .popup-content {
+          width: 90%;
+          border-radius: 20px;
+          padding: 30px 35px;
+          h2 {
+            font-size: 27px;
+            line-height: 32px;
+          }
+          h3 {
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0 0 10px;
+          }
+          .ctasec {
+            margin: 20px 0 0;
+            a {
+              padding: 12px 20px;
+              margin: 10px 0 0;
+              min-width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-

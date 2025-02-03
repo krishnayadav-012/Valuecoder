@@ -10,15 +10,11 @@
 @import "_excellence";
 @import "_indstries-slider-section";
 @import "_home-techstack";
-
 @import "_success-slider";
 @import "_latest-insight";
 @import "_client-testimonials";
-
 @import "_menu-v3.12";
-
 @import "_intent-popup";
-
 @import "_footer-form";
 
 .hero-section {
@@ -29,12 +25,7 @@
   position: relative;
   display: flex;
   display: -webkit-flex;
-  background: linear-gradient(
-    0deg,
-    rgba(2, 9, 10, 0.8) 0%,
-    rgba(1, 7, 29, 0.8) 56%,
-    rgba(2, 18, 71, 0.9) 100%
-  );
+  background:$gradient;
 
   #background-video {
     width: 100%;
@@ -181,116 +172,6 @@
   }
 }
 
-.is-arrow {
-  display: block;
-  text-decoration: underline;
-  color: $navy-blue;
-  text-align: left;
-  margin: 40px 0 0;
-  font-weight: $normal-font;
-  font-size: $font-18;
-
-  &:after {
-    content: "";
-    background: url(../images/home-images/arrow.svg) no-repeat center;
-    width: 11px;
-    display: inline-block;
-    height: 11px;
-    margin-left: 8px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover {
-    text-decoration: none;
-    &:after {
-      margin-left: 15px;
-    }
-  }
-}
-
-.top-section {
-  h6 {
-    color: $yellow;
-    font-weight: $bold;
-    text-transform: uppercase;
-    margin: 0 0 10px;
-  }
-  p {
-    font-size: $font-18;
-  }
-
-  &.b-100 {
-    max-width: 100%;
-    margin: auto;
-    padding: 0 0 100px;
-    text-align: center;
-  }
-}
-
-.gradient-bg {
-  background: $gradient;
-  .top-section {
-    h2 {
-      color: $white;
-    }
-    p {
-      color: #bdb7b7;
-    }
-  }
-}
-
-.btn-container {
-  margin-top: 30px;
-
-  .cta-button {
-    display: inline-flex;
-    padding: 14px 16px;
-    cursor: pointer;
-    position: relative;
-    background: $white;
-    color: $navy-blue;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: $medium-font;
-    border-radius: 50px;
-
-    &:after {
-      content: "";
-      background: url(../images/home-images/yellow-cta.svg) no-repeat;
-
-      width: 26px;
-      height: 26px;
-      background-size: 100%;
-      display: inline-block;
-      margin-left: 10px;
-    }
-
-    &:hover {
-      background-color: $yellow;
-      color: $navy-blue;
-      &:after {
-        background: url(../images/home-images/blue-cta.svg) no-repeat;
-      }
-    }
-
-    &.yellow {
-      background: $yellow;
-      color: $navy-blue;
-      &:after {
-        background: url(../images/home-images/white-cta.svg) no-repeat;
-      }
-      &:hover {
-        background: $navy-blue;
-        color: $white;
-
-        &:after {
-          background: url(../images/home-images/yellow-cta.svg) no-repeat;
-        }
-      }
-    }
-  }
-}
-
 .not-found-section {
   height: 95vh;
   display: flex;
@@ -321,31 +202,6 @@
       a {
         color: $green;
       }
-    }
-  }
-}
-
-//New Home Page Start from here*/
-
-.explore-btn {
-  position: relative;
-  color: $bgVoilet;
-  font-weight: 500;
-  text-decoration: underline;
-  &:after {
-    content: "";
-    background: url(../images/explore-btn.svg) no-repeat center;
-    width: 11px;
-    position: absolute;
-    height: 11px;
-    margin-left: 8px;
-    top: 6px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover {
-    &:after {
-      margin-left: 15px;
     }
   }
 }
@@ -456,37 +312,5 @@
   }
 }
 
-@media only screen and (max-width: 479px) {
-  .slide-logo {
-    display: none;
-    padding: 30px 0;
-    .logo-heading {
-      margin: 0 0 20px;
-      h4 {
-        font-size: 18px;
-        margin: 0 20px;
-      }
-      margin: 0 0 20px;
-      justify-content: center;
-
-      &:before {
-        display: none;
-      }
-      &:after {
-        display: none;
-      }
-    }
-
-    .logo-section {
-      width: 100%;
-      margin: 0 auto;
-      .glide {
-        &__slide {
-          height: auto;
-        }
-      }
-    }
-  }
-}
 
 //Not Required

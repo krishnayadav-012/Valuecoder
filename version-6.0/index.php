@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <a class="scroll-next" href="#trusted-section"><span class="scroll-downicon">scroll down</span></a>
+        <a class="scroll-next" href="#serv"><span class="scroll-downicon">scroll down</span></a>
       </div>
     </section>
     <section class="award-section padding-t-50 padding-b-120 ">
@@ -125,7 +125,7 @@
         </div>
       </div>
     </section>
-    <section class="service-scroller padding-t-120 padding-b-120">
+    <section class="service-scroller padding-t-120 padding-b-120" id="serv">
       <div class="container">
         <div class="service-wrap">
           <div class="left-panel">
