@@ -34,7 +34,7 @@ $font16: 16px;
 
   .header-item-left {
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 18%;
     align-items: center;
 
     .large {
@@ -65,9 +65,9 @@ $font16: 16px;
   }
 
   .header-item-right {
-    flex-basis: 75%;
+    flex-basis: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     .menu {
       ul {
@@ -100,6 +100,19 @@ $font16: 16px;
                 }
               }
             }
+            &.hire-menu-item {
+              margin: 0 30px 0 100px;
+              .nor {
+                display: inline-block;
+                margin-left: 8px;
+                vertical-align: middle;
+              }
+              .hov {
+                display: none;
+                vertical-align: middle;
+                margin-left: 8px;
+              }
+            }
           }
 
           .menu-mega {
@@ -121,7 +134,10 @@ $font16: 16px;
               width: 360px;
               padding: 25px;
               border-radius: 15px;
-              &.company-menu{width:290px; left: 53%;}
+              &.company-menu {
+                width: 310px;
+                left: 53%;
+              }
               a {
                 padding: 15px 15px 15px 55px;
                 position: relative;
@@ -442,70 +458,11 @@ $font16: 16px;
     .cta-wrap {
       display: inline-block;
 
-      .btn-sec {
-        display: flex;
-        align-items: center;
-        position: relative;
-        .btn {
-          padding: 12px 60px 12px 20px;
-          background: $white;
-          color: $white;
-          border: 1px solid $white;
-          border-radius: 7px;
-          font-weight: 500;
-          position: relative;
-          border-radius: 50px;
-          transition: all 0.3s ease;
-          margin-left: 30px;
-          font-size: $font16;
-          line-height: 22px;
-          cursor: pointer;
-          &::before {
-            transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            transition: all 0.3s ease;
-            content: "";
-            width: 50%;
-            height: 100%;
-            background: black;
-            position: absolute;
-            top: 2px;
-            right: 2px;
-          }
-          &.rounded {
-            & .text-white {
-              color: #05164d;
-              position: relative;
-              font-weight: 500;
-            }
-
-            &::before {
-              border-radius: 50px;
-              width: 42px;
-              height: 42px;
-              background: $yellow url(../images/btn-icon.svg) 0 0 no-repeat;
-              background-size: 15px;
-              background-position: center right 13px;
-              top: 2px;
-            }
-            &:hover {
-              &::before {
-                background: $yellow url(../images/btn-icon.svg) 0 0 no-repeat;
-                background-position: center right 13px;
-                background-size: 15px;
-                width: 100%;
-                height: 100%;
-                right: 0;
-                top: 0;
-              }
-            }
-          }
-          &:hover {
-            border-color: $yellow;
-            background: $yellow;
-            & .text-white {
-              color: $bgVoilet;
-            }
-          }
+      .btn-container {
+        margin: 0;
+        .cta-button {
+          line-height: 30px;
+          padding: 10px 16px;
         }
       }
       &.large-reso {
@@ -536,6 +493,14 @@ $font16: 16px;
           a {
             color: #05164d;
           }
+          &.hire-menu-item {
+            .nor {
+              display: none;
+            }
+            .hov {
+              display: inline-block;
+            }
+          }
         }
       }
       .cta-wrap {
@@ -563,6 +528,18 @@ $font16: 16px;
       }
       .large {
         opacity: 0;
+      }
+    }
+
+    .cta-wrap {
+      .btn-container {
+        .cta-button {
+          background-color: $yellow;
+          color: $navy-blue;
+          &:after {
+            background: url(../images/home-images/blue-cta.svg) no-repeat;
+          }
+        }
       }
     }
   }
@@ -593,6 +570,14 @@ $font16: 16px;
           a {
             color: #05164d;
           }
+          &.hire-menu-item {
+            .nor {
+              display: none;
+            }
+            .hov {
+              display: inline-block;
+            }
+          }
         }
       }
       .cta-wrap {
@@ -603,9 +588,20 @@ $font16: 16px;
         }
       }
     }
+
+    .cta-wrap {
+      .btn-container {
+        .cta-button {
+          background-color: $yellow;
+          color: $navy-blue;
+          &:after {
+            background: url(../images/home-images/blue-cta.svg) no-repeat;
+          }
+        }
+      }
+    }
   }
 }
-
 
 @media screen and (max-width: 1700px) {
   .header-two {
@@ -617,14 +613,14 @@ $font16: 16px;
         .menu-mega {
           &.small-menu {
             left: 57%;
-            &.company-menu{ left: 57%;}
+            &.company-menu {
+              left: 57%;
+            }
           }
         }
       }
     }
   }
-
- 
 }
 
 @media screen and (max-width: 1580px) {
@@ -633,14 +629,15 @@ $font16: 16px;
       .menu ul li {
         .menu-mega {
           &.small-menu {
-            left:44%;
-            &.company-menu{left: 60%;}
+            left: 44%;
+            &.company-menu {
+              left: 60%;
+            }
           }
         }
       }
     }
   }
-
 }
 
 @media screen and (max-width: 1440px) {
@@ -661,12 +658,17 @@ $font16: 16px;
               a {
                 font-size: 15px;
               }
+              &.hire-menu-item {
+                margin: 0 30px 0 60px;
+              }
             }
 
             .menu-mega {
               &.small-menu {
                 left: 44%;
-                &.company-menu{ left: 61%;}
+                &.company-menu {
+                  left: 61%;
+                }
               }
               .tab-menu {
                 .tab-contents {
@@ -751,6 +753,9 @@ $font16: 16px;
             &.menu-item-has-children {
               a {
                 font-size: 14px;
+              }
+              &.hire-menu-item {
+                margin: 0 15px 0 15px;
               }
             }
 
@@ -957,7 +962,10 @@ $font16: 16px;
                 width: 100%;
                 border-radius: 0;
                 padding: 20px 10px !important;
-                &.company-menu{left: auto;   width: 100%;} 
+                &.company-menu {
+                  left: auto;
+                  width: 100%;
+                }
                 a {
                   padding: 15px 15px 15px 55px;
                   position: relative;
@@ -1426,5 +1434,4 @@ $font16: 16px;
       }
     }
   }
-  
 }

@@ -230,7 +230,8 @@
         padding: 10px 15px;
         cursor: pointer;
         border-radius: 16px;
-        background: url(../images/home-images/white-arrow.svg) no-repeat center;
+        background: url(../images/home-images/white-arrowsd.svg) no-repeat
+          center;
         width: 36px;
         height: 36px;
         top: auto;
@@ -249,7 +250,7 @@
         }
 
         &.test-next {
-          background: url(../images/home-images/white-arrow.svg) no-repeat
+          background: url(../images/home-images/white-arrowsd.svg) no-repeat
             center;
           right: 0;
           transform: rotate(180deg);
@@ -265,8 +266,33 @@
   }
 }
 
+.glider-slide {
+  opacity: 1 !important;
+}
 
+.card-content {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
 
+/* SCSS */
+.card-bg {
+  transition: transform 0.5s ease; /* Smooth transition for scaling */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-bg.scaled {
+  transform: scale(1.1); /* Scales the background image by 10% */
+}
+.glider-slide {
+  opacity: 1 !important;
+}
+
+.card-content,
+.card-bg {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
 }

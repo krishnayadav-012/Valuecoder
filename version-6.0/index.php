@@ -163,6 +163,7 @@
                   <li>Application Modernization</li>
                 </ul>
               </div>
+              <a class="move" href="#"></a>
             </div>
             <div class="content-box">
               <div class="img-sec">
@@ -181,6 +182,7 @@
                   <li>Application Modernization</li>
                 </ul>
               </div>
+              <a class="move" href="#"></a>
             </div>
             <div class="content-box">
               <div class="img-sec">
@@ -199,6 +201,7 @@
                   <li>Application Modernization</li>
                 </ul>
               </div>
+              <a class="move" href="#"></a>
             </div>
             <div class="content-box">
               <div class="img-sec">
@@ -217,6 +220,7 @@
                   <li>Application Modernization</li>
                 </ul>
               </div>
+              <a class="move" href="#"></a>
             </div>
           </div>
           <!--//.right-panel-->
@@ -1198,11 +1202,11 @@
               </div>
             </div>
             <div class="industry-card">
-              <div class="card-bg" style="background-image:url(images/home-images/success-01.png);"><span class="category">IT Consulting & Strategy</span>
+              <div class="card-bg" style="background-image:url(images/home-images/test-01.jpg);"><span class="category">IT Consulting & Strategy</span>
                 <a class="move" href="#"></a>
               </div>
               <div class="card-content">
-                <h4>Innovate software for travel & Tourism...</h4>
+                <h4>Change Slider prtal</h4>
                 <p>The client wanted to build a web portal where customers could purchase motorcycles online and dealers could access and manage their agent accounts.</p>
               </div>
             </div>
@@ -1211,7 +1215,25 @@
                 <a class="move" href="#"></a>
               </div>
               <div class="card-content">
-                <h4>Best Travel Platform</h4>
+                <h4>Travel Platform portal</h4>
+                <p>The smart integrated platform is founded on the pillars...</p>
+              </div>
+            </div>
+            <div class="industry-card">
+              <div class="card-bg" style="background-image:url(images/home-images/test-01.jpg);"><span class="category">IT Notice</span>
+                <a class="move" href="#"></a>
+              </div>
+              <div class="card-content">
+                <h4>Slider prtal</h4>
+                <p>The client wanted to build a web portal where customers could purchase motorcycles online and dealers could access and manage their agent accounts.</p>
+              </div>
+            </div>
+            <div class="industry-card">
+              <div class="card-bg" style="background-image:url(images/home-images/success-02.png);"> <span class="category">Website Devops</span>
+                <a class="move" href="#"></a>
+              </div>
+              <div class="card-content">
+                <h4>Platform portal</h4>
                 <p>The smart integrated platform is founded on the pillars...</p>
               </div>
             </div>
@@ -1845,33 +1867,125 @@
       }
       });
       } 
-      
-      
-          
-      if (document.getElementById("success-glider")) {
-      window.addEventListener("load", function() {
-        var gliderElement = document.querySelector(".success-slider .glider");
-        if (gliderElement) {      
-            new Glider(gliderElement, {
-                slidesToShow: 2, 
-                slidesToScroll: 2,
-                draggable: true,
-                scrollLock: true,
-                duration: 2.25,
-                dots: ".success-slider .dots",
-                arrows: { prev: '#success-glider .test-prev', next: '#success-glider .test-next' },      
-                responsive: [
-                    { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 2, duration: 2.25 } },
-                    { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 2, duration: 2.25 } },
-                    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2, duration: 2.25 } },
-                    { breakpoint: 1400, settings: { slidesToShow: 2, slidesToScroll: 2,  duration: 2.25 } }
-                ]
-            });
-        }
-      });
-      }
+
+
 
       
+      if (document.getElementById("success-glider")) {
+      window.addEventListener("load", function() {
+      var gliderElement = document.querySelector(".success-slider .glider");
+      
+      if (gliderElement) {
+      var glider = new Glider(gliderElement, {
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        draggable: true,
+        scrollLock: true,
+        duration: 0, // Set to 0 for instant slide change
+        dots: ".success-slider .dots",
+        arrows: {
+          prev: '#success-glider .test-prev',
+          next: '#success-glider .test-next'
+        },
+        responsive: [
+          { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 2 } }
+        ]
+      });
+      
+      function animateSlide(slide, direction, isFirstColumn) {
+        var content = slide.querySelector('.card-content');
+        var image = slide.querySelector('.card-bg');
+        
+        if (isFirstColumn) {
+          // First column: Animate content, keep image constant
+          if (content) {
+            content.style.transition = 'none';
+            content.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+            content.style.opacity = '0';
+      
+            setTimeout(() => {
+              content.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+              content.style.transform = 'translateX(0)';
+              content.style.opacity = '1';
+            }, 50);
+          }
+        } else {
+          // Second column: Add scale effect to the background image
+          if (image) {
+            // Add 'scaled' class to scale the background image
+            image.classList.add('scaled');
+      
+            // Optionally remove the 'scaled' class after 0.5s to reset it
+            setTimeout(() => {
+              image.classList.remove('scaled');
+            }, 500); // Duration matches your scaling transition
+          }
+        }
+      }
+      
+      function handleNavigation(direction) {
+        var currentSlides = gliderElement.querySelectorAll('.glider-slide.active');
+        
+        currentSlides.forEach(function(slide, index) {
+          var isFirstColumn = index % 2 === 0;
+          var elementToAnimate = isFirstColumn ? slide.querySelector('.card-content') : slide.querySelector('.card-bg');
+          
+          if (elementToAnimate) {
+            elementToAnimate.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+            elementToAnimate.style.transform = direction === 'next' ? 'translateX(-100%)' : 'translateX(100%)';
+            elementToAnimate.style.opacity = '0';
+          }
+        });
+      
+        setTimeout(function() {
+          if (direction === 'next') {
+            glider.scrollItem('next');
+          } else {
+            glider.scrollItem('prev');
+          }
+      
+          setTimeout(function() {
+            var newSlides = gliderElement.querySelectorAll('.glider-slide.active');
+            newSlides.forEach(function(slide, index) {
+              animateSlide(slide, direction, index % 2 === 0); // Apply correct animation based on column
+            });
+          }, 50);
+        }, 500); // This should match the content transition duration
+      }
+      
+      var nextButton = document.querySelector('#success-glider .test-next');
+      var prevButton = document.querySelector('#success-glider .test-prev');
+      
+      if (nextButton) {
+        nextButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          handleNavigation('next');
+        });
+      }
+      
+      if (prevButton) {
+        prevButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          handleNavigation('prev');
+        });
+      }
+      
+      // Initial animation for the first visible slides
+      var initialSlides = gliderElement.querySelectorAll('.glider-slide.active');
+      initialSlides.forEach(function(slide, index) {
+        animateSlide(slide, 'next', index % 2 === 0);
+      });
+      
+      // Animate on slide change
+      glider.on('animated', function() {
+        var activeSlides = gliderElement.querySelectorAll('.glider-slide.active');
+        activeSlides.forEach(function(slide, index) {
+          animateSlide(slide, 'next', index % 2 === 0);
+        });
+      });
+      }
+      });
+      }
       
       
       
