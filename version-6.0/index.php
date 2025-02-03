@@ -1171,29 +1171,69 @@
         </div>
       </div>
     </section>
-
-
-
-   <section class="success-stories  padding-t-120 padding-b-120">
-
-   <div class="top-section b-100">
+    <section class="success-slider-section  padding-t-120 padding-b-120">
+      <div class="container">
+        <div class="top-section b-100">
           <h2>Success Stories</h2>
           <p>Get what you are looking for to fulfill your software development and outsourcing needs at ValueCoders.</p>
         </div>
-   </section>
-
-
-
+        <div class="dis-flex glider-contain success-slider" id="success-glider">
+          <div class="glider">
+            <div class="industry-card">
+              <div class="card-bg" style="background-image:url(images/home-images/success-01.png);"><span class="category">IT Consulting & Strategy</span>
+                <a class="move" href="#"></a>
+              </div>
+              <div class="card-content">
+                <h4>Innovate software for travel & Tourism...</h4>
+                <p>The client wanted to build a web portal where customers could purchase motorcycles online and dealers could access and manage their agent accounts.</p>
+              </div>
+            </div>
+            <div class="industry-card">
+              <div class="card-bg" style="background-image:url(images/home-images/success-02.png);"> <span class="category">Website Development</span>
+                <a class="move" href="#"></a>
+              </div>
+              <div class="card-content">
+                <h4>Best Travel Platform</h4>
+                <p>The smart integrated platform is founded on the pillars...</p>
+              </div>
+            </div>
+            <div class="industry-card">
+              <div class="card-bg" style="background-image:url(images/home-images/success-01.png);"><span class="category">IT Consulting & Strategy</span>
+                <a class="move" href="#"></a>
+              </div>
+              <div class="card-content">
+                <h4>Innovate software for travel & Tourism...</h4>
+                <p>The client wanted to build a web portal where customers could purchase motorcycles online and dealers could access and manage their agent accounts.</p>
+              </div>
+            </div>
+            <div class="industry-card">
+              <div class="card-bg" style="background-image:url(images/home-images/success-02.png);"> <span class="category">Website Development</span>
+                <a class="move" href="#"></a>
+              </div>
+              <div class="card-content">
+                <h4>Best Travel Platform</h4>
+                <p>The smart integrated platform is founded on the pillars...</p>
+              </div>
+            </div>
+          </div>
+          <div class="test-button">
+            <button aria-label="Previous" class="test-prev">«</button>
+            <button aria-label="Next" class="test-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="latest-insight light-background  padding-t-120 padding-b-120">
       <div class="container">
         <div class="top-section b-100">
           <div class="dis-flex items-center justify-sb  top-content">
             <div class="flex-2">
-              <h2>Solutions We Deliver</h2>
-              <p>We deliver robust, scalable, and reliable software product solutions to clients across the globe driven by the top 1% of software engineering talent in India.</p>
+              <h2>Our latest insights.</h2>
+              <p>Get what you are looking for to fulfill your software development .</p>
             </div>
             <div class="flex-2 text-right">
-              <a href="#" class="is-arrow">Find Out More</a>
+              <a href="#" class="is-arrow">Over 1,100 articles on technology and talent</a>
             </div>
           </div>
         </div>
@@ -1804,7 +1844,37 @@
       });
       }
       });
-      }        
+      } 
+      
+      
+          
+      if (document.getElementById("success-glider")) {
+      window.addEventListener("load", function() {
+        var gliderElement = document.querySelector(".success-slider .glider");
+        if (gliderElement) {      
+            new Glider(gliderElement, {
+                slidesToShow: 2, 
+                slidesToScroll: 2,
+                draggable: true,
+                scrollLock: true,
+                duration: 2.25,
+                dots: ".success-slider .dots",
+                arrows: { prev: '#success-glider .test-prev', next: '#success-glider .test-next' },      
+                responsive: [
+                    { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 2, duration: 2.25 } },
+                    { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 2, duration: 2.25 } },
+                    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2, duration: 2.25 } },
+                    { breakpoint: 1400, settings: { slidesToShow: 2, slidesToScroll: 2,  duration: 2.25 } }
+                ]
+            });
+        }
+      });
+      }
+      
+      
+      
+      
+      
              
           
     </script>
