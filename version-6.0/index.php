@@ -1871,122 +1871,65 @@
 
 
       
+              
       if (document.getElementById("success-glider")) {
-      window.addEventListener("load", function() {
-      var gliderElement = document.querySelector(".success-slider .glider");
-      
-      if (gliderElement) {
-      var glider = new Glider(gliderElement, {
-        slidesToShow: 1, 
-        slidesToScroll: 1,
+  window.addEventListener("load", function () {
+    var gliderElement = document.querySelector(".success-slider .glider");
+    if (gliderElement) {
+      new Glider(gliderElement, {
+        slidesToShow: 2,
+        slidesToScroll: 2,
         draggable: true,
         scrollLock: true,
-        duration: 0, // Set to 0 for instant slide change
+        duration: 2.25,
         dots: ".success-slider .dots",
-        arrows: {
-          prev: '#success-glider .test-prev',
-          next: '#success-glider .test-next'
+        arrows: { 
+          prev: "#success-glider .test-prev", 
+          next: "#success-glider .test-next" 
         },
         responsive: [
-          { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 2 } }
-        ]
+          // Mobile first: 320px and below
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              duration: 2.25,
+            },
+          },
+          // Tablets: 767px and below
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              duration: 2.25,
+            },
+          },
+          // Laptops: 1024px and below
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              duration: 2.25,
+            },
+          },
+          // Large screens: 1400px and below
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              duration: 2.25,
+            },
+          },
+        ],
       });
-      
-      function animateSlide(slide, direction, isFirstColumn) {
-        var content = slide.querySelector('.card-content');
-        var image = slide.querySelector('.card-bg');
-        
-        if (isFirstColumn) {
-          // First column: Animate content, keep image constant
-          if (content) {
-            content.style.transition = 'none';
-            content.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
-            content.style.opacity = '0';
-      
-            setTimeout(() => {
-              content.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
-              content.style.transform = 'translateX(0)';
-              content.style.opacity = '1';
-            }, 50);
-          }
-        } else {
-          // Second column: Add scale effect to the background image
-          if (image) {
-            // Add 'scaled' class to scale the background image
-            image.classList.add('scaled');
-      
-            // Optionally remove the 'scaled' class after 0.5s to reset it
-            setTimeout(() => {
-              image.classList.remove('scaled');
-            }, 500); // Duration matches your scaling transition
-          }
-        }
-      }
-      
-      function handleNavigation(direction) {
-        var currentSlides = gliderElement.querySelectorAll('.glider-slide.active');
-        
-        currentSlides.forEach(function(slide, index) {
-          var isFirstColumn = index % 2 === 0;
-          var elementToAnimate = isFirstColumn ? slide.querySelector('.card-content') : slide.querySelector('.card-bg');
-          
-          if (elementToAnimate) {
-            elementToAnimate.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
-            elementToAnimate.style.transform = direction === 'next' ? 'translateX(-100%)' : 'translateX(100%)';
-            elementToAnimate.style.opacity = '0';
-          }
-        });
-      
-        setTimeout(function() {
-          if (direction === 'next') {
-            glider.scrollItem('next');
-          } else {
-            glider.scrollItem('prev');
-          }
-      
-          setTimeout(function() {
-            var newSlides = gliderElement.querySelectorAll('.glider-slide.active');
-            newSlides.forEach(function(slide, index) {
-              animateSlide(slide, direction, index % 2 === 0); // Apply correct animation based on column
-            });
-          }, 50);
-        }, 500); // This should match the content transition duration
-      }
-      
-      var nextButton = document.querySelector('#success-glider .test-next');
-      var prevButton = document.querySelector('#success-glider .test-prev');
-      
-      if (nextButton) {
-        nextButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          handleNavigation('next');
-        });
-      }
-      
-      if (prevButton) {
-        prevButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          handleNavigation('prev');
-        });
-      }
-      
-      // Initial animation for the first visible slides
-      var initialSlides = gliderElement.querySelectorAll('.glider-slide.active');
-      initialSlides.forEach(function(slide, index) {
-        animateSlide(slide, 'next', index % 2 === 0);
-      });
-      
-      // Animate on slide change
-      glider.on('animated', function() {
-        var activeSlides = gliderElement.querySelectorAll('.glider-slide.active');
-        activeSlides.forEach(function(slide, index) {
-          animateSlide(slide, 'next', index % 2 === 0);
-        });
-      });
-      }
-      });
-      }
-      
+    }
+  });
+}
+
       
       
       

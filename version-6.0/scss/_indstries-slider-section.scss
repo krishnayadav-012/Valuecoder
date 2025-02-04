@@ -330,15 +330,12 @@
     .industries-slider {
       .industry-card {
         width: 100% !important;
-  
         &.glider-slide {
-          min-width: 370px !important;
+          min-width: 335px !important;
         }
-  
         .card-bg {
           height: 100%;
         }
-        
       }
   
       .test-button {

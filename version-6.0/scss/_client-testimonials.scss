@@ -445,54 +445,8 @@
     .client-out {
       .client-slider {
         .glider {
-          display: flex;
           gap: 10px;
-          width: 100%;
-          overflow: hidden;
         }
-
-        .glider-slide {
-          transition: all 0.3s ease;
-
-          &:nth-child(2n) {
-            opacity: 1;
-          }
-        }
-
-        .test-row {
-          .vid-wrap {
-            width: 100%;
-            background: $white;
-            height: 100%;
-            display: flex;
-            border-radius: 5px;
-
-            .cust-img-box {
-              flex-basis: 40%;
-              img {
-                width: 100%;
-              }
-            }
-            .client-videos {
-              flex-basis: 100%;
-            }
-            .content-box {
-              flex-basis: 100%;
-              padding: 20px;
-              p {
-                margin: 20px 0 15px;
-                margin: 20px 0 5px;
-              }
-
-              &::before {
-                width: 22px;
-                height: 20px;
-                background-size: 100%;
-              }
-            }
-          }
-        }
-
         .prev-next-btn {
           .cl-next {
             right: 31%;

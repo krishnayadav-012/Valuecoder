@@ -182,17 +182,46 @@
         padding-right: 30px;
       }
     }
+
+    .footer-bottom{
+      .social-box{
+        .dis-flex {
+          a{margin-right: 7px;}
+        }
+      }
+      h3{margin: 0 0 15px;}
+    }
   }
 }
 
-@media (max-width: 1200px) {
+
+
+@media (max-width: 1290px) {
   .footer {
+
+    .footer-top {
+      .count-sec {
+        .count-col{
+          p{font-size: 13px;}
+        }
+      }
+
+    }
     .footer-middle {
       ul {
         li {
           font-size: 14px;
           line-height: 24px;
         }
+      }
+    }
+
+    .footer-bottom {
+      h3{font-size: 14px;}
+      .flex-4{flex-basis: 17%;}
+      .footer-rating {flex-basis: 36%;
+        .client-outer{font-size: 14px;}
+        .star-outer{font-size: 14px;}
       }
     }
   }
@@ -202,9 +231,8 @@
   .footer {
     .footer-top {
       .count-sec {
-        p {
-          font-size: 12px;
-          line-height: 24px;
+        .count-col{
+          p{font-size: 13px;}
         }
       }
       .subs-box {
@@ -227,6 +255,12 @@
 
       .footer-bottom {
         gap: 20px;
+      }
+    }
+    .footer-middle{
+      .flex-5{padding-right: 20px;}
+      ul{
+        li{font-size: 13px;}
       }
     }
   }
@@ -272,9 +306,17 @@
     .footer-bottom {
       gap: 0;
       justify-content: space-between;
-      .flex-3 {
-        flex-basis: 33%;
+      .flex-4 {
+        flex-basis: 100%;
+        text-align: center;
       }
+      .logo-box{flex-basis: 50%; text-align: left;
+      .dis-flex{gap: 15px;}
+      }
+      .social-box{flex-basis: 50%; text-align: center;
+      .dis-flex{justify-content: center;}
+      }
+      .footer-rating{flex-basis: 100%; text-align: center;}
       h3 {
         font-size: 14px;
         line-height: 22px;
@@ -305,6 +347,7 @@
 }
 
 @media (max-width: 980px) {
+ 
 }
 
 @media (max-width: 767px) {
@@ -332,7 +375,8 @@
       }
       .subs-box {
         flex-basis: 100%;
-        padding: 30px;
+        padding: 0;
+        margin: 0;
       }
     }
 
@@ -354,18 +398,19 @@
     .footer-bottom {
       padding: 30px 0 0;
       gap: 0;
-      .flex-3 {
+      .flex-4 {
         flex-basis: 100%;
         text-align: center;
-        margin: 20px 0 0;
-        .dis-flex {
-          flex-wrap: nowrap;
-          justify-content: center;
-          a {
-            margin-right: 20px;
-          }
-        }
+        margin: 10px 0 0;
       }
+
+      .logo-box{flex-basis: 100%;
+        text-align: center;
+     .dis-flex{justify-content: center; gap:8px;}
+      }
+      .social-box{flex-basis: 100%;
+        text-align: center; margin:20px 0 0;}
+        .footer-rating{margin:20px 0 0;}
 
       h3 {
         font-weight: 500;

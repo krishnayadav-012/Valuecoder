@@ -617,6 +617,9 @@
 }
 
 @media only screen and (max-width: 1280px) {
+  .contact-us-section {
+    background: linear-gradient(to right, #fff9eb 38%, #fff 30%);
+  }
   .contact-us-section .quizQ {
     padding: 0 15px;
   }
@@ -633,14 +636,15 @@
 
 @media only screen and (max-width: 991px) {
   .contact-us-section {
+    background: linear-gradient(to bottom, #fff9eb 45%, #fff 30%);
     .left-box {
       flex-basis: 100%;
     }
 
     .right-box {
       width: 100%;
-      margin-top: 40px;
-      padding: 40px 20px 0;
+      margin-top: 70px;
+      padding: 50px 20px 0;
     }
     .qz-captcha {
       margin-top: 15px;
@@ -650,27 +654,62 @@
 
 @media only screen and (max-width: 767px) {
   .contact-us-section {
+    background: linear-gradient(to bottom, #fff9eb 36%, #fff 30%);
     .left-box {
-      p {
-        line-height: 24px;
+      .soc-box {
+        margin: 0;
       }
-      .side-dash1 {
+      .award-box {
         p {
-          padding-bottom: 0;
+          font-size: 15px;
         }
+        .row-box {
+          .col-box {
+            justify-content: space-between;
+            margin: 20px 0 0;
+            .icon {
+              flex-basis: 13%;
+            }
+            .desp {
+              flex-basis: 80%;
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                margin: 4px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .form-group {
+      margin-bottom: 0;
+    }
+    .right-box {
+      margin-top: 60px;
+      padding: 40px 0 0;
+      .top-section {
+        text-align: center;
       }
     }
 
     .form-text-cont {
       flex-basis: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       &:nth-child(2n -1) {
         padding-right: 0;
       }
     }
 
+    .btn-container {
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
     .input-field {
-      padding: 0 20px;
       height: 50px;
       font-size: 14px;
     }

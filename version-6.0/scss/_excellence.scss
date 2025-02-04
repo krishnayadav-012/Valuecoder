@@ -134,7 +134,7 @@
         ul {
           display: flex;
           justify-content: space-around;
-          column-gap: 15px;
+          gap: 10px;
           flex-wrap: wrap;
           li {
             height: 80px;
@@ -196,9 +196,24 @@
 /*Media Query Start From Here*/
 
 @media (max-width: 1440px) {
+  .client-img-section {
+    .why-ws {
+      .right-box {
+        .award-row {
+          ul {
+            li{height: 70px;
+              min-width: 114px;}
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1320px) {
+
+
+ 
  
 }
 

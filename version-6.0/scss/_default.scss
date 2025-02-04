@@ -1610,6 +1610,12 @@ textarea {
   .margin-t-80 {
     margin-top: 60px;
   }
+
+  .top-section {
+    &.b-100 {
+      padding: 0 0 60px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1650,8 +1656,8 @@ textarea {
   }
 
   h2 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 35px;
+    line-height: 40px;
     margin: 0 0 15px;
   }
 
@@ -1660,7 +1666,7 @@ textarea {
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .flex-2 {
@@ -2105,7 +2111,7 @@ textarea {
   }
 
   &.b-100 {
-    padding: 0 0 50px;
+    padding: 0 0 40px;
   }
 }
 
@@ -2119,72 +2125,8 @@ textarea {
     font-size: 14px;
     display:inline-flex;
     align-items: center;
-
-    &:after {
-      content: "";
-      background: url(../images/home-images/yellow-cta.svg) no-repeat;
-
-      width: 26px;
-      height: 26px;
-      background-size: 100%;
-      display: inline-block;
-      margin-left: 10px;
-    }
-
-    &:hover {
-      background-color: $yellow;
-      color: $navy-blue;
-      &:after {
-        background: url(../images/home-images/blue-cta.svg) no-repeat;
-      }
-    }
-
-    &.yellow {
-      background: $yellow;
-      color: $navy-blue;
-      &:after {
-        background: url(../images/home-images/white-cta.svg) no-repeat;
-      }
-      &:hover {
-        background: $navy-blue;
-        color: $white;
-
-        &:after {
-          background: url(../images/home-images/yellow-cta.svg) no-repeat;
-        }
-      }
-    }
   }
 }
-
-.explore-btn {
-  position: relative;
-  color: $bgVoilet;
-  font-weight: 500;
-  text-decoration: underline;
-  &:after {
-    content: "";
-    background: url(../images/explore-btn.svg) no-repeat center;
-    width: 11px;
-    position: absolute;
-    height: 11px;
-    margin-left: 8px;
-    top: 6px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover {
-    &:after {
-      margin-left: 15px;
-    }
-  }
-}
-
-
-
-
-
-
 
 
 
