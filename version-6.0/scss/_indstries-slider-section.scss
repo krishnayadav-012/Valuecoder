@@ -271,18 +271,83 @@
 }
 
 /*Media Query Start From Here*/
+
+
 @media (max-width: 1440px) {
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1330px) {
 }
 
 @media (max-width: 1024px) {
+
+
+  .industries-slider-section {padding-left:20px; padding-right:20px;
+    .top-section {
+      width:100%;
+      text-align: center;
+      margin: initial;
+      &.b-100 {
+        text-align: center;
+        margin: initial;
+      }
+    }
+    .industries-slider {
+      .industry-card {
+        width: 244px !important;
+   
+  
+        &:first-child {
+          margin-left: 0 !important;
+        }
+  
+        &.glider-slide {
+          min-width:initial !important;
+        }
+  
+        .card-bg {
+          height: 100%;
+        }
+        
+      }
+  
+      .test-button {
+        top: -70px;
+        right: 60px;
+      }
+    }
+  }
+
 }
 @media (max-width: 979px) {
 }
 
 @media (max-width: 767px) {
+
+
+  .industries-slider-section {padding-left:20px; padding-right:20px;
+    
+    .industries-slider {
+      .industry-card {
+        width: 100% !important;
+  
+        &.glider-slide {
+          min-width: 370px !important;
+        }
+  
+        .card-bg {
+          height: 100%;
+        }
+        
+      }
+  
+      .test-button {
+        position: static;
+        margin: 30px auto;;
+      }
+    }
+  }
+
 }
 
 /*Media Query Ends Here*/

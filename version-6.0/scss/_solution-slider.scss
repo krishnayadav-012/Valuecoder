@@ -2,9 +2,13 @@
   background: linear-gradient(to right, #0a1647, #1e3a8a);
 
   .top-section {
-    h2{color: $white;}
-   
-    p{color:#BDB7B7;}
+    h2 {
+      color: $white;
+    }
+
+    p {
+      color: #bdb7b7;
+    }
   }
 
   .solution-out {
@@ -182,6 +186,60 @@
       // Hide dots on desktop
       .dots {
         display: none;
+      }
+    }
+  }
+}
+
+// Media Query Start From Here
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1320px) {
+}
+
+@media (max-width: 1024px) {
+  .solution-slide-section {
+    .solution-out {
+      .solution-slider {
+        .progress-container {
+          width: 85%;
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+  .solution-slide-section {
+    .solution-out {
+      position: relative;
+
+      .solution-slider {
+        position: relative;
+        width: 100%;
+
+        .flex-5 {
+          width: 100%;
+          min-width: 50%;
+          &:hover {
+            flex-basis: 100%;
+          }
+
+          .box-5 {
+            height: 250px;
+            padding: 15px;
+          }
+        }
+        .progress-container {
+          width: 70%;
+          margin: 30px 0 0;
+        }
       }
     }
   }

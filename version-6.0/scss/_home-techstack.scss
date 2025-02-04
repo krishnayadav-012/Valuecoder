@@ -136,11 +136,14 @@
   animation-play-state: paused;
 }
 
-@media only screen and (max-width: 1220px) {
-}
 
-@media only screen and (max-width: 991px) {
-}
+// Media Query Start From Here
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 979px) {
+
+  .tech-section {
+    .tech-row{width: 100%;
+      margin: 0 auto;}
+  }
+
 }

@@ -135,7 +135,6 @@
           display: flex;
           justify-content: space-around;
           column-gap: 15px;
-          position: absolute;
           flex-wrap: wrap;
           li {
             height: 80px;
@@ -195,148 +194,90 @@
 }
 
 /*Media Query Start From Here*/
+
 @media (max-width: 1440px) {
 }
 
-@media (max-width: 1280px) {
-  .client-img-section {
-    .why-ws {
-      .right-box {
-        padding-left: 15px;
-
-        .dis-flex {
-          flex-wrap: nowrap;
-        }
-        .why-right {
-          .client-section {
-            gap: 15px;
-            padding: 30px 20px;
-
-            .client-row {
-              .client-stack {
-                ul {
-                  column-gap: 20px;
-                  li {
-                    min-width: 260px;
-                    width: 260px;
-                  }
-                }
-              }
-
-              .hover:hover {
-                color: red;
-              }
-            }
-          }
-          .counter {
-            padding: 15px 10px;
-
-            .count-col {
-              h3 {
-                font-size: 22px;
-                line-height: 30px;
-              }
-              p {
-                line-height: 24px;
-              }
-            }
-          }
-        }
-
-        .why-left {
-          padding-right: 10px;
-
-          .award-sc {
-            ul {
-              li {
-                padding: 15px 10px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+@media (max-width: 1320px) {
+ 
 }
 
 @media (max-width: 1024px) {
 }
+
 @media (max-width: 979px) {
+
   .client-img-section {
     .why-ws {
+     
       .left-box {
+        flex-basis: 100%;
+        text-align: center;
+
         .top-section {
           text-align: center;
         }
-        .button-common {
-          .cmn-democta {
+        ul {
+          margin-top: 20px;
+        }
+      }
+  
+      .right-box {
+        flex-basis:100%;
+        padding-left: 0;
+        margin-top:30px;
+        position: relative;
+
+        .dis-flex{justify-content: space-between}
+  
+        .why-left {
+          padding-right:0;
+          flex-basis: 48%;
+  
+          .plateform {
+            min-height: 310px;
+            margin:0 0 30px;
+          }
+        }
+
+        .why-right{ flex-basis: 48%;}
+  
+        .award-row {
+          margin: 20px 0 0;
+          ul {
             justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            li {
+              min-width: initial;
+              width:150px;
+            }
           }
         }
       }
-
-      .right-box {
-        padding-left: 0;
-        flex-basis: 100%;
-        margin: 40px 0 0;
-
-        .dis-flex {
-          flex-wrap: nowrap;
-        }
-      }
-
-      &:after {
-        width: 558px;
-      }
     }
   }
+  
 }
 
 @media (max-width: 767px) {
+
+
   .client-img-section {
     .why-ws {
       .right-box {
-        .dis-flex {
-          flex-wrap: wrap;
-        }
-
         .why-left {
-          padding-right: 0;
+          padding-right:0;
+          flex-basis: 100%;
           .plateform {
-            min-height: initial;
-            h3 {
-              font-size: 18px;
-              line-height: 28px;
-            }
-            ul {
-              li {
-                padding-left: 28px;
-                &:before {
-                  width: 18px;
-                  height: 18px;
-                  top: 3px;
-                }
-              }
-            }
+            min-height:initial;
           }
         }
-
-        .why-right {
-          margin: 20px 0 0;
-          .counter {
-            padding: 20px;
-            .count-col {
-              flex-basis: 45%;
-            }
-          }
-        }
-      }
-
-      &:after {
-        display: none;
+        .why-right{ flex-basis: 100%;}
       }
     }
   }
+  
 }
 
 /*Media Query Ends Here*/
