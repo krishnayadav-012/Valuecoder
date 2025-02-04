@@ -6,8 +6,8 @@
     display: flex;
     width: 100%;
     gap: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 30px;
     justify-content: space-between;
     .left-panel {
@@ -297,8 +297,8 @@
   .service-scroller {
     .service-wrap {
       gap: 15px;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left:0;
+      padding-right: 0;
       .left-panel {
         flex-basis: 50%;
         .ser-button {
