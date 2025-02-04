@@ -63,6 +63,7 @@
                 justify-content: space-around;
                 column-gap: 18px;
                 position: absolute;
+             
                 li {
                   border-radius: 8px;
                   background: #fafafa;
@@ -135,6 +136,7 @@
           justify-content: space-around;
           column-gap: 15px;
           position: absolute;
+          flex-wrap: wrap;
           li {
             height: 80px;
             min-width: 124px;

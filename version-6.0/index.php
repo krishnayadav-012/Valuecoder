@@ -41,7 +41,7 @@
     <section class="award-section padding-t-50 padding-b-120 ">
       <div class="container">
         <div class="top-logo">
-          <div class="text"><i><img loading="lazy" src="images/home-images/star.svg" width="22" height="20"></i>
+          <div class="text"><i><img loading="lazy" src="images/home-images/star-one.svg" width="22" height="20"></i>
             <strong>4.5/5</strong>based on 19,000+ reviews on
           </div>
           <div class="awlogo"><a href="#"></a><a href="#"></a><a href="#"></a></div>

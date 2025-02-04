@@ -1,5 +1,4 @@
 @import "_default";
-@import "_three-column";
 @import "_counter-award";
 @import "_work-tab";
 @import "_scroll-section";
@@ -25,7 +24,7 @@
   position: relative;
   display: flex;
   display: -webkit-flex;
-  background:$gradient;
+  background: $gradient;
 
   #background-video {
     width: 100%;
@@ -46,11 +45,11 @@
       flex-basis: 70%;
 
       h1 {
-        margin-bottom: 15px;
-        font-size: 70px;
-        line-height: 1.5;
+        //margin-bottom: 15px;
+        //font-size: 70px;
+        //line-height: 1.5;
         color: $white;
-        font-weight: 600;
+        //font-weight: 600;
       }
 
       p {
@@ -210,49 +209,38 @@
 
 // Media Query Start From Here
 
-@media only screen and (max-width: 1600px) {
-  .not-found-section {
-    .suggest {
-      font-size: 28px;
-    }
-    ul {
-      margin-top: 35px;
-      li {
-        font-size: 18px;
-        margin-top: 10px;
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1320px) {
+  .hero-section {
+    height: initial;
+    min-height: initial;
+
+    .dis-flex {
+      .left-box {
+        flex-basis: 80%;
       }
     }
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media (max-width: 1024px) {
 }
 
-@media only screen and (max-width: 1320px) {
+@media (max-width: 979px) {
   .hero-section {
-    height: initial;
-    min-height: initial;
-    h1 {
-      font-size: 38px;
-      line-height: 50px;
-    }
-  }
-}
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 991px) {
-  .hero-section {
-    background: #05164d;
     #background-video {
       display: none;
     }
-    h1 {
-      margin-bottom: 15px;
-      font-size: 35px;
-      line-height: 54px;
-    }
-    p {
-      margin-top: 20px;
+    .dis-flex {
+      .left-box {
+        flex-basis: 100%;
+        text-align: center;
+        .for-client-logo-box {
+          margin: 40px 0 0;
+        }
+      }
     }
   }
 
@@ -269,27 +257,35 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .hero-section {
     padding: 130px 0 50px;
     .dis-flex {
-      justify-content: center;
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 15px;
-      font-size: 28px;
-      line-height: 38px;
-      br {
-        display: none;
+      .left-box {
+        flex-basis: 100%;
+        text-align: center;
+        p {
+          font-size: 16px;
+          line-height: 27px;
+        }
+        .for-client-logo-box {
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0 0;
+        }
       }
     }
-    p {
-      margin-top: 15px;
-      font-size: 16px;
-      line-height: 27px;
-      br {
-        display: none;
+
+    .scroll-next {
+      width: 30px;
+      height: 41px;
+      bottom: 40px;
+      right: 12px;
+      .scroll-downicon {
+        background-size: 100%;
+        width: 17px;
+        height: 18px;
+        bottom: -30px;
       }
     }
   }
@@ -311,6 +307,5 @@
     }
   }
 }
-
 
 //Not Required

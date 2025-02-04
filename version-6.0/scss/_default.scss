@@ -136,6 +136,7 @@ h1 {
   line-height: 1.5;
   color: $yellow;
   font-weight: $semi-bold;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -1548,6 +1549,10 @@ textarea {
   .breadcrumbs {
     margin-bottom: 20px;
   }
+
+  h1{font-size: 65px; line-height: 91px;}
+
+
 }
 
 @media only screen and (max-width: 1320px) {
@@ -1558,15 +1563,7 @@ textarea {
     max-width: 1160px;
   }
 
-  h1 {
-    font-size: 36px;
-    line-height: 42px;
-  }
 
-  h2 {
-    font-size: 30px;
-    line-height: 42px;
-  }
 
   .client-logo-box-section {
     h4 {
@@ -1647,8 +1644,8 @@ textarea {
 
 @media only screen and (max-width: 991px) {
   h1 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 45px;
+    line-height: 55px;
   }
 
   h2 {
@@ -1842,13 +1839,13 @@ textarea {
   }
 
   h1 {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 35px;
+    line-height: 45px;
   }
 
   h2 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 35px;
   }
 
   p {
@@ -1856,6 +1853,9 @@ textarea {
     line-height: 24px;
     margin: 0 0 15px;
   }
+
+  .is-arrow{font-size: 16px;}
+  
 
   .flex-3 {
     flex-basis: 100%;
