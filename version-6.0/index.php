@@ -1754,27 +1754,28 @@
       
       
       if (document.getElementById("industries-glider")) {
-      window.addEventListener("load", function() {
-        var gliderElement = document.querySelector(".industries-slider .glider");
-        if (gliderElement) {      
-            new Glider(gliderElement, {
-                slidesToShow: 6, 
-                slidesToScroll: 1,
-                draggable: true,
-                scrollLock: true,
-                duration: 2.25,
-                dots: ".industries-slider .dots",
-                arrows: { prev: '#industries-glider .test-prev', next: '#industries-glider .test-next' },      
-                responsive: [
-                    { breakpoint: 320, settings: { slidesToShow: 2, slidesToScroll: 1, duration: 2.25 } },
-                    { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: '50%', duration: 2.25 } },
-                    { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: '33.33%', duration: 2.25 } },
-                    { breakpoint: 1400, settings: { slidesToShow: 6, slidesToScroll: 1, itemWidth: '16.66%', duration: 2.25 } }
-                ]
-            });
-        }
+  window.addEventListener("load", function () {
+    var gliderElement = document.querySelector(".industries-slider .glider");
+    if (gliderElement) {
+      new Glider(gliderElement, {
+        slidesToShow: 6, // Default for large screens
+        slidesToScroll: 1,
+        draggable: true,
+        scrollLock: true,
+        duration: 2.25,
+        dots: ".industries-slider .dots",
+        arrows: { prev: "#industries-glider .test-prev", next: "#industries-glider .test-next" },
+        responsive: [
+          { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: '100%', duration: 2.25 } },
+          { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: '100%', duration: 2.25 } },
+          { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: '50%', duration: 2.25 } }, 
+          { breakpoint: 1400, settings: { slidesToShow: 6, slidesToScroll: 1, itemWidth: '16.66%', duration: 2.25 } }
+        ]
       });
-      }
+    }
+  });
+}
+
       
       
       
