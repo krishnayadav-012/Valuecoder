@@ -20,6 +20,8 @@
         text-align: left;
       }
 
+      h2, p{z-index: 2;     position: relative;}
+
       .ser-button {
         margin: 40px 0 0;
         background: #fafafa;
@@ -46,6 +48,7 @@
           position: absolute;
           right: 0;
           bottom: 0;
+          z-index: 1;
         }
       }
     }
@@ -146,8 +149,8 @@
             margin: 0 auto;
             top: 15px;
             background-size: 100%;
-            width: 13px;
-            height: 13px;
+            width: 14px;
+            height: 14px;
             transform: rotate(-8deg);
             transition: all 0.3s ease-in-out;
           }

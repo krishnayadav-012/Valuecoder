@@ -1414,9 +1414,9 @@
                     </div>
                   </div>
                   <div class="content-box">
-                    <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
+                    <p>The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that's why we chose ValueCoders.</p>
                     <h5>James Kelly</h5>
-                    <span class="designtn">Co-founder, James Kelly</span>
+                    <span class="designtn">Co-founder, Miracle Choice</span>
                     <span class="star-image"></span>
                   </div>
                 </div>
@@ -1444,9 +1444,9 @@
                     </div>
                   </div>
                   <div class="content-box">
-                    <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                    <h5>James Kelly</h5>
-                    <span class="designtn">Co-founder, James Kelly</span>
+                    <p>The team at ValueCoder has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.</p>
+                    <h5>Judith Mueller</h5>
+                    <span class="designtn">Executive Director, Mueller Health Foundation</span>
                     <span class="star-image"></span>
                   </div>
                 </div>
@@ -1474,9 +1474,9 @@
                     </div>
                   </div>
                   <div class="content-box">
-                    <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                    <h5>James Kelly</h5>
-                    <span class="designtn">Co-founder, James Kelly</span>
+                    <p>ValueCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give ValueCoders ten out of ten!</p>
+                    <h5>Kris Bruynson</h5>
+                    <span class="designtn">Director, Storloft</span>
                     <span class="star-image"></span>
                   </div>
                 </div>
@@ -1504,9 +1504,9 @@
                     </div>
                   </div>
                   <div class="content-box">
-                    <p>“We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”</p>
-                    <h5>James Kelly</h5>
-                    <span class="designtn">Co-founder, James Kelly</span>
+                    <p>Huge thank you to ValueCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it's been great! There have been two small bumps in the road, but overall, It's been a fantastic service. I have already recommended it to one of my friends.</p>
+                    <h5>Mohammed Mirza</h5>
+                    <span class="designtn">Director, LOCALMASTERCHEFS LTD</span>
                     <span class="star-image"></span>
                   </div>
                 </div>
@@ -1754,9 +1754,9 @@
       
       
       if (document.getElementById("industries-glider")) {
-  window.addEventListener("load", function () {
-    var gliderElement = document.querySelector(".industries-slider .glider");
-    if (gliderElement) {
+      window.addEventListener("load", function () {
+      var gliderElement = document.querySelector(".industries-slider .glider");
+      if (gliderElement) {
       new Glider(gliderElement, {
         slidesToShow: 6, // Default for large screens
         slidesToScroll: 1,
@@ -1772,10 +1772,10 @@
           { breakpoint: 1400, settings: { slidesToShow: 6, slidesToScroll: 1, itemWidth: '16.66%', duration: 2.25 } }
         ]
       });
-    }
-  });
-}
-
+      }
+      });
+      }
+      
       
       
       
@@ -1868,15 +1868,15 @@
       }
       });
       } 
-
-
-
+      
+      
+      
       
               
       if (document.getElementById("success-glider")) {
-  window.addEventListener("load", function () {
-    var gliderElement = document.querySelector(".success-slider .glider");
-    if (gliderElement) {
+      window.addEventListener("load", function () {
+      var gliderElement = document.querySelector(".success-slider .glider");
+      if (gliderElement) {
       new Glider(gliderElement, {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -1927,10 +1927,10 @@
           },
         ],
       });
-    }
-  });
-}
-
+      }
+      });
+      }
+      
       
       
       
