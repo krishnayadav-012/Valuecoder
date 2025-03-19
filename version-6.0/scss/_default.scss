@@ -133,23 +133,23 @@ html {
 }
 
 h1 {
-  font-size: 70px;
-  line-height: 1.5;
+  font-size: 60px;
+  line-height: 1.3;
   color: $yellow;
   font-weight: $semi-bold;
   margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 46px;
-  line-height: 58px;
+  font-size: 42px;
+  line-height: 60px;
   font-weight: 700;
   color: $darkblack;
   margin: 0 0 15px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   color: $darkblack;
@@ -989,7 +989,7 @@ textarea {
 
     ul,
     ol {
-      margin: 20px 0 0;
+      margin: 20px 0;
       padding-left: 0;
       li {
         margin: 10px 0 0;
@@ -1553,10 +1553,17 @@ textarea {
     margin-bottom: 20px;
   }
 
-  h1{font-size: 65px; line-height: 91px;}
+  h1{font-size: 55px; line-height: 1.3;}
+  h2{font-size: 36px; line-height: 55px;}
+ 
 
 
 }
+
+
+
+
+
 
 @media only screen and (max-width: 1320px) {
   .container,
@@ -1621,6 +1628,15 @@ textarea {
 }
 
 @media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin: 0 0 15px;
+  }
   .client-logo-box-section {
     text-align: center;
 
@@ -1652,16 +1668,7 @@ textarea {
 }
 
 @media only screen and (max-width: 991px) {
-  h1 {
-    font-size: 45px;
-    line-height: 55px;
-  }
 
-  h2 {
-    font-size: 35px;
-    line-height: 40px;
-    margin: 0 0 15px;
-  }
 
   br {
     display: none;
@@ -1855,8 +1862,8 @@ textarea {
   }
 
   h1 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   h2 {

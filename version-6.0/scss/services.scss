@@ -47,7 +47,7 @@
     }
 
     .left-box {
-      flex-basis: 70%;
+      flex-basis: 60%;
       p {
         line-height: 30px;
         color: rgba(252, 252, 252, 0.87);
@@ -87,7 +87,7 @@
     }
 
     .right-box {
-      flex-basis: 31%;
+      flex-basis: 33%;
       position: relative;
       .card-box {
         width: 100%;
@@ -246,6 +246,7 @@
   }
 }
 
+
 .related-tags-section {
   h2 {
     font-size: 25px;
@@ -358,7 +359,7 @@
       }
 
       .right-box {
-        flex-basis: 35%;
+        flex-basis: 37%;
       }
     }
   }
@@ -367,7 +368,7 @@
   .hero-section {
     .content-wrap {
       .right-box {
-        flex-basis: 40%;
+        flex-basis: 37%;
       }
     }
   }

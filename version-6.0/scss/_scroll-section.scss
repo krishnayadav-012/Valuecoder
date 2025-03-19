@@ -20,7 +20,7 @@
         text-align: left;
       }
 
-      h2, p{z-index: 2;     position: relative;}
+      h2, p{z-index: 2;    position: relative;}
 
       .ser-button {
         margin: 40px 0 0;
@@ -37,6 +37,10 @@
           margin: 0 0 10px;
           strong {
             color: $yellow;
+          }
+
+          a{
+            &:hover{text-decoration: underline;}
           }
         }
         &:after {
@@ -85,9 +89,8 @@
 
             a {
               color: $darkblack;
-              text-decoration: underline;
               &:hover {
-                text-decoration: none;
+                text-decoration: underline;
               }
             }
           }
@@ -122,9 +125,8 @@
 
           a {
             color: #656565;
-            text-decoration: underline;
             &:hover {
-              text-decoration: none;
+              text-decoration: underline;
             }
           }
         }
@@ -174,9 +176,8 @@
               color: $white;
               a {
                 color: $white;
-                text-decoration: underline;
                 &:hover {
-                  text-decoration: none;
+                  text-decoration: underline;
                 }
               }
             }
@@ -194,9 +195,8 @@
             }
             a {
               color: $white;
-              text-decoration: underline;
               &:hover {
-                text-decoration: none;
+                text-decoration: underline;
               }
             }
           }

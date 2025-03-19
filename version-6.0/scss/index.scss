@@ -46,11 +46,9 @@
       flex-basis: 70%;
 
       h1 {
-        //margin-bottom: 15px;
-        //font-size: 70px;
-        //line-height: 1.5;
+        font-size: 70px;
+        line-height: 1.5;
         color: $white;
-        //font-weight: 600;
       }
 
       p {
@@ -207,11 +205,27 @@
   }
 }
 
+h2 {
+  font-size: 46px;
+  line-height: 58px;
+
+}
+
+h3 {
+  font-size: 22px;}
+
 //New Home Page Ends Here*/
 
 // Media Query Start From Here
 
 @media (max-width: 1440px) {
+  .hero-section {
+    .dis-flex {
+      .left-box {
+        flex-basis: 85%;
+      }
+    }
+  }
 }
 
 @media (max-width: 1320px) {
@@ -221,13 +235,26 @@
 
     .dis-flex {
       .left-box {
-        flex-basis: 80%;
+        flex-basis: 90%;
+        h1{font-size: 60px;
+          line-height: 1.4;}
       }
     }
   }
 }
 
 @media (max-width: 1024px) {
+  .hero-section {
+    .dis-flex {
+      .left-box {
+        h1{font-size: 50px;
+          line-height: 1.4;}
+      }
+    }
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 40px;}
 }
 
 @media (max-width: 979px) {
@@ -257,6 +284,8 @@
       }
     }
   }
+
+  h3{font-size: 22px;}
 }
 
 @media (max-width: 767px) {
@@ -266,6 +295,10 @@
       .left-box {
         flex-basis: 100%;
         text-align: center;
+        h1 {
+          font-size: 40px;
+          line-height: 50px;
+        }
         p {
           font-size: 16px;
           line-height: 27px;
@@ -308,6 +341,11 @@
       }
     }
   }
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h3{font-size: 20px;}
 }
 
 //Not Required
