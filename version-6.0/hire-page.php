@@ -16,7 +16,7 @@
     <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
   </head>
   <body>
-    <?php require_once './include/menu-v3.12.php'; ?>
+  <?php require_once './include/menu-tabversion.php'; ?>
     <section class="second-level-section" style="background-image:url(images/hire-banner.png);">
       <div class="container">
         <div class="breadcrumbs">
@@ -489,6 +489,59 @@
         </div>
       </div>
     </section>
+
+
+    <section class="tabs-section technologies-tabs padding-t-120 padding-b-120" id="tabs-section-3">
+      <div class="container">
+        <div class="top-section b-100">
+          <h2>Technologies We Hold Expertise In</h2>
+          <p>We use the most advanced technologies to deliver world-class solutions and the varied demands of clients in the minimum possible time.</p>
+        </div>
+        <div class="tab-flex">
+          <div class="tabs-container">
+            <ul class="tabs">
+              <li class="tab active" data-target="tech01">Trending</li>
+              <li class="tab" data-target="tech02">Platforms</li>
+              <li class="tab" data-target="tech03">Programming</li>
+            </ul>
+            <div class="tab-content">
+              <div class="content active" id="tech01">
+                <div class="dis-flex">
+                  <div class="flex-1 content-div">
+                    <div class="cont-col"><a href="#">CSS</a></div>
+                    <div class="cont-col">HTML</div>
+                    <div class="cont-col">Javascript</div>
+                    <div class="cont-col">Angular</div>
+                  </div>
+                </div>
+              </div>
+              <div class="content" id="tech02">
+                <div class="dis-flex">
+                  <div class="flex-1 content-div">
+                    <div class="cont-col"><a href="#">Test CSS</a></div>
+                     <div class="cont-col">HTML</div>
+                    <div class="cont-col">Javascript</div>
+                    <div class="cont-col">Angular</div>
+                  </div>
+                </div>
+              </div>
+              <div class="content" id="tech03">
+                <div class="dis-flex">
+                  <div class="flex-1 content-div">
+                  <div class="cont-col"><a href="#">Test CSS</a></div>
+                     <div class="cont-col">HTML</div>
+                    <div class="cont-col">Javascript</div>
+                    <div class="cont-col">Angular</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="accordion-section how-process  padding-t-120">
       <div class="dis-flex accordian-row">
         <div class="col-left">
@@ -1890,6 +1943,46 @@
     <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
     <script>
+
+   // Function to initialize tabs
+   function initializeTabs(sectionSelector) {
+        const sections = document.querySelectorAll(sectionSelector);
+      
+        sections.forEach((section) => {
+          const tabs = section.querySelectorAll(".tab");
+          const contents = section.querySelectorAll(".content");
+          const images = section.querySelectorAll(".tab-image");
+      
+          tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+              const target = tab.getAttribute("data-target");
+      
+              // Reset active state for tabs, content, and images
+              tabs.forEach((t) => t.classList.remove("active"));
+              contents.forEach((content) => content.classList.remove("active"));
+              images.forEach((image) => image.classList.remove("active"));
+      
+              // Set active state for clicked tab, content, and image
+              tab.classList.add("active");
+              section.querySelector(`#${target}`).classList.add("active");
+              section.querySelector(`#img-${target}`).classList.add("active");
+            });
+          });
+        });
+      }
+      
+      // Initialize all tab sections
+      document.addEventListener("DOMContentLoaded", () => {
+        initializeTabs(".tabs-section");
+      });
+      
+
+
+
+
+
+
+
       new Glide(".testlider", {
        type: "carousel",
        autoplay: 5000,

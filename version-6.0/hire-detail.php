@@ -15,7 +15,7 @@
     <link rel="preload stylesheet" type="text/css" href="./css/hirepage.min.css" defer />
   </head>
   <body>
-    <?php require_once './include/menu-v3.12.php'; ?>
+  <?php require_once './include/menu-tabversion.php'; ?>
     <section class="second-level-section">
       <div class="container">
         <div class="breadcrumbs">
