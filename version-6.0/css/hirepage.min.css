@@ -343,9 +343,9 @@ h3 {
   margin: 0 0 15px; }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #110302;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h6 {
   font-size: 18px; }
@@ -960,7 +960,7 @@ textarea {
         border-radius: 50%;
         position: absolute;
         left: 0;
-        top: 7px; }
+        top: 10px; }
 .faq-section .no-list-type ul {
   list-style-type: none;
   padding-left: 0; }
@@ -970,7 +970,7 @@ textarea {
 
 .breadcrumbs {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
   text-align: left;
   z-index: 2;
@@ -981,7 +981,7 @@ textarea {
     position: relative;
     padding-right: 14px;
     color: #bababa;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
     transition: all 0.3s ease-in-out;
     text-decoration: none; }
@@ -1536,8 +1536,8 @@ textarea {
     line-height: 50px; }
 
   h2 {
-    font-size: 30px;
-    line-height: 35px; }
+    font-size: 28px;
+    line-height: 37px; }
 
   h3 {
     font-size: 20px;
@@ -1657,6 +1657,10 @@ textarea {
   .faq-section .faq-accordion-content p {
     font-size: 14px;
     margin-top: 10px; }
+  .faq-section .faq-accordion-content ul li:before {
+    top: 7px; }
+  .faq-section .faq-accordion-content ol li:before {
+    top: 7px; }
   .faq-section .faq-accordion-toggle {
     font-size: 18px;
     line-height: 28px;
@@ -2901,7 +2905,7 @@ body.page-template-template-testimonials .client-video-section iframe,
             .tabs-section.techno-tabs .tabs-container .tab-content .content .content-div ul li:last-child {
               margin: 0; }
   .tabs-section.technologies-tabs {
-    background: linear-gradient(90deg, #05164d 0%, #0c33b3 100%);
+    background: linear-gradient(90deg, #05164D 0%, #0C33B3 100%);
     position: relative; }
     .tabs-section.technologies-tabs .container {
       position: relative;
@@ -2920,31 +2924,31 @@ body.page-template-template-testimonials .client-video-section iframe,
       flex-wrap: wrap; }
       .tabs-section.technologies-tabs .tabs-container .tabs {
         margin: 0;
-        width: 50%;
+        width: 35%;
         display: flex;
         max-width: 100%;
         justify-content: flex-start;
         gap: 10px;
         flex-direction: column;
         border: 0;
-        background: linear-gradient(270deg, #0b147c 21.77%, #4b1bac 100%);
+        background: #fff;
         padding: 50px;
         border-radius: 20px 0 0 20px; }
         .tabs-section.technologies-tabs .tabs-container .tabs .tab {
-          color: #ffffff;
+          color: #05164D;
           padding: 18px; }
           .tabs-section.technologies-tabs .tabs-container .tabs .tab img {
             margin-right: 10px; }
           .tabs-section.technologies-tabs .tabs-container .tabs .tab.active {
-            background: #ffffff;
-            color: #05164d;
+            background: #ffad00;
+            color: #ffffff;
             position: relative; }
             .tabs-section.technologies-tabs .tabs-container .tabs .tab.active:after {
               content: "";
               position: absolute;
               top: 25px;
               right: 20px;
-              background: url(../images/home-images/tab-arrow.svg) no-repeat center;
+              background: url(../images/industry-images/tab-wrw.svg) no-repeat center;
               background-size: 100%;
               width: 13px;
               height: 13px;
@@ -2955,7 +2959,7 @@ body.page-template-template-testimonials .client-video-section iframe,
             color: #05164d; }
     .tabs-section.technologies-tabs .tab-content {
       margin: 0;
-      width: 50%;
+      width: 65%;
       padding: 50px;
       border-radius: 0 20px 20px 0; }
       .tabs-section.technologies-tabs .tab-content .content-div {
@@ -2963,12 +2967,54 @@ body.page-template-template-testimonials .client-video-section iframe,
         display: flex;
         flex-wrap: wrap;
         gap: 10px; }
+        .tabs-section.technologies-tabs .tab-content .content-div ul {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin: 0; }
+          .tabs-section.technologies-tabs .tab-content .content-div ul li {
+            flex-basis: 32%;
+            display: flex;
+            align-items: center;
+            background: #FFF6E3;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            color: #05164d;
+            padding: 15px;
+            position: relative;
+            overflow: hidden;
+            min-height: 63px;
+            margin: 0; }
+            .tabs-section.technologies-tabs .tab-content .content-div ul li:before {
+              display: none; }
+            .tabs-section.technologies-tabs .tab-content .content-div ul li i {
+              width: 36px;
+              margin-right: 10px; }
+              .tabs-section.technologies-tabs .tab-content .content-div ul li i img {
+                width: 100%;
+                vertical-align: middle; }
+            .tabs-section.technologies-tabs .tab-content .content-div ul li a {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              left: 0;
+              top: 0;
+              padding: 15px;
+              border-radius: 10px;
+              color: #05164d; }
+              .tabs-section.technologies-tabs .tab-content .content-div ul li a:hover {
+                border: 2px solid #FFAD00;
+                background: #fff;
+                text-decoration: none; }
         .tabs-section.technologies-tabs .tab-content .content-div .cont-col {
           flex-basis: 49%;
           display: flex;
           align-items: center;
-          background: #FFF6E3;
-          border: 2px solid transparent;
+          background: #edf5ff;
+          border: 2px solid #edf5ff;
           border-radius: 10px;
           color: #05164d;
           padding: 15px;
@@ -2989,10 +3035,9 @@ body.page-template-template-testimonials .client-video-section iframe,
             position: absolute;
             left: 0;
             top: 0;
-            padding: 15px;
-            border-radius: 10px; }
+            padding: 15px; }
             .tabs-section.technologies-tabs .tab-content .content-div .cont-col a:hover {
-              border: 2px solid #FFAD00;
+              border-color: #ffad00;
               background: #fff; }
     .tabs-section.technologies-tabs:after {
       content: '';
@@ -3008,8 +3053,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 @media (max-width: 1320px) {
   .tabs-section .tabs-container {
     flex-basis: 50%; }
-  .tabs-section.technologies-tabs .tab-content .content-div .cont-col {
-    flex-basis: 48%;
+  .tabs-section.technologies-tabs .tab-content .content-div ul li {
     min-height: 60px; }
   .tabs-section.technologies-tabs:after {
     display: none; } }
@@ -3030,6 +3074,9 @@ body.page-template-template-testimonials .client-video-section iframe,
         right: 15px; }
   .tabs-section.technologies-tabs .tab-content {
     padding: 20px; }
+    .tabs-section.technologies-tabs .tab-content .content-div ul li {
+      flex-basis: 100%;
+      min-height: 60px; }
     .tabs-section.technologies-tabs .tab-content .content-div .cont-col {
       flex-basis: 100%;
       min-height: 60px; }
@@ -3115,12 +3162,12 @@ body.page-template-template-testimonials .client-video-section iframe,
       padding: 30px;
       border-radius: 0 0 15px 15px;
       margin: 0; }
-      .tabs-section.technologies-tabs .tab-content .content-div {
+      .tabs-section.technologies-tabs .tab-content .content-div ul {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 10px; }
-        .tabs-section.technologies-tabs .tab-content .content-div .cont-col {
+        .tabs-section.technologies-tabs .tab-content .content-div ul li {
           flex-basis: 100%;
           min-height: 60px; }
     .tabs-section.technologies-tabs:after {
@@ -3310,6 +3357,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   .client-img-section .right-box {
     flex-basis: 100%;
     margin: 40px 0 0; } }
+@media only screen and (max-width: 767px) {
+  .client-img-section .left-box ul li:before {
+    top: 4px; } }
 .process-work {
   background: linear-gradient(to left, #fbfbfb 50%, #211f47 50%);
   position: relative; }
@@ -4251,13 +4301,13 @@ body.page-template-template-testimonials .client-video-section iframe,
     text-align: left; }
     .three-column-icon-section ul li::before {
       content: "";
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       background-color: #ffb81d;
       border-radius: 50%;
       position: absolute;
       left: 0;
-      top: 6px; }
+      top: 9px; }
 .three-column-icon-section a {
   text-decoration: none; }
   .three-column-icon-section a:hover {
@@ -4741,7 +4791,7 @@ body.page-template-template-testimonials .client-video-section iframe,
         display: none;
         background: #fff; }
         .header-two .header-item-right .menu ul li .menu-mega.small-menu {
-          left: 42%;
+          left: 55%;
           width: 360px;
           padding: 25px;
           border-radius: 15px; }

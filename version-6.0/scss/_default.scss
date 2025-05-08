@@ -157,9 +157,9 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: $darkblack;
-  font-weight: $semi-bold;
+  font-weight: 500;
 }
 
 h6 {
@@ -1004,7 +1004,7 @@ textarea {
           border-radius: 50%;
           position: absolute;
           left: 0;
-          top: 7px;
+          top: 10px;
         }
       }
     }
@@ -1031,7 +1031,7 @@ textarea {
 // breadcrumbs
 .breadcrumbs {
   color: $white;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
   text-align: left;
   z-index: 2;
@@ -1043,7 +1043,7 @@ textarea {
     position: relative;
     padding-right: 14px;
     color: #bababa;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -1867,8 +1867,8 @@ textarea {
   }
 
   h2 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 28px;
+    line-height: 37px;
   }
 
   h3{font-size: 20px; line-height: 30px;}
@@ -2065,6 +2065,16 @@ textarea {
       p {
         font-size: 14px;
         margin-top: 10px;
+      }
+      ul{
+        li{
+          &:before{top:7px;}
+        }
+      }
+      ol{
+        li{
+          &:before{top:7px;}
+        }
       }
     }
 

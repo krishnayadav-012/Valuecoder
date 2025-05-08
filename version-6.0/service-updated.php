@@ -180,7 +180,6 @@
           </p>
         </div>
         <div class="service-tabs-section margin-t-80">
-          <div class="tab-row">
             <nav id="service-tabs" class="tab-nav">
               <div class="tab-scroll">
                 <div class="tablist active" data-tab="#tab01"><a href="#tab01">

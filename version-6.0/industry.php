@@ -15,7 +15,7 @@
 
   </head>
   <body id="themeAdd">
-    <?php require_once './include/menu-v3.12.php'; ?>
+  <?php require_once './include/menu-tabversion.php'; ?>
     <section class="hero-img-section" style="background-image:url(images/service-banner.png);">
       <div class="container">
         <div class="content-wrap">
@@ -247,7 +247,7 @@
       </div>
       </div>
     </section>
-    <section class="three-column-icon-section bg-light padding-t-120 padding-b-120">
+    <section class="three-column-icon-section  padding-t-120 padding-b-120">
       <div class="container">
         <div class="dis-flex top-content">
           <div class="flex-2">
@@ -303,6 +303,14 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+    
   
     <section class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
       <div class="container">
@@ -861,35 +869,7 @@
       }
       
       
-            // client slider
-      window.addEventListener("load", function () {
-          if(document.querySelector(".client-testimonial-slider")){
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
-              var glider = Glider(this);
-          });
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
-          document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
-          window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              draggable: false,
-              scrollLock: false,
-              dots: ".client-testimonial-slider .dots",
-              arrows: false,
-              dragDistance: false,
-              // arrows: {
-              //     prev: '.glider-prev',
-              //     next: '.glider-next'
-              //   },
-              responsive: [
-                  { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
-                  { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                  { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-              ],
-          });
-          }
-      });
+           
             
             
             

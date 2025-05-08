@@ -279,3 +279,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+
+  .client-img-section{
+    .left-box {
+      ul{
+        li{
+          &:before{top: 4px}
+        }
+      }
+    }
+  }
+
+
+}

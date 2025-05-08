@@ -508,30 +508,34 @@
               <div class="content active" id="tech01">
                 <div class="dis-flex">
                   <div class="flex-1 content-div">
-                    <div class="cont-col"><a href="#">CSS</a></div>
-                    <div class="cont-col">HTML</div>
-                    <div class="cont-col">Javascript</div>
-                    <div class="cont-col">Angular</div>
+                    <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li>HTML</li>
+                    <li><a href="#">CSS</a></li>
+                    <li>HTML</li>
+                   </ul>
                   </div>
                 </div>
               </div>
               <div class="content" id="tech02">
                 <div class="dis-flex">
                   <div class="flex-1 content-div">
-                    <div class="cont-col"><a href="#">Test CSS</a></div>
-                     <div class="cont-col">HTML</div>
-                    <div class="cont-col">Javascript</div>
-                    <div class="cont-col">Angular</div>
+                  <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li>HTML</li>
+                    
+                   </ul>
                   </div>
                 </div>
               </div>
               <div class="content" id="tech03">
                 <div class="dis-flex">
                   <div class="flex-1 content-div">
-                  <div class="cont-col"><a href="#">Test CSS</a></div>
-                     <div class="cont-col">HTML</div>
-                    <div class="cont-col">Javascript</div>
-                    <div class="cont-col">Angular</div>
+                  <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li>HTML</li>
+                    
+                   </ul>
                   </div>
                 </div>
               </div>
