@@ -2998,6 +2998,8 @@ body.page-template-template-testimonials .client-video-section iframe,
               position: absolute;
               left: 0;
               top: 4px; }
+            .tab-with-slide .tabs-container .tab-content .content .dis-flex .content-div ul li a:hover {
+              text-decoration: underline; }
         .tab-with-slide .tabs-container .tab-content .content .dis-flex .content-div .is-arrow {
           margin: 30px 0 0; }
 
@@ -3383,8 +3385,8 @@ body.page-template-template-testimonials .client-video-section iframe,
               font-size: 0;
               background-size: 100%; }
           .tabs-section.technologies-tabs .tabs-container .tabs .tab:hover {
-            background: #ffffff;
-            color: #05164d; }
+            background: #05164d;
+            color: #ffffff; }
     .tabs-section.technologies-tabs .tab-content {
       margin: 0;
       width: 65%;
@@ -4389,6 +4391,56 @@ body.page-template-template-testimonials .client-video-section iframe,
   .client-img-section .right-box {
     flex-basis: 100%;
     margin: 40px 0 0; } }
+.lets-discuss-cta {
+  position: relative;
+  z-index: 1; }
+  .lets-discuss-cta:before, .lets-discuss-cta:after {
+    content: "";
+    position: absolute;
+    z-index: -1; }
+  .lets-discuss-cta:before {
+    background: url(../images/intersect-left.png) 0 0 no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    left: 0;
+    width: 116px;
+    height: 163px; }
+  .lets-discuss-cta:after {
+    background: url(../images/intersect-right.png) 0 0 no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 304px;
+    height: 475px; }
+  .lets-discuss-cta .left-sec {
+    flex-basis: 40%; }
+  .lets-discuss-cta .right-sec {
+    flex-basis: 40%; }
+
+@media only screen and (max-width: 1440px) {
+  .lets-discuss-cta:after {
+    width: 240px; } }
+@media only screen and (max-width: 1320px) {
+  .lets-discuss-cta:after {
+    width: 180px; } }
+@media only screen and (max-width: 991px) {
+  .lets-discuss-cta:before {
+    width: 50px;
+    height: 70px; }
+  .lets-discuss-cta:after {
+    display: none; }
+  .lets-discuss-cta .left-sec {
+    flex-basis: 100%;
+    text-align: center; }
+    .lets-discuss-cta .left-sec .btn-sec {
+      justify-content: center; }
+  .lets-discuss-cta .right-sec {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 40px 0 0; } }
+@media only screen and (max-width: 479px) {
+  .lets-discuss-cta .right-sec {
+    display: none; } }
 .hire-model-tab .hire-tabs-section .tab-row {
   display: flex;
   justify-content: space-between;

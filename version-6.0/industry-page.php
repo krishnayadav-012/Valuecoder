@@ -522,6 +522,7 @@
         </div>
       </div>
     </section>
+
     <section class="client-img-section padding-t-120 padding-b-120">
       <div class="container">
         <div class="dis-flex justify-sb items-center">
@@ -761,6 +762,7 @@
         </div>
       </div>
     </section>
+    
     <section class="lets-discuss-cta bg-blue-linear  padding-t-70 padding-b-70 ">
       <div class="container">
         <div class="dis-flex justify-sb">
@@ -2073,25 +2075,34 @@
       
       
                   
-      var accorItem = document.getElementsByClassName("accordionItem");
-      var faqHD   = document.getElementsByClassName("accordion-toggle");
-      for (i = 0; i < faqHD.length; i++) {
-          faqHD[i].addEventListener("click", dataAccordionItem, false);
-      }
-      function dataAccordionItem(){
-          if( this.parentNode.classList.contains('active') ){
-              this.parentNode.className = "accordionItem";
-              return;
-          }
-          //let itemClass = this.parentNode.className;
-          for (i = 0; i < accorItem.length; i++) {
-              accorItem[i].className = "accordionItem";
-          }    
-          if (this.parentNode.className == "accordionItem") {        
-              this.parentNode.className = "accordionItem active";
-          }
-      }
-      
+  document.addEventListener("DOMContentLoaded", function () {
+    var solutionSection = document.getElementById("solution-tab");
+
+    if (solutionSection) {
+        var solutionAccorItems = solutionSection.getElementsByClassName("accordionItem");
+        var solutionFaqHeaders = solutionSection.getElementsByClassName("accordion-toggle");
+
+        for (let i = 0; i < solutionFaqHeaders.length; i++) {
+            solutionFaqHeaders[i].addEventListener("click", handleSolutionAccordion, false);
+        }
+
+        function handleSolutionAccordion() {
+            if (this.parentNode.classList.contains('active')) {
+                this.parentNode.className = "accordionItem";
+                return;
+            }
+
+            for (let j = 0; j < solutionAccorItems.length; j++) {
+                solutionAccorItems[j].className = "accordionItem";
+            }
+
+            if (this.parentNode.className === "accordionItem") {
+                this.parentNode.className = "accordionItem active";
+            }
+        }
+    }
+});
+
       
             // client slider
       window.addEventListener("load", function () {

@@ -3642,8 +3642,8 @@ body.page-template-template-testimonials .client-video-section iframe,
               font-size: 0;
               background-size: 100%; }
           .tabs-section.technologies-tabs .tabs-container .tabs .tab:hover {
-            background: #ffffff;
-            color: #05164d; }
+            background: #05164d;
+            color: #ffffff; }
     .tabs-section.technologies-tabs .tab-content {
       margin: 0;
       width: 65%;
@@ -5006,7 +5006,7 @@ body.page-template-template-testimonials .client-video-section iframe,
     border: 1.5px solid #ececec;
     background: #fff;
     position: relative;
-    padding: 25px;
+    padding: 30px;
     box-shadow: 0 4px 40px 0 rgba(237, 246, 255, 0.3);
     overflow: hidden;
     transition: transform 0.3s ease, background-color 0.3s ease; }
@@ -7526,7 +7526,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: -webkit-flex;
   background-repeat: no-repeat;
   background-color: rgba(4, 12, 23, 0.7);
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-position: center; }
   .hero-section .content-wrap {
     position: relative;
     z-index: 9;

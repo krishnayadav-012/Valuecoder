@@ -188,6 +188,9 @@
                   left: 0;
                   top: 4px;
                 }
+                a{
+                  &:hover{text-decoration: underline;}
+                }
               }
             }
             .is-arrow {
