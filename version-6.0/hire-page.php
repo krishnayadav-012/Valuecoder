@@ -14,12 +14,10 @@
     <?php require_once '../include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/hirepage.min.css" defer />
     <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
-
-       <link rel="preload stylesheet" type="text/css" href="css/form-county.css" defer/>
-    
+    <link rel="preload stylesheet" type="text/css" href="css/form-county.css" defer/>
   </head>
   <body>
-  <?php require_once './include/menu-tabversion.php'; ?>
+    <?php require_once './include/menu-tabversion.php'; ?>
     <section class="second-level-section" style="background-image:url(images/hire-banner.png);">
       <div class="container">
         <div class="breadcrumbs">
@@ -37,7 +35,7 @@
               <div class="logo-box logo1"></div>
               <div class="logo-box logo2"></div>
               <div class="logo-box logo3"></div>
-            </div>-->
+              </div>-->
             <h1>Hire Dedicated Developers</h1>
             <h2>Top 1% Dedicated Angular Developers. Pre-vetted Experts. No Freelancers</h2>
             <p>Hire pre-vetted and highly experienced Angular developers from ValueCoders. They're skilled in every Angular version, from 2.0.0 to 15.0.0.
@@ -72,20 +70,18 @@
             </div>
           </div>
           <!--Image on right backup
-          <div class="flex-2 right-box">
-            <picture>
-              <source type="image/webp" srcset="images/hire-bannerright.webp">
-              <source type="image/png" srcset="images/hire-bannerright.png">
-              <img loading="lazy" src="images/hire-bannerright.png" alt="Valuecoders" width="689" height="477"> 
-            </picture>
-          </div>-->
-
- <div class="flex-2 header-form">
+            <div class="flex-2 right-box">
+              <picture>
+                <source type="image/webp" srcset="images/hire-bannerright.webp">
+                <source type="image/png" srcset="images/hire-bannerright.png">
+                <img loading="lazy" src="images/hire-bannerright.png" alt="Valuecoders" width="689" height="477"> 
+              </picture>
+            </div>-->
+          <div class="flex-2 header-form">
             <div class="form-right-box">
               <div class="head">
                 <h3>Get In Touch</h3>
                 <p>Our team will get back to you within 8 business hours or less.</p>
-               
               </div>
               <div class="top-right-form-box">
                 <form id="contact-form-section" action="https://www.valuecoders.com/sendmail1.php"
@@ -154,10 +150,6 @@
                         </div>
                       </div>
                     </div>
-
-
-
-
                     <div class="textarea-box">
                       <div class="form-text-cont width-full">
                         <div class="lbl-row">
@@ -189,31 +181,23 @@
                       </div>
                     </div>
                   </div>
-                  
                   <div class="button-section margin-t-50">
                     <div class="btn-div">
                       <div class="cta-wrap">
                         <div class="user-input cta-btn checkout text-center">
-                         
-                          <button type="submit" id="hire-submitButton" class="checkout-submit" value="Start My Trial">
-                          Start My Trial</button>
+                          <button type="submit" id="hire-submitButton" class="checkout-submit" value="Hire Experts">
+                          Hire Experts</button>
+                          <span class="devide">OR</span>
                           <a href="#" class="req">
-Request Free Consultation</a>
-                        
+                          Book A Call</a>
                         </div>
                       </div>
-                    
                     </div>
-                 
-                   
                   </div>
                 </form>
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </section>
@@ -628,8 +612,6 @@ Request Free Consultation</a>
         </div>
       </div>
     </section>
-
-
     <section class="tabs-section technologies-tabs padding-t-120 padding-b-120" id="tabs-section-3">
       <div class="container">
         <div class="top-section b-100">
@@ -648,33 +630,31 @@ Request Free Consultation</a>
                 <div class="dis-flex">
                   <div class="flex-1 content-div">
                     <ul>
-                    <li><a href="#">CSS</a></li>
-                    <li>HTML</li>
-                    <li><a href="#">CSS</a></li>
-                    <li>HTML</li>
-                   </ul>
+                      <li><a href="#">CSS</a></li>
+                      <li>HTML</li>
+                      <li><a href="#">CSS</a></li>
+                      <li>HTML</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="content" id="tech02">
                 <div class="dis-flex">
                   <div class="flex-1 content-div">
-                  <ul>
-                    <li><a href="#">CSS</a></li>
-                    <li>HTML</li>
-                    
-                   </ul>
+                    <ul>
+                      <li><a href="#">CSS</a></li>
+                      <li>HTML</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="content" id="tech03">
                 <div class="dis-flex">
                   <div class="flex-1 content-div">
-                  <ul>
-                    <li><a href="#">CSS</a></li>
-                    <li>HTML</li>
-                    
-                   </ul>
+                    <ul>
+                      <li><a href="#">CSS</a></li>
+                      <li>HTML</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -683,8 +663,6 @@ Request Free Consultation</a>
         </div>
       </div>
     </section>
-
-
     <section class="accordion-section how-process  padding-t-120">
       <div class="dis-flex accordian-row">
         <div class="col-left">
@@ -2086,120 +2064,120 @@ Request Free Consultation</a>
     <script src='https://www.valuecoders.com/wp-content/themes/valuecoders/js/script.js?ver=1.0.0' id='vc-script-js' type="2f84d8d52006df7e80096e4e-text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
     <script>
-
-   // Function to initialize tabs
-   function initializeTabs(sectionSelector) {
-        const sections = document.querySelectorAll(sectionSelector);
-      
-        sections.forEach((section) => {
-          const tabs = section.querySelectorAll(".tab");
-          const contents = section.querySelectorAll(".content");
-          const images = section.querySelectorAll(".tab-image");
-      
-          tabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-              const target = tab.getAttribute("data-target");
-      
-              // Reset active state for tabs, content, and images
-              tabs.forEach((t) => t.classList.remove("active"));
-              contents.forEach((content) => content.classList.remove("active"));
-              images.forEach((image) => image.classList.remove("active"));
-      
-              // Set active state for clicked tab, content, and image
-              tab.classList.add("active");
-              section.querySelector(`#${target}`).classList.add("active");
-              section.querySelector(`#img-${target}`).classList.add("active");
-            });
-          });
-        });
-      }
-      
-      // Initialize all tab sections
-      document.addEventListener("DOMContentLoaded", () => {
-        initializeTabs(".tabs-section");
-      });
-      
-
-
-
-
-
-
-
-      new Glide(".testlider", {
-       type: "carousel",
-       autoplay: 5000,
-       startAt: 0,
-       hoverpause: false,
-       gap: 0
-      }).mount();   
-      new Glide('.logoslide', {
-                            type: 'carousel',
-                            autoplay: 1,
-                            animationDuration: 10000,
-                            animationTimingFunc: 'linear',
-                            gap: 0,
-                            startAt: 0,
-                            perView: 1 }).
-                          mount();
-                          //# sourceURL=pen.js
-      
-           var accorItem = document.getElementsByClassName("accordionItem");
-           var faqHD   = document.getElementsByClassName("accordion-toggle");
-           for (i = 0; i < faqHD.length; i++) {
-               faqHD[i].addEventListener("click", dataAccordionItem, false);
-           }
-           function dataAccordionItem(){
-               if( this.parentNode.classList.contains('active') ){
-                   this.parentNode.className = "accordionItem";
-                   return;
-               }
-               //let itemClass = this.parentNode.className;
-               for (i = 0; i < accorItem.length; i++) {
-                   accorItem[i].className = "accordionItem";
-               }    
-               if (this.parentNode.className == "accordionItem") {        
-                   this.parentNode.className = "accordionItem active";
-               }
-           }
-           
-           
-                 // client slider
-           window.addEventListener("load", function () {
-               if(document.querySelector(".client-testimonial-slider")){
-               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
-                   var glider = Glider(this);
-               });
-               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
-               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
-               document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
-               window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
-                   slidesToShow: 3,
-                   slidesToScroll: 1,
-                   draggable: false,
-                   scrollLock: false,
-                   dots: ".client-testimonial-slider .dots",
-                   arrows: false,
-                   dragDistance: false,
-                   // arrows: {
-                   //     prev: '.glider-prev',
-                   //     next: '.glider-next'
-                   //   },
-                   responsive: [
-                       { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
-                       { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
-                   ],
-               });
-               }
-           });
-                 
-                 
-                 
-                 
-                 
-               
+      // Function to initialize tabs
+      function initializeTabs(sectionSelector) {
+           const sections = document.querySelectorAll(sectionSelector);
          
+           sections.forEach((section) => {
+             const tabs = section.querySelectorAll(".tab");
+             const contents = section.querySelectorAll(".content");
+             const images = section.querySelectorAll(".tab-image");
+         
+             tabs.forEach((tab) => {
+               tab.addEventListener("click", () => {
+                 const target = tab.getAttribute("data-target");
+         
+                 // Reset active state for tabs, content, and images
+                 tabs.forEach((t) => t.classList.remove("active"));
+                 contents.forEach((content) => content.classList.remove("active"));
+                 images.forEach((image) => image.classList.remove("active"));
+         
+                 // Set active state for clicked tab, content, and image
+                 tab.classList.add("active");
+                 section.querySelector(`#${target}`).classList.add("active");
+                 section.querySelector(`#img-${target}`).classList.add("active");
+               });
+             });
+           });
+         }
+         
+         // Initialize all tab sections
+         document.addEventListener("DOMContentLoaded", () => {
+           initializeTabs(".tabs-section");
+         });
+         
+      
+      
+      
+      
+      
+      
+      
+         new Glide(".testlider", {
+          type: "carousel",
+          autoplay: 5000,
+          startAt: 0,
+          hoverpause: false,
+          gap: 0
+         }).mount();   
+         new Glide('.logoslide', {
+                               type: 'carousel',
+                               autoplay: 1,
+                               animationDuration: 10000,
+                               animationTimingFunc: 'linear',
+                               gap: 0,
+                               startAt: 0,
+                               perView: 1 }).
+                             mount();
+                             //# sourceURL=pen.js
+         
+              var accorItem = document.getElementsByClassName("accordionItem");
+              var faqHD   = document.getElementsByClassName("accordion-toggle");
+              for (i = 0; i < faqHD.length; i++) {
+                  faqHD[i].addEventListener("click", dataAccordionItem, false);
+              }
+              function dataAccordionItem(){
+                  if( this.parentNode.classList.contains('active') ){
+                      this.parentNode.className = "accordionItem";
+                      return;
+                  }
+                  //let itemClass = this.parentNode.className;
+                  for (i = 0; i < accorItem.length; i++) {
+                      accorItem[i].className = "accordionItem";
+                  }    
+                  if (this.parentNode.className == "accordionItem") {        
+                      this.parentNode.className = "accordionItem active";
+                  }
+              }
+              
+              
+                    // client slider
+              window.addEventListener("load", function () {
+                  if(document.querySelector(".client-testimonial-slider")){
+                  document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-visible", function (event) {
+                      var glider = Glider(this);
+                  });
+                  document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-slide-hidden", function (event) {});
+                  document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-refresh", function (event) {});
+                  document.querySelector(".client-testimonial-slider .glider").addEventListener("glider-loaded", function (event) {});
+                  window._ = new Glider(document.querySelector(".client-testimonial-slider .glider"), {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                      draggable: false,
+                      scrollLock: false,
+                      dots: ".client-testimonial-slider .dots",
+                      arrows: false,
+                      dragDistance: false,
+                      // arrows: {
+                      //     prev: '.glider-prev',
+                      //     next: '.glider-next'
+                      //   },
+                      responsive: [
+                          { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
+                          { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                      ],
+                  });
+                  }
+              });
+                    
+                    
+                    
+                    
+                    
+                  
+            
+       
     </script>
   </body>
 </html>
