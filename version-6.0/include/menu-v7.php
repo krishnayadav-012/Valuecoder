@@ -17,7 +17,7 @@
           <div class="bar3"></div>
         </div>
       </div>
-      <div class="header-item-right">
+       <div class="header-item-right">
         <nav class="menu mob-nav" id="menu">
           <ul>
             <li class="menu-item-has-children">
@@ -28,7 +28,7 @@
                     <div id="menu-serv" class="dis-flex tab-contents">
                       <div class="left-tabs">
                         <ul class="tab-nav">
-                          <li class="tab-link is-active"><a href="#">Software Development Test</a></li>
+                          <li class="tab-link is-active"><a href="#">Software Development</a></li>
                           <li class="tab-link"><a href="#">Application Development</a></li>
                           <li class="tab-link"><a href="#">Dedicated Software Teams</a></li>
                         </ul>
@@ -153,7 +153,7 @@
             </li>
 
              <li class="menu-item-has-children">
-              <a href="#">Hire </a> <span class="arrow-btn"></span>
+              <a href="#">Hire Developers </a> <span class="arrow-btn"></span>
               <div class="menu-mega">
                 <div class="container">
                   <div class="dis-flex tab-menu">
@@ -523,291 +523,65 @@
 
 
             <li class="menu-item-has-children">
-              <a href="#">Whom We Serve</a> <span class="arrow-btn"></span>
+              <a href="#">Solutions</a> <span class="arrow-btn"></span>
               <div class="menu-mega">
                 <div class="container">
                   <div class="dis-flex tab-menu">
-                    <div id="menu-inds" class="dis-flex tab-contents">
+                    <div id="mnu-tech" class="dis-flex tab-contents">
                       <div class="left-tabs">
                         <ul class="tab-nav">
-                          <li class="tab-link is-active">Industries</li>
-                          <li class="tab-link">Enterprises</li>
-                          <li class="tab-link">Product Companies</li>
+                          <li class="tab-link is-active">BY BUSINESS OUTCOME</li>
+                          <li class="tab-link">BY CLIENT TYPE</li>
                         </ul>
-                      </div>
+                      </div> 
                       <div class="right-tabs">
-                        <div class="tab-content is-active">
+                       <div class="tab-content is-active">
                           <div class="four-column">
-                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/indust.svg" class="menuicon" alt="menuicon"><span class="title">Industries</span>
-                              Innovative, future-proof software solutions</a>
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/serv-01.svg" class="menuicon" alt="menuicon"><span class="title">Software Development</span>
+                              </a>
                             </div>
                             <div class="dis-flex menu-column">
-                              <div class="flex-4">
-                                <a href="#"><span class="title">Financial Services</span>
-                                Expert advice on technology</a>
-                                <a href="#"><span class="title">Banking</span>
-                                Choose the right technology</a>
-                                <a href="#"><span class="title">Insurance</span>
-                                Assistance from product conception</a>
-                                <a href="#"><span class="title">Lending</span>
-                                Validate your idea and ensure</a>
+                              <div class="flex-3">
+                                <a href="#"><span class="title">Offshore Development Center</span>
+                                </a>
+                                <a href="#">
+                                Leverage talent, cost-effectiveness Test</a>
+                                <a href="#">
+                                Technical expertise, shared time zone</a>
+                                <a href="#">
+                                Leverage talent, cost-effectiveness</a>
+                                <a href="#">
+                                Technical expertise, shared time zone</a>
                               </div>
-                              <div class="flex-4">
-                                <a href="#"><span class="title">Investment</span>
-                                Lead your business</a>
-                                <a href="#"><span class="title">FinTech</span>
-                                Update your web & Mobile</a>
-                                <a href="#"><span class="title">Payments</span>
-                                Effortless maintenance</a>
-                                <a href="#"><span class="title">Retail</span>
-                                Consult experts for big</a>
+                              <div class="flex-3">
+                                <a href="#"><span class="title">Staff Augmentation</span>
+                                </a>
+                               
                               </div>
-                              <div class="flex-4">
-                                <a href="#"><span class="title">Healthcare</span>
-                                Lead your business into digital</a>
-                                <a href="#"><span class="title">Manufacturing</span>
-                                Update your web and mobile</a>
-                                <a href="#"><span class="title">Professional Services</span>
-                                Effortless maintenance</a>
-                                <a href="#"><span class="title">Transportation & Logistics</span>
-                                Consult experts for big data</a>
-                              </div>
-                              <div class="flex-4">
-                                <a href="#"><span class="title">Telecommunications</span>
-                                Lead your business into digital</a>
-                                <a href="#"><span class="title">Oil & Gas</span>
-                                Update your web and mobile</a>
-                                <a href="#"><span class="title">Construction</span>
-                                Effortless maintenance</a>
-                                <a href="#"><span class="title">Travel & Hospitality</span>
-                                Consult experts for big data</a>
+                              <div class="flex-3">
+                                <a href="#"><span class="title">Staff Augmentation</span>
+                                </a>
+                                
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="tab-content">
-                          <div class="three-column">
-                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/serv-02.svg" class="menuicon" alt="menuicon"><span class="title">Enterprises</span>
-                              Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="dis-flex menu-column">
-                              <div class="flex-2">
-                                <a href="#"><span class="title">Enterprise Software Development</span>
-                                Define policies, audit compliance, monitor quality</a>
-                                <a href="#"><span class="title">Specialized Enterprise Solutions</span>
-                                Ensure quality, performance, & functionality</a>
-                                <a href="#"><span class="title">Enterprise Digital Transformation</span>
-                                Validate mobile apps for optimal performance</a>
-                                <a href="#"><span class="title">Business Process Management</span>
-                                Make flawless apps for improved performance</a>
-                              </div>
-                              <div class="flex-2">
-                                <a href="#"><span class="title">Business Automation</span>
-                                Testing experts for every stage </a>
-                                <a href="#"><span class="title">Crisis Management</span>
-                                Plan, build, & ship quality products</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="other-menu">
-                            <div class="tab-title"><a href="#"><span class="title">Client Type</span>
-                              Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="flex-1 menu-column">
-                              <a href="#"><img loading="lazy" src="header-images/os-01.svg" class="menuicon" alt="menuicon"><span class="title">For Startups</span>
-                              Custom software for business goals</a>
-                              <a href="#"><img loading="lazy" src="header-images/os-02.svg" class="menuicon" alt="menuicon"><span class="title">For Enterprises</span>
-                              End-to-end automation solutions</a>
-                              <a href="#"><img loading="lazy" src="header-images/os-03.svg" class="menuicon" alt="menuicon"><span class="title">For Agencies</span>
-                              Expand with white-label services</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-content">
-                          <div class="three-column">
-                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/ind-03.svg" class="menuicon" alt="menuicon"><span class="title">Software Startups & Product Companies</span>
-                              Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="dis-flex menu-column">
-                              <div class="flex-2">
-                                <a href="#"><span class="title">Startup Consulting</span>
-                                Define policies, audit compliance, monitor quality</a>
-                                <a href="#"><span class="title">Startup Software Development</span>
-                                Ensure quality, performance, & functionality</a>
-                                <a href="#"><span class="title">How to Launch a Software Startup</span>
-                                Validate mobile apps for optimal performance</a>
-                                <a href="#"><span class="title">How to Start a SaaS Startup</span>
-                                Make flawless apps for improved performance</a>
-                              </div>
-                              <div class="flex-2">
-                                <a href="#"><span class="title">How to Hire Startup Developers</span>
-                                Testing experts for every stage  </a>
-                                <a href="#"><span class="title">Software Product Development</span>
-                                Plan, build, & ship quality products</a>
-                                <a href="#"><span class="title">SaaS Consulting</span>
-                                Plan, build, & ship quality products</a>
-                                <a href="#"><span class="title">SaaS Development</span>
-                                Plan, build, & ship quality products</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="other-menu">
-                            <div class="tab-title"><a href="#"><span class="title">Client Type</span>
-                              Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="flex-1 menu-column">
-                              <a href="#"><img loading="lazy" src="header-images/os-01.svg" class="menuicon" alt="menuicon"><span class="title">For Startups</span>
-                              Custom software for business goals</a>
-                              <a href="#"><img loading="lazy" src="header-images/os-02.svg" class="menuicon" alt="menuicon"><span class="title">For Enterprises</span>
-                              End-to-end automation solutions</a>
-                              <a href="#"><img loading="lazy" src="header-images/os-03.svg" class="menuicon" alt="menuicon"><span class="title">For Agencies</span>
-                              Expand with white-label services</a>
-                            </div>
-                          </div>
-                        </div>
+                       
                       </div>
+
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="menu-item-has-children">
-              <a href="#">Technologies</a> <span class="arrow-btn"></span>
-              <div class="menu-mega">
-                <div class="container">
-                  <div class="dis-flex tab-menu">
-                    <div id="menu-tech" class="dis-flex tab-contents">
-                      <div class="left-tabs">
-                        <ul class="tab-nav">
-                          <li class="tab-link no-link is-active"><a href="#">Software Development</a></li>
-                          <li class="tab-link"><a href="#">Application Development</a></li>
-                          <li class="tab-link"><a href="#">Dedicated Software Teams</a></li>
-                          <li class="tab-link"><a href="#">eCommerce</a></li>
-                          <li class="tab-link"><a href="#">QA & Testing</a></li>
-                          <li class="tab-link"><a href="#">Cloud Services</a></li>
-                          <li class="tab-link"><a href="#">Data Engineering</a></li>
-                          <li class="tab-link"><a href="#">Artificial Intelligence</a></li>
-                        </ul>
-                      </div>
-                      <div class="right-tabs hire-tabs">
-                        <div class="tab-content is-active">
-                          <div class="three-column">
-                            <div class="tab-title"><a href="https://www.valuecoders.com/staging/hire-developers/hire-backend-developers">
-                              <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/header-images/serv-01.svg" class="menuicon" alt="menuicon"><span class="title">Backend</span>Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="dis-flex menu-column">
-                              <div class="flex-2">                                
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-dotnet-developers"><span class="title">.NET</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-c-developers"><span class="title">C/C++</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-c-sharp-developers"><span class="title">C#</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-django-developers"><span class="title">Django</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-firebase-developers"><span class="title">Firebase</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-golang-web-developers"><span class="title">Golang</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-graphql-developers"><span class="title">GraphQL</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-nodejs-developers"><span class="title">Node</span></a>
-                              </div>
-                              <div class="flex-2">                                
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-php-developers"><span class="title">PHP</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-python-developers"><span class="title">Python</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-ror-developers"><span class="title">Ruby on Rails</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-symfony-developers"><span class="title">Symfony</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-assembly-developers"><span class="title">Assembly</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-java-developers"><span class="title">Java</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-laravel-developers"><span class="title">Laravel</span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-content">
-                          <div class="three-column">
-                            <div class="tab-title"><a href="https://www.valuecoders.com/staging/hire-developers/hire-backend-developers">
-                              <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/header-images/serv-01.svg" class="menuicon" alt="menuicon"><span class="title">Backend</span>Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="dis-flex menu-column">
-                              <div class="flex-2">                                
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-dotnet-developers"><span class="title">.NET</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-c-developers"><span class="title">C/C++</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-c-sharp-developers"><span class="title">C#</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-django-developers"><span class="title">Django</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-firebase-developers"><span class="title">Firebase</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-golang-web-developers"><span class="title">Golang</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-graphql-developers"><span class="title">GraphQL</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-nodejs-developers"><span class="title">Node</span></a>
-                              </div>
-                              <div class="flex-2">                                
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-php-developers"><span class="title">PHP</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-python-developers"><span class="title">Python</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-ror-developers"><span class="title">Ruby on Rails</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-symfony-developers"><span class="title">Symfony</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-assembly-developers"><span class="title">Assembly</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-java-developers"><span class="title">Java</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-laravel-developers"><span class="title">Laravel</span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-content">
-                          <div class="three-column">
-                            <div class="tab-title"><a href="https://www.valuecoders.com/staging/hire-developers/hire-backend-developers">
-                              <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/header-images/serv-01.svg" class="menuicon" alt="menuicon"><span class="title">Backend</span>Innovative, future-proof software solutions</a>
-                            </div>
-                            <div class="dis-flex menu-column">
-                              <div class="flex-2">                                
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-dotnet-developers"><span class="title">.NET</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-c-developers"><span class="title">C/C++</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-c-sharp-developers"><span class="title">C#</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-django-developers"><span class="title">Django</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-firebase-developers"><span class="title">Firebase</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-golang-web-developers"><span class="title">Golang</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-graphql-developers"><span class="title">GraphQL</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-nodejs-developers"><span class="title">Node</span></a>
-                              </div>
-                              <div class="flex-2">                                
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-php-developers"><span class="title">PHP</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-python-developers"><span class="title">Python</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-ror-developers"><span class="title">Ruby on Rails</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-symfony-developers"><span class="title">Symfony</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-assembly-developers"><span class="title">Assembly</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-java-developers"><span class="title">Java</span></a>
-                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-laravel-developers"><span class="title">Laravel</span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-content other-menu">
-                          <div class="tab-title">
-                            <a href="https://www.valuecoders.com/staging/">
-                            <span class="title">Other Services</span>Innovative, future-proof software solutions
-                            </a>
-                          </div>
-                          <div class="flex-1 menu-column">
-                            <a href="https://www.valuecoders.com/staging/it-staff-augmentation-services"><img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/header-images/os-01.svg" class="menuicon" alt="menuicon"><span class="title">Staff Augmentation</span>Access top technical resources on-demand</a>
-                            <a href="https://www.valuecoders.com/staging/hire-developers/hire-software-developers-india"><img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/header-images/os-02.svg" class="menuicon" alt="menuicon"><span class="title">Hire Software Developers</span>Work with skilled &amp; dedicated developers</a>
-                            <a href="https://www.valuecoders.com/staging/dedicated-development-teams"><img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/header-images/os-03.svg" class="menuicon" alt="menuicon"><span class="title">Dedicated Software Teams</span>Hire Dedicated Developers</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Solution</a> <span class="arrow-btn"></span>
-              <div class="menu-mega small-menu">
-                <a href="<?php echo $site_url; ?>about"><img loading="lazy" src="header-images/comp-01.svg" class="menuicon" alt="menuicon">Overview</a>
-                <a href="<?php echo $site_url; ?>in-media"><img loading="lazy" src="header-images/comp-02.svg" class="menuicon" alt="menuicon">In Media</a>
-                <a href="<?php echo $site_url; ?>testimonials"><img loading="lazy" src="header-images/comp-03.svg" class="menuicon" alt="menuicon">Clients & Testimonials</a>
-                <a href="<?php echo $site_url; ?>careers"><img loading="lazy" src="header-images/comp-04.svg" class="menuicon" alt="menuicon">Careers</a>
-                <a href="https://www.valuecoders.com/blog/" target="_blank"><img loading="lazy" src="header-images/comp-05.svg" class="menuicon" alt="menuicon">Blog</a>
-              </div>
-            </li>
+           
             <li class="menu-item-has-children">
               <a href="#">Industries</a> <span class="arrow-btn"></span>
               <div class="menu-mega">
                 <div class="container">
                   <div class="dis-flex tab-menu">
-                    <div id="menu-serv" class="dis-flex tab-contents">
+                    <div id="mnu-tech" class="dis-flex tab-contents">
                       <div class="right-tabs flex-full">
                         <div class="tab-content is-active">
                           <div class="four-column">
@@ -842,47 +616,25 @@
                         </div>
                         <div class="tab-content">
                           <div class="four-column">
-                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/serv-02.svg" class="menuicon" alt="menuicon"><span class="title">Technology Services</span>
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/serv-01.svg" class="menuicon" alt="menuicon"><span class="title">Software Development</span>
                               </a>
                             </div>
                             <div class="dis-flex menu-column">
                               <div class="flex-3">
                                 <a href="#"><span class="title">Offshore Development Center</span>
                                 </a>
-                                <a href="#">
-                                Leverage talent, cost-effectiveness</a>
-                                <a href="#">
-                                Technical expertise, shared time zone</a>
-                                <a href="#">
-                                Leverage talent, cost-effectiveness</a>
-                                <a href="#">
-                                Technical expertise, shared time zone</a>
-                                <div class="spacer spacer-md"></div>
                                 <a href="#"><span class="title">Offshore Development Center</span>
                                 </a>
-                                <a href="#">
-                                Leverage talent, cost-effectiveness</a>
-                                <a href="#">
-                                Technical expertise, shared time zone</a>
-                                <div class="spacer spacer-md"></div>
-                                <a href="#"><span class="title">Staff Augmentation</span>
-                                </a>
-                                <a href="#"><span class="title">Staff Augmentation</span>
+                                <a href="#"><span class="title">Offshore Development Center</span>
                                 </a>
                               </div>
                               <div class="flex-3">
                                 <a href="#"><span class="title">Staff Augmentation</span>
                                 </a>
-                                <a href="#">
-                                Technical expertise, shared time zone</a>
-                                <a href="#">
-                                Leverage talent, cost-effectiveness</a>
-                                <a href="#">
-                                Technical expertise, shared time zone</a>
-                                <a href="#">
-                                Work with skilled & dedicated developers</a>
-                                <a href="#">
-                                Technical expertise, shared time zone</a>
+                                <a href="#"><span class="title">Staff Augmentation</span>
+                                </a>
+                                <a href="#"><span class="title">Staff Augmentation</span>
+                                </a>
                               </div>
                               <div class="flex-3">
                                 <a href="#"><span class="title">Staff Augmentation</span>
@@ -893,20 +645,67 @@
                             </div>
                           </div>
                         </div>
-                        <div class="tab-content">
-                          <div class="four-column">
-                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/serv-02.svg" class="menuicon" alt="menuicon"><span class="title">Technology Services</span>
-                              </a>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+         
+          <li class="menu-item-has-children">
+              <a href="#">Company</a> <span class="arrow-btn"></span>
+              <div class="menu-mega">
+                <div class="container">
+                  <div class="dis-flex tab-menu">
+                    <div id="menu-ind" class="dis-flex tab-contents">
+                     
+                      <div class="right-tabs flex-full">
+                        <div class="tab-content is-active">
+                          <div class="three-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="header-images/serv-02.svg" class="menuicon" alt="menuicon"><span class="title">Company</span>
+                              Skilled developers, transparent billing</a>
                             </div>
                             <div class="dis-flex menu-column">
-                              <div class="flex-3">
-                                <a href="#"><span class="title">Dedicated Development Teams</span>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">About ValueCoders</span>
                                 </a>
-                              </div>
-                              <div class="flex-3">
-                                <a href="#"><span class="title">Staff Augmentation Services</span>
+                                <a href="#"><span class="title">Our Development Process & Methodology</span>
                                 </a>
+                                
                               </div>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Technology Partnerships & Certifications</span>
+                              </a>
+                                <a href="#"><span class="title">Cross-Platform App Development</span>
+                            </a>
+                                <a href="#"><span class="title">Careers & Company Culture</span>
+                                </a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="other-menu">
+                            <div class="tab-title"><a href="#"><span class="title">Resources</span>
+                          Innovative, future-proof software solutions</a>
+                            </div>
+                            <div class="flex-1 menu-column">
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Blog & Insights</span>
+                              </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Technology Guides</span>
+                            </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Pricing & Calculators</span>
+                              </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Assessments & Tools</span>
+                            </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Outsourcing Hub</span>
+                            </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Security & Compliance</span>
+                             </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Location Insights</span>
+                             </a>
+                              <a href="#"><img loading="lazy" src="header-images/otup-01.svg" class="menuicon" alt="menuicon"><span class="title">Location Insights</span>
+                             </a>
                             </div>
                           </div>
                         </div>
@@ -914,19 +713,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Case Studies</a> <span class="arrow-btn"></span>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Company</a> <span class="arrow-btn"></span>
-              <div class="menu-mega small-menu company-menu">
-                <a href="<?php echo $site_url; ?>about"><img loading="lazy" src="header-images/comp-01.svg" class="menuicon" alt="menuicon">Overview</a>
-                <a href="<?php echo $site_url; ?>in-media"><img loading="lazy" src="header-images/comp-02.svg" class="menuicon" alt="menuicon">In Media</a>
-                <a href="<?php echo $site_url; ?>testimonials"><img loading="lazy" src="header-images/comp-03.svg" class="menuicon" alt="menuicon">Clients & Testimonials</a>
-                <a href="<?php echo $site_url; ?>careers"><img loading="lazy" src="header-images/comp-04.svg" class="menuicon" alt="menuicon">Careers</a>
-                <a href="https://www.valuecoders.com/blog/" target="_blank"><img loading="lazy" src="header-images/comp-05.svg" class="menuicon" alt="menuicon">Blog</a>
               </div>
             </li>
           
@@ -947,6 +733,8 @@
           </div>
         </div>
       </div>
+     
+      
     </div>
   </div>
   </div>
