@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 .footer {
   width: 100%;
   background: linear-gradient(90deg, #05164d 0%, #0c33b3 100%);
@@ -260,31 +261,6 @@
     .footer .footer-bottom h3 {
       font-weight: 500; } }
 /*Media Query Ends Here*/
-@media only screen and (min-width: 768px) {
-  @font-face {
-    font-family: "Lexend Deca";
-    src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff"), url("../fonts/LexendDeca-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; }
-  @font-face {
-    font-family: "Lexend Deca";
-    src: url("../fonts/LexendDeca-Medium.woff2") format("woff2"), url("../fonts/LexendDeca-Medium.woff") format("woff"), url("../fonts/LexendDeca-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap; }
-  @font-face {
-    font-family: "Lexend Deca";
-    src: url("../fonts/LexendDeca-SemiBold.woff2") format("woff2"), url("../fonts/LexendDeca-SemiBold.woff") format("woff"), url("../fonts/LexendDeca-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap; }
-  @font-face {
-    font-family: "Lexend Deca";
-    src: url("../fonts/LexendDeca-Bold.woff2") format("woff2"), url("../fonts/LexendDeca-Bold.woff") format("woff"), url("../fonts/LexendDeca-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap; } }
 * {
   margin: 0;
   padding: 0;
@@ -293,7 +269,7 @@
 body {
   background-color: #ffffff;
   color: #656565;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 500;
@@ -681,7 +657,7 @@ strong {
 
 ::placeholder {
   color: #9b9b9b;
-  font-family: "Lexend Deca", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -693,12 +669,12 @@ input[type="number"] {
 
 ::placeholder {
   color: #9b9b9b;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
   text-transform: capitalize; }
 
 input,
 textarea {
-  font-family: "Lexend Deca", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif; }
 
 .lighter-theme-img {
   display: none !important; }
