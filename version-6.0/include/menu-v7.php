@@ -28,7 +28,7 @@
                     <div id="menu-serv" class="dis-flex tab-contents">
                       <div class="left-tabs">
                         <ul class="tab-nav">
-                          <li class="tab-link is-active"><a href="#">Software Development</a></li>
+                          <li class="tab-link is-active"><a href="#">Software Development Services</a></li>
                           <li class="tab-link"><a href="#">Application Development</a></li>
                           <li class="tab-link"><a href="#">Dedicated Software Teams</a></li>
                         </ul>
