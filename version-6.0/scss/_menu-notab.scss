@@ -3,10 +3,9 @@ $lightcolor: #5d6579;
 $whitecolor: #fff;
 $greycolor: #e6e6e6;
 $blackcolor: #262626;
+$font12: 12px;
 $font14: 14px;
-$font15: 15px;
 $font16: 16px;
-
 .header-two {
   position: fixed;
   display: block;
@@ -67,12 +66,10 @@ $font16: 16px;
   .header-item-right {
     flex-basis: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     align-items: center;
     .mob-nav {
-      justify-content: center;
-      display: flex;
-      flex-basis: 80%;
+      margin-right: 100px;
     }
     .menu {
       ul {
@@ -134,108 +131,95 @@ $font16: 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             display: none;
             background: $whitecolor;
-            &.small-menu {
-              left: 55%;
-              width: 360px;
-              padding: 25px;
-              border-radius: 15px;
-              &.company-menu {
-                width: 310px;
-                left: 65%;
-              }
-              a {
-                padding: 15px 15px 15px 55px;
-                position: relative;
-                display: flex;
-                color: #05164d;
-                margin: 0;
-                align-items: center;
-                border-radius: 10px;
-                &:after {
-                  display: none;
-                }
-                .menuicon {
-                  position: absolute;
-                  left: 10px;
-                  top: 10px;
-                  display: block;
-                }
-                &:last-child {
-                  margin: 0;
-                }
 
-                &:hover {
-                  background: #fff9eb;
-                }
+            a {
+              padding: 15px 15px 15px 55px;
+              position: relative;
+              display: flex;
+              color: #05164d;
+              margin: 0;
+              align-items: center;
+              border-radius: 10px;
+              &:after {
+                display: none;
+              }
+              .menuicon {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                display: block;
+                filter: grayscale(1);
+               
+              }
+              &:last-child {
+                margin: 0;
+              }
+
+              &:hover {
+                background: #fff9eb;
               }
             }
-            .tab-menu {
-              .tab-contents {
-                width: 100%;
-                min-height: 380px;
-                height: 100%;
-                .left-tabs {
-                  flex-basis: 22%;
-                  border-right: 1px solid #e6e6e6;
-                  padding: 15px 25px 15px 0;
 
-                  .tab-nav {
-                    li {
-                      width: 100%;
+            &.small-menu {
+              left: 50%;
+              width: 350px;
+              padding: 20px;
+              border-radius: 10px;
 
+              .tab-menu {
+                .tab-contents {
+                  min-height: initial;
+                  .right-tabs {
+                    .tab-content {
                       a {
-                        display: block;
-                        padding: 15px 35px 15px 15px;
-                        color: $darkcolor;
-                        position: relative;
-                        cursor: pointer;
-                        background: $whitecolor;
-                        border-radius: 10px;
-                        font-weight: 500;
-                        position: relative;
-                        font-size: 16px;
-                        &:after {
-                          content: "";
-                          background: url(../header-images/arrow.svg) no-repeat
-                            center;
-                          position: absolute;
-                          top: 17px;
-                          right: 15px;
-                          width: 14px;
-                          height: 19px;
-                          background-size: 100%;
-                          opacity: 0;
-                          left: auto;
-                          bottom: auto;
+                        .title {
+                          .menuicon {
+                            top: 8px;
+                          }
                         }
                       }
-                      &.no-link {
+                      .menu-column {
+                        padding: 0;
                         a {
-                          cursor: default;
-                        }
-                      }
-
-                      &.is-active {
-                        a {
-                          background: #fff9eb;
-                          &:after {
-                            opacity: 1;
+                          line-height: 1.2;
+                          padding: 5px;
+                          width: auto;
+                          &.top-head {
+                            padding: 5px 5px 8px 38px;
+                            width: auto;
+                            margin: 5px 0 0;
                           }
                         }
                       }
                     }
                   }
                 }
+              }
+
+              &.company-menu {
+                width: 590px;
+                left: 50%;
+              }
+
+              &.pricing-menu {
+                width: 700px;
+              }
+            }
+
+            .tab-menu {
+              .tab-contents {
+                width: 100%;
+                min-height: 210px;
+                height: 100%;
 
                 .right-tabs {
-                  flex-basis: 78%;
-                  padding: 0 20px;
+                  flex-basis: 100%;
                   &.flex-full {
                     flex-basis: 100%;
                   }
                   .tab-content {
                     width: 100%;
-                    display: none;
+                    display: block;
                     height: 100%;
                     .four-column {
                       width: 100%;
@@ -246,18 +230,18 @@ $font16: 16px;
 
                     .title {
                       font-weight: 500;
-                      font-size: $font16;
+                      font-size: $font14;
                       line-height: 26px;
-                      color: $blackcolor;
+                      color: #6b7280;
                       display: block;
                       transition: all 0.3s ease-in-out;
-                      margin-bottom: 2px;
-                      &:hover{color:#FFAF00;}
+                      margin-bottom: 0;
                     }
 
                     .tab-title {
-                      padding: 15px 0;
+                      padding: 20px 0;
                       border-bottom: 1px solid $greycolor;
+                      text-transform: uppercase;
                       width: 100%;
                       a {
                         padding-left: 70px;
@@ -267,16 +251,20 @@ $font16: 16px;
                         font-weight: 400 !important;
 
                         .title {
-                          font-size: $font16;
+                          font-size: $font14;
                           line-height: 22px;
-                          color: $darkcolor;
-                          &:hover{color:#FFAF00;}
+                          color: #0f172b;
+                         
+                          &:hover {
+                            color: #ffaf00;
+                          }
                         }
 
                         .menuicon {
                           position: absolute;
                           left: 10px;
                           top: 10px;
+                          
                         }
                       }
                     }
@@ -287,20 +275,30 @@ $font16: 16px;
                     }
 
                     .menu-column {
-                      padding: 15px 0 30px;
+                      padding: 0 0 30px;
                       width: 100%;
+                      justify-content: space-between;
                       .flex-2 {
-                        flex-basis: 50%;
+                        flex-basis: 47%;
                         padding: 0 5px;
                       }
                       .flex-4 {
-                        flex-basis: 25%;
+                        flex-basis: 22%;
                         padding: 0 5px;
+                      }
+                      .flex-5 {
+                        flex-basis: 19%;
+                      }
+                      .flex-6 {
+                        flex-basis: 16%;
+                      }
+                      .flex-1 {
+                        flex-basis: 100%;
                       }
 
                       .head {
                         color: #9f9f9f;
-                        font-size: $font14;
+                        font-size: $font12;
                         text-transform: uppercase;
                         font-weight: 500;
                         margin: 10px 0 10px;
@@ -311,14 +309,36 @@ $font16: 16px;
                       }
 
                       a {
-                        margin: 0 0 12px;
-                        padding: 0;
-                          &:hover{color:#FFAF00;}
+                        margin: 0 0 2px 34px;
+                        position: relative;
+                        padding: 5px 40px 5px 5px;
+                        width: max-content;
+                        line-height: 1.2;
+                        border-radius: 5px;
+                        &.top-head {
+                          margin: 15px 0 0;
+                          padding: 5px 40px 5px 38px;
+                          width: max-content;
+                          line-height: 1;
+                          .title {
+                            margin: 0;
+                          }
+                          &.p0 {
+                            margin-top: 0;
+                          }
+                        }
+
+                        &:hover {
+                          color: #ffad00;
+                          background: #f1f5f9;
+                          .menuicon{filter: none;}
+                          .title{ color: #ffad00;}
+                        }
                       }
                     }
                     a {
                       font-weight: 400 !important;
-                      font-size: $font14;
+                      font-size: $font12;
                       line-height: 20px;
                       color: #45556c;
                       display: block;
@@ -327,13 +347,19 @@ $font16: 16px;
                       background: transparent;
 
                       .title {
-                        font-size: $font15;
-                        line-height: 22px;
+                        color: #0f172b;
+
                         &.view-all {
                           color: #ffad00;
                           &:hover {
                             color: #0f172b;
                           }
+                        }
+
+                        .menuicon {
+                          position: absolute;
+                          left: 5px;
+                          top: 5px;
                         }
                       }
                       &:hover {
@@ -373,6 +399,15 @@ $font16: 16px;
                         }
                       }
                     }
+
+                    .double-menu {
+                      display: flex;
+                      justify-content: space-between;
+                      .menu-box {
+                        flex-basis: 48%;
+                      }
+                    }
+
                     .spacer-md {
                       margin: 0 0 30px;
                     }
@@ -456,6 +491,56 @@ $font16: 16px;
                             position: absolute;
                             left: 10px;
                             top: 15px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &.solution-menu {
+              width: 95%;
+              right: 0;
+              margin: 0 auto;
+              border-radius: 10px;
+
+              .tab-menu {
+                .tab-contents {
+                  .right-tabs {
+                    .tab-content {
+                      .menu-column {
+                        padding: 0;
+                        .flex-5 {
+                          padding: 0 0 30px;
+                        }
+                        .comp-logo {
+                          border-left: 1px solid #e5e5e5;
+                          padding-left: 20px;
+                          background: #f4f4f4;
+                          position: relative;
+
+                          &:after {
+                            content: "";
+                            background: #f4f4f4;
+                            width: 100px;
+                            height: 100%;
+                            right: -30px;
+                            top: 0;
+                            position: absolute;
+                            border-radius: 0 10px 10px 0;
+                            z-index: -1;
+                          }
+
+                          a {
+                            &.top-head {
+                              padding: 0;
+                            }
+                          }
+                          p {
+                            font-size: 10px;
+                            line-height: 20px;
                           }
                         }
                       }
@@ -631,282 +716,22 @@ $font16: 16px;
     .container {
       max-width: 100%;
     }
-    .header-item-right {
-      .menu ul li {
-        .menu-mega {
-          &.small-menu {
-            left: 57%;
-            &.company-menu {
-              left: 60%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1580px) {
-  .header-two {
-    .header-item-right {
-      .menu ul li {
-        .menu-mega {
-          &.small-menu {
-            left: 44%;
-            &.company-menu {
-              left: 60%;
-            }
-          }
-        }
-      }
-    }
+    
   }
 }
 
 @media screen and (max-width: 1440px) {
-  $font14: 13px;
-  $font15: 14px;
-  $font16: 15px;
-
   .header-two {
     .container {
       padding: 0 20px;
-    }
-
-    .header-item-right {
-      .menu {
-        ul {
-          li {
-            &.menu-item-has-children {
-              a {
-                font-size: 15px;
-              }
-              &.hire-menu-item {
-                margin: 0 30px 0 60px;
-              }
-            }
-
-            .menu-mega {
-              &.small-menu {
-                left: 44%;
-                &.company-menu {
-                  left: 61%;
-                }
-              }
-              .tab-menu {
-                .tab-contents {
-                  .left-tabs {
-                    .tab-nav {
-                      li {
-                        a {
-                          font-size: 15px;
-                          //padding: 13px 35px 13px 15px;
-                        }
-                      }
-                    }
-                  }
-
-                  .right-tabs {
-                    .tab-content {
-                      .title {
-                        font-size: 15px;
-                        line-height: 24px;
-                      }
-
-                      .tab-title {
-                        a {
-                          .title {
-                            font-size: 15px;
-                            line-height: 22px;
-                          }
-                        }
-                      }
-
-                      .menu-column {
-                        padding: 15px 0 25px;
-
-                        .head {
-                          font-size: 13px;
-                          margin: 8px 0 8px;
-                        }
-
-                        a {
-                          //margin: 0 0 5px -10px;
-                        }
-                      }
-                      a {
-                        font-size: 13px;
-                        .title {
-                          font-size: 14px;
-                          line-height: 22px;
-                        }
-                        &.view-more {
-                          padding: 25px 0 0;
-                          margin: 15px 0 0;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
 
 @media screen and (max-width: 1280px) {
-  $font14: 12px;
-  $font15: 13px;
-  $font16: 14px;
-
   .header-two {
     .container {
       padding: 0 20px;
-    }
-
-    .header-item-right {
-      .menu {
-        ul {
-          li {
-            &.menu-item-has-children {
-              a {
-                font-size: 14px;
-              }
-              &.hire-menu-item {
-                margin: 0 15px 0 15px;
-              }
-            }
-
-            .menu-mega {
-              .tab-menu {
-                .tab-contents {
-                  .left-tabs {
-                    padding: 15px 20px 15px 0;
-                    .tab-nav {
-                      li {
-                        a {
-                          font-size: 14px;
-                          padding: 10px 25px 10px 10px;
-                          &:after {
-                            top: 14px;
-                            right: 10px;
-                            width: 11px;
-                            height: 14px;
-                          }
-                        }
-                      }
-                    }
-                  }
-
-                  .right-tabs {
-                    padding: 0 15px;
-
-                    .tab-content {
-                      min-height: 450px;
-
-                      .title {
-                        font-size: 13px;
-                        line-height: 20px;
-                      }
-
-                      .tab-title {
-                        padding: 10px 0;
-                        a {
-                          .title {
-                            font-size: 14px;
-                            line-height: 20px;
-                          }
-                        }
-                      }
-
-                      .menu-column {
-                        padding: 15px 0 25px;
-                        .flex-4 {
-                          padding: 0 3px;
-                        }
-                        .flex-2 {
-                          padding: 0 3px;
-                        }
-
-                        .head {
-                          font-size: 12px;
-                          margin: 8px 0 8px;
-                        }
-
-                        a {
-                          //margin: 0 0 5px -8px;
-                          //padding: 8px;
-                        }
-                      }
-                      a {
-                        padding: 8px;
-
-                        font-size: 12px;
-                        line-height: 20px;
-                        .title {
-                          font-size: 13px;
-                          line-height: 20px;
-                        }
-                        &.view-more {
-                          padding: 20px 0 0;
-                          margin: 10px 0 0;
-                        }
-                      }
-                      .other-menu {
-                        padding-left: 12px;
-                        .flex-1 {
-                          a {
-                            padding-left: 45px;
-                            .menuicon {
-                              width: 25px;
-                              height: 25px;
-                            }
-                          }
-                        }
-                        &:after {
-                          right: -50px;
-                        }
-                      }
-                    }
-
-                    &.hire-tabs {
-                      .other-menu {
-                        padding-left: 12px;
-                        &.tab-content {
-                          min-height: auto;
-                        }
-
-                        &:after {
-                          right: -50px;
-                        }
-                        .tab-title {
-                          a {
-                            padding-left: 8px;
-                          }
-                        }
-                        .menu-column {
-                          a {
-                            padding-left: 45px;
-                            width: calc(100% - 10px);
-                            margin: 0 0 5px -8px;
-                            .menuicon {
-                              width: 25px;
-                              height: 25px;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
 }

@@ -2,7 +2,7 @@ $darkcolor: #262626;
 $lightcolor: #5d6579;
 $whitecolor: #fff;
 $greycolor: #e6e6e6;
-$blackcolor: #262626;
+$blackcolor: #000;
 $font14: 14px;
 $font15: 15px;
 $font16: 16px;
@@ -67,13 +67,8 @@ $font16: 16px;
   .header-item-right {
     flex-basis: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     align-items: center;
-    .mob-nav {
-      justify-content: center;
-      display: flex;
-      flex-basis: 80%;
-    }
     .menu {
       ul {
         li {
@@ -172,10 +167,10 @@ $font16: 16px;
             .tab-menu {
               .tab-contents {
                 width: 100%;
-                min-height: 380px;
+                min-height: 525px;
                 height: 100%;
                 .left-tabs {
-                  flex-basis: 22%;
+                  flex-basis: 20%;
                   border-right: 1px solid #e6e6e6;
                   padding: 15px 25px 15px 0;
 
@@ -228,7 +223,7 @@ $font16: 16px;
                 }
 
                 .right-tabs {
-                  flex-basis: 78%;
+                  flex-basis: 80%;
                   padding: 0 20px;
                   &.flex-full {
                     flex-basis: 100%;
@@ -252,7 +247,6 @@ $font16: 16px;
                       display: block;
                       transition: all 0.3s ease-in-out;
                       margin-bottom: 2px;
-                      &:hover{color:#FFAF00;}
                     }
 
                     .tab-title {
@@ -270,7 +264,6 @@ $font16: 16px;
                           font-size: $font16;
                           line-height: 22px;
                           color: $darkcolor;
-                          &:hover{color:#FFAF00;}
                         }
 
                         .menuicon {
@@ -311,16 +304,15 @@ $font16: 16px;
                       }
 
                       a {
-                        margin: 0 0 12px;
-                        padding: 0;
-                          &:hover{color:#FFAF00;}
+                        width: calc(100% - 10px);
+                        margin: 0 0 10px -10px;
                       }
                     }
                     a {
                       font-weight: 400 !important;
                       font-size: $font14;
                       line-height: 20px;
-                      color: #45556c;
+                      color: $lightcolor;
                       display: block;
                       padding: 10px;
                       border-radius: 10px;
@@ -329,17 +321,13 @@ $font16: 16px;
                       .title {
                         font-size: $font15;
                         line-height: 22px;
-                        &.view-all {
-                          color: #ffad00;
-                          &:hover {
-                            color: #0f172b;
-                          }
-                        }
                       }
                       &:hover {
-                        color: #0f172b;
+                        background: #fff9eb;
+                        &:after {
+                          display: none;
+                        }
                       }
-
                       &.view-more {
                         color: #ffad00;
                         padding: 30px 0 0;
@@ -373,12 +361,6 @@ $font16: 16px;
                         }
                       }
                     }
-                    .spacer-md {
-                      margin: 0 0 30px;
-                    }
-                    .spacer-sm {
-                      margin: 0 0 20px;
-                    }
                     .other-menu {
                       width: 30%;
                       position: relative;
@@ -402,13 +384,12 @@ $font16: 16px;
 
                       .flex-1 {
                         a {
-                          padding-left: 45px;
+                          padding-left: 55px;
                           position: relative;
-                          margin: 0 0 20px;
                           .menuicon {
                             position: absolute;
                             left: 10px;
-                            top: 0;
+                            top: 15px;
                           }
                         }
                       }
@@ -416,11 +397,10 @@ $font16: 16px;
                   }
                   &.hire-tabs {
                     display: flex;
-                    width: 100%;
                     .tab-content {
-                      width: 100%;
+                      width: 68%;
                       .three-column {
-                        width: 100%;
+                        width: 98%;
                       }
                     }
                     .other-menu {
@@ -511,7 +491,7 @@ $font16: 16px;
       .menu ul li {
         &.menu-item-has-children {
           a {
-            color: #45556c;
+            color: #05164d;
           }
           &.hire-menu-item {
             .nor {
@@ -588,10 +568,7 @@ $font16: 16px;
       .menu ul li {
         &.menu-item-has-children {
           a {
-            color: #45556c;
-            &:hover {
-              color: #0f172b;
-            }
+            color: #05164d;
           }
           &.hire-menu-item {
             .nor {
@@ -695,12 +672,14 @@ $font16: 16px;
               }
               .tab-menu {
                 .tab-contents {
+                  min-height: 520px;
+
                   .left-tabs {
                     .tab-nav {
                       li {
                         a {
                           font-size: 15px;
-                          //padding: 13px 35px 13px 15px;
+                          padding: 13px 35px 13px 15px;
                         }
                       }
                     }
@@ -731,7 +710,7 @@ $font16: 16px;
                         }
 
                         a {
-                          //margin: 0 0 5px -10px;
+                          margin: 0 0 5px -10px;
                         }
                       }
                       a {
@@ -783,6 +762,8 @@ $font16: 16px;
             .menu-mega {
               .tab-menu {
                 .tab-contents {
+                  min-height: 450px;
+
                   .left-tabs {
                     padding: 15px 20px 15px 0;
                     .tab-nav {
@@ -837,8 +818,8 @@ $font16: 16px;
                         }
 
                         a {
-                          //margin: 0 0 5px -8px;
-                          //padding: 8px;
+                          margin: 0 0 5px -8px;
+                          padding: 8px;
                         }
                       }
                       a {
@@ -940,9 +921,6 @@ $font16: 16px;
 
     .header-item-right {
       flex-basis: 100%;
-      .mob-nav {
-        flex-basis: 100%;
-      }
       .menu {
         display: none;
         ul {
@@ -961,9 +939,7 @@ $font16: 16px;
                   }
                 }
               }
-              &.hire-menu-item {
-                margin: 20px 0 0;
-              }
+              &.hire-menu-item{margin: 20px 0 0;}
             }
 
             &:hover {
@@ -1080,10 +1056,6 @@ $font16: 16px;
                         display: block;
                       }
 
-                      .spacer-md {
-                        margin: 0 0 20px;
-                      }
-
                       .menu-column {
                         padding: 15px 0 0;
                         width: 100%;
@@ -1123,8 +1095,8 @@ $font16: 16px;
                         }
 
                         a {
-                          width: 100%;
-                          margin: 0 0 10px;
+                          width: calc(100% - 10px);
+                          margin: 0 0 5px -10px;
                         }
                       }
                       a {
@@ -1142,7 +1114,7 @@ $font16: 16px;
                           line-height: 20px;
                         }
                         &:hover {
-                          //background: #fff9eb;
+                          background: #fff9eb;
                           &:after {
                             display: none;
                           }
@@ -1182,13 +1154,12 @@ $font16: 16px;
                         .flex-1 {
                           flex-basis: 100%;
                           a {
-                            padding-left: 35px;
-                            margin: 0 0 15px;
+                            padding-left: 55px;
                             position: relative;
                             .menuicon {
                               position: absolute;
-                              left: 0;
-                              top: 0;
+                              left: 10px;
+                              top: 15px;
                             }
                           }
                         }

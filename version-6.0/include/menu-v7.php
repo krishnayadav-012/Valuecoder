@@ -675,11 +675,11 @@
                                 
                               </div>
                               <div class="flex-2">
-                                <a href="#"><span class="title">Technology Partnerships & Certifications</span>
+                                <a href="#"><span class="title">Technology Partnerships & Certifications/span>
                               </a>
-                                <a href="#"><span class="title">Cross-Platform App Development</span>
-                            </a>
                                 <a href="#"><span class="title">Careers & Company Culture</span>
+                            </a>
+                                <a href="#"><span class="title">Contact Us & Global Offices</span>
                                 </a>
                                 
                               </div>
