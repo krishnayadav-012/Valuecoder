@@ -733,6 +733,26 @@ $font16: 16px;
     .container {
       padding: 0 20px;
     }
+    .header-item-right{
+       .menu ul li {
+        .menu-mega {
+          .tab-menu{
+             .tab-contents{
+               .right-tabs {
+                .tab-content {
+                  .menu-column {
+                    a{padding: 5px 20px 5px 5px;  margin: 0 0 2px 31px; width: 100%;
+                      &.top-head{padding: 5px 20px 5px 35px; width: 100%;}
+                    }
+                  }
+                }
+               }
+             }
+          }
+          &.small-menu{left: 40%;}
+        }
+       }
+    }
   }
 }
 

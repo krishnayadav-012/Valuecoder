@@ -20,7 +20,7 @@
       <div class="header-item-right">
         <nav class="menu mob-nav" id="menu">
           <ul>
-            <li class="menu-item-has-children">
+              <li class="menu-item-has-children">
               <a href="#">Services</a> <span class="arrow-btn"></span>
               <div class="menu-mega">
                 <div class="container">
@@ -30,36 +30,38 @@
                         <div class="tab-content">
                           <div class="dis-flex menu-column">
                             <div class="flex-4">
-                              <div class="tab-title"><span class="title">Software Engineering</span>
+                              <div class="tab-title"><span class="title">Software Engineering</span><span class="ser-arrow-btn"></span>
                               </div>
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Software Development</span></a>
-                              <a href="#">
-                              Custom Software Development</a>
-                              <a href="#">
-                              Web Application Development</a>
-                              <a href="#">
-                              Mobile App Development</a>
-                              <a href="#">
-                              Enterprise Development</a>
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Quality Assurance & Testing</span></a>
-                              <a href="#">
-                              Custom Software Development</a>
-                              <a href="#">
-                              Web Application Development</a>
-                              <a href="#">
-                              Mobile App Development</a>
-                              <a href="#">
-                              Enterprise Development</a>
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Quality Assurance & Testing</span></a>
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Quality Assurance & Testing</span></a>
+                              <div class="sub-service">
+                                <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                                Software Development</span></a>
+                                <a href="#">
+                                Custom Software Development</a>
+                                <a href="#">
+                                Web Application Development</a>
+                                <a href="#">
+                                Mobile App Development</a>
+                                <a href="#">
+                                Enterprise Development</a>
+                                <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                                Quality Assurance & Testing</span></a>
+                                <a href="#">
+                                Custom Software Development</a>
+                                <a href="#">
+                                Web Application Development</a>
+                                <a href="#">
+                                Mobile App Development</a>
+                                <a href="#">
+                                Enterprise Development</a>
+                                <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                                Quality Assurance & Testing</span></a>
+                                <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                                Quality Assurance & Testing</span></a>
+                              </div>
                             </div>
                             <div class="flex-2">
-                              <div class="tab-title"><span class="title">Technology Services</span>  </div>
-                              <div class="double-menu">
+                              <div class="tab-title"><span class="title">Technology Services</span> <span class="ser-arrow-btn"></span> </div>
+                              <div class="double-menu sub-service">
                                 <div class="menu-box">
                                   <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
                                   AI & Machine Learning</span></a>
@@ -119,12 +121,14 @@
                               </div>
                             </div>
                             <div class="flex-4">
-                              <div class="tab-title"><span class="title">Team Augmentation</span>
+                              <div class="tab-title bor-0"><span class="title">Team Augmentation</span><span class="ser-arrow-btn"></span> 
                               </div>
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Dedicated Development Teams</span></a>
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Staff Augmentation Services</span></a>
+                              <div class="sub-service">
+                                <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                                Dedicated Development Teams</span></a>
+                                <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                                Staff Augmentation Services</span></a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -139,93 +143,105 @@
               <div class="menu-mega">
                 <div class="container">
                   <div class="dis-flex tab-menu">
-                    <div id="menu-serv" class="dis-flex tab-contents">
+                    <div id="mnu-hire" class="dis-flex tab-contents">
                       <div class="right-tabs">
                         <div class="tab-content">
-                          <div class="dis-flex menu-column sub-service">
+                          <div class="dis-flex menu-column">
                             <div class="flex-6">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Frontend Developers</span></a>
-                              <a href="#">
-                              React Developers</a>
-                              <a href="#">
-                              Vue.js Developers</a>
-                              <a href="#">
-                              TypeScript Developers</a>
-                              <a href="#">
-                              Angular Developers</a>
-                              <a href="#">
-                              JavaScript Developers</a>
+                              <div class="title-menu"><a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Frontend Developers</span> </a><span class="hr-arrow-btn"></span></div>
+                              <div class="hr-submenu">
+                                <a href="#">
+                                React Developers</a>
+                                <a href="#">
+                                Vue.js Developers</a>
+                                <a href="#">
+                                TypeScript Developers</a>
+                                <a href="#">
+                                Angular Developers</a>
+                                <a href="#">
+                                JavaScript Developers</a>
+                              </div>
                             </div>
                             <div class="flex-6">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Backend Developers</span></a>
-                              <a href="#">
-                              React Developers</a>
-                              <a href="#">
-                              Vue.js Developers</a>
-                              <a href="#">
-                              TypeScript Developers</a>
-                              <a href="#">
-                              Angular Developers</a>
-                              <a href="#">
-                              JavaScript Developers</a>
+                              <div class="title-menu"> <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Backend Developers</span></a><span class="hr-arrow-btn"></span></div>
+                              <div class="hr-submenu">
+                                <a href="#">
+                                React Developers</a>
+                                <a href="#">
+                                Vue.js Developers</a>
+                                <a href="#">
+                                TypeScript Developers</a>
+                                <a href="#">
+                                Angular Developers</a>
+                                <a href="#">
+                                JavaScript Developers</a>
+                              </div>
                             </div>
                             <div class="flex-6">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Mobile App Developers</span></a>
-                              <a href="#">
-                              React Developers</a>
-                              <a href="#">
-                              Vue.js Developers</a>
-                              <a href="#">
-                              TypeScript Developers</a>
-                              <a href="#">
-                              Angular Developers</a>
-                              <a href="#">
-                              JavaScript Developers</a>
+                               <div class="title-menu"><a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Mobile App Developers</span></a><span class="hr-arrow-btn"></span></div>
+                              <div class="hr-submenu">
+                                <a href="#">
+                                React Developers</a>
+                                <a href="#">
+                                Vue.js Developers</a>
+                                <a href="#">
+                                TypeScript Developers</a>
+                                <a href="#">
+                                Angular Developers</a>
+                                <a href="#">
+                                JavaScript Developers</a>
+                              </div>
                             </div>
                             <div class="flex-6">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Cloud & Infrastructure</span></a>
-                              <a href="#">
-                              React Developers</a>
-                              <a href="#">
-                              Vue.js Developers</a>
-                              <a href="#">
-                              TypeScript Developers</a>
-                              <a href="#">
-                              Angular Developers</a>
-                              <a href="#">
-                              JavaScript Developers</a>
+                               <div class="title-menu"> <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Cloud & Infrastructure</span></a><span class="hr-arrow-btn"></span></div>
+                              <div class="hr-submenu">
+                                <a href="#">
+                                React Developers</a>
+                                <a href="#">
+                                Vue.js Developers</a>
+                                <a href="#">
+                                TypeScript Developers</a>
+                                <a href="#">
+                                Angular Developers</a>
+                                <a href="#">
+                                JavaScript Developers</a>
+                              </div>
                             </div>
                             <div class="flex-6">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              QA & Testing</span></a>
-                              <a href="#">
-                              React Developers</a>
-                              <a href="#">
-                              Vue.js Developers</a>
-                              <a href="#">
-                              TypeScript Developers</a>
-                              <a href="#">
-                              Angular Developers</a>
-                              <a href="#">
-                              JavaScript Developers</a>
+                              <div class="title-menu"> <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              QA & Testing</span></a><span class="hr-arrow-btn"></span></div>
+                              <div class="hr-submenu">
+                                <a href="#">
+                                React Developers</a>
+                                <a href="#">
+                                Vue.js Developers</a>
+                                <a href="#">
+                                TypeScript Developers</a>
+                                <a href="#">
+                                Angular Developers</a>
+                                <a href="#">
+                                JavaScript Developers</a>
+                              </div>
                             </div>
                             <div class="flex-6">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Data & AI Engineers</span></a>
-                              <a href="#">
-                              React Developers</a>
-                              <a href="#">
-                              Vue.js Developers</a>
-                              <a href="#">
-                              TypeScript Developers</a>
-                              <a href="#">
-                              Angular Developers</a>
-                              <a href="#">
-                              JavaScript Developers</a>
+                               <div class="title-menu"><a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Data & AI Engineers</span></a><span class="hr-arrow-btn"></span></div>
+                              <div class="hr-submenu">
+                                <a href="#">
+                                React Developers</a>
+                                <a href="#">
+                                Vue.js Developers</a>
+                                <a href="#">
+                                TypeScript Developers</a>
+                                <a href="#">
+                                Angular Developers</a>
+                                <a href="#">
+                                JavaScript Developers</a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -245,52 +261,60 @@
                         <div class="tab-content">
                           <div class="dis-flex menu-column">
                             <div class="flex-5">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Startups</span></a>
-                              <a href="#">
-                              Launch Your MVP in 90 Days</a>
-                              <a href="#">
-                              Build Products Investors Love</a>
-                              <a href="#">
-                              On-Demand CTO</a>
-                              <a href="#">
-                              Validate Ideas Before Big Spend</a>
+                             <div class="title-menu"> <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Startups</span></a><span class="tech-arrow-btn"></span></div>
+                              <div class="sub-tech">
+                                <a href="#">
+                                Launch Your MVP in 90 Days</a>
+                                <a href="#">
+                                Build Products Investors Love</a>
+                                <a href="#">
+                                On-Demand CTO</a>
+                                <a href="#">
+                                Validate Ideas Before Big Spend</a>
+                              </div>
                             </div>
                             <div class="flex-5">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Scale-ups</span></a>
-                              <a href="#">
-                              Remove Tech Bottlenecks</a>
-                              <a href="#">
-                              Cloud & DevOps</a>
-                              <a href="#">
-                              Expand Teams in 2 Weeks</a>
-                              <a href="#">
-                              Modernize Architecture</a>
+                             <div class="title-menu"> <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Scale-ups</span></a><span class="tech-arrow-btn"></span></div>
+                              <div class="sub-tech">
+                                <a href="#">
+                                Remove Tech Bottlenecks</a>
+                                <a href="#">
+                                Cloud & DevOps</a>
+                                <a href="#">
+                                Expand Teams in 2 Weeks</a>
+                                <a href="#">
+                                Modernize Architecture</a>
+                              </div>
                             </div>
                             <div class="flex-5">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Enterprises</span></a>
-                              <a href="#">
-                              Deliver at Global Scale</a>
-                              <a href="#">
-                              Seamless System Integration</a>
-                              <a href="#">
-                              Ensure Global Compliance</a>
-                              <a href="#">
-                              Manage Distributed Teams</a>
+                               <div class="title-menu"><a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Enterprises</span></a><span class="tech-arrow-btn"></span></div>
+                              <div class="sub-tech">
+                                <a href="#">
+                                Deliver at Global Scale</a>
+                                <a href="#">
+                                Seamless System Integration</a>
+                                <a href="#">
+                                Ensure Global Compliance</a>
+                                <a href="#">
+                                Manage Distributed Teams</a>
+                              </div>
                             </div>
                             <div class="flex-5">
-                              <a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
-                              Regulated Industries</span></a>
-                              <a href="#">
-                              Audit-Ready Software</a>
-                              <a href="#">
-                              Proactive Compliance Management</a>
-                              <a href="#">
-                              Enterprise-Grade Security</a>
-                              <a href="#">
-                              Transform Without Compliance Risk</a>
+                              <div class="title-menu"><a class="top-head" href=""> <span class="title"><img loading="lazy" src="header-images/notab-ser01.svg" class="menuicon" alt="menuicon">
+                              Regulated Industries</span></a><span class="tech-arrow-btn"></span></div>
+                              <div class="sub-tech">
+                                <a href="#">
+                                Audit-Ready Software</a>
+                                <a href="#">
+                                Proactive Compliance Management</a>
+                                <a href="#">
+                                Enterprise-Grade Security</a>
+                                <a href="#">
+                                Transform Without Compliance Risk</a>
+                              </div>
                             </div>
                             <div class="flex-5 comp-logo">
                               <a class="top-head" href=""> <span class="title">

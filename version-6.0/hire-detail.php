@@ -15,13 +15,13 @@
     <link rel="preload stylesheet" type="text/css" href="./css/hirepage.min.css" defer />
   </head>
   <body>
-  <?php require_once './include/menu-tabversion.php'; ?>
-    <section class="second-level-section">
+   <?php require_once './include/menu-notab.php'; ?>>
+    <section class="second-level-section" style="background-image:url(images/hire-banner.png);">
       <div class="container">
         <div class="breadcrumbs">
           <a href="#">Home</a> Hire Software Developers
         </div>
-        <div class="dis-flex">
+        <div class="dis-flex justify-sb">
           <div class="left-box flex-2 tick-icon-list">
             <div class="for-client-logo-box  dis-flex">
               <div class="logo-box logo1"></div>
@@ -29,33 +29,57 @@
               <div class="logo-box logo3"></div>
               <div class="logo-box logo4"></div>
             </div>
-            <h1>Hire Angular Developers</h1>
-            <h2>Hire Top 1% Dedicated Mobile App Developers, No Freelancers</h2>
-            <p>Do you want to scale up your team with pre-vetted Angular developers? Upscale your development capabilities by hiring dedicated Angular developers from ValueCoders. Our developers are masters in building all types of web applications such as single-page applications, online marketplaces, etc. Our Angular developers have 5+ years of average experience in the latest resources & tools, and they are capable of delivering end-to-end AngularJS development solutions.
+            <!--<div class="three-logo dis-flex">
+              <div class="logo-box logo1"></div>
+              <div class="logo-box logo2"></div>
+              <div class="logo-box logo3"></div>
+              </div>-->
+            <h1>Hire Dedicated Developers</h1>
+            <h2>Top 1% Dedicated Angular Developers. Pre-vetted Experts. No Freelancers</h2>
+            <p>Hire pre-vetted and highly experienced Angular developers from ValueCoders. They're skilled in every Angular version, from 2.0.0 to 15.0.0.
             </p>
-            <p>Our Angular programmers have experience in widest range of Angular versions, from version 2.0.0 to all the latest and stable ones, as our mainstream front-end technology.
+            <p>Choose us for proven talent and top-notch expertise. Get started with ValueCoders and elevate your project!
             </p>
             <ul>
-              <li>Complete control over the team</li>
-              <li>ISO 9001:2008 certified processes</li>
+              <li>IP Rights and NDA protection</li>
+              <li>No legal employment liability, no recruitment expense</li>
+              <li>Proof of Work based timesheets (Powered by <a href="https://www.workstatus.io/" class="a-dotted" target="_blank">Workstatus<sup>TM</sup></a>)</li>
             </ul>
-          </div>
-          <div class="flex-2">
-            <div class="form-right-box">
-              <div class="head">
-                <h3>Start Your 7-Days Trial</h3>
+            <div class="button-section margin-t-50">
+              <div class="btn-div">
+                <div class="btn-sec">
+                  <a class="btn rounded" href="https://calendly.com/valuecoders/7-day-trial"><span class="text-white">Start 7 Days Free Trial</span></a>
+                </div>
                 <div class="info-wrap">
-                  <p>Try Before, Commit Later </p>
+                  Learn How Trial Works
                   <div class="info">
                     <div class="info-content">
                       <h4>What happens after you contact us? </h4>
-                      <p>Our solution experts will answer your questions in a 
-                        secure online meeting. 
-                      </p>
-                      <a class="kmore" href="#">Know More</a>
+                      <p>Our solution experts will answer your questions in a secure online meeting.</p>
+                      <a class="kmore" href="https://www.valuecoders.com/hire-developers/7-day-trial">Know More</a>
                     </div>
                   </div>
                 </div>
+              </div>
+              <span class="devide">OR</span>
+              <div class="free-con">
+                <a href="https://calendly.com/valuecoders/dedicated-teams" target="_self">Request Free Consultation</a>
+              </div>
+            </div>
+          </div>
+          <!--Image on right backup
+            <div class="flex-2 right-box">
+              <picture>
+                <source type="image/webp" srcset="images/hire-bannerright.webp">
+                <source type="image/png" srcset="images/hire-bannerright.png">
+                <img loading="lazy" src="images/hire-bannerright.png" alt="Valuecoders" width="689" height="477"> 
+              </picture>
+            </div>-->
+          <div class="flex-2 header-form">
+            <div class="form-right-box">
+              <div class="head">
+                <h3>Get In Touch</h3>
+                <p>Our team will get back to you within 8 business hours or less.</p>
               </div>
               <div class="top-right-form-box">
                 <form id="contact-form-section" action="https://www.valuecoders.com/sendmail1.php"
@@ -101,7 +125,7 @@
                           type="text" placeholder="Country" value="" name="user-country">
                         <small>Please Fill Country</small>
                         <!-- country box -->
-                        <div id="cont_countryautocomplete-list" class="autocomplete-items has-data">
+                        <div id="cont_countryautocomplete-list" class="autocomplete-items has-data" style="display:none;">
                           <div><strong>A</strong>fghanistan<input type="hidden"
                             value="Afghanistan"></div>
                           <div><strong>A</strong>lbania<input type="hidden" value="Albania"></div>
@@ -155,40 +179,17 @@
                       </div>
                     </div>
                   </div>
-                  
                   <div class="button-section margin-t-50">
                     <div class="btn-div">
                       <div class="cta-wrap">
                         <div class="user-input cta-btn checkout text-center">
-                          <input type="hidden" name="Uploadedfilename" id="sbUploadedfilename" value="">
-                          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                          <input type="hidden" name="frmqueryString" value="">
-                          <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/hire-developers">
-                          <button type="submit" id="hire-submitButton" class="checkout-submit" value="Start My Trial">
-                          Start My Trial</button>
-                          <span class="arrow-wrap">
-                          <span class="arrow primera"></span>
-                          <span class="arrow segunda next"></span>
-                          <span class="arrow last"></span>
-                          </span>
+                          <button type="submit" id="hire-submitButton" class="checkout-submit" value="Hire Experts">
+                          Hire Experts</button>
+                          <span class="devide">OR</span>
+                          <a href="#" class="req">
+                          Book A Call</a>
                         </div>
                       </div>
-                      <div class="info-wrap">
-                        Learn How Trial Works
-                        <div class="info">
-                          <div class="info-content">
-                            <h4>What happens after you contact us? </h4>
-                            <p>Our solution experts will answer your questions in a 
-                              secure online meeting. 
-                            </p>
-                            <a class="kmore" href="#">Know More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="devide">OR</span>
-                    <div class="free-con">
-                      <a href="javascript:void(0)"  target="_self">Request Free Consultation</a>
                     </div>
                   </div>
                 </form>

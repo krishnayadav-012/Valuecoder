@@ -42,7 +42,7 @@
     }
     .head {
       border-radius: 10px 10px 0 0;
-      background: rgba(255, 173, 0, 0.35);
+      background: #ffad00c9;
       padding: 25px 15px;
       text-align: center;
       h3 {
@@ -55,7 +55,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
-        color: #45556c;
+        color: #0f172b;
         margin-bottom: 0;
       }
       .open-free-trial {
@@ -297,12 +297,12 @@
     }
     .checkout-submit {
       font-family: "Lexend Deca", sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 16px;
       line-height: 22px;
       background: #70c217;
       color: #fff;
-      padding: 15px 38px;
+      padding: 14px 25px;
       border: 0;
       outline: 0;
       text-transform: capitalize;
@@ -316,7 +316,7 @@
       margin-top: 0;
       text-decoration: none;
       border-radius: 50px;
-    
+
       &:hover {
         background-color: #05164d;
         text-decoration: none;
@@ -343,33 +343,60 @@
       margin-left: 19px;
     }
 
-.button-section {
-  text-align: center;
-  justify-content: center;
-  margin: 30px 0 0 !important;
-}
-.req {
-  display: inline-block;
-  text-align: center;
-  font-size: 14px;
-  color: #0f172b;
-  opacity: 0.9;
-  line-height: 1;
-  font-weight: 500;
-  text-decoration: underline !important;
-}
-.req:hover {
-  text-decoration: none !important;
-  opacity: 1;
-}
-
-    .devide{    color: rgba(63, 63, 63, 0.4); opacity: 1;
-    &:before{ background: rgba(63, 63, 63, 0.4); opacity: 1;     top: -15px;}
-    &:after{ background: rgba(63, 63, 63, 0.4); opacity: 1; bottom: -15px;}
+    .button-section {
+      text-align: center;
+      justify-content: center;
+      margin: 30px 0 0 !important;
+    }
+    .req {
+      display: inline-block;
+      text-align: center;
+      font-size: 14px;
+      color: #0f172b;
+      opacity: 0.9;
+      line-height: 1;
+      font-weight: 700;
+      text-decoration: underline !important;
+      padding: 14px 60px 14px 0;
+    }
+    .req:hover {
+      text-decoration: none !important;
+      opacity: 1;
     }
 
+    .devide {
+      color: rgba(63, 63, 63, 0.4);
+      opacity: 1;
+      &:before {
+        background: rgba(63, 63, 63, 0.4);
+        opacity: 1;
+        top: -15px;
+      }
+      &:after {
+        background: rgba(63, 63, 63, 0.4);
+        opacity: 1;
+        bottom: -15px;
+      }
+    }
 
-
+    .form-badges {
+      width: 100%;
+      border-top: 1px solid #e5e7eb;
+      margin: 20px 0 0;
+      padding: 15px 0 0;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      a {
+        filter: grayscale(100%);
+        opacity: 0.5;
+        &:hover {
+          filter: none;
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -425,6 +452,9 @@
       }
       .checkout-submit {
         font-family: sans-serif;
+      }
+      .req {
+        padding: 0;
       }
     }
   }
