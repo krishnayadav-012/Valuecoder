@@ -24,7 +24,15 @@
             <h1>Get fast, credible estimates- <br><strong>built for CTOs & founders</strong></h1>
             <p>Professional development cost calculators backed by 21+ years of project data.<br> Make informed decisions with confidence. 
             </p>
-            <div class="btn-container"><a href="http://localhost/valuecoders.com/staging/contact" class="cta-button">Start Calculator</a></div>
+            <div class="button-section margin-t-50 justify-center">
+              <div class="btn-div">
+                <div class="btn-sec">
+                  <a href="https://www.valuecoders.com/staging/contact/?cta=free-trial" class="btn rounded">
+                  <span class="text-white">Start Calculator</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -121,7 +129,7 @@
                     </ul>
                     <a class="link-anc" href="#">Start Calculator</a>
                   </div>
-                   <div class="card">
+                  <div class="card">
                     <div class="card-top">
                       <img class="card-icon" loading="lazy" src="images/home-images/calc-01.svg" alt="Hire" width="60" height="60">
                       <h3>Python Team Augmentation</h3>
@@ -164,7 +172,7 @@
                     </ul>
                     <a class="link-anc" href="#">Start Calculator</a>
                   </div>
-                   <div class="card">
+                  <div class="card">
                     <div class="card-top">
                       <img class="card-icon" loading="lazy" src="images/home-images/calc-01.svg" alt="Hire" width="60" height="60">
                       <h3>Python Team Augmentation</h3>
@@ -207,7 +215,7 @@
                     </ul>
                     <a class="link-anc" href="#">Start Calculator</a>
                   </div>
-                   <div class="card">
+                  <div class="card">
                     <div class="card-top">
                       <img class="card-icon" loading="lazy" src="images/home-images/calc-01.svg" alt="Hire" width="60" height="60">
                       <h3>Python Team Augmentation</h3>
@@ -250,7 +258,7 @@
                     </ul>
                     <a class="link-anc" href="#">Start Calculator</a>
                   </div>
-                   <div class="card">
+                  <div class="card">
                     <div class="card-top">
                       <img class="card-icon" loading="lazy" src="images/home-images/calc-01.svg" alt="Hire" width="60" height="60">
                       <h3>Python Team Augmentation</h3>
@@ -439,7 +447,15 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
           </p>
         </div>
-        <div class="btn-container dis-flex justify-center""><a href="#" class="cta-button">CONTACT US</a></div>
+        <div class="button-section justify-center">
+          <div class="btn-div">
+            <div class="btn-sec">
+              <a href="https://www.valuecoders.com/staging/contact/?cta=free-trial" class="btn rounded">
+              <span class="text-white">CONTACT US</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="success-slider-section white-success  padding-t-120 padding-b-120">

@@ -4524,7 +4524,7 @@ body.page-template-template-testimonials .client-video-section iframe,
       .hero-section .dis-flex .content-wrap p {
         margin-top: 18px;
         line-height: 30px;
-        color: #F3F4F6;
+        color: #f3f4f6;
         font-size: 18px;
         font-weight: 400; }
         .hero-section .dis-flex .content-wrap p:first-of-type {
@@ -4586,6 +4586,21 @@ body.page-template-template-testimonials .client-video-section iframe,
       color: #111827; }
     .award-section .stats .stat:last-child {
       border: 0; }
+
+.button-section .btn-sec {
+  justify-content: center; }
+  .button-section .btn-sec .btn {
+    background-color: #ffffff;
+    color: #05164d; }
+    .button-section .btn-sec .btn.rounded:before {
+      background-color: #ffad00; }
+    .button-section .btn-sec .btn.rounded .text-white {
+      color: #05164d; }
+    .button-section .btn-sec .btn.rounded:hover {
+      text-decoration: none; }
+
+.experts-talk-first-section .button-section {
+  margin: 40px 0 0; }
 
 @media (max-width: 1440px) {
   .hero-section .dis-flex .left-box {
@@ -4665,7 +4680,10 @@ body.page-template-template-testimonials .client-video-section iframe,
       .award-section .stats .stat:nth-child(2) {
         border-right: 0; }
       .award-section .stats .stat:nth-child(3), .award-section .stats .stat:nth-child(4) {
-        border-top: 1px solid rgba(5, 22, 77, 0.4); } }
+        border-top: 1px solid rgba(5, 22, 77, 0.4); }
+
+  .experts-talk-first-section .button-section {
+    margin: 20px 0 0; } }
 @media (max-width: 479px) {
   .award-section {
     padding-top: 50px; } }

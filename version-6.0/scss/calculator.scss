@@ -16,11 +16,10 @@
   position: relative;
   display: flex;
   display: -webkit-flex;
-  background-color: rgba(4, 12, 23, .5);
+  background-color: rgba(4, 12, 23, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  
 
   .dis-flex {
     align-items: center;
@@ -33,13 +32,16 @@
 
       h1 {
         color: $white;
-        strong{color:$yellow; font-weight: bold;}
+        strong {
+          color: $yellow;
+          font-weight: bold;
+        }
       }
 
       p {
         margin-top: 18px;
         line-height: 30px;
-        color: #F3F4F6;
+        color: #f3f4f6;
         font-size: $font-18;
         font-weight: 400;
         &:first-of-type {
@@ -79,14 +81,18 @@
       }
 
       .btn-container {
-        a{color:$navy-blue; text-transform: inherit;
-        &:hover{text-decoration: none;}
+        a {
+          color: $navy-blue;
+          text-transform: inherit;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
   }
 
- &:before {
+  &:before {
     content: "";
     background: rgba(5, 22, 77, 0.7);
     position: absolute;
@@ -97,20 +103,16 @@
   }
 }
 
-.slide-logo{padding-bottom:0;
-
+.slide-logo {
+  padding-bottom: 0;
 }
 
-
 .award-section {
-  
-
   .stats {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 100%;
-  
 
     .stat {
       border-right: 1px solid rgba(5, 22, 77, 0.4);
@@ -130,14 +132,34 @@
       }
     }
   }
- 
 }
 
+.button-section {
+  .btn-sec {
+    justify-content: center;
+    .btn {
+      background-color: $white;
+      color: $navy-blue;
+      &.rounded {
+        &:before {
+          background-color: $yellow;
+        }
+        .text-white {
+          color: $navy-blue;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
-
-
-
-
+.experts-talk-first-section {
+  .button-section {
+    margin: 40px 0 0;
+  }
+}
 
 //New Home Page Ends Here*/
 
@@ -161,15 +183,15 @@
     .dis-flex {
       .left-box {
         flex-basis: 90%;
-        h1{font-size: 60px;
-          line-height: 1.4;}
+        h1 {
+          font-size: 60px;
+          line-height: 1.4;
+        }
       }
     }
   }
 
-    .award-section {
-   
-
+  .award-section {
     .stats {
       .stat {
         h2 {
@@ -179,35 +201,37 @@
       }
     }
   }
-
-
 }
 
 @media (max-width: 1024px) {
   .hero-section {
     .dis-flex {
       .left-box {
-        h1{font-size: 50px;
-          line-height: 1.4;}
+        h1 {
+          font-size: 50px;
+          line-height: 1.4;
+        }
       }
     }
   }
   .slide-logo {
-    .logo-section{padding:0;}
+    .logo-section {
+      padding: 0;
+    }
   }
-   .award-section {
+  .award-section {
     .stats {
       max-width: 100%;
       .stat {
         padding: 25px 20px;
       }
     }
-    
   }
 }
 
 @media (max-width: 979px) {
-  .hero-section {background: $gradient !important;
+  .hero-section {
+    background: $gradient !important;
     .dis-flex {
       .left-box {
         flex-basis: 100%;
@@ -217,9 +241,10 @@
         }
       }
     }
-    &:before{display:none;}
+    &:before {
+      display: none;
+    }
   }
- 
 }
 
 @media (max-width: 767px) {
@@ -258,8 +283,7 @@
       }
     }
   }
- .award-section {
-   
+  .award-section {
     .stats {
       max-width: 100%;
       border: 1px solid rgba(5, 22, 77, 0.4);
@@ -271,19 +295,28 @@
           font-size: 32px;
           line-height: 40px;
         }
-        &:nth-child(2){border-right:0;}
-        
-        &:nth-child(3), &:nth-child(4)  {
+        &:nth-child(2) {
+          border-right: 0;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
           border-top: 1px solid rgba(5, 22, 77, 0.4);
         }
       }
     }
-   
+  }
+  .experts-talk-first-section {
+    .button-section {
+      margin: 20px 0 0;
+    }
   }
 }
 
 @media (max-width: 479px) {
-.award-section{padding-top:50px;}
+  .award-section {
+    padding-top: 50px;
+  }
 }
 
 //Not Required
