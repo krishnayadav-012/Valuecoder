@@ -740,7 +740,7 @@
         </div>
       </div>
     </section>
-    <section class="success-slider-section  padding-t-120 padding-b-120">
+    <section class="success-slider-section white-success  padding-t-120 padding-b-120">
       <div class="container">
         <div class="top-section b-100">
           <h2>Success Stories</h2>
