@@ -179,16 +179,16 @@
 
         .card-content {
           h5 {
-            color: #110302;
+            color: $gray-900;
           }
           h4 {
-            color: #110302;
+            color: $gray-900;;
           }
           p {
-            color: #5e6373;
+            color: $gray-600;
           }
           .expand {
-            color: #110302;
+            color: $gray-900;
             &:after {
               background: url(../images/home-images/barrow.svg) no-repeat center;
               background-size: 100%;

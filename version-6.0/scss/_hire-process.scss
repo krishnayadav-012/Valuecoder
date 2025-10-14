@@ -20,14 +20,7 @@
 
   .col-right {
     padding-left: 50px;
-    .head-txt {
-      h2 {
-        color: rgba(5, 22, 77, 1);
-      }
-      p {
-        color: #3f3f3f;
-      }
-    }
+    
   }
   .process-step {
     position: relative;
@@ -79,7 +72,7 @@
           }
           h4 {
             margin: 10px 0 10px;
-            color: #3f3f3f;
+         
             font-size: 20px;
           }
           p {
@@ -91,7 +84,6 @@
               position: relative;
               font-size: 14px;
               padding-left: 15px;
-              color: #666;
               margin: 0 0 5px;
               line-height: 180%;
               list-style: none;

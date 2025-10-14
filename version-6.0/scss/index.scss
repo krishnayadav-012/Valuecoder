@@ -182,10 +182,10 @@
   }
 
   .suggest {
-    font-weight: 500;
+    font-weight: $bold;
     font-size: 32px;
-    line-height: 44px;
-    color: $gray;
+    line-height: 38px;
+    color: $greyBannerfont;
     display: block;
     margin-top: 5px;
   }
@@ -195,20 +195,15 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 27px;
-      color: $gray;
+      color: $greyBannerfont;
       margin-top: 12px;
       list-style-type: none;
       a {
-        color: $green;
+        color: $yellow;
+        &:hover{text-decoration: underline;}
       }
     }
   }
-}
-
-h2 {
-  font-size: 46px;
-  line-height: 58px;
-
 }
 
 h3 {

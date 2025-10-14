@@ -57,10 +57,11 @@
       margin: 20px 0 0;
       h3 {
         margin: 0 0 10px;
+        a{color:$gray-900;}
       }
 
       p {
-        color: #0f172b;
+        color: $gray-600;
         margin: 0 0 20px;
       }
 
@@ -80,10 +81,9 @@
             center;
           margin: 2px 0 0 8px;
         }
-        &:hover {
+        &:hover {text-decoration: underline;
           &:after {
             margin-left: 15px;
-            text-decoration: underline;
           }
         }
       }

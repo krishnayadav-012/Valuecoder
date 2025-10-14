@@ -6,7 +6,7 @@
       margin-top: 20px;
       padding: 0 10px;
       display: flex;
-      flex-wrap: wrap;
+    
 
       .inner-box {
         border-bottom: 4px solid rgba(238, 238, 238, 1);
@@ -37,7 +37,7 @@
             line-height: 22px;
             font-size: 14px;
             text-align: center;
-            color: rgba(63, 63, 63, 0.8);
+            color: $gray-500;
             font-weight: 600;
             background-color: $white;
             position: relative;
@@ -54,7 +54,7 @@
             }
             a {
               display: block;
-              color: rgba(63, 63, 63, 0.8);
+              color: $gray-500;
               font-weight: 600 !important;
               &:after {
                 content: "";
@@ -79,7 +79,7 @@
               }
               &:hover {
                 color: $white;
-                border-color: #ffad00;
+                border-color: $yellow;
                 &:after {
                   background: $yellow;
                 }
@@ -198,6 +198,7 @@
       .col-box {
         margin-top: 15px;
         padding: 0 5px;
+        flex-wrap: wrap;
         .inner-box {
           min-height: initial;
           ul {

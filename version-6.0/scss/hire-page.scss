@@ -153,6 +153,7 @@
       font-size: 17px;
       font-weight: 600;
       background: rgba(255, 173, 0, 0.2);
+      color:  $gray-900;
       .sub-title {
         font-size: 14px;
         font-weight: 500;
@@ -169,7 +170,7 @@
       text-align: center;
       min-height: 80px;
       display: flex;
-      color: #3f3f3f;
+      color: $gray-900;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
@@ -190,9 +191,9 @@
           padding-left: 76px;
           justify-content: flex-start;
           font-weight: 600;
-          color: #05164d;
+          
           &.title {
-            color: #3f3f3f;
+            color:  $gray-900;
           }
         }
       }
@@ -269,7 +270,7 @@
           content: "";
           clear: both;
           display: inline-block;
-          background-color: #ffb81d;
+          background-color: $yellow;
           border-radius: 50%;
           position: absolute;
           height: 11px;
@@ -298,7 +299,7 @@
           margin-bottom: 10px;
           color: $headDay;
           font-weight: 600;
-          color: #3f3f3f;
+          color: $gray-600;
         }
       }
     }
@@ -427,7 +428,7 @@
   h5 {
     font-weight: 500;
     position: relative;
-    color: #212121;
+    color: $gray-600;
   }
 
   h3,
@@ -578,14 +579,14 @@
     border-radius: 40px;
     text-decoration: none;
     padding: 14px 25px;
-    color: #212121;
+    color: $gray-900;
     transition: all 0.3s ease-in-out;
     margin: 20px 20px 0 0;
     &:hover,
     &.active {
       background: rgba(255, 173, 0, 0.15);
-      color: #212121;
-      border-color: #ffad00;
+       color: $gray-900;
+      border-color: $yellow;
     }
   }
 }
@@ -604,7 +605,7 @@
     h3 {
       font-size: 16px;
       line-height: 26px;
-      color: #656565;
+      color: $gray-600;
     }
 
     &::before {
@@ -763,7 +764,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 23px;
-        color: #212121;
+        color: $gray-600;
       }
     }
   }
@@ -784,18 +785,18 @@
         margin: 18px 18px 0 0;
         line-height: 22px;
         text-align: center;
-        color: #666666;
+          color: $gray-600;
         font-weight: 400;
         background-color: rgba(217, 217, 217, 0.32);
         a {
           display: block;
-          color: #666666;
+            color: $gray-600;
         }
 
         &:hover {
           background-color: rgba(255, 173, 0, 0.15);
-          color: #212121;
-          border-color: #ffad00;
+            color: $gray-600;
+          border-color: $yellow;
         }
       }
     }
@@ -845,7 +846,7 @@
 
       h3 {
         font-size: 20px;
-        color: #212121;
+          color: $gray-600;
       }
     }
     .right-box {
@@ -925,12 +926,12 @@
           font-size: 12px;
           text-transform: uppercase;
           font-weight: 700;
-          color: #3f3f3f;
+            color: $gray-600;
           margin: 0 0 10px;
         }
         h4 {
           margin: 0 0 10px;
-          color: #3f3f3f;
+           color: $gray-600;
           font-size: 20px;
         }
         ul {

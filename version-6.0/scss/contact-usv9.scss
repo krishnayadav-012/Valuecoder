@@ -27,7 +27,7 @@
         font-size: 36px;
         line-height: 49px;
         text-transform: capitalize;
-        color: #05164d;
+        color: $navy-blue;
         font-weight: 600;
       }
       p {
@@ -35,7 +35,6 @@
         font-size: 16px;
         line-height: 21px;
         margin-top: 0;
-        color: rgba(5, 22, 77, 0.6);
       }
       .logo-box {
         background: #fff url("../images/vc-logo-dark-contact.svg") center center

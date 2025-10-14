@@ -6,3 +6,9 @@
 /wp/wp-includes/*
 /wp/wp-content/uploads/*
 /wp/wp-content/upgrade/*
+
+
+version-2.0/*
+version-3.0/*
+version-4.0/*
+version-5.0/*

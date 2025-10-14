@@ -19,7 +19,7 @@
       }
       strong {
         font-size: 24px;
-        color: $darkblack;
+        color: $gray-900;
         margin-right: 10px;
       }
     }
@@ -87,13 +87,7 @@
         font-size: 56px;
         line-height: 55px;
         margin: 0 0 5px;
-        color: $darkblack;
       }
-
-      p {
-        color: $darkblack;
-      }
-
       &:last-child {
         border: 0;
       }
@@ -116,7 +110,6 @@
       justify-content: center;
       background: #fff;
       h4 {
-        color: #0f172b;
         font-size: 20px;
         margin: 0 35px;
         background: $white;

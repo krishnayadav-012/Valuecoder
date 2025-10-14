@@ -164,14 +164,14 @@
       color: $darkYellow;
     }
     p {
-      color: rgba(255, 255, 255, 0.8) !important;
+      color: #D1D5DB !important;
     }
     ul {
       li {
-        color: rgba(255, 255, 255, 0.8);
+        color: #D1D5DB;
       }
     }
-    a{color: rgba(255, 255, 255, 0.8); text-decoration: underline;
+    a{color: #D1D5DB; text-decoration: underline;
     &:hover{color:$white; text-decoration: none;}
     }
   }

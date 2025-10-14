@@ -42,7 +42,7 @@
         border-bottom: 2px solid;
         a {
           opacity: 1;
-          color: $black;
+          color: $gray-900;
         }
       }
 
@@ -57,7 +57,7 @@
           position: relative;
           a {
             text-decoration: underline;
-            color: #414141;
+            color: $gray-600;
             &:hover {
               text-decoration: none;
             }
@@ -84,7 +84,7 @@
 
   .explore-btn {
     position: relative;
-    color: #05164d;
+    color: $navy-blue;
     font-weight: 500;
     text-decoration: underline;
     position: absolute;

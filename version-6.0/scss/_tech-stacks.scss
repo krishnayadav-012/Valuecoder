@@ -31,13 +31,13 @@
             margin: 18px 18px 0 0;
             line-height: 22px;
             text-align: center;
-            color: #666666;
+            color: $gray-500;
             font-weight: 400;
             background-color: rgba(217, 217, 217, 0.32);
             position: relative;
             a {
               display: block;
-              color: #666666;
+              color: $gray-500;
               &:after {
                 content: "";
                 position: absolute;

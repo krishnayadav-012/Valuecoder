@@ -16,13 +16,10 @@
 @import "_hire-process";
 
 @import "_software-costing";
-
 @import "_guide-topic";
 @import "_case-studies";
 @import "_tech-stack-v2";
 @import "_tech-stacks";
-
-
 @import "_menu-v3.12";
 @import "_intent-popup";
 @import "_testimonials";
@@ -146,20 +143,20 @@
   }
 }
 
-
-
-
 .table-list-section {
   .col-box-outer {
-    border: 1px solid $white;
+    border: 2px solid $white;
     border-radius: 10px;
     overflow: hidden;
+    border-right: 0;
+    border-bottom: 0;
   }
   .table-list {
     .title {
       font-size: 17px;
       font-weight: 600;
-      background: rgba(255, 173, 0, 0.2);
+      background: #f7e7c4;
+       color: $gray-900;
       .sub-title {
         font-size: 14px;
         font-weight: 500;
@@ -168,15 +165,15 @@
       }
     }
     li {
-      border-bottom: 1px solid $white;
-      border-right: 1px solid $white;
-      background: #f1f1f1;
-      padding: 17px 5px;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
+      background: #f3f4f6;
+      padding: 15px 30px;
       list-style: none;
       text-align: center;
-      min-height: 80px;
+      min-height: 90px;
       display: flex;
-      color: #3f3f3f;
+      color: $gray-600;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
@@ -187,19 +184,19 @@
         border-bottom: 0;
       }
       &:nth-child(2n) {
-        background: #f8f8f8;
+        background: #e5e7eb;
       }
     }
     &:first-child {
       ul {
         li {
           text-align: left;
-          padding-left: 76px;
+          //padding-left: 76px;
           justify-content: flex-start;
           font-weight: 600;
-          color: #05164d;
+          color: $darkblack;
           &.title {
-            color: #3f3f3f;
+            color: $darkblack;
           }
         }
       }
@@ -240,14 +237,41 @@
     .table-list {
       li {
         &:nth-child(n) {
-          display: block;
+          display: flex;
+          align-items: center;
         }
       }
     }
   }
 }
 
-
+.experts-talk-first-section{
+  .button-section {
+  .btn-sec {
+    justify-content: center;
+    .btn {
+      background-color: $white;
+      color: $navy-blue;
+      &.rounded {
+        &:before {
+          background-color: $yellow;
+        }
+        .text-white {
+          color: $navy-blue;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .free-con{
+    a{color:$white;opacity: 1;
+    &:hover{text-decoration: none; opacity: 0.6;}
+    }
+  }
+}
+}
 
 
 // for free trial
@@ -692,12 +716,6 @@
 
 /*Hire Section Updates for version 2*/
 
-
-
-
-
-
-
 /*Hire Section Updates for version 2 ends*/
 
 @media only screen and (max-width: 1600px) {
@@ -717,7 +735,7 @@
       &:first-child {
         ul {
           li {
-            padding-left: 26px;
+            //padding-left: 26px;
           }
         }
       }
@@ -753,7 +771,6 @@
       padding-bottom: 50px;
     }
   }
-
 
   .second-level-section {
     .left-box {
@@ -813,11 +830,19 @@
   }
 }
 
-
 @media only screen and (max-width: 1366px) {
-  h1{font-size: 42px; line-height: 1.2;}
-  h2{font-size: 30px; line-height: 45px;}
-  h3 {font-size: 18px; line-height: 28px;}
+  h1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 @media only screen and (max-width: 1320px) {
@@ -969,7 +994,7 @@
       &:first-child {
         ul {
           li {
-            padding-left: 15px;
+            //padding-left: 15px;
           }
         }
       }
@@ -994,8 +1019,6 @@
       margin-top: 20px;
     }
   }
-
- 
 
   .second-level-section {
     .count-box-outer {
@@ -1126,18 +1149,12 @@
     }
     .table-list {
       flex-basis: 25%;
-      &:first-child {
-        ul {
-          li {
-            padding-left: 5px;
-          }
-        }
-      }
+
       li {
         font-size: 12px;
         padding: 0 5px;
         line-height: 20px;
-        min-height: 80px;
+        min-height: 85px;
       }
       .title {
         font-size: 12px;
@@ -1240,8 +1257,6 @@
     }
   }
 
- 
-
   .second-level-section {
     .hire-services-head {
       font-size: 20px;
@@ -1287,9 +1302,6 @@
     }
   }
 
-
-
-
   h1 {
     font-size: 40px;
     line-height: 50px;
@@ -1300,5 +1312,8 @@
     line-height: 35px;
   }
 
-  h3{font-size: 18px; line-height: 28px;}
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

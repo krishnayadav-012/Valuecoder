@@ -84,19 +84,16 @@
 
         .text-box {
           h3 {
-            color: $darkblack;
             position: relative;
 
             a {
-              color: $darkblack;
+              color: $gray-900;
               &:hover {
                 text-decoration: underline;
               }
             }
           }
-          p {
-            color: #666666;
-          }
+          
           ul {
             margin: 20px 0 0;
             display: flex;
@@ -124,7 +121,7 @@
           }
 
           a {
-            color: #656565;
+            color: $gray-600;
             &:hover {
               text-decoration: underline;
             }
@@ -134,7 +131,7 @@
         .move {
           width: 40px;
           height: 46px;
-          border: 2px solid #858585;
+          border: 2px solid $gray-600;
           background: transparent;
           border-radius: 18px;
           position: absolute;

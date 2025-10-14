@@ -14,10 +14,9 @@
 
   /* Pricing cards */
   .pricing-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: end;
-
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
     .card {
       background: #fff;
       border-radius: 20px;
@@ -29,6 +28,9 @@
       justify-content: flex-start;
       min-height: 250px;
       text-align: center;
+      flex-basis: 33.33%;
+
+      &:after{content:''; position: absolute; width:100%; height:1px; left:0; top: 59.7%; background:$yellow;}
 
       &:first-child {
         border-radius: 20px 0 0 20px;
@@ -48,19 +50,19 @@
       h4 {
         font-size: 20px;
         font-weight: 600;
-        color: $natural-grey;
         margin-bottom: 15px;
       }
 
       p {
-        margin-top: auto;
+      margin: 20px 0 0;
+      padding: 20px 0 0;
       }
 
       &.featured {
         background: #00154f;
         color: #fff;
-        min-height: 290px; // taller middle card
-        padding: 60px 20px 40px;
+        padding-top: 80px;
+        margin-top: -50px;
         border-radius: 20px 20px 0 0;
 
         h4 {
@@ -106,7 +108,9 @@
             margin: 0 auto;
           }
         }
+        &:after{top: 66%;}
       }
+      
     }
   }
 
@@ -153,15 +157,19 @@
 @media (max-width: 991px) {
   .developer-costing {
     .pricing-cards {
-      grid-template-columns: repeat(1, 1fr);
       gap: 20px;
+      flex-direction: column;
+      padding-top: 0;
       .card {
         min-height: initial;
         border-radius: 20px;
+        flex-basis: 100%;
+        &:after{top: 56%; display:none;}
         &.featured {
           min-height: initial;
           border-radius: 20px;
           margin: 15px 0 0;
+          &:after{top: 60%; display:none;}
         }
 
         &:first-child {
@@ -174,6 +182,7 @@
         h3 {
           font-size: 50px;
         }
+        p{margin: 0; padding:0;}
       }
     }
   }
