@@ -16,7 +16,7 @@
     <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
   </head>
   <body>
-    <?php require_once './include/menu-tabversion.php'; ?>
+    <?php require_once './include/menu-notab.php'; ?>
     <section class="hero-section">
       <video class="row-lg vd-lazy" id="background-video" preload="yes"  loop autoplay loop muted playsinline>
         <source src="video/home-video.mp4" type="video/mp4" type="video/mp4">

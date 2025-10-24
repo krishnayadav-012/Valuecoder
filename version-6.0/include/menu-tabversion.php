@@ -22,7 +22,7 @@
           <ul>
             <li class="menu-item-has-children">
               <a href="#">Services</a> <span class="arrow-btn"></span>
-              <div class="menu-mega">
+              <div class="menu-mega" style="display:block;">
                 <div class="container">
                   <div class="dis-flex tab-menu">
                     <div id="menu-serv" class="dis-flex tab-contents">
