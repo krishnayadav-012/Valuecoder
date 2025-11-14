@@ -1,0 +1,108 @@
+.services-three-column-section {
+  counter-reset: section;
+
+  .twobox {
+    .img-box {
+      flex-basis: 35%;
+    }
+    .content-box {
+      flex-basis: 60%;
+      .threebox {
+        .img-box {
+          flex-basis: 35%;
+        }
+        .content-box {
+          flex-basis: 60%;
+        }
+        .flex-2 {
+          padding: 0 10px;
+          margin-top: 20px;
+          &.has-anchor {
+            transition: all 0.3s ease-in-out;
+            display: block;
+
+            &:hover {
+              .box-3 {
+                border: 1px solid $yellow;
+                box-shadow: 0px 16px 40px rgba(176, 202, 228, 0.2);
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+
+        .box-3 {
+          height: 100%;
+          border: 1px solid #d4e0ed;
+          border-radius: 5px;
+          padding: 30px;
+          transition: all 0.3s ease-in-out;
+
+          ul {
+            margin: 5px 0 0;
+
+            li {
+              margin: 10px 0 0;
+              font-weight: 500;
+              padding-left: 30px;
+              position: relative;
+              font-weight: 400;
+              &:before {
+                content: "";
+                background: url(../images/home-images/listing.svg) no-repeat
+                  center;
+                width: 20px;
+                height: 20px;
+                background-size: 100%;
+                position: absolute;
+                left: 0;
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .services-three-column-section {
+    .twobox {
+      .img-box {
+        flex-basis: 100%;
+      }
+      .content-box {
+        flex-basis: 100%;
+        .threebox {
+          .box-3 {
+            padding: 20px;
+            p {
+              margin: 0 0 15px;
+            }
+
+            h3 {
+              margin: 0 0 15px;
+            }
+
+            ul {
+              margin: 0 0 15px;
+              li {
+                padding-left: 27px;
+                position: relative;
+                &:before {
+                  top: 1px;
+                  width: 18px;
+                  height: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+}
