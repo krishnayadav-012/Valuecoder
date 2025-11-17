@@ -1522,10 +1522,10 @@ class MobileMenuHandler {
 
         // L3 buttons are direct children of the L3 panel DIV
         html.push(`
-            <button type="button" class="mobile-l3-toggle flex justify-between items-center w-full py-2 text-left text-sm font-semibold text-gray-800 hover:text-blue-600 ${index > 0 ? 'border-t border-gray-100 mt-1 pt-2' : ''}"
+            <button type="button" class="mobile-l3-toggle menu-three-sub ${index > 0 ? 'border-t border-gray-100 mt-1 pt-2' : ''}"
                 aria-expanded="false" aria-controls="${l4PanelId}" id="${l3Id}">
-              <span class="flex-grow text-left">${header}</span>
-              <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200 mobile-icon text-gray-500"></i>
+              <span class="second-sub-menu">${header}</span>
+              <i data-lucide="chevron-down" class="menu-three-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"></path></svg></i>
             </button>
             <div class="mobile-l4-panel hidden space-y-1" id="${l4PanelId}" role="region" aria-labelledby="${l3Id}">
         `);
@@ -1541,7 +1541,7 @@ class MobileMenuHandler {
 
   buildMenu() {
     let mobileNavHTML = [];
-    mobileNavHTML.push('<ul class="space-y-1" role="menu">');
+    mobileNavHTML.push('<ul class="mobile-spacing" role="menu">');
     
     MENU_DATA.forEach((l1Item, l1Index) => {
       const l1Id = `mobile-l1-${l1Item.id}`;
@@ -1550,14 +1550,14 @@ class MobileMenuHandler {
       mobileNavHTML.push(`
         <li role="presentation">
           <!-- FIX 1: Added a wrapper DIV and gap-3 to separate icon and text -->
-          <button type="button" class="mobile-l1-toggle flex justify-between items-center w-full px-4 py-3 text-left font-semibold text-gray-700 hover:bg-gray-100 rounded-lg"
+          <button type="button" class="mobile-l1-toggle mobile-main-menu-list"
             aria-expanded="false" aria-controls="${l2PanelId}" id="${l1Id}" role="menuitem">
-            <div class="flex items-center gap-3">
-                <i data-lucide="${l1Item.icon}" class="w-5 h-5"></i> <span class="text-left">${l1Item.label}</span>
+            <div class="m-m-text">
+                <i data-lucide="${l1Item.icon}" class="m-icon-size">  </i> <span class="text-left">${l1Item.label}  </span>
             </div>
-            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-200 mobile-icon text-gray-500"></i>
+            <i data-lucide="chevron-down" class="m-icon-size transition-transform duration-200 mobile-icon text-gray-500">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"/></svg></i>
           </button>
-          <div class="mobile-l2-panel hidden pl-4 pt-1 pb-1 border-l border-gray-200 ml-4" id="${l2PanelId}" role="group" aria-labelledby="${l1Id}">
+          <div class="mobile-l2-panel hidden " id="${l2PanelId}" role="group" aria-labelledby="${l1Id}">
             <ul class="space-y-0.5">
       `);
 
@@ -1567,12 +1567,12 @@ class MobileMenuHandler {
 
         mobileNavHTML.push(`
           <li role="presentation">
-            <button type="button" class="mobile-l2-toggle flex justify-between items-center w-full py-2 text-left text-sm font-medium text-gray-600 hover:text-blue-600"
+            <button type="button" class="mobile-l2-toggle second-sub-menu-style"
               aria-expanded="false" aria-controls="${l3PanelId}" id="${l2Id}" role="menuitem">
-              <span class="flex-grow text-left">${l2Item.label}</span>
-              <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200 mobile-icon text-gray-400"></i>
+              <span class="second-sub-menu">${l2Item.label}</span>
+              <i data-lucide="chevron-down" class="sub-inner-icon-main"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"></path></svg></i>
             </button>
-            <div class="mobile-l3-panel hidden pl-4 pb-1 border-l border-gray-200 ml-4 text-sm space-y-1" id="${l3PanelId}" role="group" aria-labelledby="${l2Id}">
+            <div class="mobile-l3-panel hidden second-last-menu" id="${l3PanelId}" role="group" aria-labelledby="${l2Id}">
                 ${this.buildAccordionGroups(l2Item)}
             </div>
           </li>
@@ -1584,8 +1584,8 @@ class MobileMenuHandler {
     
     // Add fixed CTA link
     mobileNavHTML.push(`
-      <div class="mt-4 pt-4 border-t border-gray-200">
-        <a href="/contact" class="flex items-center justify-center w-full px-4 py-3 border border-transparent text-sm font-medium rounded-lg shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+      <div class="mobile-connectr-btn">
+        <a href="/contact" class="btn-mobstyle">
           Get a Free Quote
         </a>
       </div>
@@ -1616,7 +1616,7 @@ const renderMenuFromData = () => {
         // --- L1 Button HTML ---
         l1MenuHtml.push(`
           <li role="none">            
-            <a class="nav-link nav-item-base flex items-center gap-2" 
+            <a class="nav-link nav-item-base master-menu-text" 
               data-menu-target="#${menuId}" id="${l1ButtonId}" aria-expanded="false" aria-controls="${menuId}">
                ${l1.label}
             </a>
@@ -1637,7 +1637,7 @@ const renderMenuFromData = () => {
               <li class="l2-menu-item group" role="presentation" data-l3-target="#${l3PanelId}" data-l2-text="${l2.label}">
                 <button type="button" class="KY-sidemenu"
                   role="tab" aria-selected="${isDefaultActive ? 'true' : 'false'}" aria-controls="${l3PanelId}" id="${l2ButtonId}" tabindex="${isDefaultActive ? '0' : '-1'}">
-                  <i data-lucide="${l2.icon}" class="w-5 h-5 ${l2.color} flex-shrink-0"></i>
+                  <i data-lucide="${l2.icon}" class="m-icon-size  secon-icon-menu-part"></i>
                   <span>${l2.label}</span>
                 </button>
               </li>
@@ -1651,7 +1651,7 @@ const renderMenuFromData = () => {
 
             if (displayType === 'tabs') {
                 // TAB STRUCTURE
-                l3TabsHtml.push('<nav class="-mb-px flex gap-6" role="tablist">');
+                l3TabsHtml.push('<nav class="sub-right-menu-text" role="tablist">');
                 l2.tabs.forEach((tab, tabIndex) => {
                     const tabContentId = tab.id;
                     const isActive = tabIndex === 0;
@@ -1665,8 +1665,8 @@ const renderMenuFromData = () => {
                     `);
                     
                     l3ContentBodyHtml.push(`
-                        <div data-tab-content="${tab.id}" class="h-full ${!isActive ? 'hidden' : ''} ${tab.id}-content" role="tabpanel" id="${l3PanelId}-${tab.id}" aria-labelledby="${tab.id}">
-                          <div class="grid grid-cols-${tab.columns} gap-6">
+                        <div data-tab-content="${tab.id}" class=" ${!isActive ? 'hidden' : ''} ${tab.id}-content" role="tabpanel" id="${l3PanelId}-${tab.id}" aria-labelledby="${tab.id}">
+                          <div class="master-sub-menu-cards">
                     `);
                     tab.groups.forEach(group => {
                         if (group.title !== "Hidden Links") { // Skip placeholder groups
@@ -1678,19 +1678,19 @@ const renderMenuFromData = () => {
                 l3TabsHtml.push('</nav>');
 
                 l3ContentHtml.push(`
-                    <div id="${l3PanelId}" class="l3-content-panel h-full ${!isDefaultActive ? 'hidden' : ''}" role="tabpanel" aria-labelledby="${l2ButtonId}" data-tab-group="${l2.id}">
+                    <div id="${l3PanelId}" class="l3-content-panel  ${!isDefaultActive ? 'hidden' : ''}" role="tabpanel" aria-labelledby="${l2ButtonId}" data-tab-group="${l2.id}">
                       <h3 class="sr-only">${l2.label}</h3>
-                      <div class="border-b border-gray-200 mb-6">${l3TabsHtml.join('')}</div>
-                      <div class="l3-tab-content-container h-full">${l3ContentBodyHtml.join('')}</div>
+                      <div class="right-sub-menu-top">${l3TabsHtml.join('')}</div>
+                      <div class="l3-tab-content-container ">${l3ContentBodyHtml.join('')}</div>
                     </div>
                 `);
 
             } else {
                 // SIMPLE GRID STRUCTURE
                 l3ContentHtml.push(`
-                    <div id="${l3PanelId}" class="l3-content-panel h-full ${!isDefaultActive ? 'hidden' : ''}" role="region" aria-labelledby="${l2ButtonId}">
+                    <div id="${l3PanelId}" class="l3-content-panel  ${!isDefaultActive ? 'hidden' : ''}" role="region" aria-labelledby="${l2ButtonId}">
                       <h3 class="sr-only">${l2.label}</h3>
-                      <div class="grid grid-cols-${l2.columns} gap-6">
+                      <div class="master-sub-menu-cards">
                 `);
                 l2.groups.forEach(group => {
                     if (group.title !== "Hidden Links") { // Skip placeholder groups
@@ -1703,17 +1703,17 @@ const renderMenuFromData = () => {
 
         // Assemble the final mega menu wrapper
         megaMenuHtml.push(`
-            <div id="${menuId}" class="mega-menu shadow-2xl" role="region" aria-label="${l1.label} Mega Menu" aria-labelledby="${l1ButtonId}">
-              <div class="max-w-7xl mx-auto">
-                <div class="flex border-x border-gray-200 h-[var(--mega-menu-height)] max-h-[var(--mega-menu-height)]">
+            <div id="${menuId}" class="mega-menu shadow-card" role="region" aria-label="${l1.label} Mega Menu" aria-labelledby="${l1ButtonId}">
+              <div class="desk-menu-box">
+                <div class="menu-box-inner">
                   <!-- L2 Sidebar -->
-                  <div class="l2-menu w-72 border-r border-gray-200 bg-gray-50 overflow-y-auto custom-scrollbar flex-shrink-0" role="tablist" aria-orientation="vertical">
-                    <ul class="p-3 space-y-1" role="group">
+                  <div class="l2-menu   custom-scrollbar inner-items-main" role="tablist" aria-orientation="vertical">
+                    <ul class="sub-inner-list" role="group">
                       ${l2MenuHtml.join('')}
                     </ul>
                   </div>
                   <!-- L3 Content Area -->
-                  <div class="l3-content-container flex-1 overflow-y-auto custom-scrollbar p-8 bg-white">
+                  <div class="l3-content-container sub-menu-right-part">
                       ${l3ContentHtml.join('')}
                   </div>
                 </div>
@@ -1745,7 +1745,7 @@ const renderGroup = (group) => {
         } else if (isActionLink) {
             // Collect action links separately for the action hub footer
             actionHubHtml.push(`
-                <a href="${link.href}" class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1 link-hover-effect">
+                <a href="${link.href}" class="list-anctor-new">
                     ${linkText} <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1 canonical-arrow transition-transform"></i>
                 </a>
             `);
@@ -1766,7 +1766,7 @@ const renderGroup = (group) => {
     } else {
         // Standard Group Title
         headerContent = `
-            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">
+            <h4 class="card-semi-title">
                 <span>${group.title}</span>
             </h4>
         `;
@@ -1774,17 +1774,17 @@ const renderGroup = (group) => {
 
 
     return `
-        <div class="flex flex-col">
+        <div class="  menu-box-sub">
             <div>
                 ${headerContent}
-                <ul class="space-y-2.5 text-sm text-gray-700">
+                <ul class=" second-menu-right-card">
                     ${linksHtml.join('')}
                 </ul>
             </div>
             <!-- FIX 3: Removed the 'Related' header text. This block now only runs if there are actual [Action] or [Tool] links -->
             ${actionHubHtml.length > 0 ? `
                 <div class="cross-link-box action-hub">
-                    <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Related</h5>
+                    <h5 class=" tracking-wider">Related</h5>
                     ${actionHubHtml.join('')}
                 </div>
             ` : ''}
