@@ -4,6 +4,9 @@
 // 'Related' cross-link box and promote them to standard column links.
 // FIX: Removed extra double quotes from 'text"' key in multiple places.
 // ----------------------------------------------------------------------
+
+const baseTempUrl = "http://localhost/markup-dom/valuecoders/master/menu-images/v-8/";
+
 const MENU_DATA = [
   {
     id: "services", label: "Services", icon: "layers",
@@ -1637,7 +1640,9 @@ const renderMenuFromData = () => {
               <li class="l2-menu-item group" role="presentation" data-l3-target="#${l3PanelId}" data-l2-text="${l2.label}">
                 <button type="button" class="KY-sidemenu"
                   role="tab" aria-selected="${isDefaultActive ? 'true' : 'false'}" aria-controls="${l3PanelId}" id="${l2ButtonId}" tabindex="${isDefaultActive ? '0' : '-1'}">
-                  <i data-lucide="${l2.icon}" class="m-icon-size  secon-icon-menu-part"></i>
+                  <i data-lucide="${l2.icon}" class="m-icon-size  secon-icon-menu-part">
+                  <img src="${baseTempUrl}brain-circuit.svg" alt="${l2.label}" />
+                  </i>
                   <span>${l2.label}</span>
                 </button>
               </li>
