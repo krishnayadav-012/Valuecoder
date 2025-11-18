@@ -1849,6 +1849,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--vc-gray-200);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  position: relative;
+  z-index: 99;
 }
 .master-header .master-wrapper {
   width: 100%;
@@ -1933,7 +1935,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-color: #fff;
 }
 .mega-menu .desk-menu-box {
-  max-width: 1280px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2063,6 +2065,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .master-menu-mob {
   position: fixed;
   top: 0;
+  z-index: 99 !important;
   bottom: 0;
   left: 0;
   width: 320px;
