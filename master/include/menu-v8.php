@@ -1,7 +1,7 @@
  <!-- Main Navigation -->
-  <header class="" role="banner">
+  <header class="master-header" role="banner">
     <nav aria-label="Main navigation">
-      <div class="wrapper">
+      <div class="master-wrapper">
         <div class="header-inner">
           
           <!-- Mobile Menu Button -->
@@ -42,7 +42,7 @@
     <div class="mobile-menu-content">
       <h2 class="mobile-text">Menu</h2>
       <button type="button" id="mobile-menu-close" class="menu-clos-btn">
-        <i data-lucide="x" class="close-icon-menu"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm3.707,12.293a1,1,0,1,1-1.414,1.414L12,13.414,9.707,15.707a1,1,0,0,1-1.414-1.414L10.586,12,8.293,9.707A1,1,0,0,1,9.707,8.293L12,10.586l2.293-2.293a1,1,0,0,1,1.414,1.414L13.414,12Z"/></svg></i>
+        <i data-lucide="x" class="close-icon-menu"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-5 h-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></i>
       </button>
     </div>
     

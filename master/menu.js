@@ -1497,7 +1497,7 @@ class MobileMenuHandler {
         ? 'text-blue-600 font-medium hover:text-blue-700' 
         : 'text-gray-700 font-normal hover:text-blue-600';
 
-    return `<a href="${link.href}" class="block py-1 px-1 ${styleClasses}" tabindex="-1" aria-label="${label}">${text}</a>`;
+    return `<a href="${link.href}" class="block last-innner-menu" tabindex="-1" aria-label="${label}">${text}</a>`;
   }
 
   buildAccordionGroups(l2Item) {
@@ -1525,10 +1525,10 @@ class MobileMenuHandler {
 
         // L3 buttons are direct children of the L3 panel DIV
         html.push(`
-            <button type="button" class="mobile-l3-toggle menu-three-sub ${index > 0 ? 'border-t border-gray-100 mt-1 pt-2' : ''}"
+            <button type="button" class="mobile-l3-toggle menu-three-sub ${index > 0 ? '' : ''}"
                 aria-expanded="false" aria-controls="${l4PanelId}" id="${l3Id}">
               <span class="second-sub-menu">${header}</span>
-              <i data-lucide="chevron-down" class="menu-three-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"></path></svg></i>
+              <i data-lucide="chevron-down" class="menu-three-icon mobile-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"></path></svg></i>
             </button>
             <div class="mobile-l4-panel hidden space-y-1" id="${l4PanelId}" role="region" aria-labelledby="${l3Id}">
         `);
@@ -1556,12 +1556,14 @@ class MobileMenuHandler {
           <button type="button" class="mobile-l1-toggle mobile-main-menu-list"
             aria-expanded="false" aria-controls="${l2PanelId}" id="${l1Id}" role="menuitem">
             <div class="m-m-text">
-                <i data-lucide="${l1Item.icon}" class="m-icon-size">  </i> <span class="text-left">${l1Item.label}  </span>
+                <i data-lucide="${l1Item.icon}" class="m-icon-size"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layers" class="lucide lucide-layers w-5 h-5"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>  </i> 
+                
+                <span class="text-left">${l1Item.label}  </span>
             </div>
-            <i data-lucide="chevron-down" class="m-icon-size transition-transform duration-200 mobile-icon text-gray-500">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"/></svg></i>
+            <i data-lucide="chevron-down" class="m-icon-size mobile-icon ">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"/></svg></i>
           </button>
           <div class="mobile-l2-panel hidden " id="${l2PanelId}" role="group" aria-labelledby="${l1Id}">
-            <ul class="space-y-0.5">
+            <ul class="second-menu-list-gap">
       `);
 
       l1Item.l2.forEach((l2Item, l2Index) => {
@@ -1573,7 +1575,7 @@ class MobileMenuHandler {
             <button type="button" class="mobile-l2-toggle second-sub-menu-style"
               aria-expanded="false" aria-controls="${l3PanelId}" id="${l2Id}" role="menuitem">
               <span class="second-sub-menu">${l2Item.label}</span>
-              <i data-lucide="chevron-down" class="sub-inner-icon-main"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"></path></svg></i>
+              <i data-lucide="chevron-down" class="sub-inner-icon-main mobile-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="M12.5 18 2 7.707 2.707 7l9.793 9.586L22.293 7l.707.707L12.5 18z"></path></svg></i>
             </button>
             <div class="mobile-l3-panel hidden second-last-menu" id="${l3PanelId}" role="group" aria-labelledby="${l2Id}">
                 ${this.buildAccordionGroups(l2Item)}
@@ -1638,7 +1640,7 @@ const renderMenuFromData = () => {
             // L2 Sidebar Item
             l2MenuHtml.push(`
               <li class="l2-menu-item group" role="presentation" data-l3-target="#${l3PanelId}" data-l2-text="${l2.label}">
-                <button type="button" class="KY-sidemenu"
+                <button type="button" class="my-sidemenu"
                   role="tab" aria-selected="${isDefaultActive ? 'true' : 'false'}" aria-controls="${l3PanelId}" id="${l2ButtonId}" tabindex="${isDefaultActive ? '0' : '-1'}">
                   <i data-lucide="${l2.icon}" class="m-icon-size  secon-icon-menu-part">
                   <img src="${baseTempUrl}brain-circuit.svg" alt="${l2.label}" />
@@ -1751,7 +1753,7 @@ const renderGroup = (group) => {
             // Collect action links separately for the action hub footer
             actionHubHtml.push(`
                 <a href="${link.href}" class="list-anctor-new">
-                    ${linkText} <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1 canonical-arrow transition-transform"></i>
+                    ${linkText} <i data-lucide="arrow-up-right" class=""> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3.5 h-3.5 ml-0.5 canonical-arrow group-hover/header:text-blue-600"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></i>
                 </a>
             `);
         } else {
@@ -1763,9 +1765,9 @@ const renderGroup = (group) => {
     if (hubLink) {
         // FIX 4: Refactored canonical link for proper arrow spacing and group hover behavior
         headerContent = `
-            <a href="${hubLink.href}" class="canonical-header-link flex items-center gap-1 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 group/header">
-              <span class="text-gray-900 group-hover/header:text-blue-600 transition-colors">${group.title}</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 ml-0.5 canonical-arrow group-hover/header:text-blue-600"></i>
+            <a href="${hubLink.href}" class="canonical-header-link ">
+              <span class="">${group.title}</span>
+              <i data-lucide="arrow-up-right" class=""> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3.5 h-3.5 ml-0.5 canonical-arrow group-hover/header:text-blue-600"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></i>
             </a>
         `;
     } else {

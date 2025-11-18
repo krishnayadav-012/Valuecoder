@@ -18,8 +18,6 @@
 
 /* Tab navigation on L3 */
 
-
-
   </style>
   
   <script defer src="menu.js"></script>
