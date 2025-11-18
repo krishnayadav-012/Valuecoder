@@ -14,11 +14,7 @@
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
     <link rel="preload stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
-    <style>
 
-/* Tab navigation on L3 */
-
-  </style>
   
   <script defer src="menu.js"></script>
   </head>
