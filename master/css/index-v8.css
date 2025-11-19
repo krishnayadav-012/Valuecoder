@@ -1936,7 +1936,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-color: #fff;
 }
 .mega-menu .desk-menu-box {
-  max-width: 1380px;
+  max-width: 1480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2330,7 +2330,6 @@ button.tab-btn-base {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 4px 8px;
   font-family: inherit;
 }
 
@@ -2867,7 +2866,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .l3-content-panel li {
-  margin: 4px 0;
+  margin: 8px 0 0 0;
 }
 
 /* Make sure images/icons inside .group behave */
