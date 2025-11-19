@@ -14,6 +14,7 @@
   --vc-white-95: rgba(255, 255, 255, 0.95);
   --mega-height: 520px;
   --myfont: "Lexend Deca", sans-serif;
+  --master-menu-height: 65vh;
 }
 
 // my header
@@ -132,8 +133,8 @@
       display: flex;
       border-left: 1px solid #e5e7eb;
       border-right: 1px solid #e5e7eb;
-      height: var(--mega-menu-height);
-      max-height: var(--mega-menu-height);
+      height: var(--master-menu-height);
+      max-height: var(--master-menu-height);
     }
 
   }

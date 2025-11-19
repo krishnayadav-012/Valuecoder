@@ -1842,6 +1842,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   --vc-white-95: rgba(255, 255, 255, 0.95);
   --mega-height: 520px;
   --myfont: "Lexend Deca", sans-serif;
+  --master-menu-height: 65vh;
 }
 
 .master-header {
@@ -1943,8 +1944,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   border-left: 1px solid #e5e7eb;
   border-right: 1px solid #e5e7eb;
-  height: var(--mega-menu-height);
-  max-height: var(--mega-menu-height);
+  height: var(--master-menu-height);
+  max-height: var(--master-menu-height);
 }
 
 .mega-menu.is-open {
