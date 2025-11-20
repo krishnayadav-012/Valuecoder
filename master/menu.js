@@ -17,20 +17,20 @@ const MENU_DATA = [
             id: "ai-strategy", label: "Strategy & Development", columns: 3,
             groups: [
               { title: "Strategy & Governance", links: [
-                { href: "/ai/ai-strategy", text: "AI Strategy Consulting" },
+                { href: "/ai/consulting-services-company", text: "AI Strategy Consulting" },
                 /*{ href: "/ai/ai-transformation", text: "AI Transformation Program" },
                 { href: "/ai/ai-readiness", text: "AI Readiness Assessment" },
                 { href: "/ai/ai-governance", text: "AI Governance & Ethics" },
                 { href: "/ai/ai-cost-calculator", text: "[Tool] AI Cost Calculator" }*/
               ]},
               { title: "Custom AI Development", links: [
-                { href: "/ai/ai-software-development", text: "AI Software Development" },
+                { href: "/ai/application-development-company", text: "AI Software Development" },
                 /*{ href: "/services/ai-product-development", text: "AI Product Development" },*/
-                { href: "/ai/ai-mobile-apps", text: "AI Mobile App Development" }
+                { href: "/ai/mobile-app-development", text: "AI Mobile App Development" }
               ]},
               { title: "Enterprise AI Platforms", links: [
-                { href: "/services/salesforce-ai-services", text: "Salesforce AI Services" },
-                { href: "/services/servicenow-ai-services", text: "ServiceNow AI Services" }
+                { href: "/ai/salesforce-agentforce-consulting", text: "Salesforce AI Services" },
+                { href: "/ai/servicenow-consulting", text: "ServiceNow AI Services" }
               ]},
               /*{ title: "AI Integration", links: [
                 { href: "/ai/genai-integration", text: "GenAI Integration Services" },
