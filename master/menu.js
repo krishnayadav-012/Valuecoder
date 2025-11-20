@@ -5,14 +5,13 @@
 // FIX: Removed extra double quotes from 'text"' key in multiple places.
 // ----------------------------------------------------------------------
 
-const baseTempUrl = "http://localhost/markup-dom/valuecoders/master/menu-images/v-8/";
-
+const baseTempUrl = vcObj.tpl_url+'/menu-v8/';
 const MENU_DATA = [
   {
     id: "services", label: "Services", icon: "layers",
     l2: [
       {
-        id: "ai", label: "AI & Intelligent Systems", icon: "brain-circuit", color: "text-blue-500",
+        id: "ai", label: "AI & Intelligent Systems", micon: "brain-circuit", icon: "brain-circuit", color: "text-blue-500",
         tabs: [
           {
             id: "ai-strategy", label: "Strategy & Development", columns: 4,
@@ -121,7 +120,7 @@ const MENU_DATA = [
         ]
       },
       {
-        id: "product", label: "Product Engineering", icon: "package", color: "text-green-500",
+        id: "product", label: "Product Engineering", micon:"package", icon: "package", color: "text-green-500",
         tabs: [
           {
             id: "prod-services", label: "By Service", columns: 4,
@@ -569,7 +568,7 @@ const MENU_DATA = [
         ]}]
       },
       {
-        id: "solutions-scaleups", label: "For Scale-ups", icon: "bar-chart", color: "text-blue-500",
+        id: "solutions-scaleups", label: "For Scale-ups", icon: "chart-bar-big", color: "text-blue-500",
         columns: 1,
         groups: [{ title: "Scale-up Solutions", links: [
           { href: "/solutions/scaleups/tech-bottlenecks", text: "Remove Tech Bottlenecks" },
@@ -741,7 +740,7 @@ const MENU_DATA = [
         ]}]
       },
       {
-        id: "resources-comparisons", label: "Comparisons & Analysis", icon: "columns", color: "text-blue-500",
+        id: "resources-comparisons", label: "Comparisons & Analysis", icon: "columns-2", color: "text-blue-500",
         columns: 3,
         groups: [
           { title: "Technology Comparisons", links: [
@@ -830,7 +829,7 @@ const MENU_DATA = [
         ]}]
       },
       {
-        id: "pricing-models", label: "Engagement Models", icon: "box-select", color: "text-blue-500",
+        id: "pricing-models", label: "Engagement Models", icon: "calculator", color: "text-blue-500",
         columns: 1,
         groups: [{ title: "Engagement Models", links: [
           { href: "/pricing/engagement-models", text: "[Hub] Engagement Models" },
@@ -929,6 +928,23 @@ const MENU_DATA = [
   }
 ];
 
+/*
+function extractIcons(obj, icons = []) {
+  if (Array.isArray(obj)) {
+    obj.forEach(item => extractIcons(item, icons));
+  } else if (typeof obj === "object" && obj !== null) {
+    for (let key in obj) {
+      if (key === "icon") icons.push(obj[key]);
+      extractIcons(obj[key], icons);
+    }
+  }
+  return icons;
+}
+
+const icons = extractIcons(MENU_DATA);
+console.log(icons);
+*/
+//console.log(MENU_DATA)
 // ----------------------------------------------------------------------
 // II. UTILITIES & STATE
 // ----------------------------------------------------------------------
@@ -1497,7 +1513,7 @@ class MobileMenuHandler {
         ? 'text-blue-600 font-medium hover:text-blue-700' 
         : 'text-gray-700 font-normal hover:text-blue-600';
 
-    return `<a href="${link.href}" class="block last-innner-menu" tabindex="-1" aria-label="${label}">${text}</a>`;
+    return `<a href="${vcObj.web_url}${link.href}" class="block last-innner-menu" tabindex="-1" aria-label="${label}">${text}</a>`;
   }
 
   buildAccordionGroups(l2Item) {
@@ -1590,7 +1606,7 @@ class MobileMenuHandler {
     // Add fixed CTA link
     mobileNavHTML.push(`
       <div class="mobile-connectr-btn">
-        <a href="/contact" class="btn-mobstyle">
+        <a href="${vcObj.web_url}/contact" class="btn-mobstyle">
           Get a Free Quote
         </a>
       </div>
@@ -1636,16 +1652,15 @@ const renderMenuFromData = () => {
             const l2ButtonId = `l2-${l2.id}`;
             const l3PanelId = `${l2.id}-content`;
             const isDefaultActive = l2Index === 0;
-
+            let menuIcon = (l2.micon) ? l2.micon : l2.icon; 
             // L2 Sidebar Item
             l2MenuHtml.push(`
               <li class="l2-menu-item group" role="presentation" data-l3-target="#${l3PanelId}" data-l2-text="${l2.label}">
                 <button type="button" class="my-sidemenu"
                   role="tab" aria-selected="${isDefaultActive ? 'true' : 'false'}" aria-controls="${l3PanelId}" id="${l2ButtonId}" tabindex="${isDefaultActive ? '0' : '-1'}">
                   <i data-lucide="${l2.icon}" class="m-icon-size  secon-icon-menu-part">
-                  <img src="${baseTempUrl}brain-circuit.svg" alt="${l2.label}" />
-                  </i>
-                  <span>${l2.label}</span>
+                  <img src="${baseTempUrl}${menuIcon}.svg" alt="${l2.label}" />
+                  </i><span>${l2.label}</span>
                 </button>
               </li>
             `);
@@ -1752,12 +1767,12 @@ const renderGroup = (group) => {
         } else if (isActionLink) {
             // Collect action links separately for the action hub footer
             actionHubHtml.push(`
-                <a href="${link.href}" class="list-anctor-new">
+                <a href="${vcObj.web_url}${link.href}" class="list-anctor-new">
                     ${linkText} <i data-lucide="arrow-up-right" class=""> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3.5 h-3.5 ml-0.5 canonical-arrow group-hover/header:text-blue-600"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></i>
                 </a>
             `);
         } else {
-            linksHtml.push(`<li><a href="${link.href}" class="link-hover-effect">${linkText}</a></li>`);
+            linksHtml.push(`<li><a href="${vcObj.web_url}${link.href}" class="link-hover-effect">${linkText}</a></li>`);
         }
     });
     
@@ -1765,7 +1780,7 @@ const renderGroup = (group) => {
     if (hubLink) {
         // FIX 4: Refactored canonical link for proper arrow spacing and group hover behavior
         headerContent = `
-            <a href="${hubLink.href}" class="canonical-header-link ">
+            <a href="${vcObj.web_url}${hubLink.href}" class="canonical-header-link ">
               <span class="">${group.title}</span>
               <i data-lucide="arrow-up-right" class=""> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3.5 h-3.5 ml-0.5 canonical-arrow group-hover/header:text-blue-600"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></i>
             </a>
