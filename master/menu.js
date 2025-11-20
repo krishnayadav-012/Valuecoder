@@ -1544,10 +1544,11 @@ const renderMenuFromData = () => {
 
             } else {
                 // SIMPLE GRID STRUCTURE
+                let hasColumn = (l2.columns && l2.columns > 0) ? 'vcol-'+l2.columns : '';
                 l3ContentHtml.push(`
                     <div id="${l3PanelId}" class="l3-content-panel  ${!isDefaultActive ? 'hidden' : ''}" role="region" aria-labelledby="${l2ButtonId}">
                       <h3 class="sr-only">${l2.label}</h3>
-                      <div class="master-sub-menu-cards">
+                      <div class="master-sub-menu-cards ${hasColumn}">
                 `);
                 l2.groups.forEach(group => {
                     if (group.title !== "Hidden Links") { // Skip placeholder groups
@@ -1633,7 +1634,7 @@ const renderGroup = (group) => {
 
 
     return `
-        <div class="  menu-box-sub">
+        <div class="menu-box-sub">
             <div>
                 ${headerContent}
                 <ul class=" second-menu-right-card">
