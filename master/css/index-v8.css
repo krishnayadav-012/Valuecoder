@@ -1829,8 +1829,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 :root {
-  --vc-blue: #2563eb;
-  --vc-blue-700: #1d4ed8;
   --vc-gray-50: #f9fafb;
   --vc-gray-100: #f3f4f6;
   --vc-gray-200: #e5e7eb;
@@ -1899,6 +1897,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-color: var(--vc-gray-100);
 }
 
+.master-sub-menu-cards.vcol-1 {
+  display: grid;
+  grid-template-columns: 1fr !important;
+}
+
 .master-menu-desktop {
   display: none;
   align-items: center;
@@ -1916,7 +1919,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 .l2-menu {
-  width: 288px;
+  width: 325px;
   border-right: 1px solid var(--vc-gray-200);
   background-color: var(--vc-gray-50);
   overflow-y: auto;
@@ -1972,12 +1975,13 @@ body.page-template-template-testimonials .client-video-section iframe,
 .l2-menu-item:hover {
   padding-left: 3px;
   transition: padding-left 0.2s ease;
-  color: var(--vc-blue);
+  color: #FFAD00;
 }
 
 .l2-menu-item.l2-item-active .my-sidemenu {
-  color: var(--vc-blue);
+  color: #FFAD00;
   font-family: inherit;
+  font-size: 14px;
 }
 
 .sub-inner-list {
@@ -1993,7 +1997,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   height: 60%;
   width: 3px;
   display: none;
-  background: var(--vc-blue);
+  background: #FFAD00;
   border-radius: 0 2px 2px 0;
   visibility: visible;
 }
@@ -2006,6 +2010,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: block;
 }
 
+@media screen and (max-width: 1440px) {
+  .my-sidemenu span {
+    font-size: 14px !important;
+  }
+}
 @media screen and (max-width: 1366px) {
   .master-menu-desktop .nav-item-base {
     font-size: 14px;
@@ -2066,7 +2075,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 .nav-link.is-expanded {
-  color: var(--vc-blue);
+  color: #FFAD00;
 }
 
 .get-connect {
@@ -2325,7 +2334,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .tab-btn-base {
   padding: 12px 4px;
   border-bottom: 2px solid transparent;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   transition: all 0.15s ease;
   color: #64748b;
@@ -2371,6 +2380,7 @@ button.tab-btn-base {
   padding: 4px 8px;
   box-sizing: border-box;
   border-radius: 4px;
+  font-weight: 300;
 }
 
 .link-hover-effect::after {
@@ -2432,7 +2442,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  background-color: var(--vc-blue);
+  background-color: #FFAD00;
   border: 1px solid transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: background-color 0.15s ease;
@@ -2585,6 +2595,10 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   font-family: inherit;
 }
 
+.my-sidemenu span {
+  font-size: 16px;
+}
+
 .link-hover-effect::after {
   content: "";
   position: absolute;
@@ -2592,7 +2606,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   left: 0.5rem;
   height: 2px;
   width: 0;
-  background-color: rgb(var(--vc-blue));
+  background-color: #FFAD00;
   transition: width 0.2s ease-out;
 }
 
@@ -2683,12 +2697,12 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .tab-btn-base.is-active {
-  color: var(--vc-blue);
-  border-bottom: 1px solid var(--vc-blue);
+  color: #FFAD00;
+  border-bottom: 1px solid #FFAD00;
 }
 
 .tab-btn-base[aria-selected=true] {
-  color: var(--vc-blue);
+  color: #FFAD00;
 }
 
 .l3-tab-content-container {
@@ -2740,7 +2754,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .group-hover\:text-blue-600:hover {
-  color: var(--vc-blue);
+  color: #FFAD00;
 }
 
 /* Link hover effect used across panels */
@@ -2752,7 +2766,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .link-hover-effect:hover {
-  color: var(--vc-blue);
+  color: #FFAD00;
   transform: translateX(0);
 }
 
@@ -2798,7 +2812,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 /* "group/header" classes used in markup (escaped) */
 .group\/header\:text-blue-600:hover,
 .group-hover\/header\:text-blue-600:hover {
-  color: var(--vc-blue);
+  color: #FFAD00;
 }
 
 /* canonical arrow transition used on action links */
@@ -2832,7 +2846,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .font-semibold.text-gray-800:hover {
-  color: var(--vc-blue);
+  color: #FFAD00;
 }
 
 /* ---------------------------
@@ -2873,8 +2887,8 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 /* Final note: small visual tweaks for the L3 grid items (headings/links) */
 .l3-content-panel h4 {
   margin: 0 0 12px 0;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--vc-gray-500);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2913,7 +2927,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 .link-hover-effect:hover::after,
 .link-hover-effect:focus-visible::after {
   width: calc(100% - 16px);
-  background: var(--vc-blue);
+  background: #FFAD00;
 }
 
 /* FIX 4: Canonical Header Link Styling - Removed space-between, now rely on Tailwind flex gap */
@@ -2969,12 +2983,12 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 
 /* Add focus style for L3 tabs */
 .tab-btn-base:hover {
-  color: var(--vc-blues);
-  border-color: var(--vc-blue);
+  color: #FFAD00;
+  border-color: #FFAD00;
 }
 
 .tab-btn-base:focus-visible {
-  outline: 2px solid rgb(var(--vc-blue));
+  outline: 2px solid #FFAD00;
   outline-offset: 2px;
 }
 
