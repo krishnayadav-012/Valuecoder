@@ -1875,13 +1875,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-color: #f3f4f6;
 }
 
-.container {
-  width: 100%;
-  max-width: 1480px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 #mobile-menu-open {
   display: inline-flex;
   align-items: center;
