@@ -1902,6 +1902,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   grid-template-columns: 1fr !important;
 }
 
+.master-sub-menu-cards.vcol-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .master-menu-desktop {
   display: none;
   align-items: center;
