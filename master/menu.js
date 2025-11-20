@@ -14,7 +14,7 @@ const MENU_DATA = [
         id: "ai", label: "AI & Intelligent Systems", micon: "brain-circuit", icon: "brain-circuit", color: "text-blue-500",
         tabs: [
           {
-            id: "ai-strategy", label: "Strategy & Development", columns: 4,
+            id: "ai-strategy", label: "Strategy & Development", columns: 3,
             groups: [
               { title: "Strategy & Governance", links: [
                 { href: "/ai/ai-strategy", text: "AI Strategy Consulting" },
@@ -1520,10 +1520,10 @@ const renderMenuFromData = () => {
                           ${tab.label}
                         </button>
                     `);
-                    
+                    let hasColumn = (tab.columns && tab.columns > 0) ? 'vcol-'+tab.columns : '';
                     l3ContentBodyHtml.push(`
                         <div data-tab-content="${tab.id}" class=" ${!isActive ? 'hidden' : ''} ${tab.id}-content" role="tabpanel" id="${l3PanelId}-${tab.id}" aria-labelledby="${tab.id}">
-                          <div class="master-sub-menu-cards">
+                          <div class="master-sub-menu-cards ${hasColumn}">
                     `);
                     tab.groups.forEach(group => {
                         if (group.title !== "Hidden Links") { // Skip placeholder groups
