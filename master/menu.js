@@ -41,23 +41,23 @@ const MENU_DATA = [
           {
             id: "ai-genai", label: "Generative AI & Automation", columns: 4,
             groups: [
-              { title: "Generative AI & LLMs", links: [
-                { href: "/ai/genai-development", text: "GenAI Development" },
-                { href: "/ai/genai-consulting", text: "GenAI Consulting" },
-                { href: "/ai/llm-applications", text: "LLM Applications" },
+              { title: "Generative AI & LLMs",href:'/ai/generative-ai-services', links: [
+                { href: "/ai/generative-ai-development", text: "GenAI Development" },
+                { href: "/ai/generative-ai-consulting-company", text: "GenAI Consulting" },
+                { href: "/ai/large-language-model-development", text: "LLM Applications" },
                 /*{ href: "/ai/rag-implementation", text: "RAG Implementation" },
                 { href: "/ai/llm-fine-tuning", text: "LLM Fine-Tuning" },
                 { href: "/ai/prompt-engineering", text: "Prompt Engineering" },*/
-                { href: "/ai/stable-diffusion", text: "Stable Diffusion Development" },
+                { href: "/ai/stable-diffusion-development-services", text: "Stable Diffusion Development" },
                 /*{ href: "/hire/genai-developers", text: "[Action] Hire GenAI Developers" }*/
               ]},
               { title: "Intelligent Automation", links: [
-                { href: "/ai/ai-agent-development", text: "AI Agent Development" },
-                { href: "/ai/ai-agents-orchestration", text: "AI Agents & Orchestration" },
+                { href: "ai/custom-ai-agent-development", text: "AI Agent Development" },
+                { href: "/hire-ai-agent", text: "AI Agents & Orchestration" },
                 /*{ href: "/ai/ai-process-automation", text: "AI Process Automation" },
                 { href: "/ai/ai-powered-rpa", text: "AI-Powered RPA" },
                 { href: "/ai/rule-based-rpa", text: "Rule-Based RPA" },*/
-                { href: "/ai/enterprise-automation", text: "Enterprise Automation" }
+                { href: "/business-process-automation", text: "Enterprise Automation" }
               ]},
               { title: "Conversational AI", links: [
                 { href: "/chatbot-development-company", text: "Chatbot Development Company" },
@@ -79,23 +79,23 @@ const MENU_DATA = [
             id: "ai-ml", label: "Data & ML Engineering", columns: 4,
             groups: [
               { title: "Machine Learning", href:'/machine-learning', links: [
-                { href: "/ai/machine-learning", text: "Machine Learning Development" },
-                { href: "/ai/mlops-services", text: "MLOps Services" },
+                { href: "/machine-learning/development", text: "Machine Learning Development" },
+                { href: "/machine-learning/mlops-consulting-services", text: "MLOps Services" },
                 /*{ href: "/ai/llmops-services", text: "LLMOps Services" },*/
-                { href: "/ai/automl-development", text: "AutoML Development" },
-                { href: "/ai/adaptive-ai", text: "Adaptive AI Development" },
-                { href: "/ai/transformer-models", text: "Transformer Model Development" },
+                { href: "/machine-learning/automl-development", text: "AutoML Development" },
+                { href: "/ai/adaptive-ai-development", text: "Adaptive AI Development" },
+                { href: "/ai/transformer-model-development-services", text: "Transformer Model Development" },
                 /*{ href: "/hire/ai-ml-engineers", text: "[Action] Hire AI & ML Engineers" }*/
               ]},
               { title: "Data Processing", links: [
-                { href: "/ai/data-engineering", text: "Data Engineering & Platforms" },
+                { href: "/data-engineering", text: "Data Engineering & Platforms" },
                 /*{ href: "/ai/vector-databases", text: "Vector Databases" },
                 { href: "/ai/nlp-development", text: "NLP Development" },*/
-                { href: "/ai/computer-vision", text: "Computer Vision" }
+                { href: "/machine-learning/computer-vision-software-development", text: "Computer Vision" }
               ]},
               { title: "Analytics & Testing", links: [
-                { href: "/ai/data-analytics", text: "Data Analytics" },
-                { href: "/ai/business-intelligence", text: "Business Intelligence" },
+                { href: "/data-analytics", text: "Data Analytics" },
+                { href: "/data-engineering/business-intelligence", text: "Business Intelligence" },
                 /*{ href: "/ai/ai-model-testing", text: "AI Model Testing" }*/
               ]},
               { title: "Hidden Links", links: [ /* Placeholder for alignment */ ] }
@@ -127,51 +127,51 @@ const MENU_DATA = [
             groups: [
               { title: "Discovery & Design", links: [
                 /*{ href: "/services/product-engineering", text: "[Hub] Discovery & Design" },*/
-                { href: "/services/product-discovery", text: "Product Discovery & Roadmapping" },
-                { href: "/services/ui-ux-design", text: "UI/UX Design Services" },
+                { href: "/discovery-phase-process", text: "Product Discovery & Roadmapping" },
+                { href: "/product-ui-ux-design", text: "UI/UX Design Services" },
                 { href: "/hire/technical-architects", text: "Solution Architecture & Design" },
                 /*{ href: "/services/product-engineering-process", text: "Product Engineering Process" }*/
               ]},
               { title: "Full-Cycle Development", links: [
                 /*{ href: "/services/software-development", text: "[Hub] Full-Cycle Development" },*/
-                { href: "/services/software-product-development", text: "Software Product Development" },
-                { href: "/services/custom-software-development", text: "Custom Software Development" },
-                { href: "/services/ai-product-development", text: "AI Product Development" },
-                { href: "/services/mvp-development", text: "MVP Development" },
+                { href: "/outsource-software-product-development-services", text: "Software Product Development" },
+                { href: "/custom-software-development-services-company", text: "Custom Software Development" },
+                { href: "/ai/application-development-company", text: "AI Product Development" },
+                { href: "/mvp-app-development-company", text: "MVP Development" },
                 /*{ href: "/services/lifecycle-governance", text: "Product Lifecycle Governance" }*/
               ]},
               { title: "Platform Engineering", links: [
                 /*{ href: "/services/web-app-development", text: "[Hub] Platform Engineering" },*/
-                { href: "/services/web-app-development", text: "Web Application Development" },
-                { href: "/services/mobile-app-development", text: "Mobile App Development" },
-                { href: "/services/enterprise-app-development", text: "Enterprise Application Development" },
+                { href: "/web-application-development", text: "Web Application Development" },
+                { href: "/mobile-application-development", text: "Mobile App Development" },
+                { href: "/enterprise-software-development-services", text: "Enterprise Application Development" },
                 /*{ href: "/hire/frontend-developers", text: "[Action] Hire App & Web Developers" }*/
               ]},
               { title: "Modern Architecture", links: [
                 /*{ href: "/services/microservices", text: "[Hub] Modern Architecture" },*/
-                { href: "/services/microservices", text: "Microservices Architecture" },
-                { href: "/services/saas-development", text: "SaaS Product Development" },
-                { href: "/services/api-development", text: "API Development & Integration" }
+                { href: "/cloud-services/microservices-and-containerization", text: "Microservices Architecture" },
+                { href: "/saas-consulting-development-services", text: "SaaS Product Development" },
+                { href: "/api-development-services", text: "API Development & Integration" }
               ]}
             ]
           },
           {
             id: "prod-role", label: "By Role/ICP", columns: 3,
             groups: [
-              { title: "For Startups", links: [
-                { href: "/solutions/startups/mvp", text: "MVP Development" },
-                { href: "/solutions/startups/strategy", text: "Product Discovery" },
-                { href: "/services/ui-ux-design", text: "UI/UX Design Services" }
+              { title: "For Startups",href:'/early-growth-startup-solutions', links: [
+                { href: "/mvp-app-development-company", text: "MVP Development" },
+                { href: "/discovery-phase-process", text: "Product Discovery" },
+                { href: "/product-ui-ux-design", text: "UI/UX Design Services" }
               ]},
-              { title: "For Scale-ups", links: [
-                { href: "/services/custom-software-development", text: "Custom Software Development" },
-                { href: "/services/microservices", text: "Microservices Architecture" },
-                { href: "/services/api-development", text: "API Development" }
+              { title: "For Scale-ups",href:'/scale-startup-solutions', links: [
+                { href: "/custom-software-development-services-company", text: "Custom Software Development" },
+                { href: "/cloud-services/microservices-and-containerization", text: "Microservices Architecture" },
+                { href: "/api-development-services", text: "API Development" }
               ]},
-              { title: "For Enterprises", links: [
-                { href: "/services/enterprise-app-development", text: "Enterprise Application Development" },
+              { title: "For Enterprises",href:'/enterprise-it-operations-services', links: [
+                { href: "/enterprise-software-development-services", text: "Enterprise Application Development" },
                 /*{ href: "/services/lifecycle-governance", text: "Product Lifecycle Governance" },*/
-                { href: "/services/software-architecture", text: "Software Architecture" }
+                { href: "/hire/technical-architects", text: "Software Architecture" }
               ]}
             ]
           }
@@ -183,33 +183,33 @@ const MENU_DATA = [
         groups: [
           { title: "Technology Strategy", links: [
             /*{ href: "/services/consulting", text: "[Hub] Technology Strategy" },*/
-            { href: "/services/technology-strategy", text: "Technology Strategy & Roadmap" },
-            { href: "/services/solution-architecture", text: "Solution Architecture Consulting" },
-            { href: "/services/cto-as-a-service", text: "CTO-as-a-Service" },
-            { href: "/services/product-feasibility", text: "Product Feasibility Studies" },
+            { href: "/it-strategy-consulting-firms", text: "Technology Strategy & Roadmap" },
+            { href: "/hire/technical-architects", text: "Solution Architecture Consulting" },
+            { href: "/cto-as-a-service", text: "CTO-as-a-Service" },
+            { href: "/discovery-phase-process", text: "Product Feasibility Studies" },
             /*{ href: "/services/technical-program-management", text: "Technical Program Management" }*/
           ]},
           { title: "Modernization & Transformation", links: [
             /*{ href: "/services/digital-transformation", text: "[Hub] Modernization & Transformation" },*/
-            { href: "/services/digital-transformation", text: "Digital Transformation" },
-            { href: "/services/legacy-modernization", text: "Legacy Modernization" },
-            { href: "/services/application-modernization", text: "Application Modernization" },
-            { href: "/services/devops-transformation", text: "DevOps Transformation" }
+            { href: "/digital-transformation-services", text: "Digital Transformation" },
+            { href: "/it-modernization-services", text: "Legacy Modernization" },
+            { href: "/application-modernization", text: "Application Modernization" },
+            { href: "/cloud-services/devops-automation", text: "DevOps Transformation" }
             /*{ href: "/services/data-modernization", text: "Data Modernization" },
             { href: "/services/modernization-planning", text: "Modernization Planning" },
             */
           ]},
           { title: "Process & QA Advisory", href:"/software-quality-assurance-testing-services", links: [
             /*{ href: "/services/qa-consulting", text: "[Hub] Process & QA Advisory" },*/
-            { href: "/services/qa-consulting", text: "QA Strategy Consulting" },
-            { href: "/services/process-automation", text: "Process Automation Strategy" },
+            { href: "/qa-consulting-services", text: "QA Strategy Consulting" },
+            { href: "/business-process-automation", text: "Process Automation Strategy" },
             /*{ href: "/services/qa-process-optimization", text: "QA Process Optimization" },*/
             { href: "/agile-consulting", text: "Agile Transformation Consulting" },
             /*{ href: "/hire/solution-architects", text: "[Action] Hire Solution Architects" }*/
           ]},
           { title: "AI & Innovation (Cross-links)", links: [
             /*{ href: "/ai/ai-strategy", text: "[Hub] AI & Innovation (Cross-links)" },*/
-            { href: "/ai/ai-strategy", text: "AI Strategy Consulting" },
+            { href: "/ai/consulting-services-company", text: "AI Strategy Consulting" },
             /*{ href: "/ai/ai-transformation", text: "AI Transformation Program" },
             { href: "/ai/ai-readiness", text: "AI Readiness Assessment" }*/
           ]}
@@ -221,29 +221,29 @@ const MENU_DATA = [
         groups: [
           { title: "Cloud Engineering", links: [
             /*{ href: "/services/cloud-devops", text: "[Hub] Cloud Engineering" },*/
-            { href: "/services/cloud-devops", text: "Cloud & DevOps Services" },
-            { href: "/services/devsecops", text: "DevSecOps Services" },
+            { href: "/cloud-services", text: "Cloud & DevOps Services" },
+            { href: "/cloud-services/devops-automation", text: "DevSecOps Services" },
             /*{ href: "/services/cloud-operations", text: "Cloud Operations" },*/
-            { href: "/services/cloud-migration", text: "Cloud Migration" },
+            { href: "/cloud-services/cloud-migration", text: "Cloud Migration" },
             /*{ href: "/services/cloud-cost-optimization", text: "Cloud Cost Optimization" },*/
-            { href: "/services/finops-services", text: "FinOps Services" },
-            { href: "/services/kubernetes", text: "Containerization & Kubernetes" },
-            { href: "/services/cloud-infrastructure-services", text: "Cloud Infrastructure Services" },
+            { href: "/cloud-services/cloud-finops-service", text: "FinOps Services" },
+            { href: "/hire/kubernetes-engineers", text: "Containerization & Kubernetes" },
+            { href: "/cloud-services/it-infrastructure-automation", text: "Cloud Infrastructure Services" },
             /*{ href: "/hire/cloud-devops-engineers", text: "[Action] Hire Cloud & DevOps Engineers" }*/
           ]},
           { title: "Salesforce Platform", links: [
             /*{ href: "/services/salesforce-development", text: "[Hub] Salesforce Platform" },*/
-            { href: "/services/salesforce-development", text: "Salesforce Development" },
-            { href: "/services/salesforce-ai-services", text: "Salesforce AI Services" },
-            { href: "/services/salesforce-integration", text: "Salesforce Integration" },
-            { href: "/services/salesforce-consulting", text: "Salesforce Consulting" }
+            { href: "/salesforce", text: "Salesforce Development" },
+            { href: "/ai/salesforce-agentforce-consulting", text: "Salesforce AI Services" },
+            { href: "/servicenow/integration", text: "Salesforce Integration" },
+            { href: "/ai/servicenow-consulting", text: "Salesforce Consulting" }
           ]},
           { title: "ServiceNow Platform", links: [
             /*{ href: "/services/servicenow-development", text: "[Hub] ServiceNow Platform" },*/
-            { href: "/services/servicenow-development", text: "ServiceNow Development" },
-            { href: "/services/servicenow-ai-services", text: "ServiceNow AI Services" },
-            { href: "/services/servicenow-integration", text: "ServiceNow Integration" },
-            { href: "/services/servicenow-consulting", text: "ServiceNow Consulting" }
+            { href: "/servicenow-development", text: "ServiceNow Development" },
+            { href: "/ai/servicenow-consulting", text: "ServiceNow AI Services" },
+            { href: "/servicenow/integration", text: "ServiceNow Integration" },
+            { href: "/ai/servicenow-consulting", text: "ServiceNow Consulting" }
           ]},
           { title: "Enterprise Platforms & Integration", links: [
             /*{ href: "/services/system-integration", text: "[Hub] Enterprise Platforms & Integration" },
@@ -273,7 +273,7 @@ const MENU_DATA = [
                     { title: "Audits & Testing", links: [
                         /*{ href: "/services/security-audits", text: "[Hub] Audits & Testing" },
                         { href: "/services/security-audits", text: "Security Audits & Pen Testing" },*/
-                        { href: "/services/security-testing", text: "Security Testing" },
+                        { href: "/security-testing", text: "Security Testing" },
                         /*{ href: "/ai/ai-model-testing", text: "AI Model Testing" },
                         { href: "/hire/cloud-security-engineers", text: "[Action] Hire Security Engineers" }*/
                     ]},
@@ -300,7 +300,7 @@ const MENU_DATA = [
         groups: [
           { title: "Flexible Augmentation", links: [
             /*{ href: "/services/team-models", text: "[Hub] Flexible Augmentation" },*/
-            { href: "/services/team-augmentation", text: "Team Augmentation" },
+            { href: "/it-staff-augmentation-services", text: "Team Augmentation" },
             /*
             { href: "/services/managed-development-services", text: "Managed Development Services" },
             { href: "/services/project-rescue", text: "Project Rescue" },
@@ -309,13 +309,13 @@ const MENU_DATA = [
           ]},
           { title: "Managed Delivery Teams", links: [
             /*{ href: "/services/dedicated-teams", text: "[Hub] Managed Delivery Teams" },*/
-            { href: "/services/dedicated-teams", text: "Dedicated Development Teams" },
+            { href: "/dedicated-development-teams", text: "Dedicated Development Teams" },
             /*{ href: "/services/managed-agile-pods", text: "Managed Agile Pods" },
             { href: "/services/product-extension-pods", text: "Product Extension Pods" }*/
           ]},
           { title: "Strategic Models", links: [
             /*{ href: "/pricing/dedicated-teams", text: "[Hub] Strategic Models" },*/
-            { href: "/services/offshore-development-center", text: "Offshore Development Center" },
+            { href: "/offshore-software-development-center-india", text: "Offshore Development Center" },
             /*{ href: "/services/build-operate-transfer", text: "Build-Operate-Transfer" },
             { href: "/pricing/outcome-based", text: "Outcome-Based Engagement" }*/
           ]},
@@ -336,12 +336,12 @@ const MENU_DATA = [
         id: "qa", label: "Quality Assurance & Testing", icon: "clipboard-check", color: "text-orange-500",
         tabs: [
           {
-            id: "qa-functional", href:"/functional-software-testing", label: "Functional Testing", columns: 1,
+            id: "qa-functional", href:"/software-quality-assurance-testing-services", label: "Functional Testing", columns: 1,
             groups: [
-              { title: "Functional Testing", links: [
+              { title: "Functional Testing",href:"/functional-software-testing", links: [
                 /*{ href: "/services/qa-testing", text: "[Hub] Functional Testing" },
                 { href: "/services/manual-testing", text: "Manual QA Testing" },*/
-                { href: "/services/regression-testing", text: "Regression Testing" },
+                { href: "/regression-testing", text: "Regression Testing" },
                 /*{ href: "/services/uat-testing", text: "User Acceptance Testing" }*/
               ]}
             ]
@@ -527,7 +527,7 @@ const MENU_DATA = [
           { href: "/startup-consulting-services", text: "Product Feasibility Studies" },
           { href: "/mvp-app-development-company", text: "Rapid MVP in 90 Days" },
           { href: "/discovery-phase-process", text: "Product Strategy & Validation" },
-          { href: "/cto-as-a-service", text: "On-Demand CTO" },
+          { href: "/cto-as-a-servicee", text: "On-Demand CTO" },
           { href: "/outsource-software-product-development-services", text: "Build Investor-Ready Products" },
           { href: "/discovery-phase-process", text: "Validate Ideas Before Big Spend" },
           { href: "/ai/consulting-services-company", text: "AI Pilot Program" }
@@ -603,7 +603,7 @@ const MENU_DATA = [
           { title: "Finance & Regulated Industries", links: [
             { href: "/industries/fintech-software-development-company", text: "FinTech & Financial Services" },
             { href: "/industries/healthcare-software-development-services", text: "Healthcare & MedTech" },
-            { href: "/ai/legal", text: "Legal & LegalTech" },
+            { href: "/ai/legal/ai/legal", text: "Legal & LegalTech" },
             { href: "/insurance", text: "Insurance & InsurTech" },
 
           ]},
@@ -660,8 +660,8 @@ const MENU_DATA = [
         id: "resources-knowledge", label: "Knowledge Hub", icon: "library", color: "text-indigo-500",
         columns: 1,
         groups: [{ title: "Knowledge Hub", links: [          
-          { href: "/blog", text: "Blog & Insights" },          
-          { href: "/case-studies", text: "Case Studies" },          
+          { href: "/blog/", text: "Blog & Insights" },          
+          { href: "/case-studies/", text: "Case Studies" },          
         ]}]
       },
       {
