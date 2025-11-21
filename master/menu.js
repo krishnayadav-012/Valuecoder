@@ -18,7 +18,8 @@ const MENU_DATA = [
             groups: [
               { title: "Strategy & Governance", links: [
                 { href: "/ai/consulting-services-company", text: "AI Strategy Consulting" },
-                /*{ href: "/ai/ai-transformation", text: "AI Transformation Program" },
+                { href: "/ai/n8n-consulting-and-automation", text: "N8n Consulting & Automation Services" }
+                /*{ href: "/ai/n8n-consulting-and-automation", text: "N8n Consulting & Automation Services" },
                 { href: "/ai/ai-readiness", text: "AI Readiness Assessment" },
                 { href: "/ai/ai-governance", text: "AI Governance & Ethics" },
                 { href: "/ai/ai-cost-calculator", text: "[Tool] AI Cost Calculator" }*/
@@ -76,7 +77,7 @@ const MENU_DATA = [
             ]
           },
           {
-            id: "ai-ml", label: "Data & ML Engineering", columns: 4,
+            id: "ai-ml", label: "Data & ML Engineering", columns: 3,
             groups: [
               { title: "Machine Learning", href:'/machine-learning', links: [
                 { href: "/machine-learning/development", text: "Machine Learning Development" },
@@ -235,8 +236,8 @@ const MENU_DATA = [
             /*{ href: "/services/salesforce-development", text: "[Hub] Salesforce Platform" },*/
             { href: "/salesforce", text: "Salesforce Development" },
             { href: "/ai/salesforce-agentforce-consulting", text: "Salesforce AI Services" },
-            { href: "/servicenow/integration", text: "Salesforce Integration" },
-            { href: "/ai/servicenow-consulting", text: "Salesforce Consulting" }
+            { href: "/salesforce/integration", text: "Salesforce Integration" },
+            { href: "/salesforce/consulting", text: "Salesforce Consulting" }
           ]},
           { title: "ServiceNow Platform", links: [
             /*{ href: "/services/servicenow-development", text: "[Hub] ServiceNow Platform" },*/
@@ -400,19 +401,26 @@ const MENU_DATA = [
               { href: "/hire-developers/hire-typescript-developers", text: "Hire TypeScript Developers" }
             ]}
           ]},
-          { id: "hire-back", label: "Backend", columns: 1, groups: [
-            { title: "Backend Developers", href:"/hire-developers/hire-backend-developers", links: [              
+          { id: "hire-back", label: "Backend", columns: 2, groups: [
+            { 
+              title: "Backend Developers", href:"/hire-developers/hire-backend-developers", links: [              
               { href: "/hire-developers/hire-python-developers", text: "Hire Python Developers" },
               { href: "/hire-developers/hire-java-developers", text: "Hire Java Developers" },
               { href: "/hire-developers/hire-nodejs-developers", text: "Hire Node.js Developers" },
               { href: "/hire-developers/hire-php-developers", text: "Hire PHP Developers" },
-              { href: "/hire-developers/hire-dotnet-developers", text: "Hire .NET Developers" },
-              { href: "/hire-developers/hire-golang-web-developers", text: "Hire Golang Developers" },
-              { href: "/hire-developers/hire-ror-developers", text: "Hire Ruby Developers" },
-              { href: "/hire-developers/hire-graphql-developers", text: "Hire GraphQL Developers" },
-              { href: "/hire-developers/hire-api-developers", text: "Hire API Developers" },
-
-            ]}
+              { href: "/hire-developers/hire-dotnet-developers", text: "Hire .NET Developers" }              
+            ]
+            
+          },
+          {
+          title: "null", links: [
+              { href: "/hire-developers/hire-database-developers", text: "Hire Database Developers" },
+              { href: "/hire/mongodb-developers", text: "Hire MongoDB Developers" },
+              { href: "/hire/postgresql-developers", text: "Hire PostgreSQL Developers" },
+              { href: "/hire/mysql-developers", text: "Hire MySQL Developers" },
+              { href: "/hire-developers/hire-database-administrators", text: "Hire DB Administrators" }
+            ]
+          }
           ]},
           { id: "hire-mobile", label: "Mobile", columns: 1, groups: [
             { title: "Mobile App Developers", href:"/hire-developers/hire-mobile-app-developers", links: [
@@ -664,22 +672,22 @@ const MENU_DATA = [
           { href: "/case-studies/", text: "Case Studies" },          
         ]}]
       },
-      {
-        id: "resources-benchmarks", label: "Benchmarks & Data", icon: "gauge", color: "text-orange-500",
-        columns: 1,
-        groups: [{ title: "Benchmarks & Data", links: [
-          { href: "/ratecard", text: "Development Rate Cards" }          
-        ]}]
-      },      
-      {
-        id: "resources-tools", label: "Tools & Calculators", icon: "calculator", color: "text-red-500",
-        columns: 1,
-        groups: [{ title: "Tools & Calculators", links: [
-          { href: "/cost-calculators/comparison", text: "Team Size Calculator" },
-          { href: "/cost-calculators/roi", text: "ROI Calculator" },
-          { href: "/cost-calculators/dedicated-teams", text: "Developer Rate Comparison" },
-        ]}]
-      },
+      // {
+      //   id: "resources-benchmarks", label: "Benchmarks & Data", icon: "gauge", color: "text-orange-500",
+      //   columns: 1,
+      //   groups: [{ title: "Benchmarks & Data", links: [
+      //     { href: "/ratecard", text: "Development Rate Cards" }          
+      //   ]}]
+      // },      
+      // {
+      //   id: "resources-tools", label: "Tools & Calculators", icon: "calculator", color: "text-red-500",
+      //   columns: 1,
+      //   groups: [{ title: "Tools & Calculators", links: [
+      //     { href: "/cost-calculators/comparison", text: "Team Size Calculator" },
+      //     { href: "/cost-calculators/roi", text: "ROI Calculator" },
+      //     { href: "/cost-calculators/dedicated-teams", text: "Developer Rate Comparison" },
+      //   ]}]
+      // },
       {
         id: "resources-trust", label: "Trust & Security", icon: "lock", color: "text-gray-500",
         columns: 1,
@@ -695,26 +703,46 @@ const MENU_DATA = [
     l2: [
       {
         id: "pricing-calculators", label: "Calculators", icon: "calculator", color: "text-green-500",
-        columns: 1,
-        groups: [{ title: "Calculators", links: [
-          { href: "/cost-calculators", text: "Project Cost Estimator" },
-          { href: "/cost-calculators/comparison", text: "Team Size Calculator" }          
-        ]}]
+        columns: 2,
+        groups: [
+          { title: "Calculators", links: [
+          { href: "/cost-calculators/security-testing", text: "Security Testing Cost Calculator" },
+          { href: "/cost-calculators/data-warehouse", text: "Data Warehouse Cost Calculator" },
+          { href: "/cost-calculators/analytics-bi", text: "Analytics & BI Cost Calculator" },
+          { href: "/cost-calculators/qa-consulting", text: "QA Consulting Cost Calculator" },
+          { href: "/cost-calculators/startup-software", text: "Startup Software Cost Estimator" },
+          { href: "/cost-calculators/comparison", text: "Software Cost Comparison Calculator" },
+          { href: "/cost-calculators/roi", text: "Software ROI Calculator" },
+          { href: "/cost-calculators/saas-product", text: "SaaS Product Cost Calculator" },
+          { href: "/cost-calculators/help-desk", text: "Help Desk Software Cost Estimator" },
+          
+        ]},
+        { title: "null", links: [
+          { href: "/cost-calculators/software-testing", text: "Software Testing Cost Calculator" },
+          { href: "/cost-calculators/mvp-ai-estimator", text: "MVP AI Cost Estimator" },
+          { href: "/cost-calculators/dedicated-teams", text: "Dedicated Teams Cost Calculator" },
+          { href: "/cost-calculators/software-development", text: "Software Development Cost Calculator" },
+          { href: "/cost-calculators/data-management", text: "Data Management Cost Calculator" },
+          { href: "/cost-calculators/analytics-visualization", text: "Analytics & Visualization Cost Calculator" },
+          { href: "/cost-calculators/it-consulting", text: "IT Consulting Cost Calculator" },
+          { href: "/cost-calculators/siem-implementation", text: "SIEM Implementation Cost Calculator" } 
+        ]}
+      ]
       },
-      {
-        id: "pricing-models", label: "Engagement Models", icon: "calculator", color: "text-blue-500",
-        columns: 1,
-        groups: [{ title: "Engagement Models", links: [
-          { href: "/dedicated-development-teams", text: "Dedicated Teams" }
-        ]}]
-      },
-      {
-        id: "pricing-resources", label: "Resources", icon: "book-open", color: "text-indigo-500",
-        columns: 1,
-        groups: [{ title: "Resources", links: [
-          { href: "/faq", text: "Pricing FAQ" }
-        ]}]
-      }
+      // {
+      //   id: "pricing-models", label: "Engagement Models", icon: "calculator", color: "text-blue-500",
+      //   columns: 1,
+      //   groups: [{ title: "Engagement Models", links: [
+      //     { href: "/dedicated-development-teams", text: "Dedicated Teams" }
+      //   ]}]
+      // },
+      // {
+      //   id: "pricing-resources", label: "Resources", icon: "book-open", color: "text-indigo-500",
+      //   columns: 1,
+      //   groups: [{ title: "Resources", links: [
+      //     { href: "/faq", text: "Pricing FAQ" }
+      //   ]}]
+      // }
     ]
   },
   {
@@ -744,10 +772,25 @@ const MENU_DATA = [
         columns: 2,
         groups: [
           { title: "Direct Competitor Comparisons", links: [            
-            { href: "/blog/top-and-best-companies/upwork-vs-toptal-vs-valuecoders/", text: "ValueCoders vs Toptal" }
+            { href: "/blog/top-and-best-companies/upwork-vs-toptal-vs-valuecoders/", text: "Upwork vs. Toptal vs. ValueCoders" },
+            { href: "/blog/outsourcing-and-off-shoring/remote-com-vs-deel-com-vs-valuecoders-rely-upon-the-best/", text: "Remote.com vs. Deel.com vs. ValueCoders" },
+            { href: "/blog/technology-and-apps/rentacoder-vs-freelancer-com-vs-valuecoders/", text: "RentaCoder Vs Freelancer.com Vs ValueCoders" },
+            
           ]},
           { title: "Location & Model Comparisons", links: [
-            { href: "/blog/outsourcing-and-off-shoring/cost-comparison-offshore-vs-onshore-teams/", text: "Offshore vs Onshore Development" }
+            { 
+            href: "/blog/outsourcing-and-off-shoring/staff-augmentation-vs-project-outsourcing-vs-managed-services-which-one-is-right-for-you/", 
+            text: "Staff Augmentation Vs. Project Outsourcing Vs. Managed Services" 
+            },
+            { 
+            href: "/blog/outsourcing-and-off-shoring/outsourcing-vs-hiring-in-house-teams/", 
+            text: "Outsourcing vs Hiring In-House Teams: Modern Scenario" 
+            },
+            { 
+            href: "/blog/outsourcing-and-off-shoring/cost-comparison-offshore-vs-onshore-teams/", 
+            text: "Offshore VS Onshore Teams" 
+            }
+
           ]}
         ]
       },      
@@ -1622,14 +1665,16 @@ const renderGroup = (group) => {
             </a>
         `;
     } else {
-      console.log(group);
-        let hasLinkTitle = ( group.hasOwnProperty('href') ) ? '<a href="'+vcObj.web_url+group.href+'"><span>'+group.title+'</span></a>' : '<span>'+group.title+'</span>';
+      //console.log(group);
+      let hasLinkTitle = '';
+      if( group.title === "null" ){
+        hasLinkTitle = ( group.hasOwnProperty('href') ) ? '<a href="'+vcObj.web_url+group.href+'"><span class="null-txt">' + group.title + '</span></a>' : '<span class="null-txt">'+group.title+'</span>';
+      }else{
+        hasLinkTitle = ( group.hasOwnProperty('href') ) ? '<a href="'+vcObj.web_url+group.href+'"><span>'+group.title+'</span></a>' : '<span>'+group.title+'</span>';
+      }
+        
         // Standard Group Title
-        headerContent = `
-            <h4 class="card-semi-title">
-                <span>${hasLinkTitle}</span>
-            </h4>
-        `;
+        headerContent = `<h4 class="card-semi-title">${hasLinkTitle}</h4>`;
     }
 
 
