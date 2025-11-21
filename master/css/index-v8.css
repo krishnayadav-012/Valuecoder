@@ -1900,6 +1900,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   grid-template-columns: repeat(2, 1fr);
 }
 
+.master-sub-menu-cards.vcol-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .master-menu-desktop {
   display: none;
   align-items: center;
@@ -2197,6 +2202,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   .logo-size .site-logo-img {
     width: 200px;
   }
+  .m-m-text .m-icon-size {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .logo-size .site-logo-img {
@@ -2450,6 +2458,8 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid #e5e7eb;
+  display: inline-block;
+  width: 100%;
 }
 
 .btn-mobstyle {
@@ -2466,13 +2476,9 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   border-radius: 8px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   color: #ffffff;
-  background-color: #2563eb;
+  background-color: #FFAD00;
   transition: background-color 150ms;
   font-family: "Lexend Deca", sans-serif;
-}
-
-.btn-mobstyle:hover {
-  background-color: #1d4ed8;
 }
 
 .second-sub-menu-style {
