@@ -107,17 +107,19 @@ top: 0px; transition: all 0.7s ease-in-out;}
     border-radius: 50%;
     align-items: center;
     position: absolute;
-    top: 10px;
+    top: 20px;
+    left: 20px;
     transition: all 0.7s 
 ease-in-out;
 
 }
+
 .master-header.header-bg.sc-down .sm-size-logo {
     opacity: 1;
 }
 // my header
 .master-header {
-  padding: 25px 0;
+  padding: 10px 0;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--vc-gray-200);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -615,6 +617,7 @@ ease-in-out;
 
 .m-m-text .text-left {
   font-family: inherit;
+  font-size: 14px;
 }
 
 .m-icon-size {
@@ -651,6 +654,7 @@ ease-in-out;
 
 .second-sub-menu {
   flex-grow: 1;
+  font-size: 12px;
   text-align: left;
   font-family: inherit;
 }
@@ -1067,7 +1071,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 
 .nav-item-base:hover,
 .nav-item-base.is-expanded {
-  background-color: #f3f4f6;
+  // background-color: #f3f4f6;
   /* Gray-100 */
   color: #111827;
   /* Gray-900 */
@@ -1529,10 +1533,6 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 
       a {
         color: $white;
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
 
       .for-client-logo-box {
