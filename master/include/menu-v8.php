@@ -1,6 +1,10 @@
  <!-- Main Navigation -->
   <header class="master-header " role="banner">
+
     <nav aria-label="Main navigation">
+      <a href="#" class="scroll-logo">
+<img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/header-images/logo-small.svg" alt="Valuecoders" width="80" height="80"  class="site-logo-small">
+</a>
       <div class="master-wrapper">
         <div class="header-inner">
           
