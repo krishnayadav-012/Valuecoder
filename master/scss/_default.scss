@@ -1,6 +1,3 @@
-//
-// Variables
-//
 
 $darkYellow: #FFAD00;
 $neonCarrot: #070707;
@@ -35,8 +32,8 @@ $natural-grey:#4B5563;
 $darkblack: #111827;
 $font-18: 18px;
 $font-16: 16px;
-$normal-font: 400;
-$medium-font: 500;
+$normal-font: 500;
+$medium-font: 600;
 $semi-bold: bold;
 $bold: bold;
 
@@ -46,12 +43,13 @@ $gray-900: #110302;
 $gray-600: #4B5563;
 $gray-500: #6B7280;
 $gray-50: #F9FAFB;
+
 @media only screen and (min-width: 768px) {
   @font-face {
-    font-family: "Lexend Deca";
-    src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"),
-      url("../fonts/LexendDeca-Regular.woff") format("woff"),
-      url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2"),
+      url("../fonts/PlusJakartaSans-VariableFont_wght.woff") format("woff"),
+      url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -69,11 +67,10 @@ $gray-50: #F9FAFB;
 body {
   background-color: $white;
   color: $gray-600;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: $normal-font;
-  font-weight: inherit;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -584,7 +581,7 @@ strong {
 
 ::placeholder {
   color: $gray-500;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 // Chrome, Safari, Edge, Opera
@@ -601,13 +598,13 @@ input[type="number"] {
 
 ::placeholder {
   color: $gray-500;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   text-transform: capitalize;
 }
 
 input,
 textarea {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .lighter-theme-img {
