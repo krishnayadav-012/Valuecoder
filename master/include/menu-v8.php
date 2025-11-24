@@ -1,5 +1,5 @@
  <!-- Main Navigation -->
-  <header class="master-header" role="banner">
+  <header class="master-header " role="banner">
     <nav aria-label="Main navigation">
       <div class="master-wrapper">
         <div class="header-inner">

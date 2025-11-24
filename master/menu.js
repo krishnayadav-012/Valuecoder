@@ -5,6 +5,25 @@
 // FIX: Removed extra double quotes from 'text"' key in multiple places.
 // ----------------------------------------------------------------------
 
+if (document.querySelector(".master-header")) {
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function () {
+        window.pageYOffset > 10 ? 
+        document.querySelector(".master-header").classList.add("header-bg") : 
+        document.querySelector(".master-header").classList.remove("header-bg");
+        
+        let scrollST = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollST > lastScrollTop) {
+            document.querySelector(".master-header").classList.remove("sc-up");
+            document.querySelector(".master-header").classList.add("sc-down");
+        } else {
+            document.querySelector(".master-header").classList.remove("sc-down");
+            document.querySelector(".master-header").classList.add("sc-up");
+        }
+        lastScrollTop = scrollST <= 0 ? 0 : scrollST;
+    });
+}
+
 const baseTempUrl = vcObj.tpl_url+'/menu-v8/';
 const MENU_DATA = [
   {

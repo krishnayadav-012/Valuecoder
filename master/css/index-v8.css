@@ -1875,6 +1875,21 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-color: #f3f4f6;
 }
 
+.master-header.sc-down.header-bg {
+  animation: slideDown 0.35s ease-out;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #mobile-menu-open {
   display: inline-flex;
   align-items: center;
