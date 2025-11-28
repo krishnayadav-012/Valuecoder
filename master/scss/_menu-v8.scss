@@ -14,7 +14,6 @@
   --mega-height: 520px;
   --myfont: "Plus Jakarta Sans", sans-serif;
   --master-menu-height: 65vh;
-
 }
 .master-header.sc-up{
   width: 100%;
@@ -25,17 +24,16 @@
   box-shadow:none;
   backdrop-filter:unset;
   border-bottom:0;
-
 }
 .master-header.header-bg:hover{
   background: $white !important;
   border-bottom: 1px solid var(--vc-gray-200);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-
 }
 .master-header.header-bg:hover .get-connect,.master-menu-desktop{
   opacity: 1;
 }
+
 
 .master-header.header-bg:hover .master-menu-desktop{
   opacity: 1;
@@ -47,6 +45,7 @@ opacity: 0;
 .master-header.sc-down .logo-size{
   opacity: 0;
 }
+
 
 .master-header.header-bg .master-menu-desktop{
 opacity: 0;
@@ -88,6 +87,7 @@ top: 0px; transition: all 0.7s ease-in-out;}
 }
 
 
+.master-header {background-color: $white;}
 .master-header {
   .scroll-logo{
     display: block;
@@ -147,17 +147,11 @@ ease-in-out;
         transition: background-color 150ms, color 150ms;
 
         &:hover {
-
           background-color: #f3f4f6;
-
         }
-
       }
-
     }
-
   }
-
 }
 
 .master-header.sc-down.header-bg{
@@ -777,7 +771,7 @@ button.tab-btn-base {
   padding: 4px 8px;
   box-sizing: border-box;
   border-radius: 4px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 

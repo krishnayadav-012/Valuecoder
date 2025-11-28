@@ -1935,6 +1935,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: none;
 }
 
+.master-header {
+  background-color: #ffffff;
+}
+
 .master-header .scroll-logo {
   display: block;
 }
@@ -2536,7 +2540,7 @@ button.tab-btn-base {
   padding: 4px 8px;
   box-sizing: border-box;
   border-radius: 4px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .link-hover-effect::after {
