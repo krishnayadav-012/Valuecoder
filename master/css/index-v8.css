@@ -1843,6 +1843,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   --master-menu-height: 65vh;
 }
 
+.master-header {
+  background-color: #ffffff;
+}
+
 .master-header.sc-up {
   width: 100%;
   background-color: #ffffff;
@@ -1933,10 +1937,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 
 .master-header:hover .scroll-logo {
   display: none;
-}
-
-.master-header {
-  background-color: #ffffff;
 }
 
 .master-header .scroll-logo {
