@@ -1828,6 +1828,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 :root {
+  --menuhover: #3b82f6;
   --vc-gray-50: #f9fafb;
   --vc-gray-100: #f3f4f6;
   --vc-gray-200: #e5e7eb;
@@ -1878,6 +1879,10 @@ body.page-template-template-testimonials .client-video-section iframe,
 
 .master-header.header-bg .master-menu-desktop {
   opacity: 0;
+}
+
+.get-connect a:hover {
+  background-color: #1d4ed8;
 }
 
 .master-header.header-bg.sc-up {
@@ -2105,11 +2110,11 @@ body.page-template-template-testimonials .client-video-section iframe,
 .l2-menu-item:hover {
   padding-left: 3px;
   transition: padding-left 0.2s ease;
-  color: #FFAD00;
+  color: var(--menuhover);
 }
 
 .l2-menu-item.l2-item-active .my-sidemenu {
-  color: #FFAD00;
+  color: var(--menuhover);
   font-family: inherit;
   font-size: 14px;
 }
@@ -2127,7 +2132,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   height: 60%;
   width: 3px;
   display: none;
-  background: #FFAD00;
+  background: var(--menuhover);
   border-radius: 0 2px 2px 0;
   visibility: visible;
 }
@@ -2205,7 +2210,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 .nav-link.is-expanded {
-  color: #FFAD00;
+  color: var(--menuhover);
 }
 
 .get-connect {
@@ -2487,7 +2492,12 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #64748b;
 }
 
-.tab-btn-base .is-active {
+.tab-btn-base.is-active:hover {
+  color: #3b82f6;
+  border-color: #3b82f6 !important;
+}
+
+.tab-btn-base.is-active {
   color: #3b82f6;
 }
 
@@ -2515,7 +2525,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 
 button.tab-btn-base {
   background: transparent;
-  border: none;
   cursor: pointer;
   font-family: inherit;
 }
@@ -2589,7 +2598,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  background-color: #FFAD00;
+  background-color: var(--menuhover);
   border: 1px solid transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: background-color 0.15s ease;
@@ -2617,7 +2626,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   border-radius: 8px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   color: #ffffff;
-  background-color: #FFAD00;
+  background-color: var(--menuhover);
   transition: background-color 150ms;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -2755,7 +2764,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   left: 0.5rem;
   height: 2px;
   width: 0;
-  background-color: #FFAD00;
+  background-color: var(--menuhover);
   transition: width 0.2s ease-out;
 }
 
@@ -2834,19 +2843,18 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   border: none;
   padding: 2px 8px;
   cursor: pointer;
-  font-size: 14px;
   font-weight: 500;
   color: var(--vc-gray-700);
   transition: color 0.12s ease;
 }
 
 .tab-btn-base.is-active {
-  color: #FFAD00;
-  border-bottom: 1px solid #FFAD00;
+  color: var(--menuhover);
+  border-bottom: 2px solid var(--menuhover);
 }
 
 .tab-btn-base[aria-selected=true] {
-  color: #FFAD00;
+  color: var(--menuhover);
 }
 
 .l3-tab-content-container {
@@ -2898,7 +2906,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .group-hover\:text-blue-600:hover {
-  color: #FFAD00;
+  color: var(--menuhover);
 }
 
 /* Link hover effect used across panels */
@@ -2910,7 +2918,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .link-hover-effect:hover {
-  color: #FFAD00;
+  color: var(--menuhover);
   transform: translateX(0);
 }
 
@@ -2956,7 +2964,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 /* "group/header" classes used in markup (escaped) */
 .group\/header\:text-blue-600:hover,
 .group-hover\/header\:text-blue-600:hover {
-  color: #FFAD00;
+  color: var(--menuhover);
 }
 
 /* canonical arrow transition used on action links */
@@ -2990,7 +2998,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 }
 
 .font-semibold.text-gray-800:hover {
-  color: #FFAD00;
+  color: var(--menuhover);
 }
 
 /* ---------------------------
@@ -3031,7 +3039,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 /* Final note: small visual tweaks for the L3 grid items (headings/links) */
 .l3-content-panel h4 {
   margin: 0 0 12px 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: var(--vc-gray-500);
   text-transform: uppercase;
@@ -3071,7 +3079,7 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 .link-hover-effect:hover::after,
 .link-hover-effect:focus-visible::after {
   width: calc(100% - 16px);
-  background: #FFAD00;
+  background: var(--menuhover);
 }
 
 /* FIX 4: Canonical Header Link Styling - Removed space-between, now rely on Tailwind flex gap */
@@ -3107,7 +3115,6 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 .tab-btn-base {
   padding: 12px 4px;
   border-bottom: 2px solid transparent;
-  font-size: 14px;
   font-weight: 500;
   transition: all 0.15s ease;
   color: #64748b;
@@ -3118,21 +3125,19 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 .tab-btn-base:hover,
 .tab-btn-base:focus-visible {
   color: #1e293b;
-  /* Slate-800 */
   border-bottom-color: #cbd5e1;
-  /* Slate-300 */
   background-color: transparent;
   outline: none;
 }
 
 /* Add focus style for L3 tabs */
 .tab-btn-base:hover {
-  color: #FFAD00;
-  border-color: #FFAD00;
+  color: #1e293b;
+  border-color: #cbd5e1;
 }
 
 .tab-btn-base:focus-visible {
-  outline: 2px solid #FFAD00;
+  outline: 2px solid var(--menuhover);
   outline-offset: 2px;
 }
 
