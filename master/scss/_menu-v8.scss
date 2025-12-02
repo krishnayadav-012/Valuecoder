@@ -1,7 +1,7 @@
 @use 'default' as *;
 
 :root { 
-  --menuhover: #3b82f6;
+  --menuhover: #FFAD00;
   --vc-gray-50: #f9fafb;
   --vc-gray-100: #f3f4f6;
   --vc-gray-200: #e5e7eb;
@@ -733,11 +733,11 @@ ease-in-out;
   color: #64748b;
 }
 .tab-btn-base.is-active:hover{
-  color: #3b82f6;
-border-color: #3b82f6 !important;
+  color: #FFAD00;
+border-color: #FFAD00 !important;
 }
 .tab-btn-base.is-active {
-  color: #3b82f6;
+  color: #FFAD00;
 
 }
 
@@ -840,9 +840,7 @@ button.tab-btn-base {
 }
 
 /* CTA button */
-a.inline-flex.items-center.justify-center.px-4.py-2,
-a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded-full.shadow-sm {
-  
+.get-connect a{  
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -850,12 +848,29 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
-  color: #fff;
-  background-color: var(--menuhover);
+  color: #05164d;
+  background-color: #FFAD00;
   border: 1px solid transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: background-color .15s ease;
+}
 
+.get-connect a:after {
+    content: "";
+    background: url(../images/home-images/blue-cta.svg) no-repeat;
+    width: 26px;
+    height: 26px;
+    background-size: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.get-connect a:hover:after {
+  background: url(../images/home-images/yellow-cta.svg) no-repeat;
+}
+
+.get-connect a:hover{
+  background: #05164d;
+  color: #ffffff;
 }
 
 .mobile-connectr-btn {
@@ -1411,16 +1426,16 @@ a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.te
 .tab-btn-base:hover,
 .tab-btn-base:focus-visible {
   color: #1e293b;
-  border-bottom-color: #cbd5e1;
+  border-bottom-color: #FFAD00;
   background-color: transparent;
   outline: none;
 }
 
 /* Add focus style for L3 tabs */
 .tab-btn-base:hover {
-  color: #1e293b;
-  border-color: #cbd5e1;
-  // border-bottom: 2px solid #cbd5e1 !important;
+  color: #FFAD00;
+  border-color: #FFAD00;
+  
 }
 
 
