@@ -1,0 +1,2649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValueCoders - Enterprise Software Development</title>
+    <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />    
+    <!-- SEO Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ValueCoders",
+      "url": "https://www.valuecoders.com",
+      "logo": "https://www.valuecoders.com/logo.png",
+      "contactPoint": [
+        {"@type": "ContactPoint", "telephone": "+1 (555) 123-4567", "contactType": "sales", "areaServed": "USA"},
+        {"@type": "ContactPoint", "telephone": "+44 20 7946 0123", "contactType": "sales", "areaServed": "UK"},
+        {"@type": "ContactPoint", "telephone": "+971 4 123 4567", "contactType": "sales", "areaServed": "UAE"},
+        {"@type": "ContactPoint", "telephone": "+61 2 8000 1234", "contactType": "sales", "areaServed": "Australia"},
+        {"@type": "ContactPoint", "telephone": "+91 987 654 3210", "contactType": "sales", "areaServed": "India"}
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/valuecoders",
+        "https://twitter.com/valuecoders"
+      ]
+    }
+    </script>
+    
+    <style>
+        /* === Base Styles === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-900: #0f172a;
+            --navy-950: #020617;
+            --navy-800: #1e293b;
+            --navy-700: #334155;
+            --navy-50: #f8fafc;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --amber-50: #fffbeb;
+            --amber-100: #fef3c7;
+            --amber-200: #fde68a;
+            --amber-300: #fcd34d;
+            --amber-400: #fbbf24;
+            --amber-500: #f59e0b;
+            --blue-50: #eff6ff;
+            --blue-100: #dbeafe;
+            --green-50: #f0fdf4;
+            --green-400: #4ade80;
+            --green-500: #22c55e;
+            --green-600: #16a34a;
+            --green-700: #15803d;
+            --red-400: #f87171;
+            --red-500: #ef4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--slate-50);
+            color: var(--slate-900);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.dark {
+            background: var(--navy-900);
+            color: white;
+        }
+
+        /* === Selection === */
+        ::selection {
+            background: var(--amber-400);
+            color: var(--navy-900);
+        }
+
+        /* === Background Effects === */
+        .bg-gradients {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        body.dark .bg-gradients {
+            opacity: 1;
+        }
+
+        .bg-gradient-1 {
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 1000px;
+            height: 1000px;
+            background: rgba(30, 41, 59, 0.4);
+            border-radius: 50%;
+            filter: blur(120px);
+        }
+
+        .bg-gradient-2 {
+            position: absolute;
+            bottom: -10%;
+            left: -20%;
+            width: 800px;
+            height: 800px;
+            background: rgba(30, 58, 138, 0.2);
+            border-radius: 50%;
+            filter: blur(150px);
+        }
+
+        .bg-gradient-3 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 600px;
+            height: 600px;
+            background: rgba(245, 158, 11, 0.05);
+            border-radius: 50%;
+            filter: blur(100px);
+        }
+
+        .bg-noise {
+            position: absolute;
+            inset: 0;
+            opacity: 0.2;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            mix-blend-mode: overlay;
+        }
+
+        .bg-light-effects {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 0.5s;
+            background: var(--slate-50);
+        }
+
+        body.dark .bg-light-effects {
+            opacity: 0;
+        }
+
+        .bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(to right, rgba(128, 128, 128, 0.07) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(128, 128, 128, 0.07) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .bg-light-gradient-1 {
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 800px;
+            height: 800px;
+            background: rgba(191, 219, 254, 0.6);
+            border-radius: 50%;
+            filter: blur(120px);
+        }
+
+        .bg-light-gradient-2 {
+            position: absolute;
+            bottom: -10%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(254, 243, 199, 0.4);
+            border-radius: 50%;
+            filter: blur(120px);
+        }
+
+        /* === Header === */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--slate-200);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        body.dark header {
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom-color: rgba(255, 255, 255, 0.05);
+            box-shadow: none;
+        }
+
+        .header-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--navy-900);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 1.25rem;
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1);
+            transition: transform 0.3s;
+        }
+
+        body.dark .logo-icon {
+            background: var(--amber-400);
+            color: var(--navy-900);
+            box-shadow: 0 10px 25px -5px rgba(251, 191, 36, 0.2);
+        }
+
+        .logo:hover .logo-icon {
+            transform: rotate(6deg);
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.025em;
+            color: var(--navy-900);
+        }
+
+        body.dark .logo-text {
+            color: white;
+        }
+
+        .logo-text .highlight {
+            color: var(--amber-500);
+        }
+
+        body.dark .logo-text .highlight {
+            color: var(--amber-400);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: var(--slate-600);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        body.dark nav a {
+            color: #d1d5db;
+        }
+
+        nav a:hover {
+            color: var(--navy-900);
+        }
+
+        body.dark nav a:hover {
+            color: white;
+        }
+
+        .nav-link {
+            display: none;
+        }
+
+        .theme-toggle {
+            padding: 0.5rem;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            background: transparent;
+            color: var(--slate-600);
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body.dark .theme-toggle {
+            color: #d1d5db;
+        }
+
+        .theme-toggle:hover {
+            background: var(--slate-100);
+            border-color: var(--slate-200);
+        }
+
+        body.dark .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-phone {
+            display: none;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            background: var(--navy-900);
+            padding: 0.625rem 1.25rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        body.dark .nav-phone {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: none;
+        }
+
+        .nav-phone:hover {
+            background: var(--navy-800);
+        }
+
+        body.dark .nav-phone:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-phone svg {
+            color: var(--amber-400);
+        }
+
+        /* === Main Content === */
+        main {
+            position: relative;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            max-width: 1600px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* === Mobile Header === */
+        .mobile-header {
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            margin-bottom: 1rem;
+            border-radius: 9999px;
+            background: var(--blue-50);
+            color: var(--navy-700);
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: 1px solid var(--blue-100);
+        }
+
+        body.dark .status-badge {
+            background: rgba(30, 41, 59, 0.5);
+            color: var(--amber-400);
+            border-color: rgba(251, 191, 36, 0.2);
+        }
+
+        .pulse-indicator {
+            position: relative;
+            width: 8px;
+            height: 8px;
+        }
+
+        .pulse-dot {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--amber-500);
+            animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        body.dark .pulse-dot {
+            background: var(--amber-400);
+        }
+
+        .pulse-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--amber-500);
+        }
+
+        body.dark .pulse-inner {
+            background: var(--amber-400);
+        }
+
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        .mobile-header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--navy-900);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        body.dark .mobile-header h1 {
+            color: white;
+        }
+
+        .mobile-header .highlight {
+            color: var(--amber-500);
+        }
+
+        body.dark .mobile-header .highlight {
+            color: var(--amber-400);
+        }
+
+        .mobile-header p {
+            color: var(--slate-600);
+        }
+
+        body.dark .mobile-header p {
+            color: #9ca3af;
+        }
+
+        /* === Grid Layout === */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* === Left Column === */
+        .left-column {
+            display: none;
+            position: sticky;
+            top: 8rem;
+            padding-top: 2rem;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .hero-content {
+            margin-bottom: 3rem;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.375rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: 9999px;
+            background: var(--blue-50);
+            color: var(--navy-700);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: 1px solid var(--blue-100);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .hero-badge {
+            background: rgba(30, 41, 59, 0.5);
+            color: var(--amber-400);
+            border-color: rgba(251, 191, 36, 0.2);
+            box-shadow: none;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--navy-900);
+            line-height: 0.95;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+        }
+
+        body.dark .hero-title {
+            color: white;
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(to right, var(--amber-500), var(--amber-300));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        body.dark .hero-title .gradient-text {
+            background: linear-gradient(to right, var(--amber-400), var(--amber-200));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--slate-600);
+            max-width: 36rem;
+            line-height: 1.7;
+            border-left: 2px solid rgba(251, 191, 36, 0.3);
+            padding-left: 1.5rem;
+        }
+
+        body.dark .hero-description {
+            color: #9ca3af;
+        }
+
+        .certifications-strip {
+            padding: 1rem 0;
+            border-top: 1px solid var(--slate-200);
+            border-bottom: 1px solid var(--slate-200);
+            margin-bottom: 3rem;
+        }
+
+        body.dark .certifications-strip {
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .certifications-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .cert-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--slate-500);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        body.dark .cert-item {
+            color: #9ca3af;
+        }
+
+        .cert-item svg {
+            color: var(--amber-500);
+        }
+
+        /* === Global Hubs === */
+        .global-hubs-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--slate-500);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        body.dark .section-label {
+            color: #6b7280;
+        }
+
+        .global-hubs-card {
+            width: 100%;
+            background: white;
+            border: 1px solid var(--slate-200);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .global-hubs-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .location-tabs {
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--slate-100);
+            background: rgba(248, 250, 252, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        body.dark .location-tabs {
+            border-bottom-color: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .location-tab {
+            flex: 1;
+            min-width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            color: var(--slate-500);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        body.dark .location-tab {
+            color: #6b7280;
+        }
+
+        .location-tab:hover {
+            color: var(--navy-900);
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        body.dark .location-tab:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .location-tab.active {
+            background: white;
+            color: var(--navy-900);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .location-tab.active {
+            background: var(--navy-800);
+            color: white;
+            box-shadow: none;
+        }
+
+        .flag-icon {
+            width: 16px;
+            height: 12px;
+            border-radius: 1px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            opacity: 0.8;
+            object-fit: cover;
+        }
+
+        .location-content {
+            padding: 1.25rem;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .location-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 0.5rem;
+        }
+
+        .location-title {
+            color: var(--navy-900);
+            font-weight: 700;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        body.dark .location-title {
+            color: white;
+        }
+
+        .time-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: var(--amber-100);
+            color: #92400e;
+            font-size: 12px;
+            font-family: 'Courier New', monospace;
+            font-weight: 700;
+        }
+
+        body.dark .time-badge {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--amber-400);
+        }
+
+        .location-address {
+            color: var(--slate-500);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            font-style: normal;
+        }
+
+        body.dark .location-address {
+            color: #9ca3af;
+        }
+
+        .location-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--navy-900);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        body.dark .location-phone {
+            color: white;
+        }
+
+        .location-phone:hover {
+            color: var(--amber-500);
+        }
+
+        body.dark .location-phone:hover {
+            color: var(--amber-400);
+        }
+
+        .phone-icon-wrapper {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--slate-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        body.dark .phone-icon-wrapper {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .location-phone:hover .phone-icon-wrapper {
+            background: var(--amber-500);
+            color: white;
+        }
+
+        /* === Direct Contact Card === */
+        .direct-contact-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-radius: 12px;
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            text-decoration: none;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .direct-contact-card {
+            background: rgba(2, 6, 23, 0.5);
+            border-color: rgba(255, 255, 255, 0.05);
+            box-shadow: none;
+        }
+
+        .direct-contact-card:hover {
+            border-color: rgba(251, 191, 36, 0.5);
+        }
+
+        .contact-card-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon-wrapper {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--amber-500);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .contact-icon-wrapper {
+            background: var(--navy-800);
+            color: var(--amber-400);
+        }
+
+        .contact-card-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-card-title {
+            color: var(--navy-900);
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+
+        body.dark .contact-card-title {
+            color: white;
+        }
+
+        .contact-card-subtitle {
+            color: var(--slate-500);
+            font-size: 0.875rem;
+        }
+
+        body.dark .contact-card-subtitle {
+            color: #6b7280;
+        }
+
+        .contact-arrow {
+            color: var(--slate-400);
+            transition: color 0.2s;
+        }
+
+        body.dark .contact-arrow {
+            color: #4b5563;
+        }
+
+        .direct-contact-card:hover .contact-arrow {
+            color: var(--amber-500);
+        }
+
+        body.dark .direct-contact-card:hover .contact-arrow {
+            color: var(--amber-400);
+        }
+
+        /* === Right Column / Form === */
+        .right-column {
+            animation: slideUp 0.6s ease-out 0.2s both;
+            width: 60%;
+        }
+
+        /* === Contact Form === */
+        .form-wrapper {
+            background: white;
+            border-radius: 24px;
+            border: 1px solid var(--slate-200);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        body.dark .form-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .console-header {
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--slate-100);
+            background: rgba(248, 250, 252, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        body.dark .console-header {
+            border-bottom-color: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .console-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .console-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .console-dot.red { background: rgba(239, 68, 68, 0.8); }
+        .console-dot.yellow { background: rgba(251, 191, 36, 0.8); }
+        .console-dot.green { background: rgba(34, 197, 94, 0.8); }
+
+        .console-security {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--slate-400);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .form-content {
+            padding: 2.5rem;
+        }
+
+        .form-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy-900);
+        }
+
+        body.dark .section-title {
+            color: white;
+        }
+
+        .section-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background: var(--amber-100);
+            color: #b45309;
+            font-size: 0.875rem;
+        }
+
+        body.dark .section-number {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--amber-400);
+        }
+
+        .error-message {
+            color: var(--red-500);
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* === Scope Grid === */
+        .scope-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .scope-button {
+            position: relative;
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: left;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 2px solid var(--slate-200);
+            background: white;
+            color: var(--slate-600);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .scope-button {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: #9ca3af;
+        }
+
+        .scope-button:hover {
+            border-color: rgba(251, 191, 36, 0.5);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .scope-button.selected {
+            background: rgba(15, 23, 42, 0.05);
+            border-color: var(--navy-900);
+            color: var(--navy-900);
+            box-shadow: 0 0 0 1px var(--navy-900);
+        }
+
+        body.dark .scope-button.selected {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--amber-400);
+            color: white;
+            box-shadow: 0 0 0 1px var(--amber-400);
+        }
+
+        .scope-button-content {
+            position: relative;
+            z-index: 10;
+            padding-right: 1.5rem;
+        }
+
+        .scope-title {
+            display: block;
+            line-height: 1.4;
+        }
+
+        .scope-button.selected .scope-title {
+            font-weight: 700;
+        }
+
+        .scope-subtitle {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .scope-checkbox {
+            position: absolute;
+            bottom: 0.75rem;
+            right: 0.75rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            border: 2px solid var(--slate-300);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        body.dark .scope-checkbox {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .scope-button.selected .scope-checkbox {
+            border-color: var(--navy-900);
+            background: var(--navy-900);
+        }
+
+        body.dark .scope-button.selected .scope-checkbox {
+            border-color: var(--amber-400);
+            background: var(--amber-400);
+        }
+
+        .scope-button:hover .scope-checkbox {
+            border-color: var(--amber-400);
+        }
+
+        /* === Input Fields === */
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 1rem;
+            top: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-right: 1px solid var(--slate-200);
+            padding-right: 0.75rem;
+            height: 1.5rem;
+            z-index: 10;
+            color: var(--slate-400);
+            pointer-events: none;
+        }
+
+        body.dark .input-icon {
+            border-right-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .form-input {
+            width: 100%;
+            background: white;
+            border: 2px solid var(--slate-200);
+            border-radius: 0.5rem;
+            padding: 0.875rem 1rem;
+            font-size: 1rem;
+            color: var(--navy-900);
+            transition: all 0.2s ease;
+            outline: none;
+        }
+
+        body.dark .form-input {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .form-input.has-icon {
+            padding-left: 4.5rem;
+        }
+
+        .form-input:focus {
+            border-color: var(--amber-500);
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        .form-input.error {
+            border-color: var(--red-500);
+        }
+
+        .form-input.error:focus {
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+
+        .form-input::placeholder {
+            color: transparent;
+        }
+
+        .form-label {
+            position: absolute;
+            left: 1rem;
+            top: 0.875rem;
+            color: var(--slate-500);
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+            pointer-events: none;
+            background: white;
+            padding: 0 0.25rem;
+        }
+
+        body.dark .form-label {
+            background: rgba(15, 23, 42, 0.9);
+            color: #9ca3af;
+        }
+
+        .form-input.has-icon + .form-label {
+            left: 4.5rem;
+        }
+
+        .form-input:focus + .form-label,
+        .form-input:not(:placeholder-shown) + .form-label {
+            top: -0.625rem;
+            font-size: 0.75rem;
+            color: #b45309;
+        }
+
+        body.dark .form-input:focus + .form-label,
+        body.dark .form-input:not(:placeholder-shown) + .form-label {
+            color: var(--amber-400);
+        }
+
+        .field-error {
+            position: absolute;
+            bottom: -1.25rem;
+            left: 0.25rem;
+            font-size: 0.75rem;
+            color: var(--red-500);
+            font-weight: 500;
+        }
+
+        /* === Textarea === */
+        .textarea-wrapper {
+            position: relative;
+        }
+
+        .form-textarea {
+            width: 100%;
+            background: white;
+            border: 2px solid var(--slate-200);
+            border-radius: 0.5rem;
+            padding: 0.875rem 1rem;
+            font-size: 1rem;
+            color: var(--navy-900);
+            font-family: inherit;
+            transition: all 0.2s ease;
+            outline: none;
+            resize: none;
+        }
+
+        body.dark .form-textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .form-textarea:focus {
+            border-color: var(--amber-500);
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        .form-textarea::placeholder {
+            color: transparent;
+        }
+
+        .form-textarea:focus + .form-label,
+        .form-textarea:not(:placeholder-shown) + .form-label {
+            top: -0.625rem;
+            font-size: 0.75rem;
+            color: #b45309;
+        }
+
+        body.dark .form-textarea:focus + .form-label,
+        body.dark .form-textarea:not(:placeholder-shown) + .form-label {
+            color: var(--amber-400);
+        }
+
+        /* === Form Footer === */
+        .form-footer {
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--slate-100);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        body.dark .form-footer {
+            border-top-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .info-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            flex: 1;
+        }
+
+        .info-badge {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            background: var(--slate-50);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--slate-100);
+            transition: all 0.2s ease;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        body.dark .info-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .info-badge:hover {
+            border-color: #d1fae5;
+        }
+
+        body.dark .info-badge:hover {
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .info-badge.amber:hover {
+            border-color: var(--amber-100);
+        }
+
+        body.dark .info-badge.amber:hover {
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .badge-icon {
+            padding: 0.25rem;
+            border-radius: 0.375rem;
+            background: #d1fae5;
+            color: var(--green-700);
+        }
+
+        body.dark .badge-icon {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--green-400);
+        }
+
+        .info-badge.amber .badge-icon {
+            background: var(--amber-100);
+            color: #92400e;
+        }
+
+        body.dark .info-badge.amber .badge-icon {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--amber-400);
+        }
+
+        .badge-content {
+            font-size: 0.75rem;
+            color: var(--slate-500);
+        }
+
+        body.dark .badge-content {
+            color: #9ca3af;
+        }
+
+        .badge-title {
+            display: block;
+            color: var(--navy-900);
+            font-weight: 700;
+            margin-bottom: 0.125rem;
+        }
+
+        body.dark .badge-title {
+            color: white;
+        }
+
+        .submit-button {
+            padding: 1rem 2.5rem;
+            background: var(--navy-900);
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        body.dark .submit-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .submit-button:hover:not(:disabled) {
+            background: var(--navy-800);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.3);
+        }
+
+        body.dark .submit-button:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .submit-button:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        /* === Success State === */
+        .success-wrapper {
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            background: white;
+            border-radius: 24px;
+            border: 1px solid var(--slate-100);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        body.dark .success-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .success-icon {
+            width: 5rem;
+            height: 5rem;
+            background: var(--green-500);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(34, 197, 94, 0.3);
+            border: 4px solid #dcfce7;
+        }
+
+        body.dark .success-icon {
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .success-title {
+            font-size: 1.875rem;
+            font-weight: 800;
+            color: var(--navy-900);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        body.dark .success-title {
+            color: white;
+        }
+
+        .success-message {
+            color: var(--slate-500);
+            margin-bottom: 3rem;
+            text-align: center;
+            max-width: 28rem;
+            font-size: 1.125rem;
+        }
+
+        body.dark .success-message {
+            color: #9ca3af;
+        }
+
+        .success-name {
+            color: var(--navy-900);
+            font-weight: 600;
+        }
+
+        body.dark .success-name {
+            color: white;
+        }
+
+        /* === Timeline === */
+        .timeline {
+            width: 100%;
+            max-width: 28rem;
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0.5rem;
+            bottom: 1.5rem;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--green-500), var(--slate-200));
+        }
+
+        body.dark .timeline::before {
+            background: linear-gradient(to bottom, var(--green-500), rgba(255, 255, 255, 0.1));
+        }
+
+        .timeline-item {
+            position: relative;
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+            border: 4px solid white;
+            flex-shrink: 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .timeline-icon {
+            border-color: var(--navy-900);
+        }
+
+        .timeline-icon.active {
+            background: var(--green-500);
+        }
+
+        .timeline-icon.pending {
+            background: var(--slate-100);
+        }
+
+        body.dark .timeline-icon.pending {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-content {
+            padding-top: 0.25rem;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            color: var(--navy-900);
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+
+        body.dark .timeline-title {
+            color: white;
+        }
+
+        .timeline-status {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .timeline-status.active {
+            color: var(--green-600);
+        }
+
+        body.dark .timeline-status.active {
+            color: var(--green-400);
+        }
+
+        .timeline-status.pending {
+            color: var(--slate-500);
+        }
+
+        body.dark .timeline-status.pending {
+            color: #6b7280;
+        }
+
+        .timeline-item.fade {
+            opacity: 0.75;
+        }
+
+        .timeline-item.fade-more {
+            opacity: 0.5;
+        }
+
+        .reset-button {
+            padding: 0.875rem 2rem;
+            background: var(--slate-50);
+            color: var(--navy-900);
+            border: none;
+            border-radius: 0.75rem;
+            font-weight: 700;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        body.dark .reset-button {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .reset-button:hover {
+            background: var(--slate-100);
+        }
+
+        body.dark .reset-button:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* === Logo Marquee === */
+        .marquee-container {
+            margin-top: 2rem;
+        }
+
+        .marquee-label {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--slate-400);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        body.dark .marquee-label {
+            color: #6b7280;
+        }
+
+        .logo-marquee {
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid var(--slate-200);
+            border-bottom: 1px solid var(--slate-200);
+            padding: 2rem 0;
+            background: rgba(248, 250, 252, 0.5);
+        }
+
+        body.dark .logo-marquee {
+            border-color: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: marquee 40s linear infinite;
+            white-space: nowrap;
+        }
+
+        .marquee-item {
+            padding: 0 4rem;
+            font-size: 1.875rem;
+            font-weight: 900;
+            color: var(--slate-300);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            user-select: none;
+            opacity: 0.6;
+            transition: all 0.5s;
+        }
+
+        body.dark .marquee-item {
+            color: rgba(255, 255, 255, 0.1);
+        }
+
+        .marquee-item:hover {
+            color: var(--slate-400);
+        }
+
+        body.dark .marquee-item:hover {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .marquee-gradient {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 6rem;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .marquee-gradient.left {
+            left: 0;
+            background: linear-gradient(to right, var(--slate-50), transparent);
+        }
+
+        body.dark .marquee-gradient.left {
+            background: linear-gradient(to right, var(--navy-900), transparent);
+        }
+
+        .marquee-gradient.right {
+            right: 0;
+            background: linear-gradient(to left, var(--slate-50), transparent);
+        }
+
+        body.dark .marquee-gradient.right {
+            background: linear-gradient(to left, var(--navy-900), transparent);
+        }
+
+        /* === Mobile Footer === */
+        .mobile-footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--slate-200);
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        body.dark .mobile-footer {
+            border-top-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* === Footer === */
+        footer {
+            border-top: 1px solid var(--slate-200);
+            padding: 3rem 0;
+            text-align: center;
+            background: white;
+        }
+
+        body.dark footer {
+            border-top-color: rgba(255, 255, 255, 0.05);
+            background: rgba(2, 6, 23, 0.3);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-text {
+            color: var(--slate-500);
+            font-size: 0.875rem;
+        }
+
+        body.dark .footer-text {
+            color: #6b7280;
+        }
+
+        .footer-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-icon {
+            color: var(--slate-400);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        body.dark .footer-icon {
+            color: #6b7280;
+        }
+
+        .footer-icon:hover {
+            color: var(--navy-900);
+        }
+
+        body.dark .footer-icon:hover {
+            color: white;
+        }
+
+        /* === Icons === */
+        .icon {
+            width: 1rem;
+            height: 1rem;
+            display: inline-block;
+        }
+
+        .icon-sm {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+
+        .icon-lg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        .icon-xl {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        /* === Spinner === */
+        .spinner {
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid currentColor;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* === Animations === */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* === Utilities === */
+        .hidden {
+            display: none !important;
+        }
+
+        /* === Responsive === */
+        @media (min-width: 768px) {
+            .nav-link {
+                display: block;
+            }
+            
+            .nav-phone {
+                display: flex;
+            }
+            
+            .footer-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .mobile-header {
+                display: none;
+            }
+            
+            .left-column {
+                display: block;
+                width: 40%;
+            }
+            
+            .content-grid {
+                /*grid-template-columns: 5fr 7fr;*/
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                gap: 4rem;
+            }
+            
+            .hero-title {
+                font-size: 4.5rem;
+            }
+            
+            .mobile-footer {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-content {
+                padding: 1.5rem;
+            }
+
+            .console-header {
+                padding: 1rem 1.5rem;
+            }
+
+            .scope-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-footer {
+                flex-direction: column;
+            }
+
+            .submit-button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .info-badges {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .info-badge {
+                width: 100%;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .location-tabs {
+                gap: 0.375rem;
+            }
+            
+            .location-tab {
+                min-width: 60px;
+                padding: 0.5rem;
+                font-size: 10px;
+            }
+            
+            .location-tab span {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+    var vcObj = {
+    "_version": "1763614476",
+    "tpl_url": "http://localhost/markup-dom/valuecoders/master",
+    "web_url": "http://localhost/markup-dom/valuecoders/master",
+    "admin_ajax": "https://www.valuecoders.com/staging/wp-admin/admin-ajax.php",
+    "page_tpl": "tpl-homev6.0.php",
+    "is_mobile": "false",
+    "_env": "staging",
+    "_v3_blog_post": "",
+    "_post_id": "19655",
+    "_cs_data": null,
+    "_blog_tag": ""
+    };
+    </script>
+    <script defer src="menu.js"></script>
+</head>
+<body>
+<?php require_once './include/menu-v8.php'; ?>
+<!-- Background Effects -->
+<div class="bg-gradients">
+<div class="bg-gradient-1"></div>
+<div class="bg-gradient-2"></div>
+<div class="bg-gradient-3"></div>
+<div class="bg-noise"></div>
+</div>
+<div class="bg-light-effects">
+<div class="bg-grid"></div>
+<div class="bg-light-gradient-1"></div>
+<div class="bg-light-gradient-2"></div>
+</div>
+
+
+
+    <main>
+        <!-- Mobile Header -->
+        <section class="mobile-header">
+            <div class="status-badge">
+                <div class="pulse-indicator">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-inner"></div>
+                </div>
+                Accepting New Projects
+            </div>
+            <h1>
+                Let's Build Something <br/>
+                <span class="highlight">Extraordinary.</span>
+            </h1>
+            <p>Tell us about your project below. Fast response guaranteed.</p>
+        </section>
+
+        <div class="content-grid">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <div class="pulse-indicator">
+                            <div class="pulse-dot"></div>
+                            <div class="pulse-inner"></div>
+                        </div>
+                        Accepting New Projects
+                    </div>
+                    <h1 class="hero-title">
+                        Engineering <br/>
+                        <span class="gradient-text">Excellence.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Partner with a top-tier software development company. From rapid MVPs to enterprise-grade platforms, we deliver compliant, scalable, and secure solutions.
+                    </p>
+                </div>
+
+                <div class="certifications-strip">
+                    <div class="certifications-list">
+                        <div class="cert-item">
+                            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            ISO 9001:2015
+                        </div>
+                        <div class="cert-item">
+                            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            ISO 27001:2013
+                        </div>
+                        <div class="cert-item">
+                            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            CMMI Level 3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="global-hubs-section">
+                    <p class="section-label">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Global Hubs
+                    </p>
+                    <div class="global-hubs-card">
+                        <div class="location-tabs" id="locationTabs"></div>
+                        <div class="location-content" id="locationContent"></div>
+                    </div>
+                </div>
+
+                <a href="mailto:sales@valuecoders.com" class="direct-contact-card">
+                    <div class="contact-card-content">
+                        <div class="contact-icon-wrapper">
+                            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-title">Direct Sales Inquiry</span>
+                            <span class="contact-card-subtitle">Response time: &lt; 8 hours</span>
+                        </div>
+                    </div>
+                    <svg class="icon-lg contact-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l6 6 6-6M7 11l6 6 6-6"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Form View -->
+                <div id="formView" class="form-wrapper">
+                    <div class="console-header">
+                        <div class="console-dots">
+                            <div class="console-dot red"></div>
+                            <div class="console-dot yellow"></div>
+                            <div class="console-dot green"></div>
+                        </div>
+                        <div class="console-security">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                            Secure 256-bit Encrypted
+                        </div>
+                    </div>
+
+                    <div class="form-content">
+                        <form id="contactForm">
+                            <!-- Section 1: Project Scope -->
+                            <section class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-number">01</span>
+                                        Project Scope
+                                    </h3>
+                                    <span id="scopeError" class="error-message hidden">
+                                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Select at least one scope
+                                    </span>
+                                </div>
+                                <div class="scope-grid" id="scopeGrid"></div>
+                            </section>
+
+                            <!-- Section 2: Contact Details -->
+                            <section class="form-section">
+                                <h3 class="section-title">
+                                    <span class="section-number">02</span>
+                                    Contact Details
+                                </h3>
+
+                                <div class="input-grid">
+                                    <div class="input-wrapper">
+                                        <input type="text" id="fullName" name="fullName" class="form-input" placeholder=" " required>
+                                        <label for="fullName" class="form-label">Full Name *</label>
+                                        <span class="field-error hidden" id="fullNameError"></span>
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                                        <label for="email" class="form-label">Business Email *</label>
+                                        <span class="field-error hidden" id="emailError"></span>
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <div class="input-icon">
+                                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                            </svg>
+                                        </div>
+                                        <input type="text" id="company" name="company" class="form-input has-icon" placeholder=" ">
+                                        <label for="company" class="form-label">Company Name</label>
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <div class="input-icon">
+                                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="phone" name="phone" class="form-input has-icon" placeholder=" ">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="textarea-wrapper">
+                                    <textarea id="message" name="message" class="form-textarea" rows="5" placeholder=" " required></textarea>
+                                    <label for="message" class="form-label">Project Details *</label>
+                                </div>
+                            </section>
+
+                            <!-- Form Footer -->
+                            <div class="form-footer">
+                                <div class="info-badges">
+                                    <div class="info-badge">
+                                        <div class="badge-icon">
+                                            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="badge-content">
+                                            <span class="badge-title">NDA Protected</span>
+                                            <span>100% confidential</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-badge amber">
+                                        <div class="badge-icon">
+                                            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="badge-content">
+                                            <span class="badge-title">Quick Response</span>
+                                            <span>&lt; 8 business hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-button" id="submitBtn">
+                                    <span id="btnText">Send Inquiry</span>
+                                    <svg id="btnArrow" class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                    <div id="btnSpinner" class="spinner hidden"></div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Success View -->
+                <div id="successView" class="success-wrapper hidden">
+                    <div class="success-icon">
+                        <svg class="icon-xl" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h2 class="success-title">Thank You!</h2>
+                    <p class="success-message">
+                        Thanks <span id="successName" class="success-name"></span>! We've received your inquiry and will get back to you shortly.
+                    </p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon active">
+                                <svg class="icon" fill="white" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Inquiry Received</div>
+                                <div class="timeline-status active">Complete</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item fade">
+                            <div class="timeline-icon pending"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Team Review</div>
+                                <div class="timeline-status pending">Within 2 hours</div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item fade-more">
+                            <div class="timeline-icon pending"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Detailed Response</div>
+                                <div class="timeline-status pending">Within 8 hours</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="reset-button" id="resetBtn">Submit Another Inquiry</button>
+                </div>
+
+                <!-- Logo Marquee -->
+                <div class="marquee-container">
+                    <p class="marquee-label">Trusted by 4500+ Enterprises</p>
+                    <div class="logo-marquee">
+                        <div class="marquee-content" id="marqueeContent"></div>
+                        <div class="marquee-gradient left"></div>
+                        <div class="marquee-gradient right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Footer -->
+        <div class="mobile-footer">
+            <div class="certifications-strip">
+                <div class="certifications-list">
+                    <div class="cert-item">
+                        <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        ISO 9001:2015
+                    </div>
+                    <div class="cert-item">
+                        <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        ISO 27001:2013
+                    </div>
+                    <div class="cert-item">
+                        <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        CMMI Level 3
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="section-label" style="text-align: center; margin-bottom: 1rem;">Global Hubs</p>
+                <div class="global-hubs-card">
+                    <div class="location-tabs" id="locationTabsMobile"></div>
+                    <div class="location-content" id="locationContentMobile"></div>
+                </div>
+            </div>
+
+            <a href="mailto:sales@valuecoders.com" class="direct-contact-card">
+                <div class="contact-card-content">
+                    <div class="contact-icon-wrapper">
+                        <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="contact-card-text">
+                        <span class="contact-card-title">Direct Sales Inquiry</span>
+                        <span class="contact-card-subtitle">Response time: &lt; 8 hours</span>
+                    </div>
+                </div>
+                <svg class="icon-lg contact-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l6 6 6-6M7 11l6 6 6-6"></path>
+                </svg>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2025 ValueCoders. All rights reserved.</p>
+            <div class="footer-icons">
+                <svg class="icon-lg footer-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <svg class="icon-lg footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // === Configuration Data ===
+        const locations = [
+            { 
+                id: 'us', 
+                name: 'New York', 
+                country: 'USA', 
+                flag: 'https://flagcdn.com/w40/us.png',
+                address: '445 Park Avenue, Floor 9, NY', 
+                phone: '+1 (555) 123-4567', 
+                timeZone: 'America/New_York', 
+                email: 'sales.us@valuecoders.com' 
+            },
+            { 
+                id: 'uk', 
+                name: 'London', 
+                country: 'UK', 
+                flag: 'https://flagcdn.com/w40/gb.png',
+                address: '20-22 Wenlock Road, N1 7GU', 
+                phone: '+44 20 7946 0123', 
+                timeZone: 'Europe/London', 
+                email: 'sales.uk@valuecoders.com' 
+            },
+            { 
+                id: 'ae', 
+                name: 'Dubai', 
+                country: 'UAE', 
+                flag: 'https://flagcdn.com/w40/ae.png',
+                address: 'Silicon Oasis, DDP, Bldg A2', 
+                phone: '+971 4 123 4567', 
+                timeZone: 'Asia/Dubai', 
+                email: 'sales.ae@valuecoders.com' 
+            },
+            { 
+                id: 'au', 
+                name: 'Sydney', 
+                country: 'Australia', 
+                flag: 'https://flagcdn.com/w40/au.png',
+                address: 'Level 4, 11 York Street', 
+                phone: '+61 2 8000 1234', 
+                timeZone: 'Australia/Sydney', 
+                email: 'sales.au@valuecoders.com' 
+            },
+            { 
+                id: 'in', 
+                name: 'Noida', 
+                country: 'India', 
+                flag: 'https://flagcdn.com/w40/in.png',
+                address: 'ValueCoders Tower, Sector 63', 
+                phone: '+91 987 654 3210', 
+                timeZone: 'Asia/Kolkata', 
+                email: 'sales@valuecoders.com' 
+            }
+        ];
+
+        const scopeOptions = [
+            { id: 'staff', title: 'Add Engineers to My Team', subtitle: '(Staff Augmentation)' },
+            { id: 'dedicated', title: 'Set Up a Dedicated Team / ODC', subtitle: '' },
+            { id: 'mvp', title: 'Build a New Product / MVP', subtitle: '' },
+            { id: 'modernize', title: 'Modernize or Rebuild Existing Systems', subtitle: '' },
+            { id: 'ai', title: 'AI, Data & Automation Projects', subtitle: '' },
+            { id: 'cloud', title: 'Cloud, DevOps & Enterprise Platforms', subtitle: '' },
+            { id: 'qa', title: 'QA & Testing', subtitle: '(Quality Engineering)' },
+            { id: 'security', title: 'Cybersecurity & Compliance', subtitle: '' },
+            { id: 'guidance', title: 'Not Sure Yet – I Need Guidance', subtitle: '' }
+        ];
+
+        const logos = [
+            "Google", "Estee Lauder", "Dubai Police", "RedBull", 
+            "Panasonic", "Capgemini", "Thomas Cook", "SelectSpecs"
+        ];
+
+        // === State Management ===
+        let selectedScopes = new Set();
+        let activeLocation = locations[0];
+        let currentTheme = 'dark';
+
+        // === Theme Management ===
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme) {
+                currentTheme = savedTheme;
+            } else if (systemPrefersDark) {
+                currentTheme = 'dark';
+            } else {
+                currentTheme = 'light';
+            }
+            
+            //applyTheme();
+        }
+
+        function applyTheme() {
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            
+            if (currentTheme === 'dark') {
+                document.body.classList.add('dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                document.body.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+            
+            localStorage.setItem('theme', currentTheme);
+        }
+
+        function toggleTheme() {
+            currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            //applyTheme();
+        }
+
+        // === Global Hubs ===
+        function renderLocationTabs(containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = locations.map(loc => `
+                <button 
+                    class="location-tab ${loc.id === activeLocation.id ? 'active' : ''}" 
+                    data-location="${loc.id}"
+                    aria-label="Show ${loc.name} office details"
+                >
+                    <img src="${loc.flag}" alt="${loc.country}" class="flag-icon">
+                    <span>${loc.id.toUpperCase()}</span>
+                </button>
+            `).join('');
+
+            container.querySelectorAll('.location-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    activeLocation = locations.find(l => l.id === tab.dataset.location);
+                    renderLocationTabs(containerId);
+                    renderLocationContent(containerId.replace('Tabs', 'Content'));
+                });
+            });
+        }
+
+        function renderLocationContent(containerId) {
+            const container = document.getElementById(containerId);
+            const time = getLocationTime(activeLocation.timeZone);
+            
+            container.innerHTML = `
+                <div class="location-header">
+                    <h4 class="location-title">${activeLocation.name}, ${activeLocation.country}</h4>
+                    <div class="time-badge">
+                        <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        ${time}
+                    </div>
+                </div>
+                <address class="location-address">${activeLocation.address}</address>
+                <a href="tel:${activeLocation.phone}" class="location-phone">
+                    <div class="phone-icon-wrapper">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    ${activeLocation.phone}
+                </a>
+            `;
+        }
+
+        function getLocationTime(timeZone) {
+            try {
+                return new Date().toLocaleTimeString('en-US', {
+                    timeZone,
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true
+                });
+            } catch (e) {
+                return '';
+            }
+        }
+
+        function updateLocationTimes() {
+            ['locationContent', 'locationContentMobile'].forEach(id => {
+                const container = document.getElementById(id);
+                if (container && !container.classList.contains('hidden')) {
+                    renderLocationContent(id);
+                }
+            });
+        }
+
+        // === Scope Selection ===
+        function renderScopeGrid() {
+            const grid = document.getElementById('scopeGrid');
+            grid.innerHTML = scopeOptions.map(option => `
+                <button type="button" class="scope-button ${selectedScopes.has(option.id) ? 'selected' : ''}" data-scope="${option.id}">
+                    <div class="scope-button-content">
+                        <span class="scope-title">${option.title}</span>
+                        <span class="scope-subtitle">${option.subtitle}</span>
+                    </div>
+                    <div class="scope-checkbox">
+                        ${selectedScopes.has(option.id) ? `
+                            <svg class="icon-sm" fill="white" viewBox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        ` : ''}
+                    </div>
+                </button>
+            `).join('');
+
+            grid.querySelectorAll('.scope-button').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const scope = btn.dataset.scope;
+                    if (selectedScopes.has(scope)) {
+                        selectedScopes.delete(scope);
+                    } else {
+                        selectedScopes.add(scope);
+                    }
+                    renderScopeGrid();
+                    hideError('scopeError');
+                });
+            });
+        }
+
+        // === Logo Marquee ===
+        function renderMarquee() {
+            const content = document.getElementById('marqueeContent');
+            const repeatedLogos = [...logos, ...logos, ...logos, ...logos];
+            content.innerHTML = repeatedLogos.map(logo => 
+                `<span class="marquee-item">${logo}</span>`
+            ).join('');
+        }
+
+        // === Form Validation ===
+        function showError(elementId, message) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = message || 'This field is required';
+                element.classList.remove('hidden');
+                
+                if (elementId.includes('Error') && !elementId.includes('scope')) {
+                    const inputId = elementId.replace('Error', '');
+                    const input = document.getElementById(inputId);
+                    if (input) input.classList.add('error');
+                }
+            }
+        }
+
+        function hideError(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.classList.add('hidden');
+                
+                if (elementId.includes('Error') && !elementId.includes('scope')) {
+                    const inputId = elementId.replace('Error', '');
+                    const input = document.getElementById(inputId);
+                    if (input) input.classList.remove('error');
+                }
+            }
+        }
+
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // === Form Submission ===
+        async function handleSubmit(e) {
+            e.preventDefault();
+            
+            // Clear all errors
+            ['scopeError', 'fullNameError', 'emailError'].forEach(hideError);
+            
+            // Validate scope
+            if (selectedScopes.size === 0) {
+                showError('scopeError', 'Select at least one scope');
+                return;
+            }
+            
+            // Get form data
+            const formData = {
+                fullName: document.getElementById('fullName').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                company: document.getElementById('company').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                message: document.getElementById('message').value.trim(),
+                scopes: Array.from(selectedScopes)
+            };
+            
+            // Validate required fields
+            let hasError = false;
+            
+            if (!formData.fullName) {
+                showError('fullNameError', 'Name is required');
+                hasError = true;
+            }
+            
+            if (!formData.email) {
+                showError('emailError', 'Email is required');
+                hasError = true;
+            } else if (!validateEmail(formData.email)) {
+                showError('emailError', 'Invalid email format');
+                hasError = true;
+            }
+            
+            if (hasError) return;
+            
+            // Show loading state
+            const btn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnArrow = document.getElementById('btnArrow');
+            const btnSpinner = document.getElementById('btnSpinner');
+            
+            btn.disabled = true;
+            btnText.textContent = 'Sending...';
+            btnArrow.classList.add('hidden');
+            btnSpinner.classList.remove('hidden');
+            
+            // Simulate API call
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            
+            // Show success
+            document.getElementById('successName').textContent = formData.fullName;
+            document.getElementById('formView').classList.add('hidden');
+            document.getElementById('successView').classList.remove('hidden');
+            
+            // Reset button
+            btn.disabled = false;
+            btnText.textContent = 'Send Inquiry';
+            btnArrow.classList.remove('hidden');
+            btnSpinner.classList.add('hidden');
+            
+            console.log('Form submitted:', formData);
+        }
+
+        function resetForm() {
+            document.getElementById('contactForm').reset();
+            selectedScopes.clear();
+            renderScopeGrid();
+            document.getElementById('successView').classList.add('hidden');
+            document.getElementById('formView').classList.remove('hidden');
+        }
+
+        // === Initialization ===
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize theme
+            initTheme();
+            
+            // Render components
+            renderLocationTabs('locationTabs');
+            renderLocationContent('locationContent');
+            renderLocationTabs('locationTabsMobile');
+            renderLocationContent('locationContentMobile');
+            renderScopeGrid();
+            renderMarquee();
+            
+            // Update times every minute
+            setInterval(updateLocationTimes, 60000);
+            
+            // Event listeners
+            document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+            document.getElementById('contactForm').addEventListener('submit', handleSubmit);
+            document.getElementById('resetBtn').addEventListener('click', resetForm);
+            
+            // Input validation
+            ['fullName', 'email'].forEach(id => {
+                const input = document.getElementById(id);
+                input.addEventListener('input', () => hideError(id + 'Error'));
+            });
+        });
+    </script>
+</body>
+</html>
