@@ -2534,6 +2534,29 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-bottom: 12px;
 }
 
+.card-semi-title a {
+  position: relative;
+}
+
+.card-semi-title a:after {
+  position: absolute;
+  right: -19px;
+  top: 50%;
+  width: 13px;
+  display: none;
+  content: "";
+  height: 13px;
+  background: url(../header-images/arrow.svg) no-repeat;
+  background-size: contain;
+  transition: 0.4s;
+  transform: translateY(-45%);
+}
+
+.card-semi-title a:hover::after {
+  transform: translate(3px, -6px);
+  transition: 0.4s;
+}
+
 button.tab-btn-base {
   background: transparent;
   padding: 12px 16px;
@@ -2599,6 +2622,27 @@ button.tab-btn-base {
     margin: 0;
   }
 }
+/* CTA button */
+.get-connect a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #05164d;
+  background-color: #FFAD00;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.15s ease;
+}
+
+.get-connect a:hover {
+  background: #05164d;
+  color: #ffffff;
+}
+
 /* CTA button */
 a.inline-flex.items-center.justify-center.px-4.py-2,
 a.inline-flex.items-center.justify-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded-full.shadow-sm {
