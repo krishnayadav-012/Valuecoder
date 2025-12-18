@@ -220,7 +220,7 @@ Accepting New Projects
                         <div class="input-wrapper">                            
                             <input type="hidden" id="phone_code" name="pcode" value="0">
                             <input type="tel" id="phone" name="phone" class="form-input has-icon" placeholder=" ">
-                            <label for="phone" class="form-label">Phone Number</label>
+                            <label for="phone" class="form-label country-codes">Phone Number</label>
                         </div>
                     </div>
 
