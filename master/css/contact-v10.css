@@ -4673,7 +4673,7 @@ body.dark .form-input {
 }
 
 .form-input.has-icon {
-  padding-left: 4.5rem !important;
+  padding-left: 3.5rem !important;
 }
 
 .iti.iti--allow-dropdown .form-input.has-icon {
@@ -4720,7 +4720,7 @@ body.dark .form-label {
 }
 
 .form-input.has-icon + .form-label {
-  left: 4.5rem;
+  left: 3.5rem;
 }
 
 .form-input:focus + .form-label,
@@ -4796,6 +4796,10 @@ body.dark .form-textarea {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.1);
   color: white;
+}
+
+.textarea-wrapper:has(.form-textarea.error) {
+  border-color: var(--red-500);
 }
 
 .form-textarea:focus + .textarea-wrapper {
@@ -5616,8 +5620,13 @@ Enterprise File Uploader Theme
 }
 
 .form-section .autocomplete-items div {
-  background-color: #1d1c39;
-  color: #fff;
+  color: #4B5563;
+}
+
+.form-section .autocomplete-items {
+  background-color: #f8fafc;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--slate-200);
 }
 
 .form-section .autocomplete-items {
