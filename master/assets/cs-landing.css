@@ -473,7 +473,7 @@
     transition: transform 300ms ease;
 }
 
-.case-card-section .card-body:hover .underline {
+.case-card-section .card:hover .underline {
     transform: scaleX(1);
 }
 
@@ -613,4 +613,118 @@
     font-weight: 700;
     background: #fffbeb;
     border: 1px solid #fef3c7;
+}
+
+/* --- RESPONSIVE STYLES --- */
+
+/* 1. Large Tablets / Laptops (Adjusting Grid) */
+@media (max-width: 1200px) {
+    .case-card-section .inner-part-main .card {
+        width: calc(50% - 13px); /* Switch to 2 columns */
+    }
+}
+
+/* 2. Tablets (Portrait) */
+@media (max-width: 992px) {
+    .hero-banner .main-title {
+        font-size: 3.2rem;
+    }
+
+    .case-card-section .filter-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .case-card-section .search-box, 
+    .case-card-section .search-box input {
+        width: 100%; /* Search bar full width */
+    }
+}
+
+/* 3. Mobile Devices (Landscape and Portrait) */
+@media (max-width: 768px) {
+    /* Hero Adjustments */
+    .hero-banner {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-banner .main-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-banner .sub-text {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* Trusted By / Marquee */
+    .trusted-section .company-name {
+        font-size: 1.3rem;
+        margin: 0 20px;
+    }
+
+    /* Card Grid to 1 Column */
+    .case-card-section .inner-part-main {
+        margin-top: 40px;
+    }
+
+    .case-card-section .inner-part-main .card {
+        width: 100%; /* Single column stack */
+    }
+
+    /* Filter Bar Adjustments */
+    .case-card-section .filter-card {
+        padding: 20px;
+    }
+
+    .case-card-section .cat-btn {
+        margin-bottom: 8px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    /* Horizontal scrolling for industries on mobile */
+    .case-card-section .industry-scroll {
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch; /* Smooth swipe for iOS */
+    }
+
+    /* Progress bar width */
+    .case-card-section .progress-bar {
+        width: 80%;
+    }
+}
+
+/* 4. Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero-banner .main-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-banner .button-group {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-banner .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .case-card-section .stats-grid {
+        grid-template-columns: 1fr; /* Stack stats vertically on tiny screens */
+        gap: 15px;
+    }
+
+    .case-card-section .outcome-text {
+        font-size: 18px;
+    }
+
+    .case-card-section .project-title {
+        font-size: 18px;
+    }
 }
