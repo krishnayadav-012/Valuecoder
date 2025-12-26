@@ -1484,3 +1484,51 @@ button.tab-btn-base {
 .mobile-icon.is-open {
   transform: rotate(180deg);
 }
+
+
+.menu-description{margin-bottom: 10px; padding: 15px 20px;  border-radius: 10px; background: linear-gradient(135deg, #FFF8E7 0%, #FFFFFF 100%); border: 1px solid #FFE4A3; transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; display: flex; flex-wrap: wrap;}
+.menu-description:hover{ border-color: #FFAD00; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);}
+.menu-description i.m-icon-size.secon-icon-menu-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fe9a00;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    color: #fe9a00;
+    background: #ffffff;
+}
+
+.menu-dic-text {
+    margin-left: 20px;
+}
+
+.menu-description h4::after {
+    position: absolute;
+    content: "overview";
+    right: -43px;
+    top: 4px;
+    background: #fe9a00;
+    font-size: 9px;
+    padding: 5px 7px;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    line-height: initial;
+
+}
+
+.menu-description h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #333333;
+    display: flex;
+    width: fit-content;
+    position: relative;
+    padding-right: 30px;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.menu-description .menu-dic-text p{ font-size: 12px !important; }

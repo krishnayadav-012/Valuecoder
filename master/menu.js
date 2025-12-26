@@ -5,6 +5,7 @@
 // FIX: Removed extra double quotes from 'text"' key in multiple places.
 // ----------------------------------------------------------------------
 
+//Addes CSS for Stickey Menu
 if (document.querySelector(".master-header")) {
     var lastScrollTop = 0;
     window.addEventListener("scroll", function () {
@@ -27,10 +28,14 @@ if (document.querySelector(".master-header")) {
 const baseTempUrl = vcObj.tpl_url+'/menu-v8/';
 const MENU_DATA = [
   {
-    id: "services", label: "Services", icon: "layers",
+    id: "services", label: "Services", hassubmenu: true, icon: "layers",
     l2: [
       {
-        id: "ai", label: "AI & Intelligent Systems", micon: "brain-circuit", icon: "brain-circuit", color: "text-blue-500",
+        id: "ai", 
+        label: "AI, Data & Automation",  
+        description: "<h4>AI Data & Automation</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"sparkles",
+        micon: "brain-circuit", icon: "brain-circuit", color: "text-blue-500",
         tabs: [
           {
             id: "ai-strategy", label: "Strategy & Development", columns: 3,
@@ -72,7 +77,7 @@ const MENU_DATA = [
                 /*{ href: "/hire/genai-developers", text: "[Action] Hire GenAI Developers" }*/
               ]},
               { title: "Intelligent Automation", links: [
-                { href: "ai/custom-ai-agent-development", text: "AI Agent Development" },
+                { href: "/ai/custom-ai-agent-development", text: "AI Agent Development" },
                 { href: "/hire-ai-agent", text: "AI Agents & Orchestration" },
                 /*{ href: "/ai/ai-process-automation", text: "AI Process Automation" },
                 { href: "/ai/ai-powered-rpa", text: "AI-Powered RPA" },
@@ -109,8 +114,8 @@ const MENU_DATA = [
               ]},
               { title: "Data Processing", links: [
                 { href: "/data-engineering", text: "Data Engineering & Platforms" },
-                /*{ href: "/ai/vector-databases", text: "Vector Databases" },
-                { href: "/ai/nlp-development", text: "NLP Development" },*/
+                /*{ href: "/ai/vector-databases", text: "Vector Databases" },*/
+                { href: "/ai/nlp-development", text: "NLP Development" },
                 { href: "/machine-learning/computer-vision-software-development", text: "Computer Vision" }
               ]},
               { title: "Analytics & Testing", links: [
@@ -140,7 +145,10 @@ const MENU_DATA = [
         ]
       },
       {
-        id: "product", label: "Product Engineering", micon:"package", icon: "package", color: "text-green-500",
+        id: "product", label: "Product Engineering", 
+        description: "<h4>Product Engineering</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"target",
+        micon:"package", icon: "package", color: "text-green-500",
         tabs: [
           {
             id: "prod-services", label: "By Service", columns: 4,
@@ -150,15 +158,16 @@ const MENU_DATA = [
                 { href: "/discovery-phase-process", text: "Product Discovery & Roadmapping" },
                 { href: "/product-ui-ux-design", text: "UI/UX Design Services" },
                 { href: "/hire/technical-architects", text: "Solution Architecture & Design" },
-                /*{ href: "/services/product-engineering-process", text: "Product Engineering Process" }*/
+                { href: "/product-engineering-process", text: "Product Engineering Process" }
               ]},
               { title: "Full-Cycle Development", links: [
                 /*{ href: "/services/software-development", text: "[Hub] Full-Cycle Development" },*/
                 { href: "/outsource-software-product-development-services", text: "Software Product Development" },
+                { href: "/software-development-services-company", text: "Software Development" },
                 { href: "/custom-software-development-services-company", text: "Custom Software Development" },
                 { href: "/ai/application-development-company", text: "AI Product Development" },
                 { href: "/mvp-app-development-company", text: "MVP Development" },
-                /*{ href: "/services/lifecycle-governance", text: "Product Lifecycle Governance" }*/
+                { href: "/services/product-lifecycle-governance", text: "Product Lifecycle Governance" }
               ]},
               { title: "Platform Engineering", links: [
                 /*{ href: "/services/web-app-development", text: "[Hub] Platform Engineering" },*/
@@ -198,7 +207,11 @@ const MENU_DATA = [
         ]
       },
       {
-        id: "consulting", label: "Consulting & Advisory", icon: "compass", color: "text-purple-500",
+        id: "consulting", 
+        label: "Strategic Advisory", 
+        description: "<h4>Strategic Advisory</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"compass_new",
+        icon: "compass", color: "text-purple-500",
         columns: 4,
         groups: [
           { title: "Technology Strategy", links: [
@@ -222,7 +235,7 @@ const MENU_DATA = [
           { title: "Process & QA Advisory", href:"/software-quality-assurance-testing-services", links: [
             /*{ href: "/services/qa-consulting", text: "[Hub] Process & QA Advisory" },*/
             { href: "/qa-consulting-services", text: "QA Strategy Consulting" },
-            { href: "/business-process-automation", text: "Process Automation Strategy" },
+            { href: "/ai/process-automation-strategy", text: "Process Automation Strategy" },
             /*{ href: "/services/qa-process-optimization", text: "QA Process Optimization" },*/
             { href: "/agile-consulting", text: "Agile Transformation Consulting" },
             /*{ href: "/hire/solution-architects", text: "[Action] Hire Solution Architects" }*/
@@ -236,7 +249,11 @@ const MENU_DATA = [
         ]
       },
       {
-        id: "cloud", label: "Cloud & Platforms", icon: "cloud", color: "text-sky-500",
+        id: "cloud", 
+        label: "Cloud & Enterprise Platforms", 
+        description: "<h4>Cloud & Enterprise Platforms</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"cloud_new",
+        icon: "cloud", color: "text-sky-500",
         columns: 4,
         groups: [
           { title: "Cloud Engineering", links: [
@@ -277,7 +294,11 @@ const MENU_DATA = [
         ]
       },
       {
-        id: "security", label: "Security & Compliance", icon: "shield-check", color: "text-red-500",
+        id: "security", 
+        label: "Cybersecurity & Compliance", 
+        description: "<h4>Cybersecurity & Compliance</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"shield_new",
+        icon: "shield-check", color: "text-red-500",
         tabs: [
             {
                 id: "sec-services", label: "Security Services", columns: 1,
@@ -308,105 +329,68 @@ const MENU_DATA = [
                         { href: "/services/compliance-consulting", text: "Compliance Consulting (SOC2, ISO, HIPAA)" },*/
                         { href: "/it-compliance-services", text: "IT Compliance" },
                         { href: "/solutions/risk-management", text: "Risk Audit" },
-                        /*{ href: "/services/quality-governance", text: "Quality Governance" }*/
+                        { href: "/services/quality-security-governance", text: "Quality Governance" }
                     ]}
                 ]
             }
         ]
       },
       {
-        id: "teams", label: "Team Models & Engagement", icon: "users", color: "text-yellow-500",
-        columns: 3,
+        id: "teams", 
+        label: "Dedicated Teams", 
+        description: "<h4>Dedicated Teams</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"users_new",
+        icon: "users", color: "text-yellow-500",
+        columns: 1,
         groups: [
-          { title: "Flexible Augmentation", links: [
-            /*{ href: "/services/team-models", text: "[Hub] Flexible Augmentation" },*/
-            { href: "/it-staff-augmentation-services", text: "Team Augmentation" },
-            /*
-            { href: "/services/managed-development-services", text: "Managed Development Services" },
-            { href: "/services/project-rescue", text: "Project Rescue" },
-            { href: "/resources/team-calculator", text: "[Tool] Team Size Calculator" }
-            */
-          ]},
-          { title: "Managed Delivery Teams", links: [
-            /*{ href: "/services/dedicated-teams", text: "[Hub] Managed Delivery Teams" },*/
-            { href: "/dedicated-development-teams", text: "Dedicated Development Teams" },
-            /*{ href: "/services/managed-agile-pods", text: "Managed Agile Pods" },
-            { href: "/services/product-extension-pods", text: "Product Extension Pods" }*/
-          ]},
-          { title: "Strategic Models", links: [
-            /*{ href: "/pricing/dedicated-teams", text: "[Hub] Strategic Models" },*/
-            { href: "/offshore-software-development-center-india", text: "Offshore Development Center" },
-            /*{ href: "/services/build-operate-transfer", text: "Build-Operate-Transfer" },
-            { href: "/pricing/outcome-based", text: "Outcome-Based Engagement" }*/
-          ]},
-          /*{ title: "Governance & Playbooks", links: [
-            { href: "/services/engagement-playbooks", text: "[Hub] Governance & Playbooks" },
-            { href: "/services/delivery-governance", text: "Delivery Governance" },
-            { href: "/services/reporting-standards", text: "Reporting Standards" },
-            { href: "/services/velocity-slas", text: "Velocity & Quality SLAs" },
-            { href: "/services/cv-first", text: "CV-First to Pod Conversion" },
-            { href: "/services/rapid-scaling", text: "Rapid Team Scaling" },
-            { href: "/services/quality-governance", text: "Quality Governance" },
-            { href: "/services/security-governance", text: "Security Governance" },
-            { href: "/hire/engagement-models", text: "[Action] Explore Engagement Models" }
-          ]}*/
+          { title: "Dedicated Product & Engineering Teams", href:"/dedicated-development-teams", links: [
+            { href: "/it-staff-augmentation-services", text: "Staff Augmentation" },
+            { href: "/dedicated-development-teams/product-pods", text: "Product Pods" },
+            { href: "/offshore-software-development-center-india", text: "Development Centers (ODC)" }
+          ]},          
         ]
       },
       {
-        id: "qa", label: "Quality Assurance & Testing", icon: "clipboard-check", color: "text-orange-500",
-        tabs: [
-          {
-            id: "qa-functional", href:"/software-quality-assurance-testing-services", label: "Functional Testing", columns: 1,
-            groups: [
-              { title: "Functional Testing",href:"/functional-software-testing", links: [
-                /*{ href: "/services/qa-testing", text: "[Hub] Functional Testing" },
-                { href: "/services/manual-testing", text: "Manual QA Testing" },*/
-                { href: "/regression-testing", text: "Regression Testing" },
-                /*{ href: "/services/uat-testing", text: "User Acceptance Testing" }*/
-              ]}
-            ]
+        id: "qa", 
+        label: "Quality Engineering", 
+        description: "<h4>Quality Engineering</h4><p>Unlock the power of AI and intelligent automation</p>", 
+        dsicon:"clipboard",
+        icon: "clipboard-check", color: "text-orange-500",
+        columns: 4,
+        groups: [
+          { title: "Functional Testing", href:"/functional-software-testing", links: [
+            { href: "/regression-testing", text: "Regression Testing" }
+          ]
           },
-          {
-            id: "qa-non-functional", label: "Non-Functional Testing", columns: 1,
-            groups: [
-              { title: "Non-Functional Testing", links: [
-                /*{ href: "/services/qa-testing", text: "[Hub] Non-Functional Testing" },*/
-                { href: "/software-performance-testing", text: "Performance Testing" },
-                /*{ href: "/services/load-testing", text: "Load & Stress Testing" },*/
-                { href: "/security-testing", text: "Security Testing" },
-                /*{ href: "/services/accessibility-testing", text: "Accessibility Testing" },*/
-                { href: "/penetration-testing", text: "Penetration Testing" }
-              ]}
-            ]
+
+          { title: "Non-Functional Testing", links: [
+            { href: "/software-performance-testing", text: "Performance Testing" },
+            { href: "/services/load-stress-testing", text: "Load & Stress Testing" },
+            { href: "/security-testing", text: "Security Testing" },
+            /*{ href: "/services/accessibility-testing", text: "Accessibility Testing" },*/
+            { href: "/penetration-testing", text: "Penetration Testing" }
+          ]
           },
-          {
-            id: "qa-automation", label: "Test Automation", columns: 1,
-            groups: [
-              { title: "Test Automation", links: [
-                /*{ href: "/services/qa-testing", text: "[Hub] Test Automation" },*/
-                { href: "/software-testing-automation", text: "Automated Testing Services" },
-                { href: "/cloud-services/continuous-integration-continous-delivery", text: "CI/CD Integration" }
-              ]}
-            ]
+          { title: "Test Automation", links: [
+            /*{ href: "/services/qa-testing", text: "[Hub] Test Automation" },*/
+            { href: "/software-testing-automation", text: "Automated Testing Services" },
+            { href: "/cloud-services/continuous-integration-continous-delivery", text: "CI/CD Integration" }
+          ]
           },
-          {
-            id: "qa-specialized", label: "Specialized Testing", columns: 1,
-            groups: [
-              { title: "Specialized Testing", links: [
-                /*{ href: "/services/qa-testing", text: "[Hub] Specialized Testing" },*/
-                /*{ href: "/ai/ai-model-testing", text: "AI/ML Model Testing" },*/
-                { href: "/api-testing-services", text: "API Testing" },
-                { href: "/mobile-app-testing-services", text: "Mobile App Testing" },
-                /*{ href: "/hire/qa-engineers", text: "[Action] Hire QA & Testing Engineers" }*/
-              ]}
-            ]
-          }
+          { title: "Specialized Testing", links: [
+          /*{ href: "/services/qa-testing", text: "[Hub] Specialized Testing" },*/
+          /*{ href: "/ai/ai-model-testing", text: "AI/ML Model Testing" },*/
+          { href: "/api-testing-services", text: "API Testing" },
+          { href: "/mobile-app-testing-services", text: "Mobile App Testing" },
+          /*{ href: "/hire/qa-engineers", text: "[Action] Hire QA & Testing Engineers" }*/
+          ]
+          },
         ]
       }
     ]
   },
   {
-    id: "hire", label: "Hire", icon: "users",
+    id: "hire", label: "Hire", href:"/hire-developers", hassubmenu: true, icon: "users",
     l2: [
       {
         id: "hire-app", label: "App & Web Development", icon: "monitor-smartphone", color: "text-blue-500",
@@ -433,11 +417,10 @@ const MENU_DATA = [
           },
           {
           title: "null", links: [
-              { href: "/hire-developers/hire-database-developers", text: "Hire Database Developers" },
-              { href: "/hire/mongodb-developers", text: "Hire MongoDB Developers" },
-              { href: "/hire/postgresql-developers", text: "Hire PostgreSQL Developers" },
-              { href: "/hire/mysql-developers", text: "Hire MySQL Developers" },
-              { href: "/hire-developers/hire-database-administrators", text: "Hire DB Administrators" }
+              { href: "/hire-developers/hire-golang-web-developers", text: "Hire Golang Developers" },
+              { href: "/hire-developers/hire-ror-developers", text: "Hire Ruby Developers" },
+              { href: "/hire-developers/hire-graphql-developers", text: "Hire GraphQL Developers" },
+              { href: "/hire-developers/hire-api-developers", text: "Hire API Developers" }
             ]
           }
           ]},
@@ -457,10 +440,11 @@ const MENU_DATA = [
             ]}
           ]},
           { id: "hire-qa", label: "QA & Testing", columns: 1, groups: [
-            { title: "QA & Testing Engineers", href:"/hire-developers/software-qa-testers-india", links: [              
-            { href: "/software-testing-automation", text: "Hire Automation Testers" },
-            { href: "/software-performance-testing", text: "Hire Performance Testers" },
-            { href: "/security-testing", text: "Hire Security Testers" }
+            { title: "QA & Testing Engineers", href:"/hire-developers/software-qa-testers-india", links: [
+
+            { href: "/hire/automation-test-engineers", text: "Hire Automation Testers" },
+            { href: "/hire/performance-test-engineers", text: "Hire Performance Testers" },
+            { href: "/hire/security-test-engineers", text: "Security Test Engineers" }
             ]}
           ]}
         ]
@@ -545,7 +529,7 @@ const MENU_DATA = [
     ]
   },
   {
-    id: "solutions", label: "Solutions", icon: "lightbulb",
+    id: "solutions", label: "Solutions", hassubmenu: true,  icon: "lightbulb",
     l2: [
       {
         id: "solutions-startups", label: "For Startups", icon: "rocket", color: "text-red-500",
@@ -554,7 +538,7 @@ const MENU_DATA = [
           { href: "/startup-consulting-services", text: "Product Feasibility Studies" },
           { href: "/mvp-app-development-company", text: "Rapid MVP in 90 Days" },
           { href: "/discovery-phase-process", text: "Product Strategy & Validation" },
-          { href: "/cto-as-a-servicee", text: "On-Demand CTO" },
+          { href: "/cto-as-a-service", text: "On-Demand CTO" },
           { href: "/outsource-software-product-development-services", text: "Build Investor-Ready Products" },
           { href: "/discovery-phase-process", text: "Validate Ideas Before Big Spend" },
           { href: "/ai/consulting-services-company", text: "AI Pilot Program" }
@@ -605,7 +589,7 @@ const MENU_DATA = [
     ]
   },
   {
-    id: "industries", label: "Industries", icon: "building-2",
+    id: "industries", label: "Industries", hassubmenu: true, icon: "building-2",
     l2: [
       {
         id: "industries-tech", label: "Technology & Media", icon: "cpu", color: "text-blue-500",
@@ -718,33 +702,36 @@ const MENU_DATA = [
     ]
   },
   {
-    id: "pricing", label: "Pricing", icon: "dollar-sign",
+    id: "pricing", label: "Pricing", href:"/cost-calculators", hassubmenu: false, icon: "dollar-sign",
     l2: [
       {
         id: "pricing-calculators", label: "Calculators", icon: "calculator", color: "text-green-500",
-        columns: 2,
+        columns: 4,
         groups: [
-          { title: "Calculators", links: [
-          { href: "/cost-calculators/security-testing", text: "Security Testing Cost Calculator" },
-          { href: "/cost-calculators/data-warehouse", text: "Data Warehouse Cost Calculator" },
-          { href: "/cost-calculators/analytics-bi", text: "Analytics & BI Cost Calculator" },
-          { href: "/cost-calculators/qa-consulting", text: "QA Consulting Cost Calculator" },
+          { title: "Software & Product Engineering", links: [
           { href: "/cost-calculators/startup-software", text: "Startup Software Cost Estimator" },
-          { href: "/cost-calculators/comparison", text: "Software Cost Comparison Calculator" },
-          { href: "/cost-calculators/roi", text: "Software ROI Calculator" },
           { href: "/cost-calculators/saas-product", text: "SaaS Product Cost Calculator" },
-          { href: "/cost-calculators/help-desk", text: "Help Desk Software Cost Estimator" },
-          
-        ]},
-        { title: "null", links: [
-          { href: "/cost-calculators/software-testing", text: "Software Testing Cost Calculator" },
+          { href: "/cost-calculators/software-development", text: "Software Development Cost Calculator" },
           { href: "/cost-calculators/mvp-ai-estimator", text: "MVP AI Cost Estimator" },
           { href: "/cost-calculators/dedicated-teams", text: "Dedicated Teams Cost Calculator" },
-          { href: "/cost-calculators/software-development", text: "Software Development Cost Calculator" },
+          { href: "/cost-calculators/comparison", text: "Software Cost Comparison Calculator" },
+          { href: "/cost-calculators/roi", text: "Software ROI Calculator" },
+        ]},
+        { title: "QA, Testing & Security", links: [
+          { href: "/cost-calculators/security-testing", text: "Security Testing Cost Calculator" },
+          { href: "/cost-calculators/software-testing", text: "Software Testing Cost Calculator" },
+          { href: "/cost-calculators/qa-consulting", text: "QA Consulting Cost Calculator" },
+          { href: "/cost-calculators/siem-implementation", text: "SIEM Implementation Cost Calculator" }        
+        ]},
+        { title: "Data Engineering & Analytics", links: [
+          { href: "/cost-calculators/data-warehouse", text: "Data Warehouse Cost Calculator" },
           { href: "/cost-calculators/data-management", text: "Data Management Cost Calculator" },
+          { href: "/cost-calculators/analytics-bi", text: "Analytics & BI Cost Calculator" },
           { href: "/cost-calculators/analytics-visualization", text: "Analytics & Visualization Cost Calculator" },
+        ]},
+        { title: "IT Consulting & Internal Systems", links: [
           { href: "/cost-calculators/it-consulting", text: "IT Consulting Cost Calculator" },
-          { href: "/cost-calculators/siem-implementation", text: "SIEM Implementation Cost Calculator" } 
+          { href: "/cost-calculators/help-desk", text: "Help Desk Software Cost Estimator" }          
         ]}
       ]
       },
@@ -765,7 +752,7 @@ const MENU_DATA = [
     ]
   },
   {
-    id: "company", label: "Company", icon: "network",
+    id: "company", label: "Company", hassubmenu: true, icon: "network",
     l2: [
       {
         id: "company-about", label: "About Us", icon: "info", color: "text-blue-500",
@@ -1409,8 +1396,8 @@ class MobileMenuHandler {
     const styleClasses = isAction 
         ? 'text-blue-600 font-medium hover:text-blue-700' 
         : 'text-gray-700 font-normal hover:text-blue-600';
-
-    return `<a href="${vcObj.web_url}${link.href}" class="block last-innner-menu" tabindex="-1" aria-label="${label}">${text}</a>`;
+    const baseURL = link.href.includes('/blog/') ? 'https://www.valuecoders.com' : vcObj.web_url;
+    return `<a href="${baseURL}${link.href}" class="block last-innner-menu" tabindex="-1" aria-label="${label}">${text}</a>`;
   }
 
   buildAccordionGroups(l2Item) {
@@ -1429,7 +1416,8 @@ class MobileMenuHandler {
         if (l2Item.tabs && group.tabLabel) {
               // Check if the group title is just "Hidden Links" (for grid fillers)
             if(group.title !== "Hidden Links") {
-                header = `${group.tabLabel}: ${group.title}`;
+                //header = `${group.tabLabel}: ${group.title}`;
+                header = `${group.title}`;
             } else {
                 // Skip hidden links/placeholders
                 return;
@@ -1530,8 +1518,16 @@ const renderMenuFromData = () => {
     MENU_DATA.forEach(l1 => {
         const menuId = `${l1.id}-menu`;
         const l1ButtonId = `l1-${l1.id}`;
-
-        // --- L1 Button HTML ---
+        if( l1.href ){
+          l1MenuHtml.push(`
+          <li role="none">            
+            <a class="nav-link nav-item-base master-menu-text" 
+              data-menu-target="#${menuId}" id="${l1ButtonId}" href="${vcObj.web_url}${l1.href}" aria-expanded="false" aria-controls="${menuId}">
+               ${l1.label}
+            </a>
+          </li>
+        `);
+        }else{
         l1MenuHtml.push(`
           <li role="none">            
             <a class="nav-link nav-item-base master-menu-text" 
@@ -1539,13 +1535,20 @@ const renderMenuFromData = () => {
                ${l1.label}
             </a>
           </li>
-        `);
+        `);  
+        }
+        // --- L1 Button HTML ---
+        
 
         // --- Mega Menu Shell ---
         let l2MenuHtml = [];
         let l3ContentHtml = [];
+        if(  l1.hassubmenu === false){
+          return; // Skip L1 items without submenu
+        }
 
         l1.l2.forEach((l2, l2Index) => {
+          
             const l2ButtonId = `l2-${l2.id}`;
             const l3PanelId = `${l2.id}-content`;
             const isDefaultActive = l2Index === 0;
@@ -1595,10 +1598,13 @@ const renderMenuFromData = () => {
                     l3ContentBodyHtml.push(`</div></div>`);
                 });
                 l3TabsHtml.push('</nav>');
-
+                const dsIcon = l2.dsicon ? l2.dsicon : l2.icon;
+                const menuDescription = l2.description ? `<div class="menu-description"><i data-lucide="layout-template" class="m-icon-size  secon-icon-menu-part">
+                  <img src="${baseTempUrl}/${dsIcon}.svg" alt="Description Menu">
+                  </i><div class="menu-dic-text">${l2.description}</div></div>` : '';
                 l3ContentHtml.push(`
                     <div id="${l3PanelId}" class="l3-content-panel  ${!isDefaultActive ? 'hidden' : ''}" role="tabpanel" aria-labelledby="${l2ButtonId}" data-tab-group="${l2.id}">
-                      <h3 class="sr-only">${l2.label}</h3>
+                      ${menuDescription}
                       <div class="right-sub-menu-top">${l3TabsHtml.join('')}</div>
                       <div class="l3-tab-content-container ">${l3ContentBodyHtml.join('')}</div>
                     </div>
@@ -1606,10 +1612,14 @@ const renderMenuFromData = () => {
 
             } else {
                 // SIMPLE GRID STRUCTURE
+                const dsIcon = l2.dsicon ? l2.dsicon : l2.icon;
+                const menuDescription = l2.description ? `<div class="menu-description"><i data-lucide="layout-template" class="m-icon-size  secon-icon-menu-part">
+                  <img src="${baseTempUrl}/${dsIcon}.svg" alt="Specialized Roles">
+                  </i><div class="menu-dic-text">${l2.description}</div></div>` : '';
                 let hasColumn = (l2.columns && l2.columns > 0) ? 'vcol-'+l2.columns : '';
                 l3ContentHtml.push(`
                     <div id="${l3PanelId}" class="l3-content-panel  ${!isDefaultActive ? 'hidden' : ''}" role="region" aria-labelledby="${l2ButtonId}">
-                      <h3 class="sr-only">${l2.label}</h3>
+                      ${menuDescription}
                       <div class="master-sub-menu-cards ${hasColumn}">
                 `);
                 l2.groups.forEach(group => {
@@ -1664,13 +1674,15 @@ const renderGroup = (group) => {
             hubLink = link;
         } else if (isActionLink) {
             // Collect action links separately for the action hub footer
+            const baseURL = link.href.includes('/blog/') ? 'https://www.valuecoders.com' : vcObj.web_url;
             actionHubHtml.push(`
-                <a href="${vcObj.web_url}${link.href}" class="list-anctor-new">
+                <a href="${baseURL}${link.href}" class="list-anctor-new">
                     ${linkText} <i data-lucide="arrow-up-right" class=""> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-3.5 h-3.5 ml-0.5 canonical-arrow group-hover/header:text-blue-600"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></i>
                 </a>
             `);
         } else {
-            linksHtml.push(`<li><a href="${vcObj.web_url}${link.href}" class="link-hover-effect">${linkText}</a></li>`);
+            const baseURL = link.href.includes('/blog/') ? 'https://www.valuecoders.com' : vcObj.web_url;
+            linksHtml.push(`<li><a href="${baseURL}${link.href}" class="link-hover-effect">${linkText}</a></li>`);
         }
     });
     
