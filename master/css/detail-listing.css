@@ -4131,7 +4131,7 @@ button.tab-btn-base {
   --accent-yellow: #f59e0b;
   --golden-yellow: #f4b400;
   --text-gray: #64748b;
-  --content-blue:#05164D;
+  --content-blue: #05164D;
 }
 
 .master-header {
@@ -4158,7 +4158,8 @@ button.tab-btn-base {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(&quot;https://www.valuecoders.com/case-studies/staging/wp-content/uploads/2024/05/143.jpg&quot;); /* A transparent hex grid PNG */
+  background-image: url(&quot;https://www.valuecoders.com/case-studies/staging/wp-content/uploads/2024/05/143.jpg&quot;);
+  /* A transparent hex grid PNG */
   opacity: 0.1;
   pointer-events: none;
 }
@@ -4271,6 +4272,12 @@ h1 {
   content: "";
 }
 
+.timeline-block h4 {
+  font-size: 13px;
+  font-weight: 600 !important;
+  color: #64748b;
+}
+
 /* Timeline Markers (Circles) */
 .timeline-marker {
   position: absolute;
@@ -4284,13 +4291,33 @@ h1 {
   border: 3px solid #656565;
 }
 
-.timeline-block.active .section-label {
+.timeline-block.active h4 {
   color: #FFAD00;
+}
+
+.timeline-block h2 {
+  color: #05164d;
+  margin: 20px 0 20px 0;
 }
 
 .timeline-block.active .timeline-marker {
   border-color: var(--primary-blue);
   background: var(--primary-blue);
+}
+
+.timeline-block table {
+  border: 1px solid #4B5563;
+  padding: 5px;
+}
+
+.timeline-block table tr {
+  border: 1px solid #4B5563;
+  padding: 5px;
+}
+
+.timeline-block table td {
+  border: 1px solid #4B5563;
+  padding: 5px;
 }
 
 .timeline-block.active::after {
@@ -4318,13 +4345,54 @@ h1 {
   font-size: 14px;
 }
 
-.section-title {
-  color: #05164d;
-}
-
 .deliverables-grid .item span svg {
   width: 8px;
   height: 8px;
+}
+
+.timeline-block ul {
+  margin-top: 20px;
+}
+
+.timeline-block img {
+  width: 100%;
+  display: block;
+  padding: 50px 30px !important;
+  height: auto;
+}
+
+.timeline-block ol li {
+  list-style: n;
+}
+
+.timeline-block ul li {
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.timeline-block h3 {
+  margin: 25px 0;
+  color: var(--content-blue);
+}
+
+.timeline-block ul li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffad00;
+  border-radius: 50%;
+}
+
+.timeline-block a {
+  text-decoration: underline;
+  color: var(--content-blue);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .deliverables-grid .item span {
@@ -4369,6 +4437,22 @@ h1 {
   width: 100%;
 }
 
+.image-grids-title h3 {
+  font-size: 13px;
+  color: #8e99ab;
+}
+
+.image-grids-title h3 .badge {
+  background-color: #f1f5f9;
+  color: #8e99ab;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 5px;
+  border-radius: 13px;
+  line-height: normal;
+  margin-left: 10px;
+}
+
 .gallery-grid .img-wrapper {
   position: relative;
   border-radius: 8px;
@@ -4406,11 +4490,6 @@ h1 {
   color: #fff;
 }
 
-span.section-label {
-  font-size: 13px;
-  font-weight: 600;
-}
-
 .deliverables-grid .item {
   display: flex;
   align-items: center;
@@ -4422,9 +4501,9 @@ span.section-label {
 }
 
 .stack-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-blue);
+  font-size: 13px;
+  font-weight: bold;
+  color: #8e99ab;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -4432,8 +4511,8 @@ span.section-label {
 
 .tags-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allows tags to drop to next line on mobile */
-  gap: 12px; /* Consistent spacing between tags */
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .tech-tag {
@@ -4444,12 +4523,11 @@ span.section-label {
   color: var(--content-blue);
   background-color: #ffffff;
   border: 1px solid var(--tag-border);
-  border-radius: 8px; /* Slightly rounded corners */
+  border-radius: 8px;
   transition: all 0.2s ease;
   cursor: default;
 }
 
-/* Specifically for the tag with the yellow border */
 .tech-tag.active {
   border-color: var(--highlight-border);
 }
@@ -4528,7 +4606,8 @@ span.section-label {
 }
 
 .sidebar-cards {
-  max-width: 350px; /* Width of the sidebar column */
+  max-width: 350px;
+  /* Width of the sidebar column */
 }
 
 .card-title {
@@ -4746,7 +4825,8 @@ span.section-label {
 
 .testimonial-card .quote-mark {
   font-size: 60px;
-  color: #fff2cc; /* Very light yellow/cream */
+  color: #fff2cc;
+  /* Very light yellow/cream */
   position: absolute;
   line-height: 1;
 }
@@ -4801,9 +4881,12 @@ span.section-label {
 }
 
 :root {
-  --brand-yellow: #ffb400; /* Bright yellow from the image */
-  --brand-navy: #0a1140; /* Deep navy for the button */
-  --text-muted: #94a3b8; /* Gray for the 'Share' text */
+  --brand-yellow: #ffb400;
+  /* Bright yellow from the image */
+  --brand-navy: #0a1140;
+  /* Deep navy for the button */
+  --text-muted: #94a3b8;
+  /* Gray for the 'Share' text */
 }
 
 .cta-wrapper {
@@ -4854,12 +4937,14 @@ span.section-label {
 /* CTA Card Styling */
 .cta-card {
   background-color: var(--brand-yellow);
-  border-radius: 16px; /* Smooth rounded corners */
+  border-radius: 16px;
+  /* Smooth rounded corners */
   padding: 21px;
   margin-top: 21px;
   text-align: center;
   position: relative;
-  overflow: hidden; /* Clips decorative circles if you add them */
+  overflow: hidden;
+  /* Clips decorative circles if you add them */
 }
 
 .cta-heading {
@@ -4901,7 +4986,8 @@ span.section-label {
   margin-top: 14px;
   font-size: 10px;
   font-weight: 700;
-  color: rgba(10, 17, 64, 0.5); /* Faded navy */
+  color: rgba(10, 17, 64, 0.5);
+  /* Faded navy */
   letter-spacing: 0.5px;
 }
 
@@ -4969,6 +5055,14 @@ span.section-label {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
   }
 }
 
