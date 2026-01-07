@@ -7,11 +7,8 @@
    <title>Cloud Migration Cost Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-   
-    
-    
     <style>
-        body { font-family: 'Inter', sans-serif; }
+       
         .gradient-bg { background: linear-gradient(135deg, #0693e3 0%, #9b51e0 100%); }
         [v-cloak] { display: none; }
     </style>
@@ -44,7 +41,7 @@
     <script defer src="js/form-validation-v10.js"></script>
 </head>
 
-<body>
+<body class="bg-slate-50 text-slate-900">
     <?php require_once './include/menu-v8.php'; ?>
 
 

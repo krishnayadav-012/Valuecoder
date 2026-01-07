@@ -9,14 +9,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --wp--preset--color--vivid-cyan-blue: #0693e3;
-            --wp--preset--color--vivid-purple: #9b51e0;
-            --wp--preset--color--vivid-green-cyan: #00d084;
-            --wp--preset--color--vivid-red: #cf2e2e;
-            --wp--preset--color--luminous-vivid-orange: #ff6900;
-            --wp--preset--gradient--midnight: linear-gradient(135deg, #020381 0%, #2874fc 100%);
-        }
+       
         body { font-family: 'Inter', sans-serif; }
         .preset-gradient-hero { background: var(--wp--preset--gradient--midnight); }
         .transition-all { transition: all 0.3s ease; }

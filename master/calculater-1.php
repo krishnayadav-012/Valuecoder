@@ -34,7 +34,6 @@
         }
     </style>
     <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
-
     <link rel="preload stylesheet" type="text/css" href="assets/form-county.css" defer />
     <link rel="preload stylesheet" type="text/css"
         href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
@@ -55,15 +54,14 @@
             "_blog_tag": ""
         };
     </script>
-
-
     <script defer src="menu.js"></script>
     <script defer src="js/intlTelInput-17.0.min.js"></script>
     <script defer src="js/form-validation-v10.js"></script>
 </head>
 
-<body>
+<body class="pb-20">
     <?php require_once './include/menu-v8.php'; ?>
+
     <div class="relative overflow-hidden hero-gradient pt-28 pb-24 text-white">
         <div class="container mx-auto px-6 text-center max-w-4xl relative z-10">
             <span
@@ -335,6 +333,7 @@
         initRoles();
         calculate();
     </script>
+
 </body>
 
 </html>

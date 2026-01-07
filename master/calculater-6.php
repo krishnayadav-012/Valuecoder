@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+      
         .bg-gradient-primary { background: linear-gradient(135deg, #020381 0%, #2874fc 100%); }
     </style>
     <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
