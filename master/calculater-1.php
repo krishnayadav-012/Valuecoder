@@ -14,11 +14,6 @@
             --vivid-blue-purple: linear-gradient(135deg, #0693e3 0%, #9b51e0 100%);
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-        }
-
         .hero-gradient {
             background: var(--midnight);
         }
@@ -63,10 +58,9 @@
     <?php require_once './include/menu-v8.php'; ?>
 
     <div class="relative overflow-hidden hero-gradient pt-28 pb-24 text-white">
-        <div class="container mx-auto px-6 text-center max-w-4xl relative z-10">
+        <div class="container  px-6 text-center  relative z-10">
             <span
-                class="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-semibold mb-6">ROI
-                CALCULATOR v2.5</span>
+                class="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-semibold mb-6 text-white">ROI CALCULATOR v2.5</span>
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">Product Pod <span class="text-sky-300">Cost &
                     Velocity</span> Calculator</h1>
             <p class="text-xl text-white/80 mb-10">See how a dedicated product pod outperforms traditional hiring in
@@ -77,7 +71,7 @@
         </div>
     </div>
 
-    <main id="calc" class="container mx-auto px-4 -mt-12 relative z-20 max-w-6xl mb-10">
+    <main id="calc" class="container mx-auto px-4 -mt-12 relative z-20  mb-10">
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <div class="glass-card p-8 rounded-3xl border-t-4 border-amber-400 shadow-lg">
                 <div class="text-3xl mb-4">💰</div>

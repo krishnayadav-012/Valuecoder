@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>LLM Cost Calculator</title>
+     <title>Responsive Compliance Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
-  <style>
+    <style>
+        [x-cloak] { display: none !important; }
+        /* Smooth transitions for mobile expansion */
+        .transition-all { transition: all 0.3s ease-in-out; }
          .cost-banner {
             padding: 117px 0 80px;
             min-height: initial;
@@ -18,6 +19,10 @@
             text-align: center;
         }
     </style>
+
+
+    <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
+    <link rel="preload stylesheet" type="text/css" href="assets/form-county.css" defer />
     <link rel="preload stylesheet" type="text/css"
         href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
     <link rel="preload stylesheet" type="text/css" href="css/contact-v10.css" defer />
@@ -44,9 +49,8 @@
     <script defer src="js/form-validation-v10.js"></script>
 </head>
 
-<body class="bg-slate-50 text-slate-900" >
+<body class="bg-slate-50">
     <?php require_once './include/menu-v8.php'; ?>
-
 
     <section class="cost-banner">
                 <div class="container">
@@ -56,9 +60,7 @@
                 </div>
             </section>
 
-
-
-
+     
 
 
 
