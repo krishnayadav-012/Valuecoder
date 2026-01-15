@@ -4122,16 +4122,14 @@ button.tab-btn-base {
   --slate-400: #94a3b8;
   --text-white: #ffffff;
   --text-muted: rgba(255, 255, 255, 0.7);
-  --text-blue: #4a6a8a;
-  --tag-border: #e2e8f0;
-  --highlight-border: #f4b400;
-  --muted-blue: #64748b;
+  --tag-border: #3a445f;
   --light-gray: #f1f5f9;
-  --border-color: #e2e8f0;
-  --accent-yellow: #f59e0b;
   --golden-yellow: #f4b400;
   --text-gray: #64748b;
   --content-blue: #05164D;
+  --primary-blue: #1e235a;
+  --light-bg: #f8faff;
+  --golden-yellow: #f4b400;
 }
 
 .master-header {
@@ -4159,7 +4157,6 @@ button.tab-btn-base {
   width: 100%;
   height: 100%;
   background-image: url(&quot;https://www.valuecoders.com/case-studies/staging/wp-content/uploads/2024/05/143.jpg&quot;);
-  /* A transparent hex grid PNG */
   opacity: 0.1;
   pointer-events: none;
 }
@@ -4182,54 +4179,53 @@ button.tab-btn-base {
 }
 
 /* Tags */
-.tags {
+.case-study-banner .tags {
   display: flex;
   gap: 12px;
   margin-bottom: 25px;
   align-items: center;
 }
 
-.tag {
+.case-study-banner .tag.tag-text {
+  border-left: 1px solid var(--tag-border);
+  border-radius: 0;
+}
+
+.case-study-banner .tag {
   padding: 0px 14px;
   border-radius: 20px;
   font-size: 11px;
   line-height: 17px;
 }
 
-.tag-yellow {
+.case-study-banner .tag-yellow {
   background-color: #FFAD00;
   color: #000;
-  font-weight: normal;
+  font-weight: 500;
 }
 
-.tag-outline {
+.case-study-banner .tag-outline {
   border: 1px solid var(--text-muted);
   background: rgba(255, 255, 255, 0.1);
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.tag-text {
+.case-study-banner .tag-text {
   color: var(--text-muted);
 }
 
 /* Typography */
-h1 {
+.case-study-banner h1 {
   margin: 0 0 20px 0;
   color: var(--text-white);
 }
 
-.description {
+.case-study-banner p {
   font-size: 1.2rem;
   max-width: 600px;
   line-height: 1.6;
   color: var(--text-muted);
-}
-
-:root {
-  --primary-blue: #1e235a;
-  --text-gray: #666;
-  --light-bg: #f8faff;
-  --accent-yellow: #f4b400;
 }
 
 /* Layout Parent */
@@ -4262,6 +4258,11 @@ h1 {
   background-color: #070707;
 }
 
+.timeline-block.active > h2 {
+  color: var(--primary-blue);
+  line-height: 1.2;
+}
+
 .timeline-block::after {
   position: absolute;
   left: 0;
@@ -4273,9 +4274,19 @@ h1 {
 }
 
 .timeline-block h4 {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600 !important;
   color: #64748b;
+  margin-bottom: 10px;
+}
+
+.timeline-block .section-label {
+  color: var(--text-gray);
+  font-weight: 700;
+}
+
+.timeline-block.active .section-label {
+  color: var(--golden-yellow);
 }
 
 /* Timeline Markers (Circles) */
@@ -4291,13 +4302,28 @@ h1 {
   border: 3px solid #656565;
 }
 
-.timeline-block.active h4 {
+.timeline-block h4 {
   color: #FFAD00;
 }
 
 .timeline-block h2 {
   color: #05164d;
   margin: 20px 0 20px 0;
+}
+
+.timeline-block h5 {
+  font-size: 14px;
+  color: var(--content-blue);
+  margin-bottom: 10px;
+}
+
+.timeline-block h6 {
+  color: var(--content-blue);
+  font-size: 13px;
+}
+
+.timeline-block ul {
+  margin-top: 10px;
 }
 
 .timeline-block.active .timeline-marker {
@@ -4350,10 +4376,6 @@ h1 {
   height: 8px;
 }
 
-.timeline-block ul {
-  margin-top: 20px;
-}
-
 .timeline-block img {
   width: 100%;
   display: block;
@@ -4368,21 +4390,21 @@ h1 {
 .timeline-block ul li {
   position: relative;
   margin-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .timeline-block h3 {
-  margin: 25px 0;
+  margin: 15px 0;
   color: var(--content-blue);
 }
 
 .timeline-block ul li:before {
   content: "";
-  width: 8px;
+  width: 7px;
   height: 8px;
   position: absolute;
   left: -14px;
-  top: 9px;
+  top: 10px;
   background-color: #ffad00;
   border-radius: 50%;
 }
@@ -4528,13 +4550,13 @@ h1 {
 }
 
 .tech-tag.active {
-  border-color: var(--highlight-border);
+  border-color: var(--golden-yellow);
 }
 
 /* Optional: Subtle hover effect for interactivity */
 .tech-tag:hover {
   background-color: #f8faff;
-  border-color: var(--highlight-border);
+  border-color: var(--golden-yellow);
 }
 
 .sticky-content .info-card .sticky-card-label {
@@ -4629,7 +4651,7 @@ h1 {
 
 .info-card .member-role {
   font-size: 13px;
-  color: var(--muted-blue);
+  color: var(--text-gray);
   display: flex;
   align-items: center;
 }
@@ -4643,7 +4665,7 @@ h1 {
 }
 
 .info-card .dot.yellow {
-  background-color: var(--accent-yellow);
+  background-color: var(--golden-yellow);
 }
 
 .info-card .member-count {
@@ -4686,7 +4708,7 @@ h1 {
 .info-card .quote {
   font-size: 13px;
   line-height: 1.6;
-  color: var(--muted-blue);
+  color: var(--text-gray);
   font-style: italic;
   margin: 0;
 }
@@ -4918,19 +4940,11 @@ h1 {
   height: 14px;
 }
 
-.social-icons .icon-link svg:hover {
-  fill: #f4b400;
-}
-
 .icon-link {
   color: inherit;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.2s;
-}
-
-.icon-link:hover {
-  color: var(--brand-navy);
 }
 
 /* CTA Card Styling */
@@ -5068,6 +5082,24 @@ h1 {
   .timeline-block img {
     padding: 18px 10px !important;
   }
+  .logos-slid-part .marquee-container {
+    padding: 30px 0;
+  }
+  .logos-slid-part {
+    margin: 30px 0;
+  }
+  .testimonial-container {
+    padding: 40px 0 20px 0;
+  }
+  .case-study-banner {
+    padding: 85px 0;
+  }
+  .sticky-section-part {
+    margin: 30px 0;
+  }
+  .timeline-block {
+    margin-bottom: 30px;
+  }
   .impact-card .stats-row {
     flex-direction: column;
     row-gap: 20px;
@@ -5075,8 +5107,11 @@ h1 {
   .tag {
     font-size: 10px;
   }
+  .timeline-block h3 {
+    font-size: 18px;
+  }
   .timeline-block h2 {
-    font-size: 22px;
+    font-size: 25px;
     margin: 10px 0px 15px;
   }
 }

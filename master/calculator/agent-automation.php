@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>AI Agent Automation ROI Calculator</title>
-    
- 
-    
     <style>
         
          .cost-banner {
@@ -16,12 +13,14 @@
             background: linear-gradient(180deg, #211f47 0, #05164d 100%) !important;
             text-align: center;
         }
+
     </style>
     <link rel="preload stylesheet" type="text/css" href="../css/index-v8.css" defer />
     <link rel="preload stylesheet" type="text/css" href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
     <link rel="preload stylesheet" type="text/css" href="css/contact-v10.css" defer />
     <!-- SEO Structured Data -->
     <script>
+
         var vcObj = {
             "_version": "1763614476",
             "tpl_url": "http://localhost/markup-dom/valuecoders/master",
@@ -35,6 +34,7 @@
             "_cs_data": null,
             "_blog_tag": ""
         };
+
     </script>
     <script defer src="../menu.js"></script>
     <script defer src="../js/intlTelInput-17.0.min.js"></script>
@@ -57,6 +57,7 @@
         </div>
 
     </main>
+    
        <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>

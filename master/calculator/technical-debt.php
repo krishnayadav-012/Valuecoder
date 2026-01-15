@@ -28,6 +28,7 @@
     <link rel="preload stylesheet" type="text/css" href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
     <link rel="preload stylesheet" type="text/css" href="css/contact-v10.css" defer />
     <!-- SEO Structured Data -->
+     
     <script>
         var vcObj = {
             "_version": "1763614476",
@@ -42,6 +43,7 @@
             "_cs_data": null,
             "_blog_tag": ""
         };
+
     </script>
     <script defer src="../menu.js"></script>
     <script defer src="../js/intlTelInput-17.0.min.js"></script>

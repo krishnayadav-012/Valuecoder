@@ -56,7 +56,6 @@
 
 <body class="pb-20">
     <?php require_once './include/menu-v8.php'; ?>
-
     <div class="relative overflow-hidden hero-gradient pt-28 pb-24 text-white">
         <div class="container  px-6 text-center  relative z-10">
             <span
