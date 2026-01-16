@@ -851,9 +851,6 @@
     letter-spacing: 0.5px;
 }
 
-
-
-
 .logos-slid-part {
     width: 100%;
     display: block;
@@ -924,7 +921,6 @@
     }
 }
 
-
 @media screen and (max-width:1024px) {
     .sidebar{display: none;}
     .main-content{width: 100%;}
@@ -945,9 +941,6 @@
 .impact-card .stats-row{flex-direction: column; row-gap: 20px;}
 .tag{font-size: 10px;}
 .timeline-block h3{font-size: 18px;}
-    .timeline-block h2 {
-        font-size: 25px;
-        margin: 10px 0px 15px;
-    }
+    .timeline-block h2 {font-size: 25px;margin: 10px 0px 15px;}
 
 }

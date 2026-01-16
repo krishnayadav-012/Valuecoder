@@ -59,7 +59,6 @@
                         to scale safely.</p>
                 </div>
             </section>
-  
 
    <div class=" container">
             <?php require_once 'inc/technical-debt.php'; ?>

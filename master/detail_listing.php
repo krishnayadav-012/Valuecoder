@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,12 +48,10 @@
         </div>
     </section>
 
-
-
-
     <div class="sticky-section-part">
         <div class=" container ">
             <div class="content-container">
+
                 <main class="main-content">
                     <section class="timeline-block">
                         <div class="timeline-marker "></div>
@@ -436,9 +433,7 @@
                     <div class="sticky-content">
                         <div class="info-card">
                             <span class="sticky-card-label ">ABOUT THE CLIENT</span>
-                            <div class="client-logo"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                                    alt="">
+                            <div class="client-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="">
                             </div>
                             <p>A leading European healthcare provider managing records for over 2 million patients.</p>
                         </div>
@@ -493,6 +488,7 @@
                             <a href="#" class="btn-linkedIn">View LinkedIn Profile</a>
                         </div>
 
+                        
                         <div class="cta-wrapper">
                             <div class="share-bar">
                                 <span class="share-title">SHARE THIS STORY</span>
@@ -568,13 +564,9 @@
                 </div>
             </div>
 
-
-
         </div>
     </div>
     </main>
-
-
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {

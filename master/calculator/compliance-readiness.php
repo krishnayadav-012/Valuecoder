@@ -1,23 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Compliance Calculator</title>
-      
+    <title>Responsive Compliance Calculator</title>
+
     <style>
-        
-         .cost-banner {
+        .cost-banner {
             padding: 117px 0 80px;
             min-height: initial;
             background: linear-gradient(180deg, #211f47 0, #05164d 100%) !important;
             text-align: center;
         }
-          [x-cloak] { display: none !important; }
+
+        [x-cloak] {
+            display: none !important;
+        }
+
         /* Smooth transitions for mobile expansion */
-        .transition-all { transition: all 0.3s ease-in-out; }
-         .cost-banner {
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .cost-banner {
             padding: 117px 0 80px;
             min-height: initial;
             background: linear-gradient(180deg, #211f47 0, #05164d 100%) !important;
@@ -26,10 +34,12 @@
     </style>
 
     <link rel="preload stylesheet" type="text/css" href="../css/index-v8.css" defer />
-    <link rel="preload stylesheet" type="text/css" href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
+    <link rel="preload stylesheet" type="text/css"
+        href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
     <link rel="preload stylesheet" type="text/css" href="css/contact-v10.css" defer />
     <!-- SEO Structured Data -->
     <script>
+
         var vcObj = {
             "_version": "1763614476",
             "tpl_url": "http://localhost/markup-dom/valuecoders/master",
@@ -43,33 +53,36 @@
             "_cs_data": null,
             "_blog_tag": ""
         };
+
     </script>
     <script defer src="../menu.js"></script>
     <script defer src="../js/intlTelInput-17.0.min.js"></script>
     <script defer src="../js/form-validation-v10.js"></script>
+
 </head>
 
 <body class="pb-20">
     <?php require_once '../include/menu-v8.php'; ?>
-  <section class="cost-banner">
-                <div class="container">
-                    <h1>AI Integration &amp; Scalability Cost Calculator</h1>
-                    <p>Estimate one-time setup and monthly run costs to connect AI to your apps, data, and users – built
-                        to scale safely.</p>
-                </div>
-            </section>
-  
 
-   <div class=" container">
-            <?php require_once 'inc/compliance-readiness.php'; ?>
+    <section class="cost-banner">
+        <div class="container">
+
+            <h1>AI Integration &amp; Scalability Cost Calculator</h1>
+
+            <p>Estimate one-time setup and monthly run costs to connect AI to your apps, data, and users – built to scale safely.</p>
+
         </div>
+    </section>
+
+    <div class=" container">
+        <?php require_once 'inc/compliance-readiness.php'; ?>
+    </div>
 
     </main>
-         <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-<script src="js/compliance-readiness.js"></script>
+    <script src="js/compliance-readiness.js"></script>
 
 </body>
-
 </html>
