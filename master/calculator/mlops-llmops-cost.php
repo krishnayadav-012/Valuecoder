@@ -17,6 +17,7 @@
             background: linear-gradient(135deg, #020381 0%, #2874fc 100%);
         }
 
+
         .cost-banner h1 {
             font-size: 60px;
             line-height: 1.3;
@@ -43,8 +44,22 @@
             color: #4B5563;
         }
 
+        .experts-talk-first-section h2 {
+            color: #ffffff;
+            font-size: 42px;
+            line-height: 60px;
+            font-weight: 700;
+        }
+
+        .experts-talk-first-section p {
+            margin-top: 20px;
+            color: #9b9b9b !important;
+            line-height: 26px;
+            font-size: 16px;
+        }
+
         @media only screen and (max-width: 767px) {
-           .cost-banner h1 {
+            .cost-banner h1 {
                 font-size: 40px;
                 line-height: 50px;
             }
@@ -52,6 +67,16 @@
             .faq-section h2 {
                 font-size: 28px;
                 line-height: 37px;
+            }
+
+            .experts-talk-first-section h2 {
+                font-size: 28px;
+                line-height: 37px;
+            }
+            .experts-talk-first-section p {
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: 15px;
             }
 
         }
