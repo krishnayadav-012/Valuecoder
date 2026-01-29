@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders</title>
@@ -14,6 +15,7 @@
         content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/index-v9.css" defer />
+
     <link rel="preload stylesheet" type="text/css"
         href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
     <script>
@@ -47,7 +49,7 @@
                         software development and software engineering teams to our clients globally.</p>
                     <div class="margin-t-70">
                         <a class="green-btn" href="https://www.valuecoders.com/contact">Contact Us <i
-                                class="arrow-icon"></i></a>
+                                class="new-arrow-icon"></i></a>
                     </div>
                 </div>
                 <div class="right-box">
@@ -121,8 +123,10 @@
             </div>
         </div>
     </section>
-    <!-- risk-friction start -->
 
+    <!-- new start -->
+
+    <!-- risk-friction start -->
 
     <section class="friction-section">
         <div class="container">
@@ -133,9 +137,7 @@
                     </h2>
                     <p>Scaling isn't just about adding people. It's about diagnosing the
                         friction that turns into delivery debt.</p>
-
                 </div>
-
                 <div class="friction-innner-content">
                     <div class="friction-list">
                         <ul>
@@ -210,13 +212,9 @@
         </div>
     </section>
 
-
     <!-- risk-friction end -->
 
-
     <!-- Build for team section start -->
-
-
 
     <section class="build-team">
         <div class="container">
@@ -226,10 +224,7 @@
                 <p class="subtitle">We work with engineering leaders at every stage—from validating first products to
                     running multi-pod programs.</p>
             </div>
-
             <div class="card-grid">
-
-
                 <div class="card">
                     <div class="card-icon"><i> <img src="icons/clock.svg" alt=""> </i></div>
                     <div class="card-content">
@@ -302,10 +297,7 @@
                         <p>Any stage: Seed, Series A, Series D, or beyond.</p>
                     </div>
                 </div>
-
-
             </div>
-
             <div class="not-for-section">
                 <div class="not-for-content">
                     <h2>Who we're NOT for</h2>
@@ -332,15 +324,13 @@
         </div>
     </section>
 
-
     <!-- Build for team section end -->
+
     <!-- expertise-section section start -->
 
     <section class="expertise-section">
         <div class="container">
-
             <div class="expertise-top-part">
-
                 <div class="content-side">
                     <span class="eyebrow">FULL-STACK MASTERY</span>
                     <h2>Engineering <span class="highlight">Expertise.</span></h2>
@@ -472,12 +462,9 @@
         </div>
     </section>
 
-
-
-
     <!-- expertise-section section end -->
-    <!-- flip section start -->
 
+    <!-- flip section start -->
 
     <section class="engagement-section">
         <div class="container">
@@ -594,12 +581,10 @@
         </div>
     </section>
 
-
-
     <!-- flip  section end -->
 
-
     <!-- why valuecoder section  start-->
+
     <section class="trust-section">
         <div class="container">
             <div class="main-layout">
@@ -671,6 +656,7 @@
             </div>
         </div>
     </section>
+
     <!-- why valuecoder section  end-->
 
     <!-- new cta start -->
@@ -706,6 +692,7 @@
     </section>
 
     <!-- new cta end -->
+
     <!-- Engineering Stacks start -->
     <section class="stack-section">
         <div class="container">
@@ -759,6 +746,7 @@
         </div>
     </section>
     <!-- Engineering Stacks end -->
+
     <!-- FAQ section start -->
     <section class="faq-section">
         <div class="container">
@@ -806,6 +794,172 @@
     </section>
     <!-- faq section end -->
 
+    <!-- induristries section -->
+
+    <section class="industries-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-text">
+                    <p class="subtitle">LOREM IPSUM</p>
+                    <h1>Industries <span>We Cater to</span></h1>
+                    <p class="description">Get what you are looking for to fulfill your software development and
+                        outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
+                    </p>
+                </div>
+                <div class="glider-nav">
+                    <button class="glider-prev" aria-label="Previous"><img src="icons/arrow-right.svg" alt=""></button>
+                    <button class="glider-next" aria-label="Next"><img src="icons/arrow-right.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div class="glider-contain">
+
+                <div class="glider">
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="icons/slider-img.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Healthcare</h3>
+                                    <span class="new-arrow-icon"><img src="icons/arrow-right.svg" alt=""></span>
+                                </div>
+                                <div class="hover-content">
+                                    <h4>Smarter Care, Better Outcomes</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="icons/slider-img.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Healthcare</h3>
+                                    <span class="new-arrow-icon">↗</span>
+                                </div>
+                                <div class="hover-content">
+                                    <p class="tagline">Smarter Care, Better Outcomes</p>
+                                    <p class="details">Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="icons/slider-img.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Healthcare</h3>
+                                    <span class="new-arrow-icon">↗</span>
+                                </div>
+                                <div class="hover-content">
+                                    <p class="tagline">Smarter Care, Better Outcomes</p>
+                                    <p class="details">Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="icons/slider-img.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Healthcare</h3>
+                                    <span class="new-arrow-icon">↗</span>
+                                </div>
+                                <div class="hover-content">
+                                    <p class="tagline">Smarter Care, Better Outcomes</p>
+                                    <p class="details">Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- induristries section  -->
+
+    <!-- feedback section start -->
+
+   
+
+<section class="v-testimonial-section">
+  <div class="v-testimonial-container">
+    <header class="v-testimonial-header">
+      <p class="v-testimonial-tag">CLIENT FEEDBACK</p>
+      <h2 class="v-testimonial-title">What Engineering Leaders Say</h2>
+    </header>
+
+    <div class="v-testimonial-glider-contain">
+      <div class="v-testimonial-glider">
+        
+        <div class="v-testimonial-item">
+          <div class="v-testimonial-card">
+            <div class="v-testimonial-img">
+              <img src="icons/user-img.png" alt="James Kelly">
+            </div>
+            <div class="v-testimonial-body">
+              <blockquote class="v-testimonial-text">
+                “We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.”
+              </blockquote>
+              <div class="v-testimonial-info">
+                <strong>James Kelly</strong>
+                <span>Co-founder, Miracle Choice</span>
+                <div class="v-testimonial-rating">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-testimonial-item">
+          <div class="v-testimonial-card">
+            <div class="v-testimonial-img">
+              <img src="icons/user-img.png" alt="Client Name">
+            </div>
+            <div class="v-testimonial-body">
+              <blockquote class="v-testimonial-text">
+                “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks early.”
+              </blockquote>
+              <div class="v-testimonial-info">
+                <strong>Sarah Chen</strong>
+                <span>CTO, Innovate Solutions</span>
+                <div class="v-testimonial-rating">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!-- feedback section end -->
 
 
 
@@ -816,8 +970,67 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script>
+        // industruies start
 
+        window.addEventListener('load', function () {
+            new Glider(document.querySelector('.glider'), {
+                slidesToShow: 1.2, // Mobile
+                slidesToScroll: 1,
+                draggable: true,
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                },
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2.4,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3.5, // Matches the "peek" effect in your image
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
 
+        // industruies end
+
+        // feedback start
+       // Use a self-invoking function or window.onload to ensure the library is ready
+window.addEventListener('load', function() {
+  const sliderElement = document.querySelector('.v-testimonial-glider');
+
+  if (sliderElement && typeof Glider === 'function') {
+    new Glider(sliderElement, {
+      slidesToShow: 1.05, // Peek on mobile
+      slidesToScroll: 1,
+      draggable: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1.2, // Professional peek on desktop as per image
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    console.log("Slider initialized successfully.");
+  } else {
+    console.error("Glider.js not found or slider element missing.");
+  }
+});
+        // feedback end
+
+    </script>
 
 
 

@@ -159,6 +159,7 @@ $text-gray: #364153;
         .tags {
             display: flex;
             gap: 8px;
+            flex-wrap: wrap;
 
             span {
                 font-size: 10px;
