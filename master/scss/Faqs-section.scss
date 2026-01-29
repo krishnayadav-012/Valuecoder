@@ -1,0 +1,124 @@
+@use "_default" as *;
+$faq-text: #4A5565;
+$faq-heading: #101828;
+
+
+.faq-section {
+    padding: 66px 0 98px;
+
+    .section-header {
+        text-align: center;
+        border: none;
+        margin-bottom: 60px;
+
+        p {
+
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: $darkYellow;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 46px;
+            font-weight: 700;
+        }
+    }
+
+
+.faq-container {
+
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+
+
+    .faq-question {
+        padding: 25px 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+
+        h4 {
+            color: $faq-heading;
+            font-weight: 500;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                background: $themeMidNight;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &::before {
+                width: 10px;
+                height: 2px;
+            }
+
+            &::after {
+                width: 2px;
+                height: 10px;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+        padding: 0 30px;
+
+        p {
+            color: $faq-text;
+        }
+    }
+
+
+    // Active State via JS Class
+    &.active {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+        .faq-answer {
+            max-height: 200px; // Adjust based on content
+            padding-bottom: 25px;
+        }
+
+        .icon::after {
+            opacity: 0; // Turns + into -
+        }
+    }
+}
+
+.faq-item.active {
+    h4 {
+
+        font-weight: 700;
+    }
+}
+}

@@ -463,11 +463,11 @@ strong {
   margin-left: 15px;
 }
 
-.client-logo-box-section {
-  padding: 22px 0;
-}
 .client-logo-box-section .dis-flex {
   justify-content: space-between;
+}
+.client-logo-box-section {
+  padding: 22px 0;
 }
 .client-logo-box-section .logo-heading {
   width: 220px;

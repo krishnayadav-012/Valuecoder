@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
     <section class="case-study-banner">
         <div class="container">
             <nav class="breadcrumb">
@@ -52,42 +51,37 @@
     <div class="sticky-section-part">
         <div class=" container ">
             <div class="content-container">
-
                 <main class="main-content">
                     <section class="timeline-block">
                         <div class="timeline-marker "></div>
-                        <span >THE CHALLENGE</span>
-                        <h2 >Breaking through the bottleneck.</h2>
+                        <span class="section-label" >THE CHALLENGE</span>
+                        <h2>Breaking through the bottleneck.</h2>
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <h4>Lorem ipsum dolor sit amet.</h4>
                         <h5>Lorem ipsum dolor sit amet.</h5>
-                        <p >A legacy monolithic .NET application was crashing under patient load.
+                        <p>A legacy monolithic .NET application was crashing under patient load.
                             deployments took 48 hours of code freeze, and security vulnerabilities were becoming
                             unmanageable.</p>
-
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet <strong> consectetur adipisicing</strong> elit. A, libero.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
-                            </ul>
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
-                            </ol>
-                            <a href="#">Lorem ipsum dolor sit amet.</a>
-
-                            <strong>Lorem ipsum dolor sit amet.</strong>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet <strong> consectetur adipisicing</strong> elit. A, libero.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero.</li>
+                        </ul>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur?</li>
+                        </ol>
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                        <strong>Lorem ipsum dolor sit amet.</strong>
                     </section>
-                  
-
-
 
                     <section class="impact-card">
                         <span class="label yellow">THE IMPACT</span>
@@ -138,94 +132,92 @@
 
 
                 </main>
-                    <aside class="sidebar">
-                        <div class="sticky-content">
-                            <div class="info-card">
-                                <span class="sticky-card-label ">ABOUT THE CLIENT</span>
-                                <div class="client-logo"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                                        alt="">
-                                </div>
-                                <p>A leading European healthcare provider managing records for over 2 million patients.
-                                </p>
+                <aside class="sidebar">
+                    <div class="sticky-content">
+                        <div class="info-card">
+                            <span class="sticky-card-label ">ABOUT THE CLIENT</span>
+                            <div class="client-logo"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                    alt="">
                             </div>
+                            <p>A leading European healthcare provider managing records for over 2 million patients.
+                            </p>
+                        </div>
 
-                            <div class="info-card">
-                                <span class="Project-snap ">Project Snapshot</span>
-                                <div class="snapshot-row"><span>Duration</span><span class="month-details">4
-                                        Months</span>
-                                </div>
-                                <div class="snapshot-row"><span>Engagement</span><span class="pads-yello ">Managed
-                                        Pod</span>
-                                </div>
+                        <div class="info-card">
+                            <span class="Project-snap ">Project Snapshot</span>
+                            <div class="snapshot-row"><span>Duration</span><span class="month-details">4
+                                    Months</span>
                             </div>
-
-                            <div class="info-card">
-                                <h4 class="card-title">Team Structure</h4>
-                                <ul class="team-list">
-                                    <li>
-                                        <span class="member-role"><span class="dot yellow"></span>AI Architect</span>
-                                        <span class="member-count">x1</span>
-                                    </li>
-                                    <li>
-                                        <span class="member-role"><span class="dot yellow"></span>Python/LLM
-                                            Engineers</span>
-                                        <span class="member-count">x2</span>
-                                    </li>
-                                    <li>
-                                        <span class="member-role"><span class="dot yellow"></span>React Developer</span>
-                                        <span class="member-count">x2</span>
-                                    </li>
-                                    <li>
-                                        <span class="member-role"><span class="dot yellow"></span>QA Automation</span>
-                                        <span class="member-count">x5</span>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <div class="info-card profile-card">
-                                <div class="profile-header">
-                                    <img src="https://i.pravatar.cc/150?u=1" alt="Rahul V." class="avatar">
-                                    <div class="profile-info">
-                                        <span class="name">Rahul V.</span>
-                                        <span class="title">Principal Solution Architect</span>
-                                    </div>
-                                </div>
-                                <p class="quote">
-                                    "We prioritized strict type safety and 90%+ test coverage to ensure this financial
-                                    system
-                                    remains maintainable for years."
-                                </p>
-
-                                <a href="#" class="btn-linkedIn">View LinkedIn Profile</a>
-                            </div>
-
-
-                            <div class="cta-wrapper">
-                                <div class="share-bar">
-                                    <span class="share-title">SHARE THIS STORY</span>
-                                    <div class="social-icons">
-                                        <a href="#" class="icon-link"><img src="icons/linkedin.svg" alt=""></a>
-                                        <a href="#" class="icon-link"><img src="icons/mail.svg" alt=""></a>
-                                        <a href="#" class="icon-link"><img src="icons/twitter.svg" alt=""></a>
-                                    </div>
-                                </div>
-
-                                <div class="cta-card">
-                                    <h2 class="cta-heading">Need results like this?</h2>
-                                    <p class="cta-subtext">Deploy a similar AI & Automation team in as little as 2
-                                        weeks.
-                                    </p>
-
-                                    <button class="cta-button">Book Free Consultation</button>
-
-                                    <span class="cta-footer">NO COMMITMENT REQUIRED</span>
-                                </div>
+                            <div class="snapshot-row"><span>Engagement</span><span class="pads-yello ">Managed
+                                    Pod</span>
                             </div>
                         </div>
-                    </aside>
+                        <div class="info-card">
+                            <h4 class="card-title">Team Structure</h4>
+                            <ul class="team-list">
+                                <li>
+                                    <span class="member-role"><span class="dot yellow"></span>AI Architect</span>
+                                    <span class="member-count">x1</span>
+                                </li>
+                                <li>
+                                    <span class="member-role"><span class="dot yellow"></span>Python/LLM
+                                        Engineers</span>
+                                    <span class="member-count">x2</span>
+                                </li>
+                                <li>
+                                    <span class="member-role"><span class="dot yellow"></span>React Developer</span>
+                                    <span class="member-count">x2</span>
+                                </li>
+                                <li>
+                                    <span class="member-role"><span class="dot yellow"></span>QA Automation</span>
+                                    <span class="member-count">x5</span>
+                                </li>
 
+                            </ul>
+                        </div>
+
+                        <div class="info-card profile-card">
+                            <div class="profile-header">
+                                <img src="https://i.pravatar.cc/150?u=1" alt="Rahul V." class="avatar">
+                                <div class="profile-info">
+                                    <span class="name">Rahul V.</span>
+                                    <span class="title">Principal Solution Architect</span>
+                                </div>
+                            </div>
+                            <p class="quote">
+                                "We prioritized strict type safety and 90%+ test coverage to ensure this financial
+                                system
+                                remains maintainable for years."
+                            </p>
+
+                            <a href="#" class="btn-linkedIn">View LinkedIn Profile</a>
+                        </div>
+
+
+                        <div class="cta-wrapper">
+                            <div class="share-bar">
+                                <span class="share-title">SHARE THIS STORY</span>
+                                <div class="social-icons">
+                                    <a href="#" class="icon-link"><img src="icons/linkedin.svg" alt=""></a>
+                                    <a href="#" class="icon-link"><img src="icons/mail.svg" alt=""></a>
+                                    <a href="#" class="icon-link"><img src="icons/twitter.svg" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="cta-card">
+                                <h2 class="cta-heading">Need results like this?</h2>
+                                <p class="cta-subtext">Deploy a similar AI & Automation team in as little as 2
+                                    weeks.
+                                </p>
+
+                                <button class="cta-button">Book Free Consultation</button>
+
+                                <span class="cta-footer">NO COMMITMENT REQUIRED</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </div>

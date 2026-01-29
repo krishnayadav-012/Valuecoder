@@ -1,0 +1,189 @@
+@use "_default" as *;
+// Variables
+$bg-light: #f8f9fa;
+$text-gray: #555;
+
+.engagement-section {
+    padding: 120px 0px;
+
+    .section-header {
+        padding-top: 0;
+
+        .subtitle {
+            color: $darkYellow;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: $themeMidNight;
+
+            span {
+                color: $darkYellow;
+            }
+        }
+
+        .description {
+            color: $text-gray;
+            margin-top: 15px;
+        }
+    }
+}
+
+.flip-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+// Flip Card Logic
+.flip-card {
+    background-color: transparent;
+    width: calc(25% - 15px);
+    height: 380px;
+    perspective: 1000px; // Required for 3D effect
+
+    &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; // Hides the back when the front is visible
+    border-radius: 20px;
+    padding:  30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+// Front Side
+.card-front {
+    background-color: $bg-light;
+    color: $themeMidNight;
+
+    border: 1px solid #E5E7EB;
+
+    .icon {
+
+        margin-bottom: 20px;
+        opacity: 0.6;
+        border: 1px solid #05164D33;
+        width: 44px;
+        height: 44px;
+        display: flex;align-items: center;
+        justify-content: center;
+        border-radius: 20%;
+        img{
+            width: 20px;
+
+        }
+    }
+
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: $text-gray;
+        line-height: 1.6;
+    }
+
+    .card-inner-btn {
+
+        margin-top: auto;
+        border-top: 1px solid #555;
+        padding-top: 25px;
+
+        .btn-outline {
+            background: #eff3f6;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 100%;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+    }
+}
+
+// Back Side (Orange)
+.card-back {
+    background-color: $darkYellow;
+    color: $themeMidNight;
+    transform: rotateY(180deg);
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+
+            &:before {
+                content: "";
+                margin-right: 10px;
+                font-weight: bold;
+                background: url(../icons/dark-check.svg);
+                width: 18px;
+                height: 18px;
+                background-size: cover;
+                display: block;
+            }
+        }
+    }
+
+    .card-inner-btn {
+        margin-top: auto;
+        padding-top: 25px;
+        border-top: 1px solid  #E5E7EB;
+        .btn-solid {
+            background: $white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .flip-card {
+        width: 100%; // Cards stack on mobile
+        max-width: 340px;
+    }
+    .engagement-section{
+        padding: 60px 0;
+    }
+    .card-face{
+        padding: 20px;
+    }
+}

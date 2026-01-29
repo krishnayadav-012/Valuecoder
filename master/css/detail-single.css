@@ -1,9 +1,10 @@
 :root{--slate-400:#94a3b8;--text-white:#ffffff;--text-muted:rgba(255, 255, 255, 0.7);--tag-border:#3a445f;--light-gray:#f1f5f9;--golden-yellow:#f4b400;--text-gray:#656565;--primary-blue:#1e235a;--light-bg:#f8faff;--golden-yellow:#f4b400}
 .container{width:100%;max-width:1620px;margin:0 auto;padding:0 20px}
 .master-header{top:0}
-.timeline-block h2{color:var(--primary-blue);margin:20px 0 20px 0}
-.timeline-block h3{margin:15px 0;color:var(--primary-blue)}
-.timeline-block h4{font-size:16px;font-weight:600!important;color:var(--primary-blue);margin-bottom:10px}
+.timeline-block h2{color:var(--primary-blue);margin:20px 0 21px 0; font-size: 30px; }
+.timeline-block h3{margin:15px 0;color:var(--primary-blue); font-size: 18px; }
+.timeline-block.avtive .section-label{color: var(--brand-yellow);}
+.timeline-block h4{font-size:16px;font-weight:600!important;color:var(--primary-blue);margin-bottom:10px; }
 .timeline-block h5{font-size:14px;color:var(--primary-blue);margin-bottom:10px!important;margin:0}
 .case-study-banner{position:relative;background-size:cover;background-position:center;display:flex;align-items:center;color:var(--text-white);margin-top:68px;padding:150px 0;overflow:hidden}
 .case-study-banner::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-image:url('https://www.valuecoders.com/case-studies/staging/wp-content/uploads/2023/11/126.jpg');z-index:-1;background-repeat:no-repeat;background-size:cover;pointer-events:none}
@@ -27,9 +28,8 @@
 .timeline-block.active>h2{color:var(--primary-blue);line-height:1.2}
 .timeline-block::after{position:absolute;left:0;top:5px;background-color:#656565;width:2px;height:100%;content:""}
 .timeline-block span{color:var(--text-gray);font-weight:700}
-.timeline-block.active span{color:var(--golden-yellow)}
 .timeline-marker{position:absolute;left:-7px;top:3px;width:15px;height:15px;border-radius:50%;background:#656565;z-index:99;border:3px solid #656565}
-.timeline-block p{color:var(--text-gray);margin-bottom:15px}
+.timeline-block p{color:var(--text-gray);margin-bottom:15px; font-size: 15px;}
 .timeline-block h6{color:var(--primary-blue);font-size:13px;margin:0 0 10px 0}
 .timeline-block ul{margin-top:10px;padding-left:10px}
 .timeline-block.active .timeline-marker{border-color:var(--primary-blue);background:var(--primary-blue)}
@@ -102,7 +102,7 @@
 .impact-card .stat h3{margin-bottom:4px;font-size:31px;color:#fff}
 .impact-card .stat h3 sub{display:contents;color:#ffb122}
 .impact-desc{color:#cbd5e1;border-top:1px solid #cbd5e1;padding-top:21px;margin-top:28px}
-.impact-card h2{color:#fff;margin-bottom:28px}
+.impact-card h2{color:#fff;margin-bottom:28px; }
 .impact-card .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .impact-card .img-box{border-radius:8px;overflow:hidden;position:relative;height:100px;cursor:pointer}
 .impact-card .img-box img{width:100%;height:100%;object-fit:cover;transition:.3s}

@@ -1,0 +1,175 @@
+@use "_default" as *;
+// Color Palette
+$text-muted: rgba(255, 255, 255, 0.8);
+
+.roadmap-banner {
+    background: radial-gradient(circle at 80% 50%, #0a144d 0%, #050b33 100%);
+    padding: 78px 0;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        right: 0%;
+        z-index: -1;
+        bottom: -17%;
+        width: 45%;
+        height: 100%;
+        background: url(../icons/Lines.png);
+        background-repeat: no-repeat;
+        content: "";
+    }
+
+    &::before {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../icons/back-lines.png);
+        background-repeat: no-repeat;
+        content: "";
+        background-size: cover;
+    }
+.botton-angal-design{
+    position: absolute;
+    bottom: -2%;
+    left: 0;
+    height: 40px;
+    width: auto;
+    
+}
+
+}
+
+.banner-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.content-left {
+    flex: 1;
+
+    .subtitle {
+        color: $darkYellow;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: $white;
+        line-height: 1.1;
+        margin-bottom: 15px;
+
+        span {
+            color: $darkYellow;
+        }
+    }
+
+    .description {
+        font-size: 1.2rem;
+        color: $text-muted;
+        max-width: 500px;
+        margin-bottom: 25px;
+
+        @media (max-width: 992px) {
+            margin: 0 auto 40px;
+        }
+    }
+}
+
+.cta-area {
+
+    .liability-text {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 10px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+
+        .bolt {
+            color: $darkYellow;
+            margin-right: 5px;
+            display: flex;
+
+            img {
+                width: 16px;
+                margin-right: 10px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+// Floating Image Cluster Logic
+.visual-right {
+    flex: 1;
+
+
+    .profile {
+        text-align: right;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 500px;
+        }
+    }
+
+    .main-profile {
+
+
+        z-index: 5;
+    }
+
+    .sub-profile-top {
+        width: 80px;
+        height: 80px;
+        top: 10%;
+        left: 20%;
+    }
+
+    .sub-profile-right {
+        width: 110px;
+        height: 110px;
+        top: 20%;
+        right: 10%;
+    }
+
+    .sub-profile-bottom {
+        width: 70px;
+        height: 70px;
+        bottom: 10%;
+        right: 25%;
+    }
+
+    .rating-tag {
+        position: absolute;
+        background: $white;
+        color: #333;
+        padding: 5px 12px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        bottom: 10px;
+        left: -20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+        span {
+            font-weight: bold;
+            margin-left: 5px;
+            color: #111;
+        }
+    }
+}

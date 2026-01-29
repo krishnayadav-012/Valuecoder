@@ -1,0 +1,227 @@
+@use "_default" as *;
+// Variables
+$bg-dark: #0a0b19;
+$accent-red: #FF4C4C;
+$border-color: #1a1a1a;
+
+
+.friction-section {
+    background-color: $bg-dark;
+    color: $white;
+    padding: 120px 0;
+
+    // Left Content
+
+    .friction-inner-part {
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-top: 2px solid $darkYellow;
+        padding-top: 10px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -7px;
+            left: 0;
+            width: 20%;
+            height: 6px;
+            background-color: #FFAD00;
+            clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
+        }
+
+
+        .friction-content-top {
+            flex: 1;
+            width: 100%;
+
+            >span {
+                color: $darkYellow;
+                font-size: 12px;
+                font-weight: 800;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+
+            h2 {
+                font-weight: 700;
+                margin: 0 0 20px 0;
+                color: $white;
+
+                .highlight {
+                    color: $darkYellow;
+                    display: block;
+                }
+            }
+
+            p {
+                color: rgba(252, 252, 252, .87);
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+
+        // Interactive List
+        .friction-innner-content {
+            width: 100%;
+            display: flex;
+            gap: 60px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            // Left Side List
+            .friction-list {
+                list-style: none;
+                padding: 0;
+                width: calc(50% - 30px);
+
+                ul {
+                    margin-right: 20%;
+
+                    @media (max-width: 992px) {
+                        margin-right: 0;
+                    }
+
+
+                    .friction-item {
+                        border-bottom: 1px solid $border-color;
+                        padding: 20px 0;
+                        cursor: pointer;
+
+                        .item-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+
+                            i {
+                                color: $accent-red;
+                                font-size: 18px;
+                                width: 22px;
+                                height: 22px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                                flex-shrink: 0;
+                            }
+
+                            h3 {
+                                font-size: 22px;
+                                font-weight: 600;
+                                margin: 0;
+                                color: $white;
+                                transition: color 0.3s ease;
+                            }
+                        }
+
+                        .item-description {
+
+                            max-height: 0;
+                            opacity: 0;
+                            overflow: hidden;
+                            transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+                            margin-left: 34px;
+                            color: rgba(252, 252, 252, .87);
+                            font-size: 16px;
+                        }
+
+                        // Hover State logic
+                        &:hover {
+                            .item-header h3 {
+                                color: $accent-red;
+                            }
+
+                            .item-description {
+                                max-height: 100px;
+                                opacity: 1;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 992px) {
+                    width: 100%;
+
+
+                }
+            }
+
+            // Right Side Card
+            .friction-card {
+                width: calc(50% - 30px);
+                border: 1px solid $darkYellow;
+                border-radius: 24px;
+                padding: 45px 40px 61px 40px;
+                background: radial-gradient(circle at bottom right, rgba($darkYellow, 0.15), transparent 70%);
+                position: relative;
+                overflow: hidden;
+
+                @media (max-width: 992px) {
+                    flex: none;
+                    width: 100%;
+
+                }
+
+                >span {
+                    color: $darkYellow;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    color: $white;
+                    margin-bottom: 24px;
+
+                    span {
+                        color: $darkYellow;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    margin-bottom: 35px;
+
+                    em {
+                        font-style: italic;
+                        color: $white;
+                    }
+                }
+
+
+
+                .card-footer {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-top: 24px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: rgba(252, 252, 252, .87);
+                    letter-spacing: 0.5px;
+                }
+            }
+
+        }
+
+        @media (max-width: 992px) {
+            gap: 30px;
+
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding: 60px 0;
+
+
+    }
+}
