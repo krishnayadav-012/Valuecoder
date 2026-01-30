@@ -4638,6 +4638,11 @@ button.tab-btn-base {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1024px) {
+  .stack-section {
+    padding: 60px 0;
+  }
+}
 .faq-section {
   padding: 66px 0 98px;
 }
@@ -4747,7 +4752,7 @@ button.tab-btn-base {
   top: -6px;
   left: 0;
   width: 20%;
-  height: 4px;
+  height: 6px;
   background: #05164d;
 }
 .industries-section .section-header .header-text {
@@ -4922,31 +4927,31 @@ button.tab-btn-base {
   }
 }
 .v-testimonial-section {
-  padding: 80px 0;
+  padding: 120px 0;
   background: #f8f9fa;
   font-family: "Inter", sans-serif;
   overflow: hidden;
 }
-.v-testimonial-section .v-testimonial-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+
+.v-testimonial-item.glider-slide.active .v-testimonial-card {
+  padding-left: 0;
 }
 
 .v-testimonial-header {
   margin-bottom: 50px;
-  border-top: 1px solid #ddd;
-  padding-top: 25px;
+  border-top: 2px solid #0c104c;
+  padding-top: 10px;
   position: relative;
 }
 .v-testimonial-header::before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: -8px;
   left: 0;
-  width: 250px;
-  height: 4px;
+  width: 20%;
+  height: 6px;
   background: #0a1a3c;
+  clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
 }
 .v-testimonial-header .v-testimonial-tag {
   color: #ffb129;
@@ -4957,7 +4962,7 @@ button.tab-btn-base {
 .v-testimonial-header .v-testimonial-title {
   font-size: 36px;
   color: #0a1a3c;
-  margin: 10px 0 0;
+  margin: 0px 0 0;
 }
 
 .v-testimonial-item {
@@ -4965,13 +4970,11 @@ button.tab-btn-base {
 }
 
 .v-testimonial-card {
-  background: #fff;
-  border-radius: 15px;
   padding: 40px;
   display: flex;
   align-items: center;
   gap: 40px;
-  border-right: 1px solid #eee;
+  border-right: 2px solid #eee;
 }
 @media (max-width: 991px) {
   .v-testimonial-card {
@@ -4994,28 +4997,76 @@ button.tab-btn-base {
 }
 
 .v-testimonial-text {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
-  color: #0a1a3c;
+  color: #101828;
   line-height: 1.4;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-style: normal;
 }
 
 .v-testimonial-info strong {
   display: block;
-  font-size: 18px;
-  color: #0a1a3c;
+  font-size: 20px;
+  font-weight: 700;
+  color: #101828;
 }
 .v-testimonial-info span {
-  font-size: 14px;
-  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4A5565;
 }
 .v-testimonial-info .v-testimonial-rating {
   color: #ffb129;
+  margin-top: 0px;
+}
+.v-testimonial-info .v-testimonial-rating ul {
+  display: flex;
+  gap: 3px;
   margin-top: 10px;
 }
+.v-testimonial-info .v-testimonial-rating ul li {
+  width: 22px;
+  height: 22px;
+}
+.v-testimonial-info .v-testimonial-rating ul li img {
+  width: 100%;
+  height: 100%;
+}
 
+.v-testimonial-body {
+  padding: 35px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .v-testimonial-img {
+    width: 150px;
+    height: 150px;
+  }
+  .v-testimonial-card {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .v-testimonial-info .v-testimonial-rating ul {
+    justify-content: center;
+  }
+  .v-testimonial-info .v-testimonial-rating ul li {
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+  }
+  .v-testimonial-text {
+    font-size: 18px;
+  }
+  .v-testimonial-body {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .v-testimonial-section {
+    padding: 60px 0;
+  }
+}
 .contact-us-section {
   position: relative;
   background: linear-gradient(to right, #fff9eb 40%, #fff 30%);
@@ -5866,6 +5917,11 @@ button.tab-btn-base {
   background: linear-gradient(to right, #F3F4F6 40%, #fff 30%) !important;
 }
 
+@media screen and (max-width: 992px) {
+  .contact-us-section {
+    background: linear-gradient(to bottom, #F3F4F6 40%, #fff 30%) !important;
+  }
+}
 .btn-secondry {
   display: flex;
   align-items: center;
@@ -5899,14 +5955,14 @@ button.tab-btn-base {
   z-index: -1;
 }
 .btn-secondry::before {
-  background-color: #05164D;
+  background: url(../icons/btn-black-icon.svg);
   width: 0%;
   height: 100%;
   content: "";
   position: absolute;
   top: 0;
   transition: 0.4s;
-  z-index: -1;
+  z-index: 1;
   right: 50%;
 }
 .btn-secondry:hover {

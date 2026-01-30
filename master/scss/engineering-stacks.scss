@@ -7,6 +7,7 @@ $listing-color:#101828;
   padding: 120px 2px;
   background-color: #F9FAFB;
 
+
 .section-header {
   margin-bottom: 50px;
   padding-top: 0;
@@ -112,4 +113,8 @@ $listing-color:#101828;
     &:hover { background: $darkYellow; color: $white; }
   }
 }
+}
+@media screen and (max-width:1024px) {
+  .stack-section{padding: 60px 0;}
+  
 }

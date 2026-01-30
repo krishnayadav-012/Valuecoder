@@ -16,6 +16,12 @@
 .contact-us-section {
     position: relative;
     background: linear-gradient(to right, #F3F4F6 40%, #fff 30%) !important;
+
+}
+@media screen and (max-width:992px) {
+    .contact-us-section{
+        background:linear-gradient(to bottom, #F3F4F6 40%, #fff 30%) !important;
+    }
 }
 
 .btn-secondry {
@@ -52,14 +58,14 @@
     }
 
     &::before {
-        background-color: #05164D;
+        background:url(../icons/btn-black-icon.svg) ;
         width: 0%;
         height: 100%;
         content: "";
         position: absolute;
         top: 0;
         transition: 0.4s;
-        z-index: -1;
+        z-index: 1;
         right: 50%;
     }
 
