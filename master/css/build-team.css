@@ -2037,7 +2037,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   width: 230px;
   height: 230px;
   background: url(../icons/background-design.png);
-  z-index: 1;
   background-repeat: no-repeat;
 }
 @media (max-width: 992px) {

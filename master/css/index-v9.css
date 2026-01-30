@@ -3665,7 +3665,6 @@ button.tab-btn-base {
   width: 230px;
   height: 230px;
   background: url(../icons/background-design.png);
-  z-index: 1;
   background-repeat: no-repeat;
 }
 @media (max-width: 992px) {
@@ -5928,7 +5927,7 @@ button.tab-btn-base {
   width: 100%;
   text-align: center;
   color: #FFAD00;
-  padding: 9px 48px;
+  padding: 9px 62px;
   border-radius: 50px;
   text-decoration: none;
   justify-content: center;
@@ -5945,37 +5944,31 @@ button.tab-btn-base {
 }
 .btn-secondry::after {
   background-color: #05164D;
-  width: 0%;
-  height: 100%;
+  width: 8%;
+  height: 50%;
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  right: 50%;
+  border-radius: 50%;
   transition: 0.4s;
   z-index: -1;
-}
-.btn-secondry::before {
-  background: url(../icons/btn-black-icon.svg);
-  width: 0%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  top: 0;
-  transition: 0.4s;
-  z-index: 1;
-  right: 50%;
+  opacity: 0;
 }
 .btn-secondry:hover {
   color: #FFAD00;
   z-index: 10;
 }
-.btn-secondry:hover::after, .btn-secondry:hover::before {
-  width: 50%;
+.btn-secondry:hover::after {
+  left: 50%;
+  right: 0;
+  opacity: 1;
+  width: 100%;
   transition: 0.4s;
-}
-.btn-secondry:hover i svg {
-  fill: #FFAD00;
-  stroke: #FFAD00;
+  height: 100%;
+  border-radius: 0;
 }
 .btn-secondry i {
   display: flex;
@@ -5990,7 +5983,7 @@ button.tab-btn-base {
   align-items: center;
   background-color: #FFAD00;
   color: #000;
-  padding: 9px 48px;
+  padding: 9px 62px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 700;
@@ -6002,39 +5995,51 @@ button.tab-btn-base {
   z-index: 9;
   cursor: pointer;
   overflow: hidden;
+  z-index: 1;
   transition: 0.4s;
   border: 2px solid #FFAD00;
 }
 .btn-primary::after {
   background-color: #000000;
-  width: 0%;
-  height: 100%;
+  width: 8%;
+  height: 50%;
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  right: 50%;
+  border-radius: 50%;
   transition: 0.4s;
   z-index: -1;
+  opacity: 0;
 }
 .btn-primary::before {
-  background-color: #000000;
-  width: 0%;
-  height: 100%;
+  background: url(../icons/btn-black-icon.svg);
+  width: 16px;
+  height: 16px;
   content: "";
   position: absolute;
-  top: 0;
+  top: 48%;
   transition: 0.4s;
-  z-index: -1;
-  right: 50%;
+  transform: translateY(-50%);
+  right: 40px;
 }
 .btn-primary:hover {
-  background-color: #0a0b19;
   color: #FFAD00;
   z-index: 10;
 }
-.btn-primary:hover::after, .btn-primary:hover::before {
-  width: 50%;
+.btn-primary:hover::before {
+  background: url(../icons/btn-yellow-arrow.svg);
+}
+.btn-primary:hover::after {
+  left: 50%;
+  right: 0;
+  opacity: 1;
+  width: 100%;
   transition: 0.4s;
+  height: 100%;
+  border-radius: 0;
 }
 .btn-primary:hover i svg {
   fill: #FFAD00;

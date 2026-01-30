@@ -304,13 +304,7 @@
                     </div>
                 </div>
                 <div class="cta-area">
-                    <a href="#" class="btn-primary">Check Your Fit <i><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="#0c104c" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-arrow-right-icon lucide-arrow-right">
-                                <path d="M5 12h14"></path>
-                                <path d="m12 5 7 7-7 7"></path>
-                            </svg></i></a>
+                    <a href="#" class="btn-primary">Check Your Fit </a>
                     <img src="icons/arrow-right.svg" alt="">
                     <p><img src="icons/zap.svg" alt=""> LOREM IPSUM DOLLAR SITE</p>
                 </div>
@@ -773,7 +767,7 @@
                         under 14 days.</p>
 
                     <div class="cta-area">
-                        <a href="#" class="btn-primary">Eliminate Hiring Friction <span class="arrow">→</span></a>
+                        <a href="#" class="btn-primary">Eliminate Hiring Friction </a>
                         <div class="liability-text">
                             <span class="bolt"><img src="icons/zap.svg" alt=""></span> ZERO RECRUITMENT LIABILITY
                         </div>
