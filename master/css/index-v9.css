@@ -3352,6 +3352,20 @@ button.tab-btn-base {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-left: 27px;
+  position: relative;
+}
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header::after {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 22px;
+  background-size: contain;
+  height: 22px;
+  background-image: url(../icons/circle-x.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header i {
   color: #FF4C4C;
@@ -3370,6 +3384,11 @@ button.tab-btn-base {
   margin: 0;
   color: #ffffff;
   transition: color 0.3s ease;
+}
+@media screen and (max-width: 992px) {
+  .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header h3 {
+    font-size: 20px;
+  }
 }
 .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-description {
   max-height: 0;

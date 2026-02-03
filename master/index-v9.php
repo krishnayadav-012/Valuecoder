@@ -143,7 +143,7 @@
                         <ul>
                             <li class="friction-item active-item">
                                 <div class="item-header">
-                                    <i><img src="icons/circle-x.svg" alt=""></i>
+                                    
                                     <h3>Hiring takes too long</h3>
                                 </div>
                                 <p class="item-description">Roadmaps stall for months waiting on headcount.</p>
@@ -151,7 +151,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    <i><img src="icons/circle-x.svg" alt=""></i>
+                                    
                                     <h3>MVPs need validation</h3>
                                 </div>
                                 <p class="item-description">Move from concept to reality faster with validated
@@ -161,7 +161,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    <i><img src="icons/circle-x.svg" alt=""></i>
+                                    
                                     <h3>Tech debt piles up</h3>
                                 </div>
                                 <p class="item-description">Clean up your codebase without pausing new feature
@@ -171,7 +171,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    <i><img src="icons/circle-x.svg" alt=""></i>
+                                    
                                     <h3>Legacy systems block progress</h3>
                                 </div>
                                 <p class="item-description">Modernize older stacks to enable current-gen performance.
@@ -180,7 +180,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    <i><img src="icons/circle-x.svg" alt=""></i>
+                                    
                                     <h3>AI projects stall</h3>
                                 </div>
                                 <p class="item-description">Deploy production-ready AI models instead of infinite
@@ -1083,27 +1083,8 @@
         });
         // feedback end
 
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- new sections js start-->
-    <script>
+    // <!-- new sections js start-->
+   
         document.addEventListener("DOMContentLoaded", () => {
             const faqItems = document.querySelectorAll(".faq-item");
 

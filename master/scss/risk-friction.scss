@@ -95,6 +95,23 @@ $border-color: #1a1a1a;
                             display: flex;
                             align-items: center;
                             gap: 12px;
+                            padding-left: 27px;
+                            position: relative;
+
+                            &::after{
+                                position: absolute;
+                                left: 0;
+                                transform: translateY(-50%);
+                                top: 50%;
+                                width: 22px;
+                                background-size: contain;
+                    
+                                height: 22px;
+                                background-image: url(../icons/circle-x.svg);
+                                background-repeat: no-repeat;
+                                content: "";
+
+                            }
 
                             i {
                                 color: $accent-red;
@@ -114,6 +131,9 @@ $border-color: #1a1a1a;
                                 margin: 0;
                                 color: $white;
                                 transition: color 0.3s ease;
+                                @media screen and (max-width:992px) {
+                                    font-size: 20px;
+                                }
                             }
                         }
 
