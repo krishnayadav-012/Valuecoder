@@ -298,7 +298,7 @@
                     <h2>Who we're NOT for</h2>
                     <p>Software is your product. You build, ship, and maintain revenue-driving platforms.</p>
                     
-                        <ul class="not-list">
+                        <ul >
                             <li> Need one-off tasks or freelance work</li>
                             <li> Want to compare 10+ vendors on price</li>
                             <li> Only care about lowest hourly rate</li>
@@ -434,14 +434,14 @@
                 <div class="content-side">
                     <span class="eyebrow">FULL-STACK MASTERY</span>
                     <h2>Engineering <span class="highlight">Expertise.</span></h2>
-                    <p class="description">
+                    <p >
                         Delivered through staff augmentation, product pods, or long-term engineering programs.
                     </p>
-                    <p class="sub-description">
-                        We don't just write code; we architect scalable systems. From modernizing legacy monoliths to
-                        deploying agentic AI, our engineering DNA runs deep.
-                    </p>
-                    <ul class="features-list">
+                    <div class="sub-description">
+                       <p> We don't just write code; we architect scalable systems. From modernizing legacy monoliths to
+                        deploying agentic AI, our engineering DNA runs deep.</p>
+                    </div>
+                    <ul >
                         <li>PRODUCT ENGINEERING</li>
                         <li>AI & DATA ENGINEERING</li>
                         <li>CLOUD & DEVOPS</li>
@@ -462,7 +462,7 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>AI & Data Engineering</h3>
+                                <h3>PRODUCT ENGINEERING</h3>
                                 <span class="arrow">↗</span>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
@@ -504,7 +504,7 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>AI & Data Engineering</h3>
+                                <h3>CLOUD & DEVOPS</h3>
                                 <span class="arrow">↗</span>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
@@ -525,7 +525,7 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>AI & Data Engineering</h3>
+                                <h3>LEGACY MODERNIZATION</h3>
                                 <span class="arrow">↗</span>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
@@ -546,7 +546,7 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>AI & Data Engineering</h3>
+                                <h3>SECURITY & COMPLIANCE</h3>
                                 <span class="arrow">↗</span>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
@@ -588,7 +588,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Product Pods</h3>
-                            <ul class="features">
+                            <ul >
                                 <li>Founders & Innovation Labs</li>
                                 <li>4–8 Weeks</li>
                                 <li>Managed Pod Delivery</li>
@@ -614,7 +614,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Staff Augmentation</h3>
-                            <ul class="features">
+                            <ul >
                                 <li>Rapid Scaling</li>
                                 <li>Senior Talent</li>
                                 <li>Flexible Terms</li>
@@ -639,7 +639,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Staff Augmentation</h3>
-                            <ul class="features">
+                            <ul >
                                 <li>Rapid Scaling</li>
                                 <li>Senior Talent</li>
                                 <li>Flexible Terms</li>
@@ -664,7 +664,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Staff Augmentation</h3>
-                            <ul class="features">
+                            <ul >
                                 <li>Rapid Scaling</li>
                                 <li>Senior Talent</li>
                                 <li>Flexible Terms</li>
@@ -744,7 +744,7 @@
 
                     <div class="extension-card">
                         <h3><span class="icon"><img src="icons/clock.svg" alt=""></span> Plug-and-Play Extension</h3>
-                        <ul class="checklist">
+                        <ul >
                             <li> img We join your existing Jira/Slack</li>
                             <li>We participate in all team ceremonies</li>
                             <li>We report on velocity trends weekly</li>
@@ -1029,6 +1029,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
     <script>
         // industruies start
 

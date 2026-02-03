@@ -3726,17 +3726,17 @@ button.tab-btn-base {
   color: rgb(209, 213, 220);
   margin-bottom: 30px;
 }
-.not-for-section .not-list {
+.not-for-section .not-for-content ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   font-size: 14px;
 }
-.not-for-section .not-list li {
+.not-for-section .not-for-content ul li {
   position: relative;
   padding-left: 24px;
 }
-.not-for-section .not-list li::after {
+.not-for-section .not-for-content ul li::after {
   position: absolute;
   left: 0;
   transform: translateY(-50%);
@@ -3748,23 +3748,23 @@ button.tab-btn-base {
   background-repeat: no-repeat;
   content: "";
 }
-.not-for-section .not-list span {
+.not-for-section .not-for-content span {
   display: flex;
   align-items: center;
 }
-.not-for-section .not-list span i {
+.not-for-section .not-for-content span i {
   width: 15px;
   height: 15px;
 }
-.not-for-section .not-list span i img {
+.not-for-section .not-for-content span i img {
   display: flex;
 }
 @media (max-width: 767px) {
-  .not-for-section .not-list {
+  .not-for-section .not-for-content {
     grid-template-columns: 1fr;
   }
 }
-.not-for-section .not-list span i {
+.not-for-section .not-for-content span i {
   color: #ff4d4d;
   margin-right: 8px;
 }
@@ -3846,21 +3846,21 @@ button.tab-btn-base {
 .content-side h2 .highlight {
   color: #FFAD00;
 }
-.content-side .description {
+.content-side > p {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 20px;
 }
-.content-side .sub-description {
+.content-side .sub-description p {
   color: #364153;
   line-height: 1.6;
   margin-bottom: 40px;
 }
-.content-side .features-list {
+.content-side ul {
   padding-left: 15px;
   border-left: 2px solid rgb(209, 213, 220);
 }
-.content-side .features-list li {
+.content-side ul li {
   color: #adb5bd;
   font-weight: 700;
   font-size: 14px;
@@ -3868,7 +3868,7 @@ button.tab-btn-base {
   display: flex;
   align-items: center;
 }
-.content-side .features-list li::before {
+.content-side ul li::before {
   width: 5px;
   height: 5px;
   content: "";
@@ -3878,10 +3878,10 @@ button.tab-btn-base {
   color: #FFAD00;
   margin-right: 10px;
 }
-.content-side .features-list li.active {
+.content-side ul li.active {
   color: #05164d;
 }
-.content-side .features-list li.active::before {
+.content-side ul li.active::before {
   width: 10px;
   height: 10px;
   content: "";
@@ -4176,18 +4176,18 @@ button.tab-btn-base {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-.card-back .features {
+.card-back ul {
   list-style: none;
   padding: 0;
 }
-.card-back .features li {
+.card-back ul li {
   margin-bottom: 12px;
   font-size: 0.9rem;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
-.card-back .features li:before {
+.card-back ul li:before {
   content: "";
   margin-right: 10px;
   font-weight: bold;
@@ -4390,11 +4390,11 @@ button.tab-btn-base {
   width: 15px;
   height: 15px;
 }
-.trust-section .extension-card .checklist {
+.trust-section .extension-card ul {
   list-style: none;
   padding: 0;
 }
-.trust-section .extension-card .checklist li {
+.trust-section .extension-card ul li {
   font-size: 14px;
   font-weight: 500;
   color: #1D293D;
@@ -4402,7 +4402,7 @@ button.tab-btn-base {
   display: flex;
   align-items: center;
 }
-.trust-section .extension-card .checklist li:before {
+.trust-section .extension-card ul li:before {
   content: "";
   background: url(../icons/checkmark-green.svg);
   width: 15px;

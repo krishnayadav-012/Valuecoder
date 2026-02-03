@@ -1992,11 +1992,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   width: 15px;
   height: 15px;
 }
-.trust-section .extension-card .checklist {
+.trust-section .extension-card ul {
   list-style: none;
   padding: 0;
 }
-.trust-section .extension-card .checklist li {
+.trust-section .extension-card ul li {
   font-size: 14px;
   font-weight: 500;
   color: #1D293D;
@@ -2004,7 +2004,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   align-items: center;
 }
-.trust-section .extension-card .checklist li:before {
+.trust-section .extension-card ul li:before {
   content: "";
   background: url(../icons/checkmark-green.svg);
   width: 15px;
