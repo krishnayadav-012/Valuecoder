@@ -250,6 +250,10 @@ $text-gray: #364153;
     opacity: 100%;
 }
     @media screen and (max-width:767px) {
+        .expertise-top-part{
+            flex-direction: column;
+            gap: 30px;
+        }
         .cards-side{
             margin-top: 0;
             

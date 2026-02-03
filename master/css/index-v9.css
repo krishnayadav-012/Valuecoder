@@ -3406,6 +3406,7 @@ button.tab-btn-base {
   .friction-section .friction-inner-part .friction-innner-content .friction-card {
     flex: none;
     width: 100%;
+    padding: 25px;
   }
 }
 .friction-section .friction-inner-part .friction-innner-content .friction-card > span {
@@ -3671,6 +3672,7 @@ button.tab-btn-base {
   .not-for-section {
     flex-direction: column;
     text-align: center;
+    padding: 25px;
   }
 }
 .not-for-section .not-for-content {
@@ -3685,7 +3687,6 @@ button.tab-btn-base {
   }
 }
 .not-for-section .not-for-content h2 {
-  font-size: 32px;
   margin-bottom: 10px;
 }
 .not-for-section .not-for-content p {
@@ -3745,10 +3746,10 @@ button.tab-btn-base {
 
 @media screen and (max-width: 992px) {
   .card-grid .card {
-    min-height: 300px;
+    min-height: 325px;
   }
   .card-grid .card:hover {
-    height: 300px;
+    height: 325px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -3969,6 +3970,10 @@ button.tab-btn-base {
 }
 
 @media screen and (max-width: 767px) {
+  .expertise-top-part {
+    flex-direction: column;
+    gap: 30px;
+  }
   .cards-side {
     margin-top: 0;
   }
@@ -4033,6 +4038,7 @@ button.tab-btn-base {
 .flip-card {
   background-color: transparent;
   width: calc(25% - 15px);
+  min-width: 230px;
   height: 380px;
   perspective: 1000px;
 }
@@ -4349,6 +4355,11 @@ button.tab-btn-base {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .trust-section .stats-card .badge {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .content-side {
     position: static;
@@ -4506,6 +4517,11 @@ button.tab-btn-base {
   color: #111;
 }
 
+@media screen and (max-width: 992px) {
+  .cta-area .liability-text {
+    justify-content: center;
+  }
+}
 .stack-section {
   padding: 120px 2px;
   background-color: #F9FAFB;
@@ -4642,6 +4658,11 @@ button.tab-btn-base {
     padding: 60px 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .stack-section .stack-card .card-head {
+    padding: 23px;
+  }
+}
 .faq-section {
   padding: 66px 0 98px;
 }
@@ -4690,6 +4711,7 @@ button.tab-btn-base {
 .faq-section .faq-item .faq-question .icon {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
   border: 1px solid #ccc;
   border-radius: 50%;
   position: relative;
@@ -4734,6 +4756,24 @@ button.tab-btn-base {
   font-weight: 700;
 }
 
+@media screen and (max-width: 992px) {
+  .faq-section {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq-section .section-header h2 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .faq-section .faq-item .faq-question .icon {
+    width: 40px;
+    height: 22px;
+  }
+  .faq-section .faq-item .faq-question {
+    padding: 20px;
+  }
+}
 .industries-section {
   padding: 100px 0;
   background-color: #f8f9fa;
@@ -4818,6 +4858,7 @@ button.tab-btn-base {
 }
 .industries-section .industry-item {
   padding: 0 10px;
+  cursor: auto;
 }
 .industries-section .industry-card {
   border-radius: 24px;
@@ -4914,6 +4955,9 @@ button.tab-btn-base {
   }
 }
 @media (max-width: 768px) {
+  .industries-section {
+    padding: 60px 0;
+  }
   .section-header {
     flex-direction: column;
     align-items: flex-start;
@@ -4949,18 +4993,17 @@ button.tab-btn-base {
   left: 0;
   width: 20%;
   height: 6px;
-  background: #0a1a3c;
+  background: #05164d;
   clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
 }
-.v-testimonial-header .v-testimonial-tag {
-  color: #ffb129;
+.v-testimonial-header > p {
+  color: #FFAD00;
   font-weight: 700;
   font-size: 13px;
   margin: 0;
 }
-.v-testimonial-header .v-testimonial-title {
-  font-size: 36px;
-  color: #0a1a3c;
+.v-testimonial-header h2 {
+  color: #05164d;
   margin: 0px 0 0;
 }
 
@@ -4995,7 +5038,7 @@ button.tab-btn-base {
   object-fit: cover;
 }
 
-.v-testimonial-text {
+.v-testimonial-body p {
   font-size: 30px;
   font-weight: 600;
   color: #101828;
@@ -5016,7 +5059,7 @@ button.tab-btn-base {
   color: #4A5565;
 }
 .v-testimonial-info .v-testimonial-rating {
-  color: #ffb129;
+  color: #FFAD00;
   margin-top: 0px;
 }
 .v-testimonial-info .v-testimonial-rating ul {
@@ -5058,7 +5101,12 @@ button.tab-btn-base {
     font-size: 18px;
   }
   .v-testimonial-body {
-    padding: 20px 0;
+    padding: 20px 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .v-testimonial-body p {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -5942,6 +5990,17 @@ button.tab-btn-base {
   transition: 0.4s;
   border: 1px solid #FFAD00;
 }
+.btn-secondry::before {
+  background: url(../icons/btn-yellow-arrow.svg);
+  width: 16px;
+  height: 16px;
+  content: "";
+  position: absolute;
+  top: 48%;
+  transition: 0.4s;
+  transform: translateY(-50%);
+  right: 30%;
+}
 .btn-secondry::after {
   background-color: #05164D;
   width: 8%;
@@ -6051,6 +6110,19 @@ button.tab-btn-base {
   width: 20px;
   height: 20px;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-secondry {
+    padding: 9px 40px;
+  }
+  .btn-primary {
+    padding: 9px 40px;
+    line-height: 18px;
+  }
+  .btn-primary::before {
+    right: 20px;
+  }
 }
 
 /*# sourceMappingURL=index-v9.css.map */

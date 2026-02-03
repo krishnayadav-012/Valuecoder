@@ -197,7 +197,7 @@
                             in <em>under 14 days</em>.</p>
 
                         <a href="#" class="btn-primary">
-                            Eliminate Hiring Friction 
+                            Eliminate Hiring Friction
                         </a>
                         <p class="card-footer"><img src="icons/zap.svg" alt=""> ZERO RECRUITMENT LIABILITY</p>
                     </div>
@@ -827,13 +827,73 @@
                             <img src="icons/dummy.png" alt="Dev">
                         </div>
                         <p><strong>700+</strong> Senior Engineers available</p>
-                        <a href="#" class="btn-secondry">View Full Stack <i><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFAD00"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-arrow-right-icon lucide-arrow-right">
-                                    <path d="M5 12h14"></path>
-                                    <path d="m12 5 7 7-7 7"></path>
-                                </svg></i></a>
+                        <a href="#" class="btn-secondry">View Full Stack </a>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div class="card-head">
+                        <h3>Frontend</h3>
+                        <p>Immediate Bench Ready</p>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                        <li>
+                            <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                        <li>
+                            <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                        <li>
+                            <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="avatars">
+                            <img src="icons/dummy.png" alt="Dev">
+                            <img src="icons/dummy.png" alt="Dev">
+                            <img src="icons/dummy.png" alt="Dev">
+                        </div>
+                        <p><strong>700+</strong> Senior Engineers available</p>
+                        <a href="#" class="btn-secondry">View Full Stack </a>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div class="card-head">
+                        <h3>Frontend</h3>
+                        <p>Immediate Bench Ready</p>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                        <li>
+                            <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                        <li>
+                            <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                        <li>
+                            <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                            <div class="percentage">98%</div>
+                        </li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="avatars">
+                            <img src="icons/dummy.png" alt="Dev">
+                            <img src="icons/dummy.png" alt="Dev">
+                            <img src="icons/dummy.png" alt="Dev">
+                        </div>
+                        <p><strong>700+</strong> Senior Engineers available</p>
+                        <a href="#" class="btn-secondry">View Full Stack </a>
                     </div>
                 </div>
 
@@ -898,26 +958,34 @@
     <section class="v-testimonial-section">
         <div class="container">
             <div class="v-testimonial-header">
-                <p class="v-testimonial-tag">CLIENT FEEDBACK</p>
-                <h2 class="v-testimonial-title">What Engineering Leaders Say</h2>
+                <p >CLIENT FEEDBACK</p>
+                <h2 >What Engineering Leaders Say</h2>
             </div>
 
             <div class="v-testimonial-glider-contain">
                 <div class="v-testimonial-glider">
+
                     <div class="v-testimonial-item">
                         <div class="v-testimonial-card">
                             <div class="v-testimonial-img">
-                                <img src="icons/user-img.png" alt="James Kelly">
+                                <img src="icons/user-img.png" alt="Client Name">
                             </div>
                             <div class="v-testimonial-body">
-                                <blockquote class="v-testimonial-text">
-                                    “We have worked with ValueCoders for more than a year, and their skilled team has
-                                    allowed us to scale up during certain projects.”
-                                </blockquote>
+                                <p >
+                                    “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks
+                                    early.”
+                                </p>
                                 <div class="v-testimonial-info">
-                                    <strong>James Kelly</strong>
-                                    <span>Co-founder, Miracle Choice</span>
-                                    <div class="v-testimonial-rating">★★★★★</div>
+                                    <strong>Sarah Chen</strong>
+                                    <span>CTO, Innovate Solutions</span>
+                                    <div class="v-testimonial-rating">
+                                        <ul>
+                                            <li><img src="icons/star.svg" alt=""></li>
+                                            <li><img src="icons/star.svg" alt=""></li>
+                                            <li><img src="icons/star.svg" alt=""></li>
+                                            <li><img src="icons/star.svg" alt=""></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -928,10 +996,10 @@
                                 <img src="icons/user-img.png" alt="Client Name">
                             </div>
                             <div class="v-testimonial-body">
-                                <blockquote class="v-testimonial-text">
+                                <p >
                                     “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks
                                     early.”
-                                </blockquote>
+                                </p>
                                 <div class="v-testimonial-info">
                                     <strong>Sarah Chen</strong>
                                     <span>CTO, Innovate Solutions</span>
@@ -952,21 +1020,7 @@
         </div>
     </section>
 
-
-
-
-
-
-
     <!-- feedback section end -->
-
-
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>

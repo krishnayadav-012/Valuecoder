@@ -1976,4 +1976,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #111;
 }
 
+@media screen and (max-width: 992px) {
+  .cta-area .liability-text {
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=cta-design.css.map */

@@ -13,6 +13,8 @@
 @use "_footer-form";
 
 
+
+
 .contact-us-section {
     position: relative;
     background: linear-gradient(to right, #F3F4F6 40%, #fff 30%) !important;
@@ -44,6 +46,21 @@
     overflow: hidden;
     transition: 0.4s;
     border: 1px solid $darkYellow;
+
+      &::before {
+        background: url(../icons/btn-yellow-arrow.svg);
+       width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    top: 48%;
+    transition: 0.4s;
+    transform: translateY(-50%);
+    right: 30%;
+    }
+
+    
+
 
 
     &::after {
@@ -166,6 +183,24 @@
         width: 20px;
         height: 20px;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .btn-secondry{
+
+        padding: 9px 40px;
+    }
+    // .btn-secondry::before{
+        
+    // }
+
+    .btn-primary{
+        padding: 9px 40px;
+        line-height: 18px;
+    }
+    .btn-primary::before{
+        right: 20px;
     }
 }
 

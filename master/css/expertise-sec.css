@@ -2037,6 +2037,10 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 @media screen and (max-width: 767px) {
+  .expertise-top-part {
+    flex-direction: column;
+    gap: 30px;
+  }
   .cards-side {
     margin-top: 0;
   }

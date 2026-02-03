@@ -118,3 +118,8 @@ $listing-color:#101828;
   .stack-section{padding: 60px 0;}
   
 }
+@media screen and (max-width:768px) {
+  .stack-section .stack-card .card-head{
+    padding: 23px;
+  }
+}

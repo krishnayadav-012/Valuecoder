@@ -2015,6 +2015,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .trust-section .stats-card .badge {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .content-side {
     position: static;

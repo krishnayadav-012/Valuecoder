@@ -1,5 +1,4 @@
-$v-orange: #ffb129;
-$v-navy: #0a1a3c;
+@use "_default" as *;
 
 .v-testimonial-section {
   padding: 120px 0;
@@ -27,20 +26,19 @@ $v-navy: #0a1a3c;
     left: 0;
     width: 20%;
     height: 6px;
-    background: $v-navy;
+    background: $themeMidNight;
     clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
   }
 
-  .v-testimonial-tag {
-    color: $v-orange;
+  > p {
+    color: $darkYellow;
     font-weight: 700;
     font-size: 13px;
     margin: 0;
   }
 
-  .v-testimonial-title {
-    font-size: 36px;
-    color: $v-navy;
+  h2 {
+    color: $themeMidNight;
     margin: 0px 0 0;
   }
 }
@@ -75,15 +73,17 @@ $v-navy: #0a1a3c;
     object-fit: cover;
   }
 }
+.v-testimonial-body{
 
-
-.v-testimonial-text {
-  font-size: 30px;
-  font-weight: 600;
-  color: #101828;
-  line-height: 1.4;
-  margin-bottom: 24px;
-  font-style: normal;
+  
+  p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #101828;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    font-style: normal;
+  }
 }
 
 .v-testimonial-info {
@@ -103,7 +103,7 @@ $v-navy: #0a1a3c;
   }
 
   .v-testimonial-rating {
-    color: $v-orange;
+    color: $darkYellow;
     margin-top: 0px;
 
     ul {
@@ -156,9 +156,14 @@ $v-navy: #0a1a3c;
   }
 
   .v-testimonial-body {
-    padding: 20px 0;
+    padding: 20px 5px;
   }
   
+}
+@media screen and (max-width:768px) {
+  .v-testimonial-body p{
+    font-size: 22px;
+  }
 }
 @media screen and (max-width:1024px) {
   .v-testimonial-section{

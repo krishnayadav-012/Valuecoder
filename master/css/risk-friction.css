@@ -1960,6 +1960,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   .friction-section .friction-inner-part .friction-innner-content .friction-card {
     flex: none;
     width: 100%;
+    padding: 25px;
   }
 }
 .friction-section .friction-inner-part .friction-innner-content .friction-card > span {

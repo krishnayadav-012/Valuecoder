@@ -223,6 +223,9 @@ $stat-bg: #0d121d;
   }
 }
 
+@media screen and (max-width:768px) {
+   .trust-section .stats-card .badge {width: 100%;}
+}
 @media screen and (max-width:1024px) {
   .content-side{
     position: static;

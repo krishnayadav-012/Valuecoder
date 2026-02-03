@@ -1963,5 +1963,10 @@ body.page-template-template-testimonials .client-video-section iframe,
     padding: 60px 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .stack-section .stack-card .card-head {
+    padding: 23px;
+  }
+}
 
 /*# sourceMappingURL=engineering-stacks.css.map */
