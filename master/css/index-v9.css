@@ -3454,7 +3454,7 @@ button.tab-btn-base {
   font-style: italic;
   color: #ffffff;
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-card .card-footer {
+.friction-section .friction-inner-part .friction-innner-content .friction-card .card-bottom-text p {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -3463,6 +3463,20 @@ button.tab-btn-base {
   font-weight: 700;
   color: rgba(252, 252, 252, 0.87);
   letter-spacing: 0.5px;
+  position: relative;
+  padding-left: 26px;
+}
+.friction-section .friction-inner-part .friction-innner-content .friction-card .card-bottom-text p::after {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 16px;
+  background-size: contain;
+  height: 16px;
+  background-image: url(../icons/zap.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 @media (max-width: 992px) {
   .friction-section .friction-inner-part {
@@ -3718,6 +3732,22 @@ button.tab-btn-base {
   gap: 15px;
   font-size: 14px;
 }
+.not-for-section .not-list li {
+  position: relative;
+  padding-left: 24px;
+}
+.not-for-section .not-list li::after {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 16px;
+  background-size: contain;
+  height: 16px;
+  background-image: url(../icons/circle-x.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
 .not-for-section .not-list span {
   display: flex;
   align-items: center;
@@ -3756,11 +3786,20 @@ button.tab-btn-base {
   color: #ffffff;
   display: flex;
   align-items: center;
+  position: relative;
+  padding-left: 54px;
 }
-.not-for-section .cta-area p img {
+.not-for-section .cta-area p::after {
+  position: absolute;
+  left: 28px;
+  transform: translateY(-50%);
+  top: 50%;
   width: 16px;
-  margin-right: 10px;
+  background-size: contain;
   height: 16px;
+  background-image: url(../icons/zap.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 
 @media screen and (max-width: 992px) {
@@ -4468,23 +4507,29 @@ button.tab-btn-base {
 }
 
 .cta-area .liability-text {
-  font-size: 12px;
   text-transform: uppercase;
-  font-weight: 600;
   margin-top: 10px;
-  color: #ffffff;
   display: flex;
   align-items: center;
 }
-.cta-area .liability-text .bolt {
-  color: #FFAD00;
-  margin-right: 5px;
-  display: flex;
+.cta-area .liability-text p {
+  position: relative;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  padding-left: 26px;
 }
-.cta-area .liability-text .bolt img {
+.cta-area .liability-text p::after {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
   width: 16px;
-  margin-right: 10px;
+  background-size: contain;
   height: 16px;
+  background-image: url(../icons/zap.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .visual-right {

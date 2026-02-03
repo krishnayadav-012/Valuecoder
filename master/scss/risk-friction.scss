@@ -98,14 +98,13 @@ $border-color: #1a1a1a;
                             padding-left: 27px;
                             position: relative;
 
-                            &::after{
+                            &::after {
                                 position: absolute;
                                 left: 0;
                                 transform: translateY(-50%);
                                 top: 50%;
                                 width: 22px;
                                 background-size: contain;
-                    
                                 height: 22px;
                                 background-image: url(../icons/circle-x.svg);
                                 background-repeat: no-repeat;
@@ -131,6 +130,7 @@ $border-color: #1a1a1a;
                                 margin: 0;
                                 color: $white;
                                 transition: color 0.3s ease;
+
                                 @media screen and (max-width:992px) {
                                     font-size: 20px;
                                 }
@@ -138,7 +138,6 @@ $border-color: #1a1a1a;
                         }
 
                         .item-description {
-
                             max-height: 0;
                             opacity: 0;
                             overflow: hidden;
@@ -218,18 +217,35 @@ $border-color: #1a1a1a;
                     }
                 }
 
+                .card-bottom-text {
+                    p {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        margin-top: 24px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: rgba(252, 252, 252, .87);
+                        letter-spacing: 0.5px;
+                        position: relative;
+                        padding-left: 26px;
+                        &::after {
+                                position: absolute;
+                                left: 0;
+                                transform: translateY(-50%);
+                                top: 50%;
+                                width: 16px;
+                                background-size: contain;
+                                height: 16px;
+                                background-image: url(../icons/zap.svg);
+                                background-repeat: no-repeat;
+                                content: "";
 
-
-                .card-footer {
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                    margin-top: 24px;
-                    font-size: 12px;
-                    font-weight: 700;
-                    color: rgba(252, 252, 252, .87);
-                    letter-spacing: 0.5px;
+                            }
+                    }
                 }
+
+
             }
 
         }

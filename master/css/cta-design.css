@@ -1908,23 +1908,29 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 .cta-area .liability-text {
-  font-size: 12px;
   text-transform: uppercase;
-  font-weight: 600;
   margin-top: 10px;
-  color: #ffffff;
   display: flex;
   align-items: center;
 }
-.cta-area .liability-text .bolt {
-  color: #FFAD00;
-  margin-right: 5px;
-  display: flex;
+.cta-area .liability-text p {
+  position: relative;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  padding-left: 26px;
 }
-.cta-area .liability-text .bolt img {
+.cta-area .liability-text p::after {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
   width: 16px;
-  margin-right: 10px;
+  background-size: contain;
   height: 16px;
+  background-image: url(../icons/zap.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .visual-right {

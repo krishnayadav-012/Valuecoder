@@ -89,7 +89,7 @@ $text-muted: #555;
         background: #E5E7EB;
         border-radius: 20px;
         padding: 30px;
-        border: 1px solid  #E5E7EB;
+        border: 1px solid #E5E7EB;
         backdrop-filter: blur(13.939393997192383px);
         min-height: 380px;
         display: flex;
@@ -225,12 +225,15 @@ $text-muted: #555;
 .card .card-content {
     overflow: hidden;
 }
-.card:hover .card-icon{
+
+.card:hover .card-icon {
     display: none;
 }
-.card:hover .card-footer{
+
+.card:hover .card-footer {
     display: none;
 }
+
 .card:hover .card-content>p {
     display: none;
 }
@@ -246,7 +249,8 @@ $text-muted: #555;
     position: relative;
     justify-content: space-between;
     align-items: center;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         right: 0;
@@ -261,7 +265,7 @@ $text-muted: #555;
     @media (max-width: 992px) {
         flex-direction: column;
         text-align: center;
-    padding: 25px;
+        padding: 25px;
 
     }
 
@@ -279,7 +283,7 @@ $text-muted: #555;
         }
 
         h2 {
-            
+
             margin-bottom: 10px;
         }
 
@@ -294,6 +298,24 @@ $text-muted: #555;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
         font-size: 14px;
+
+        li {
+            position: relative;
+            padding-left: 24px;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                transform: translateY(-50%);
+                top: 50%;
+                width: 16px;
+                background-size: contain;
+                height: 16px;
+                background-image: url(../icons/circle-x.svg);
+                background-repeat: no-repeat;
+                content: "";
+            }
+        }
 
         span {
             display: flex;
@@ -325,13 +347,12 @@ $text-muted: #555;
         text-align: right;
         color: $white;
 
+
         @media (max-width: 767px) {
 
             margin-top: 40px;
             text-align: center;
         }
-
-
 
         p {
             font-size: 12px;
@@ -341,32 +362,47 @@ $text-muted: #555;
             color: $white;
             display: flex;
             align-items: center;
+            position: relative;
+            padding-left: 54px;
 
-            img {
+            &::after {
+                position: absolute;
+                left: 28px;
+                transform: translateY(-50%);
+                top: 50%;
                 width: 16px;
-                margin-right: 10px;
+                background-size: contain;
                 height: 16px;
+                background-image: url(../icons/zap.svg);
+                background-repeat: no-repeat;
+                content: "";
+
             }
+
+
         }
 
     }
 }
 
 @media screen and (max-width:992px) {
-    .card-grid .card{
+    .card-grid .card {
         min-height: 325px;
 
 
     }
-    .card-grid .card:hover{
+
+    .card-grid .card:hover {
         height: 325px;
     }
 }
+
 @media screen and (max-width:640px) {
-    .card-grid .card{
+    .card-grid .card {
         padding: 15px;
     }
-    .card-grid .card .strategic-needs{
+
+    .card-grid .card .strategic-needs {
         margin-top: 0;
     }
 }

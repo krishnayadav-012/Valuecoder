@@ -195,11 +195,12 @@
                         <p>Stop trading months for resumes. Onboard production-ready engineering
                             pods
                             in <em>under 14 days</em>.</p>
-
                         <a href="#" class="btn-primary">
                             Eliminate Hiring Friction
                         </a>
-                        <p class="card-footer"><img src="icons/zap.svg" alt=""> ZERO RECRUITMENT LIABILITY</p>
+                        <div class="card-bottom-text">
+                            <p > ZERO RECRUITMENT LIABILITY</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,17 +297,21 @@
                 <div class="not-for-content">
                     <h2>Who we're NOT for</h2>
                     <p>Software is your product. You build, ship, and maintain revenue-driving platforms.</p>
-                    <div class="not-list">
-                        <span><i> <img src="icons/circle-x.svg" alt=""></i> Need one-off tasks or freelance work</span>
-                        <span><i> <img src="icons/circle-x.svg" alt=""></i> Want to compare 10+ vendors on price</span>
-                        <span><i> <img src="icons/circle-x.svg" alt=""></i> Only care about lowest hourly rate</span>
-                        <span><i> <img src="icons/circle-x.svg" alt=""></i> Work in government/RFP-only processes</span>
-                    </div>
+                    
+                        <ul class="not-list">
+                            <li> Need one-off tasks or freelance work</li>
+                            <li> Want to compare 10+ vendors on price</li>
+                            <li> Only care about lowest hourly rate</li>
+                            <li> Work in government/RFP-only processes</li>
+                        </ul>
+                    
                 </div>
                 <div class="cta-area">
                     <a href="#" class="btn-primary">Check Your Fit </a>
                     <img src="icons/arrow-right.svg" alt="">
-                    <p><img src="icons/zap.svg" alt=""> LOREM IPSUM DOLLAR SITE</p>
+                    <div class="inner-right-text">
+                        <p> LOREM IPSUM DOLLAR SITE</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -769,7 +774,7 @@
                     <div class="cta-area">
                         <a href="#" class="btn-primary">Eliminate Hiring Friction </a>
                         <div class="liability-text">
-                            <span class="bolt"><img src="icons/zap.svg" alt=""></span> ZERO RECRUITMENT LIABILITY
+                           <p> ZERO RECRUITMENT LIABILITY</p>
                         </div>
                     </div>
                 </div>

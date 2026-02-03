@@ -34,14 +34,15 @@ $text-muted: rgba(255, 255, 255, 0.8);
         content: "";
         background-size: cover;
     }
-.botton-angal-design{
-    position: absolute;
-    bottom: -2%;
-    left: 0;
-    height: 40px;
-    width: auto;
-    
-}
+
+    .botton-angal-design {
+        position: absolute;
+        bottom: -2%;
+        left: 0;
+        height: 40px;
+        width: auto;
+
+    }
 
 }
 
@@ -91,25 +92,32 @@ $text-muted: rgba(255, 255, 255, 0.8);
 .cta-area {
 
     .liability-text {
-        font-size: 12px;
         text-transform: uppercase;
-        font-weight: 600;
         margin-top: 10px;
-        color: #ffffff;
         display: flex;
         align-items: center;
 
-        .bolt {
-            color: $darkYellow;
-            margin-right: 5px;
-            display: flex;
-
-            img {
+        p {
+            position: relative;
+            font-weight: 600;
+            color: #FFFFFFCC;
+            font-size: 12px;
+            padding-left: 26px;
+            &::after {
+                position: absolute;
+                left: 0;
+                transform: translateY(-50%);
+                top: 50%;
                 width: 16px;
-                margin-right: 10px;
+                background-size: contain;
                 height: 16px;
+                background-image: url(../icons/zap.svg);
+                background-repeat: no-repeat;
+                content: "";
             }
         }
+
+
     }
 }
 
@@ -175,7 +183,7 @@ $text-muted: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width:992px) {
-    .cta-area .liability-text{
+    .cta-area .liability-text {
         justify-content: center;
     }
 }
