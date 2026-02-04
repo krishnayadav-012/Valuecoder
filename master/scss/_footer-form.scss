@@ -1,6 +1,16 @@
 @use "_default" as *;
 
 .contact-us-section {
+    background: linear-gradient(to right, #F3F4F6 40%, #fff 30%) !important;
+
+}
+@media screen and (max-width:992px) {
+    .contact-us-section{
+        background:linear-gradient(to bottom, #F3F4F6 40%, #fff 30%) !important;
+    }
+}
+
+.contact-us-section {
   position: relative;
   background: linear-gradient(to right, #fff9eb 40%, #fff 30%);
 

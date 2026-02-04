@@ -1847,7 +1847,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .v-testimonial-header::before {
   content: "";
   position: absolute;
-  top: -8px;
+  top: -7px;
   left: 0;
   width: 20%;
   height: 6px;

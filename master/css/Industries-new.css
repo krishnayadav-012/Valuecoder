@@ -1881,7 +1881,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-right: 20px;
 }
 .industries-section .glider-nav .glider-prev {
-  transform: rotate(-180deg);
+  transform: rotate(-180deg) translateY(20px);
 }
 .industries-section .glider-nav button {
   width: 45px;
@@ -1939,6 +1939,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   border-radius: 20px;
   background-color: #fff;
   transition: background 0.4s ease;
+  position: relative;
 }
 .industries-section .industry-card .card-body .title-wrap {
   display: flex;
@@ -2021,6 +2022,22 @@ body.page-template-template-testimonials .client-video-section iframe,
   .industries-section .glider-nav {
     margin: 20px auto;
   }
+}
+.industry-card .card-body::after {
+  background: url(../icons/btn-black-icon.svg);
+  width: 16px;
+  display: none;
+  height: 16px;
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 8%;
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+
+.industry-card:hover .card-body::after {
+  display: block;
 }
 
 /*# sourceMappingURL=industries-new.css.map */

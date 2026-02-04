@@ -1941,7 +1941,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 @media screen and (max-width: 992px) {
   .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-description {
@@ -1974,6 +1974,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   background: radial-gradient(circle at bottom right, rgba(255, 173, 0, 0.15), transparent 70%);
   position: relative;
   overflow: hidden;
+  height: fit-content;
 }
 @media (max-width: 992px) {
   .friction-section .friction-inner-part .friction-innner-content .friction-card {

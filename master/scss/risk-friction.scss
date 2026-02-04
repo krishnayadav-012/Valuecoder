@@ -132,7 +132,7 @@ $border-color: #1a1a1a;
                                 transition: color 0.3s ease;
 
                                 @media screen and (max-width:992px) {
-                                    font-size: 20px;
+                                    font-size: 18px;
                                 }
                             }
                         }
@@ -178,6 +178,7 @@ $border-color: #1a1a1a;
                 background: radial-gradient(circle at bottom right, rgba($darkYellow, 0.15), transparent 70%);
                 position: relative;
                 overflow: hidden;
+                height: fit-content;
 
                 @media (max-width: 992px) {
                     flex: none;
@@ -229,19 +230,20 @@ $border-color: #1a1a1a;
                         letter-spacing: 0.5px;
                         position: relative;
                         padding-left: 26px;
-                        &::after {
-                                position: absolute;
-                                left: 0;
-                                transform: translateY(-50%);
-                                top: 50%;
-                                width: 16px;
-                                background-size: contain;
-                                height: 16px;
-                                background-image: url(../icons/zap.svg);
-                                background-repeat: no-repeat;
-                                content: "";
 
-                            }
+                        &::after {
+                            position: absolute;
+                            left: 0;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            width: 16px;
+                            background-size: contain;
+                            height: 16px;
+                            background-image: url(../icons/zap.svg);
+                            background-repeat: no-repeat;
+                            content: "";
+
+                        }
                     }
                 }
 

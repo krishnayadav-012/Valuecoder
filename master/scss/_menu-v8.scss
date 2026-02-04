@@ -15,10 +15,16 @@
   --myfont: "Plus Jakarta Sans", sans-serif;
   --master-menu-height: 65vh;
 }
-.master-header{background-color: $white;}
+.master-header{border: none !important; box-shadow: none !important;}
 .master-header.sc-up{
+  // width: 100%;
+  // background-color: $white;
+
   width: 100%;
-  background-color: $white;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none;
+
 }
 .master-header.header-bg {
   background-color: transparent !important;
@@ -222,15 +228,15 @@ ease-in-out;
   display: none;
   align-items: center;
   gap: 4px;
-  max-width: 400px;
+  // max-width: 400px;
 
   .nav-item-base {
     padding: 20px 12px;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     transition: color 0.15s, background-color 0.15s;
-    color: #4b5563;    
+    color: #F8FAFC;    
 
   }
 }
@@ -866,10 +872,11 @@ button.tab-btn-base {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
+  padding: 0px 1px 1px 16px ;
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
+  height: 48px;
   color: #05164d;
   background-color: #FFAD00;
   border: 1px solid transparent;
@@ -879,16 +886,16 @@ button.tab-btn-base {
 
 .get-connect a:after {
     content: "";
-    background: url(../images/home-images/blue-cta.svg) no-repeat;
-    width: 26px;
-    height: 26px;
+    background: url(../icons/btn-icon-top.svg) no-repeat;
+    width: 45px;
+    height: 45px;
     background-size: 100%;
     display: inline-block;
     margin-left: 10px;
 }
-.get-connect a:hover:after {
-  background: url(../images/home-images/yellow-cta.svg) no-repeat;
-}
+// .get-connect a:hover:after {
+//   background: url(../icons/btn-icon-top.svg) no-repeat;
+// }
 
 .get-connect a:hover{
   background: #05164d;
@@ -1533,3 +1540,11 @@ button.tab-btn-base {
 }
 
 .menu-description .menu-dic-text p{ font-size: 12px !important; }
+
+.master-header.header-bg.sc-up .master-menu-desktop .nav-item-base{
+  color: #4b5563;
+}
+.master-header.sc-down.header-bg:hover .master-menu-desktop .nav-item-base{
+  color: #4b5563;
+}
+

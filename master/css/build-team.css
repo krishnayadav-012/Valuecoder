@@ -1898,7 +1898,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   padding: 30px;
   border: 1px solid #E5E7EB;
   backdrop-filter: blur(13.9393939972px);
-  min-height: 380px;
+  min-height: 405px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -1958,7 +1958,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .card-grid .card:hover {
   background: #FFAD00;
-  height: 380px;
+  height: 405px;
 }
 .card-grid .card:hover h3 {
   color: #1A1A1A;
@@ -2140,6 +2140,17 @@ body.page-template-template-testimonials .client-video-section iframe,
   content: "";
 }
 
+@media screen and (max-width: 1024px) {
+  .card-grid .card {
+    padding: 20px;
+  }
+  .card-grid .card .strategic-needs {
+    padding: 10px;
+  }
+  .card-grid .card:hover .strategic-needs ul li {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 992px) {
   .card-grid .card {
     min-height: 325px;
@@ -2154,6 +2165,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
   .card-grid .card .strategic-needs {
     margin-top: 0;
+  }
+  .not-for-section .not-for-content ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
 }
 

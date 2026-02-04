@@ -1,10 +1,10 @@
 /* Error: This module and the new module both define a variable named "$darkYellow".
  *   ,
- * 1 | @use 'default' as *;
- *   | ^^^^^^^^^^^^^^^^^^^
+ * 1 | @use "_default" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^
  *   '
- *   scss\_client-testimonials.scss 1:1  @import
- *   scss\index-v7.scss 17:9             root stylesheet */
+ *   scss\_home-award.scss 1:1  @import
+ *   scss\index-v7.scss 3:9     root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: This module and the new module both define a variable named \"$darkYellow\".\a   \2577 \a 1 \2502  @use 'default' as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\_client-testimonials.scss 1:1  @import\a   scss\\index-v7.scss 17:9             root stylesheet";
+  content: 'Error: This module and the new module both define a variable named "$darkYellow".\a   \2577 \a 1 \2502  @use "_default" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\_home-award.scss 1:1  @import\a   scss\\index-v7.scss 3:9     root stylesheet';
 }

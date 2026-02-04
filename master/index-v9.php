@@ -143,7 +143,7 @@
                         <ul>
                             <li class="friction-item active-item">
                                 <div class="item-header">
-                                    
+
                                     <h3>Hiring takes too long</h3>
                                 </div>
                                 <p class="item-description">Roadmaps stall for months waiting on headcount.</p>
@@ -151,7 +151,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    
+
                                     <h3>MVPs need validation</h3>
                                 </div>
                                 <p class="item-description">Move from concept to reality faster with validated
@@ -161,7 +161,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    
+
                                     <h3>Tech debt piles up</h3>
                                 </div>
                                 <p class="item-description">Clean up your codebase without pausing new feature
@@ -171,7 +171,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    
+
                                     <h3>Legacy systems block progress</h3>
                                 </div>
                                 <p class="item-description">Modernize older stacks to enable current-gen performance.
@@ -180,7 +180,7 @@
 
                             <li class="friction-item">
                                 <div class="item-header">
-                                    
+
                                     <h3>AI projects stall</h3>
                                 </div>
                                 <p class="item-description">Deploy production-ready AI models instead of infinite
@@ -199,7 +199,7 @@
                             Eliminate Hiring Friction
                         </a>
                         <div class="card-bottom-text">
-                            <p > ZERO RECRUITMENT LIABILITY</p>
+                            <p> ZERO RECRUITMENT LIABILITY</p>
                         </div>
                     </div>
                 </div>
@@ -297,14 +297,14 @@
                 <div class="not-for-content">
                     <h2>Who we're NOT for</h2>
                     <p>Software is your product. You build, ship, and maintain revenue-driving platforms.</p>
-                    
-                        <ul >
-                            <li> Need one-off tasks or freelance work</li>
-                            <li> Want to compare 10+ vendors on price</li>
-                            <li> Only care about lowest hourly rate</li>
-                            <li> Work in government/RFP-only processes</li>
-                        </ul>
-                    
+
+                    <ul>
+                        <li> Need one-off tasks or freelance work</li>
+                        <li> Want to compare 10+ vendors on price</li>
+                        <li> Only care about lowest hourly rate</li>
+                        <li> Work in government/RFP-only processes</li>
+                    </ul>
+
                 </div>
                 <div class="cta-area">
                     <a href="#" class="btn-primary">Check Your Fit </a>
@@ -327,7 +327,7 @@
             <div class="section-header">
                 <div class="header-text">
                     <p class="subtitle">LOREM IPSUM</p>
-                    <h1>Industries <span>We Cater to</span></h1>
+                    <h1>Industries We Cater to</h1>
                     <p class="description">Get what you are looking for to fulfill your software development and
                         outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
                     </p>
@@ -349,7 +349,7 @@
                             <div class="card-body">
                                 <div class="title-wrap">
                                     <h3>Healthcare</h3>
-                                    <span class="new-arrow-icon"><img src="icons/arrow-right.svg" alt=""></span>
+
                                 </div>
                                 <div class="hover-content">
                                     <h4>Smarter Care, Better Outcomes</h4>
@@ -368,7 +368,7 @@
                             <div class="card-body">
                                 <div class="title-wrap">
                                     <h3>Healthcare</h3>
-                                    <span class="new-arrow-icon">↗</span>
+
                                 </div>
                                 <div class="hover-content">
                                     <p class="tagline">Smarter Care, Better Outcomes</p>
@@ -387,7 +387,6 @@
                             <div class="card-body">
                                 <div class="title-wrap">
                                     <h3>Healthcare</h3>
-                                    <span class="new-arrow-icon">↗</span>
                                 </div>
                                 <div class="hover-content">
                                     <p class="tagline">Smarter Care, Better Outcomes</p>
@@ -406,7 +405,6 @@
                             <div class="card-body">
                                 <div class="title-wrap">
                                     <h3>Healthcare</h3>
-                                    <span class="new-arrow-icon">↗</span>
                                 </div>
                                 <div class="hover-content">
                                     <p class="tagline">Smarter Care, Better Outcomes</p>
@@ -434,14 +432,15 @@
                 <div class="content-side">
                     <span class="eyebrow">FULL-STACK MASTERY</span>
                     <h2>Engineering <span class="highlight">Expertise.</span></h2>
-                    <p >
+                    <p>
                         Delivered through staff augmentation, product pods, or long-term engineering programs.
                     </p>
                     <div class="sub-description">
-                       <p> We don't just write code; we architect scalable systems. From modernizing legacy monoliths to
-                        deploying agentic AI, our engineering DNA runs deep.</p>
+                        <p> We don't just write code; we architect scalable systems. From modernizing legacy monoliths
+                            to
+                            deploying agentic AI, our engineering DNA runs deep.</p>
                     </div>
-                    <ul >
+                    <ul>
                         <li>PRODUCT ENGINEERING</li>
                         <li>AI & DATA ENGINEERING</li>
                         <li>CLOUD & DEVOPS</li>
@@ -463,13 +462,12 @@
                         <div class="card-body">
                             <div class="title-row">
                                 <h3>PRODUCT ENGINEERING</h3>
-                                <span class="arrow">↗</span>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
                             <div class="tags">
                                 <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
                             </div>
-                            <a href="#" class="case-study">CASE STUDIES ➔</a>
+                            <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
                     <div class="service-card">
@@ -484,13 +482,12 @@
                         <div class="card-body">
                             <div class="title-row">
                                 <h3>AI & Data Engineering</h3>
-                                <span class="arrow">↗</span>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
                             <div class="tags">
                                 <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
                             </div>
-                            <a href="#" class="case-study">CASE STUDIES ➔</a>
+                            <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
                     <div class="service-card">
@@ -504,14 +501,13 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>CLOUD & DEVOPS</h3>
-                                <span class="arrow">↗</span>
+                                <h3>Cloud & DevOps</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
                             <div class="tags">
                                 <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
                             </div>
-                            <a href="#" class="case-study">CASE STUDIES ➔</a>
+                            <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
                     <div class="service-card">
@@ -525,14 +521,13 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>LEGACY MODERNIZATION</h3>
-                                <span class="arrow">↗</span>
+                                <h3>Legacy Modernization</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
                             <div class="tags">
                                 <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
                             </div>
-                            <a href="#" class="case-study">CASE STUDIES ➔</a>
+                            <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
                     <div class="service-card">
@@ -546,17 +541,15 @@
 
                         <div class="card-body">
                             <div class="title-row">
-                                <h3>SECURITY & COMPLIANCE</h3>
-                                <span class="arrow">↗</span>
+                                <h3>DevSecOps, SOC2</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
                             <div class="tags">
                                 <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
                             </div>
-                            <a href="#" class="case-study">CASE STUDIES ➔</a>
+                            <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -588,7 +581,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Product Pods</h3>
-                            <ul >
+                            <ul>
                                 <li>Founders & Innovation Labs</li>
                                 <li>4–8 Weeks</li>
                                 <li>Managed Pod Delivery</li>
@@ -614,7 +607,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Staff Augmentation</h3>
-                            <ul >
+                            <ul>
                                 <li>Rapid Scaling</li>
                                 <li>Senior Talent</li>
                                 <li>Flexible Terms</li>
@@ -639,7 +632,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Staff Augmentation</h3>
-                            <ul >
+                            <ul>
                                 <li>Rapid Scaling</li>
                                 <li>Senior Talent</li>
                                 <li>Flexible Terms</li>
@@ -664,7 +657,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>Staff Augmentation</h3>
-                            <ul >
+                            <ul>
                                 <li>Rapid Scaling</li>
                                 <li>Senior Talent</li>
                                 <li>Flexible Terms</li>
@@ -744,7 +737,7 @@
 
                     <div class="extension-card">
                         <h3><span class="icon"><img src="icons/clock.svg" alt=""></span> Plug-and-Play Extension</h3>
-                        <ul >
+                        <ul>
                             <li> img We join your existing Jira/Slack</li>
                             <li>We participate in all team ceremonies</li>
                             <li>We report on velocity trends weekly</li>
@@ -774,7 +767,7 @@
                     <div class="cta-area">
                         <a href="#" class="btn-primary">Eliminate Hiring Friction </a>
                         <div class="liability-text">
-                           <p> ZERO RECRUITMENT LIABILITY</p>
+                            <p> ZERO RECRUITMENT LIABILITY</p>
                         </div>
                     </div>
                 </div>
@@ -963,8 +956,8 @@
     <section class="v-testimonial-section">
         <div class="container">
             <div class="v-testimonial-header">
-                <p >CLIENT FEEDBACK</p>
-                <h2 >What Engineering Leaders Say</h2>
+                <p>CLIENT FEEDBACK</p>
+                <h2>What Engineering Leaders Say</h2>
             </div>
 
             <div class="v-testimonial-glider-contain">
@@ -976,7 +969,7 @@
                                 <img src="icons/user-img.png" alt="Client Name">
                             </div>
                             <div class="v-testimonial-body">
-                                <p >
+                                <p>
                                     “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks
                                     early.”
                                 </p>
@@ -1001,7 +994,7 @@
                                 <img src="icons/user-img.png" alt="Client Name">
                             </div>
                             <div class="v-testimonial-body">
-                                <p >
+                                <p>
                                     “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks
                                     early.”
                                 </p>
@@ -1031,6 +1024,67 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
     <script>
+// scroll functoin
+document.addEventListener('DOMContentLoaded', () => {
+    const listItems = document.querySelectorAll('.content-side ul li');
+    const serviceCards = document.querySelectorAll('.service-card');
+    const cardsContainer = document.querySelector('.cards-side');
+
+    // --- 1. CLICK FUNCTIONALITY ---
+    listItems.forEach((li, index) => {
+        li.addEventListener('click', () => {
+            // Scroll the specific card into view
+            serviceCards[index].scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
+            // Update active state manually (optional, as observer will also catch it)
+            updateActiveState(index);
+        });
+    });
+
+    // --- 2. SCROLL / INTERSECTION OBSERVER ---
+    const observerOptions = {
+        root: null, // relative to viewport
+        rootMargin: '-10% 0px -70% 0px', // Adjusts the "trigger" zone
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Find index of the card currently in view
+                const index = Array.from(serviceCards).indexOf(entry.target);
+                updateActiveState(index);
+            }
+        });
+    }, observerOptions);
+
+    serviceCards.forEach(card => observer.observe(card));
+
+    // Helper function to sync classes
+    function updateActiveState(index) {
+        if (index === -1) return;
+
+        // Reset all
+        listItems.forEach(li => li.classList.remove('active'));
+        serviceCards.forEach(card => card.classList.remove('active-card'));
+
+        // Set active
+        listItems[index].classList.add('active');
+        serviceCards[index].classList.add('active-card');
+    }
+});
+
+
+
+
+
+
+
+
+
         // industruies start
 
         window.addEventListener('load', function () {
@@ -1089,8 +1143,8 @@
         });
         // feedback end
 
-    // <!-- new sections js start-->
-   
+        // <!-- new sections js start-->
+
         document.addEventListener("DOMContentLoaded", () => {
             const faqItems = document.querySelectorAll(".faq-item");
 

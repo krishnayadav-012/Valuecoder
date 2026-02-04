@@ -81,6 +81,7 @@ $text-muted: #555;
     @media (max-width: 767px) {
 
         grid-template-columns: 1fr;
+
     }
 
 
@@ -91,7 +92,7 @@ $text-muted: #555;
         padding: 30px;
         border: 1px solid #E5E7EB;
         backdrop-filter: blur(13.939393997192383px);
-        min-height: 380px;
+        min-height: 405px;
         display: flex;
         position: relative;
         flex-direction: column;
@@ -162,7 +163,7 @@ $text-muted: #555;
 
         &:hover {
             background: $darkYellow;
-            height: 380px;
+            height: 405px;
 
             h3 {
                 color: $text-main;
@@ -386,6 +387,18 @@ $text-muted: #555;
     }
 }
 
+@media screen and (max-width:1024px) {
+    .card-grid .card{
+        padding: 20px;
+
+    }
+    .card-grid .card .strategic-needs{
+        padding: 10px;
+    }
+    .card-grid .card:hover .strategic-needs ul li{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width:992px) {
     .card-grid .card {
         min-height: 325px;
@@ -405,5 +418,10 @@ $text-muted: #555;
 
     .card-grid .card .strategic-needs {
         margin-top: 0;
+    }
+    .not-for-section .not-for-content ul{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
 }
