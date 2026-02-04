@@ -44,38 +44,22 @@
         <div class="container">
             <div class="dis-flex">
                 <div class="left-box">
-                    <h1>Software Engineering, Consulting & Outsourcing</h1>
-                    <p>We are an award winning Indian software engineering company focussed on providing outsourced
-                        software development and software engineering teams to our clients globally.</p>
-                    <div class="margin-t-70">
-                        <a class="green-btn" href="https://www.valuecoders.com/contact">Contact Us <i
-                                class="new-arrow-icon"></i></a>
-                    </div>
-                </div>
-                <div class="right-box">
+                    <h1>Build Faster. Ship with Confidence. <span>Scale Without Hiring Delays.</span></h1>
+                    <p>We help engineering-led companies design, build, and scale software using dedicated development
+                        teams, product engineering pods, and staff augmentation services — onboarded in 2–4 weeks with
+                        full IP ownership and predictable delivery.</p>
 
-                    <div class="img-box dark-theme-img"
-                        data-src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/logo-for-light.webp"
-                        style="background-image: url(https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/logo-for-light.webp)">
-                    </div>
-                    <div class="img-box lighter-theme-img"
-                        data-src="https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/logo-right.webp"
-                        style="background-image: url(https://www.valuecoders.com/v2wp/wp-content/themes/valuecoders/images/logo-right.webp)">
-                    </div>
-
-                    <!-- <div class="img-box">
-                    <picture class="dark-theme-img">
-                        <source type="image/webp" srcset="<?= HOST_URL ?>images/logo-right.webp">
-                        <source type="image/png" srcset="<?= HOST_URL ?>images/logo-right.png">
-                        <img loading="lazy" src="<?= HOST_URL ?>images/logo-right.png" alt="Valuecoders" width="684" height="487">
-                    </picture>
-                    <picture class="lighter-theme-img">
-                        <source type="image/webp" srcset="<?= HOST_URL ?>images/logo-for-light.webp">
-                        <source type="image/png" srcset="<?= HOST_URL ?>images/logo-for-light.png">
-                        <img loading="lazy" src="<?= HOST_URL ?>images/logo-for-light.png" alt="Valuecoders" width="684" height="487">
-                    </picture>
-                </div> -->
                 </div>
+
+
+                <div class="for-client-logo-box  dis-flex">
+                    <div class="logo-box logo1"></div>
+                    <div class="logo-box logo2"></div>
+                    <div class="logo-box logo3"></div>
+                    <div class="logo-box logo4"></div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -344,7 +328,7 @@
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="icons/slider-img.png" alt="Healthcare">
+                                <img src="images/health-care.png" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
@@ -363,57 +347,58 @@
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="icons/slider-img.png" alt="Healthcare">
+                                <img src="images/medias.png" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
-                                    <h3>Healthcare</h3>
+                                    <h3>Media & Entertainment</h3>
 
                                 </div>
                                 <div class="hover-content">
-                                    <p class="tagline">Smarter Care, Better Outcomes</p>
-                                    <p class="details">Innovative software solutions to improve patient care.</p>
+                                    <h4>Media & Entertainment</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
                                     <a href="#" class="expand-btn">Expand</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="icons/slider-img.png" alt="Healthcare">
+                                <img src="images/travel.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Travel & Tourism</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <h4>Travel & Tourism</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/health-care.png" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
                                     <h3>Healthcare</h3>
+
                                 </div>
                                 <div class="hover-content">
-                                    <p class="tagline">Smarter Care, Better Outcomes</p>
-                                    <p class="details">Innovative software solutions to improve patient care.</p>
+                                    <h4>Smarter Care, Better Outcomes</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
                                     <a href="#" class="expand-btn">Expand</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="icons/slider-img.png" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Healthcare</h3>
-                                </div>
-                                <div class="hover-content">
-                                    <p class="tagline">Smarter Care, Better Outcomes</p>
-                                    <p class="details">Innovative software solutions to improve patient care.</p>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -1024,58 +1009,58 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
     <script>
-// scroll functoin
-document.addEventListener('DOMContentLoaded', () => {
-    const listItems = document.querySelectorAll('.content-side ul li');
-    const serviceCards = document.querySelectorAll('.service-card');
-    const cardsContainer = document.querySelector('.cards-side');
+        // scroll functoin
+        document.addEventListener('DOMContentLoaded', () => {
+            const listItems = document.querySelectorAll('.content-side ul li');
+            const serviceCards = document.querySelectorAll('.service-card');
+            const cardsContainer = document.querySelector('.cards-side');
 
-    // --- 1. CLICK FUNCTIONALITY ---
-    listItems.forEach((li, index) => {
-        li.addEventListener('click', () => {
-            // Scroll the specific card into view
-            serviceCards[index].scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
+            // --- 1. CLICK FUNCTIONALITY ---
+            listItems.forEach((li, index) => {
+                li.addEventListener('click', () => {
+                    // Scroll the specific card into view
+                    serviceCards[index].scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+
+                    // Update active state manually (optional, as observer will also catch it)
+                    updateActiveState(index);
+                });
             });
 
-            // Update active state manually (optional, as observer will also catch it)
-            updateActiveState(index);
-        });
-    });
+            // --- 2. SCROLL / INTERSECTION OBSERVER ---
+            const observerOptions = {
+                root: null, // relative to viewport
+                rootMargin: '-10% 0px -70% 0px', // Adjusts the "trigger" zone
+                threshold: 0.1
+            };
 
-    // --- 2. SCROLL / INTERSECTION OBSERVER ---
-    const observerOptions = {
-        root: null, // relative to viewport
-        rootMargin: '-10% 0px -70% 0px', // Adjusts the "trigger" zone
-        threshold: 0.1
-    };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Find index of the card currently in view
+                        const index = Array.from(serviceCards).indexOf(entry.target);
+                        updateActiveState(index);
+                    }
+                });
+            }, observerOptions);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Find index of the card currently in view
-                const index = Array.from(serviceCards).indexOf(entry.target);
-                updateActiveState(index);
+            serviceCards.forEach(card => observer.observe(card));
+
+            // Helper function to sync classes
+            function updateActiveState(index) {
+                if (index === -1) return;
+
+                // Reset all
+                listItems.forEach(li => li.classList.remove('active'));
+                serviceCards.forEach(card => card.classList.remove('active-card'));
+
+                // Set active
+                listItems[index].classList.add('active');
+                serviceCards[index].classList.add('active-card');
             }
         });
-    }, observerOptions);
-
-    serviceCards.forEach(card => observer.observe(card));
-
-    // Helper function to sync classes
-    function updateActiveState(index) {
-        if (index === -1) return;
-
-        // Reset all
-        listItems.forEach(li => li.classList.remove('active'));
-        serviceCards.forEach(card => card.classList.remove('active-card'));
-
-        // Set active
-        listItems[index].classList.add('active');
-        serviceCards[index].classList.add('active-card');
-    }
-});
 
 
 
