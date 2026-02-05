@@ -398,8 +398,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -418,13 +416,15 @@
                     <span class="eyebrow">FULL-STACK MASTERY</span>
                     <h2>Engineering <span class="highlight">Expertise.</span></h2>
                     <p>
-                        Delivered through staff augmentation, product pods, or long-term engineering programs.
+                        <strong>
+                            Delivered through staff augmentation, product pods, or long-term engineering
+                            programs.</strong>
                     </p>
-                    <div class="sub-description">
-                        <p> We don't just write code; we architect scalable systems. From modernizing legacy monoliths
-                            to
-                            deploying agentic AI, our engineering DNA runs deep.</p>
-                    </div>
+
+                    <p> We don't just write code; we architect scalable systems. From modernizing legacy monoliths
+                        to
+                        deploying agentic AI, our engineering DNA runs deep.</p>
+
                     <ul>
                         <li>PRODUCT ENGINEERING</li>
                         <li>AI & DATA ENGINEERING</li>
@@ -433,7 +433,6 @@
                         <li class="active">SECURITY & COMPLIANCE</li>
                     </ul>
                 </div>
-
                 <div class="cards-side">
                     <div class="service-card">
                         <div class="icon-box"><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -449,9 +448,12 @@
                                 <h3>PRODUCT ENGINEERING</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
-                            <div class="tags">
-                                <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
-                            </div>
+                            <ul>
+                                <li>REACT</li>
+                                <li>NODE.JS</li>
+                                <li>MOBILE</li>
+                                <li>MICROSERVICE</li>
+                            </ul>
                             <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
@@ -469,9 +471,12 @@
                                 <h3>AI & Data Engineering</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
-                            <div class="tags">
-                                <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
-                            </div>
+                            <ul>
+                                <li>REACT</li>
+                                <li>NODE.JS</li>
+                                <li>MOBILE</li>
+                                <li>MICROSERVICE</li>
+                            </ul>
                             <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
@@ -489,9 +494,12 @@
                                 <h3>Cloud & DevOps</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
-                            <div class="tags">
-                                <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
-                            </div>
+                            <ul>
+                                <li>REACT</li>
+                                <li>NODE.JS</li>
+                                <li>MOBILE</li>
+                                <li>MICROSERVICE</li>
+                            </ul>
                             <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
@@ -509,9 +517,12 @@
                                 <h3>Legacy Modernization</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
-                            <div class="tags">
-                                <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
-                            </div>
+                            <ul>
+                                <li>REACT</li>
+                                <li>NODE.JS</li>
+                                <li>MOBILE</li>
+                                <li>MICROSERVICE</li>
+                            </ul>
                             <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
@@ -529,9 +540,12 @@
                                 <h3>DevSecOps, SOC2</h3>
                             </div>
                             <p>GenAI, LLMs, Analytics</p>
-                            <div class="tags">
-                                <span>REACT</span><span>NODE.JS</span><span>MOBILE</span><span>MICROSERVICE</span>
-                            </div>
+                            <ul>
+                                <li>REACT</li>
+                                <li>NODE.JS</li>
+                                <li>MOBILE</li>
+                                <li>MICROSERVICE</li>
+                            </ul>
                             <a href="#" class="case-study">CASE STUDIES </a>
                         </div>
                     </div>
@@ -539,11 +553,9 @@
             </div>
         </div>
     </section>
-
     <!-- expertise-section section end -->
 
     <!-- flip section start -->
-
     <section class="engagement-section">
         <div class="container">
             <div class="section-header">
@@ -675,26 +687,14 @@
                             is reliable, measurable, and transparent.</p>
                     </div>
 
-                    <div class="feature-grid">
-                        <div class="feature-item"><span class="icon"><img src="icons/clock.svg" alt=""></span>
-                            <p>Clear sprint commitments, tracked weekly</p>
-                        </div>
-                        <div class="feature-item"><span class="icon"><img src="icons/clock.svg" alt=""></span>
-                            <p> ISO 27001 & SOC2 secure environments</p>
-                        </div>
-                        <div class="feature-item"><span class="icon"><img src="icons/clock.svg" alt=""></span>
-                            <p>Proven product delivery experience</p>
-                        </div>
-                        <div class="feature-item"><span class="icon"><img src="icons/clock.svg" alt=""></span>
-                            <p>Transparent velocity & quality reporting</p>
-                        </div>
-                        <div class="feature-item"><span class="icon"><img src="icons/clock.svg" alt=""></span>
-                            <p>100% IP ownership & zero vendor lock-in</p>
-                        </div>
-                        <div class="feature-item"><span class="icon"><img src="icons/clock.svg" alt=""></span>
-                            <p>Blockers identified and flagged in 24h </p>
-                        </div>
-                    </div>
+                    <ul>
+                        <li> Clear sprint commitments, tracked weekly</li>
+                        <li>ISO 27001 & SOC2 secure environments</li>
+                        <li>Proven product delivery experience</li>
+                        <li>Transparent velocity & quality reporting</li>
+                        <li>100% IP ownership & zero vendor lock-in</li>
+                        <li>Blockers identified and flagged in 24h</li>
+                    </ul>
                 </div>
 
                 <div class="stats-side">
@@ -752,7 +752,7 @@
                     <div class="cta-area">
                         <a href="#" class="btn-primary">Eliminate Hiring Friction </a>
                         <div class="liability-text">
-                            <p> ZERO RECRUITMENT LIABILITY</p>
+                            ZERO RECRUITMENT LIABILITY
                         </div>
                     </div>
                 </div>

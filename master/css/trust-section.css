@@ -1878,31 +1878,43 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-top: 20px;
   font-weight: 500;
 }
-.trust-section .feature-grid {
+.trust-section .content-side ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 @media (max-width: 600px) {
-  .trust-section .feature-grid {
+  .trust-section .content-side ul {
     grid-template-columns: 1fr;
   }
 }
-.trust-section .feature-grid .feature-item {
+.trust-section .content-side ul li {
   background: #FFFFFF;
-  padding: 16px 32px 16px 16px;
+  padding: 16px 32px 16px 55px;
   border-radius: 12px;
   font-size: 0.9rem;
+  list-style: none;
   color: #05164d;
   display: flex;
   align-items: center;
   border: 1px solid #F3F4F6;
-}
-.trust-section .feature-grid .feature-item p {
   font-size: 14px;
   color: #1E2939;
+  position: relative;
 }
-.trust-section .feature-grid .feature-item .icon {
+.trust-section .content-side ul li:before {
+  content: "";
+  background: url(../icons/frame-clock.svg);
+  width: 30px;
+  position: absolute;
+  height: 30px;
+  left: 16px;
+  display: block;
+  background-size: cover;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.trust-section .content-side ul li .icon {
   margin-right: 12px;
   opacity: 0.5;
   border: 1px solid #E5E7EB;
@@ -1915,7 +1927,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   border-radius: 8px;
   background-color: #ffffff;
 }
-.trust-section .feature-grid .feature-item .icon img {
+.trust-section .content-side ul li .icon img {
   width: 15px;
   height: 15px;
 }

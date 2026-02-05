@@ -1912,15 +1912,13 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-top: 10px;
   display: flex;
   align-items: center;
-}
-.cta-area .liability-text p {
   position: relative;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
   padding-left: 26px;
 }
-.cta-area .liability-text p::after {
+.cta-area .liability-text::after {
   position: absolute;
   left: 0;
   transform: translateY(-50%);

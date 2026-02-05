@@ -1986,6 +1986,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-bottom: 8px;
   font-weight: 500;
   position: relative;
+  line-height: 20px;
   padding-left: 25px;
   font-weight: 500;
   color: #1D293D;
@@ -2171,6 +2172,10 @@ body.page-template-template-testimonials .client-video-section iframe,
     flex-direction: column;
     text-align: left;
   }
+}
+.card-grid .card:hover .strategic-needs {
+  position: static;
+  margin: 0;
 }
 
 /*# sourceMappingURL=build-team.css.map */

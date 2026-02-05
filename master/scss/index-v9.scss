@@ -24,6 +24,7 @@
     background-color: transparent !important;
     border: none;
     margin-top: 30px;
+    backdrop-filter: unset;
 }
 
 .master-header.sc-up {
@@ -318,6 +319,12 @@ h3 {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .btn-secondry::before {
+        right: 27% !important;
     }
 }
 

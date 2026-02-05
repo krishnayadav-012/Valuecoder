@@ -81,7 +81,7 @@ $text-gray: #555;
 
     .icon {
 
-        margin-bottom: 20px;
+        
         opacity: 0.6;
         border: 1px solid #05164D33;
         width: 44px;
@@ -96,6 +96,7 @@ $text-gray: #555;
     }
 
     h3 {
+        margin-top: 20px;
         margin-bottom: 15px;
     }
 
@@ -115,6 +116,7 @@ $text-gray: #555;
             border: none;
             padding: 12px;
             border-radius: 5px;
+            display: block;
             font-weight: bold;
             width: 100%;
             font-size: 0.75rem;
@@ -187,4 +189,10 @@ $text-gray: #555;
     .card-face{
         padding: 20px;
     }
+}
+
+
+.card-inner-btn .btn-outline{background-color: #F1F5F9; display: block; text-transform: uppercase; color: #111827;width: 100%; }
+.flip-card:hover{
+    background-color: #fff;
 }

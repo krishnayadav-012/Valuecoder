@@ -8,80 +8,85 @@ $text-gray: #364153;
         flex-direction: column;
         padding: 60px 0;
     }
-}
 
-.content-side {
-    flex: 1;
-    position: sticky;
-    top: 40px;
 
-    .eyebrow {
-        color: $darkYellow;
-        font-size: 12px;
-        font-weight: 700;
+    .content-side {
+        flex: 1;
+        position: sticky;
+        top: 40px;
 
-        letter-spacing: 1px;
-    }
-
-    h2 {
-        color: $themeMidNight;
-        margin: 20px 0;
-
-        .highlight {
+        .eyebrow {
             color: $darkYellow;
-        }
-    }
-
-    >p {
-        font-weight: 600;
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    .sub-description p {
-        color: $text-gray;
-        line-height: 1.6;
-        margin-bottom: 40px;
-    }
-
-    ul {
-        padding-left: 15px;
-        border-left: 2px solid rgba(209, 213, 220, 1);
-
-
-        li {
-            color: #adb5bd;
+            font-size: 12px;
             font-weight: 700;
-            font-size: 14px;
-            margin-bottom: 15px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
 
-            &::before {
-                width: 5px;
-                height: 5px;
-                content: "";
-                display: flex;
-                border-radius: 50%;
-                background-color: rgba(153, 161, 175, 1);
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: $themeMidNight;
+            margin: 20px 0;
+
+            .highlight {
                 color: $darkYellow;
-                margin-right: 10px;
             }
+        }
 
-            &.active {
-                color: $themeMidNight;
+        p strong {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $text-gray;
+            line-height: 1.6;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+
+        ul {
+            padding-left: 15px;
+            border-left: 2px solid rgba(209, 213, 220, 1);
+
+
+            li {
+                color: #adb5bd;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 15px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
 
                 &::before {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     content: "";
                     display: flex;
                     border-radius: 50%;
-                    background-color: $darkYellow;
-                    box-shadow: 0px 0px 5px 0px rgba(255, 173, 0, 1);
+                    background-color: rgba(153, 161, 175, 1);
                     color: $darkYellow;
                     margin-right: 10px;
+                }
+
+                &.active {
+                    color: $themeMidNight;
+
+                    &::before {
+                        width: 10px;
+                        height: 10px;
+                        content: "";
+                        display: flex;
+                        border-radius: 50%;
+                        background-color: $darkYellow;
+                        box-shadow: 0px 0px 5px 0px rgba(255, 173, 0, 1);
+                        color: $darkYellow;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
@@ -108,44 +113,46 @@ $text-gray: #364153;
         cursor: pointer;
         border: 2px solid rgba(243, 244, 246, 1);
         position: relative;
+
         // Add this inside .service-card in your SCSS
-&.active-card {
-    border-color: $darkYellow;
-    transform: translateY(-5px);
-    box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, 0.15);
+        &.active-card {
+            border-color: $darkYellow;
+            transform: translateY(-5px);
+            box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, 0.15);
 
-    h3 {
-        color: $themeMidNight;
-        opacity: 100%;
-    }
-    
-    p {
-        color: $text-gray;
-        opacity: 100%;
-    }
+            h3 {
+                color: $themeMidNight;
+                opacity: 100%;
+            }
 
-    .icon-box {
-        background: $themeMidNight;
-        i svg {
-            stroke: $white;
-            opacity: 100%;
+            p {
+                color: $text-gray;
+                opacity: 100%;
+            }
+
+            .icon-box {
+                background: $themeMidNight;
+
+                i svg {
+                    stroke: $white;
+                    opacity: 100%;
+                }
+            }
+
+            .case-study {
+                display: block;
+            }
+
+            &::before {
+                display: block; // Shows the arrow icon
+            }
         }
-    }
 
-    .case-study {
-        display: block;
-    }
-
-    &::before {
-        display: block; // Shows the arrow icon
-    }
-}
-
-// Ensure the pointer shows it's clickable
-.content-side ul li {
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+        // Ensure the pointer shows it's clickable
+        .content-side ul li {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
         &::before {
             background: url(../icons/btn-yellow-arrow.svg);
@@ -163,9 +170,10 @@ $text-gray: #364153;
         }
 
 
-        &:hover ::before{
+        &:hover ::before {
             display: block;
         }
+
         &:hover h3 {
             color: $themeMidNight;
             opacity: 100%;
@@ -217,18 +225,17 @@ $text-gray: #364153;
             font-weight: 600;
         }
 
-        .tags {
+        ul {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
 
-            span {
+            li {
                 font-size: 10px;
-                background: $gray-50;
+                background: #F3F4F6;
                 padding: 0px 12px;
                 border-radius: 20px;
-                color: $text-gray;
-
+                color: #101828;
                 font-weight: 600;
             }
         }

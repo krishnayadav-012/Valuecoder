@@ -1910,7 +1910,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 .faq-section .faq-item.active .faq-answer {
-  max-height: 200px;
   padding-bottom: 25px;
 }
 .faq-section .faq-item.active .icon::after {
@@ -1939,4 +1938,4 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 
-/*# sourceMappingURL=Faqs-section.css.map */
+/*# sourceMappingURL=faqs-section.css.map */

@@ -1836,40 +1836,42 @@ body.page-template-template-testimonials .client-video-section iframe,
     padding: 60px 0;
   }
 }
-
-.content-side {
+.expertise-section .content-side {
   flex: 1;
   position: sticky;
   top: 40px;
 }
-.content-side .eyebrow {
+.expertise-section .content-side .eyebrow {
   color: #FFAD00;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.content-side h2 {
+.expertise-section .content-side h2 {
   color: #05164d;
   margin: 20px 0;
 }
-.content-side h2 .highlight {
+.expertise-section .content-side h2 .highlight {
   color: #FFAD00;
 }
-.content-side > p {
+.expertise-section .content-side p strong {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 20px;
 }
-.content-side .sub-description p {
+.expertise-section .content-side p {
   color: #364153;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-.content-side ul {
+.expertise-section .content-side p:last-child {
+  margin-bottom: 30px;
+}
+.expertise-section .content-side ul {
   padding-left: 15px;
   border-left: 2px solid rgb(209, 213, 220);
 }
-.content-side ul li {
+.expertise-section .content-side ul li {
   color: #adb5bd;
   font-weight: 700;
   font-size: 14px;
@@ -1878,7 +1880,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   align-items: center;
 }
-.content-side ul li::before {
+.expertise-section .content-side ul li::before {
   width: 5px;
   height: 5px;
   content: "";
@@ -1888,10 +1890,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #FFAD00;
   margin-right: 10px;
 }
-.content-side ul li.active {
+.expertise-section .content-side ul li.active {
   color: #05164d;
 }
-.content-side ul li.active::before {
+.expertise-section .content-side ul li.active::before {
   width: 10px;
   height: 10px;
   content: "";
@@ -2013,17 +2015,17 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-bottom: 15px;
   font-weight: 600;
 }
-.cards-side .service-card .tags {
+.cards-side .service-card ul {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
-.cards-side .service-card .tags span {
+.cards-side .service-card ul li {
   font-size: 10px;
-  background: #F9FAFB;
+  background: #F3F4F6;
   padding: 0px 12px;
   border-radius: 20px;
-  color: #364153;
+  color: #101828;
   font-weight: 600;
 }
 .cards-side .service-card .case-study {
