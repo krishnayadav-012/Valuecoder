@@ -137,7 +137,7 @@ $border-color: #1a1a1a;
                             }
                         }
 
-                        .item-description {
+                        p {
                             max-height: 0;
                             opacity: 0;
                             overflow: hidden;
@@ -153,7 +153,7 @@ $border-color: #1a1a1a;
                                 color: $accent-red;
                             }
 
-                            .item-description {
+                            p {
                                 max-height: 100px;
                                 opacity: 1;
                                 margin-top: 10px;

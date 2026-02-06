@@ -1843,10 +1843,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 .trust-section .trust-header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
   border-top: 2px solid rgb(5, 22, 77);
-  max-width: 600px;
   padding-top: 10px;
 }
 .trust-section .trust-header::before {
@@ -1867,12 +1866,12 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .trust-section .trust-header h2 {
   color: #05164d;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 .trust-section .trust-header h2 span {
   color: #FFAD00 !important;
 }
-.trust-section .trust-header .description {
+.trust-section .trust-header p {
   color: #364153;
   font-size: 18px;
   margin-top: 20px;
@@ -1934,12 +1933,12 @@ body.page-template-template-testimonials .client-video-section iframe,
 .trust-section .stats-side {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 .trust-section .stats-card {
   background: #0d121d;
   color: #ffffff;
-  padding: 40px;
+  padding: 25px;
   border-radius: 30px;
 }
 .trust-section .stats-card .badge {
@@ -1951,7 +1950,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 0.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .trust-section .stats-card .badge img {
   margin-right: 5px;
@@ -1959,7 +1958,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .trust-section .stats-card .stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 15px;
 }
 .trust-section .stats-card .stats-grid .stat h2 {
   font-size: 30px;

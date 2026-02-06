@@ -16,6 +16,8 @@
 @use "_glider";
 @use "_footer-section";
 
+
+
 .master-menu-desktop {
     max-width: unset !important;
 }
@@ -24,8 +26,11 @@
     background-color: transparent !important;
     border: none;
     margin-top: 30px;
-    backdrop-filter: unset;
+    backdrop-filter: inherit;
 }
+.master-header.header-bg .site-logo-img.bg-logo, .site-logo-img{display: none;}
+.master-header.header-bg .site-logo-img, 
+.logo-size .site-logo-img.bg-logo{display: block;}
 
 .master-header.sc-up {
 
@@ -38,24 +43,6 @@
 
 .master-header.header-bg.sc-up {
     margin-top: 0;
-}
-
-.get-connect a {
-    padding: 0 0 0 20px;
-}
-
-.get-connect a:hover:after {
-    background: url(../icons/btn-icon-top.svg) no-repeat;
-}
-
-.get-connect a:after {
-    content: "";
-    background: url(../icons/btn-icon-top.svg) no-repeat;
-    width: 45px;
-    height: 45px;
-    background-size: 100%;
-    display: inline-block;
-    margin-left: 10px;
 }
 
 .master-header.header-bg.sc-up .master-menu-desktop .nav-item-base {
@@ -279,17 +266,38 @@
         }
     }
 }
-
-h2 {
-    font-size: 46px;
-    line-height: 58px;
-
+.contact-us-section .btn-container .cta-button{
+    position: relative;
+        
+    
 }
+.contact-us-section .btn-container .cta-button{
+    background: #ffae0000 url(../icons/btn-yellow-arrow.svg) no-repeat right 15% center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: $darkYellow;
+    padding: 13px 54px 13px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+    line-height: 30px;
+    transition: background 0.3s ease;
+    position: relative !important;
+    transition: 0.4s;
+    border: 1px solid $darkYellow;
 
-h3 {
-    font-size: 22px;
+  
 }
-
+ .contact-us-section .btn-container .cta-button:hover {
+    background: #05164d url(../icons/btn-yellow-arrow.svg) no-repeat right 15% center;
+    color: $darkYellow;
+    
+}
 //New Home Page Ends Here*/
 
 // Media Query Start From Here
@@ -302,6 +310,9 @@ h3 {
             }
         }
     }
+    .btn-secondry::before{
+        right: 27% !important;
+    }
 }
 
 @media screen and (max-width: 1320px) {
@@ -313,18 +324,8 @@ h3 {
             .left-box {
                 flex-basis: 90%;
 
-                h1 {
-                    font-size: 60px;
-                    line-height: 1.4;
-                }
             }
         }
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .btn-secondry::before {
-        right: 27% !important;
     }
 }
 
@@ -625,6 +626,11 @@ h3 {
     }
 }
 
+@media screen and (max-width:1440px) {
+    .hero-section .dis-flex .left-box h1{
+        font-size: 55px;
+    }
+}
 @media screen and (max-width:768px) {
     .btn-secondry {
 

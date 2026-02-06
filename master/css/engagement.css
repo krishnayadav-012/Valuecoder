@@ -1924,6 +1924,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   background: #eff3f6;
   border: none;
   padding: 12px;
+  text-align: center;
+  line-height: 1;
   border-radius: 5px;
   display: block;
   font-weight: bold;
@@ -1996,6 +1998,15 @@ body.page-template-template-testimonials .client-video-section iframe,
   text-transform: uppercase;
   color: #111827;
   width: 100%;
+  padding: 10px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .flip-card:hover {

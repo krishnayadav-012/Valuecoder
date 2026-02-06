@@ -130,7 +130,7 @@
 
                                     <h3>Hiring takes too long</h3>
                                 </div>
-                                <p class="item-description">Roadmaps stall for months waiting on headcount.</p>
+                                <p >Roadmaps stall for months waiting on headcount.</p>
                             </li>
 
                             <li class="friction-item">
@@ -138,7 +138,7 @@
 
                                     <h3>MVPs need validation</h3>
                                 </div>
-                                <p class="item-description">Move from concept to reality faster with validated
+                                <p >Move from concept to reality faster with validated
                                     prototypes.
                                 </p>
                             </li>
@@ -148,7 +148,7 @@
 
                                     <h3>Tech debt piles up</h3>
                                 </div>
-                                <p class="item-description">Clean up your codebase without pausing new feature
+                                <p >Clean up your codebase without pausing new feature
                                     development.
                                 </p>
                             </li>
@@ -158,7 +158,7 @@
 
                                     <h3>Legacy systems block progress</h3>
                                 </div>
-                                <p class="item-description">Modernize older stacks to enable current-gen performance.
+                                <p >Modernize older stacks to enable current-gen performance.
                                 </p>
                             </li>
 
@@ -167,7 +167,7 @@
 
                                     <h3>AI projects stall</h3>
                                 </div>
-                                <p class="item-description">Deploy production-ready AI models instead of infinite
+                                <p >Deploy production-ready AI models instead of infinite
                                     research
                                     cycles.</p>
                             </li>
@@ -312,7 +312,7 @@
                 <div class="header-text">
                     <p class="subtitle">LOREM IPSUM</p>
                     <h1>Industries We Cater to</h1>
-                    <p class="description">Get what you are looking for to fulfill your software development and
+                    <p >Get what you are looking for to fulfill your software development and
                         outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
                     </p>
                 </div>
@@ -559,59 +559,34 @@
     <section class="engagement-section">
         <div class="container">
             <div class="section-header">
-                <p class="subtitle">ENGAGEMENT ARCHITECT</p>
-                <h2>Engagement <span>Models</span>, Engineered for <span>Velocity</span>.</h2>
-                <p class="description">We align our delivery structure to your current stage. Select a model below to
-                    see how we integrate with your roadmap.</p>
+                <p class="subtitle">Engagement Architect</p>
+                <h2>Engagement <span style="color: #ffad00;">Models</span>, Engineered for <span
+                        style="color: #ffad00;">Velocity</span>.</h2>
+                <p>We align our delivery structure to your current stage. Select a model below to see how we integrate
+                    with your roadmap.</p>
             </div>
-
             <div class="flip-card-grid">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="card-face card-front">
-                            <div class="icon"><img src="icons/clock.svg" alt=""></div>
+                            <div class="icon"></div>
                             <h3>MVP Discovery</h3>
-                            <p>Assess feasibility and architecture in 4–8 weeks. Fixed budget</p>
+                            <p>Prove feasibility and architecture in 4-8 weeks. Fixed scope: $15K–$40K. Perfect for
+                                pre-funding validation.</p>
+
                             <div class="card-inner-btn">
-                                <button class="btn-outline">KNOW MORE</button>
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
                             </div>
                         </div>
                         <div class="card-face card-back">
-                            <h3>Product Pods</h3>
                             <ul>
-                                <li>Founders & Innovation Labs</li>
-                                <li>4–8 Weeks</li>
+                                <li>Founders &amp; Innovation Labs</li>
+                                <li>Deployment in 4-8 Weeks</li>
                                 <li>Managed Pod Delivery</li>
-                                <li>Architecture Audit</li>
                             </ul>
-                            <div class="card-inner-btn">
-                                <button class="btn-solid">KNOW MORE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="card-face card-front">
-                            <div class="icon"><img src="icons/clock.svg" alt=""></div>
-                            <h3>Staff Augmentation</h3>
-                            <p>1–5 senior engineers in 2–3 weeks. You manage the work; we handle the talent.</p>
                             <div class="card-inner-btn">
-
-                                <button class="btn-outline">KNOW MORE</button>
-                            </div>
-                        </div>
-                        <div class="card-face card-back">
-                            <h3>Staff Augmentation</h3>
-                            <ul>
-                                <li>Rapid Scaling</li>
-                                <li>Senior Talent</li>
-                                <li>Flexible Terms</li>
-                            </ul>
-                            <div class="card-inner-btn">
-
-                                <button class="btn-solid">KNOW MORE</button>
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
                             </div>
                         </div>
                     </div>
@@ -619,24 +594,24 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="card-face card-front">
-                            <div class="icon"><img src="icons/clock.svg" alt=""></div>
-                            <h3>Staff Augmentation</h3>
-                            <p>1–5 senior engineers in 2–3 weeks. You manage the work; we handle the talent.</p>
-                            <div class="card-inner-btn">
+                            <div class="icon"></div>
+                            <h3>Product Pods</h3>
+                            <p>Cross-functional squads (Dev + QA + PM) that own delivery and ship measurable results.
+                            </p>
 
-                                <button class="btn-outline">KNOW MORE</button>
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
                             </div>
                         </div>
                         <div class="card-face card-back">
-                            <h3>Staff Augmentation</h3>
                             <ul>
-                                <li>Rapid Scaling</li>
-                                <li>Senior Talent</li>
-                                <li>Flexible Terms</li>
+                                <li>Growth-Stage SaaS &amp; Startups</li>
+                                <li>Deployment in 2-4 Weeks</li>
+                                <li>Managed Pod Delivery</li>
                             </ul>
-                            <div class="card-inner-btn">
 
-                                <button class="btn-solid">KNOW MORE</button>
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
                             </div>
                         </div>
                     </div>
@@ -644,33 +619,54 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="card-face card-front">
-                            <div class="icon"><img src="icons/clock.svg" alt=""></div>
+                            <div class="icon"></div>
                             <h3>Staff Augmentation</h3>
                             <p>1–5 senior engineers in 2–3 weeks. You manage the work; we handle the talent.</p>
-                            <div class="card-inner-btn">
 
-                                <button class="btn-outline">KNOW MORE</button>
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
                             </div>
                         </div>
                         <div class="card-face card-back">
-                            <h3>Staff Augmentation</h3>
                             <ul>
-                                <li>Rapid Scaling</li>
-                                <li>Senior Talent</li>
-                                <li>Flexible Terms</li>
+                                <li>Established Engineering Teams</li>
+                                <li>Deployment in 2-3 Weeks</li>
+                                <li>Direct Client Control</li>
                             </ul>
-                            <div class="card-inner-btn">
 
-                                <button class="btn-solid">KNOW MORE</button>
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="card-face card-front">
+                            <div class="icon"></div>
+                            <h3>Engineering Programs</h3>
+                            <p>Long-term partnerships for teams of 20-100+ with SLAs, governance, and BOT options.</p>
 
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <ul>
+                                <li>Global Firms &amp; CTOs</li>
+                                <li>Deployment in 2-4 Weeks</li>
+                                <li>Managed Pod Delivery</li>
+                            </ul>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- flip  section end -->
 
     <!-- why valuecoder section  start-->
@@ -682,8 +678,8 @@
                 <div class="content-side">
                     <div class="trust-header">
                         <p class="subtitle">WHY VALUECODERS</p>
-                        <h2>Why Engineering Leaders <span>Trust Us.</span></h2>
-                        <p class="description">Real Accountability, Not Just Resumes. Speed only matters when delivery
+                        <h2>Why Engineering Leaders  <br><span>Trust Us.</span></h2>
+                        <p >Real Accountability, Not Just Resumes. Speed only matters when delivery
                             is reliable, measurable, and transparent.</p>
                     </div>
 
@@ -746,7 +742,7 @@
                 <div class="content-left">
                     <p class="subtitle">ROADMAP REALITY CHECK</p>
                     <h2>Average teams lose <span>8–12 weeks</span> per hire.</h2>
-                    <p class="description">Stop trading months for resumes. Onboard production-ready engineering pods in
+                    <p >Stop trading months for resumes. Onboard production-ready engineering pods in
                         under 14 days.</p>
 
                     <div class="cta-area">
@@ -902,6 +898,19 @@
                     <div class="faq-answer">
                         <p>Yes. We offer fixed-scope MVP projects (2–6 weeks, $15K–$40K) for pre-funding teams. These
                             prove technical feasibility without long-term commitment.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                        </ul>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                        </ol>
+                        <a href="#">Lorem, ipsum.</a>
                     </div>
                 </div>
 

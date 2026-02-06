@@ -1903,13 +1903,51 @@ body.page-template-template-testimonials .client-video-section iframe,
   transition: max-height 0.4s ease, padding 0.4s ease;
   padding: 0 30px;
 }
+.faq-section .faq-item .faq-answer ul li {
+  margin: 10px 0 0;
+  position: relative;
+  padding-left: 18px;
+}
+.faq-section .faq-item .faq-answer ul li::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #FFAD00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.faq-section .faq-item .faq-answer strong {
+  font-weight: 700;
+}
+.faq-section .faq-item .faq-answer ol li {
+  margin: 10px 0 0;
+  position: relative;
+  padding-left: 18px;
+  list-style: none;
+}
+.faq-section .faq-item .faq-answer ol li::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #FFAD00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
 .faq-section .faq-item .faq-answer p {
   color: #4A5565;
+}
+.faq-section .faq-item .faq-answer a {
+  font-weight: 700;
 }
 .faq-section .faq-item.active {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 .faq-section .faq-item.active .faq-answer {
+  max-height: 100%;
   padding-bottom: 25px;
 }
 .faq-section .faq-item.active .icon::after {

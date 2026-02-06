@@ -1944,7 +1944,7 @@ body.page-template-template-testimonials .client-video-section iframe,
     font-size: 18px;
   }
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-description {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item p {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1956,7 +1956,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item:hover .item-header h3 {
   color: #FF4C4C;
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item:hover .item-description {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item:hover p {
   max-height: 100px;
   opacity: 1;
   margin-top: 10px;
