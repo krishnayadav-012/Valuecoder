@@ -1838,20 +1838,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 .section-header {
-  border-top: 2px solid #0c104c;
   padding-top: 10px;
   position: relative;
-  margin-bottom: 50px;
-}
-.section-header:before {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: 20%;
-  height: 6px;
-  background-color: #0c104c;
-  clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
+  margin-bottom: 6%;
 }
 .section-header > span {
   color: #FFAD00;
@@ -1865,14 +1854,14 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin: 0;
   color: #0c104c;
 }
-.section-header h2 span {
+.section-header h2 strong {
   color: #FFAD00;
 }
-.section-header .subtitle {
+.section-header p {
   margin-top: 15px;
   font-size: 18px;
   line-height: 1.5;
-  color: #4B5563;
+  color: #364153;
 }
 
 .card-grid {
@@ -1893,7 +1882,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 .card-grid .card {
-  background: #E5E7EB;
+  background: #FFFFFF;
   border-radius: 20px;
   padding: 30px;
   border: 1px solid #E5E7EB;
@@ -1903,7 +1892,18 @@ body.page-template-template-testimonials .client-video-section iframe,
   position: relative;
   flex-direction: column;
   transition: all 0.3s ease;
+  overflow: hidden;
   cursor: pointer;
+}
+.card-grid .card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 50%;
+  background: url(../images/card-top-sade.png);
+  content: "";
 }
 .card-grid .card .strategic-needs {
   visibility: hidden;
@@ -1952,9 +1952,16 @@ body.page-template-template-testimonials .client-video-section iframe,
   padding-top: 20px;
   border-top: 1px solid #E0E0E0;
 }
-.card-grid .card .card-footer p {
+.card-grid .card .card-footer ul {
+  padding-left: 15px;
+}
+.card-grid .card .card-footer ul li {
   font-size: 14px;
+  color: #4A5565;
+  line-height: 160%;
   font-style: italic;
+  font-weight: 600;
+  list-style: disc;
 }
 .card-grid .card:hover {
   background: #FFAD00;
@@ -1970,7 +1977,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   visibility: visible;
   transform: translateY(0px);
 }
-.card-grid .card:hover .strategic-needs .label {
+.card-grid .card:hover .strategic-needs p {
   font-weight: 600;
   font-size: 12px;
   color: #1A1A1A;
@@ -2022,7 +2029,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .not-for-section {
   background: #090C19;
   border-radius: 24px;
-  padding: 30px;
+  padding: 40px 84px 40px 39px;
   overflow: hidden;
   color: #ffffff;
   display: flex;
@@ -2034,11 +2041,33 @@ body.page-template-template-testimonials .client-video-section iframe,
   content: "";
   position: absolute;
   right: 0;
-  bottom: -60px;
-  width: 230px;
-  height: 230px;
-  background: url(../icons/background-design.png);
+  top: 0;
+  width: 41%;
+  height: 100%;
+  background: url(../images/fit-back-sade.png);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+.not-for-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21%;
+  height: 100%;
+  background: url(../images/r-eleps-radius.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.not-for-section .yello-sade {
+  position: absolute;
+  right: -62%;
+  background-image: url(../images/yellow-sade.png);
+  width: 82%;
+  height: 350px;
+  bottom: -160px;
+  background-repeat: no-repeat;
+  border-radius: 58%;
 }
 @media (max-width: 992px) {
   .not-for-section {
@@ -2050,8 +2079,10 @@ body.page-template-template-testimonials .client-video-section iframe,
 .not-for-section .not-for-content {
   max-width: 60%;
 }
-.not-for-section .not-for-content h2 {
+.not-for-section .not-for-content h3 {
+  font-size: 30px;
   color: #ffffff;
+  margin-bottom: 5px;
 }
 @media (max-width: 992px) {
   .not-for-section .not-for-content {
@@ -2087,25 +2118,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-repeat: no-repeat;
   content: "";
 }
-.not-for-section .not-for-content span {
-  display: flex;
-  align-items: center;
-}
-.not-for-section .not-for-content span i {
-  width: 15px;
-  height: 15px;
-}
-.not-for-section .not-for-content span i img {
-  display: flex;
-}
 @media (max-width: 767px) {
   .not-for-section .not-for-content {
     grid-template-columns: 1fr;
   }
-}
-.not-for-section .not-for-content span i {
-  color: #ff4d4d;
-  margin-right: 8px;
 }
 .not-for-section .cta-area {
   text-align: right;
@@ -2158,6 +2174,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
   .card-grid .card:hover {
     height: 325px;
+  }
+  .not-for-section::before {
+    background-size: cover;
+    width: 26%;
   }
 }
 @media screen and (max-width: 640px) {

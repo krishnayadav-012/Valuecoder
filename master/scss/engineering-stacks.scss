@@ -11,20 +11,57 @@ $listing-color:#101828;
 .section-header {
   margin-bottom: 50px;
   padding-top: 0;
-  .subtitle { color: $darkYellow; font-weight: bold; font-size: 0.8rem; margin-bottom: 10px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+.content-part{width: calc(90% - 120px);
+
   h2 { 
      color: $themeMidNight; 
-    span { display: block; } 
+    strong {color: $darkYellow; } 
   }
 }
 
+.glider-arrows{
+width: 10%;
+display: flex;
+min-width: 100px;
+justify-content: end;
+gap: 20px;
+.stack-prev {
+    transform: rotate(-180deg) translateY(0px);
+}
+ button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #e9ecef;
+    color: #05164d;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 18px;
+}
+  }
+
+}
+
 .stack-grid {
+.glider-track{
+  gap: 19px;
+}
+
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
-  @media (max-width: 992px) { grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 768px) { grid-template-columns: 1fr; }
 }
 
 .stack-card {
@@ -35,7 +72,6 @@ $listing-color:#101828;
   flex-direction: column;
   transition: transform 0.3s ease;
 
-  &:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 
   .card-head {
     padding: 32px 30px 45px 30px;
@@ -64,8 +100,7 @@ $listing-color:#101828;
       strong { display: block; color: $listing-color; font-size: 1rem; }
       span { color: $text-light; font-size: 0.85rem; }
     }
-
-    .percentage {
+    .percentage p {
       background: $darkYellow;
       color: $themeMidNight;
       font-weight: bold;
@@ -110,10 +145,18 @@ $listing-color:#101828;
 }
 @media screen and (max-width:1024px) {
   .stack-section{padding: 60px 0;}
+  .stack-section .section-header .content-part{width: 100%; margin-bottom: 20px;}
   
 }
 @media screen and (max-width:768px) {
   .stack-section .stack-card .card-head{
     padding: 23px;
   }
+  .stack-section .section-header{flex-direction: column; align-items: start;}
+  .stack-section .section-header .glider-arrows{width: 100%; justify-content: center;}
+}
+
+
+@media screen and (max-width:640px) {
+  .stack-section .stack-grid .glider-track{gap: 0;}
 }

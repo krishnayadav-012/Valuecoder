@@ -9,6 +9,20 @@ $border-color: #1a1a1a;
     background-color: $bg-dark;
     color: $white;
     padding: 120px 0;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        right: -10%;
+        bottom: 0;
+        width: 40%;
+        height: 40%;
+        background-image: url(../images/risk-back-overlay.png);
+        background-repeat: no-repeat;
+        content: "";
+
+    }
 
     // Left Content
 
@@ -17,34 +31,13 @@ $border-color: #1a1a1a;
         gap: 60px;
         align-items: flex-start;
         flex-wrap: wrap;
-        border-top: 2px solid $darkYellow;
         padding-top: 10px;
         position: relative;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: -7px;
-            left: 0;
-            width: 20%;
-            height: 6px;
-            background-color: #FFAD00;
-            clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
-        }
-
 
         .friction-content-top {
             flex: 1;
             width: 100%;
 
-            >span {
-                color: $darkYellow;
-                font-size: 12px;
-                font-weight: 800;
-                letter-spacing: 1.5px;
-                text-transform: uppercase;
-                margin-bottom: 12px;
-            }
 
             h2 {
                 font-weight: 700;
@@ -86,55 +79,41 @@ $border-color: #1a1a1a;
                     }
 
 
-                    .friction-item {
+                    li {
                         border-bottom: 1px solid $border-color;
                         padding: 20px 0;
                         cursor: pointer;
 
-                        .item-header {
+                        h3 {
                             display: flex;
                             align-items: center;
                             gap: 12px;
-                            padding-left: 27px;
+                            padding-left: 32px;
                             position: relative;
+                            font-size: 22px;
+                            font-weight: 600;
+                            margin: 0;
+                            color: $white;
+                            transition: color 0.3s ease;
 
                             &::after {
                                 position: absolute;
                                 left: 0;
                                 transform: translateY(-50%);
                                 top: 50%;
-                                width: 22px;
+                                width: 18px;
                                 background-size: contain;
-                                height: 22px;
-                                background-image: url(../icons/circle-x.svg);
+                                height: 18px;
+                                background-image: url(../icons/circle-x-grey.svg);
                                 background-repeat: no-repeat;
                                 content: "";
 
                             }
 
-                            i {
-                                color: $accent-red;
+                            @media screen and (max-width:992px) {
                                 font-size: 18px;
-                                width: 22px;
-                                height: 22px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                border-radius: 50%;
-                                flex-shrink: 0;
                             }
 
-                            h3 {
-                                font-size: 22px;
-                                font-weight: 600;
-                                margin: 0;
-                                color: $white;
-                                transition: color 0.3s ease;
-
-                                @media screen and (max-width:992px) {
-                                    font-size: 18px;
-                                }
-                            }
                         }
 
                         p {
@@ -159,6 +138,10 @@ $border-color: #1a1a1a;
                                 margin-top: 10px;
                             }
                         }
+
+                        &:hover ::after {
+                            background-image: url(../icons/circle-x.svg);
+                        }
                     }
                 }
 
@@ -175,10 +158,24 @@ $border-color: #1a1a1a;
                 border: 1px solid $darkYellow;
                 border-radius: 24px;
                 padding: 45px 40px 61px 40px;
-                background: radial-gradient(circle at bottom right, rgba($darkYellow, 0.15), transparent 70%);
                 position: relative;
                 overflow: hidden;
                 height: fit-content;
+                z-index: 1;
+                backdrop-filter: blur(13.939393997192383px);
+                background-color: #161722A3;
+
+                &::after {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 60%;
+                    height: 100%;
+                    content: "";
+                    z-index: -1;
+                    background: radial-gradient(circle at bottom right, rgba($darkYellow, 0.15), transparent 70%);
+                }
+
 
                 @media (max-width: 992px) {
                     flex: none;
@@ -200,7 +197,6 @@ $border-color: #1a1a1a;
                     line-height: 1.2;
                     color: $white;
                     margin-bottom: 24px;
-
                     span {
                         color: $darkYellow;
                     }
@@ -211,11 +207,6 @@ $border-color: #1a1a1a;
                     font-size: 16px;
                     line-height: 1.5;
                     margin-bottom: 35px;
-
-                    em {
-                        font-style: italic;
-                        color: $white;
-                    }
                 }
 
                 .card-bottom-text {
@@ -262,5 +253,11 @@ $border-color: #1a1a1a;
         padding: 60px 0;
 
 
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .friction-section .friction-inner-part .friction-innner-content .friction-card::after{
+        width: 100%;
     }
 }

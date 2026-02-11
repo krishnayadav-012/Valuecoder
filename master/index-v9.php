@@ -116,7 +116,6 @@
         <div class="container">
             <div class="friction-inner-part">
                 <div class="friction-content-top">
-                    <span>HIGH-RISK FRICTION</span>
                     <h2>Where Engineering Teams <span class="highlight">Get Quietly Stuck.</span>
                     </h2>
                     <p>Scaling isn't just about adding people. It's about diagnosing the
@@ -125,60 +124,42 @@
                 <div class="friction-innner-content">
                     <div class="friction-list">
                         <ul>
-                            <li class="friction-item active-item">
-                                <div class="item-header">
-
-                                    <h3>Hiring takes too long</h3>
-                                </div>
-                                <p >Roadmaps stall for months waiting on headcount.</p>
+                            <li>
+                                <h3>Hiring takes too long</h3>
+                                <p>Roadmaps stall for months waiting on headcount.</p>
                             </li>
-
-                            <li class="friction-item">
-                                <div class="item-header">
-
-                                    <h3>MVPs need validation</h3>
-                                </div>
-                                <p >Move from concept to reality faster with validated
+                            <li>
+                                <h3>MVPs need validation</h3>
+                                <p>Move from concept to reality faster with validated
                                     prototypes.
                                 </p>
                             </li>
-
-                            <li class="friction-item">
-                                <div class="item-header">
-
-                                    <h3>Tech debt piles up</h3>
-                                </div>
-                                <p >Clean up your codebase without pausing new feature
+                            <li>
+                                <h3>Tech debt piles up</h3>
+                                <p>Clean up your codebase without pausing new feature
                                     development.
                                 </p>
                             </li>
+                            <li>
+                                <h3>Legacy systems block progress</h3>
 
-                            <li class="friction-item">
-                                <div class="item-header">
-
-                                    <h3>Legacy systems block progress</h3>
-                                </div>
-                                <p >Modernize older stacks to enable current-gen performance.
+                                <p>Modernize older stacks to enable current-gen performance.
                                 </p>
                             </li>
-
-                            <li class="friction-item">
-                                <div class="item-header">
-
-                                    <h3>AI projects stall</h3>
-                                </div>
-                                <p >Deploy production-ready AI models instead of infinite
+                            <li>
+                                <h3>AI projects stall</h3>
+                                <p>Deploy production-ready AI models instead of infinite
                                     research
                                     cycles.</p>
                             </li>
                         </ul>
                     </div>
                     <div class="friction-card">
-                        <span class="card-eyebrow">ROADMAP REALITY CHECK</span>
+                        <span>ROADMAP REALITY CHECK</span>
                         <h2>Average teams lose <span>8–12 weeks</span> per hire.</h2>
                         <p>Stop trading months for resumes. Onboard production-ready engineering
                             pods
-                            in <em>under 14 days</em>.</p>
+                            in <i>under 14 days</i>.</p>
                         <a href="#" class="btn-primary">
                             Eliminate Hiring Friction
                         </a>
@@ -198,19 +179,19 @@
     <section class="build-team">
         <div class="container">
             <div class="section-header">
-                <span>BUILT FOR TEAMS THAT SHIP</span>
-                <h2>Who We <span>Help</span></h2>
-                <p class="subtitle">We work with engineering leaders at every stage—from validating first products to
+
+                <h2>Who We <strong>Help</strong></h2>
+                <p>We work with engineering leaders at every stage—from validating first products to
                     running multi-pod programs.</p>
             </div>
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-icon"><i> <img src="icons/clock.svg" alt=""> </i></div>
+                    <div class="card-icon"><i> <img src="icons/founder.svg" alt=""> </i></div>
                     <div class="card-content">
                         <h3>Product and SaaS Companies</h3>
                         <p>Building your first version or validating a concept.</p>
                         <div class="strategic-needs">
-                            <p class="label">STRATEGIC NEEDS:</p>
+                            <p>STRATEGIC NEEDS:</p>
                             <ul>
                                 <li>Technical validation in 4-8 weeks</li>
                                 <li>Fixed scope and budget ($15K–$40K range)</li>
@@ -219,16 +200,18 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <p>Any stage: Seed, Series A, Series D, or beyond.</p>
+                        <ul>
+                            <li>40% of MVP clients return as dedicated team customers.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i> <img src="icons/clock.svg" alt=""> </i></div>
+                    <div class="card-icon"><i> <img src="icons/companies.svg" alt=""> </i></div>
                     <div class="card-content">
                         <h3>Product and SaaS Companies</h3>
                         <p>Building your first version or validating a concept.</p>
                         <div class="strategic-needs">
-                            <p class="label">STRATEGIC NEEDS:</p>
+                            <p>STRATEGIC NEEDS:</p>
                             <ul>
                                 <li>Technical validation in 4-8 weeks</li>
                                 <li>Fixed scope and budget ($15K–$40K range)</li>
@@ -237,16 +220,18 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <p>Any stage: Seed, Series A, Series D, or beyond.</p>
+                        <ul>
+                            <li>Any stage: Seed, Series A, Series D, or beyond.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i> <img src="icons/clock.svg" alt=""> </i></div>
+                    <div class="card-icon"><i> <img src="icons/light-t.svg" alt=""> </i></div>
                     <div class="card-content">
                         <h3>Product and SaaS Companies</h3>
                         <p>Building your first version or validating a concept.</p>
                         <div class="strategic-needs">
-                            <p class="label">STRATEGIC NEEDS:</p>
+                            <p>STRATEGIC NEEDS:</p>
                             <ul>
                                 <li>Technical validation in 4-8 weeks</li>
                                 <li>Fixed scope and budget ($15K–$40K range)</li>
@@ -255,16 +240,18 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <p>Any stage: Seed, Series A, Series D, or beyond.</p>
+                        <ul>
+                            <li>If you have tech leadership, we can help.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i> <img src="icons/clock.svg" alt=""> </i></div>
+                    <div class="card-icon"><i> <img src="icons/user-icon.svg" alt=""> </i></div>
                     <div class="card-content">
                         <h3>Product and SaaS Companies</h3>
                         <p>Building your first version or validating a concept.</p>
                         <div class="strategic-needs">
-                            <p class="label">STRATEGIC NEEDS:</p>
+                            <p>STRATEGIC NEEDS:</p>
                             <ul>
                                 <li>Technical validation in 4-8 weeks</li>
                                 <li>Fixed scope and budget ($15K–$40K range)</li>
@@ -273,13 +260,16 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <p>Any stage: Seed, Series A, Series D, or beyond.</p>
+                        <ul>
+                            <li>If you've been burned by offshore, we get it.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="not-for-section">
+                <div class="yello-sade"></div>
                 <div class="not-for-content">
-                    <h2>Who we're NOT for</h2>
+                    <h3>Who we're NOT for</h3>
                     <p>Software is your product. You build, ship, and maintain revenue-driving platforms.</p>
 
                     <ul>
@@ -292,11 +282,9 @@
                 </div>
                 <div class="cta-area">
                     <a href="#" class="btn-primary">Check Your Fit </a>
-                    <img src="icons/arrow-right.svg" alt="">
-                    <div class="inner-right-text">
-                        <p> LOREM IPSUM DOLLAR SITE</p>
-                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -310,9 +298,8 @@
         <div class="container">
             <div class="section-header">
                 <div class="header-text">
-                    <p class="subtitle">LOREM IPSUM</p>
                     <h1>Industries We Cater to</h1>
-                    <p >Get what you are looking for to fulfill your software development and
+                    <p>Get what you are looking for to fulfill your software development and
                         outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
                     </p>
                 </div>
@@ -323,7 +310,6 @@
             </div>
 
             <div class="glider-contain">
-
                 <div class="glider">
                     <div class="industry-item">
                         <div class="industry-card">
@@ -352,7 +338,6 @@
                             <div class="card-body">
                                 <div class="title-wrap">
                                     <h3>Media & Entertainment</h3>
-
                                 </div>
                                 <div class="hover-content">
                                     <h4>Media & Entertainment</h4>
@@ -404,156 +389,6 @@
     </section>
 
     <!-- induristries section  -->
-
-
-
-    <!-- expertise-section section start -->
-
-    <section class="expertise-section">
-        <div class="container">
-            <div class="expertise-top-part">
-                <div class="content-side">
-                    <span class="eyebrow">FULL-STACK MASTERY</span>
-                    <h2>Engineering <span class="highlight">Expertise.</span></h2>
-                    <p>
-                        <strong>
-                            Delivered through staff augmentation, product pods, or long-term engineering
-                            programs.</strong>
-                    </p>
-
-                    <p> We don't just write code; we architect scalable systems. From modernizing legacy monoliths
-                        to
-                        deploying agentic AI, our engineering DNA runs deep.</p>
-
-                    <ul>
-                        <li>PRODUCT ENGINEERING</li>
-                        <li>AI & DATA ENGINEERING</li>
-                        <li>CLOUD & DEVOPS</li>
-                        <li>LEGACY MODERNIZATION</li>
-                        <li class="active">SECURITY & COMPLIANCE</li>
-                    </ul>
-                </div>
-                <div class="cards-side">
-                    <div class="service-card">
-                        <div class="icon-box"><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-clock-icon lucide-clock">
-                                    <path d="M12 6v6l4 2" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg></i></div>
-
-                        <div class="card-body">
-                            <div class="title-row">
-                                <h3>PRODUCT ENGINEERING</h3>
-                            </div>
-                            <p>GenAI, LLMs, Analytics</p>
-                            <ul>
-                                <li>REACT</li>
-                                <li>NODE.JS</li>
-                                <li>MOBILE</li>
-                                <li>MICROSERVICE</li>
-                            </ul>
-                            <a href="#" class="case-study">CASE STUDIES </a>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-box"><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-clock-icon lucide-clock">
-                                    <path d="M12 6v6l4 2" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg></i></div>
-
-                        <div class="card-body">
-                            <div class="title-row">
-                                <h3>AI & Data Engineering</h3>
-                            </div>
-                            <p>GenAI, LLMs, Analytics</p>
-                            <ul>
-                                <li>REACT</li>
-                                <li>NODE.JS</li>
-                                <li>MOBILE</li>
-                                <li>MICROSERVICE</li>
-                            </ul>
-                            <a href="#" class="case-study">CASE STUDIES </a>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-box"><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-clock-icon lucide-clock">
-                                    <path d="M12 6v6l4 2" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg></i></div>
-
-                        <div class="card-body">
-                            <div class="title-row">
-                                <h3>Cloud & DevOps</h3>
-                            </div>
-                            <p>GenAI, LLMs, Analytics</p>
-                            <ul>
-                                <li>REACT</li>
-                                <li>NODE.JS</li>
-                                <li>MOBILE</li>
-                                <li>MICROSERVICE</li>
-                            </ul>
-                            <a href="#" class="case-study">CASE STUDIES </a>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-box"><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-clock-icon lucide-clock">
-                                    <path d="M12 6v6l4 2" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg></i></div>
-
-                        <div class="card-body">
-                            <div class="title-row">
-                                <h3>Legacy Modernization</h3>
-                            </div>
-                            <p>GenAI, LLMs, Analytics</p>
-                            <ul>
-                                <li>REACT</li>
-                                <li>NODE.JS</li>
-                                <li>MOBILE</li>
-                                <li>MICROSERVICE</li>
-                            </ul>
-                            <a href="#" class="case-study">CASE STUDIES </a>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-box"><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-clock-icon lucide-clock">
-                                    <path d="M12 6v6l4 2" />
-                                    <circle cx="12" cy="12" r="10" />
-                                </svg></i></div>
-
-                        <div class="card-body">
-                            <div class="title-row">
-                                <h3>DevSecOps, SOC2</h3>
-                            </div>
-                            <p>GenAI, LLMs, Analytics</p>
-                            <ul>
-                                <li>REACT</li>
-                                <li>NODE.JS</li>
-                                <li>MOBILE</li>
-                                <li>MICROSERVICE</li>
-                            </ul>
-                            <a href="#" class="case-study">CASE STUDIES </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- expertise-section section end -->
 
     <!-- flip section start -->
     <section class="engagement-section">
@@ -678,8 +513,8 @@
                 <div class="content-side">
                     <div class="trust-header">
                         <p class="subtitle">WHY VALUECODERS</p>
-                        <h2>Why Engineering Leaders  <br><span>Trust Us.</span></h2>
-                        <p >Real Accountability, Not Just Resumes. Speed only matters when delivery
+                        <h2>Why Engineering Leaders <br><span>Trust Us.</span></h2>
+                        <p>Real Accountability, Not Just Resumes. Speed only matters when delivery
                             is reliable, measurable, and transparent.</p>
                     </div>
 
@@ -733,149 +568,185 @@
 
     <!-- why valuecoder section  end-->
 
-    <!-- new cta start -->
 
-    <section class="roadmap-banner">
-        <div class="botton-angal-design"><img src="icons/bottom-design.svg" alt=""></div>
-        <div class="container">
-            <div class="banner-wrapper">
-                <div class="content-left">
-                    <p class="subtitle">ROADMAP REALITY CHECK</p>
-                    <h2>Average teams lose <span>8–12 weeks</span> per hire.</h2>
-                    <p >Stop trading months for resumes. Onboard production-ready engineering pods in
-                        under 14 days.</p>
-
-                    <div class="cta-area">
-                        <a href="#" class="btn-primary">Eliminate Hiring Friction </a>
-                        <div class="liability-text">
-                            ZERO RECRUITMENT LIABILITY
-                        </div>
-                    </div>
-                </div>
-
-                <div class="visual-right">
-                    <div class="image-cluster">
-                        <div class="profile main-profile">
-                            <img src="icons/cta-img.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- new cta end -->
 
     <!-- Engineering Stacks start -->
     <section class="stack-section">
         <div class="container">
             <div class="section-header">
-                <p class="subtitle">OUR DNA</p>
-                <h2>Engineering Stacks Optimized for Scale.</h2>
+                <div class="content-part">
+                    <h2>Engineering <strong>Expertise.</strong></h2>
+                    <p>Delivered through staff augmentation, product pods, or long-term engineering programs.</p>
+                </div>
+
+                <div class="glider-arrows">
+                    <button class="stack-prev starc-arrow" aria-label="Previous" aria-disabled="true"><img
+                            src="icons/arrow-right.svg" alt=""></button>
+                    <button class="stack-next starc-arrow" aria-label="Next" aria-disabled="false"><img
+                            src="icons/arrow-right.svg" alt=""></button>
+                </div>
             </div>
+            <div class="glider-contain">
+                <div class="stack-grid glider">
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
 
-            <div class="stack-grid">
-                <div class="stack-card">
-                    <div class="card-head">
-                        <h3>Frontend</h3>
-                        <p>Immediate Bench Ready</p>
-                    </div>
-                    <ul class="tech-list">
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                    </ul>
-                    <div class="card-footer">
-                        <div class="avatars">
-                            <img src="icons/dummy.png" alt="Dev">
-                            <img src="icons/dummy.png" alt="Dev">
-                            <img src="icons/dummy.png" alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
                         </div>
-                        <p><strong>700+</strong> Senior Engineers available</p>
-                        <a href="#" class="btn-secondry">View Full Stack </a>
                     </div>
-                </div>
-                <div class="stack-card">
-                    <div class="card-head">
-                        <h3>Frontend</h3>
-                        <p>Immediate Bench Ready</p>
-                    </div>
-                    <ul class="tech-list">
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                    </ul>
-                    <div class="card-footer">
-                        <div class="avatars">
-                            <img src="icons/dummy.png" alt="Dev">
-                            <img src="icons/dummy.png" alt="Dev">
-                            <img src="icons/dummy.png" alt="Dev">
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
                         </div>
-                        <p><strong>700+</strong> Senior Engineers available</p>
-                        <a href="#" class="btn-secondry">View Full Stack </a>
-                    </div>
-                </div>
-                <div class="stack-card">
-                    <div class="card-head">
-                        <h3>Frontend</h3>
-                        <p>Immediate Bench Ready</p>
-                    </div>
-                    <ul class="tech-list">
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                        <li>
-                            <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
-                            <div class="percentage">98%</div>
-                        </li>
-                    </ul>
-                    <div class="card-footer">
-                        <div class="avatars">
-                            <img src="icons/dummy.png" alt="Dev">
-                            <img src="icons/dummy.png" alt="Dev">
-                            <img src="icons/dummy.png" alt="Dev">
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
                         </div>
-                        <p><strong>700+</strong> Senior Engineers available</p>
-                        <a href="#" class="btn-secondry">View Full Stack </a>
                     </div>
-                </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
 
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -946,78 +817,123 @@
     <!-- feedback section start -->
 
 
-
-    <section class="v-testimonial-section">
+    <section class="testimonial-section-v9">
         <div class="container">
-            <div class="v-testimonial-header">
-                <p>CLIENT FEEDBACK</p>
-                <h2>What Engineering Leaders Say</h2>
+            <div class="top-part">
+                <span >Client Feedback</span>
+                <h2 >What Engineering Leaders Say</h2>
             </div>
 
-            <div class="v-testimonial-glider-contain">
-                <div class="v-testimonial-glider">
+            <div class="glider-contain">
+                <div class="testimonial-cards glider">
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="images/testimonial-img.png"alt="James Kelly">
+                            <div class="play-icon">
 
-                    <div class="v-testimonial-item">
-                        <div class="v-testimonial-card">
-                            <div class="v-testimonial-img">
-                                <img src="icons/user-img.png" alt="Client Name">
+                                <span class="play-btn"> Play </span>
                             </div>
-                            <div class="v-testimonial-body">
-                                <p>
-                                    “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks
-                                    early.”
-                                </p>
-                                <div class="v-testimonial-info">
-                                    <strong>Sarah Chen</strong>
-                                    <span>CTO, Innovate Solutions</span>
-                                    <div class="v-testimonial-rating">
-                                        <ul>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                        </ul>
-                                    </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                </ul>
+                            </div>
+                           
+                            <p >We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.</p>
+                          
+                            <div class="author-info">
+                                <img src="icons/airtel-logo.svg"alt="Company Logo" >
+
+                                <div class="details">
+                                    <span >James Kelly</span>
+                                    <p>Co-founder, Miracle Choice</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="v-testimonial-item">
-                        <div class="v-testimonial-card">
-                            <div class="v-testimonial-img">
-                                <img src="icons/user-img.png" alt="Client Name">
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="images/testimonial-img.png"alt="James Kelly">
+                            <button class="play-btn"> Play </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                </ul>
                             </div>
-                            <div class="v-testimonial-body">
-                                <p>
-                                    “Their delivery speed and code quality helped us hit our roadmap milestones 3 weeks
-                                    early.”
-                                </p>
-                                <div class="v-testimonial-info">
-                                    <strong>Sarah Chen</strong>
-                                    <span>CTO, Innovate Solutions</span>
-                                    <div class="v-testimonial-rating">
-                                        <ul>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                            <li><img src="icons/star.svg" alt=""></li>
-                                        </ul>
-                                    </div>
+                           
+                            <p >We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.</p>
+                          
+                            <div class="author-info">
+                                <img src="icons/airtel-logo.svg"
+                                    alt="Company Logo" >
+                                <div class="details">
+                                    <span >James Kelly</span>
+                                    <p>Co-founder, Miracle Choice</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="images/testimonial-img.png"alt="James Kelly">
+                            <button class="play-btn"> Play </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                </ul>
+                            </div>
+                           
+                            <p >We have worked with ValueCoders for more than a year, and their skilled team has allowed us to scale up during certain projects.</p>
+                          
+                            <div class="author-info">
+                                <img src="icons/airtel-logo.svg"
+                                    alt="Company Logo" >
+                                <div class="details">
+                                    <span >James Kelly</span>
+                                    <p>Co-founder, Miracle Choice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
+
+                <div id="dots" class="glider-dots"></div>
             </div>
         </div>
     </section>
-
     <!-- feedback section end -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
     <script>
+
+
+
+
+
+
+
         // scroll functoin
         document.addEventListener('DOMContentLoaded', () => {
             const listItems = document.querySelectorAll('.content-side ul li');
@@ -1106,6 +1022,79 @@
                     }
                 ]
             });
+
+
+            // expertise slider 
+            new Glider(document.querySelector('.stack-grid.glider'), {
+                // Mobile first defaults
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                draggable: true,
+                // dots: '#dots',
+                arrows: {
+                    prev: '.stack-prev',
+                    next: '.stack-next'
+                },
+                responsive: [
+                    {
+                        // screens greater than >= 768px
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        // screens greater than >= 1024px
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+
+            // feedback section
+
+            
+                const glider = new Glider(document.querySelector('.testimonial-cards.glider'), {
+                    slidesToShow: 1,
+                    draggable: true,
+                    dots: '#dots',
+                    scrollLock: true,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                duration: 0.5
+                            }
+                        }
+                    ]
+                });
+
+                const avatars = [
+                    'images/feedback-slid-icon.png',
+                    'images/feedback-slid-icon.png',
+                    'images/feedback-slid-icon.png',
+                    'images/feedback-slid-icon.png',
+                    
+                    
+                ];
+
+                const dots = document.querySelectorAll('.glider-dot');
+                dots.forEach((dot, index) => {
+                    if (avatars[index]) {
+                        dot.style.backgroundImage = `url(${avatars[index]})`;
+                        dot.innerText = ''; // Clear the default dot text
+                    }
+                });
+            
+
+
+
+
         });
 
         // industruies end
@@ -1162,10 +1151,6 @@
     </script>
 
     <!-- new sections js end -->
-
-
-
-
 
 
 

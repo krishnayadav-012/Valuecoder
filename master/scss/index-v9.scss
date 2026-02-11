@@ -2,10 +2,8 @@
 @use "_menu-v8";
 @use "risk-friction";
 @use "build-team";
-@use "expertise-sec";
 @use "engagement";
 @use "trust-section";
-@use "cta-design";
 @use "engineering-stacks";
 @use "faqs-section";
 @use "industries-new";
@@ -15,7 +13,6 @@
 @use "_intent-popup";
 @use "_glider";
 @use "_footer-section";
-
 
 
 .master-menu-desktop {
@@ -28,9 +25,12 @@
     margin-top: 30px;
     backdrop-filter: inherit;
 }
-.master-header.header-bg .site-logo-img.bg-logo, .site-logo-img{display: none;}
-.master-header.header-bg .site-logo-img, 
-.logo-size .site-logo-img.bg-logo{display: block;}
+
+// .master-header.header-bg .site-logo-img.bg-logo, .site-logo-img{display: none;}
+.master-header.header-bg .site-logo-img,
+.logo-size .site-logo-img.bg-logo {
+    display: block;
+}
 
 .master-header.sc-up {
 
@@ -266,12 +266,14 @@
         }
     }
 }
-.contact-us-section .btn-container .cta-button{
+
+.contact-us-section .btn-container .cta-button {
     position: relative;
-        
-    
+
+
 }
-.contact-us-section .btn-container .cta-button{
+
+.contact-us-section .btn-container .cta-button {
     background: #ffae0000 url(../icons/btn-yellow-arrow.svg) no-repeat right 15% center;
     display: flex;
     align-items: center;
@@ -291,13 +293,15 @@
     transition: 0.4s;
     border: 1px solid $darkYellow;
 
-  
+
 }
- .contact-us-section .btn-container .cta-button:hover {
+
+.contact-us-section .btn-container .cta-button:hover {
     background: #05164d url(../icons/btn-yellow-arrow.svg) no-repeat right 15% center;
     color: $darkYellow;
-    
+
 }
+
 //New Home Page Ends Here*/
 
 // Media Query Start From Here
@@ -310,7 +314,8 @@
             }
         }
     }
-    .btn-secondry::before{
+
+    .btn-secondry::before {
         right: 27% !important;
     }
 }
@@ -390,79 +395,6 @@
     }
 }
 
-@media (max-width: 767px) {
-    .hero-section {
-        padding: 130px 0 50px;
-
-        .dis-flex {
-            .left-box {
-                flex-basis: 100%;
-                text-align: center;
-
-                h1 {
-                    font-size: 40px;
-                    line-height: 50px;
-                }
-
-                p {
-                    font-size: 16px;
-                    line-height: 27px;
-                }
-
-                .for-client-logo-box {
-                    justify-content: center;
-                    align-items: center;
-                    margin: 30px 0 0;
-                }
-            }
-        }
-
-        .scroll-next {
-            width: 30px;
-            height: 41px;
-            bottom: 14px;
-            right: 12px;
-
-            .scroll-downicon {
-                background-size: 100%;
-                width: 17px;
-                height: 18px;
-                bottom: -30px;
-            }
-        }
-    }
-
-    .not-found-section {
-        height: auto;
-        padding: 100px 0 40px;
-
-        .suggest {
-            font-size: 18px;
-            line-height: 30px;
-        }
-
-        ul {
-            margin-top: 20px;
-
-            li {
-                font-size: 14px;
-                margin-top: 10px;
-                line-height: 18px;
-            }
-        }
-    }
-
-    h2 {
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-}
-
-
 
 .btn-secondry {
     display: flex;
@@ -474,7 +406,7 @@
     border-radius: 50px;
     text-decoration: none;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     gap: 10px;
     line-height: 30px;
@@ -484,17 +416,17 @@
     overflow: hidden;
     transition: 0.4s;
     border: 1px solid $darkYellow;
+    flex-direction: row-reverse;
 
     &::before {
         background: url(../icons/btn-yellow-arrow.svg);
-        width: 16px;
-        height: 16px;
         content: "";
-        position: absolute;
-        top: 48%;
-        transition: 0.4s;
-        transform: translateY(-50%);
-        right: 30%;
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        
+        background-size: 19px !important;
+        vertical-align: middle;
     }
 
 
@@ -627,10 +559,11 @@
 }
 
 @media screen and (max-width:1440px) {
-    .hero-section .dis-flex .left-box h1{
+    .hero-section .dis-flex .left-box h1 {
         font-size: 55px;
     }
 }
+
 @media screen and (max-width:768px) {
     .btn-secondry {
 
@@ -649,6 +582,78 @@
     .btn-primary::before {
         right: 20px;
     }
+
+    .hero-section {
+        padding: 130px 0 50px;
+
+        .dis-flex {
+            .left-box {
+                flex-basis: 100%;
+                text-align: center;
+
+                h1 {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+
+                .for-client-logo-box {
+                    justify-content: center;
+                    align-items: center;
+                    margin: 30px 0 0;
+                }
+            }
+        }
+
+        .scroll-next {
+            width: 30px;
+            height: 41px;
+            bottom: 14px;
+            right: 12px;
+
+            .scroll-downicon {
+                background-size: 100%;
+                width: 17px;
+                height: 18px;
+                bottom: -30px;
+            }
+        }
+    }
+
+    .not-found-section {
+        height: auto;
+        padding: 100px 0 40px;
+
+        .suggest {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        ul {
+            margin-top: 20px;
+
+            li {
+                font-size: 14px;
+                margin-top: 10px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
 }
+
+
 
 //Not Required

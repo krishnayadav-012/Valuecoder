@@ -1,32 +1,18 @@
 @use "_default" as *;
 // Color Variables
 $text-gray: #314158;
-$section-bg: #f8f9fa;
+$section-bg: #F4F4F4;
 
 .industries-section {
   padding: 100px 0;
   background-color: $section-bg;
 
-
-
-
   .section-header {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 50px;
     margin-top: 0;
     position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -6px;
-      left: 0;
-      width: 20%;
-      height: 6px;
-      background: $themeMidNight;
-    }
 
     .header-text {
       max-width: 763px;

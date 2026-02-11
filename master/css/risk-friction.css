@@ -1831,37 +1831,30 @@ body.page-template-template-testimonials .client-video-section iframe,
   background-color: #0a0b19;
   color: #ffffff;
   padding: 120px 0;
+  overflow: hidden;
+  position: relative;
+}
+.friction-section::after {
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  width: 40%;
+  height: 40%;
+  background-image: url(../images/risk-back-overlay.png);
+  background-repeat: no-repeat;
+  content: "";
 }
 .friction-section .friction-inner-part {
   display: flex;
   gap: 60px;
   align-items: flex-start;
   flex-wrap: wrap;
-  border-top: 2px solid #FFAD00;
   padding-top: 10px;
   position: relative;
-}
-.friction-section .friction-inner-part:before {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: 20%;
-  height: 6px;
-  background-color: #FFAD00;
-  clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
 }
 .friction-section .friction-inner-part .friction-content-top {
   flex: 1;
   width: 100%;
-}
-.friction-section .friction-inner-part .friction-content-top > span {
-  color: #FFAD00;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
 }
 .friction-section .friction-inner-part .friction-content-top h2 {
   font-weight: 700;
@@ -1897,54 +1890,41 @@ body.page-template-template-testimonials .client-video-section iframe,
     margin-right: 0;
   }
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li {
   border-bottom: 1px solid #1a1a1a;
   padding: 20px 0;
   cursor: pointer;
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li h3 {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding-left: 27px;
+  padding-left: 32px;
   position: relative;
-}
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header::after {
-  position: absolute;
-  left: 0;
-  transform: translateY(-50%);
-  top: 50%;
-  width: 22px;
-  background-size: contain;
-  height: 22px;
-  background-image: url(../icons/circle-x.svg);
-  background-repeat: no-repeat;
-  content: "";
-}
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header i {
-  color: #FF4C4C;
-  font-size: 18px;
-  width: 22px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header h3 {
   font-size: 22px;
   font-weight: 600;
   margin: 0;
   color: #ffffff;
   transition: color 0.3s ease;
 }
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li h3::after {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 18px;
+  background-size: contain;
+  height: 18px;
+  background-image: url(../icons/circle-x-grey.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
 @media screen and (max-width: 992px) {
-  .friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item .item-header h3 {
+  .friction-section .friction-inner-part .friction-innner-content .friction-list ul li h3 {
     font-size: 18px;
   }
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item p {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li p {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1953,13 +1933,16 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: rgba(252, 252, 252, 0.87);
   font-size: 16px;
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item:hover .item-header h3 {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li:hover .item-header h3 {
   color: #FF4C4C;
 }
-.friction-section .friction-inner-part .friction-innner-content .friction-list ul .friction-item:hover p {
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li:hover p {
   max-height: 100px;
   opacity: 1;
   margin-top: 10px;
+}
+.friction-section .friction-inner-part .friction-innner-content .friction-list ul li:hover ::after {
+  background-image: url(../icons/circle-x.svg);
 }
 @media (max-width: 992px) {
   .friction-section .friction-inner-part .friction-innner-content .friction-list {
@@ -1971,10 +1954,22 @@ body.page-template-template-testimonials .client-video-section iframe,
   border: 1px solid #FFAD00;
   border-radius: 24px;
   padding: 45px 40px 61px 40px;
-  background: radial-gradient(circle at bottom right, rgba(255, 173, 0, 0.15), transparent 70%);
   position: relative;
   overflow: hidden;
   height: fit-content;
+  z-index: 1;
+  backdrop-filter: blur(13.9393939972px);
+  background-color: rgba(22, 23, 34, 0.6392156863);
+}
+.friction-section .friction-inner-part .friction-innner-content .friction-card::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  background: radial-gradient(circle at bottom right, rgba(255, 173, 0, 0.15), transparent 70%);
 }
 @media (max-width: 992px) {
   .friction-section .friction-inner-part .friction-innner-content .friction-card {
@@ -2004,10 +1999,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 35px;
-}
-.friction-section .friction-inner-part .friction-innner-content .friction-card p em {
-  font-style: italic;
-  color: #ffffff;
 }
 .friction-section .friction-inner-part .friction-innner-content .friction-card .card-bottom-text p {
   display: flex;
@@ -2041,6 +2032,12 @@ body.page-template-template-testimonials .client-video-section iframe,
 @media (max-width: 992px) {
   .friction-section {
     padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .friction-section .friction-inner-part .friction-innner-content .friction-card::after {
+    width: 100%;
   }
 }
 

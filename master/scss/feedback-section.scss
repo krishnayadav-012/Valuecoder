@@ -1,172 +1,219 @@
 @use "_default" as *;
+// Variables
+$color-bg: #F3F4F6;
+$color-card: #E5E7EB;
+$breakpoint-md: 768px;
 
-.v-testimonial-section {
-  padding: 120px 0;
-  background: #f8f9fa;
+.testimonial-section-v9 {
+  background-color: $color-bg;
+  padding: 80px 20px;
   font-family: 'Inter', sans-serif;
-  overflow: hidden;
 
-
-}
-
-.v-testimonial-item.glider-slide.active .v-testimonial-card {
-  padding-left: 0;
-}
-
-.v-testimonial-header {
-  margin-bottom: 50px;
-  border-top: 2px solid #0c104c;
-  padding-top: 10px;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -7px;
-    left: 0;
-    width: 20%;
-    height: 6px;
-    background: $themeMidNight;
-    clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
-  > p {
-    color: $darkYellow;
-    font-weight: 700;
-    font-size: 13px;
-    margin: 0;
+  .top-part {
+    margin-bottom: 40px;
+
+    span {
+      color: $darkYellow;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
   }
 
-  h2 {
-    color: $themeMidNight;
-    margin: 0px 0 0;
-  }
-}
 
-.v-testimonial-item {
-  padding: 10px;
-}
-
-.v-testimonial-card {
-  padding: 40px;
+.testimonial-card {
   display: flex;
-  align-items: center;
-  gap: 40px;
-  border-right: 2px solid #eee;
-
-  @media (max-width: 991px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.v-testimonial-img {
-  width: 300px;
-  height: 300px;
-  flex-shrink: 0;
-  border-radius: 12px;
+  flex-direction: column;
+  background: $color-card;
+  border-radius: 24px;
   overflow: hidden;
+  min-height: 420px;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-.v-testimonial-body{
-
-  
-  p {
-    font-size: 30px;
-    font-weight: 600;
-    color: #101828;
-    line-height: 1.4;
-    margin-bottom: 24px;
-    font-style: normal;
-  }
-}
-
-.v-testimonial-info {
-  strong {
-
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    color: #101828;
-
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
   }
 
-  span {
-    font-size: 16px;
-    font-weight: 400;
-    color: #4A5565;
-  }
+  .card-image {
+    position: relative;
+    flex: 0 0 42%;
+    clip-path: polygon(0 0, 100% 0%, 78% 100%, 0% 100%);
 
-  .v-testimonial-rating {
-    color: $darkYellow;
-    margin-top: 0px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
 
-    ul {
+    // Creating the slanted edge effect
+    @media (min-width: $breakpoint-md) {
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    }
+
+    .play-icon
+     {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      background: #FFAD0080;
+      border: 1px solid #FFAD00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
       display: flex;
-      gap: 3px;
-      margin-top: 10px;
+      align-items: center;
+      gap: 8px;
+      .play-btn{
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: #364153;
 
-      li {
-        width: 22px;
-        height: 22px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+        background-size: 15px !important;
+        vertical-align: middle;
+        background: url(../icons/Play-icon.svg) no-repeat;
+      }
+      }
+      
+    }
+  }
 
-        img {
-          width: 100%;
-          height: 100%;
+  .card-content {
+    flex: 1;
+    padding: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding-top: 116px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 78% 100%, 0% 100%);
+    padding-bottom: 70px;
+
+    .rating {
+      border: 1px solid var(--gray-50, #F9FAFB);
+      background-color: #F3F4F680;
+      border-radius: 100px;
+      margin-bottom: 15px;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      padding: 11px 15px;
+      width: fit-content;
+
+      ul {
+        display: flex;
+
+        li {
+          display: flex;
+        }
+      }
+    }
+
+
+    >p {
+      color: #364153;
+      font-size: 22px;
+      line-height: 150%;
+      font-weight: 500;
+      position: relative;
+
+
+      &::after {
+        content: "";
+        background: url(../icons/white-quote.svg);
+        width: 41px;
+        height: 34px;
+        position: absolute;
+        left: 0;
+        top: -40px;
+        background-size: cover;
+      }
+    }
+
+    .quote {
+      font-size: 22px;
+      color: $themeMidNight;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+
+      &::before {
+        content: '"';
+        display: block;
+        font-size: 60px;
+        color: #ccd0d9;
+        height: 30px;
+      }
+    }
+
+    .author-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding-top: 20px;
+
+      img {
+        height: 35px;
+      }
+
+      .details {
+        padding-left: 15px;
+        border-left: 1px solid #D1D5DC;
+
+        span {
+          display: block;
+          font-size: 16px;
+          font-weight: 700;
+          color: #101828;
+        }
+
+        p {
+          font-size: 14px;
+          color: #4A5565;
+          font-weight: 400;
         }
       }
     }
   }
 }
 
-.v-testimonial-body {
-  padding: 35px 0;
-}
+// Custom Avatar Navigation
+.glider-dots {
+  margin-top: 30px !important;
+  display: flex;
+  justify-content: center;
 
-@media screen and (max-width:767px) {
+  button.glider-dot {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid transparent;
+    opacity: 0.5;
+    transition: transform 0.2s;
 
-  .v-testimonial-img {
-    width: 150px;
-    height: 150px;
-
-  }
-
-  .v-testimonial-card {
-    gap: 20px;
-    padding: 20px 0;
-  }
-
-  .v-testimonial-info .v-testimonial-rating ul {
-    justify-content: center;
-
-    li {
-      width: 10px;
-      height: 10px;
-      margin-top: 5px;
+    &.active {
+      border-color: $darkYellow;
+      border: 2px solid #FFAD00;
+      transform: scale(1.1);
+      opacity: 1;
     }
   }
-
-  .v-testimonial-text {
-    font-size: 18px;
-  }
-
-  .v-testimonial-body {
-    padding: 20px 5px;
-  }
-  
 }
-@media screen and (max-width:768px) {
-  .v-testimonial-body p{
-    font-size: 22px;
-  }
-}
-@media screen and (max-width:1024px) {
-  .v-testimonial-section{
-    padding: 60px 0;
-  }
 }

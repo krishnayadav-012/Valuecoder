@@ -1829,7 +1829,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .industries-section {
   padding: 100px 0;
-  background-color: #f8f9fa;
+  background-color: #F4F4F4;
 }
 .industries-section .section-header {
   display: flex;
@@ -1837,15 +1837,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-bottom: 50px;
   margin-top: 0;
   position: relative;
-}
-.industries-section .section-header::before {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: 0;
-  width: 20%;
-  height: 6px;
-  background: #05164d;
 }
 .industries-section .section-header .header-text {
   max-width: 763px;

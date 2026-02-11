@@ -13,30 +13,13 @@ $text-muted: #555;
 
     @media (max-width: 992px) {
         padding: 60px 0;
-
-
     }
-
-
 }
 
 .section-header {
-    border-top: 2px solid #0c104c;
     padding-top: 10px;
     position: relative;
-    margin-bottom: 50px;
-
-    &:before {
-        content: "";
-        position: absolute;
-        top: -7px;
-        left: 0;
-        width: 20%;
-        height: 6px;
-        background-color: #0c104c;
-        clip-path: polygon(50% 0%, 96% 0, 100% 100%, 0 98%, 0 0);
-    }
-
+    margin-bottom: 6%;
 
     >span {
         color: #FFAD00;
@@ -51,17 +34,16 @@ $text-muted: #555;
         margin: 0;
         color: #0c104c;
 
-
-        span {
+        strong {
             color: $darkYellow;
         }
     }
 
-    .subtitle {
+    p {
         margin-top: 15px;
         font-size: 18px;
         line-height: 1.5;
-        color: #4B5563;
+        color: #364153;
     }
 }
 
@@ -87,7 +69,7 @@ $text-muted: #555;
 
     // Base Card Style
     .card {
-        background: #E5E7EB;
+        background: #FFFFFF;
         border-radius: 20px;
         padding: 30px;
         border: 1px solid #E5E7EB;
@@ -97,7 +79,19 @@ $text-muted: #555;
         position: relative;
         flex-direction: column;
         transition: all 0.3s ease;
+        overflow: hidden;
         cursor: pointer;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            height: 50%;
+            background: url(../images/card-top-sade.png);
+            content: "";
+        }
 
         .strategic-needs {
             visibility: hidden;
@@ -155,9 +149,16 @@ $text-muted: #555;
             padding-top: 20px;
             border-top: 1px solid #E0E0E0;
 
-            p {
-                font-size: 14px;
-                font-style: italic;
+            ul {
+                padding-left: 15px;
+                li {
+                    font-size: 14px;
+                    color: #4A5565;
+                    line-height: 160%;
+                    font-style: italic;
+                    font-weight: 600;
+                    list-style: disc;
+                }
             }
         }
 
@@ -174,12 +175,10 @@ $text-muted: #555;
             }
 
             .strategic-needs {
-
                 visibility: visible;
-                
                 transform: translateY(0px);
 
-                .label {
+                p {
                     font-weight: 600;
                     font-size: 12px;
                     color: $text-main;
@@ -244,7 +243,7 @@ $text-muted: #555;
 .not-for-section {
     background: $dark-bg;
     border-radius: 24px;
-    padding: 30px;
+    padding: 40px 84px 40px 39px;
     overflow: hidden;
     color: $white;
     display: flex;
@@ -256,11 +255,37 @@ $text-muted: #555;
         content: "";
         position: absolute;
         right: 0;
-        bottom: -60px;
-        width: 230px;
-        height: 230px;
-        background: url(../icons/background-design.png);
+        top: 0;
+        width: 41%;
+        height: 100%;
+        background: url(../images/fit-back-sade.png);
         background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 21%;
+        height: 100%;
+        background: url(../images/r-eleps-radius.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .yello-sade {
+        position: absolute;
+        right: -62%;
+        background-image: url(../images/yellow-sade.png);
+        width: 82%;
+        height: 350px;
+        bottom: -160px;
+        background-repeat: no-repeat;
+        border-radius: 58%;
 
     }
 
@@ -274,18 +299,17 @@ $text-muted: #555;
     .not-for-content {
         max-width: 60%;
 
-        h2 {
+        h3 {
+            font-size: 30px;
             color: $white;
+            margin-bottom: 5px;
         }
 
-
         @media (max-width: 992px) {
-
             max-width: 100%;
         }
 
         h2 {
-
             margin-bottom: 10px;
         }
 
@@ -293,7 +317,6 @@ $text-muted: #555;
             color: rgba(209, 213, 220, 1);
             margin-bottom: 30px;
         }
-
 
         ul {
             display: grid;
@@ -320,36 +343,14 @@ $text-muted: #555;
             }
         }
 
-        span {
-            display: flex;
-            align-items: center;
-
-            i {
-                width: 15px;
-                height: 15px;
-
-                img {
-                    display: flex;
-                }
-            }
-        }
-
         @media (max-width: 767px) {
-
-
             grid-template-columns: 1fr;
-        }
-
-        span i {
-            color: #ff4d4d;
-            margin-right: 8px;
         }
     }
 
     .cta-area {
         text-align: right;
         color: $white;
-
 
         @media (max-width: 767px) {
 
@@ -386,17 +387,20 @@ $text-muted: #555;
 }
 
 @media screen and (max-width:1024px) {
-    .card-grid .card{
+    .card-grid .card {
         padding: 20px;
 
     }
-    .card-grid .card .strategic-needs{
+
+    .card-grid .card .strategic-needs {
         padding: 10px;
     }
-    .card-grid .card:hover .strategic-needs ul li{
+
+    .card-grid .card:hover .strategic-needs ul li {
         font-size: 13px;
     }
 }
+
 @media screen and (max-width:992px) {
     .card-grid .card {
         min-height: 325px;
@@ -407,6 +411,8 @@ $text-muted: #555;
     .card-grid .card:hover {
         height: 325px;
     }
+    .not-for-section::before{background-size: cover; width: 26%;}
+    // .not-for-section .not-for-content ul li{font-size: ;}
 }
 
 @media screen and (max-width:640px) {
@@ -417,14 +423,15 @@ $text-muted: #555;
     .card-grid .card .strategic-needs {
         margin-top: 0;
     }
-    .not-for-section .not-for-content ul{
+
+    .not-for-section .not-for-content ul {
         display: flex;
         flex-direction: column;
         text-align: left;
     }
 }
 
-.card-grid .card:hover .strategic-needs{
+.card-grid .card:hover .strategic-needs {
     position: static;
     margin: 0;
 }
