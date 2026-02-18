@@ -995,7 +995,7 @@
 
 
 
-        // industruies start
+        // industruies start```````````````````````````````````````````````````````````````````````
 
         window.addEventListener('load', function () {
             new Glider(document.querySelector('.glider'), {
@@ -1024,7 +1024,7 @@
             });
 
 
-            // expertise slider 
+            // expertise slider ````````````````````````````````````````````````````````````
             new Glider(document.querySelector('.stack-grid.glider'), {
                 // Mobile first defaults
                 slidesToShow: 1,
@@ -1037,7 +1037,6 @@
                 },
                 responsive: [
                     {
-                        // screens greater than >= 768px
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
@@ -1045,7 +1044,6 @@
                         }
                     },
                     {
-                        // screens greater than >= 1024px
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 3,
@@ -1055,14 +1053,14 @@
                 ]
             });
 
-            // feedback section
-
+            // feedback section```````````````````````````````````````````````````````
             
                 const glider = new Glider(document.querySelector('.testimonial-cards.glider'), {
                     slidesToShow: 1,
                     draggable: true,
                     dots: '#dots',
                     scrollLock: true,
+                    centerMode: true,
                     responsive: [
                         {
                             breakpoint: 768,
@@ -1073,7 +1071,7 @@
                         }
                     ]
                 });
-
+                
                 const avatars = [
                     'images/feedback-slid-icon.png',
                     'images/feedback-slid-icon.png',
