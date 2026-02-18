@@ -29,7 +29,7 @@
 .timeline-block::after{position:absolute;left:0;top:5px;background-color:#656565;width:2px;height:100%;content:""}
 .timeline-block span{color:var(--text-gray);font-weight:700}
 .timeline-marker{position:absolute;left:-7px;top:3px;width:15px;height:15px;border-radius:50%;background:#656565;z-index:99;border:3px solid #656565}
-.timeline-block p{color:var(--text-gray);margin-bottom:15px; font-size: 15px;}
+.timeline-block p{color:var(--text-gray);margin-bottom:15px; font-size: 14px;}
 .timeline-block h6{color:var(--primary-blue);font-size:13px;margin:0 0 10px 0}
 .timeline-block ul{margin-top:10px;}
 .timeline-block.active .timeline-marker{border-color:var(--primary-blue);background:var(--primary-blue)}
@@ -42,9 +42,9 @@
 .deliverables-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;font-size:14px}
 .deliverables-grid .item span svg{width:8px;height:8px}
 .timeline-block img{width:100%;display:block;padding:50px 30px!important;height:auto}
-.timeline-block ol{margin-top:10px;padding-left:10px}
-.timeline-block ol li{list-style:decimal;margin-bottom:12px;margin-left:15px}
-.timeline-block ul li{position:relative;margin-bottom:12px;color:var(--text-gray);list-style:none ; padding-left: 27px; margin-left: 0;}
+.timeline-block ol{margin-top:10px;}
+.timeline-block ol li{list-style:decimal;margin-bottom:12px;margin-left:15px; color:var(--text-gray); font-size: 12px;}
+.timeline-block ul li{position:relative;margin-bottom:12px;color:var(--text-gray);list-style:none ; padding-left: 27px; margin-left: 0; font-size: 12px;}
 .timeline-block ul li:before{content:"";width:17px;height:17px;position:absolute;left:0px;top:6px;background-color:#dcfce7;border-radius:50% ;;}
 .timeline-block ul li::after{content:"";width:10px;height:10px;position:absolute;left:3px;top:10px;background:url(../images/check-right.svg);background-size: 10px; background-color: transparent !important; display: flex;align-items: center; justify-content: center;}
 .timeline-block a{text-decoration:underline;color:var(--text-gray);font-weight:600;cursor:pointer}
