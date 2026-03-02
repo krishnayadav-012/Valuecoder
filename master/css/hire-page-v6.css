@@ -1,10 +1,10 @@
-/* Error: This module and the new module both define a variable named "$darkYellow".
- *   ,
- * 1 | @use "_default" as *;
- *   | ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\_footer-form.scss 1:1   @import
- *   scss\hire-page-v6.scss 26:9  root stylesheet */
+/* Error: Undefined variable.
+ *    ,
+ * 18 |       margin: 0 35px; background:$white;
+ *    |                                  ^^^^^^
+ *    '
+ *   scss\_client-logo.scss 18:34  @use
+ *   scss\hire-page-v6.scss 4:1    root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: This module and the new module both define a variable named "$darkYellow".\a   \2577 \a 1 \2502  @use "_default" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\_footer-form.scss 1:1   @import\a   scss\\hire-page-v6.scss 26:9  root stylesheet';
+  content: "Error: Undefined variable.\a    \2577 \a 18 \2502        margin: 0 35px; background:$white;\d\a    \2502                                   ^^^^^^\a    \2575 \a   scss\\_client-logo.scss 18:34  @use\a   scss\\hire-page-v6.scss 4:1    root stylesheet";
 }

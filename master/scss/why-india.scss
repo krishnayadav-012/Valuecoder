@@ -1,12 +1,12 @@
-@import "_default";
-@import "_three-column";
-@import "_accordion";
-@import "_counter-column-section";
-@import "_award-section";
-@import "_cta-structure";
-@import "_ctabtn-structure";
-@import "_menu-v3.12";
-@import "_footer-form";
+@use "_default";
+@use "_three-column";
+@use "_accordion";
+@use "_counter-column-section";
+@use "_award-section";
+@use "_cta-structure";
+@use "_ctabtn-structure";
+@use "_menu-v3.12";
+@use "_footer-form";
 
 .hero-section {
   background-color: $themeMidNight;

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expansion Readiness | ValueCoders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; cursor: pointer; }
+        input[type="range"]::-webkit-slider-runnable-track { background: #e5e7eb; height: 0.5rem; border-radius: 9999px; }
+        input[type="range"]::-webkit-slider-thumb { 
+            -webkit-appearance: none; height: 1.25rem; width: 1.25rem; 
+            background: #000; border-radius: 50%; margin-top: -0.375rem; 
+            border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.2); 
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <nav class="max-w-7xl mx-auto px-6 pt-12">
+        <div class="flex items-center gap-2 text-xs font-medium text-slate-400 uppercase tracking-widest">
+            <a href="#" class="hover:text-black transition">Resources</a>
+            <span>/</span>
+            <span class="text-slate-900">Expansion Readiness</span>
+        </div>
+    </nav>
+
+    <header class="gradient-bg text-white py-16 px-4 mt-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="inline-block px-3 py-1 bg-blue-500/20 rounded-full border border-blue-500/30 text-blue-300 text-xs font-bold tracking-widest uppercase mb-4">
+                Free Assessment 
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
+                Engineering <span class="text-slate-400">Scale</span> Audit
+            </h1>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                Quantify your technical foundation before adding headcount. Identify bottlenecks that could stall your ROI.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-12">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <section class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4 mb-10">
+                        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-black text-white font-bold text-sm">01</span>
+                        <h2 class="text-2xl font-bold tracking-tight">Team Foundation</h2>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-700">Current Engineers</label>
+                            <input type="number" id="teamSize" placeholder="12" class="w-full bg-slate-50 border-2 border-transparent focus:border-black focus:bg-white rounded-xl p-4 transition-all outline-none">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-700">Planned Hires</label>
+                            <input type="number" id="newHires" placeholder="4" class="w-full bg-slate-50 border-2 border-transparent focus:border-black focus:bg-white rounded-xl p-4 transition-all outline-none">
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-end">
+                                <label class="text-sm font-bold text-slate-700">Sprint Predictability</label>
+                                <span id="val-predict" class="text-xs font-bold bg-slate-900 text-white px-2 py-1 rounded">80%</span>
+                            </div>
+                            <input type="range" id="predict" min="0" max="100" value="80" class="w-full" oninput="updateLabel('predict', '%')">
+                        </div>
+
+                        <div class="pt-4">
+                            <label class="text-sm font-bold text-slate-700 block mb-4">Dedicated Tech Leadership?</label>
+                            <div class="inline-flex bg-slate-100 p-1 rounded-xl border border-slate-200">
+                                <button id="lead-yes" onclick="setToggle('hasLead', true)" class="px-6 py-2 rounded-lg text-sm font-bold transition-all">Yes</button>
+                                <button id="lead-no" onclick="setToggle('hasLead', false)" class="px-6 py-2 rounded-lg text-sm font-bold bg-white shadow-sm text-black transition-all">No</button>
+                            </div>
+                            <input type="hidden" id="hasLead" value="false">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4 mb-10">
+                        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-black text-white font-bold text-sm">02</span>
+                        <h2 class="text-2xl font-bold tracking-tight">Growth Friction</h2>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-700">Avg. Monthly Cost/Eng</label>
+                            <input type="number" id="monthlyCost" placeholder="10000" class="w-full bg-slate-50 border-2 border-transparent focus:border-black focus:bg-white rounded-xl p-4 transition-all outline-none">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-700">Time-to-Hire (Months)</label>
+                            <input type="number" id="hireTime" placeholder="3" class="w-full bg-slate-50 border-2 border-transparent focus:border-black focus:bg-white rounded-xl p-4 transition-all outline-none">
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-end">
+                                <label class="text-sm font-bold text-slate-700">Onboarding Overhead</label>
+                                <span id="val-overhead" class="text-xs font-bold bg-slate-900 text-white px-2 py-1 rounded">30%</span>
+                            </div>
+                            <input type="range" id="overhead" min="0" max="100" value="30" class="w-full" oninput="updateLabel('overhead', '%')">
+                        </div>
+                        
+                        <div class="pt-4 opacity-0 pointer-events-none hidden sm:block">
+                            <label class="text-sm font-bold block mb-4">Spacer</label>
+                            <div class="py-2">Spacer</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="flex justify-center">
+            <button onclick="runAudit()" class="w-full max-w-2xl bg-black text-white py-6 rounded-3xl text-xl font-bold hover:bg-slate-800 active:scale-[0.98] transition-all shadow-xl shadow-slate-200">
+                Generate Readiness Report
+            </button>
+        </div>
+
+        <section id="results" class="hidden space-y-6 opacity-0 translate-y-8 transition-all duration-700">
+            <div class="bg-slate-900 rounded-[2.5rem] p-10 text-white">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="relative w-40 h-40 shrink-0">
+                        <svg class="w-full h-full -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="8" fill="transparent" class="text-slate-800"/>
+                            <circle id="scoreCircle" cx="50" cy="50" r="45" stroke="white" stroke-width="8" fill="transparent" 
+                                stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round" class="transition-all duration-1000"/>
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <span id="scoreVal" class="text-5xl font-extrabold tracking-tighter ">0</span>
+                            <span class="text-[8px] uppercase tracking-[0.2em] text-slate-400 font-bold">Index</span>
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-left space-y-4">
+                        <h2 id="resTitle" class="text-3xl font-bold ">Results Title</h2>
+                        <p id="resDesc" class="text-slate-400 max-w-md leading-relaxed"></p>
+                        <div id="resTags" class="flex flex-wrap gap-2 justify-center md:justify-start"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gridReport" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+            <div class="bg-white border-2 border-black rounded-[2.5rem] p-8 md:p-12">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-3xl">🚀</span>
+                    <h3 class="text-2xl font-bold tracking-tight">Next Steps</h3>
+                </div>
+                <p id="recBody" class="text-slate-600 text-lg leading-relaxed mb-10"></p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="bg-black text-white px-10 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">Strategy Call</button>
+                    <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="border border-slate-200 px-10 py-4 rounded-2xl font-bold hover:bg-slate-50 transition">Reset Data</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function updateLabel(id, suffix) {
+            document.getElementById(`val-${id}`).innerText = document.getElementById(id).value + suffix;
+        }
+                
+        function setToggle(id, val) {
+            document.getElementById(id).value = val;
+            const yesBtn = document.getElementById('lead-yes');
+            const noBtn = document.getElementById('lead-no');
+            if(val) {
+                yesBtn.className = "px-6 py-2 rounded-lg text-sm font-bold bg-white shadow-sm text-black transition-all";
+                noBtn.className = "px-6 py-2 rounded-lg text-sm font-bold text-slate-500 transition-all";
+            } else {
+                noBtn.className = "px-6 py-2 rounded-lg text-sm font-bold bg-white shadow-sm text-black transition-all";
+                yesBtn.className = "px-6 py-2 rounded-lg text-sm font-bold text-slate-500 transition-all";
+            }
+        }
+
+        function runAudit() {
+            const size = parseInt(document.getElementById('teamSize').value) || 10;
+            const growth = parseInt(document.getElementById('newHires').value) || 2;
+            const cost = parseInt(document.getElementById('monthlyCost').value) || 8000;
+            const stability = parseInt(document.getElementById('predict').value);
+            const lead = document.getElementById('hasLead').value === 'true';
+            const oh = parseInt(document.getElementById('overhead').value);
+            const months = parseInt(document.getElementById('hireTime').value) || 2;
+
+            let score = 100;
+            score -= (100 - stability) * 0.4;
+            score -= (oh * 0.2);
+            if (!lead) score -= 15;
+            if (growth > size * 0.3) score -= 10;
+            score = Math.max(10, Math.min(100, Math.round(score)));
+
+            const direct = (growth * cost).toLocaleString();
+            const hiringLoss = (months * (cost * 0.4) * size).toLocaleString();
+            const rampDelay = Math.round(cost * (oh / 100)).toLocaleString();
+
+            const results = document.getElementById('results');
+            results.classList.remove('hidden');
+            
+            setTimeout(() => {
+                results.classList.remove('opacity-0', 'translate-y-8');
+                document.getElementById('scoreCircle').style.strokeDashoffset = 283 - (283 * (score / 100));
+            }, 50);
+
+            document.getElementById('scoreVal').innerText = score;
+
+            let title, desc, body, tags;
+            if(score > 75) {
+                title = "Scale Ready";
+                desc = "Your velocity is stable and leadership is in place. Expansion risk is low.";
+                tags = ['Low Risk', 'Stable Foundation', 'Ready'];
+                body = `With a ${score} readiness index, adding ${growth} engineers is statistically safe. Your predictable sprint velocity suggests that onboarding will not break current delivery commitments.`;
+            } else if(score > 45) {
+                title = "Proceed with Caution";
+                desc = "Process debt and management overhead will likely slow down your delivery.";
+                tags = ['Medium Risk', 'Onboarding Drag', 'Warning'];
+                body = `A score of ${score} suggests that for every new hire, you lose approximately ${oh}% of a senior's time. You should document key architectures before adding all ${growth} planned members.`;
+            } else {
+                title = "High Expansion Risk";
+                desc = "Structural weaknesses suggest scaling now will cause a net loss in output.";
+                tags = ['Critical Risk', 'Restructure Needed', 'High Friction'];
+                body = `Scaling now is high risk. The lack of leadership and unstable velocity means ${growth} new hires will likely cost $${hiringLoss} in lost productivity. Consider a "Managed Pod" approach instead.`;
+            }
+
+            document.getElementById('resTitle').innerText = title;
+            document.getElementById('resDesc').innerText = desc;
+            document.getElementById('recBody').innerText = body;
+            document.getElementById('resTags').innerHTML = tags.map(t => `<span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">${t}</span>`).join('');
+
+            const dataMap = [
+                { l: "New Monthly Spend", v: `$${direct}`, s: "Salary impact" },
+                { l: "Productivity Sink", v: `$${hiringLoss}`, s: "Over 6 months" },
+                { l: "Ramp Cost / Hire", v: `$${rampDelay}`, s: "Knowledge transfer" }
+            ];
+
+            document.getElementById('gridReport').innerHTML = dataMap.map(d => `
+                <div class="bg-white p-8 rounded-3xl border border-slate-200">
+                    <p class="text-[10px] font-bold uppercase text-slate-400 tracking-[0.15em] mb-2">${d.l}</p>
+                    <p class="text-3xl font-extrabold  text-black">${d.v}</p>
+                    <p class="text-sm text-slate-500 mt-1">${d.s}</p>
+                </div>
+            `).join('');
+
+            setTimeout(() => {
+                window.scrollTo({ top: results.offsetTop - 50, behavior: 'smooth' });
+            }, 150);
+        }
+    </script>
+</body>
+</html>

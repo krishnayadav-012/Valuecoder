@@ -34,11 +34,6 @@
   </head>
   <body>
     <?php require_once './include/menu-v8.php'; ?>
-
-
-
-
-
      <section class="contact-us-section padding-t-120 padding-b-120">
       <?php require_once 'include/contact-form.php'; ?>
     </section> 
@@ -91,10 +86,6 @@
           }
           
       });
-      
-      
-      
-      
       if (document.getElementById("solution-slide")) {
       window.addEventListener("load", () => {
       const gliderElement = document.querySelector(".solution-slider .glider");
@@ -207,11 +198,7 @@
       });
       }
       });
-      }
-      
-      
-      
-      
+      }      
       
       if (document.getElementById("client-slider")) {
       window.addEventListener("load", () => {

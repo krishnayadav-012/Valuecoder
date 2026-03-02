@@ -6590,6 +6590,10 @@ button.tab-btn-base {
   }
 }
 /*Media Query Ends Here*/
+body {
+  display: none !important;
+}
+
 .master-menu-desktop {
   max-width: unset !important;
 }
