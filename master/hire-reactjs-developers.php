@@ -171,13 +171,15 @@
                       </div>
                     </div>
                   </div>
-                  <!-- 
+
+<!--                   
         <div class="form-badges">
           <a href="javascript:void(0);"> <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v6.0/images/hire-bd01.svg" width="56" height="52" alt="valuecoders"></a>
           <a href="javascript:void(0);"> <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v6.0/images/hire-bd02.svg" width="54" height="52" alt="valuecoders"></a>
           <a href="javascript:void(0);"> <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v6.0/images/hire-bd03.svg" width="56" height="52" alt="valuecoders"></a>
         </div> 
         -->
+
                 </form>
               </div>
             </div>

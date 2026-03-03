@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost of Hiring Delay Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+     <style>
+        
+        .cost-banner {
+            padding: 117px 0 80px;
+            min-height: initial;
+            background: linear-gradient(180deg, #211f47 0, #05164d 100%) !important;
+            text-align: center;
+        }
+         .animate-in { animation: fadeIn 0.7s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }s
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .toggle-dot { transition: transform 0.2s ease-in-out; }
+    </style>
+    
+    <link rel="preload stylesheet" type="text/css" href="../css/index-v8.css" defer />
+         <link rel="stylesheet" href="../css/cmn-style.css">
+    <link rel="preload stylesheet" type="text/css" href="https://www.valuecoders.com/wp-content/themes/valuecoders/dev-style.css" defer />
+    
+     <script defer src="../menu.js"></script>
+     <script>
+        var vcObj = {
+            "_version": "1763614476",
+            "tpl_url": "http://localhost/markup-dom/valuecoders/master",
+            "web_url": "http://localhost/markup-dom/valuecoders/master",
+            "admin_ajax": "https://www.valuecoders.com/staging/wp-admin/admin-ajax.php",
+            "page_tpl": "tpl-homev6.0.php",
+            "is_mobile": "false",
+            "_env": "staging",
+            "_v3_blog_post": "",
+            "_post_id": "19655",
+            "_cs_data": null,
+            "_blog_tag": ""
+        };
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">    
+    <?php require_once '../include/menu-v8.php'; ?>
+
+
+    <section class="cost-banner">
+        <div class="container">
+            <h1>  Cost of Hiring Delay Calculator</h1>
+            <p> Every unfilled engineering role slows delivery, delays revenue, and increases burnout. 
+                 Calculate the true cost of hiring delays in under 60 seconds.
+            </p>
+        </div>
+    </section>
+
+    <div class=" container">
+        <?php require_once 'inc/cost-of-hiring-delay-calculator.php'; ?>
+    </div>
+
+    <script src="js/cost-of-hiring-delay-calculator.js" ></script>
+
+   
+    
+</body>
+
+</html>
