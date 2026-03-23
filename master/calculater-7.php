@@ -53,14 +53,7 @@
                     <p>Estimate one-time setup and monthly run costs to connect AI to your apps, data, and users – built
                         to scale safely.</p>
                 </div>
-            </section>
-
-
-
-    
-
-
-
+</section>
 </body>
 
 </html>

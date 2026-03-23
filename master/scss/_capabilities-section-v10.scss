@@ -1,0 +1,170 @@
+@use "_default" as *;
+// Color Variables Provided
+$darkYellow: #FFAD00;
+$white: #ffffff;
+$bgDarkBlue: #090C19;
+$themeMidNight: #05164d;
+$natural-grey: #4B5563;
+$whiteLight: #cecece;
+
+#capabilities-section {
+  background-color: $bgDarkBlue;
+  padding: 120px 0px;
+  color: $white;
+
+
+  & > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Left Sticky Sidebar
+  .left-part {
+    position: sticky;
+    top: 100px;
+    padding-bottom: 40px;
+    .engineering-design{
+      position: relative;
+
+      // &::after{
+      //   content: "";
+      //         position: absolute;
+      //         right: 0;
+      //         background: url(../images/index-v10/engineering-design.png);
+      //         width: 160px;
+      //         height: 111px;
+      //         bottom: 8px;
+      //         background-size: 15px;
+      // }
+    }
+
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      color: $white;
+
+      em {
+        font-style: normal;
+        color: $darkYellow;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: #FFFFFFB0;
+      margin-bottom: 60px;
+      max-width: 450px;
+    }
+
+    
+  }
+
+  // Right Cards
+  .right-part {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .card {
+
+      background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 34, 34, 0.2) 116.66%);
+
+      border: 1px solid rgba($white, 0.1);
+      border-radius: 24px;
+      padding: 39px 40px;
+      transition: background 0.3s ease;position: relative;
+      position: relative;
+
+       &::before {
+              content: "";
+              position: absolute;
+              right: 0;
+              background: url(../images/index-v10/card-lines-design.png);
+              width: 160px;
+              height: 111px;
+              bottom: 8px;
+              background-size: 15px;
+          
+          }
+
+     
+
+      figure {
+        margin: 0 0 24px 0;
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 16px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: $white;
+
+      }
+      p {
+        font-size: 16px;
+        color: #D1D5DC;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          font-size: 14px;
+          margin-bottom: 15px;
+          display: flex;
+          font-weight: 500;
+          position: relative;
+          align-items: center;
+          gap: 10px;
+          color:#D1D5DC;
+          padding-left: 25px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              background: url(../images/index-v10/white-check-round.svg);
+              width: 15px;
+              height: 15px;
+              top: 8px;
+              background-size: 15px;
+          
+          }
+        }
+      }
+    }
+    .card:nth-child(even){
+      background: linear-gradient(153.09deg, rgba(255, 255, 255, 0.172) 2.06%, rgba(255, 255, 255, 0.04) 116.66%);
+    }
+  }
+}

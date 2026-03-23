@@ -1,0 +1,1922 @@
+<?php require_once 'common/inc/config.inc.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders</title>
+    <meta name="description"
+        content="Want to hire PHP developers for your web development project? Hire PHP programmers / developers from us & build scalable & secure web apps. 17+ Yrs | 4200+ projects | Strict NDAs | dedicated PHP Programmers." />
+    <meta name="keywords"
+        content="Hire PHP developers, Hire PHP programmers, Hire PHP developers India, Hire PHP programmers India, Offshore PHP developers, Offshore PHP programmers, Offshore PHP developers India, Offshore PHP programmers India, Dedicated PHP developers, dedicated PHP Programmers" />
+    <meta property="og:title"
+        content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
+    <?php require_once './include/header-files.php'; ?>
+    <link rel="preload stylesheet" type="text/css" href="./css/index-v10.css" defer />
+
+    <link rel="preload stylesheet" type="text/css"
+        href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
+    <script>
+        var vcObj = {
+            "_version": "1763614476",
+            "tpl_url": "http://localhost/markup-dom/valuecoders/master",
+            "web_url": "http://localhost/markup-dom/valuecoders/master",
+            "admin_ajax": "https://www.valuecoders.com/staging/wp-admin/admin-ajax.php",
+            "page_tpl": "tpl-homev6.0.php",
+            "is_mobile": "false",
+            "_env": "staging",
+            "_v3_blog_post": "",
+            "_post_id": "19655",
+            "_cs_data": null,
+            "_blog_tag": ""
+        };
+    </script>
+
+    <script defer src="menu.js"></script>
+</head>
+
+<body>
+    <?php require_once './include/menu-v8.php'; ?>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="dis-flex">
+                <div class="left-box">
+                    <h1>Build Faster. Ship with Confidence. <span>Scale Without Hiring Delays.</span></h1>
+                    <p>We help engineering-led companies design, build, and scale software using dedicated development
+                        teams, product engineering pods, and staff augmentation services — onboarded in 2–4 weeks with
+                        full IP ownership and predictable delivery.</p>
+
+                    <div class="btn-circle button-v10">
+                        <!-- TEXT -->
+                        <a href="/contact">
+                            <span class="text">
+                                <span class="text-default">Get in Touch</span>
+                                <span class="text-hover">Get in Touch</span>
+                            </span>
+
+                            <!-- ARROW -->
+                            <span class="circle">
+                                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
+                                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="for-client-logo-box  dis-flex">
+                    <div class="logo-box logo1"></div>
+                    <div class="logo-box logo2"></div>
+                    <div class="logo-box logo3"></div>
+                    <div class="logo-box logo4"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="award-section-vten  ">
+        <div class="container">
+
+
+            <div class="award-image">
+                <div class="dis-flex">
+                    <div class="award-heading">
+                        <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
+                    </div>
+                    <div class="award-section">
+                        <picture>
+                            <source type="image/webp" srcset="images/index-v10/award.webp">
+                            <img loading="lazy" alt="valuecoders" src="images/index-v10/award.webp" width="1200"
+                                height="185">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new start -->
+
+    <!-- risk-friction start -->
+
+    <section class="delivery-section">
+        <!-- Left: copy -->
+        <div class="container">
+            <div class="inner-part">
+                <div class="delivery-section__left">
+                    <span class="delivery-section__eyebrow">The Delivery Problem</span>
+
+                    <h2 class="delivery-section__heading">
+                        Most teams can hire engineers.
+                        <span class="highlight">Few can ship software.</span>
+                    </h2>
+
+                    <p class="delivery-section__body">
+                        The gap between having engineers and shipping predictably is the problem
+                        every engineering leader faces. Roadmaps stall not because the team lacks
+                        capability, but because delivery requires coordination, governance, and
+                        consistent process — not just headcount.
+                    </p>
+                </div>
+
+                <!-- Right: stats grid -->
+                <div class="delivery-section__right">
+
+                    <!-- Card 1 -->
+                    <div class="stat-card">
+                        <div class="stat-card__number">700+</div>
+                        <div class="stat-card__label">In-House Engineers</div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="stat-card">
+                        <div class="stat-card__number">2,500+</div>
+                        <div class="stat-card__label">Projects Delivered</div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="stat-card">
+                        <div class="stat-card__number">20+</div>
+                        <div class="stat-card__label">Years in Operation</div>
+                    </div>
+
+                    <!-- Card 4: Rating -->
+                    <div class="stat-card">
+                        <div class="stat-card__platforms">
+                            <span class="stat-card__badge ">G</span>
+                            <span class="stat-card__badge ">Cl</span>
+                            <span class="stat-card__badge ">↓</span>
+                        </div>
+                        <div class="stat-card__number">4.5/5<span class="star">★</span></div>
+                        <div class="stat-card__label">19,000+ reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- delevery end -->
+
+    <!-- Build for team section start -->
+
+    <section class="help-section">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="section-head">
+                <h2>What We Help You Do</h2>
+                <p>
+                    We align our delivery structure to your current stage.
+                    Select a model below to see how we integrate with your roadmap.
+                </p>
+            </div>
+
+            <!-- Cards -->
+            <div class="help-grid">
+
+                <!-- Card 1 -->
+                <div class="help-card">
+                    <div class="icon">
+                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
+                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+
+                    </div>
+
+                    <h3>You need to accelerate your software roadmap</h3>
+                    <p>
+                        You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
+                    </p>
+                    <ul>
+                        <li>Scaling engineering capacity fast</li>
+                        <li>Accelerating feature releases</li>
+                        <li>Consistent sprint delivery</li>
+                    </ul>
+
+                    <div class="border-line"></div>
+
+                    <a href="#" class="learn-more">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Card 2 (default highlighted) -->
+                <div class="help-card ">
+                    <div class="icon">
+                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
+                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+
+                    </div>
+
+                    <h3>You need to modernise legacy systems</h3>
+
+                    <p class="desc">
+                        The platform that got you here is blocking the next phase.
+                        New features take too long.
+                    </p>
+
+                    <ul>
+                        <li>Application modernisation</li>
+                        <li>Workflow automation</li>
+                        <li>Incremental migration, zero downtime</li>
+                    </ul>
+
+                    <a href="#" class="learn-more">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="help-card">
+                    <div class="icon">
+                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
+                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+
+                    </div>
+
+                    <h3>You need to scale your India engineering centre</h3>
+
+                    <p class="desc">
+                        You're running or building a GCC. You need a partner who can staff, onboard.
+                    </p>
+
+                    <ul>
+                        <li>Dedicated engineering hubs</li>
+                        <li>Engineering capacity at scale</li>
+                        <li>Governance and quality assurance</li>
+                    </ul>
+
+                    <a href="#" class="learn-more">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Repeat row -->
+                <div class="help-card">
+                    <div class="icon">
+                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
+                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+
+                    </div>
+
+                    <h3>You need to accelerate your software roadmap</h3>
+
+                    <p class="desc">
+                        You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
+                    </p>
+
+                    <ul>
+                        <li>Scaling engineering capacity fast</li>
+                        <li>Accelerating feature releases</li>
+                        <li>Consistent sprint delivery</li>
+                    </ul>
+
+                    <a href="#" class="learn-more">
+                        Learn More →
+                    </a>
+                </div>
+
+                <div class="help-card">
+                    <div class="icon">
+                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
+                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+
+                    </div>
+
+                    <h3>You need to modernise legacy systems</h3>
+
+                    <p class="desc">
+                        The platform that got you here is blocking the next phase.
+                        New features take too long.
+                    </p>
+
+                    <ul>
+                        <li>Application modernisation</li>
+                        <li>Workflow automation</li>
+                        <li>Incremental migration, zero downtime</li>
+                    </ul>
+
+                    <a href="#" class="learn-more">
+                        Learn More →
+                    </a>
+                </div>
+
+                <div class="help-card">
+                    <div class="icon">
+                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
+                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+
+                    </div>
+
+                    <h3>You need to scale your India engineering centre</h3>
+
+                    <p class="desc">
+                        You're running or building a GCC. You need a partner who can staff, onboard.
+                    </p>
+
+                    <ul>
+                        <li>Dedicated engineering hubs</li>
+                        <li>Engineering capacity at scale</li>
+                        <li>Governance and quality assurance</li>
+                    </ul>
+
+
+                    <a href="#" class="learn-more">
+                        Learn More →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- help section end -->
+
+
+
+    <!-- ai section start -->
+
+
+    <section class="ai-production-loop">
+
+        <!-- LEFT FULL IMAGE -->
+        <div class="ai-left">
+            <img src="images/index-v10/ai-pro.webp" alt="AI">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="ai-right">
+
+            <div class="container">
+
+                <div class="ai-content">
+
+                    <h2>
+
+                        <i>
+                            AI that ships to production.
+                        </i>
+
+                        Not AI that demos well.
+                    </h2>
+
+                    <p class="sub-text">
+                        AI tooling is standard in every ValueCoders engagement.
+                    </p>
+
+                    <div class="ai-list">
+
+                        <div class="ai-item active">
+
+                            <div class="title">
+                                <h4> Generative AI Development</h4>
+                            </div>
+
+                            <div class="desc">
+                                <p> Production applications built on OpenAI,
+                                    Claude, Gemini, and open-source
+                                    foundation models — integrated into
+                                    real business workflows.</p>
+                            </div>
+
+                            <div class="progress"></div>
+
+                        </div>
+
+                        <div class="ai-item">
+
+                            <div class="title">
+                                <h4>AI Agent Development</h4>
+                            </div>
+
+                            <div class="desc">
+                               <p> Build autonomous AI agents that automate
+                                workflows and decision-making.</p>
+                            </div>
+
+                            <div class="progress"></div>
+
+                        </div>
+
+                        <div class="ai-item">
+
+                            <div class="title">
+                               <h4> Machine Learning Engineering</h4>
+                            </div>
+
+                            <div class="desc">
+                               <p> Design and deploy scalable ML systems
+                                tailored to business workflows.</p>
+                            </div>
+
+                            <div class="progress"></div>
+
+                        </div>
+
+                        <div class="ai-item">
+
+                            <div class="title">
+                                <h4>Data Engineering</h4>
+                            </div>
+
+                            <div class="desc">
+                               <p> Build reliable pipelines and scalable
+                                AI-ready infrastructure.</p>
+                            </div>
+
+                            <div class="progress"></div>
+
+                        </div>
+
+                        <div class="ai-item">
+
+                            <div class="title">
+                               <h4> AI Integration</h4>
+                            </div>
+
+                            <div class="desc">
+                                <p>Seamlessly integrate AI into existing
+                                enterprise systems.</p>
+                            </div>
+
+                            <div class="progress"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ai section end -->
+
+
+
+    <!-- new start -->
+     <section class="delivery-models">
+  <div class="container">
+    
+    <div class="sectiondivheader">
+      <h2 >Three models. One delivery standard.</h2>
+      <p >
+        Engagement structure follows your situation — not a fixed service catalogue. 
+        Choose the model that fits your team, timeline, and governance requirements.
+      </p>
+</div>
+
+    <div class="models-grid">
+      <article class="model-card">
+        <div class="card-top">
+          <div class="icon-box">
+              <img src="images/index-v10/grey-clock.svg" alt="">
+          
+             </div>
+          <span class="badge">CLIENT-LED</span>
+        </div>
+        <h3 >Team Extension</h3>
+        <p >Engineers integrate directly into your existing team and delivery process.</p>
+        <ul >
+          <li> Application modernisation</li>
+          <li> Workflow automation</li>
+          <li> Incremental migration, zero downtime</li>
+        </ul>
+        <div class="card-footer">
+        <p>  <strong>Best for:</strong> You interview & select. Scale up/down with 30 days notice.</p>
+        </div>
+      </article>
+
+      <article class="model-card highlighted">
+        <div class="card-top">
+          <div class="icon-box">
+              
+            <img src="images/index-v10/yellow-clock.svg"   alt="">
+            </div>
+          <span class="badge">VALUECODERS-LED</span>
+        </div>
+        <h3 >Delivery Pods</h3>
+        <p >A fully managed engineering pod — tech lead, engineers.</p>
+        <ul >
+          <li> Application modernisation</li>
+          <li> Workflow automation</li>
+          <li> Incremental migration, zero downtime</li>
+        </ul>
+        <div class="card-footer">
+         <p> <strong>Best for:</strong> Products needing speed, cross-team coordination</p>
+        </div>
+      </article>
+
+      <article class="model-card">
+        <div class="card-top">
+          <div class="icon-box">
+            <img src="images/index-v10/grey-clock.svg" alt="">
+        
+            <img src="" alt="">
+           </div>
+          <span class="badge">PERMANENT CAPACITY</span>
+        </div>
+        <h3 >Development Centers</h3>
+        <p >A fully managed engineering pod — tech lead, engineers.</p>
+        <ul >
+          <li> Application modernisation</li>
+          <li> Workflow automation</li>
+          <li> Incremental migration, zero downtime</li>
+        </ul>
+        <div class="card-footer">
+        <p>  <strong>Best for:</strong> Enterprises needing sustained large-scale capacity, cost optimization</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+    <!-- new end -->
+
+
+
+
+
+
+<!-- capblieties secton start -->
+
+
+<section id="capabilities-section">
+  <div>
+    <div class="left-part">
+      <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
+      <p>ValueCoders provides engineering teams across four capability areas — each operating inside the same sprint cadence, QA gates, and delivery framework.</p>
+       <div class="btn-circle button-v10">
+            
+        <a href="/contact">
+            <span class="text">
+                <span class="text-default">Get in Touch</span>
+                <span class="text-hover">Get in Touch</span>
+            </span>
+
+        
+            <span class="circle">
+                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
+                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+            </span>
+        </a>
+        </div>
+
+        <div class="engineering-design"></div>
+    </div>
+
+    <div class="right-part">
+      <div class="card">
+        <figure>
+          <img src="images/index-v10/engineering-card-1.webp" alt="AI & Data">
+        </figure>
+        <h3>AI & Data Engineering</h3>
+        <p>Production-ready AI systems and machine learning infrastructure — integrated into real business workflows, not proof-of-concept demos.</p>
+        <ul>
+          <li>Generative AI applications</li>
+          <li>AI agent development</li>
+          <li>Machine learning engineering</li>
+          <li>Data pipelines and analytics</li>
+        </ul>
+</div>
+
+      <div class="card">
+        <figure>
+          <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+        </figure>
+        <h3>Software Product Development</h3>
+        <p>Full lifecycle product engineering — from architecture decisions made with 3-year divtainability in mind, to production deployment.</p>
+        <ul>
+          <li>SaaS platforms</li>
+          <li>Enterprise applications</li>
+          <li>MVP development</li>
+          <li>Product engineering</li>
+        </ul>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+        </figure>
+        <h3>Cloud & DevOps Engineering</h3>
+        <p>Scalable infrastructure and platform reliability — built to scale with your product without a separate ops team to keep it alive.</p>
+        <ul>
+          <li>Cloud architecture</li>
+          <li>Kubernetes and container platformss</li>
+          <li>CI/CD automation</li>
+          <li>Observability engineering</li>
+        </ul>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+        </figure>
+        <h3>Enterprise Integration & Automation</h3>
+        <p>Systems integration and workflow automation that reduces manual work without creating new fragility. API-first architecture that connects without coupling.</p>
+        <ul>
+          <li>API development</li>
+          <li>Enterprise integrations</li>
+          <li>Workflow automation</li>
+          <li>Robotic process automation</li>
+        </ul>
+      </div>
+
+</div>
+  </div>
+</section>
+<!-- capblieties secton end-->
+
+
+
+<!-- success story start -->
+
+  <section class="stories-section">
+    <div class="container">
+      <div class="inner-part">
+ 
+        <!-- Top row -->
+        <div class="stories-section__top">
+          <div class="stories-section__heading-wrap">
+            <h2 class="stories-section__title">Success Stories</h2>
+            <p class="stories-section__subtitle">
+              Engagement structure follows your situation — not a fixed service catalogue. Choose the
+              model that fits your team, timeline, and governance requirements.
+            </p>
+          </div>
+ 
+          <div class="stories-section__btn-wrap">
+            <a href="#" class="stories-section__btn">
+              View All Stories
+              <span class="stories-section__btn-icon">&#8594;</span>
+            </a>
+          </div>
+        </div>
+ 
+        <!-- Cards grid -->
+        <div class="stories-section__grid">
+ 
+          <!-- Card 1: Featured (left, spans 2 rows) -->
+          <div class="story-card story-card--featured">
+            <div class="story-card__image-wrap">
+              <div class="placeholder-pm">&#128202;</div>
+            </div>
+            <div class="story-card__content">
+              <h3 class="story-card__name">Project Management</h3>
+              <p class="story-card__desc">
+                The client wanted to build a web portal where customers could purchase
+                motorcycles online and dealers could access and manage their agent accounts.
+              </p>
+              <a href="#" class="story-card__link">Learn More &#8594;</a>
+            </div>
+          </div>
+ 
+          <!-- Card 2: Best Travel Platform (small, right top) -->
+          <div class="story-card story-card--small">
+            <div class="story-card__image-wrap">
+              <div class="placeholder-travel">&#9992;</div>
+            </div>
+            <div class="story-card__content">
+              <h3 class="story-card__name">Best Travel Platform</h3>
+              <p class="story-card__desc">
+                The smart integrated platform is founded on the pillars…
+              </p>
+              <a href="#" class="story-card__link">Learn More &#8594;</a>
+            </div>
+          </div>
+ 
+          <!-- Card 3: eCommerce Platform (small, right bottom) -->
+          <div class="story-card story-card--small">
+            <div class="story-card__image-wrap">
+              <div class="placeholder-ecom">&#128722;</div>
+            </div>
+            <div class="story-card__content">
+              <h3 class="story-card__name">eCommerce Platform</h3>
+              <p class="story-card__desc">
+                The smart integrated platform is founded on the pillars…
+              </p>
+              <a href="#" class="story-card__link">Learn More &#8594;</a>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- success story end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- induristries section -->
+
+    <section class="industries-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-text">
+                    <h1>Industries We Cater to</h1>
+                    <p>Get what you are looking for to fulfill your software development and
+                        outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
+                    </p>
+                </div>
+                <div class="glider-nav">
+                    <button class="glider-prev" aria-label="Previous"><img src="icons/arrow-right.svg" alt=""></button>
+                    <button class="glider-next" aria-label="Next"><img src="icons/arrow-right.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div class="glider-contain">
+                <div class="glider">
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/health-care.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Healthcare</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <h4>Smarter Care, Better Outcomes</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/medias.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Media & Entertainment</h3>
+                                </div>
+                                <div class="hover-content">
+                                    <h4>Media & Entertainment</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/travel.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Travel & Tourism</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <h4>Travel & Tourism</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/health-care.png" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Healthcare</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <h4>Smarter Care, Better Outcomes</h4>
+                                    <p>Innovative software solutions to improve patient care.</p>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- induristries section  -->
+
+    <!-- flip section start -->
+    <section class="engagement-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="subtitle">Engagement Architect</p>
+                <h2>Engagement <span style="color: #ffad00;">Models</span>, Engineered for <span
+                        style="color: #ffad00;">Velocity</span>.</h2>
+                <p>We align our delivery structure to your current stage. Select a model below to see how we integrate
+                    with your roadmap.</p>
+            </div>
+            <div class="flip-card-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="card-face card-front">
+                            <div class="icon"></div>
+                            <h3>MVP Discovery</h3>
+                            <p>Prove feasibility and architecture in 4-8 weeks. Fixed scope: $15K–$40K. Perfect for
+                                pre-funding validation.</p>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <ul>
+                                <li>Founders &amp; Innovation Labs</li>
+                                <li>Deployment in 4-8 Weeks</li>
+                                <li>Managed Pod Delivery</li>
+                            </ul>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="card-face card-front">
+                            <div class="icon"></div>
+                            <h3>Product Pods</h3>
+                            <p>Cross-functional squads (Dev + QA + PM) that own delivery and ship measurable results.
+                            </p>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <ul>
+                                <li>Growth-Stage SaaS &amp; Startups</li>
+                                <li>Deployment in 2-4 Weeks</li>
+                                <li>Managed Pod Delivery</li>
+                            </ul>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="card-face card-front">
+                            <div class="icon"></div>
+                            <h3>Staff Augmentation</h3>
+                            <p>1–5 senior engineers in 2–3 weeks. You manage the work; we handle the talent.</p>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <ul>
+                                <li>Established Engineering Teams</li>
+                                <li>Deployment in 2-3 Weeks</li>
+                                <li>Direct Client Control</li>
+                            </ul>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="card-face card-front">
+                            <div class="icon"></div>
+                            <h3>Engineering Programs</h3>
+                            <p>Long-term partnerships for teams of 20-100+ with SLAs, governance, and BOT options.</p>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <ul>
+                                <li>Global Firms &amp; CTOs</li>
+                                <li>Deployment in 2-4 Weeks</li>
+                                <li>Managed Pod Delivery</li>
+                            </ul>
+
+                            <div class="card-inner-btn">
+                                <a href="Know More" class="btn-outline">KNOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- flip  section end -->
+
+    <!-- why valuecoder section  start-->
+
+    <section class="trust-section">
+        <div class="container">
+            <div class="main-layout">
+
+                <div class="content-side">
+                    <div class="trust-header">
+                        <p class="subtitle">WHY VALUECODERS</p>
+                        <h2>Why Engineering Leaders <br><span>Trust Us.</span></h2>
+                        <p>Real Accountability, Not Just Resumes. Speed only matters when delivery
+                            is reliable, measurable, and transparent.</p>
+                    </div>
+
+                    <ul>
+                        <li> Clear sprint commitments, tracked weekly</li>
+                        <li>ISO 27001 & SOC2 secure environments</li>
+                        <li>Proven product delivery experience</li>
+                        <li>Transparent velocity & quality reporting</li>
+                        <li>100% IP ownership & zero vendor lock-in</li>
+                        <li>Blockers identified and flagged in 24h</li>
+                    </ul>
+                </div>
+
+                <div class="stats-side">
+                    <div class="stats-card">
+                        <div class="badge"><img src="icons/checkmark-green.svg" alt=""> Proven at Scale</div>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <h2>97%</h2>
+                                <p>Retention</p>
+                            </div>
+                            <div class="stat">
+                                <h2>4.5k+</h2>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat">
+                                <h2>21y</h2>
+                                <p>Excellence</p>
+                            </div>
+                            <div class="stat">
+                                <h2>100+</h2>
+                                <p>Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="extension-card">
+                        <h3><span class="icon"><img src="icons/clock.svg" alt=""></span> Plug-and-Play Extension</h3>
+                        <ul>
+                            <li> img We join your existing Jira/Slack</li>
+                            <li>We participate in all team ceremonies</li>
+                            <li>We report on velocity trends weekly</li>
+                            <li>We own quality for every merge request</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- why valuecoder section  end-->
+
+
+
+    <!-- Engineering Stacks start -->
+    <section class="stack-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="content-part">
+                    <h2>Engineering <strong>Expertise.</strong></h2>
+                    <p>Delivered through staff augmentation, product pods, or long-term engineering programs.</p>
+                </div>
+
+                <div class="glider-arrows">
+                    <button class="stack-prev starc-arrow" aria-label="Previous" aria-disabled="true"><img
+                            src="icons/arrow-right.svg" alt=""></button>
+                    <button class="stack-next starc-arrow" aria-label="Next" aria-disabled="false"><img
+                            src="icons/arrow-right.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="glider-contain">
+                <div class="stack-grid glider">
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="percentage">
+                                    <p>98%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Engineering Stacks end -->
+
+    <!-- FAQ section start -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <p>FAQ</p>
+                <h2>Common Questions</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h4> Can you help validate an MVP before we commit long-term?</h4>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We offer fixed-scope MVP projects (2–6 weeks, $15K–$40K) for pre-funding teams. These
+                            prove technical feasibility without long-term commitment.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                        </ul>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cupiditate.</li>
+                        </ol>
+                        <a href="#">Lorem, ipsum.</a>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How quickly can we ramp up a dedicated team?</h4>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically onboard production-ready engineering pods in under 14 days. Our bench is
+                            pre-vetted and ready for immediate integration.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4> What if we're not happy with the team's performance?</h4>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide a 2-week risk-free trial period. If the velocity or cultural fit doesn't meet your
+                            expectations, we can swap resources or terminate.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- faq section end -->
+
+
+
+    <!-- feedback section start -->
+
+
+    <section class="testimonial-section-v9">
+        <div class="container">
+            <div class="top-part">
+                <span>Client Feedback</span>
+                <h2>What Engineering Leaders Say</h2>
+            </div>
+
+            <div class="glider-contain">
+                <div class="testimonial-cards glider">
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="images/testimonial-img.png" alt="James Kelly">
+                            <div class="play-icon">
+
+                                <span class="play-btn"> Play </span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <p>We have worked with ValueCoders for more than a year, and their skilled team has allowed
+                                us to scale up during certain projects.</p>
+
+                            <div class="author-info">
+                                <img src="icons/airtel-logo.svg" alt="Company Logo">
+
+                                <div class="details">
+                                    <span>James Kelly</span>
+                                    <p>Co-founder, Miracle Choice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="images/testimonial-img.png" alt="James Kelly">
+                            <button class="play-btn"> Play </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <p>We have worked with ValueCoders for more than a year, and their skilled team has allowed
+                                us to scale up during certain projects.</p>
+
+                            <div class="author-info">
+                                <img src="icons/airtel-logo.svg" alt="Company Logo">
+                                <div class="details">
+                                    <span>James Kelly</span>
+                                    <p>Co-founder, Miracle Choice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="card-image">
+                            <img src="images/testimonial-img.png" alt="James Kelly">
+                            <button class="play-btn"> Play </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">
+                                <ul>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                    <li><img src="icons/rating-star.svg" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <p>We have worked with ValueCoders for more than a year, and their skilled team has allowed
+                                us to scale up during certain projects.</p>
+
+                            <div class="author-info">
+                                <img src="icons/airtel-logo.svg" alt="Company Logo">
+                                <div class="details">
+                                    <span>James Kelly</span>
+                                    <p>Co-founder, Miracle Choice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="dots" class="glider-dots"></div>
+            </div>
+        </div>
+    </section>
+    <!-- feedback section end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="js/js-v10.js"></script>
+
+    <script>
+
+
+
+
+
+
+
+        // scroll functoin
+        document.addEventListener('DOMContentLoaded', () => {
+            const listItems = document.querySelectorAll('.content-side ul li');
+            const serviceCards = document.querySelectorAll('.service-card');
+            const cardsContainer = document.querySelector('.cards-side');
+
+            // --- 1. CLICK FUNCTIONALITY ---
+            listItems.forEach((li, index) => {
+                li.addEventListener('click', () => {
+                    // Scroll the specific card into view
+                    serviceCards[index].scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+
+                    // Update active state manually (optional, as observer will also catch it)
+                    updateActiveState(index);
+                });
+            });
+
+            // --- 2. SCROLL / INTERSECTION OBSERVER ---
+            const observerOptions = {
+                root: null, // relative to viewport
+                rootMargin: '-10% 0px -70% 0px', // Adjusts the "trigger" zone
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Find index of the card currently in view
+                        const index = Array.from(serviceCards).indexOf(entry.target);
+                        updateActiveState(index);
+                    }
+                });
+            }, observerOptions);
+
+            serviceCards.forEach(card => observer.observe(card));
+
+            // Helper function to sync classes
+            function updateActiveState(index) {
+                if (index === -1) return;
+
+                // Reset all
+                listItems.forEach(li => li.classList.remove('active'));
+                serviceCards.forEach(card => card.classList.remove('active-card'));
+
+                // Set active
+                listItems[index].classList.add('active');
+                serviceCards[index].classList.add('active-card');
+            }
+        });
+
+
+
+
+
+
+
+
+
+        // industruies start```````````````````````````````````````````````````````````````````````
+
+        window.addEventListener('load', function () {
+            new Glider(document.querySelector('.glider'), {
+                slidesToShow: 1.2, // Mobile
+                slidesToScroll: 1,
+                draggable: true,
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                },
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2.4,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3.5, // Matches the "peek" effect in your image
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+
+
+            // expertise slider ````````````````````````````````````````````````````````````
+            new Glider(document.querySelector('.stack-grid.glider'), {
+                // Mobile first defaults
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                draggable: true,
+                // dots: '#dots',
+                arrows: {
+                    prev: '.stack-prev',
+                    next: '.stack-next'
+                },
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+
+            // feedback section```````````````````````````````````````````````````````
+
+            const glider = new Glider(document.querySelector('.testimonial-cards.glider'), {
+                slidesToShow: 1,
+                draggable: true,
+                dots: '#dots',
+                scrollLock: true,
+                centerMode: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            duration: 0.5
+                        }
+                    }
+                ]
+            });
+
+            const avatars = [
+                'images/feedback-slid-icon.png',
+                'images/feedback-slid-icon.png',
+                'images/feedback-slid-icon.png',
+                'images/feedback-slid-icon.png',
+
+
+            ];
+
+            const dots = document.querySelectorAll('.glider-dot');
+            dots.forEach((dot, index) => {
+                if (avatars[index]) {
+                    dot.style.backgroundImage = `url(${avatars[index]})`;
+                    dot.innerText = ''; // Clear the default dot text
+                }
+            });
+
+
+
+
+
+        });
+
+        // industruies end
+
+        // feedback start
+        // Use a self-invoking function or window.onload to ensure the library is ready
+        window.addEventListener('load', function () {
+            const sliderElement = document.querySelector('.v-testimonial-glider');
+
+            if (sliderElement && typeof Glider === 'function') {
+                new Glider(sliderElement, {
+                    slidesToShow: 1.05, // Peek on mobile
+                    slidesToScroll: 1,
+                    draggable: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 1.2, // Professional peek on desktop as per image
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+                console.log("Slider initialized successfully.");
+            } else {
+                console.error("Glider.js not found or slider element missing.");
+            }
+        });
+        // feedback end
+
+        // <!-- new sections js start-->
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach((item) => {
+                const question = item.querySelector(".faq-question");
+
+                question.addEventListener("click", () => {
+                    // 1. Check if the clicked item is already active
+                    const isActive = item.classList.contains("active");
+
+                    // 2. Remove 'active' class from ALL items
+                    faqItems.forEach((el) => el.classList.remove("active"));
+
+                    // 3. If the clicked item wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- new sections js end -->
+
+
+
+
+    <section class="contact-us-section padding-t-120 padding-b-120">
+        <?php require_once 'include/contact-form.php'; ?>
+    </section>
+    <?php require_once 'include/footer.php'; ?>
+
+
+
+    <script>
+        // Function to initialize tabs
+        function initializeTabs(sectionSelector) {
+            const sections = document.querySelectorAll(sectionSelector);
+
+            sections.forEach((section) => {
+                const tabs = section.querySelectorAll(".tab");
+                const contents = section.querySelectorAll(".content");
+                const images = section.querySelectorAll(".tab-image");
+
+                tabs.forEach((tab) => {
+                    tab.addEventListener("click", () => {
+                        const target = tab.getAttribute("data-target");
+
+                        // Reset active state for tabs, content, and images
+                        tabs.forEach((t) => t.classList.remove("active"));
+                        contents.forEach((content) => content.classList.remove("active"));
+                        images.forEach((image) => image.classList.remove("active"));
+
+                        // Set active state for clicked tab, content, and image
+                        tab.classList.add("active");
+                        section.querySelector(`#${target}`).classList.add("active");
+                        section.querySelector(`#img-${target}`).classList.add("active");
+                    });
+                });
+            });
+        }
+
+        // Initialize all tab sections
+        document.addEventListener("DOMContentLoaded", () => {
+            initializeTabs(".tabs-section");
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const section = document.querySelector('.service-scroller');
+            if (section) {
+                window.addEventListener('scroll', () => {
+                    const rect = section.getBoundingClientRect();
+                    const inViewport = rect.top >= 0 && rect.bottom <= window.innerHeight;
+                });
+            }
+
+        });
+
+
+
+
+        if (document.getElementById("solution-slide")) {
+            window.addEventListener("load", () => {
+                const gliderElement = document.querySelector(".solution-slider .glider");
+                const progressBar = document.querySelector(".solution-progress-bar");
+
+                if (gliderElement && progressBar) {
+                    let glider; // Declare glider variable
+
+                    glider = new Glider(gliderElement, {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        draggable: true,
+                        duration: 2.25,
+                        dots: ".dots",
+                        arrows: {
+                            prev: ".tail-prev",
+                            next: ".tail-next",
+                        },
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 5,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                        ],
+                    });
+
+                    // Update progress bar
+                    function updateProgress() {
+                        const currentSlide = glider.slide;
+                        const totalSlides = glider.slides.length;
+                        const slidesToShow = glider.opt.slidesToShow;
+                        const maxSlides = totalSlides - slidesToShow;
+                        const progress = (currentSlide / maxSlides) * 100;
+                        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+                    }
+
+                    // Initialize progress bar
+                    updateProgress();
+
+                    // Update progress bar when slides change
+                    gliderElement.addEventListener("glider-slide-visible", updateProgress);
+
+                    // Add smooth transition when slides move
+                    gliderElement.addEventListener("glider-refresh", () => {
+                        gliderElement.style.transition = "transform 0.5s ease";
+                    });
+
+                    // Handle arrow clicks
+                    const prevArrow = document.querySelector(".tail-prev");
+                    const nextArrow = document.querySelector(".tail-next");
+
+                    prevArrow.addEventListener("click", () => {
+                        setTimeout(updateProgress, 50); // Small delay to ensure glider state is updated
+                    });
+
+                    nextArrow.addEventListener("click", () => {
+                        setTimeout(updateProgress, 50); // Small delay to ensure glider state is updated
+                    });
+
+                    // Handle window resize
+                    let resizeTimer;
+                    window.addEventListener("resize", () => {
+                        clearTimeout(resizeTimer);
+                        resizeTimer = setTimeout(() => {
+                            glider.refresh(true);
+                            updateProgress();
+                        }, 250);
+                    });
+                }
+            });
+        }
+
+
+
+        if (document.getElementById("industries-glider")) {
+            window.addEventListener("load", function () {
+                var gliderElement = document.querySelector(".industries-slider .glider");
+                if (gliderElement) {
+                    new Glider(gliderElement, {
+                        slidesToShow: 6, // Default for large screens
+                        slidesToScroll: 1,
+                        draggable: true,
+                        scrollLock: true,
+                        duration: 2.25,
+                        dots: ".industries-slider .dots",
+                        arrows: { prev: "#industries-glider .test-prev", next: "#industries-glider .test-next" },
+                        responsive: [
+                            { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: '100%', duration: 2.25 } },
+                            { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: '100%', duration: 2.25 } },
+                            { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1, itemWidth: '50%', duration: 2.25 } },
+                            { breakpoint: 1400, settings: { slidesToShow: 6, slidesToScroll: 1, itemWidth: '16.66%', duration: 2.25 } }
+                        ]
+                    });
+                }
+            });
+        }
+
+
+
+
+
+        if (document.getElementById("client-slider")) {
+            window.addEventListener("load", () => {
+                const gliderElement = document.querySelector(".client-slider .glider");
+                const progressBar = document.querySelector(".client-progress-bar");
+
+                if (gliderElement && progressBar) {
+                    let glider; // Declare glider variable
+
+                    glider = new Glider(gliderElement, {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        draggable: true,
+                        duration: 2.25,
+                        dots: ".dots",
+                        arrows: {
+                            prev: ".cl-prev",
+                            next: ".cl-next",
+                        },
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                            {
+                                breakpoint: 979,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                            {
+                                breakpoint: 767,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                        ],
+                    });
+
+                    // Update progress bar
+                    function updateProgress() {
+                        const currentSlide = glider.slide;
+                        const totalSlides = glider.slides.length;
+                        const slidesToShow = glider.opt.slidesToShow;
+                        const maxSlides = totalSlides - slidesToShow;
+                        const progress = (currentSlide / maxSlides) * 100;
+                        progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+                    }
+
+                    // Initialize progress bar
+                    updateProgress();
+
+                    // Update progress bar when slides change
+                    gliderElement.addEventListener("glider-slide-visible", updateProgress);
+
+                    // Add smooth transition when slides move
+                    gliderElement.addEventListener("glider-refresh", () => {
+                        gliderElement.style.transition = "transform 0.5s ease";
+                    });
+
+                    // Handle arrow clicks
+                    const prevArrow = document.querySelector(".cl-prev");
+                    const nextArrow = document.querySelector(".cl-next");
+
+                    prevArrow.addEventListener("click", () => {
+                        setTimeout(updateProgress, 50); // Small delay to ensure glider state is updated
+                    });
+
+                    nextArrow.addEventListener("click", () => {
+                        setTimeout(updateProgress, 50); // Small delay to ensure glider state is updated
+                    });
+
+                    // Handle window resize
+                    let resizeTimer;
+                    window.addEventListener("resize", () => {
+                        clearTimeout(resizeTimer);
+                        resizeTimer = setTimeout(() => {
+                            glider.refresh(true);
+                            updateProgress();
+                        }, 250);
+                    });
+                }
+            });
+        }
+
+
+
+
+
+        if (document.getElementById("success-glider")) {
+            window.addEventListener("load", function () {
+                var gliderElement = document.querySelector(".success-slider .glider");
+                if (gliderElement) {
+                    new Glider(gliderElement, {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        draggable: true,
+                        scrollLock: true,
+                        duration: 2.25,
+                        dots: ".success-slider .dots",
+                        arrows: {
+                            prev: "#success-glider .test-prev",
+                            next: "#success-glider .test-next"
+                        },
+                        responsive: [
+                            // Mobile first: 320px and below
+                            {
+                                breakpoint: 320,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    duration: 2.25,
+                                },
+                            },
+                            // Tablets: 767px and below
+                            {
+                                breakpoint: 767,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    duration: 2.25,
+                                },
+                            },
+                            // Laptops: 1024px and below
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    duration: 2.25,
+                                },
+                            },
+                            // Large screens: 1400px and below
+                            {
+                                breakpoint: 1400,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    duration: 2.25,
+                                },
+                            },
+                        ],
+                    });
+                }
+            });
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

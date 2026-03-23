@@ -45,9 +45,9 @@
     </script>
 </head>
 
-<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">    
-    <?php require_once '../include/menu-v8.php'; ?>
-
+ <body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">    
+    
+   <?php require_once '../include/menu-v8.php'; ?>
 
     <section class="cost-banner">
         <div class="container">
@@ -63,9 +63,7 @@
     </div>
 
     <script src="js/cost-of-hiring-delay-calculator.js" ></script>
-
-   
     
-</body>
+ </body>
 
 </html>

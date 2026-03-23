@@ -22,7 +22,7 @@
 
         <!-- Logo -->
         <a href="/" class="logo-size">
-          <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/logo-valucoders-light.svg"
+          <img src="images/index-v10/logo-valucoders.webp"
             alt="ValueCoders Logo" class="site-logo-img">
         </a>
 
@@ -33,12 +33,31 @@
         </ul>
 
         <!-- CTA (Mobile Hidden) -->
-        <div class="get-connect">
+
+        <!-- <div class="get-connect">
           <a href="/contact"
             class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
             Get a Free Quote
           </a>
+        </div> -->
+
+        <div class="btn-circle get-connect">
+          <!-- TEXT -->
+          <a href="/contact">
+            <span class="text">
+              <span class="text-default">Get in Touch</span>
+              <span class="text-hover">Get in Touch</span>
+            </span>
+
+            <!-- ARROW -->
+            <span class="circle">
+              <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
+              <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+            </span>
+          </a>
         </div>
+
+
       </div>
     </div>
 

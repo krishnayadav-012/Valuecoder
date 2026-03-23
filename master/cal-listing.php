@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +9,9 @@
   <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
   <link rel="preload stylesheet" type="text/css" href="assets/form-county.css" defer />
   <link rel="preload stylesheet" type="text/css" href="css/contact-v10.css" defer />
+
   <!-- SEO Structured Data -->
+
   <script>
     var vcObj = {
       "_version": "1763614476",
@@ -26,20 +27,27 @@
       "_blog_tag": ""
     };
   </script>
+
   <script defer src="menu.js"></script>
   <script defer src="js/intlTelInput-17.0.min.js"></script>
   <script defer src="js/form-validation-v10.js"></script>
+  
 </head>
 
 <body class="pb-20">
+
   <?php require_once './include/menu-v8.php'; ?>
 
   <section class="hero-strip">
+
     <div class="container">
       
       <h1>Business & IT Calculators</h1>
+
       <p>Smart tools to estimate cost, ROI & more. Make data-driven decisions for your next project.</p>
+
     </div>
+
   </section>
 
   <main class="container">
@@ -275,12 +283,17 @@
   </main>
 
   <section>
+    
     <div class="container">
+
       <p>© 2026 ValueCoders. All rights reserved.</p>
+
     </div>
+
 </section>
 
   <script type="module" src="./js/cal-listing.js"></script>
+
 </body>
 
 </html>

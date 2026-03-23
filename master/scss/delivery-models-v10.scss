@@ -1,0 +1,205 @@
+@use "_default" as *;
+
+// Variables
+$color-dark: #000b33;
+$color-bg: #f5f7f9;
+$color-text: #4a5568;
+$color-heading: #001246;
+$color-accent: #f97316;
+$transition: all 0.3s ease;
+
+.delivery-models {
+  background-color: $color-bg;
+  padding: 120px 0px;
+ 
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+
+  h3 {
+    font-size: clamp(2rem, 5vw, 46px);
+    color: $darkblack;
+    font-weight: 700;
+    margin-bottom: 15px;
+    
+  }
+
+  p {
+    font-size: 18px;
+    color: #364153;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.model-card {
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+box-shadow: 0px 4px 14px 3px #0000000F;
+  transition: $transition;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid var(--gray-200, #E5E7EB);
+
+  &::before{
+    position: absolute;
+    content: "";
+    background: url(../images/index-v10/modal-card-sty.png);
+    top: 0;
+    right: -1%;
+    z-index: -1;
+    width: 80%;
+    height: 40%;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .icon-box {
+    width: 44px;
+    height: 44px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+  }
+
+  .badge {
+    background: #FFAD001A;
+    color: #CC8B00;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $darkblack;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $natural-grey;
+    
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    flex-grow: 1; 
+
+    li {
+      font-size: 0.9rem;
+      color: #364153;
+      margin-bottom: 15px;
+      padding-left: 26px;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: url(../images/index-v10/grey-check.svg);
+        width: 15px;
+        height: 15px;
+        top: 8px;
+        background-size: 15px;
+        
+      }
+    }
+  }
+
+  .card-footer {
+    border-top: 1px solid #f1f5f9;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #364153;
+    font-weight: 500;
+
+    strong {
+      color: $color-heading;
+      font-weight: 700;
+    }
+  }
+
+  // Highlighted Variant (Dark)
+  &.highlighted {
+    background: $bgVoilet;
+    color: #fff;
+
+    .icon-box {
+      background:#FFFFFF1A;
+    //   border-color: rgba(255,255,255,0.1);
+      border: 1px solid #E5E7EB33;
+    }
+
+    .badge {
+      background: #FFAD0026;
+      color: #CC8B00;
+    }
+
+    h3 { color: #fff; }
+    p{color: #D1D5DC;} ul li {color: #D1D5DC;} .card-footer p{ color: #99A1AF; }
+    ul {
+        li{  
+             &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: url(../images/index-v10/white-check-round.svg);
+        width: 15px;
+        height: 15px;
+        top: 8px;
+        background-size: 15px;
+        
+      }
+        }
+    }
+    .card-footer p{ 
+      border-top-color: rgba(255,255,255,0.1); 
+      strong { color: #fff; }
+    }
+  }
+}
+
+
+// Mobile Tweaks
+@media (max-width: 480px) {
+  .model-card {
+    padding: 30px 20px;
+  }
+}

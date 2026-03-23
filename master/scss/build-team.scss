@@ -223,19 +223,19 @@ $text-muted: #555;
 
 }
 
-.card .card-content {
+.build-team .card .card-content {
     overflow: hidden;
 }
 
-.card:hover .card-icon {
+.build-team .card:hover .card-icon {
     display: none;
 }
 
-.card:hover .card-footer {
+.build-team .card:hover .card-footer {
     display: none;
 }
 
-.card:hover .card-content>p {
+.build-team .card:hover .card-content>p {
     display: none;
 }
 
