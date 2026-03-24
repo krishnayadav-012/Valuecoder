@@ -1,0 +1,276 @@
+
+@use "_default" as *;
+
+
+.delivery-discipline {
+
+    background: #020b1f;
+    padding: 80px 0;
+
+    .delivery-grid {
+
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+
+    /* LEFT */
+
+    .delivery-left {
+
+        background: linear-gradient(
+            180deg,
+            #001f4a,
+            #00102b
+        );
+
+        border-radius: 24px;
+        padding: 40px;
+        position: relative;
+        z-index: 11;
+        overflow: hidden;
+
+        h2 {
+            font-size: 46px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #FFFFFFB0;
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        .left-image {
+
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+
+    /* RIGHT */
+
+    .delivery-right {
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+    }
+
+
+
+    /* CARD */
+
+   .info-card {
+
+    position: relative;
+    padding: 30px;
+    border-radius: 18px;
+    background: #161722A3;
+    overflow: hidden;
+    transition: 0.35s ease;
+    border: 1px solid transparent;
+    span{
+      font-size: 14px ;
+      font-weight: 500;
+      color:#FFAD00;
+      margin-bottom: 5px;
+    }
+    
+    h4{
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 500;
+      color: #D1D5DC;
+    }
+
+    /* BIG NUMBER */
+
+    .card-number {
+
+        position: absolute;
+        right: 20px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        font-size: 80px;
+        font-weight: 700;
+
+        color: rgba(255,255,255,0.05);
+
+        transition: 0.3s;
+
+    }
+
+
+    /* CIRCLE PROGRESS */
+
+    .circle-progress {
+
+        position: absolute;
+        left: 24px;
+        top: 50%;
+
+        transform: translateY(-50%) scale(0.7);
+
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+
+        /* Yellow Ring Look */
+
+        background:
+            conic-gradient(
+                #ffb400 75%,
+                #1c2a47 0
+            );
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+
+        transition: 0.35s ease;
+
+        span {
+
+            width: 80px;
+            height: 80px;
+
+            background: #0a142b;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #ffb400;
+            font-size: 12px;
+            font-weight: 600;
+
+        }
+
+    }
+
+
+    /* ACTIVE STYLE */
+
+    &:hover,
+    &.active {
+
+        border: 1px solid #ffb400;
+
+        box-shadow:
+            0 0 0 1px #ffb400,
+            0 0 20px rgba(255,180,0,0.2);
+
+    }
+
+
+    /* HIDE NUMBER */
+
+    &:hover .card-number,
+    &.active .card-number {
+
+        opacity: 0;
+
+        transform:
+            translateY(-50%)
+            scale(0.8);
+
+    }
+
+
+    /* SHOW CIRCLE */
+
+    &:hover .circle-progress,
+    &.active .circle-progress {
+
+        opacity: 1;
+
+        transform:
+            translateY(-50%)
+            scale(1);
+
+    }
+    &:hover{
+      padding-left: 150px;
+    }
+
+}
+
+}
+
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 2rem;
+}
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: #161722e6;
+  width: 80px;
+  height: 80px;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --progress-bar-width: 150px;
+    --progress-bar-height: 150px;
+    --font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --progress-bar-width: 120px;
+    --progress-bar-height: 120px;
+    --font-size: 1rem;
+  }
+}

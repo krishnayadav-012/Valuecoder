@@ -7,11 +7,12 @@
 @use "delivery-models-v10";
 @use "capabilities-section-v10";
 @use "success-stories-v10";
+@use "Insights-v10";
+@use "faqs-section-v10";
+@use "delivery-discipline-v10";
 
 @use "risk-friction";
 @use "build-team";
-@use "engagement";
-@use "trust-section";
 @use "engineering-stacks";
 @use "faqs-section";
 @use "industries-new";
@@ -31,6 +32,10 @@
     margin-bottom: 70px;
    
   
+}
+.btn-circle.button-v10.second a{
+    background: transparent !important;
+    border: 1px solid #99A1AF;
 }
 
 .btn-circle.button-v10 a{
@@ -538,8 +543,9 @@
     align-items: center;
     width: 100%;
     text-align: center;
-    color: $darkYellow;
+    color: #05164D;
     padding: 9px 62px;
+    border: 1px solid #6A7282;
     border-radius: 50px;
     text-decoration: none;
     justify-content: center;
@@ -552,18 +558,18 @@
     z-index: 9;
     overflow: hidden;
     transition: 0.4s;
-    border: 1px solid $darkYellow;
+    // border: 1px solid $darkYellow;
     flex-direction: row-reverse;
 
     &::before {
-        background: url(../icons/btn-yellow-arrow.svg);
+        background: url(../images/index-v10/view-all.svg);
         content: "";
         display: inline-block;
         width: 19px;
-        height: 19px;
-        
-        background-size: 19px !important;
-        vertical-align: middle;
+    height: 19px;
+    background-size: 19px !important;
+    vertical-align: middle;
+   
     }
 
 
@@ -589,6 +595,7 @@
     &:hover {
         color: $darkYellow;
         z-index: 10;
+        
 
     }
 
@@ -600,6 +607,13 @@
         transition: 0.4s;
         height: 100%;
         border-radius: 0;
+    }
+    &:hover::before{
+        background: url(../images/index-v10/view-all-yellow.svg);
+        
+    width: 19px;
+    height: 19px;
+
     }
 
     i {

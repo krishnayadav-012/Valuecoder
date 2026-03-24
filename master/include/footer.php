@@ -1,34 +1,34 @@
 <script type="text/javascript">
-  function changerate(starno){
-      var starthover = document.getElementById("starthover");
-      starthover.classList.remove("one");
-      starthover.classList.remove("two");
-      starthover.classList.remove("three");
-      starthover.classList.remove("four");
-      starthover.classList.remove("five");
-      starthover.classList.add(starno);
+  function changerate(starno) {
+    var starthover = document.getElementById("starthover");
+    starthover.classList.remove("one");
+    starthover.classList.remove("two");
+    starthover.classList.remove("three");
+    starthover.classList.remove("four");
+    starthover.classList.remove("five");
+    starthover.classList.add(starno);
   }
-  function ratenow(){
-      var x = document.getElementById("star");
-      var y = document.getElementById("rated");
-  
-      if (x.style.display === "block") {
+  function ratenow() {
+    var x = document.getElementById("star");
+    var y = document.getElementById("rated");
+
+    if (x.style.display === "block") {
       x.style.display = "none";
       y.style.display = "block";
       document.getElementById('ratebtn').innerHTML = 'Rate Us';
-      } else {
+    } else {
       document.getElementById('ratebtn').innerHTML = 'Click to rate';
-  
+
       x.style.display = "block";
       y.style.display = "none";
-      }
+    }
   }
   let stars = [] //array to hold stars
   function star(event) {
     let icons = document.querySelectorAll('.star') // grab all icons
     let idx = Array.from(icons).indexOf(event.target) // get index of selected icon
     if (stars.includes(event.target.id)) { // if selected icon is in array of stars
-      stars.splice(idx, stars.length ) // remove that icon and all following icons fro array
+      stars.splice(idx, stars.length) // remove that icon and all following icons fro array
       for (let i = idx; i <= icons.length - 1; i++) { // loop thru all icons and set class and color
         icons[i].className = "fa fa-star-o star";
         icons[i].style.color = "black";
@@ -42,24 +42,24 @@
       }
     }
     var total_points = stars.length.toString();
-     var user_ip = '2a01:4f8:1c1c:aaef::1';
-     var rating_page_url = "https://www.valuecoders.com/";
-         
-  var data = "total_points=" + total_points + "&user_ip=" + user_ip + "&rating_page_url=" + rating_page_url;
-     var xhttp = new XMLHttpRequest();
-     
-     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-         resobj = JSON.parse(this.responseText);
-          document.getElementById("rate_msg").innerHTML = resobj.data;
-         }
-       };
-       
-     xhttp.open("POST", "https://www.valuecoders.com/wp-admin/admin-ajax.php?action=rateus", true);
-     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  
-     xhttp.send(data);
-   // document.getElementById("demo").innerHTML = stars.length.toString(); // set number of stars as length of array of stars
+    var user_ip = '2a01:4f8:1c1c:aaef::1';
+    var rating_page_url = "https://www.valuecoders.com/";
+
+    var data = "total_points=" + total_points + "&user_ip=" + user_ip + "&rating_page_url=" + rating_page_url;
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        resobj = JSON.parse(this.responseText);
+        document.getElementById("rate_msg").innerHTML = resobj.data;
+      }
+    };
+
+    xhttp.open("POST", "https://www.valuecoders.com/wp-admin/admin-ajax.php?action=rateus", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    xhttp.send(data);
+    // document.getElementById("demo").innerHTML = stars.length.toString(); // set number of stars as length of array of stars
   }
 </script>
 <div class="popup-section">
@@ -67,14 +67,17 @@
     <div class="popWrap">
       <div class="popup-content">
         <span class="closeicon" onclick="closeIntPopUp('intentPopup', false);">
-        <img loading="lazy" src="https://www.valuecoders.com/blog/wp-content/themes/valuecoders/images/cross-image.svg" alt="Valuecoders" width="11" height="11"></span>
+          <img loading="lazy"
+            src="https://www.valuecoders.com/blog/wp-content/themes/valuecoders/images/cross-image.svg"
+            alt="Valuecoders" width="11" height="11"></span>
         <h2>Stay With Us</h2>
         <h3>Are you looking for the perfect
           partner for your next software project?
         </h3>
         <p>Let's discuss how we can bring your vision to life.</p>
         <div class="ctasec">
-          <a href="https://www.valuecoders.com/contact" class="book-btn" data-wpel-link="internal" target="_blank" rel="follow">Book a Free Consultation</a>
+          <a href="https://www.valuecoders.com/contact" class="book-btn" data-wpel-link="internal" target="_blank"
+            rel="follow">Book a Free Consultation</a>
         </div>
       </div>
     </div>
@@ -83,96 +86,180 @@
 <footer class="footer">
   <div class="container">
     <div class="dis-flex footer-top">
-      <div class="count-sec">
-        <div class="count-col">
-          <h5>24,859,684+</h5>
-          <p>LEADS DRIVEN FOR CLIENTS</p>
+      <div class="cards">
+        <div class="card">
+          <div class="normal">
+            <div class="top-part-inner">
+              <div class="img-part">
+              <img src="images/index-v10/us-smal.png" alt="">
+            </div>
+            <div class="country">
+              <h4>New York, USA</h4>
+            </div>
+            </div>
+            <div class="address">
+              <p>5900 Balcones Drive, STE 100, Austin , TX 78731</p>
+            </div>
+          </div>
+          <div class="hover">
+            <div class="img-part">
+              <img src="images/index-v10/us-big.png" alt="">
+            </div>
+            <div class="text-part">
+              <h4>New York, USA</h4>
+                <a href="tel:+1 628 600 5055">+1 628 600 5055</a>             
+            </div>
+          </div>
         </div>
-        <div class="count-col">
-          <h5>$6,021,182,299+</h5>
-          <p>REVENUE DRIVEN FOR CLIENTS</p>
+
+        <div class="card">
+          <div class="normal">
+            <div class="top-part-inner">
+              <div class="img-part">
+              <img src="images/index-v10/l-small.png" alt="">
+            </div>
+            <div class="country">
+              <h4>London, UK</h4>
+            </div>
+            </div>
+            <div class="address">
+              <p>167-169 Great Portland Street, 5th Floor, London W1W 5PF</p>
+            </div>
+          </div>
+          <div class="hover">
+            <div class="img-part">
+              <img src="images/index-v10/l-big.png" alt="">
+            </div>
+            <div class="text-part">
+              <h4>London, UK</h4>
+                <a href="tel:+44 20 3239 2299">+44 20 3239 2299</a>
+            </div>
+          </div>
         </div>
-        <div class="count-col">
-          <h5>3,212,407</h5>
-          <p>HOURS OF EXPERTISE</p>
+        <div class="card">
+          <div class="normal">
+            <div class="top-part-inner">
+              <div class="img-part">
+              <img src="images/index-v10/du-small.png" alt="">
+            </div>
+            <div class="country">
+              <h4>Dubai, UAE</h4>
+            </div>
+            </div>
+            <div class="address">
+              <p>541, 8W, Level 5, Dubai Airport Free Zone</p>
+            </div>
+          </div>
+          <div class="hover">
+            <div class="img-part">
+              <img src="images/index-v10/du-big.png" alt="">
+            </div>
+            <div class="text-part">
+              <h4>Dubai, UAE</h4>
+                <a href="tel:+971 544954255">+971 544954255</a>
+
+             
+            </div>
+            
+          </div>
         </div>
-        <div class="count-col">
-          <h5>675+</h5>
-          <p>EXPERTS ON STAFF</p>
+        <div class="card">
+          <div class="normal">
+            <div class="top-part-inner">
+              <div class="img-part">
+              <img src="images/index-v10/ind-small.png" alt="">
+            </div>
+            <div class="country">
+              <h4>Noida, India</h4>
+            </div>
+            </div>
+            <div class="address">
+              <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129</p>
+            </div>
+          </div>
+          <div class="hover">
+            <div class="img-part">
+              <img src="images/index-v10/ind-big.png" alt="">
+            </div>
+            <div class="text-part">
+              <h4>Noida, India</h4>
+                <a href="tel:+91 888 210 8080">+91 888 210 8080</a>             
+            </div>
+          </div>
         </div>
       </div>
-      <div class="subs-box">
-        <ul>
-          <li>
-            <picture>
-              <img loading="lazy" src="images/home-images/fotaw-01.svg" alt="Valuecoders" width="107" height="60">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <img loading="lazy" src="images/home-images/fotaw-02.svg" alt="Valuecoders" width="107" height="60">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <img loading="lazy" src="images/home-images/fotaw-03.svg" alt="Valuecoders" width="107" height="60">
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <img loading="lazy" src="images/home-images/fotaw-04.svg" alt="Valuecoders" width="107" height="60">
-            </picture>
-          </li>
-        </ul>
-      </div>
+
     </div>
     <div class="dis-flex footer-middle">
       <div class="flex-5">
         <h4>Company</h4>
         <ul>
-          <li><a href="https://www.valuecoders.com/about" data-wpel-link="internal" target="_blank" rel="follow">About Us</a></li>
-          <li><a href="https://www.valuecoders.com/in-media" data-wpel-link="internal" target="_blank" rel="follow">In Media</a></li>
-          <li><a href="https://www.valuecoders.com/case-studies/" data-wpel-link="internal" target="_blank" rel="follow">Case Studies</a></li>
-          <li><a href="https://www.valuecoders.com/blog/" data-wpel-link="internal" target="_blank" rel="follow">Our Blog</a></li>
-          <li><a href="https://www.valuecoders.com/testimonials" data-wpel-link="internal" target="_blank" rel="follow">Testimonial &amp; Clients</a></li>
+          <li><a href="https://www.valuecoders.com/about" data-wpel-link="internal" target="_blank" rel="follow">About
+              Us</a></li>
+          <li><a href="https://www.valuecoders.com/in-media" data-wpel-link="internal" target="_blank" rel="follow">In
+              Media</a></li>
+          <li><a href="https://www.valuecoders.com/case-studies/" data-wpel-link="internal" target="_blank"
+              rel="follow">Case Studies</a></li>
+          <li><a href="https://www.valuecoders.com/blog/" data-wpel-link="internal" target="_blank" rel="follow">Our
+              Blog</a></li>
+          <li><a href="https://www.valuecoders.com/testimonials" data-wpel-link="internal" target="_blank"
+              rel="follow">Testimonial &amp; Clients</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Our Expertise</h4>
         <ul>
-          <li><a href="https://www.valuecoders.com/outsource-software-product-development-services" data-wpel-link="internal" target="_blank" rel="follow">Software Product Engineering</a></li>
-          <li><a href="https://www.valuecoders.com/application-development" data-wpel-link="internal" target="_blank" rel="follow">Application Development</a></li>
-          <li><a href="https://www.valuecoders.com/it-staff-augmentation-services" data-wpel-link="internal" target="_blank" rel="follow">Staff Augmentation</a></li>
-          <li><a href="https://www.valuecoders.com/ecommerce-development-services" data-wpel-link="internal" target="_blank" rel="follow">eCommerce Development</a></li>
-          <li><a href="https://www.valuecoders.com/cloud-services" data-wpel-link="internal" target="_blank" rel="follow">Cloud Services</a></li>
-          <li><a href="https://www.valuecoders.com/ai" data-wpel-link="internal" target="_blank" rel="follow">AI &amp; ML</a></li>
+          <li><a href="https://www.valuecoders.com/outsource-software-product-development-services"
+              data-wpel-link="internal" target="_blank" rel="follow">Software Product Engineering</a></li>
+          <li><a href="https://www.valuecoders.com/application-development" data-wpel-link="internal" target="_blank"
+              rel="follow">Application Development</a></li>
+          <li><a href="https://www.valuecoders.com/it-staff-augmentation-services" data-wpel-link="internal"
+              target="_blank" rel="follow">Staff Augmentation</a></li>
+          <li><a href="https://www.valuecoders.com/ecommerce-development-services" data-wpel-link="internal"
+              target="_blank" rel="follow">eCommerce Development</a></li>
+          <li><a href="https://www.valuecoders.com/cloud-services" data-wpel-link="internal" target="_blank"
+              rel="follow">Cloud Services</a></li>
+          <li><a href="https://www.valuecoders.com/ai" data-wpel-link="internal" target="_blank" rel="follow">AI &amp;
+              ML</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Hire Developers</h4>
         <ul>
-          <li><a href="https://www.valuecoders.com/hire-developers/hire-ai-engineers" data-wpel-link="internal" target="_blank" rel="follow">Hire AI Engineers</a></li>
-          <li><a href="https://www.valuecoders.com/hire-developers/hire-backend-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Backend Developers</a></li>
-          <li><a href="https://www.valuecoders.com/hire-developers/hire-front-end-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Frontend Developers</a></li>
-          <li><a href="https://www.valuecoders.com/hire-developers/hire-ecommerce-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire eCommerce Developers</a></li>
-          <li><a href="https://www.valuecoders.com/hire-developers/hire-blockchain-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Blockchain Developers</a></li>
-          <li><a href="https://www.valuecoders.com/hire-developers/hire-mobile-app-developers" data-wpel-link="internal" target="_blank" rel="follow">Hire Mobile Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-ai-engineers" data-wpel-link="internal"
+              target="_blank" rel="follow">Hire AI Engineers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-backend-developers" data-wpel-link="internal"
+              target="_blank" rel="follow">Hire Backend Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-front-end-developers" data-wpel-link="internal"
+              target="_blank" rel="follow">Hire Frontend Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-ecommerce-developers" data-wpel-link="internal"
+              target="_blank" rel="follow">Hire eCommerce Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-blockchain-developers" data-wpel-link="internal"
+              target="_blank" rel="follow">Hire Blockchain Developers</a></li>
+          <li><a href="https://www.valuecoders.com/hire-developers/hire-mobile-app-developers" data-wpel-link="internal"
+              target="_blank" rel="follow">Hire Mobile Developers</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Solutions</h4>
         <ul>
-          <li><a href="https://www.valuecoders.com/offshore-software-development-center-india" data-wpel-link="internal" target="_blank" rel="follow">Offshore Development Center</a></li>
-          <li><a href="https://www.valuecoders.com/offshore-software-development-services-company" data-wpel-link="internal" target="_blank" rel="follow">Offshore Software Development</a></li>
-          <li><a href="https://www.valuecoders.com/nearshore-software-development-services" data-wpel-link="internal" target="_blank" rel="follow">Nearshore Software Development</a></li>
+          <li><a href="https://www.valuecoders.com/offshore-software-development-center-india" data-wpel-link="internal"
+              target="_blank" rel="follow">Offshore Development Center</a></li>
+          <li><a href="https://www.valuecoders.com/offshore-software-development-services-company"
+              data-wpel-link="internal" target="_blank" rel="follow">Offshore Software Development</a></li>
+          <li><a href="https://www.valuecoders.com/nearshore-software-development-services" data-wpel-link="internal"
+              target="_blank" rel="follow">Nearshore Software Development</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Clients We Serve</h4>
         <ul>
-          <li><a href="https://www.valuecoders.com/startup-product-development" data-wpel-link="internal" target="_blank" rel="follow">For Startups</a></li>
-          <li><a href="https://www.valuecoders.com/enterprise-software-development-services" data-wpel-link="internal" target="_blank" rel="follow">For Enterprises</a></li>
-          <li><a href="https://www.valuecoders.com/agencies-software-development-services" data-wpel-link="internal" target="_blank" rel="follow">For Agencies</a></li>
+          <li><a href="https://www.valuecoders.com/startup-product-development" data-wpel-link="internal"
+              target="_blank" rel="follow">For Startups</a></li>
+          <li><a href="https://www.valuecoders.com/enterprise-software-development-services" data-wpel-link="internal"
+              target="_blank" rel="follow">For Enterprises</a></li>
+          <li><a href="https://www.valuecoders.com/agencies-software-development-services" data-wpel-link="internal"
+              target="_blank" rel="follow">For Agencies</a></li>
         </ul>
       </div>
     </div>
@@ -180,14 +267,16 @@
       <div class="flex-4 logo-box">
         <h3>PROUDLY BROUGHT TO YOU BY ValueCoders</h3>
         <div class="dis-flex">
-          <a href="https://www.invoicera.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+          <a href="https://www.invoicera.com/" data-wpel-link="external" target="_blank"
+            rel="nofollow external noopener noreferrer">
             <picture>
               <img loading="lazy" src="images/home-images/inv-logo.svg" width="156" height="40" alt="Invoicera">
             </picture>
           </a>
-          <a href="https://www.workstatus.io/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+          <a href="https://www.workstatus.io/" data-wpel-link="external" target="_blank"
+            rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="images/home-images/ws-logo.svg" width="188" height="26" alt="Workstatus"> 
+              <img loading="lazy" src="images/home-images/ws-logo.svg" width="188" height="26" alt="Workstatus">
             </picture>
           </a>
         </div>
@@ -195,27 +284,32 @@
       <div class="flex-4 social-box">
         <h3>Follow Us</h3>
         <div class="dis-flex">
-          <a href="https://www.linkedin.com/company/valuecoders" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+          <a href="https://www.linkedin.com/company/valuecoders" target="_blank" data-wpel-link="external"
+            rel="nofollow external noopener noreferrer">
             <picture>
               <img loading="lazy" src="images/home-images/soc-01.svg" width="29" height="29" alt="linkedin">
             </picture>
           </a>
-          <a href="https://www.facebook.com/ValueCoders" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+          <a href="https://www.facebook.com/ValueCoders" target="_blank" data-wpel-link="external"
+            rel="nofollow external noopener noreferrer">
             <picture>
               <img loading="lazy" src="images/home-images//soc-02.svg" width="29" height="29" alt="facebook">
             </picture>
           </a>
-          <a href="https://twitter.com/ValueCoders" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+          <a href="https://twitter.com/ValueCoders" target="_blank" data-wpel-link="external"
+            rel="nofollow external noopener noreferrer">
             <picture>
               <img loading="lazy" src="images/home-images//soc-03.svg" width="29" height="29" alt="twitter">
             </picture>
           </a>
-          <a href="https://www.instagram.com/valuecodersofficial_/?igshid=qfk286mq0wee" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+          <a href="https://www.instagram.com/valuecodersofficial_/?igshid=qfk286mq0wee" target="_blank"
+            data-wpel-link="external" rel="nofollow external noopener noreferrer">
             <picture>
               <img loading="lazy" src="images/home-images//soc-04.svg" width="29" height="29" alt="instagram">
             </picture>
           </a>
-          <a href="https://www.youtube.com/channel/UCCnijyLczGPUGI8aBkK3pTw?sub_confirmation=1" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+          <a href="https://www.youtube.com/channel/UCCnijyLczGPUGI8aBkK3pTw?sub_confirmation=1" target="_blank"
+            data-wpel-link="external" rel="nofollow external noopener noreferrer">
             <picture>
               <img loading="lazy" src="images/home-images//soc-05.svg" width="29" height="29" alt="youtube">
             </picture>
@@ -224,30 +318,35 @@
       </div>
       <div class="flex-4 footer-rating">
         <span class="star-outer" id="star" style="display: none;">
-        <span class="star-inner star-hover" id="starthover">
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('one')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('two')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('three')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('four')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('five')"></i> 
-        </span>
-        <span id="rate_msg"></span>
+          <span class="star-inner star-hover" id="starthover">
+            <i class="star-icon" onclick="star(event)" onmouseover="changerate('one')"></i>
+            <i class="star-icon" onclick="star(event)" onmouseover="changerate('two')"></i>
+            <i class="star-icon" onclick="star(event)" onmouseover="changerate('three')"></i>
+            <i class="star-icon" onclick="star(event)" onmouseover="changerate('four')"></i>
+            <i class="star-icon" onclick="star(event)" onmouseover="changerate('five')"></i>
+          </span>
+          <span id="rate_msg"></span>
         </span>
         <span class="star-outer" id="rated" style="display: block;">
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        4.9 out of 5.0 by
+          <i class="star-icon"></i>
+          <i class="star-icon"></i>
+          <i class="star-icon"></i>
+          <i class="star-icon"></i>
+          <i class="star-icon"></i>
+          4.9 out of 5.0 by
         </span>
         <span class="client-outer">
-        <a href="javascript:void(0)" onclick="ratenow()" id="ratebtn" class="rate-us">Rate Us</a> 2437 clients on over 10800+ projects
+          <a href="javascript:void(0)" onclick="ratenow()" id="ratebtn" class="rate-us">Rate Us</a> 2437 clients on
+          over
+          10800+ projects
         </span>
       </div>
       <div class="flex-4 copyright">
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625" title="DMCA.com Protection Status" style="margin-left:0;margin-top: 20px; display:block" class="dmca-badge">
-        <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625"
+          title="DMCA.com Protection Status" style="margin-left:0;margin-top: 20px; display:block" class="dmca-badge">
+          <img src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625"
+            alt="DMCA.com Protection Status" /></a>
+        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
     </div>
   </div>

@@ -16,6 +16,7 @@ $section-bg: #F4F4F4;
 
     .header-text {
       max-width: 763px;
+      text-align: left;
 
       .subtitle {
         color: $darkYellow;
@@ -123,7 +124,7 @@ $section-bg: #F4F4F4;
     }
 
     .card-body {
-      padding: 25px;
+      padding: 20px 15px;
       flex-grow: 1;
       border-radius: 20px;
       background-color: #fff;
@@ -136,17 +137,28 @@ $section-bg: #F4F4F4;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         h3 {
-          font-size: 20px;
+          font-size: 18px;
           color: $text-gray;
+          font-weight: 600;
           margin: 0;
         }
 
-        .new-arrow-icon {
-          font-size: 18px;
-          transform: rotate(323deg);
-          transition: 0.3s;
+        
+
+        &::after{
+          position: absolute;
+          content: "";
+          right: 0;
+                    transform: rotate(359deg);
+          top: 0;
+          background: url(../images/index-v10/blue-arrow.svg);
+          width: 24px;
+          height: 24px;
+          background-size: auto;
+
         }
       }
     }
@@ -155,20 +167,28 @@ $section-bg: #F4F4F4;
       max-height: 0;
       opacity: 0;
       overflow: hidden;
-
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
       transition: all 0.4s ease;
+      .inner-top{
+display: block;
 
-      h4 {
-        font-weight: 700;
-        font-size: 15px;
-        margin: 15px 0 5px;
-      }
-
-      p {
-        font-size: 14px;
-        line-height: 1.5;
-        color: #110302;
-        margin-bottom: 20px;
+        
+        h4 {
+          font-weight: 700;
+          font-size: 15px;
+          margin: 15px 0 5px;
+          color: #E5E7EB;
+        }
+        
+        p {
+          font-size: 14px;
+          line-height: 1.5;
+          color: #99A1AF;
+          margin-bottom: 20px;
+        }
       }
 
       .expand-btn {
@@ -176,6 +196,8 @@ $section-bg: #F4F4F4;
         font-weight: 600;
         text-decoration: underline;
         color: inherit;
+                margin-bottom: 22px;
+        color: #fff;
       }
     }
 
@@ -186,11 +208,12 @@ $section-bg: #F4F4F4;
 
       .card-image {
         height: 180px;
+
       }
 
       // Shrink image to expand text
       .card-body {
-        background: $darkYellow;
+        background: #05164D;
         margin-top: 10px;
       }
 
@@ -204,7 +227,7 @@ $section-bg: #F4F4F4;
 }
 
 .industries-section .industry-card:hover .card-body .title-wrap h3 {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 992px) {
@@ -239,15 +262,16 @@ $section-bg: #F4F4F4;
 }
 
 .industry-card .card-body::after {
-  background: url(../icons/btn-black-icon.svg);
-  width: 16px;
+  background: url(../images/index-v10/white-arrow.svg);
+  width: 24px;
   display: none;
-  height: 16px;
+  height: 24px;
   content: "";
   position: absolute;
   top: 29px;
   right: 8%;
-  transform: rotate(-45deg);
+  transform: rotate(360deg);
   transition: 0.4s;
 }
 .industry-card:hover .card-body::after {display: block;}
+.industries-section .industry-card:hover .card-body .title-wrap::after{display: none;}

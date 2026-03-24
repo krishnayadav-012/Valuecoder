@@ -70,7 +70,7 @@
     }
   }
  
-  &__eyebrow {
+  span {
     font-size: 11px;
     font-weight: $medium-font;
     letter-spacing: 0.18em;
@@ -94,7 +94,7 @@
     }
   }
  
-  &__heading {
+  h2 {
     font-size: clamp(32px, 4vw, 52px);
     font-weight: 800;
     line-height: 1.1;
@@ -102,12 +102,13 @@
     letter-spacing: -0.02em;
     margin-bottom: 20px;
  
-    .highlight {
+    em {
       color: $darkYellow;
+      font-style: normal;
     }
   }
  
-  &__body {
+  p {
     font-size: 16px;
     
     color: #D1D5DC;
@@ -162,7 +163,7 @@ border: 1px solid var(--gray-500, #6A7282);
     content: '';
     position: absolute;
     top: 0;
-right: 0;
+right: -32%;
     width: 80%;
     height: 100%;
     background: url(../images/index-v10/right-sade.png);
@@ -178,24 +179,39 @@ right: 0;
  
   // ── Number ───────────────────────────────────────────────────
   &__number {
-    font-size: clamp(36px, 4.5vw, 46px);
-    font-weight: 800;
-    color: $white;
-    line-height: 1;
-    letter-spacing: -0.02em;
- 
-    .star {
-      color: $darkYellow;
-      font-size: 0.85em;
+    h3{
+
+      font-size: clamp(36px, 4.5vw, 46px);
+      font-weight: 800;
+      color: $white;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      
+      .star {
+        color: $darkYellow;
+        font-size: 0.85em;
+      }
+    }
+    h4{
+      font-size: 46px;
+      font-weight: 800;
+      color: #fff;
+      .star {
+        color: $darkYellow;
+        font-size: 0.85em;
+      }
     }
   }
  
   // ── Label ────────────────────────────────────────────────────
   &__label {
-    font-size: 16px;
-    font-weight: $normal-font;
-    color: $greyBannerfont;
-    color: $white;
+    p{
+
+      font-size: 16px;
+      font-weight: $normal-font;
+      color: $greyBannerfont;
+      color: $white;
+    }
   }
  
   // ── Platforms row ─────────────────────────────────────────────
@@ -206,8 +222,8 @@ right: 0;
     margin-bottom: 4px;
   }
  
-  // ── Platform badge ────────────────────────────────────────────
-  &__badge {
+  // ── Platform badge ────────────── ──────────────────────────────
+  span {
     width: 28px;
     height: 28px;
     border-radius: 6px;
@@ -219,7 +235,12 @@ right: 0;
     font-size: 12px;
     font-weight: $bold;
     color: $white;
+    padding: 0;
     flex-shrink: 0;
+
+    &::before{
+      display: none;
+    }
  
     &--google {
       background: rgba(#EA4335, 0.18);

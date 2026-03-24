@@ -17,10 +17,18 @@ $listing-color:#101828;
   align-items: center;
 
 .content-part{width: calc(90% - 120px);
+  text-align: left;
 
   h2 { 
      color: $themeMidNight; 
     strong {color: $darkYellow; } 
+  }
+  p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1E2939;
+    text-align: left;margin-left: 0;
   }
 }
 

@@ -66,13 +66,17 @@ flex-wrap: wrap;
 /* LIST */
 
 .ai-list {
+    height: 410px;
+
     .ai-item {
+
         position: relative;
         padding: 20px 0;
         border-bottom: 1px solid rgba(255,255,255,0.08);
         cursor: pointer;
 
-        /* DOT */
+        /* Reserve space so layout doesn't jump */
+        
 
         &:before {
             content: "";
@@ -83,31 +87,39 @@ flex-wrap: wrap;
             position: absolute;
             left: -18px;
             top: 30px;
-            
-
             transition: 0.3s;
         }
 
-        .title h4{
+        .title h4 {
             font-size: 22px;
             font-weight: 700;
             transition: 0.3s;
-            color: $white; 
+            color: $white;
         }
 
+        /* FIXED HEIGHT AREA */
+
         .desc {
+
             font-size: 14px;
             font-weight: 500;
             color: #D1D5DC;
-            max-height: 0;
-            overflow: hidden;
-            transition: 0.4s;
-            p{
-                color: #D1D5DC;
-            }
-        }
 
-        /* PROGRESS LINE */
+            max-height: 0px;
+            opacity: 0;
+
+            overflow: hidden;
+
+            transition:
+                max-height 0.4s ease,
+                opacity 0.3s ease;
+
+            p {
+                color: #D1D5DC;
+                margin-top: 10px;
+            }
+
+        }
 
         .progress {
 
@@ -130,16 +142,15 @@ flex-wrap: wrap;
                 background: $yellow;
             }
 
-            .title h4{
+            .title h4 {
                 color: $yellow;
             }
 
             .desc {
-                max-height: 200px;
-                margin-top: 10px;
-                p{
-                    margin-top: 10px;
-                }
+
+                max-height: 80px; /* fixed height */
+                opacity: 1;
+
             }
 
         }
