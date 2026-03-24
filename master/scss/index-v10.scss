@@ -7,7 +7,7 @@
 @use "delivery-models-v10";
 @use "capabilities-section-v10";
 @use "success-stories-v10";
-@use "Insights-v10";
+@use "insights-v10";
 @use "faqs-section-v10";
 @use "delivery-discipline-v10";
 
@@ -22,6 +22,8 @@
 @use "_intent-popup";
 @use "_glider";
 @use "_footer-section";
+
+
 
 
 
@@ -480,6 +482,7 @@
     .btn-secondry::before {
         right: 15% !important;
     }
+    .btn-circle.button-v10{margin-bottom: 35px;}
 
     .hero-section {
         .dis-flex {

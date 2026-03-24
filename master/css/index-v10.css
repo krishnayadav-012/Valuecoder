@@ -2330,6 +2330,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .master-header .btn-circle {
+    display: none;
+  }
+}
 .master-overlays {
   position: fixed;
   top: 0;
@@ -2742,7 +2747,7 @@ button.tab-btn-base {
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
-  color: #05164d;
+  color: #05164D;
   background-color: #FFAD00;
   border: 1px solid transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -3702,8 +3707,8 @@ button.tab-btn-base {
   content: "";
   position: absolute;
   top: 0;
-  right: -32%;
-  width: 80%;
+  right: -55%;
+  width: 100%;
   height: 100%;
   background: url(../images/index-v10/right-sade.png);
   transition: opacity 0.3s ease;
@@ -4074,6 +4079,9 @@ button.tab-btn-base {
   .ai-right .ai-content h2 {
     font-size: 26px;
   }
+  .ai-list {
+    padding-left: 20px;
+  }
 }
 .delivery-models {
   background-color: #f5f7f9;
@@ -4245,6 +4253,11 @@ button.tab-btn-base {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .delivery-models {
+    padding: 60px 0;
+  }
+}
 @media (max-width: 480px) {
   .model-card {
     padding: 30px 20px;
@@ -4381,6 +4394,20 @@ button.tab-btn-base {
   background: linear-gradient(153.09deg, rgba(255, 255, 255, 0.172) 2.06%, rgba(255, 255, 255, 0.04) 116.66%);
 }
 
+@media screen and (max-width: 768px) {
+  #capabilities-section {
+    padding: 60px 0;
+  }
+  #capabilities-section > div {
+    gap: 0;
+  }
+  #capabilities-section .right-part {
+    gap: 40px;
+  }
+  #capabilities-section .right-part .card {
+    padding: 22px;
+  }
+}
 .stories-section {
   background: #f6f6f6;
   padding: 80px 0;
@@ -4480,7 +4507,7 @@ button.tab-btn-base {
   grid-template-rows: auto auto;
   gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .stories-section__grid {
     grid-template-columns: 1fr;
   }
@@ -4518,11 +4545,11 @@ button.tab-btn-base {
     height: 200px;
   }
 }
-.story-card--featured .story-card__name {
+.story-card--featured h3 {
   font-size: 22px;
   margin-bottom: 12px;
 }
-.story-card--featured .story-card__desc {
+.story-card--featured p {
   font-size: 14px;
   line-height: 1.7;
 }
@@ -4530,7 +4557,7 @@ button.tab-btn-base {
   flex-direction: row;
   align-items: stretch;
 }
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .story-card--small {
     flex-direction: column;
   }
@@ -4628,6 +4655,11 @@ button.tab-btn-base {
   padding-top: 30px;
 }
 
+@media screen and (max-width: 640px) {
+  .story-card--small .story-card__content {
+    padding: 20px 0 0 0;
+  }
+}
 .insights {
   padding: 120px 0;
   background: #ffffff;
@@ -4954,7 +4986,7 @@ button.tab-btn-base {
 }
 .delivery-discipline {
   background: #020b1f;
-  padding: 80px 0;
+  padding: 120px 0;
 }
 .delivery-discipline .delivery-grid {
   display: grid;
@@ -5135,11 +5167,30 @@ button.tab-btn-base {
   color: rgba(0, 0, 0, 0.8);
 }
 
+@media screen and (max-width: 1024px) {
+  .delivery-discipline .delivery-left h2 {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 800px) {
   :root {
     --progress-bar-width: 150px;
     --progress-bar-height: 150px;
     --font-size: 1.3rem;
+  }
+  .delivery-discipline {
+    padding: 60px 0;
+  }
+  .delivery-discipline .delivery-left {
+    padding: 20px;
+  }
+  .delivery-discipline .info-card .circle-progress {
+    left: 32%;
+    top: 80px;
+  }
+  .delivery-discipline .info-card:hover {
+    padding-left: 10px;
+    padding-top: 150px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -8225,6 +8276,11 @@ button.tab-btn-base {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 640px) {
+  .footer .footer-top .cards .card {
+    width: 100%;
+  }
+}
 .btn-circle.button-v10 {
   display: inline-flex;
   margin-bottom: 70px;
@@ -8607,6 +8663,9 @@ button.tab-btn-base {
 @media screen and (max-width: 1024px) {
   .btn-secondry::before {
     right: 15% !important;
+  }
+  .btn-circle.button-v10 {
+    margin-bottom: 35px;
   }
   .hero-section .dis-flex .left-box h1 {
     font-size: 50px;

@@ -76,7 +76,22 @@
             <input type="hidden" name="frmqueryString" value="">
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
-            <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now">
+            <!-- <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now"> -->
+            <div class="btn-circle button-v10">
+            
+        <a href="/contact">
+            <span class="text">
+                <span class="text-default">Get in Touch</span>
+                <span class="text-hover">Get in Touch</span>
+            </span>
+
+        
+            <span class="circle">
+                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
+                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+            </span>
+        </a>
+        </div>
          </div>
       </div>
    </div>

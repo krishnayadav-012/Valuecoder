@@ -107,7 +107,7 @@
     grid-template-rows: auto auto;
     gap: 20px;
  
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       grid-template-columns: 1fr;
     }
   }
@@ -149,12 +149,12 @@
  
     
  
-    .story-card__name {
+    h3 {
       font-size: 22px;
       margin-bottom: 12px;
     }
  
-    .story-card__desc {
+    p {
       font-size: 14px;
       line-height: 1.7;
     }
@@ -165,7 +165,7 @@
     flex-direction: row;
     align-items: stretch;
  
-    @media (max-width: 480px) {
+    @media (max-width: 640px) {
       flex-direction: column;
     }
  
@@ -278,3 +278,7 @@
   }
 }
  .story-card--featured .story-card__content{padding-top: 30px;}
+
+ @media screen and (max-width:640px) {
+  .story-card--small .story-card__content{padding: 20px 0 0 0;}
+ }

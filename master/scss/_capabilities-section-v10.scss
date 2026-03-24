@@ -168,3 +168,12 @@ $whiteLight: #cecece;
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  #capabilities-section{
+    padding: 60px 0;
+  }
+  #capabilities-section > div{gap: 0;}
+  #capabilities-section .right-part{gap: 40px;}
+  #capabilities-section .right-part .card{padding: 22px;}
+}

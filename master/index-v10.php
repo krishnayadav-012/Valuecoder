@@ -668,8 +668,8 @@
               <div class="image-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
             </div>
             <div class="story-card__content">
-              <h3 class="story-card__name">Project Management</h3>
-              <p class="story-card__desc">
+              <h3 >Project Management</h3>
+              <p >
                 The client wanted to build a web portal where customers could purchase
                 motorcycles online and dealers could access and manage their agent accounts.
               </p>
@@ -683,8 +683,8 @@
               <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
             </div>
             <div class="story-card__content">
-              <h3 class="story-card__name">Best Travel Platform</h3>
-              <p class="story-card__desc">
+              <h3 >Best Travel Platform</h3>
+              <p >
                 The smart integrated platform is founded on the pillars…
               </p>
               <a href="#" class="story-card__link">Learn More </a>
@@ -697,8 +697,8 @@
               <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
             </div>
             <div class="story-card__content">
-              <h3 class="story-card__name">eCommerce Platform</h3>
-              <p class="story-card__desc">
+              <h3 >eCommerce Platform</h3>
+              <p >
                 The smart integrated platform is founded on the pillars…
               </p>
               <a href="#" class="story-card__link">Learn More </a>
@@ -1604,7 +1604,7 @@
     <?php require_once 'include/footer.php'; ?>
 
 
-    
+
 
 </body>
 
