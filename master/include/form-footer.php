@@ -78,20 +78,17 @@
             <input type="hidden" name="vc_csrf" value="">
             <!-- <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now"> -->
             <div class="btn-circle button-v10">
-            
-        <a href="/contact">
-            <span class="text">
-                <span class="text-default">Get in Touch</span>
-                <span class="text-hover">Get in Touch</span>
-            </span>
 
-        
-            <span class="circle">
-                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
-            </span>
-        </a>
-        </div>
+                    <div class="master-btn button-v10">
+                        <a href="/contact" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">Get in Touch</span>
+
+                            <span class="circle">
+                                <img src="images/index-v10/move-right.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
          </div>
       </div>
    </div>

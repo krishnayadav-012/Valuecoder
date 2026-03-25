@@ -46,22 +46,17 @@
                 <div class="left-box">
                     <h1>Engineering Partner for <em>Predictable Software Delivery</em></h1>
                     <h3>AI Augmented. <em>Human Governed.</em></h3>
-                    <p>We help SaaS companies, funded startups, and global engineering teams ship software with structured milestones, defined ownership, and measurable execution.
+                    <p>We help SaaS companies, funded startups, and global engineering teams ship software with
+                        structured milestones, defined ownership, and measurable execution.
 
-</p>
+                    </p>
 
-                    <div class="btn-circle button-v10">
-                        <!-- TEXT -->
-                        <a href="/contact">
-                            <span class="text">
-                                <span class="text-default">Get in Touch</span>
-                                <span class="text-hover">Get in Touch</span>
-                            </span>
+                    <div class="master-btn button-v10">
+                        <a href="/contact" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">Get in Touch</span>
 
-                            <!-- ARROW -->
                             <span class="circle">
-                                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-                                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+                                <img src="images/index-v10/move-right.svg" alt="">
                             </span>
                         </a>
                     </div>
@@ -111,14 +106,14 @@
         <div class="container">
             <div class="inner-part">
                 <div class="delivery-section__left">
-                    <span >The Delivery Problem</span>
+                    <span>The Delivery Problem</span>
 
-                    <h2 >
+                    <h2>
                         Most teams can hire engineers.
                         <em>Few can ship software.</em>
                     </h2>
 
-                    <p >
+                    <p>
                         The gap between having engineers and shipping predictably is the problem
                         every engineering leader faces. Roadmaps stall not because the team lacks
                         capability, but because delivery requires coordination, governance, and
@@ -131,31 +126,47 @@
 
                     <!-- Card 1 -->
                     <div class="stat-card">
-                        <div class="stat-card__number"><h3>700+</h3></div>
-                        <div class="stat-card__label"><p>In-House Engineers</p></div>
+                        <div class="stat-card__number">
+                            <h3>700+</h3>
+                        </div>
+                        <div class="stat-card__label">
+                            <p>In-House Engineers</p>
+                        </div>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="stat-card">
-                        <div class="stat-card__number"><h3>2,500+</h3></div>
-                        <div class="stat-card__label"><p>Projects Delivered</p></div>
+                        <div class="stat-card__number">
+                            <h3>2,500+</h3>
+                        </div>
+                        <div class="stat-card__label">
+                            <p>Projects Delivered</p>
+                        </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="stat-card">
-                        <div class="stat-card__number"><h3>20+</h3></div>
-                        <div class="stat-card__label"><p>Years in Operation</p></div>
+                        <div class="stat-card__number">
+                            <h3>20+</h3>
+                        </div>
+                        <div class="stat-card__label">
+                            <p>Years in Operation</p>
+                        </div>
                     </div>
 
                     <!-- Card 4: Rating -->
                     <div class="stat-card">
                         <div class="stat-card__platforms">
-                            <span ><img src="images/index-v10/c-icon.png" alt=""></span>
-                            <span ><img src="images/index-v10/g-icon.png" alt=""></span>
-                            <span ><img src="images/index-v10/f-icon.png" alt=""></span>
+                            <span><img src="images/index-v10/c-icon.png" alt=""></span>
+                            <span><img src="images/index-v10/g-icon.png" alt=""></span>
+                            <span><img src="images/index-v10/f-icon.png" alt=""></span>
                         </div>
-                        <div class="stat-card__number"><h4>4.5/5<strong class="star">★</strong> </h4></div>
-                        <div class="stat-card__label"><p>19,000+ reviews</p></div>
+                        <div class="stat-card__number">
+                            <h4>4.5/5<strong class="star">★</strong> </h4>
+                        </div>
+                        <div class="stat-card__label">
+                            <p>19,000+ reviews</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,7 +241,7 @@
                         Learn More
                     </a>
                 </div>
-                 <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
                         <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
@@ -240,7 +251,7 @@
 
                     <h3>You need to scale your India engineering centre</h3>
                     <p>
-                       You're running or building a GCC. You need a partner who can staff, onboard.
+                        You're running or building a GCC. You need a partner who can staff, onboard.
                     </p>
                     <ul>
                         <li>Dedicated engineering hubs</li>
@@ -254,7 +265,7 @@
                         Learn More
                     </a>
                 </div>
-                 <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
                         <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
@@ -278,7 +289,7 @@
                         Learn More
                     </a>
                 </div>
-                 <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
                         <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
@@ -288,7 +299,7 @@
 
                     <h3>You need to modernise legacy systems</h3>
                     <p>
-                       The platform that got you here is blocking the next phase. New features take too long.
+                        The platform that got you here is blocking the next phase. New features take too long.
                     </p>
                     <ul>
                         <li>Application modernisation</li>
@@ -302,7 +313,7 @@
                         Learn More
                     </a>
                 </div>
-                 <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
                         <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
@@ -312,7 +323,7 @@
 
                     <h3>You need to scale your India engineering centre</h3>
                     <p>
-                       You're running or building a GCC. You need a partner who can staff, onboard.
+                        You're running or building a GCC. You need a partner who can staff, onboard.
                     </p>
                     <ul>
                         <li>Dedicated engineering hubs</li>
@@ -356,7 +367,7 @@
 
                         <em>
                             AI that ships to production.
-</em>
+                        </em>
 
                         Not AI that demos well.
                     </h2>
@@ -391,8 +402,8 @@
                             </div>
 
                             <div class="desc">
-                               <p> Build autonomous AI agents that automate
-                                workflows and decision-making.</p>
+                                <p> Build autonomous AI agents that automate
+                                    workflows and decision-making.</p>
                             </div>
 
                             <div class="progress"></div>
@@ -402,12 +413,12 @@
                         <div class="ai-item">
 
                             <div class="title">
-                               <h4> Machine Learning Engineering</h4>
+                                <h4> Machine Learning Engineering</h4>
                             </div>
 
                             <div class="desc">
-                               <p> Design and deploy scalable ML systems
-                                tailored to business workflows.</p>
+                                <p> Design and deploy scalable ML systems
+                                    tailored to business workflows.</p>
                             </div>
 
                             <div class="progress"></div>
@@ -421,8 +432,8 @@
                             </div>
 
                             <div class="desc">
-                               <p> Build reliable pipelines and scalable
-                                AI-ready infrastructure.</p>
+                                <p> Build reliable pipelines and scalable
+                                    AI-ready infrastructure.</p>
                             </div>
 
                             <div class="progress"></div>
@@ -432,12 +443,12 @@
                         <div class="ai-item">
 
                             <div class="title">
-                               <h4> AI Integration</h4>
+                                <h4> AI Integration</h4>
                             </div>
 
                             <div class="desc">
                                 <p>Seamlessly integrate AI into existing
-                                enterprise systems.</p>
+                                    enterprise systems.</p>
                             </div>
 
                             <div class="progress"></div>
@@ -459,191 +470,194 @@
 
 
     <!-- new start -->
-     <section class="delivery-models">
-  <div class="container">
-    
-    <div class="section-header">
-      <h2 >Three models. One delivery standard.</h2>
-      <p >
-        Engagement structure follows your situation — not a fixed service catalogue. 
-        Choose the model that fits your team, timeline, and governance requirements.
-      </p>
-</div>
+    <section class="delivery-models">
+        <div class="container">
 
-    <div class="models-grid">
-      <article class="model-card">
-        <div class="card-top">
-          <div class="icon-box">
-              <img src="images/index-v10/grey-clock.svg" alt="">
-          
-             </div>
-          <span class="badge">CLIENT-LED</span>
-        </div>
-        <h3 >Team Extension</h3>
-        <p >Engineers integrate directly into your existing team and delivery process.</p>
-        <ul >
-          <li> Application modernisation</li>
-          <li> Workflow automation</li>
-          <li> Incremental migration, zero downtime</li>
-        </ul>
-        <div class="card-footer">
-        <p>  <strong>Best for:</strong> You interview & select. Scale up/down with 30 days notice.</p>
-        </div>
-      </article>
-
-      <article class="model-card highlighted">
-        <div class="card-top">
-          <div class="icon-box">
-              
-            <img src="images/index-v10/yellow-clock.svg"   alt="">
+            <div class="section-header">
+                <h2>Three models. One delivery standard.</h2>
+                <p>
+                    Engagement structure follows your situation — not a fixed service catalogue.
+                    Choose the model that fits your team, timeline, and governance requirements.
+                </p>
             </div>
-          <span class="badge">VALUECODERS-LED</span>
-        </div>
-        <h3 >Delivery Pods</h3>
-        <p >A fully managed engineering pod — tech lead, engineers.</p>
-        <ul >
-          <li> Application modernisation</li>
-          <li> Workflow automation</li>
-          <li> Incremental migration, zero downtime</li>
-        </ul>
-        <div class="card-footer">
-         <p> <strong>Best for:</strong> Products needing speed, cross-team coordination</p>
-        </div>
-      </article>
 
-      <article class="model-card">
-        <div class="card-top">
-          <div class="icon-box">
-            <img src="images/index-v10/grey-clock.svg" alt="">
-        
-            <img src="" alt="">
-           </div>
-          <span class="badge">PERMANENT CAPACITY</span>
+            <div class="models-grid">
+                <article class="model-card">
+                    <div class="card-top">
+                        <div class="icon-box">
+                            <img src="images/index-v10/grey-clock.svg" alt="">
+
+                        </div>
+                        <span class="badge">CLIENT-LED</span>
+                    </div>
+                    <h3>Team Extension</h3>
+                    <p>Engineers integrate directly into your existing team and delivery process.</p>
+                    <ul>
+                        <li> Application modernisation</li>
+                        <li> Workflow automation</li>
+                        <li> Incremental migration, zero downtime</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p> <strong>Best for:</strong> You interview & select. Scale up/down with 30 days notice.</p>
+                    </div>
+                </article>
+
+                <article class="model-card highlighted">
+                    <div class="card-top">
+                        <div class="icon-box">
+
+                            <img src="images/index-v10/yellow-clock.svg" alt="">
+                        </div>
+                        <span class="badge">VALUECODERS-LED</span>
+                    </div>
+                    <h3>Delivery Pods</h3>
+                    <p>A fully managed engineering pod — tech lead, engineers.</p>
+                    <ul>
+                        <li> Application modernisation</li>
+                        <li> Workflow automation</li>
+                        <li> Incremental migration, zero downtime</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p> <strong>Best for:</strong> Products needing speed, cross-team coordination</p>
+                    </div>
+                </article>
+
+                <article class="model-card">
+                    <div class="card-top">
+                        <div class="icon-box">
+                            <img src="images/index-v10/grey-clock.svg" alt="">
+
+                            <img src="" alt="">
+                        </div>
+                        <span class="badge">PERMANENT CAPACITY</span>
+                    </div>
+                    <h3>Development Centers</h3>
+                    <p>A fully managed engineering pod — tech lead, engineers.</p>
+                    <ul>
+                        <li> Application modernisation</li>
+                        <li> Workflow automation</li>
+                        <li> Incremental migration, zero downtime</li>
+                    </ul>
+                    <div class="card-footer">
+                        <p> <strong>Best for:</strong> Enterprises needing sustained large-scale capacity, cost
+                            optimization</p>
+                    </div>
+                </article>
+            </div>
         </div>
-        <h3 >Development Centers</h3>
-        <p >A fully managed engineering pod — tech lead, engineers.</p>
-        <ul >
-          <li> Application modernisation</li>
-          <li> Workflow automation</li>
-          <li> Incremental migration, zero downtime</li>
-        </ul>
-        <div class="card-footer">
-        <p>  <strong>Best for:</strong> Enterprises needing sustained large-scale capacity, cost optimization</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+    </section>
     <!-- new end -->
 
 
 
-<!-- capblieties secton start -->
+    <!-- capblieties secton start -->
 
 
-<section id="capabilities-section">
-  <div class="container">
-    <div class="left-part">
-      <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
-      <p>ValueCoders provides engineering teams across four capability areas — each operating inside the same sprint cadence, QA gates, and delivery framework.</p>
-       <div class="btn-circle button-v10">
-            
-        <a href="/contact">
-            <span class="text">
-                <span class="text-default">Get in Touch</span>
-                <span class="text-hover">Get in Touch</span>
-            </span>
+    <section id="capabilities-section">
+        <div class="container">
+            <div class="left-part">
+                <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
+                <p>ValueCoders provides engineering teams across four capability areas — each operating inside the same
+                    sprint cadence, QA gates, and delivery framework.</p>
+                <div class="btn-circle button-v10">
 
-        
-            <span class="circle">
-                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
-            </span>
-        </a>
+                    <div class="master-btn button-v10">
+                        <a href="/contact" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">Get in Touch</span>
+
+                            <span class="circle">
+                                <img src="images/index-v10/move-right.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="engineering-design"></div>
+            </div>
+
+            <div class="right-part">
+                <div class="card">
+                    <figure>
+                        <img src="images/index-v10/engineering-card-1.webp" alt="AI & Data">
+                    </figure>
+                    <h3>AI & Data Engineering</h3>
+                    <p>Production-ready AI systems and machine learning infrastructure — integrated into real business
+                        workflows, not proof-of-concept demos.</p>
+                    <ul>
+                        <li>Generative AI applications</li>
+                        <li>AI agent development</li>
+                        <li>Machine learning engineering</li>
+                        <li>Data pipelines and analytics</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+                    </figure>
+                    <h3>Software Product Development</h3>
+                    <p>Full lifecycle product engineering — from architecture decisions made with 3-year divtainability
+                        in mind, to production deployment.</p>
+                    <ul>
+                        <li>SaaS platforms</li>
+                        <li>Enterprise applications</li>
+                        <li>MVP development</li>
+                        <li>Product engineering</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+                    </figure>
+                    <h3>Cloud & DevOps Engineering</h3>
+                    <p>Scalable infrastructure and platform reliability — built to scale with your product without a
+                        separate ops team to keep it alive.</p>
+                    <ul>
+                        <li>Cloud architecture</li>
+                        <li>Kubernetes and container platformss</li>
+                        <li>CI/CD automation</li>
+                        <li>Observability engineering</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+                    </figure>
+                    <h3>Enterprise Integration & Automation</h3>
+                    <p>Systems integration and workflow automation that reduces manual work without creating new
+                        fragility. API-first architecture that connects without coupling.</p>
+                    <ul>
+                        <li>API development</li>
+                        <li>Enterprise integrations</li>
+                        <li>Workflow automation</li>
+                        <li>Robotic process automation</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-
-        <div class="engineering-design"></div>
-    </div>
-
-    <div class="right-part">
-      <div class="card">
-        <figure>
-          <img src="images/index-v10/engineering-card-1.webp" alt="AI & Data">
-        </figure>
-        <h3>AI & Data Engineering</h3>
-        <p>Production-ready AI systems and machine learning infrastructure — integrated into real business workflows, not proof-of-concept demos.</p>
-        <ul>
-          <li>Generative AI applications</li>
-          <li>AI agent development</li>
-          <li>Machine learning engineering</li>
-          <li>Data pipelines and analytics</li>
-        </ul>
-</div>
-
-      <div class="card">
-        <figure>
-          <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
-        </figure>
-        <h3>Software Product Development</h3>
-        <p>Full lifecycle product engineering — from architecture decisions made with 3-year divtainability in mind, to production deployment.</p>
-        <ul>
-          <li>SaaS platforms</li>
-          <li>Enterprise applications</li>
-          <li>MVP development</li>
-          <li>Product engineering</li>
-        </ul>
-      </div>
-      <div class="card">
-        <figure>
-          <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
-        </figure>
-        <h3>Cloud & DevOps Engineering</h3>
-        <p>Scalable infrastructure and platform reliability — built to scale with your product without a separate ops team to keep it alive.</p>
-        <ul>
-          <li>Cloud architecture</li>
-          <li>Kubernetes and container platformss</li>
-          <li>CI/CD automation</li>
-          <li>Observability engineering</li>
-        </ul>
-      </div>
-      <div class="card">
-        <figure>
-          <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
-        </figure>
-        <h3>Enterprise Integration & Automation</h3>
-        <p>Systems integration and workflow automation that reduces manual work without creating new fragility. API-first architecture that connects without coupling.</p>
-        <ul>
-          <li>API development</li>
-          <li>Enterprise integrations</li>
-          <li>Workflow automation</li>
-          <li>Robotic process automation</li>
-        </ul>
-      </div>
-
-</div>
-  </div>
-</section>
-<!-- capblieties secton end-->
+    </section>
+    <!-- capblieties secton end-->
 
 
 
-<!-- success story start -->
+    <!-- success story start -->
 
-  <section class="stories-section">
-    <div class="container">
-      <div class="inner-part">
- 
-        <!-- Top row -->
-        <div class="stories-section__top">
-          <div class="stories-section__heading-wrap">
-            <h2 >Success Stories</h2>
-            <p >
-              Engagement structure follows your situation — not a fixed service catalogue. Choose the
-              model that fits your team, timeline, and governance requirements.
-            </p>
-          </div>
- 
-           <div class="btn-circle button-v10 second">
+    <section class="stories-section">
+        <div class="container">
+            <div class="inner-part">
+
+                <!-- Top row -->
+                <div class="stories-section__top">
+                    <div class="stories-section__heading-wrap">
+                        <h2>Success Stories</h2>
+                        <p>
+                            Engagement structure follows your situation — not a fixed service catalogue. Choose the
+                            model that fits your team, timeline, and governance requirements.
+                        </p>
+                    </div>
+
+                    <div class="btn-circle button-v10 second">
                         <!-- TEXT -->
                         <a href="/contact">
                             <span class="text">
@@ -658,59 +672,59 @@
                             </span>
                         </a>
                     </div>
+                </div>
+
+                <!-- Cards grid -->
+                <div class="stories-section__grid">
+
+                    <!-- Card 1: Featured (left, spans 2 rows) -->
+                    <div class="story-card story-card--featured">
+                        <div class="story-card__image-wrap">
+                            <div class="image-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
+                        </div>
+                        <div class="story-card__content">
+                            <h3>Project Management</h3>
+                            <p>
+                                The client wanted to build a web portal where customers could purchase
+                                motorcycles online and dealers could access and manage their agent accounts.
+                            </p>
+                            <a href="#" class="story-card__link">Learn More </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Best Travel Platform (small, right top) -->
+                    <div class="story-card story-card--small">
+                        <div class="story-card__image-wrap">
+                            <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
+                        </div>
+                        <div class="story-card__content">
+                            <h3>Best Travel Platform</h3>
+                            <p>
+                                The smart integrated platform is founded on the pillars…
+                            </p>
+                            <a href="#" class="story-card__link">Learn More </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: eCommerce Platform (small, right bottom) -->
+                    <div class="story-card story-card--small">
+                        <div class="story-card__image-wrap">
+                            <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
+                        </div>
+                        <div class="story-card__content">
+                            <h3>eCommerce Platform</h3>
+                            <p>
+                                The smart integrated platform is founded on the pillars…
+                            </p>
+                            <a href="#" class="story-card__link">Learn More </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
- 
-        <!-- Cards grid -->
-        <div class="stories-section__grid">
- 
-          <!-- Card 1: Featured (left, spans 2 rows) -->
-          <div class="story-card story-card--featured">
-            <div class="story-card__image-wrap">
-              <div class="image-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
-            </div>
-            <div class="story-card__content">
-              <h3 >Project Management</h3>
-              <p >
-                The client wanted to build a web portal where customers could purchase
-                motorcycles online and dealers could access and manage their agent accounts.
-              </p>
-              <a href="#" class="story-card__link">Learn More </a>
-            </div>
-          </div>
- 
-          <!-- Card 2: Best Travel Platform (small, right top) -->
-          <div class="story-card story-card--small">
-            <div class="story-card__image-wrap">
-              <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
-            </div>
-            <div class="story-card__content">
-              <h3 >Best Travel Platform</h3>
-              <p >
-                The smart integrated platform is founded on the pillars…
-              </p>
-              <a href="#" class="story-card__link">Learn More </a>
-            </div>
-          </div>
- 
-          <!-- Card 3: eCommerce Platform (small, right bottom) -->
-          <div class="story-card story-card--small">
-            <div class="story-card__image-wrap">
-              <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
-            </div>
-            <div class="story-card__content">
-              <h3 >eCommerce Platform</h3>
-              <p >
-                The smart integrated platform is founded on the pillars…
-              </p>
-              <a href="#" class="story-card__link">Learn More </a>
-            </div>
-          </div>
- 
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- success story end -->
+    </section>
+    <!-- success story end -->
 
 
 
@@ -736,8 +750,10 @@
                     </p>
                 </div>
                 <div class="glider-nav">
-                    <button class="glider-prev" aria-label="Previous"><img src="images/index-v10/slide-arrow.svg" alt=""></button>
-                    <button class="glider-next" aria-label="Next"><img src="images/index-v10/slide-arrow.svg" alt=""></button>
+                    <button class="glider-prev" aria-label="Previous"><img src="images/index-v10/slide-arrow.svg"
+                            alt=""></button>
+                    <button class="glider-next" aria-label="Next"><img src="images/index-v10/slide-arrow.svg"
+                            alt=""></button>
                 </div>
             </div>
 
@@ -755,8 +771,8 @@
                                 </div>
                                 <div class="hover-content">
                                     <div class="inner-top">
-                                    <h4>Smarter Care, Better Outcomes</h4>
-                                    <p>Innovative software solutions to improve patient care.</p>
+                                        <h4>Smarter Care, Better Outcomes</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
                                     </div>
                                     <a href="#" class="expand-btn">Expand</a>
                                 </div>
@@ -774,10 +790,10 @@
                                     <h3>Media & Entertainment</h3>
                                 </div>
                                 <div class="hover-content">
-                                   <div class="inner-top">
-                                     <h4>Media & Entertainment</h4>
-                                    <p>Innovative software solutions to improve patient care.</p>
-                                   </div>
+                                    <div class="inner-top">
+                                        <h4>Media & Entertainment</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
+                                    </div>
                                     <a href="#" class="expand-btn">Expand</a>
                                 </div>
                             </div>
@@ -795,8 +811,8 @@
                                 </div>
                                 <div class="hover-content">
                                     <div class="inner-top">
-                                    <h4>Travel & Tourism</h4>
-                                    <p>Innovative software solutions to improve patient care.</p>
+                                        <h4>Travel & Tourism</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
                                     </div>
                                     <a href="#" class="expand-btn">Expand</a>
                                 </div>
@@ -815,8 +831,8 @@
                                 </div>
                                 <div class="hover-content">
                                     <div class="inner-top">
-                                    <h4>Smarter Care, Better Outcomes</h4>
-                                    <p>Innovative software solutions to improve patient care.</p>
+                                        <h4>Smarter Care, Better Outcomes</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
                                     </div>
                                     <a href="#" class="expand-btn">Expand</a>
                                 </div>
@@ -835,132 +851,138 @@
 
 
     <!-- new section  -->
-<section class="delivery-discipline">
+    <section class="delivery-discipline">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="delivery-grid">
+            <div class="delivery-grid">
 
-            <!-- LEFT PANEL -->
-            <div class="delivery-left">
+                <!-- LEFT PANEL -->
+                <div class="delivery-left">
 
-                <div class="left-content">
+                    <div class="left-content">
 
-                    <h2>
-                        Why Delivery Discipline
-                        <br>
-                        Matters Now
-                    </h2>
+                        <h2>
+                            Why Delivery Discipline
+                            <br>
+                            Matters Now
+                        </h2>
 
-                    <p>
-                        ValueCoders provides engineering teams across four capability
-                        areas — each operating inside the same sprint cadence,
-                        QA gates, and delivery framework.
-                    </p>
+                        <p>
+                            ValueCoders provides engineering teams across four capability
+                            areas — each operating inside the same sprint cadence,
+                            QA gates, and delivery framework.
+                        </p>
 
-                </div>
+                    </div>
 
-                <div class="left-image">
-                    <img src="images/index-v10/ai-circle.png" alt="">
-                </div>
-
-            </div>
-
-
-            <!-- RIGHT CARDS -->
-            <div class="delivery-right">
-
-                <!-- CARD 1 -->
-               <div class="info-card">
-
-    <span class="card-number">1</span>
-
-    <!-- Hidden Circle -->
-  <div class="circular-progress circle-progress" data-inner-circle-color="#161722" data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
-  <div class="inner-circle"></div>
-  <p class="percentage">0%</p>
-</div>
-
-    <span class="card-tag">
-        S&P Global 2025
-    </span>
-
-    <h4>
-        Enterprises abandoned AI initiatives
-    </h4>
-
-    <p>
-        Up from 17% in 2024. Governance wins.
-    </p>
-
-</div>
-
-
-                <!-- CARD 2 (DEFAULT ACTIVE) -->
-             <div class="info-card ">
-
-    <span class="card-number">2</span>
-
-   <div class="circular-progress circle-progress" data-inner-circle-color="#161722" data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
-  <div class="inner-circle"></div>
-  <p class="percentage">0%</p>
-</div>
-
-    <span class="card-tag">
-        Gartner 2025
-    </span>
-
-    <h4>
-        Worldwide AI spend in 2025
-    </h4>
-
-</div>
-
-
-                <!-- CARD 3 -->
-                <div class="info-card">
-
-                    <span class="card-number">3</span>
-                     <div class="circular-progress circle-progress" data-inner-circle-color="#161722" data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
-  <div class="inner-circle"></div>
-  <p class="percentage">0%</p>
-</div>
-
-                    <span class="card-tag">
-                        Mordor Intelligence
-                    </span>
-
-                    <h4>
-                        Enterprise AI market by 2031
-                    </h4>
-
-                    <p>
-                        18.91% CAGR — rewards delivery discipline.
-                    </p>
+                    <div class="left-image">
+                        <img src="images/index-v10/ai-circle.png" alt="">
+                    </div>
 
                 </div>
 
 
-                <!-- CARD 4 -->
-                <div class="info-card">
+                <!-- RIGHT CARDS -->
+                <div class="delivery-right">
 
-                    <span class="card-number">4</span>
-                     <div class="circular-progress circle-progress" data-inner-circle-color="#161722" data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
-  <div class="inner-circle"></div>
-  <p class="percentage">0%</p>
-</div>
+                    <!-- CARD 1 -->
+                    <div class="info-card">
 
-                    <span class="card-tag">
-                        Fullview 2025
-                    </span>
+                        <span class="card-number">1</span>
 
-                    <h4>
-                        Use human-in-the-loop oversight
-                    </h4>
+                        <!-- Hidden Circle -->
+                        <div class="circular-progress circle-progress" data-inner-circle-color="#161722"
+                            data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
+                            <div class="inner-circle"></div>
+                            <p class="percentage">0%</p>
+                        </div>
 
-                    <p>
-                        To catch AI errors before deployment.
-                    </p>
+                        <span class="card-tag">
+                            S&P Global 2025
+                        </span>
+
+                        <h4>
+                            Enterprises abandoned AI initiatives
+                        </h4>
+
+                        <p>
+                            Up from 17% in 2024. Governance wins.
+                        </p>
+
+                    </div>
+
+
+                    <!-- CARD 2 (DEFAULT ACTIVE) -->
+                    <div class="info-card ">
+
+                        <span class="card-number">2</span>
+
+                        <div class="circular-progress circle-progress" data-inner-circle-color="#161722"
+                            data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
+                            <div class="inner-circle"></div>
+                            <p class="percentage">0%</p>
+                        </div>
+
+                        <span class="card-tag">
+                            Gartner 2025
+                        </span>
+
+                        <h4>
+                            Worldwide AI spend in 2025
+                        </h4>
+
+                    </div>
+
+
+                    <!-- CARD 3 -->
+                    <div class="info-card">
+
+                        <span class="card-number">3</span>
+                        <div class="circular-progress circle-progress" data-inner-circle-color="#161722"
+                            data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
+                            <div class="inner-circle"></div>
+                            <p class="percentage">0%</p>
+                        </div>
+
+                        <span class="card-tag">
+                            Mordor Intelligence
+                        </span>
+
+                        <h4>
+                            Enterprise AI market by 2031
+                        </h4>
+
+                        <p>
+                            18.91% CAGR — rewards delivery discipline.
+                        </p>
+
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="info-card">
+
+                        <span class="card-number">4</span>
+                        <div class="circular-progress circle-progress" data-inner-circle-color="#161722"
+                            data-percentage="80" data-progress-color="#FFAD00" data-bg-color="#FFAD0033">
+                            <div class="inner-circle"></div>
+                            <p class="percentage">0%</p>
+                        </div>
+
+                        <span class="card-tag">
+                            Fullview 2025
+                        </span>
+
+                        <h4>
+                            Use human-in-the-loop oversight
+                        </h4>
+
+                        <p>
+                            To catch AI errors before deployment.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -968,9 +990,7 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
     <!-- new section  -->
@@ -979,7 +999,7 @@
 
 
 
- 
+
 
 
 
@@ -1170,190 +1190,191 @@
     <!-- new section -->
 
     <section class="insights">
-    <div class="container">
+        <div class="container">
 
-      <div class="insights__top-part">
-        <div>
-          <h2>Insights for Growing Agencies</h2>
-          <p>Practical reads on scaling delivery, protecting margins, and managing peak workload.</p>
-        </div>
+            <div class="insights__top-part">
+                <div>
+                    <h2>Insights for Growing Agencies</h2>
+                    <p>Practical reads on scaling delivery, protecting margins, and managing peak workload.</p>
+                </div>
 
-       <div class="btn-circle button-v10 second">
-                        <!-- TEXT -->
-                        <a href="/contact">
-                            <span class="text">
-                                <span class="text-default">Get in Touch</span>
-                                <span class="text-hover">Get in Touch</span>
-                            </span>
+                <div class="btn-circle button-v10 second">
+                    <!-- TEXT -->
+                    <a href="/contact">
+                        <span class="text">
+                            <span class="text-default">Get in Touch</span>
+                            <span class="text-hover">Get in Touch</span>
+                        </span>
 
-                            <!-- ARROW -->
-                            <span class="circle">
-                                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-                                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
-                            </span>
-                        </a>
+                        <!-- ARROW -->
+                        <span class="circle">
+                            <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
+                            <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="insights__grid">
+
+                <!-- Card 1 -->
+                <div class="blog-card">
+                    <div class="blog-card__image">
+                        <picture>
+                            <img src="images/index-v10/growing-1.webp" alt="Blog Card 1">
+                        </picture>
                     </div>
-      </div>
 
-      <div class="insights__grid">
+                    <div class="blog-card__content">
+                        <span>WHITE LABEL SOLUTIONS</span>
+                        <h3>Scaling Delivery Without the Hiring Headaches</h3>
 
-        <!-- Card 1 -->
-        <div class="blog-card">
-          <div class="blog-card__image">
-            <picture>
-              <img src="images/index-v10/growing-1.webp" alt="Blog Card 1">
-            </picture>
-          </div>
+                        <div class="blog-card__footer">
+                            <div class="author">
+                                <img src="images/index-v10/users.webp" alt="">
+                                <div>
+                                    <p>Kristi Ray</p>
+                                    <span>Jan 22, 2026</span>
+                                </div>
+                            </div>
 
-          <div class="blog-card__content">
-            <span>WHITE LABEL SOLUTIONS</span>
-            <h3>Scaling Delivery Without the Hiring Headaches</h3>
-
-            <div class="blog-card__footer">
-              <div class="author">
-                <img src="images/index-v10/users.webp" alt="">
-                <div>
-                  <p>Kristi Ray</p>
-                  <span>Jan 22, 2026</span>
+                            <a href="#">Learn More </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
 
-              <a href="#">Learn More </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="blog-card">
-          <div class="blog-card__image">
-            <img src="images/index-v10/growing-2.webp" alt="Blog Card 2">
-          </div>
-          <div class="blog-card__content">
-            <span>ECOMMERCE</span>
-            <h3>Protecting Your Agency Margins in 2025</h3>
-            <div class="blog-card__footer">
-              <div class="author">
-                <img src="images/index-v10/users.webp" alt="">
-                <div>
-                  <p>Kristi Ray</p>
-                  <span>Jan 22, 2026</span>
+                <!-- Card 2 -->
+                <div class="blog-card">
+                    <div class="blog-card__image">
+                        <img src="images/index-v10/growing-2.webp" alt="Blog Card 2">
+                    </div>
+                    <div class="blog-card__content">
+                        <span>ECOMMERCE</span>
+                        <h3>Protecting Your Agency Margins in 2025</h3>
+                        <div class="blog-card__footer">
+                            <div class="author">
+                                <img src="images/index-v10/users.webp" alt="">
+                                <div>
+                                    <p>Kristi Ray</p>
+                                    <span>Jan 22, 2026</span>
+                                </div>
+                            </div>
+                            <a href="#">Learn More </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <a href="#">Learn More </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="blog-card">
-          <div class="blog-card__image">
-            <picture>
-              <img src="images/index-v10/growing-3.webp" alt="Blog Card 3">
-            </picture>
-          </div>
+                <!-- Card 3 -->
+                <div class="blog-card">
+                    <div class="blog-card__image">
+                        <picture>
+                            <img src="images/index-v10/growing-3.webp" alt="Blog Card 3">
+                        </picture>
+                    </div>
 
-          <div class="blog-card__content">
-            <span>DIGITAL MARKETING</span>
-            <h3>Managing Peak Workloads: A Guide for Agency Owners</h3>
+                    <div class="blog-card__content">
+                        <span>DIGITAL MARKETING</span>
+                        <h3>Managing Peak Workloads: A Guide for Agency Owners</h3>
 
-            <div class="blog-card__footer">
-              <div class="author">
-                <img src="images/index-v10/users.webp" alt="">
-                <div>
-                  <p>Kristi Ray</p>
-                  <span>Jan 22, 2026</span>
+                        <div class="blog-card__footer">
+                            <div class="author">
+                                <img src="images/index-v10/users.webp" alt="">
+                                <div>
+                                    <p>Kristi Ray</p>
+                                    <span>Jan 22, 2026</span>
+                                </div>
+                            </div>
+
+                            <a href="#">Learn More </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
 
-              <a href="#">Learn More </a>
             </div>
-          </div>
         </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
     <!-- new section -->
 
 
 
     <!-- FAQ section start -->
-   <section class="faq-section-v10">
-    <div class="container">
-      <div class="inner-part">
+    <section class="faq-section-v10">
+        <div class="container">
+            <div class="inner-part">
 
-        <!-- LEFT CONTENT -->
-        <div class="faq-left">
-          <h2>
-            Frequently Asked <em>Questions</em>
-          </h2>
-          <p>
-            Here are some questions related to software outsourcing that our clients frequently ask.
-           
-          </p>
+                <!-- LEFT CONTENT -->
+                <div class="faq-left">
+                    <h2>
+                        Frequently Asked <em>Questions</em>
+                    </h2>
+                    <p>
+                        Here are some questions related to software outsourcing that our clients frequently ask.
+
+                    </p>
+                </div>
+                <!-- RIGHT ACCORDION -->
+                <div class="faq-right">
+
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>Why should you choose PixelCrayons as a digital agency?</h3>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I get started with your digital services?</h3>
+
+                        </div>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I hire dedicated teams for my project?</h3>
+
+                        </div>
+                        <div class="faq-answer">
+                            <p>Here are some questions related to software outsourcing that our clients frequently ask:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is outsourcing software development risky? How do you mitigate risks?</h3>
+
+                        </div>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What are the advantages of outsourcing software development?</h3>
+
+                        </div>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <!-- RIGHT ACCORDION -->
-        <div class="faq-right">
-
-          <div class="faq-item active">
-            <div class="faq-question">
-              <h3>Why should you choose PixelCrayons as a digital agency?</h3>
-              <span class="icon"></span>
-            </div>
-            <div class="faq-answer">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-               <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>How do I get started with your digital services?</h3>
-
-            </div>
-            <div class="faq-answer">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Can I hire dedicated teams for my project?</h3>
-
-            </div>
-            <div class="faq-answer">
-              <p>Here are some questions related to software outsourcing that our clients frequently ask:</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Is outsourcing software development risky? How do you mitigate risks?</h3>
-
-            </div>
-            <div class="faq-answer">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>What are the advantages of outsourcing software development?</h3>
-
-            </div>
-            <div class="faq-answer">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
     <!-- faq section end -->
 
 
@@ -1472,7 +1493,7 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="js/js-v10.js"></script>
 
-    <script> 
+    <script>
 
         // industruies start```````````````````````````````````````````````````````````````````````
 
@@ -1574,7 +1595,7 @@
 
         });
 
-       
+
 
         // <!-- new sections js start-->
 
@@ -1585,13 +1606,13 @@
                 const question = item.querySelector(".faq-question");
 
                 question.addEventListener("click", () => {
-               
+
                     const isActive = item.classList.contains("active");
 
-              
+
                     faqItems.forEach((el) => el.classList.remove("active"));
 
-                    
+
                     if (!isActive) {
                         item.classList.add("active");
                     }

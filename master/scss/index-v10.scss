@@ -22,160 +22,107 @@
 @use "_intent-popup";
 
 
-.logo-size .dark{
-    display: none !important;
-}
-.master-header.header-bg.sc-up .logo-size .dark{
-display: block !important;
-}
 
-.master-header.header-bg.sc-up .logo-size .light{
-display: none !important;
-}
-.master-header.header-bg.sc-down .light{
-    display: block !important;
-}
-.master-header.header-bg:hover .light{
-    display: block !important;
-}
 
-.master-header.header-bg:hover .dark{
-    display: none !important;
-}
-.master-header.header-bg.sc-down:hover .dark{
-    display: block !important;
-}
-.master-header.header-bg.sc-down:hover .light{
-    display: none !important;
-}
-.btn-circle.button-v10 {
-    display: inline-flex;
- margin-top: 30px;
-    margin-bottom: 70px;
-   
-  
-}
-.btn-circle.button-v10.second a{
-    background: transparent !important;
-    border: 1px solid #99A1AF;
-}
+// `````````cta button````````````
+.hero-section .master-btn{
+    margin-top: 30px;
 
-.btn-circle.button-v10 a{
+    margin-bottom: 70px;}
+
+    .master-btn{text-decoration: none;     display: inline-flex;
+    }
+    .master-btn .btn-circle:hover{text-decoration: none !important;}
+.master-btn .btn-circle {
   display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 11px 58px 11px 20px;
-    border-radius: 60px;
-    border: none;
-    background: #f4a800;
-    color: $navy-blue !important;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-.btn-circle.button-v10:hover{
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  padding: 11px 58px 11px 20px;
   border-radius: 60px;
+  background: $darkYellow;
+  color: #05164D;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.master-btn .btn-circle:hover {
+  background: #f0a000;
+}
+
+.master-btn .text {
+  position: relative;
+  height: 26px;
+  overflow: hidden;
+  display: block;
+}
+
+.master-btn .text::before,
+.master-btn .text::after {
+  content: attr(data-text);
+  display: block;
+  transition: transform 0.35s ease;
+  will-change: transform;
+  color: #05164D;
+}
+
+.master-btn .text::after {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  color: #05164D;
+}
+
+.master-btn .btn-circle:hover .text::before,
+.master-btn .btn-circle:hover .text::after {
+  transform: translateY(-100%);
   text-decoration: none;
 }
 
-
-/* TEXT WRAPPER */
-.btn-circle.button-v10 .text {
-    position: relative;
-    height: 26px;
-    overflow: hidden;
-    counter-reset: #05164D;
-    text-decoration: none;
+.master-btn .circle {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #0b2a6f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* DEFAULT + HOVER TEXT */
-.btn-circle.button-v10 .text-default,
-.text-hover {
-    display: block;
-    transition: transform 0.35s ease;
+.master-btn .circle img {
+  width: 50px;
+  transition: transform 0.4s ease;
 }
 
-/* Hover text starts below */
-.btn-circle.button-v10 .text-hover {
-    position: absolute;
-    left: 0;
-    top: 100%;
+.master-btn .btn-circle:hover .circle img {
+  transform: translateX(150%);
 }
 
-/* TEXT ANIMATION */
-.btn-circle.button-v10 :hover .text-default {
-    transform: translateY(-100%);
+.master-btn .circle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../images/index-v10/move-right.svg) center/20px no-repeat;
+  transform: translateX(-150%);
+  background-size: 50px;
+  transition: transform 0.4s ease;
 }
 
-.btn-circle.button-v10:hover .text-hover {
-    transform: translateY(-100%);
-}
-
-
-
-/* RIGHT BLUE CIRCLE */
-.btn-circle.button-v10 .circle {
-    position: absolute;
-    right: 2px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    width: 46px;
-    height: 46px;
-
-    background: #0b2a6f;
-    color: white;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-
-    transition: background 0.3s ease;
-}
-
-
-/* ARROWS */
-.btn-circle.button-v10 .arrow-default,
-.btn-circle.button-v10 .arrow-hover {
-    position: absolute;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-
-    font-size: 26px;
-
-    transition: transform 0.35s ease;
-}
-
-/* Hover arrow below */
-.btn-circle.button-v10 .arrow-hover {
-    left: -100%;
-}
-
-/* ARROW ANIMATION */
-.btn-circle.button-v10:hover .arrow-default {
-    transform: translateX(100%);
-}
-
-.btn-circle.button-v10:hover .arrow-hover {
-    transform: translateX(100%);
+.master-btn .btn-circle:hover .circle::after {
+  transform: translateX(0);
 }
 
 
 
+
+// ```````````````````````````````````
 
 
 
@@ -511,8 +458,7 @@ display: none !important;
 
 @media screen and (max-width: 1024px) {
 
-    .master-header.sc-down.header-bg .light{display: none !important; }
-    .sc-down.header-bg .logo-size .dark{display: block !important; }
+   
     .btn-secondry::before {
         right: 15% !important;
     }

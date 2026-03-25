@@ -21,16 +21,17 @@
         </button>
 
         <!-- Logo -->
-      
+
+
 
         <a href="/" class="logo-size">
-          <img loading="lazy"
-            src="images/index-v10/logo-valucoders-dark.svg"
-            alt="ValueCoders Logo" width="400" height="88" class="site-logo-img dark">
-          <img loading="lazy"
-            src="images/index-v10/logo-valucoders.webp"
-            alt="ValueCoders Logo" width="400" height="88" class="site-logo-img bg-logo light">
+          <img loading="lazy" src="images/index-v10/logo-valucoders-dark.svg" alt="ValueCoders Logo" width="400"
+            height="88" class="site-logo-img dark">
+          <img loading="lazy" src="images/index-v10/logo-valucoders.webp" alt="ValueCoders Logo" width="400" height="88"
+            class="site-logo-img bg-logo light">
         </a>
+
+       
 
 
         <!-- Desktop Navigation (L1) -->
@@ -41,28 +42,15 @@
 
         <!-- CTA (Mobile Hidden) -->
 
-        <!-- <div class="get-connect">
-          <a href="/contact"
-            class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            Get a Free Quote
-          </a>
-        </div> -->
+          <div class="get-connect">
+          <a href="/contact" class="btn-circle">
+            <span class="text" data-text="Get in Touch">Get in Touch</span>
 
-        <div class="btn-circle get-connect">
-          <!-- TEXT -->
-          <a href="/contact">
-            <span class="text">
-              <span class="text-default">Get in Touch</span>
-              <span class="text-hover">Get in Touch</span>
-            </span>
-
-            <!-- ARROW -->
             <span class="circle">
-              <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-              <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+              <img src="images/index-v10/move-right.svg" alt="">
             </span>
           </a>
-        </div>
+        </div> 
 
 
       </div>
