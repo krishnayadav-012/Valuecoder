@@ -4141,6 +4141,7 @@ button.tab-btn-base {
   width: 80%;
   height: 40%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .model-card .card-top {
   display: flex;
@@ -4662,6 +4663,9 @@ button.tab-btn-base {
 @media screen and (max-width: 640px) {
   .story-card--small .story-card__content {
     padding: 20px 0 0 0;
+  }
+  .story-card--small .story-card__image-wrap {
+    width: 100%;
   }
 }
 .insights {

@@ -1881,6 +1881,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   width: 80%;
   height: 40%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .model-card .card-top {
   display: flex;
