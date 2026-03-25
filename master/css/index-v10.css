@@ -6658,6 +6658,7 @@ button.tab-btn-base {
   color: #FFAD00;
 }
 .faq-section-v10 .faq-item.active .faq-answer {
+  display: block;
   padding: 20px 24px;
 }
 .faq-section-v10 .faq-question {
@@ -6686,9 +6687,9 @@ button.tab-btn-base {
   transform: translateY(-50%);
 }
 .faq-section-v10 .faq-answer {
-  max-height: 0;
   overflow: hidden;
   transition: all 0.35s ease;
+  display: none;
   padding: 0 24px;
 }
 .faq-section-v10 .faq-answer p {
