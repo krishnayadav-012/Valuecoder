@@ -42,7 +42,7 @@ flex-wrap: wrap;
         float: right;
 
         h2 {
-            font-size: 46px;
+            font-size: clamp(30px, 3.7vw, 46px);
             font-weight: 700;
             margin-bottom: 10px;
             color: #fff;
@@ -186,9 +186,7 @@ flex-wrap: wrap;
         padding: 60px 0;
     }
 
-    .ai-right .ai-content h2 {
-        font-size: 26px;
-    }
+    
     .ai-list{padding-left: 20px;}
 
 }

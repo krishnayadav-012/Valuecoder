@@ -78,24 +78,23 @@
     color: $darkYellow;
     margin-bottom: 5px;
     position: relative;
-    padding-left: 14px;
     animation: fadeUp 0.5s ease both 0.1s;
  
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 6px;
-      height: 6px;
-      background: $darkYellow;
-      border-radius: 50%;
-    }
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   width: 6px;
+    //   height: 6px;
+    //   background: $darkYellow;
+    //   border-radius: 50%;
+    // }
   }
  
   h2 {
-    font-size: clamp(32px, 4vw, 52px);
+    font-size: clamp(30px, 3.7vw, 46px);
     font-weight: 800;
     line-height: 1.1;
     color: $white;
@@ -113,7 +112,6 @@
     
     color: #D1D5DC;
     width: 100%;
-    max-width: 460px;
     font-weight: $normal-font;
     
   }
@@ -262,3 +260,7 @@ right: -55%;
   }
 }
  
+
+@media screen and (max-width:1024px) {
+  
+}

@@ -37,7 +37,7 @@
   /* LEFT */
   .faq-left {
     h2 {
-      font-size: 46px;
+      font-size: clamp(30px, 3.7vw, 46px);
       font-weight: 700;
       color: #05164D;
       line-height: 1.2;
@@ -120,7 +120,31 @@
       font-size: 14px;
       font-weight: $normal-font;
       margin-bottom: 0;
+
+      
     }
+
+    ul {
+      
+      li {
+        margin: 5px 0 0;
+    position: relative;
+    padding-left: 18px;
+    &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: #FFAD00;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 10px
+      }
+    
+          
+    }
+  
+  }
 
   }
 

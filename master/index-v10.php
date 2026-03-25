@@ -44,10 +44,11 @@
         <div class="container">
             <div class="dis-flex">
                 <div class="left-box">
-                    <h1>Build Faster. Ship with Confidence. <span>Scale Without Hiring Delays.</span></h1>
-                    <p>We help engineering-led companies design, build, and scale software using dedicated development
-                        teams, product engineering pods, and staff augmentation services — onboarded in 2–4 weeks with
-                        full IP ownership and predictable delivery.</p>
+                    <h1>Engineering Partner for <em>Predictable Software Delivery</em></h1>
+                    <h3>AI Augmented. <em>Human Governed.</em></h3>
+                    <p>We help SaaS companies, funded startups, and global engineering teams ship software with structured milestones, defined ownership, and measurable execution.
+
+</p>
 
                     <div class="btn-circle button-v10">
                         <!-- TEXT -->
@@ -353,9 +354,9 @@
 
                     <h2>
 
-                        <i>
+                        <em>
                             AI that ships to production.
-                        </i>
+</em>
 
                         Not AI that demos well.
                     </h2>
@@ -729,14 +730,14 @@
         <div class="container">
             <div class="section-header">
                 <div class="header-text">
-                    <h1>Industries We Cater to</h1>
+                    <h2>Industries We Cater to</h2>
                     <p>Get what you are looking for to fulfill your software development and
                         outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
                     </p>
                 </div>
                 <div class="glider-nav">
-                    <button class="glider-prev" aria-label="Previous"><img src="icons/arrow-right.svg" alt=""></button>
-                    <button class="glider-next" aria-label="Next"><img src="icons/arrow-right.svg" alt=""></button>
+                    <button class="glider-prev" aria-label="Previous"><img src="images/index-v10/slide-arrow.svg" alt=""></button>
+                    <button class="glider-next" aria-label="Next"><img src="images/index-v10/slide-arrow.svg" alt=""></button>
                 </div>
             </div>
 
@@ -993,9 +994,9 @@
 
                 <div class="glider-arrows">
                     <button class="stack-prev starc-arrow" aria-label="Previous" aria-disabled="true"><img
-                            src="icons/arrow-right.svg" alt=""></button>
+                            src="images/index-v10/slide-arrow.svg" alt=""></button>
                     <button class="stack-next starc-arrow" aria-label="Next" aria-disabled="false"><img
-                            src="icons/arrow-right.svg" alt=""></button>
+                            src="images/index-v10/slide-arrow.svg" alt=""></button>
                 </div>
             </div>
             <div class="glider-contain">
@@ -1288,6 +1289,7 @@
           </h2>
           <p>
             Here are some questions related to software outsourcing that our clients frequently ask.
+           
           </p>
         </div>
         <!-- RIGHT ACCORDION -->
@@ -1300,6 +1302,11 @@
             </div>
             <div class="faq-answer">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
             </div>
           </div>
 
@@ -1578,13 +1585,13 @@
                 const question = item.querySelector(".faq-question");
 
                 question.addEventListener("click", () => {
-                    // 1. Check if the clicked item is already active
+               
                     const isActive = item.classList.contains("active");
 
-                    // 2. Remove 'active' class from ALL items
+              
                     faqItems.forEach((el) => el.classList.remove("active"));
 
-                    // 3. If the clicked item wasn't active, open it
+                    
                     if (!isActive) {
                         item.classList.add("active");
                     }

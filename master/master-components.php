@@ -155,6 +155,42 @@
 
 
 
+<!-- roadmap  -->
+
+
+
+<!-- 8. ROADMAP -->
+<section class="roadmap" id="roadmap">
+  <div class="w">
+    <div class="rm-grid">
+      <div class="rv">
+        <div class="ey">Onboarding Roadmap</div>
+        <h2 class="h2 d1">From signed agreement to<br>contributing engineer in 2 weeks</h2>
+        <p style="font-size:var(--t-sm);color:var(--mid);line-height:1.65;margin-bottom:28px" class="d2">Every milestone below is a concrete output, not a phase name. Day-by-day accountability from first call to first working code.</p>
+        <div class="rm-timeline rv d3">
+          <div class="rmt-title">Week-by-week breakdown</div>
+          <div class="rmt-phases">
+            <div class="rmt-phase"><div class="rmt-dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></svg></div><div class="rmt-content"><div class="rmt-week">Day 1</div><div class="rmt-title2">Scoping call + requirements confirmed in writing</div><div class="rmt-sub">Stack, seniority, working model. Output: requirements doc shared same day.</div></div></div>
+            <div class="rmt-phase"><div class="rmt-dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></svg></div><div class="rmt-content"><div class="rmt-week">Day 2–3</div><div class="rmt-title2">Assessment-scored profiles delivered</div><div class="rmt-sub">Matched to your tech stack. Technical evaluation results included with each profile.</div></div></div>
+            <div class="rmt-phase"><div class="rmt-dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></svg></div><div class="rmt-content"><div class="rmt-week">Day 4–7</div><div class="rmt-title2">Your interview · your selection decision</div><div class="rmt-sub">Your interview format. We provide assessment context. Selection is entirely yours.</div></div></div>
+            <div class="rmt-phase"><div class="rmt-dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></svg></div><div class="rmt-content"><div class="rmt-week">Week 2, Day 1</div><div class="rmt-title2">Onboarding · NDA + IP signed · 7-day trial begins</div><div class="rmt-sub">Repo access. Dev environment. Context from your codebase. Standards briefing. Trial clock starts.</div></div></div>
+            <div class="rmt-phase" style="border-left:none"><div class="rmt-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="rmt-content"><div class="rmt-week">Week 3</div><div class="rmt-title2">First tickets closed · Monthly billing begins</div><div class="rmt-sub">82% of engineers close their first real ticket in Sprint 1. Monthly billing activated.</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ey rv" style="margin-top:52px">Milestones with contractual backing</div>
+        <div class="rm-milestones">
+          <div class="rm-ms rv d1"><div class="rm-ms-num">1</div><div><div class="rm-ms-title">Agreement signed → Profiles in 48 hours</div><div class="rm-ms-sub">From the moment you agree to proceed, the 48-hour matching clock starts. Contractual SLA — not a best-effort estimate.</div><div class="rm-ms-tag tag tag--a">Contractual SLA</div></div></div>
+          <div class="rm-ms rv d2"><div class="rm-ms-num">2</div><div><div class="rm-ms-title">First day → 7-day risk-free trial begins</div><div class="rm-ms-sub">The moment the engineer gets repo access, the trial starts. If it's not right after 7 days, no obligation to continue. No awkward conversations. Contract clause, not a policy.</div><div class="rm-ms-tag tag tag--a">7-Day Trial</div></div></div>
+          <div class="rm-ms rv d3"><div class="rm-ms-num">3</div><div><div class="rm-ms-title">Sprint 1 → First meaningful commits</div><div class="rm-ms-sub">82% of our engineers close their first ticket in Sprint 1. If that milestone isn't met, you exercise the trial clause and we escalate the replacement process immediately.</div><div class="rm-ms-tag tag tag--g">82% Sprint-1 rate</div></div></div>
+          <div class="rm-ms rv d4"><div class="rm-ms-num">4</div><div><div class="rm-ms-title">Month 3+ → Scale up or down in 5 days</div><div class="rm-ms-sub">SOW amendment processed in 5 business days. Each new engineer follows the same matching and trial process. No minimum scale-down notice beyond your SOW terms.</div><div class="rm-ms-tag tag">Flexible scale</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 

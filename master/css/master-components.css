@@ -447,5 +447,220 @@ section {
     grid-template-columns: 1fr;
   }
 }
+/* ═══════════════════════════════════════════════════
+   Roadmap Section — Extracted Classes
+   New classes only (not already in previous files)
+═══════════════════════════════════════════════════ */
+/* ── New delay utility ── */
+.d4 {
+  transition-delay: 0.28s;
+}
+
+/* ── Tag variants ── */
+.tag--a {
+  background: rgba(255, 173, 0, 0.13);
+  color: var(--ad);
+}
+
+.tag--g {
+  background: rgba(22, 163, 74, 0.08);
+  color: #15803D;
+}
+
+/* ═══ 8. ROADMAP ═════════════════════════════════════════════ */
+.roadmap {
+  background: var(--white);
+}
+
+.rm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── Left: visual timeline card ── */
+.rm-timeline {
+  background: var(--canvas);
+  border: 1px solid var(--bdr);
+  border-radius: var(--r2);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rm-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--amber), transparent);
+}
+
+.rmt-title {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.rmt-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.rmt-phase {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.rmt-phase:not(:last-child) {
+  padding-bottom: 20px;
+  border-left: 2px dashed rgba(255, 173, 0, 0.3);
+  margin-left: 15px;
+}
+
+.rmt-phase:last-child {
+  border-left: none;
+  margin-left: 15px;
+}
+
+.rmt-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: -15px;
+  position: relative;
+  z-index: 1;
+  transition: background 0.2s;
+}
+
+.rmt-dot svg {
+  width: 12px;
+  height: 12px;
+  stroke: var(--amber);
+  fill: none;
+  stroke-width: 2;
+}
+
+.rmt-phase:hover .rmt-dot {
+  background: var(--amber);
+}
+
+.rmt-phase:hover .rmt-dot svg {
+  stroke: var(--navy);
+}
+
+.rmt-content {
+  padding-bottom: 0;
+}
+
+.rmt-week {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ad);
+  margin-bottom: 3px;
+}
+
+.rmt-title2 {
+  font-size: var(--t-sm);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.rmt-sub {
+  font-size: var(--t-xs);
+  color: var(--mid);
+  line-height: 1.55;
+}
+
+/* ── Right: milestone cards ── */
+.rm-milestones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rm-ms {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--bdr);
+  border-radius: var(--rxl);
+  transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
+}
+
+.rm-ms:hover {
+  box-shadow: var(--shlg);
+  border-color: rgba(5, 22, 77, 0.16);
+  transform: translateY(-2px);
+}
+
+.rm-ms-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.rm-ms:hover .rm-ms-num {
+  background: var(--amber);
+  color: var(--navy);
+}
+
+.rm-ms-title {
+  font-size: var(--t-sm);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.rm-ms-sub {
+  font-size: var(--t-xs);
+  color: var(--mid);
+  line-height: 1.6;
+}
+
+.rm-ms-tag {
+  margin-top: 8px;
+  font-size: var(--t-lbl);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .rm-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=master-components.css.map */

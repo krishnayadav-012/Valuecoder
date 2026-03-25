@@ -20,8 +20,9 @@ $listing-color:#101828;
   text-align: left;
 
   h2 { 
+    font-size: clamp(30px, 3.7vw, 46px);
      color: $themeMidNight; 
-    strong {color: $darkYellow; } 
+    em {color: $darkYellow; font-style: normal;} 
   }
   p{
     margin-top: 15px;
@@ -44,9 +45,9 @@ gap: 20px;
  button {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    background: #e9ecef;
+    border-radius: 16px;
+    border: 2px solid #99A1AF;
+    background: transparent;
     color: #05164d;
     cursor: pointer;
     transition: 0.3s ease;

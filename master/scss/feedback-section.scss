@@ -16,6 +16,9 @@ $breakpoint-md: 768px;
 
   .top-part {
     margin-bottom: 40px;
+    h2{
+      font-size: clamp(30px, 3.7vw, 46px);
+    }
 
     span {
       color: $darkYellow;

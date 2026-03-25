@@ -11,7 +11,7 @@
         margin: 0 auto 70px;
 
         h2 {
-            font-size: 46px;
+            font-size: clamp(30px, 3.7vw, 46px);
             font-weight: 700;
             color: $navy-blue;
             margin-bottom: 10px;
@@ -167,8 +167,6 @@
             grid-template-columns: 1fr;
         }
 
-        .section-head h2 {
-            font-size: 28px;
-        }
+        
     }
 }

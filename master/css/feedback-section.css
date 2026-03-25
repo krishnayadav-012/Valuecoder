@@ -1839,6 +1839,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 .testimonial-section-v9 .top-part {
   margin-bottom: 40px;
 }
+.testimonial-section-v9 .top-part h2 {
+  font-size: clamp(30px, 3.7vw, 46px);
+}
 .testimonial-section-v9 .top-part span {
   color: #FFAD00;
   text-transform: uppercase;

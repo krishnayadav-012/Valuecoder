@@ -1844,10 +1844,12 @@ body.page-template-template-testimonials .client-video-section iframe,
   text-align: left;
 }
 .stack-section .section-header .content-part h2 {
+  font-size: clamp(30px, 3.7vw, 46px);
   color: #05164d;
 }
-.stack-section .section-header .content-part h2 strong {
+.stack-section .section-header .content-part h2 em {
   color: #FFAD00;
+  font-style: normal;
 }
 .stack-section .section-header .content-part p {
   margin-top: 15px;
@@ -1870,9 +1872,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stack-section .section-header .glider-arrows button {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  background: #e9ecef;
+  border-radius: 16px;
+  border: 2px solid #99A1AF;
+  background: transparent;
   color: #05164d;
   cursor: pointer;
   transition: 0.3s ease;

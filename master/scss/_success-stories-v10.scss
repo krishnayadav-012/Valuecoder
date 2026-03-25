@@ -47,7 +47,7 @@
   }
  
   h2 {
-    font-size: clamp(28px, 4vw, 44px);
+    font-size: clamp(30px, 3.7vw, 46px);
     font-weight: 800;
     color: $navy-blue;
     letter-spacing: -0.02em;
@@ -201,6 +201,10 @@
       padding: 0 0 0 30px;
      display: flex;
      flex-direction: column;
+     h3{
+      font-size: 24px;
+      color: #101828;
+     }
     }
  
     .story-card__name {
@@ -263,16 +267,16 @@
     transition: gap 0.2s ease;
 
      &::after{
-                content: "";
-                background: url('../images/index-v10/right-yellow.svg') no-repeat;
-                width: 12px;
-                height: 12px;
-                background-size: 100%;
-                display: inline-block;
-                margin-left: 9px;
-                margin-top: 7px;
+      content: "";
+      background: url('../images/index-v10/right-yellow.svg') no-repeat;
+      width: 12px;
+      height: 12px;
+      background-size: 100%;
+      display: inline-block;
+      margin-left: 9px;
+      margin-top: 7px;
 
-            }
+  }
  
    
   }

@@ -1,11 +1,11 @@
 @use "_default" as *;
 // Color Variables
 $text-gray: #314158;
-$section-bg: #F4F4F4;
+
 
 .industries-section {
   padding: 100px 0;
-  background-color: $section-bg;
+  background-color: $white;
 
   .section-header {
     display: flex;
@@ -26,8 +26,8 @@ $section-bg: #F4F4F4;
         letter-spacing: 1px;
       }
 
-      h1 {
-        font-size: 42px;
+      h2 {
+        font-size: clamp(30px, 3.7vw, 46px);
         color: $themeMidNight;
         margin: 10px 0;
 
@@ -65,9 +65,9 @@ $section-bg: #F4F4F4;
     button {
       width: 45px;
       height: 45px;
-      border-radius: 50%;
-      border: 1px solid #ddd;
-      background: #e9ecef;
+      border-radius:16px;
+border: 2px solid #99A1AF;
+      background: transparent;
       color: $themeMidNight;
       cursor: pointer;
       transition: 0.3s ease;
@@ -89,7 +89,7 @@ $section-bg: #F4F4F4;
   .glider-next.disabled,
   .glider-prev.disabled {
     opacity: 1;
-    color: #666;
+    
     cursor: default;
   }
 
@@ -108,13 +108,14 @@ $section-bg: #F4F4F4;
     display: flex;
     flex-direction: column;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+
 
     .card-image {
       height: 350px;
       transition: height 0.4s ease;
       border-radius: 20px;
       overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 
       img {
         width: 100%;
@@ -127,7 +128,9 @@ $section-bg: #F4F4F4;
       padding: 20px 15px;
       flex-grow: 1;
       border-radius: 20px;
-      background-color: #fff;
+      background-color: #F4F4F4;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      border: 1px solid #E5E7EB;
       transition: background 0.4s ease;
       position: relative;
 
