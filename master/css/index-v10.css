@@ -3635,7 +3635,7 @@ button.tab-btn-base {
 }
 .delivery-section h2 {
   font-size: clamp(30px, 3.7vw, 46px);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   color: #ffffff;
   letter-spacing: -0.02em;
