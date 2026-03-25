@@ -1840,6 +1840,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .industries-section .section-header .header-text {
   max-width: 763px;
+  text-align: left;
 }
 .industries-section .section-header .header-text .subtitle {
   color: #FFAD00;
@@ -1925,7 +1926,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   object-fit: cover;
 }
 .industries-section .industry-card .card-body {
-  padding: 25px;
+  padding: 20px 15px;
   flex-grow: 1;
   border-radius: 20px;
   background-color: #fff;
@@ -1936,32 +1937,48 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .industries-section .industry-card .card-body .title-wrap h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #314158;
+  font-weight: 600;
   margin: 0;
 }
-.industries-section .industry-card .card-body .title-wrap .new-arrow-icon {
-  font-size: 18px;
-  transform: rotate(323deg);
-  transition: 0.3s;
+.industries-section .industry-card .card-body .title-wrap::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  transform: rotate(359deg);
+  top: 0;
+  background: url(../images/index-v10/blue-arrow.svg);
+  width: 24px;
+  height: 24px;
+  background-size: auto;
 }
 .industries-section .industry-card .hover-content {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   transition: all 0.4s ease;
 }
-.industries-section .industry-card .hover-content h4 {
+.industries-section .industry-card .hover-content .inner-top {
+  display: block;
+}
+.industries-section .industry-card .hover-content .inner-top h4 {
   font-weight: 700;
   font-size: 15px;
   margin: 15px 0 5px;
+  color: #E5E7EB;
 }
-.industries-section .industry-card .hover-content p {
+.industries-section .industry-card .hover-content .inner-top p {
   font-size: 14px;
   line-height: 1.5;
-  color: #110302;
+  color: #99A1AF;
   margin-bottom: 20px;
 }
 .industries-section .industry-card .hover-content .expand-btn {
@@ -1969,6 +1986,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-weight: 600;
   text-decoration: underline;
   color: inherit;
+  margin-bottom: 22px;
+  color: #fff;
 }
 .industries-section .industry-card:hover {
   transform: translateY(-5px);
@@ -1977,7 +1996,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   height: 180px;
 }
 .industries-section .industry-card:hover .card-body {
-  background: #FFAD00;
+  background: #05164D;
   margin-top: 10px;
 }
 .industries-section .industry-card:hover .hover-content {
@@ -1986,7 +2005,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 
 .industries-section .industry-card:hover .card-body .title-wrap h3 {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 992px) {
@@ -2015,20 +2034,24 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 .industry-card .card-body::after {
-  background: url(../icons/btn-black-icon.svg);
-  width: 16px;
+  background: url(../images/index-v10/white-arrow.svg);
+  width: 24px;
   display: none;
-  height: 16px;
+  height: 24px;
   content: "";
   position: absolute;
   top: 29px;
   right: 8%;
-  transform: rotate(-45deg);
+  transform: rotate(360deg);
   transition: 0.4s;
 }
 
 .industry-card:hover .card-body::after {
   display: block;
+}
+
+.industries-section .industry-card:hover .card-body .title-wrap::after {
+  display: none;
 }
 
 /*# sourceMappingURL=industries-new.css.map */

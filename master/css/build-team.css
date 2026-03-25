@@ -1854,8 +1854,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin: 0;
   color: #0c104c;
 }
-.section-header h2 strong {
+.section-header h2 em {
   color: #FFAD00;
+  font-style: normal;
 }
 .section-header p {
   margin-top: 15px;
@@ -2010,19 +2011,19 @@ body.page-template-template-testimonials .client-video-section iframe,
   position: absolute;
 }
 
-.card .card-content {
+.build-team .card .card-content {
   overflow: hidden;
 }
 
-.card:hover .card-icon {
+.build-team .card:hover .card-icon {
   display: none;
 }
 
-.card:hover .card-footer {
+.build-team .card:hover .card-footer {
   display: none;
 }
 
-.card:hover .card-content > p {
+.build-team .card:hover .card-content > p {
   display: none;
 }
 

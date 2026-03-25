@@ -1,0 +1,451 @@
+@charset "UTF-8";
+/* ═══════════════════════════════════════════════════
+   TOKENS — VC-BRAND-001 v2.1
+   Extracted: only classes used in app-types section
+═══════════════════════════════════════════════════ */
+:root {
+  --navy: #05164D;
+  --ndp: #02091F;
+  --nmd: #0D2E6B;
+  --white: #fff;
+  --canvas: #EFEDE8;
+  --amber: #FFAD00;
+  --ad: #CC8B00;
+  --ink: #111827;
+  --mid: #4B5563;
+  --lite: #9CA3AF;
+  --bdr: rgba(5,22,77,.09);
+  --bdrw: rgba(255,255,255,.08);
+  --sh: 0 4px 16px rgba(5,22,77,.08), 0 1px 3px rgba(5,22,77,.05);
+  --shlg: 0 14px 42px rgba(5,22,77,.12), 0 4px 8px rgba(5,22,77,.06);
+  --shxl: 0 28px 64px rgba(5,22,77,.16), 0 6px 16px rgba(5,22,77,.08);
+  --r: 8px;
+  --rl: 12px;
+  --rxl: 16px;
+  --r2: 20px;
+  --rf: 9999px;
+  --ease: cubic-bezier(.4,0,.2,1);
+  --t-dsp: clamp(2.4rem,4.2vw,3.8rem);
+  --t-h2: clamp(1.625rem,2.7vw,2.25rem);
+  --t-h3: clamp(1.175rem,1.75vw,1.575rem);
+  --t-sub: clamp(.9375rem,1.35vw,1.125rem);
+  --t-body: clamp(.9375rem,1.1vw,1.0625rem);
+  --t-sm: .875rem;
+  --t-xs: .8125rem;
+  --t-lbl: .6875rem;
+  --w: 1100px;
+  --ww: 1280px;
+}
+
+/* ── Reset (minimal, only what's needed) ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ── Layout wrapper ── */
+.w {
+  max-width: var(--w);
+  margin-inline: auto;
+  padding-inline: clamp(20px, 4vw, 40px);
+}
+
+/* ── Section ── */
+section {
+  padding-block: 88px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-block: 60px;
+  }
+}
+/* ── Reveal animation ── */
+.rv {
+  transform: translateY(20px);
+  transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+}
+
+.rv.on {
+  opacity: 1;
+  transform: none;
+}
+
+.d1 {
+  transition-delay: 0.07s;
+}
+
+.d2 {
+  transition-delay: 0.14s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+/* ── Eyebrow label ── */
+.ey {
+  font-size: var(--t-lbl);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ad);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.ey::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: var(--amber);
+  flex-shrink: 0;
+}
+
+/* ── Heading ── */
+.h2 {
+  font-size: var(--t-h2);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  margin-bottom: 14px;
+}
+
+/* ── Subtitle ── */
+.sub {
+  font-size: var(--t-sub);
+  color: var(--mid);
+  line-height: 1.7;
+  max-width: 620px;
+  margin-bottom: 52px;
+}
+
+/* ── Tag pill ── */
+.tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: rgba(5, 22, 77, 0.06);
+  color: var(--navy);
+}
+
+/* ═══ 5. TYPES OF APPLICATIONS ═══════════════════════════════ */
+.app-types {
+  background: var(--white);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.app-card {
+  border-radius: var(--rxl);
+  padding: 26px;
+  border: 1px solid var(--bdr);
+  box-shadow: 0 2px 8px rgba(5, 22, 77, 0.05);
+  transition: box-shadow 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-card:hover {
+  box-shadow: var(--shlg);
+  transform: translateY(-3px);
+}
+
+/* Colored top accent per card */
+.app-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+.app-card--blue::before {
+  background: linear-gradient(90deg, #2563EB, #60A5FA);
+}
+
+.app-card--green::before {
+  background: linear-gradient(90deg, #16A34A, #4ADE80);
+}
+
+.app-card--amber::before {
+  background: linear-gradient(90deg, var(--amber), #FF9500);
+}
+
+.app-card--purple::before {
+  background: linear-gradient(90deg, #7C3AED, #A78BFA);
+}
+
+.app-card--teal::before {
+  background: linear-gradient(90deg, #0E7490, #22D3EE);
+}
+
+.app-card--rose::before {
+  background: linear-gradient(90deg, #E11D48, #FB7185);
+}
+
+/* Icon container */
+.app-ico {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--rl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.app-ico--blue {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.app-ico--blue svg {
+  stroke: #2563EB;
+}
+
+.app-ico--green {
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.app-ico--green svg {
+  stroke: #16A34A;
+}
+
+.app-ico--amber {
+  background: rgba(255, 173, 0, 0.1);
+}
+
+.app-ico--amber svg {
+  stroke: var(--ad);
+}
+
+.app-ico--purple {
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.app-ico--purple svg {
+  stroke: #7C3AED;
+}
+
+.app-ico--teal {
+  background: rgba(14, 116, 144, 0.08);
+}
+
+.app-ico--teal svg {
+  stroke: #0E7490;
+}
+
+.app-ico--rose {
+  background: rgba(225, 29, 72, 0.06);
+}
+
+.app-ico--rose svg {
+  stroke: #E11D48;
+}
+
+.app-ico svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* Card content */
+.app-title {
+  font-size: var(--t-sub);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 9px;
+}
+
+.app-desc {
+  font-size: var(--t-sm);
+  color: var(--mid);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.app-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .app-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ═══════════════════════════════════════════════════
+   Pain Points Section — Extracted Classes
+   New classes only (not already in app-types-extracted.css)
+═══════════════════════════════════════════════════ */
+/* ── New delay utilities ── */
+.d3 {
+  transition-delay: 0.21s;
+}
+
+/* ── Eyebrow white variant ── */
+.ey--w {
+  color: rgba(255, 173, 0, 0.75);
+}
+
+.ey--w::before {
+  background: rgba(255, 173, 0, 0.45);
+}
+
+/* ── Heading white variant ── */
+.h2--w {
+  color: var(--white);
+}
+
+/* ═══ 6. PAIN POINTS + SOLUTIONS ════════════════════════════ */
+.pain-sec {
+  background: var(--ndp);
+  position: relative;
+  overflow: hidden;
+}
+
+.pain-sec::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 15% 45%, rgba(13, 46, 107, 0.75) 0%, transparent 62%), radial-gradient(ellipse 55% 65% at 90% 65%, rgba(255, 173, 0, 0.055) 0%, transparent 58%);
+  pointer-events: none;
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.pain-card {
+  padding: 22px;
+  border-radius: var(--rxl);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.pain-card:hover,
+.pain-card.act {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 173, 0, 0.22);
+}
+
+.pain-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.pain-ico {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r);
+  background: rgba(255, 173, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pain-ico svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--amber);
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.pain-title {
+  font-size: var(--t-sm);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.3;
+}
+
+.pain-body {
+  display: none;
+  font-size: var(--t-xs);
+  color: rgba(255, 255, 255, 0.52);
+  line-height: 1.65;
+  margin-top: 12px;
+}
+
+.pain-card.act .pain-body {
+  display: block;
+}
+
+.pain-fix {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: var(--t-xs);
+  color: rgba(255, 173, 0, 0.9);
+  font-weight: 600;
+  padding: 8px 10px;
+  background: rgba(255, 173, 0, 0.08);
+  border: 1px solid rgba(255, 173, 0, 0.2);
+  border-radius: var(--r);
+}
+
+.pain-fix svg {
+  width: 11px;
+  height: 11px;
+  stroke: var(--amber);
+  fill: none;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .pain-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=master-components.css.map */

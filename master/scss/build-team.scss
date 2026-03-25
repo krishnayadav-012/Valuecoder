@@ -34,8 +34,9 @@ $text-muted: #555;
         margin: 0;
         color: #0c104c;
 
-        strong {
+        em {
             color: $darkYellow;
+            font-style: normal;
         }
     }
 

@@ -14,20 +14,40 @@
 @use "risk-friction";
 @use "build-team";
 @use "engineering-stacks";
-@use "faqs-section";
 @use "industries-new";
 @use "feedback-section";
-@use "_footer-form";
-@use "_home-award";
-@use "_intent-popup";
-@use "_glider";
-@use "_footer-section";
+@use "footer-form";
+@use "home-award";
+@use "intent-popup";
+@use "glider";
+@use "footer-section";
 
+.logo-size .dark{
+    display: none !important;
+}
+.master-header.header-bg.sc-up .logo-size .dark{
+display: block !important;
+}
 
+.master-header.header-bg.sc-up .logo-size .light{
+display: none !important;
+}
+.master-header.header-bg.sc-down .light{
+    display: block !important;
+}
+.master-header.header-bg:hover .light{
+    display: block !important;
+}
 
-
-
-
+.master-header.header-bg:hover .dark{
+    display: none !important;
+}
+.master-header.header-bg.sc-down:hover .dark{
+    display: block !important;
+}
+.master-header.header-bg.sc-down:hover .light{
+    display: none !important;
+}
 .btn-circle.button-v10 {
     display: inline-flex;
  
@@ -479,6 +499,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    .master-header.sc-down.header-bg .light{display: none !important; }
+    .sc-down.header-bg .logo-size .dark{display: block !important; }
     .btn-secondry::before {
         right: 15% !important;
     }

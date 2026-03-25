@@ -21,10 +21,17 @@
         </button>
 
         <!-- Logo -->
+      
+
         <a href="/" class="logo-size">
-          <img src="images/index-v10/logo-valucoders.webp"
-            alt="ValueCoders Logo" class="site-logo-img">
+          <img loading="lazy"
+            src="images/index-v10/logo-valucoders-dark.svg"
+            alt="ValueCoders Logo" width="400" height="88" class="site-logo-img dark">
+          <img loading="lazy"
+            src="images/index-v10/logo-valucoders.webp"
+            alt="ValueCoders Logo" width="400" height="88" class="site-logo-img bg-logo light">
         </a>
+
 
         <!-- Desktop Navigation (L1) -->
         <!-- Buttons generated from MENU_DATA in JS -->

@@ -15,6 +15,10 @@
             font-weight: 700;
             color: $navy-blue;
             margin-bottom: 10px;
+            em{
+                color: $darkYellow;
+                font-style: normal;
+            }
         }
 
         p {
