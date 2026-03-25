@@ -6658,7 +6658,6 @@ button.tab-btn-base {
   color: #FFAD00;
 }
 .faq-section-v10 .faq-item.active .faq-answer {
-  max-height: 200px;
   padding: 20px 24px;
 }
 .faq-section-v10 .faq-question {
@@ -6695,14 +6694,29 @@ button.tab-btn-base {
 .faq-section-v10 .faq-answer p {
   color: #364153;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  margin-bottom: 15px;
+}
+.faq-section-v10 .faq-answer p:last-child {
   margin-bottom: 0;
+}
+.faq-section-v10 .faq-answer p:first-child {
+  margin-bottom: 15px;
+}
+.faq-section-v10 .faq-answer p a {
+  font-weight: bold;
+}
+.faq-section-v10 .faq-answer ul {
+  margin: 10px 0;
 }
 .faq-section-v10 .faq-answer ul li {
   margin: 5px 0 0;
   position: relative;
   padding-left: 18px;
+}
+.faq-section-v10 .faq-answer ul li a {
+  font-weight: bold;
 }
 .faq-section-v10 .faq-answer ul li::before {
   content: "";
@@ -6780,22 +6794,20 @@ button.tab-btn-base {
   line-height: 1.6;
 }
 .industries-section .glider-nav {
-  display: flex;
-  gap: 12px;
   position: relative;
-  width: 100px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  margin-right: 20px;
+  gap: 10px;
+  margin-right: 10px;
 }
 .industries-section .glider-nav .glider-prev {
-  transform: rotate(-180deg) translateY(20px);
+  transform: rotate(-180deg) translateY(17px);
 }
 .industries-section .glider-nav button {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 16px;
   border: 2px solid #99A1AF;
   background: transparent;
@@ -6807,6 +6819,7 @@ button.tab-btn-base {
   cursor: pointer;
   justify-content: center;
   font-size: 18px;
+  top: 88%;
 }
 .industries-section .glider-nav button:hover {
   background: #FFAD00;

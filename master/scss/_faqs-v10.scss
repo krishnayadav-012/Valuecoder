@@ -75,7 +75,7 @@
       }
 
       .faq-answer {
-        max-height: 200px;
+        
         padding: 20px 24px;
       }
     }
@@ -117,19 +117,31 @@
     p {
       color: #364153;
       line-height: 1.6;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: $normal-font;
-      margin-bottom: 0;
+      margin-bottom: 15px;
 
-      
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:first-child{
+        margin-bottom: 15px;
+      }
+      a{
+        font-weight: bold;
+
+      }
     }
 
     ul {
-      
+      margin: 10px 0 ;
       li {
         margin: 5px 0 0;
     position: relative;
     padding-left: 18px;
+    a{
+      font-weight: bold;
+    }
     &::before {
         content: "";
         width: 8px;

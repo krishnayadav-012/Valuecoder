@@ -47,24 +47,23 @@ $text-gray: #314158;
 
   // Navigation Styling
   .glider-nav {
-
-    display: flex;
-    gap: 12px;
+   
     position: relative;
-    width: 100px;
+    width: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
-    margin-right: 20px;
+    gap: 10px;
+    margin-right: 10px;
+    
 
     .glider-prev {
-          transform: rotate(-180deg) translateY(20px);
+          transform: rotate(-180deg) translateY(17px);
     }
 
     button {
-      width: 45px;
-      height: 45px;
+      width: 35px;
+      height: 35px;
       border-radius:16px;
 border: 2px solid #99A1AF;
       background: transparent;
@@ -76,6 +75,7 @@ border: 2px solid #99A1AF;
       cursor: pointer;
       justify-content: center;
       font-size: 18px;
+      top: 88%;
 
       &:hover {
         background: $darkYellow;

@@ -2,5 +2,25 @@
 @use "comp-applications-sec" as *;
 @use "comp-pain-sec" as *;
 @use "comp-roadmap" as *;
+@use "comp-production-ready" as *;
 
 
+:root {
+  --navy: #05164D; --ndp: #02091F; --nmd: #0D2E6B;
+  --white: #fff; --canvas: #EFEDE8;
+  --amber: #FFAD00; --ad: #CC8B00;
+  --ink: #111827; --mid: #4B5563; --lite: #9CA3AF;
+  --bdr: rgba(5,22,77,.09); --bdrw: rgba(255,255,255,.08);
+  --sh: 0 4px 16px rgba(5,22,77,.08), 0 1px 3px rgba(5,22,77,.05);
+  --shlg: 0 14px 42px rgba(5,22,77,.12), 0 4px 8px rgba(5,22,77,.06);
+  --shxl: 0 28px 64px rgba(5,22,77,.16), 0 6px 16px rgba(5,22,77,.08);
+  --r: 8px; --rl: 12px; --rxl: 16px; --r2: 20px; --rf: 9999px;
+  --ease: cubic-bezier(.4,0,.2,1);
+  --t-dsp: clamp(2.4rem,4.2vw,3.8rem);
+  --t-h2: clamp(1.625rem,2.7vw,2.25rem);
+  --t-h3: clamp(1.175rem,1.75vw,1.575rem);
+  --t-sub: clamp(.9375rem,1.35vw,1.125rem);
+  --t-body: clamp(.9375rem,1.1vw,1.0625rem);
+  --t-sm: .875rem; --t-xs: .8125rem; --t-lbl: .6875rem;
+  --w: 1100px; --ww: 1280px;
+}

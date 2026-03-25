@@ -1,0 +1,160 @@
+/* ═══ 9. PRODUCTION-READY DELIVERY + RISK MITIGATION ════════ */
+.prod-ready {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+.prod-ready::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 15% 45%, rgba(13,46,107,.75) 0%, transparent 62%),
+              radial-gradient(ellipse 55% 65% at 90% 65%, rgba(255,173,0,.055) 0%, transparent 58%);
+  pointer-events: none;
+}
+
+.pr-hd {
+  margin-bottom: 48px;
+}
+
+.pr-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Pillars label ── */
+.pr-pillars > p {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(255,173,0,.65);
+  margin-bottom: 18px;
+}
+
+/* ── Pillars list ── */
+.pr-pillars ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  list-style: none;
+}
+
+.pr-pillars li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: var(--rl);
+  transition: background .2s, border-color .2s;
+}
+.pr-pillars li:hover {
+  background: rgba(255,255,255,.09);
+  border-color: rgba(255,173,0,.22);
+}
+
+.pr-pillars li > div:first-child {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r);
+  background: rgba(255,173,0,.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.pr-pillars li > div:first-child svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--amber);
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.pr-pillars li > div:last-child strong {
+  display: block;
+  font-size: var(--t-sm);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 3px;
+}
+.pr-pillars li > div:last-child p {
+  font-size: var(--t-xs);
+  color: rgba(255,255,255,.5);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Risks label ── */
+.pr-risks > p {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(255,173,0,.65);
+  margin-bottom: 18px;
+}
+
+/* ── Risks grid ── */
+.pr-risks ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  list-style: none;
+}
+
+.pr-risks li {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--rl);
+  padding: 16px;
+  transition: background .2s, border-color .2s;
+}
+.pr-risks li:hover {
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,173,0,.2);
+}
+
+.pr-risks li > div:first-child {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--r);
+  background: rgba(255,173,0,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.pr-risks li > div:first-child svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--amber);
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.pr-risks li > div:last-child s {
+  display: block;
+  font-size: var(--t-xs);
+  font-weight: 600;
+  color: rgba(255,255,255,.45);
+  text-decoration: line-through;
+  text-decoration-color: rgba(255,173,0,.4);
+  margin-bottom: 5px;
+}
+.pr-risks li > div:last-child strong {
+  display: block;
+  font-size: var(--t-xs);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.45;
+}
+
+@media(max-width:900px) {
+  .pr-body { grid-template-columns: 1fr; }
+}
