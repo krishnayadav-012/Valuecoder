@@ -15,7 +15,7 @@
   margin-bottom: 50px;
 }
 
-.vc-app-types__eyebrow {
+.vc-app-types__eyebrow span {
   font-size: 12px;
   font-weight: 700;
   color: #cc8b00;
@@ -23,7 +23,7 @@
   margin-bottom: 16px;
 }
 
-.vc-app-types__title {
+.vc-app-types h2 {
   font-size: 42px;
   font-weight: 800;
   line-height: 1.1;
@@ -31,7 +31,7 @@
   margin-bottom: 12px;
 }
 
-.vc-app-types__subtitle {
+.vc-app-types > p {
   font-size: 15px;
   color: #4B5563;
   max-width: 520px;
@@ -88,14 +88,14 @@
 
 /* TEXT */
 
-.vc-app-card__title {
+.vc-app-card h3 {
   font-size: 15px;
   font-weight: 700;
   color: #05164D;
   margin-bottom: 10px;
 }
 
-.vc-app-card__desc {
+.vc-app-card p {
   font-size: 13px;
   color: #4B5563;
   line-height: 1.7;
@@ -105,13 +105,13 @@
 
 /* CHIPS */
 
-.vc-app-card__chips {
+.vc-app-card ul {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.vc-app-card__chips span {
+.vc-app-card ul li {
   font-size: 11px;
   padding: 4px 9px;
   border-radius: 4px;

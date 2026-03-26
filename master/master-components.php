@@ -48,7 +48,6 @@
     # _comp-applications-sec.scss 
     
     heading and content 
-
     eyebrow
     Componnet used in Hire 
     Cards, Icons, tags
@@ -57,22 +56,20 @@
 
     <!-- 1. TYPES OF APPLICATIONS -->
     <section class="vc-app-types">
-
       <div class="vc-app-types__container">
-
         <!-- HEADER -->
         <div class="vc-app-types__header">
 
           <div class="vc-app-types__eyebrow">
-            Types of applications we build
+            <span>Types of applications we build</span>
           </div>
 
-          <h2 class="vc-app-types__title">
+          <h2 >
             Every application type.<br>
             One delivery standard.
           </h2>
 
-          <p class="vc-app-types__subtitle">
+          <p >
             Engineers hired through ValueCoders have shipped every application
             type below. Each category has specific technical requirements —
             confirmed before any profile is matched.
@@ -94,23 +91,23 @@
               </svg>
             </div>
 
-            <h3 class="vc-app-card__title">
+            <h3 >
               SaaS & Web Applications
             </h3>
 
-            <p class="vc-app-card__desc">
+            <p >
               Multi-tenant SaaS platforms, B2B tools, consumer web
               products using modern scalable architecture.
             </p>
 
-            <div class="vc-app-card__chips">
-              <span>React</span>
-              <span>Next.js</span>
-              <span>Node.js</span>
-              <span>SOC 2</span>
+            <ul >
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>SOC 2</li>
             </div>
 
-          </div>
+</ul>
 
 
           <!-- CARD 2 -->
@@ -123,21 +120,21 @@
               </svg>
             </div>
 
-            <h3 class="vc-app-card__title">
+            <h3 >
               Mobile Applications
             </h3>
 
-            <p class="vc-app-card__desc">
+            <p >
               Cross-platform iOS and Android apps built with
               performance-focused native and hybrid technologies.
             </p>
 
-            <div class="vc-app-card__chips">
-              <span>React Native</span>
-              <span>Flutter</span>
-              <span>Swift</span>
-              <span>Kotlin</span>
-            </div>
+            <ul >
+              <li>React Native</li>
+              <li>Flutter</li>
+              <li>Swift</li>
+              <li>Kotlin</li>
+</ul>
 
           </div>
 
@@ -151,21 +148,21 @@
               </svg>
             </div>
 
-            <h3 class="vc-app-card__title">
+            <h3 >
               AI-Powered Applications
             </h3>
 
-            <p class="vc-app-card__desc">
+            <p >
               AI-driven systems including automation workflows,
               knowledge search, and intelligent decision tools.
             </p>
 
-            <div class="vc-app-card__chips">
-              <span>LLM</span>
-              <span>RAG</span>
-              <span>Agents</span>
-              <span>ZDR</span>
-            </div>
+            <ul >
+              <li>LLM</li>
+              <li>RAG</li>
+              <li>Agents</li>
+              <li>ZDR</li>
+</ul>
 
           </div>
 
@@ -180,21 +177,21 @@
               </svg>
             </div>
 
-            <h3 class="vc-app-card__title">
+            <h3 >
               E-Commerce Platforms
             </h3>
 
-            <p class="vc-app-card__desc">
+            <p >
               Online stores and marketplaces designed
               for performance, scalability, and security.
             </p>
 
-            <div class="vc-app-card__chips">
-              <span>Shopify</span>
-              <span>Stripe</span>
-              <span>Next.js</span>
-              <span>PCI</span>
-            </div>
+            <ul >
+              <li>Shopify</li>
+              <li>Stripe</li>
+              <li>Next.js</li>
+              <li>PCI</li>
+</ul>
 
           </div>
 
@@ -210,21 +207,21 @@
               </svg>
             </div>
 
-            <h3 class="vc-app-card__title">
+            <h3 >
               Data & Analytics
             </h3>
 
-            <p class="vc-app-card__desc">
+            <p >
               Real-time dashboards and analytics
               systems supporting modern data pipelines.
             </p>
 
-            <div class="vc-app-card__chips">
-              <span>Kafka</span>
-              <span>dbt</span>
-              <span>Snowflake</span>
-              <span>Airflow</span>
-            </div>
+            <ul >
+              <li>Kafka</li>
+              <li>dbt</li>
+              <li>Snowflake</li>
+              <li>Airflow</li>
+</ul>
 
           </div>
 
@@ -239,21 +236,21 @@
               </svg>
             </div>
 
-            <h3 class="vc-app-card__title">
+            <h3 >
               Enterprise Tools
             </h3>
 
-            <p class="vc-app-card__desc">
+            <p >
               Internal enterprise solutions with workflow
               automation and secure integrations.
             </p>
 
-            <div class="vc-app-card__chips">
-              <span>ERP</span>
-              <span>Automation</span>
-              <span>Enterprise</span>
-              <span>Governance</span>
-            </div>
+            <ul >
+              <li>ERP</li>
+              <li>Automation</li>
+              <li>Enterprise</li>
+              <li>Governance</li>
+</ul>
 
           </div>
 
@@ -270,38 +267,27 @@
 
 
     <section class="vc-pain-solutions">
-
       <div class="vc-pain-solutions__container">
-
         <!-- HEADER -->
-
         <div class="vc-pain-solutions__header">
-
           <div class="vc-pain-solutions__eyebrow">
             <span></span>
-            Pain Points & How We Solve Them
+            <p>Pain Points & How We Solve Them</p>
           </div>
-
-          <h2 class="vc-pain-solutions__title">
+          <h2 >
             The hiring problems buyers describe most —
             <br>
             and what we do differently
           </h2>
-
-          <p class="vc-pain-solutions__subtitle">
+          <p >
             Click each pain point to see the specific mechanism
             we use to address it — not policy statements.
           </p>
-
         </div>
-
-
         <!-- GRID -->
 
         <div class="vc-pain-solutions__grid">
-
           <!-- CARD 1 -->
-
           <div class="vc-pain-card">
 
             <div class="vc-pain-card__top">
@@ -313,7 +299,7 @@
                 </svg>
               </div>
 
-              <h3 class="vc-pain-card__title">
+              <h3 >
                 Engineers take weeks to match,
                 and profiles are padded CVs
               </h3>
@@ -322,7 +308,7 @@
 
             <div class="vc-pain-card__divider"></div>
 
-            <p class="vc-pain-card__desc">
+            <p >
               Most vendors send lists of names without real
               delivery proof. Weeks are lost before discovering
               true capability.
@@ -355,7 +341,7 @@
                 </svg>
               </div>
 
-              <h3 class="vc-pain-card__title">
+              <h3 >
                 Engineers take months before contributing
               </h3>
 
@@ -363,7 +349,7 @@
 
             <div class="vc-pain-card__divider"></div>
 
-            <p class="vc-pain-card__desc">
+            <p >
               Long ramp-ups delay product delivery
               and increase unnecessary cost.
             </p>
@@ -393,7 +379,7 @@
                 </svg>
               </div>
 
-              <h3 class="vc-pain-card__title">
+              <h3 >
                 No easy exit if an engineer underperforms
               </h3>
 
@@ -401,7 +387,7 @@
 
             <div class="vc-pain-card__divider"></div>
 
-            <p class="vc-pain-card__desc">
+            <p >
               Many contracts lock you in with slow
               replacement timelines.
             </p>
@@ -430,7 +416,7 @@
                 </svg>
               </div>
 
-              <h3 class="vc-pain-card__title">
+              <h3 >
                 AI tools risk exposing source code
               </h3>
 
@@ -438,7 +424,7 @@
 
             <div class="vc-pain-card__divider"></div>
 
-            <p class="vc-pain-card__desc">
+            <p >
               Uncontrolled AI usage may send
               code into training pipelines.
             </p>
@@ -468,7 +454,7 @@
                 </svg>
               </div>
 
-              <h3 class="vc-pain-card__title">
+              <h3 >
                 No visibility into real delivery progress
               </h3>
 
@@ -476,7 +462,7 @@
 
             <div class="vc-pain-card__divider"></div>
 
-            <p class="vc-pain-card__desc">
+            <p >
               Updates often lack measurable
               evidence of progress.
             </p>
@@ -505,7 +491,7 @@
                 </svg>
               </div>
 
-              <h3 class="vc-pain-card__title">
+              <h3 >
                 IP ownership risks during due diligence
               </h3>
 
@@ -513,7 +499,7 @@
 
             <div class="vc-pain-card__divider"></div>
 
-            <p class="vc-pain-card__desc">
+            <p >
               Verbal ownership statements
               are not legally enforceable.
             </p>
@@ -542,9 +528,7 @@
 
     <!-- roadmap  -->
     <!-- # comp-roadmap  scss -->
-
     <!-- 3. ROADMAP -->
-
     <section class="vc-onboard-roadmap" aria-labelledby="onboard-hd">
       <div class="vc-container">
 
@@ -700,6 +684,9 @@
 
       </div>
     </section>
+
+ 
+    
 
 
     <!--
@@ -864,6 +851,9 @@
       </div>
 
     </section>
+
+
+
 
 
 
@@ -1199,9 +1189,8 @@
 
 
 
+<!--
 
-
-<!-- 
     hire software developer 
     #_comp-hire-section.scss 
 
@@ -1240,6 +1229,21 @@
 
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1668,10 +1672,7 @@ document.querySelectorAll('.comparison-table-rev').forEach(el => io.observe(el))
    INIT
 ═══════════════════════════════════════ */
 renderTable();
-
-
   </script>
 
 </body>
-
 </html>

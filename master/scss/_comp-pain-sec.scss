@@ -15,16 +15,19 @@
 .vc-pain-solutions__header {
   margin-bottom: 50px;
 }
-
-.vc-pain-solutions__eyebrow {
+.vc-pain-solutions__eyebrow{
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
-  gap: 10px;
+
+}
+.vc-pain-solutions__eyebrow > p {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   color: #FFAD00;
-  margin-bottom: 18px;
+  margin-left: 10px;
+
 }
 
 .vc-pain-solutions__eyebrow span {
@@ -34,7 +37,7 @@
   display: block;
 }
 
-.vc-pain-solutions__title {
+.vc-pain-solutions h2 {
   font-size: 42px;
   font-weight: 800;
   color: #fff;
@@ -42,7 +45,7 @@
   margin-bottom: 12px;
 }
 
-.vc-pain-solutions__subtitle {
+.vc-pain-solutions p {
   font-size: 15px;
   color: rgba(255,255,255,.6);
   max-width: 520px;
@@ -101,7 +104,7 @@
 
 /* TITLE */
 
-.vc-pain-card__title {
+.vc-pain-solutions h3 {
   font-size: 15px;
   font-weight: 700;
   color: #fff;
@@ -122,7 +125,7 @@
   margin: 14px 0;
 }
 
-.vc-pain-card__desc {
+.vc-pain-solutions p {
   font-size: 13px;
   color: rgba(255,255,255,.6);
   line-height: 1.7;
