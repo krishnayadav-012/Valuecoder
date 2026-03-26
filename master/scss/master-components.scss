@@ -1,13 +1,11 @@
-
-@use "comp-applications-sec" as *;
+@use "_default" as *;
+@use "cmp_app_build" as *;
 @use "comp-pain-sec" as *;
 @use "comp-roadmap" as *;
-
 @use "comp-production-ready" as *;
 @use "comp-use-cases" as *;
 @use "comp-evaluate-sec" as *;
 @use "comp-hire-section" as *;
-
 
 :root {
   --navy: #05164D; --ndp: #02091F; --nmd: #0D2E6B;

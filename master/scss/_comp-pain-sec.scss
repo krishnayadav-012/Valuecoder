@@ -1,5 +1,5 @@
 .vc-pain-solutions {
-  padding: 90px 0;
+
   background: #02091F;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .vc-pain-solutions p {
-  font-size: 15px;
+
   color: rgba(255,255,255,.6);
   max-width: 520px;
 }
@@ -126,9 +126,15 @@
 }
 
 .vc-pain-solutions p {
-  font-size: 13px;
+  
   color: rgba(255,255,255,.6);
   line-height: 1.7;
+}
+.vc-pain-solutions p em{
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 14px;
+    font-weight: 600;
+    color: #FFAD00;
 }
 
 
@@ -141,7 +147,12 @@
 }
 
 .vc-pain-card__solution p {
-  font-size: 12px;
+
+  font-weight: 600;
+  color: #FFAD00;
+}
+.vc-pain-card__solution p em{
+
   font-weight: 600;
   color: #FFAD00;
 }
