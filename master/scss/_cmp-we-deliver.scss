@@ -1,0 +1,449 @@
+@use "_default" as *;
+
+// ── Non-color tokens (no SCSS color vars for these) ──────────
+$canvas:        #EFEDE8;
+$border:        rgba(5, 22, 77, 0.09);
+$shadow:        0 1px 3px rgba(5, 22, 77, 0.08), 0 1px 2px rgba(5, 22, 77, 0.06);
+$shadow-lg:     0 10px 24px rgba(5, 22, 77, 0.1), 0 4px 8px rgba(5, 22, 77, 0.06);
+$shadow-xl:     0 20px 48px rgba(5, 22, 77, 0.14), 0 4px 12px rgba(5, 22, 77, 0.08);
+
+
+$duration-fast: 150ms;
+$ease:          cubic-bezier(0.4, 0, 0.2, 1);
+
+
+$t-body:        clamp(0.9375rem, 1.1vw, 1.0625rem);
+
+$t-xs:          0.8125rem;
+
+$w:             1080px;
+
+// ── Keyframes ────────────────────────────────────────────────
+@keyframes wwd-shimmerText {
+  from { background-position: 200% center; }
+  to   { background-position: 0% center; }
+}
+
+// ═════════════════════════════════════════════════════════════
+//  PARENT SCOPE: .wwd-section
+// ═════════════════════════════════════════════════════════════
+.wwd-section {
+  background-color: $canvas;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.032'/%3E%3C/svg%3E"),
+    radial-gradient(circle, rgba(5, 22, 77, 0.055) 1.2px, transparent 1.2px);
+  background-size: 300px 300px, 26px 26px;
+  position: relative;
+  padding: 96px 0 108px;
+
+  > * { position: relative; z-index: 1; }
+
+
+  // ── Scroll Reveal ──────────────────────────────────────────
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s $ease, transform 0.6s $ease;
+
+    &.is-visible { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal-delay-1 { transition-delay: 0.08s; }
+  .reveal-delay-2 { transition-delay: 0.16s; }
+  .reveal-delay-3 { transition-delay: 0.24s; }
+  .reveal-delay-4 { transition-delay: 0.12s; }
+  .reveal-delay-5 { transition-delay: 0.20s; }
+  .reveal-delay-6 { transition-delay: 0.28s; }
+
+  // ── Header ─────────────────────────────────────────────────
+  .hdr {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+   > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    font-weight: 700;
+    color: $darkYellow;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: $darkYellow;
+      border-radius: 2px;
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+
+  h2 {
+   
+    line-height: 1.1;
+    letter-spacing: -0.022em;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: $t-body;
+    color: $natural-grey;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+
+  // ── Card Grid ──────────────────────────────────────────────
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  // ── Card Base ──────────────────────────────────────────────
+  .card {
+    background: $white;
+    border-radius: 12px;
+    border: 1px solid $border;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow;
+    position: relative;
+    overflow: hidden;
+    transition:
+      transform $duration-fast $ease,
+      box-shadow $duration-fast $ease,
+      border-color $duration-fast;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $shadow-lg;
+      border-color: rgba(5, 22, 77, 0.1);
+    }
+
+    // Bottom amber reveal line
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: $darkYellow;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s $ease;
+    }
+
+    &:hover::after { transform: scaleX(1); }
+
+    // ── Featured Card ────────────────────────────────────────
+    &.card--feat {
+      background: $themeMidNight;
+      border-color: transparent;
+      box-shadow: $shadow-xl;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background:
+          radial-gradient(ellipse 80% 60% at 15% 50%, rgba(13, 46, 107, 0.5) 0%, transparent 70%),
+          radial-gradient(ellipse 50% 50% at 88% 28%, rgba(255, 173, 0, 0.07) 0%, transparent 60%),
+          radial-gradient(ellipse 100% 70% at 50% 0%, rgba(2, 9, 31, 0.75) 0%, transparent 65%);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+        background-size: 44px 44px;
+        mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 70%);
+        -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 70%);
+        opacity: 0.45;
+        height: auto;
+        transform: none;
+        background-color: transparent;
+      }
+
+      > * { position: relative; z-index: 1; }
+
+      .feat-rule {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        z-index: 2;
+        background: linear-gradient(90deg, $darkYellow, rgba(255, 173, 0, 0.2));
+      }
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 24px 60px rgba(5, 22, 77, 0.22), 0 6px 14px rgba(5, 22, 77, 0.1);
+        border-color: transparent;
+
+        &::after { transform: none; }
+      }
+    }
+  }
+
+  // ── Icon ───────────────────────────────────────────────────
+  .card__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(5, 22, 77, 0.04);
+    border: 1.5px solid $border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+    color: $themeMidNight;
+    transition: all $duration-fast $ease;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+    }
+  }
+
+  .card:not(.card--feat):hover .card__icon {
+    background: rgba(255, 173, 0, 0.1);
+    border-color: rgba(255, 173, 0, 0.3);
+    // color: darken($darkYellow, 10%);
+  }
+
+  .card--feat .card__icon {
+    background: rgba(255, 173, 0, 0.1);
+    border-color: rgba(255, 173, 0, 0.22);
+    color: $darkYellow;
+  }
+
+  // ── Category Label ─────────────────────────────────────────
+  span {
+    
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 7px;
+  }
+
+  .card:not(.card--feat) span { color: $gray; }
+  .card--feat span            { color: rgba(255, 173, 0, 0.75); }
+
+  // ── Title ──────────────────────────────────────────────────
+  > h3 {
+    
+    
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    margin-bottom: 10px;
+  }
+
+  .card:not(.card--feat) h3 { color: $themeMidNight; }
+  .card--feat h3            { color: $white; }
+
+  // ── Description ────────────────────────────────────────────
+  > p {
+    
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .card:not(.card--feat) p { color: $natural-grey; }
+  .card--feat p            { color: rgba(255, 255, 255, 0.55); }
+
+  // ── Divider ────────────────────────────────────────────────
+  .card__div {
+    height: 1px;
+    margin-bottom: 16px;
+  }
+
+  .card:not(.card--feat) .card__div { background: $border; }
+  .card--feat .card__div            { background: rgba(255, 255, 255, 0.08); }
+
+  // ── Tech Pills ─────────────────────────────────────────────
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: $t-xs;
+    font-weight: 600;
+    border: 1px solid $border;
+    border-radius: 4px;
+    color: $themeMidNight;
+    background: transparent;
+    transition: all $duration-fast $ease;
+  }
+
+  .card:not(.card--feat):hover .pill--tech {
+    background: rgba(255, 173, 0, 0.07);
+    border-color: rgba(255, 173, 0, 0.2);
+    color: $darkYellow;
+  }
+
+  .card--feat .pill--tech {
+    color: rgba(255, 255, 255, 0.72);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.11);
+  }
+
+  // ── Ghost CTA ──────────────────────────────────────────────
+  .card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+    transition: gap $duration-fast $ease;
+
+    &:hover { gap: 10px; }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      flex-shrink: 0;
+    }
+
+    .arrow-icon {
+      transition: transform $duration-fast $ease;
+    }
+
+    &:hover .arrow-icon { transform: translateX(3px); }
+  }
+
+  .card:not(.card--feat) .card__cta { color: $themeMidNight; }
+  .card--feat .card__cta            { color: $darkYellow; }
+
+  // ── Stat Strip ─────────────────────────────────────────────
+  .stat-strip-wrap {
+    margin-top: 48px;
+    background: $white;
+    border: 1px solid $border;
+    border-radius: 12px;
+    box-shadow: $shadow;
+    padding: 32px 0;
+  }
+
+  .stat-strip {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .stat-strip__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: 24px;
+    border-right: 1px solid $border;
+
+    &:last-child { border-right: none; }
+    
+    h3 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 5px;
+      background: linear-gradient(90deg, $themeMidNight 0%, $darkYellow, 50%, $themeMidNight 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      
+      &.shimmer-active {
+        animation: wwd-shimmerText 1.4s ease forwards;
+      }
+    }
+    
+    h4 {
+   
+    font-weight: 700;
+    color: $headDay;
+    margin-bottom: 2px;
+  }
+  
+  p {
+    font-size: $t-xs;
+    color: $natural-grey;
+  }
+
+}
+  // ── Responsive ─────────────────────────────────────────────
+  @media (max-width: 840px) {
+    .card-grid { grid-template-columns: 1fr 1fr; }
+
+    .stat-strip { flex-wrap: wrap; }
+
+    .stat-strip__item {
+      flex: 1 1 44%;
+      border-right: none;
+      border-bottom: 1px solid $border;
+      padding: 16px;
+
+      &:last-child,
+      &:nth-last-child(2) { border-bottom: none; }
+    }
+  }
+
+  @media (max-width: 560px) {
+    padding: 64px 0 76px;
+
+    .container { padding-inline: 20px; }
+    .card-grid { grid-template-columns: 1fr; }
+
+    .stat-strip__item {
+      flex: 1 1 100%;
+
+      &:nth-last-child(2) { border-bottom: 1px solid $border; }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+
+    .card,
+    .card::after,
+    .card__icon,
+    .pill--tech,
+    .card__cta,
+    .arrow-icon { transition: none; }
+
+    .stat-strip__number { animation: none !important; }
+  }
+}
