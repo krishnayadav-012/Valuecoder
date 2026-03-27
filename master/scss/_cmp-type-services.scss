@@ -1,0 +1,558 @@
+@use "_default" as *;
+// ─────────────────────────────────────────────
+//  Types of Services Section — SCSS
+//  Uses variables from default.scss
+//  Parent class: .types-of-services-section
+// ─────────────────────────────────────────────
+
+// ── Variable Imports (from default.scss) ──
+// $themeMidNight : #05164d
+// $darkYellow    : #FFAD00
+// $amber-hover   : #E69A00  (local only — not in default.scss)
+// $amber-dark    : #CC8B00  (local only — not in default.scss)
+// $white         : #ffffff
+// $gray-600      : #4B5563
+// $natural-grey  : #4B5563
+// $gray-500      : #6B7280
+// $darkblack     : #111827
+// $bgWhiteGray   : #f6f6f6
+// $darkWhiteGray : #e5e5e5
+// $whiteLight    : #cecece
+// $greenclr      : #60b741
+
+// ── Local tokens (no match in default.scss) ──
+$_amber-hover  : #E69A00;
+$_amber-dark   : #CC8B00;
+$_border       : rgba($themeMidNight, .09);
+$_shadow       : 0 1px 3px rgba($themeMidNight, .08), 0 1px 2px rgba($themeMidNight, .06);
+$_shadow-lg    : 0 10px 24px rgba($themeMidNight, .10), 0 4px 8px rgba($themeMidNight, .06);
+$_shadow-xl    : 0 20px 48px rgba($themeMidNight, .14), 0 4px 12px rgba($themeMidNight, .08);
+$_radius-sm    : 4px;
+$_radius       : 8px;
+$_radius-lg    : 12px;
+$_radius-full  : 9999px;
+$_duration-fast: 150ms;
+$_duration-slow: 300ms;
+$_ease         : cubic-bezier(.4, 0, .2, 1);
+
+// ── Fluid type helpers ──
+$_t-heading : clamp(1.75rem, 3vw, 2.5rem);
+$_t-subhead : clamp(1rem, 1.5vw, 1.25rem);
+$_t-body    : clamp(.9375rem, 1.1vw, 1.0625rem);
+$_t-small   : .875rem;
+$_t-xs      : .8125rem;
+$_t-label   : .6875rem;
+
+// ─────────────────────────────────────────────
+//  Section wrapper
+// ─────────────────────────────────────────────
+.types-of-services-section {
+  padding: 96px 0 108px;
+  background: $white;
+
+  .container {
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+
+  // ─────────────────────────────────────────────
+  //  Header
+  // ─────────────────────────────────────────────
+  .hdr {
+    text-align: center;
+    margin-bottom: 48px;
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: $_t-label;
+      font-weight: 700;
+      color: $_amber-dark;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 18px;
+
+      &::before,
+      &::after {
+        content: '';
+        width: 20px;
+        height: 2px;
+        background: $darkYellow;
+        border-radius: 2px;
+        display: block;
+        flex-shrink: 0;
+      }
+    }
+
+    h2 {
+      font-size: $_t-heading;
+      font-weight: 800;
+      color: $themeMidNight;
+      line-height: 1.1;
+      letter-spacing: -.022em;
+      margin-bottom: 14px;
+      white-space: nowrap;
+    }
+
+    p {
+      font-size: $_t-body;
+      color: $gray-600;
+      line-height: 1.7;
+      max-width: 500px;
+      margin-inline: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  // ─────────────────────────────────────────────
+  //  Capsule Tabs
+  // ─────────────────────────────────────────────
+  .tabs-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  .tabs {
+    display: inline-flex;
+    border: 1px solid $_border;
+    border-radius: $_radius-full;
+    background: $white;
+    padding: 4px;
+    gap: 2px;
+    flex-shrink: 0;
+    box-shadow: $_shadow;
+  }
+
+  .tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 20px;
+    font-size: $_t-small;
+    font-weight: 600;
+    color: $gray-500;
+    background: transparent;
+    border: none;
+    border-radius: $_radius-full;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all $_duration-fast $_ease;
+    font-family: inherit;
+
+    &:hover {
+      color: $themeMidNight;
+      background: rgba($themeMidNight, .04);
+    }
+
+    &.is-active {
+      background: $themeMidNight;
+      color: $white;
+      box-shadow: 0 2px 8px rgba($themeMidNight, .2);
+    }
+
+    .tab__icon {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+      flex-shrink: 0;
+    }
+  }
+
+  // ─────────────────────────────────────────────
+  //  Content Grid
+  // ─────────────────────────────────────────────
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+    align-items: start;
+  }
+
+  // ─────────────────────────────────────────────
+  //  Tab Panels
+  // ─────────────────────────────────────────────
+  .tab-panel {
+    display: none;
+
+    &.is-active {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      animation: tos-fadeIn .15s ease;
+    }
+  }
+
+  @keyframes tos-fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  // ─────────────────────────────────────────────
+  //  Accordion
+  // ─────────────────────────────────────────────
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .acc-item {
+    background: $white;
+    border: 1px solid $_border;
+    border-radius: $_radius-lg;
+    overflow: hidden;
+    box-shadow: $_shadow;
+    transition: border-color $_duration-fast, box-shadow $_duration-fast;
+
+    &.is-open {
+      border-color: rgba($themeMidNight, .14);
+      box-shadow: $_shadow-lg;
+
+      .acc-trigger {
+        border-left: 3px solid $darkYellow;
+        background: rgba($themeMidNight, .012);
+      }
+
+      .acc-icon {
+        background: rgba($darkYellow, .10);
+        border-color: rgba($darkYellow, .28);
+        color: $_amber-dark;
+      }
+
+      .acc-chevron {
+        transform: rotate(180deg);
+        color: $_amber-dark;
+      }
+
+      .acc-body { grid-template-rows: 1fr; }
+
+      .pill--tech {
+        background: rgba($darkYellow, .06);
+        border-color: rgba($darkYellow, .18);
+        color: $_amber-dark;
+      }
+    }
+
+    &:not(.is-open) {
+      .acc-trigger { border-left: 3px solid transparent; }
+    }
+  }
+
+  .acc-trigger {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 18px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    transition: background $_duration-fast, border-left $_duration-fast;
+
+    &:hover { background: rgba($themeMidNight, .018); }
+  }
+
+  .acc-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: $_radius;
+    background: rgba($themeMidNight, .04);
+    border: 1px solid $_border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $themeMidNight;
+    transition: all $_duration-fast;
+
+    svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+    }
+  }
+
+  .acc-title {
+    flex: 1;
+    font-size: $_t-subhead;
+    font-weight: 700;
+    color: $themeMidNight;
+    line-height: 1.25;
+    letter-spacing: -.012em;
+  }
+
+  .acc-chevron {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $whiteLight;
+    transition: transform $_duration-fast $_ease, color $_duration-fast;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+  }
+
+  // Expand body — CSS grid trick
+  .acc-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .28s $_ease;
+
+    .acc-body-inner { overflow: hidden; }
+  }
+
+  .acc-content {
+    padding: 0 20px 22px 72px;
+  }
+
+  .acc-desc {
+    font-size: $_t-small;
+    color: $gray-600;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  // Tech pills
+  .acc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .pill--tech {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: $_t-xs;
+    font-weight: 600;
+    border: 1px solid $_border;
+    border-radius: $_radius-sm;
+    color: $themeMidNight;
+    background: transparent;
+    transition: all $_duration-fast;
+  }
+
+  // Ghost CTA link
+  .acc-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: $_t-small;
+    font-weight: 600;
+    color: $themeMidNight;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+    transition: gap $_duration-fast;
+
+    &:hover { gap: 10px; }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+  }
+
+  // ─────────────────────────────────────────────
+  //  Scoping CTA Card
+  // ─────────────────────────────────────────────
+  .scope-card {
+    background: $themeMidNight;
+    border-radius: $_radius-lg;
+    padding: 32px 28px;
+    position: relative;
+    box-shadow: $_shadow-xl;
+  }
+
+  .scope-label {
+    font-size: $_t-label;
+    font-weight: 700;
+    color: $darkYellow;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .scope-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $greenclr;
+    animation: tos-pulseGreen 2.4s ease infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes tos-pulseGreen {
+    0%, 100% { box-shadow: 0 0 0 0 rgba($greenclr, .5); }
+    50%       { box-shadow: 0 0 0 5px rgba($greenclr, 0); }
+  }
+
+  .scope-title {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 800;
+    color: $white;
+    line-height: 1.2;
+    letter-spacing: -.018em;
+    margin-bottom: 22px;
+  }
+
+  .scope-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: $_t-small;
+      color: rgba($white, .72);
+      line-height: 1.5;
+      margin-bottom: 0; // override default p/li margin
+    }
+  }
+
+  .proof-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: rgba($greenclr, .12);
+    border: 1.5px solid rgba($greenclr, .28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 9px;
+      height: 9px;
+      stroke: $greenclr;
+      stroke-width: 2.5;
+      fill: none;
+    }
+  }
+
+  .scope-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 20px;
+    background: $darkYellow;
+    color: $themeMidNight;
+    font-size: $_t-body;
+    font-weight: 800;
+    border: none;
+    border-radius: $_radius-full;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all $_duration-fast $_ease;
+
+    &:hover {
+      background: $_amber-hover;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 28px rgba($darkYellow, .4);
+    }
+
+    &:active { transform: scale(.98); }
+  }
+
+  .scope-micro {
+    text-align: center;
+    margin-top: 10px;
+    font-size: $_t-xs;
+    color: rgba($white, .3);
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  // ─────────────────────────────────────────────
+  //  Scroll Reveal
+  // ─────────────────────────────────────────────
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .55s $_ease, transform .55s $_ease;
+
+    &.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    &.reveal-delay-1 { transition-delay: .08s; }
+    &.reveal-delay-2 { transition-delay: .16s; }
+  }
+
+  // ─────────────────────────────────────────────
+  //  Responsive
+  // ─────────────────────────────────────────────
+  @media only screen and (max-width: 840px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 64px 0 76px;
+
+    .container { padding-inline: 16px; }
+
+    .hdr h2 { white-space: normal; }
+
+    .acc-content { padding: 0 16px 18px 16px; }
+  }
+
+  // ─────────────────────────────────────────────
+  //  Reduced motion
+  // ─────────────────────────────────────────────
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .acc-body,
+    .acc-chevron,
+    .acc-icon,
+    .acc-item,
+    .tab,
+    .scope-btn { transition: none; }
+
+    .scope-dot { animation: none; }
+  }
+}

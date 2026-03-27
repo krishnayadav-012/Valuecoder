@@ -104,12 +104,9 @@ flex-wrap: wrap;
             font-size: 14px;
             font-weight: 500;
             color: #D1D5DC;
-
             max-height: 0px;
             opacity: 0;
-
             overflow: hidden;
-
             transition:
                 max-height 0.4s ease,
                 opacity 0.3s ease;
@@ -117,6 +114,22 @@ flex-wrap: wrap;
             p {
                 color: #D1D5DC;
                 margin-top: 10px;
+            }
+            ul{
+                li{
+                    position: relative;
+                    color: #D1D5DC;
+                    &::before {
+                            content: "";
+                            width: 8px;
+                            height: 8px;
+                            background-color: #FFAD00;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 0;
+                            top: 10px;
+                        }
+                }
             }
 
         }

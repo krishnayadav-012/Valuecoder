@@ -3,9 +3,9 @@
    <div class="form-inner dis-flex">
       <div class="form-text-cont">
          <div class="user-input">
-         <label>Full Name</label>
-            <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name" class="input-field"
-               value="" name="user-name">
+            <label>Full Name</label>
+            <input type="text" autocomplete="off" id="cont_name" placeholder="Full Name" class="input-field" value=""
+               name="user-name">
             <small>Error Message</small>
          </div>
       </div>
@@ -19,7 +19,7 @@
       </div>
       <div class="form-text-cont">
          <div class="user-input">
-         <label>Phone No.</label>
+            <label>Phone No.</label>
             <input type="text" autocomplete="off" class="input-field" id="cont_phpne" placeholder="Phone Number"
                value="" name="user-phone">
             <small>Error Message</small>
@@ -44,8 +44,8 @@
             </div>
             <div id="drop-area">
                <input type="file" name="files[]" id="fileElem" multiple=""
-                  accept="image/*,application/pdf,.psd,.zip,.docx,.xlsx,.xls,.txt"
-                  onchange="handleFiles(this.files)" style="display:none;">
+                  accept="image/*,application/pdf,.psd,.zip,.docx,.xlsx,.xls,.txt" onchange="handleFiles(this.files)"
+                  style="display:none;">
                <button class="button" id="browse-btn" type="button"
                   onclick="document.getElementById('fileElem').click()">Browse | Drop Files Here</button>
                <input type="hidden" name="up-counter" id="uplcounter" value="0">
@@ -77,9 +77,7 @@
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
             <!-- <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now"> -->
-            <div class="btn-circle button-v10">
-
-                    <div class="master-btn button-v10">
+             <div class="master-btn button-v10 ">
                         <a href="/contact" class="btn-circle">
                             <span class="text" data-text="Get in Touch">Get in Touch</span>
 
@@ -87,8 +85,7 @@
                                 <img src="images/index-v10/move-right.svg" alt="">
                             </span>
                         </a>
-                    </div>
-                </div>
+            </div>
          </div>
       </div>
    </div>

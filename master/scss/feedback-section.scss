@@ -42,6 +42,7 @@ $breakpoint-md: 768px;
   @media (min-width: $breakpoint-md) {
     flex-direction: row;
   }
+  
 
   .card-image {
     position: relative;
@@ -60,6 +61,57 @@ $breakpoint-md: 768px;
       clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     }
 
+
+
+
+
+    /* ===========================
+   Video Popup Styles
+=========================== */
+
+.video-popup-v9 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  &.active {
+    display: flex;
+  }
+
+  .video-popup-inner {
+    position: relative;
+    width: 90%;
+    max-width: 850px;
+
+    video {
+      width: 100%;
+      border-radius: 16px;
+    }
+  }
+
+  .video-close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    background: url(../images/index-v10/close-icon.png)
+      no-repeat center;
+    background-size: contain;
+  }
+}
+
+
+
+
+
+
     .play-icon
      {
       position: absolute;
@@ -74,6 +126,17 @@ $breakpoint-md: 768px;
       display: flex;
       align-items: center;
       gap: 8px;
+      .close {
+          position: absolute;
+          top: 5px;
+          right: -30px;
+          color: white;
+          font-size: 30px;
+          cursor: pointer;
+          background: url(../images/index-v10/close-icon.png) no-repeat center;
+          width: 25px;
+          height: 25px;
+    }
       .play-btn{
         position: relative;
         font-size: 18px;
@@ -85,7 +148,7 @@ $breakpoint-md: 768px;
         display: inline-block;
         width: 15px;
         height: 15px;
-        margin-left: 10px;
+        
         background-size: 15px !important;
         vertical-align: middle;
         background: url(../icons/Play-icon.svg) no-repeat;

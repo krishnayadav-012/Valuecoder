@@ -4030,6 +4030,20 @@ button.tab-btn-base {
   color: #D1D5DC;
   margin-top: 10px;
 }
+.ai-list .ai-item .desc ul li {
+  position: relative;
+  color: #D1D5DC;
+}
+.ai-list .ai-item .desc ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #FFAD00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
 .ai-list .ai-item .progress {
   position: absolute;
   bottom: -1px;
@@ -4894,13 +4908,15 @@ button.tab-btn-base {
 }
 .delivery-discipline .delivery-left .left-image {
   position: absolute;
-  bottom: -40px;
+  top: 0px;
   left: 0;
+  bottom: 0;
   z-index: -1;
   width: 100%;
 }
 .delivery-discipline .delivery-left .left-image img {
   width: 100%;
+  object-fit: cover;
 }
 .delivery-discipline {
   /* RIGHT */
@@ -5886,6 +5902,42 @@ button.tab-btn-base {
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
   }
 }
+.testimonial-section-v9 .testimonial-card .card-image {
+  /* ===========================
+     Video Popup Styles
+  =========================== */
+}
+.testimonial-section-v9 .testimonial-card .card-image .video-popup-v9 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.testimonial-section-v9 .testimonial-card .card-image .video-popup-v9.active {
+  display: flex;
+}
+.testimonial-section-v9 .testimonial-card .card-image .video-popup-v9 .video-popup-inner {
+  position: relative;
+  width: 90%;
+  max-width: 850px;
+}
+.testimonial-section-v9 .testimonial-card .card-image .video-popup-v9 .video-popup-inner video {
+  width: 100%;
+  border-radius: 16px;
+}
+.testimonial-section-v9 .testimonial-card .card-image .video-popup-v9 .video-close-btn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url(../images/index-v10/close-icon.png) no-repeat center;
+  background-size: contain;
+}
 .testimonial-section-v9 .testimonial-card .card-image .play-icon {
   position: absolute;
   bottom: 25px;
@@ -5900,6 +5952,17 @@ button.tab-btn-base {
   align-items: center;
   gap: 8px;
 }
+.testimonial-section-v9 .testimonial-card .card-image .play-icon .close {
+  position: absolute;
+  top: 5px;
+  right: -30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: url(../images/index-v10/close-icon.png) no-repeat center;
+  width: 25px;
+  height: 25px;
+}
 .testimonial-section-v9 .testimonial-card .card-image .play-icon .play-btn {
   position: relative;
   font-size: 18px;
@@ -5911,7 +5974,6 @@ button.tab-btn-base {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin-left: 10px;
   background-size: 15px !important;
   vertical-align: middle;
   background: url(../icons/Play-icon.svg) no-repeat;
@@ -8282,6 +8344,11 @@ button.tab-btn-base {
 
 .master-btn .btn-circle:hover .circle::after {
   transform: translateX(0);
+}
+
+.master-btn.button-v10.second a {
+  background: transparent !important;
+  border: 1px solid #99A1AF;
 }
 
 .master-menu-desktop {

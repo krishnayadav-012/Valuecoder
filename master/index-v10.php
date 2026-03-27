@@ -6,13 +6,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders</title>
+    <title>v10</title>
     <meta name="description"
         content="Want to hire PHP developers for your web development project? Hire PHP programmers / developers from us & build scalable & secure web apps. 17+ Yrs | 4200+ projects | Strict NDAs | dedicated PHP Programmers." />
     <meta name="keywords"
         content="Hire PHP developers, Hire PHP programmers, Hire PHP developers India, Hire PHP programmers India, Offshore PHP developers, Offshore PHP programmers, Offshore PHP developers India, Offshore PHP programmers India, Dedicated PHP developers, dedicated PHP Programmers" />
-    <meta property="og:title"
-        content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
+    <meta property="og:title" content="v10" />
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/index-v10.css" defer />
 
@@ -389,6 +388,7 @@
                                     Claude, Gemini, and open-source
                                     foundation models — integrated into
                                     real business workflows.</p>
+                                    
                             </div>
 
                             <div class="progress"></div>
@@ -404,10 +404,9 @@
                             <div class="desc">
                                 <p> Build autonomous AI agents that automate
                                     workflows and decision-making.</p>
+                                    
                             </div>
-
                             <div class="progress"></div>
-
                         </div>
 
                         <div class="ai-item">
@@ -419,6 +418,7 @@
                             <div class="desc">
                                 <p> Design and deploy scalable ML systems
                                     tailored to business workflows.</p>
+                                    
                             </div>
 
                             <div class="progress"></div>
@@ -657,18 +657,14 @@
                         </p>
                     </div>
 
-                    <div class="btn-circle button-v10 second">
-                        <!-- TEXT -->
-                        <a href="/contact">
-                            <span class="text">
-                                <span class="text-default">Get in Touch</span>
-                                <span class="text-hover">Get in Touch</span>
-                            </span>
 
-                            <!-- ARROW -->
+                    <!-- TEXT -->
+                    <div class="master-btn button-v10 second">
+                        <a href="/contact" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">Get in Touch</span>
+
                             <span class="circle">
-                                <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-                                <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
+                                <img src="images/index-v10/move-right.svg" alt="">
                             </span>
                         </a>
                     </div>
@@ -887,7 +883,7 @@
                 <div class="delivery-right">
 
                     <!-- CARD 1 -->
-                    <div class="info-card">
+                    <a href="#" class="info-card">
 
                         <span class="card-number">1</span>
 
@@ -910,11 +906,11 @@
                             Up from 17% in 2024. Governance wins.
                         </p>
 
-                    </div>
+                    </a>
 
 
                     <!-- CARD 2 (DEFAULT ACTIVE) -->
-                    <div class="info-card ">
+                    <a href="#" class="info-card ">
 
                         <span class="card-number">2</span>
 
@@ -932,11 +928,11 @@
                             Worldwide AI spend in 2025
                         </h4>
 
-                    </div>
+                    </a>
 
 
                     <!-- CARD 3 -->
-                    <div class="info-card">
+                    <a href="#" class="info-card">
 
                         <span class="card-number">3</span>
                         <div class="circular-progress circle-progress" data-inner-circle-color="#161722"
@@ -957,11 +953,11 @@
                             18.91% CAGR — rewards delivery discipline.
                         </p>
 
-                    </div>
+                    </a>
 
 
                     <!-- CARD 4 -->
-                    <div class="info-card">
+                    <a href="#" class="info-card">
 
                         <span class="card-number">4</span>
                         <div class="circular-progress circle-progress" data-inner-circle-color="#161722"
@@ -982,7 +978,7 @@
                             To catch AI errors before deployment.
                         </p>
 
-                    </div>
+                    </a>
 
                 </div>
 
@@ -1194,25 +1190,19 @@
 
             <div class="insights__top-part">
                 <div>
-                    <h2>Insights for Growing Agencies</h2>
-                    <p>Practical reads on scaling delivery, protecting margins, and managing peak workload.</p>
+                    <h2>Latest Articles from Our Engineering Team</h2>
+                    <p>Real-world lessons on building, scaling, and maintaining production systems.</p>
                 </div>
 
-                <div class="btn-circle button-v10 second">
-                    <!-- TEXT -->
-                    <a href="/contact">
-                        <span class="text">
-                            <span class="text-default">Get in Touch</span>
-                            <span class="text-hover">Get in Touch</span>
-                        </span>
+                 <div class="master-btn button-v10 second">
+                        <a href="/contact" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">Get in Touch</span>
 
-                        <!-- ARROW -->
-                        <span class="circle">
-                            <span class="arrow-default"><img src="images/index-v10/move-right.svg" alt=""></span>
-                            <span class="arrow-hover"><img src="images/index-v10/move-right.svg" alt=""></span>
-                        </span>
-                    </a>
-                </div>
+                            <span class="circle">
+                                <img src="images/index-v10/move-right.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
             </div>
 
             <div class="insights__grid">
@@ -1393,12 +1383,12 @@
                 <div class="testimonial-cards glider">
                     <div class="testimonial-card">
                         <div class="card-image">
-                            
                             <img src="images/testimonial-img.png" alt="James Kelly">
-                            <div class="play-icon">
-
+                            <div class="play-icon" onclick="">
+                                 data-video="videos/testimonial1.mp4"
                                 <span class="play-btn"> Play </span>
                             </div>
+                            <span class="close"></span>
                         </div>
                         <div class="card-content">
                             <div class="rating">
@@ -1427,7 +1417,10 @@
                     <div class="testimonial-card">
                         <div class="card-image">
                             <img src="images/testimonial-img.png" alt="James Kelly">
-                            <button class="play-btn"> Play </button>
+                            <div class="play-icon" onclick="">
+                                <span class="play-btn"> Play </span>
+                            </div>
+                            <span class="close"></span>
                         </div>
                         <div class="card-content">
                             <div class="rating">
@@ -1445,6 +1438,7 @@
 
                             <div class="author-info">
                                 <img src="icons/airtel-logo.svg" alt="Company Logo">
+
                                 <div class="details">
                                     <span>James Kelly</span>
                                     <p>Co-founder, Miracle Choice</p>
@@ -1455,7 +1449,10 @@
                     <div class="testimonial-card">
                         <div class="card-image">
                             <img src="images/testimonial-img.png" alt="James Kelly">
-                            <button class="play-btn"> Play </button>
+                            <div class="play-icon" onclick="">
+                                <span class="play-btn"> Play </span>
+                            </div>
+                            <span class="close"></span>
                         </div>
                         <div class="card-content">
                             <div class="rating">
@@ -1473,6 +1470,7 @@
 
                             <div class="author-info">
                                 <img src="icons/airtel-logo.svg" alt="Company Logo">
+
                                 <div class="details">
                                     <span>James Kelly</span>
                                     <p>Co-founder, Miracle Choice</p>
@@ -1480,11 +1478,30 @@
                             </div>
                         </div>
                     </div>
+                    
 
 
                 </div>
 
                 <div id="dots" class="glider-dots"></div>
+
+<!--  -->
+                <div class="video-popup-v9" id="videoPopupV9">
+
+    <div class="video-popup-inner">
+
+        <span class="video-close-btn" id="videoCloseV9"></span>
+
+        <video id="popupVideoV9" controls>
+            <source src="" type="video/mp4">
+        </video>
+
+    </div>
+
+</div>
+<!--  -->
+
+
             </div>
         </div>
     </section>
@@ -1634,21 +1651,61 @@
 
 
 
-    <script>
-function playClientTestimonail(videoSrc){
-    const popup = document.getElementById("contentPopup");
-    const iframe = document.getElementById("testimonoial-video");
-    popup.style.display = "block";
-    iframe.src = videoSrc;
-}
+<script>
+    const popup = document.getElementById("videoPopupV9");
+const video = document.getElementById("popupVideoV9");
+const closeBtn = document.getElementById("videoCloseV9");
 
-function closeClientTestimonail(){
-    const popup = document.getElementById("contentPopup");
-    const iframe = document.getElementById("testimonoial-video");
-    popup.style.display = "none";
-    iframe.src = ""; // stop video
+
+// Play Click (Multiple Cards Supported)
+document
+.querySelectorAll(".testimonial-section-v9 .play-icon")
+.forEach(icon => {
+
+    icon.addEventListener("click", function () {
+
+        // Get video from HTML
+        const videoSrc =
+            this.getAttribute("data-video");
+
+        // Set video source
+        video.querySelector("source").src =
+            videoSrc;
+
+        // Reload video
+        video.load();
+
+        // Show popup
+        popup.classList.add("active");
+
+    });
+
+});
+
+
+// Close Button
+closeBtn.addEventListener("click", closeVideo);
+
+
+// Click Outside Close
+popup.addEventListener("click", function(e) {
+
+    if (e.target === popup) {
+        closeVideo();
+    }
+
+});
+
+
+function closeVideo() {
+
+    popup.classList.remove("active");
+
+    video.pause();
+    video.currentTime = 0;
+
 }
-    </script>
+</script>
 
 
 </body>
