@@ -1393,6 +1393,7 @@
                 <div class="testimonial-cards glider">
                     <div class="testimonial-card">
                         <div class="card-image">
+                            
                             <img src="images/testimonial-img.png" alt="James Kelly">
                             <div class="play-icon">
 
@@ -1632,6 +1633,22 @@
     <?php require_once 'include/footer.php'; ?>
 
 
+
+    <script>
+function playClientTestimonail(videoSrc){
+    const popup = document.getElementById("contentPopup");
+    const iframe = document.getElementById("testimonoial-video");
+    popup.style.display = "block";
+    iframe.src = videoSrc;
+}
+
+function closeClientTestimonail(){
+    const popup = document.getElementById("contentPopup");
+    const iframe = document.getElementById("testimonoial-video");
+    popup.style.display = "none";
+    iframe.src = ""; // stop video
+}
+    </script>
 
 
 </body>

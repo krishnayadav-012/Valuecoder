@@ -1,3 +1,4 @@
+@use "_default" as *;
 .vc-pain-solutions {
 
   background: #02091F;
@@ -22,10 +23,10 @@
 
 }
 .vc-pain-solutions__eyebrow > p {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #FFAD00 !important;
+  color: $yellow !important;
   margin-left: 10px;
 
 }
@@ -33,21 +34,20 @@
 .vc-pain-solutions__eyebrow span {
   width: 26px;
   height: 2px;
-  background: #FFAD00;
+  background: $yellow;
   display: block;
 }
 
 .vc-pain-solutions h2 {
-  font-size: 42px;
-  font-weight: 800;
-  color: #fff;
+
+  color:$white;
   line-height: 1.1;
   margin-bottom: 12px;
 }
 
 .vc-pain-solutions p {
 
-  color: rgba(255,255,255,.6);
+  color: $greyBannerfont;
   max-width: 520px;
 }
 
@@ -96,7 +96,7 @@
 .vc-pain-card__icon svg {
   width: 18px;
   height: 18px;
-  stroke: #FFAD00;
+  stroke: $yellow;
   fill: none;
   stroke-width: 1.7;
 }
@@ -105,9 +105,9 @@
 /* TITLE */
 
 .vc-pain-solutions h3 {
-  font-size: 15px;
+  
   font-weight: 700;
-  color: #fff;
+  color:$white;
 }
 
 
@@ -127,14 +127,14 @@
 
 .vc-pain-solutions p {
   
-  color: rgba(255,255,255,.6);
+  color: $greyBannerfont;
   line-height: 1.7;
 }
 .vc-pain-solutions p em{
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 14px;
     font-weight: 600;
-    color: #FFAD00;
+    color: $yellow;
 }
 
 
@@ -149,12 +149,12 @@
 .vc-pain-card__solution p {
 
   font-weight: 600;
-  color: #FFAD00;
+  color: $yellow;
 }
 .vc-pain-card__solution p em{
 
   font-weight: 600;
-  color: #FFAD00;
+  color: $yellow;
 }
 
 

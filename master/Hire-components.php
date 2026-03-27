@@ -1222,7 +1222,7 @@
               <li>Describe a time you pushed back on a scope change mid-sprint.</li>
               <li>How do you handle a ticket with ambiguous acceptance criteria?</li>
             </ul>
-            <div class="footer">
+            <div class="card-bottom">
               <div class="foot-text">
                 <p><strong>What good looks like</strong>Specific examples, honest trade-offs, named consequences</p>
               </div>
@@ -1245,7 +1245,7 @@
               <li>AI tool governance documented — ZDR, audit logs, review gates</li>
               <li>Ramp timeline with milestone commitment — not a rough estimate</li>
             </ul>
-            <div class="footer">
+            <div class="card-bottom">
               <div class="foot-text"><p><strong>Red flag</strong>Any commitment that lives only in conversation</p></div>
               <span class="tag">Vendor stage</span>
             </div>

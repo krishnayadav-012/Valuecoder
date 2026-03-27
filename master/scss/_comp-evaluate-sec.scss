@@ -1,9 +1,12 @@
+
+@use "_default" as *;
+
 /* ════════════════════════════
    SECTION SCOPE
 ════════════════════════════ */
 .how-to-evaluate {
 
-  background-color: var(--canvas);
+  background-color: #efede8;
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.032'/%3E%3C/svg%3E"),
     radial-gradient(circle, rgba(5,22,77,.055) 1.2px, transparent 1.2px);
@@ -22,9 +25,9 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: var(--t-lbl);
+  font-size: 12px;
   font-weight: 700;
-  color: var(--ad);
+  color: $yellow;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 20px;
@@ -33,7 +36,7 @@
   content: '';
   width: 24px;
   height: 2px;
-  background: var(--amber);
+  background: $yellow;
   border-radius: 2px;
   display: block;
   flex-shrink: 0;
@@ -64,14 +67,14 @@
 }
  
 .how-to-evaluate .top-row .card {
-  background: var(--white);
-  border-radius: var(--rl);
+  background: $white;
+  border-radius: 12px;
   border: 1px solid rgba(5,22,77,.06);
-  box-shadow: var(--sh);
+  box-shadow: 0 4px 16px rgba(5,22,77,.08), 0 1px 3px rgba(5,22,77,.05);
   padding: 28px 28px 24px;
   position: relative;
   overflow: hidden;
-  transition: transform 160ms var(--ease), box-shadow 160ms var(--ease);
+  transition: transform 160ms cubic-bezier(.4,0,.2,1), box-shadow 160ms cubic-bezier(.4,0,.2,1);
 }
 .how-to-evaluate .top-row .card::before {
   content: '';
@@ -81,11 +84,11 @@
   background: linear-gradient(90deg, rgba(255,173,0,.5) 0%, transparent 70%);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform .3s var(--ease);
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
 }
 .how-to-evaluate .top-row .card:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shlg);
+  box-shadow: 0 14px 42px rgba(5,22,77,.12), 0 4px 8px rgba(5,22,77,.06);
 }
 .how-to-evaluate .top-row .card:hover::before {
   transform: scaleX(1);
@@ -101,7 +104,7 @@
   letter-spacing: -.04em;
   margin-bottom: 12px;
   user-select: none;
-  transition: color 160ms var(--ease);
+  transition: color 160ms cubic-bezier(.4,0,.2,1);
 }
 .how-to-evaluate .top-row .card:hover .num {
   color: rgba(255,173,0,.09);
@@ -151,7 +154,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: var(--amber);
+    background: $yellow;
     flex-shrink: 0;
     margin-top: 9px;
 
@@ -170,17 +173,17 @@
 .how-to-evaluate .primary-row .card {
   position: relative;
   overflow: hidden;
-  background: var(--navy);
-  border-radius: var(--rl);
+  background: $bgVoilet;
+  border-radius: 12px;
   padding: 44px 44px 40px;
   display: flex;
   flex-direction: column;
-  transition: transform 160ms var(--ease), box-shadow 160ms var(--ease);
-  box-shadow: var(--shlg);
+  transition: transform 160ms cubic-bezier(.4,0,.2,1), box-shadow 160ms cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 14px 42px rgba(5,22,77,.12), 0 4px 8px rgba(5,22,77,.06);
 }
 .how-to-evaluate .primary-row .card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shxl);
+  box-shadow:  0 28px 64px rgba(5,22,77,.16), 0 6px 16px rgba(5,22,77,.08);
 }
  
 /* Per-card atmospheric bg */
@@ -220,7 +223,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--amber) 0%, rgba(255,173,0,.3) 55%, transparent 90%);
+  background: linear-gradient(90deg, $yellow 0%, rgba(255,173,0,.3) 55%, transparent 90%);
   z-index: 2;
 }
  
@@ -231,9 +234,9 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: var(--t-lbl);
+  font-size: 12px;
   font-weight: 700;
-  color: var(--amber);
+  color: $yellow;
   text-transform: uppercase;
   letter-spacing: .09em;
   margin-bottom: 20px;
@@ -242,8 +245,8 @@
   width: 5px;
   content: "";
   height: 5px;
-  border-radius: var(--rf);
-  background: var(--amber);
+  border-radius: 12px;
+  background: $yellow;
   flex-shrink: 0;
 }
  
@@ -260,7 +263,7 @@
   user-select: none;
   pointer-events: none;
   z-index: 1;
-  transition: color 160ms var(--ease);
+  transition: color 160ms cubic-bezier(.4,0,.2,1);
 }
 .how-to-evaluate .primary-row .card:hover .num {
   color: rgba(255,173,0,.06);
@@ -269,7 +272,7 @@
 .how-to-evaluate .primary-row .card h3 {
   position: relative;
   z-index: 2;
-  color: var(--white);
+  color: $white;
   line-height: 1.25;
   letter-spacing: -.018em;
   margin-bottom: 10px;
@@ -315,7 +318,7 @@
 .how-to-evaluate .primary-row .card ul .ico {
   width: 17px;
   height: 17px;
-  border-radius: var(--rf);
+  border-radius: 12px;
   flex-shrink: 0;
   margin-top: 1px;
   display: flex;
@@ -326,7 +329,7 @@
 
  
 /* Footer */
-.how-to-evaluate .primary-row .card .footer {
+.how-to-evaluate .primary-row .card .card-bottom {
   position: relative;
   z-index: 2;
   margin-top: 26px;
@@ -336,33 +339,33 @@
   align-items: center;
   justify-content: space-between;
 }
-.how-to-evaluate .primary-row .card .footer .foot-text {
+.how-to-evaluate .primary-row .card .card-bottom .foot-text {
   font-size: .75rem;
   color: rgba(255,255,255,.3);
   line-height: 1.5;
 }
-.how-to-evaluate .primary-row .card .footer .foot-text strong {
+.how-to-evaluate .primary-row .card .card-bottom .foot-text strong {
   display: block;
-  font-size: var(--t-xs);
+  font-size: inherit;
   font-weight: 700;
   color: rgba(255,255,255,.6);
   margin-bottom: 1px;
 }
-.how-to-evaluate .primary-row .card .footer .tag {
+.how-to-evaluate .primary-row .card .card-bottom .tag {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: .75rem;
   font-weight: 700;
-  color: var(--amber);
+  color: $yellow;
   background: rgba(255,173,0,.08);
   border: 1px solid rgba(255,173,0,.18);
-  border-radius: var(--r);
+  border-radius: 8px;
   padding: 4px 10px;
   flex-shrink: 0;
-  transition: background 160ms var(--ease), border-color 160ms var(--ease);
+  transition: background 160ms cubic-bezier(.4,0,.2,1), border-color 160ms cubic-bezier(.4,0,.2,1);
 }
-.how-to-evaluate .primary-row .card:hover .footer .tag {
+.how-to-evaluate .primary-row .card:hover .card-bottom .tag {
   background: rgba(255,173,0,.14);
   border-color: rgba(255,173,0,.3);
 }
@@ -371,7 +374,7 @@
 .how-to-evaluate .reveal {
   opacity: 0;
   transform: translateY(18px);
-  transition: opacity .5s var(--ease), transform .5s var(--ease);
+  transition: opacity .5s cubic-bezier(.4,0,.2,1), transform .5s cubic-bezier(.4,0,.2,1);
 }
 .how-to-evaluate .reveal.is-visible {
   opacity: 1;
@@ -400,6 +403,6 @@
   .how-to-evaluate .top-row .card::before,
   .how-to-evaluate .top-row .card .list .chk,
   .how-to-evaluate .primary-row .card,
-  .how-to-evaluate .primary-row .card .footer .tag { transition: none; }
+  .how-to-evaluate .primary-row .card .card-bottom .tag { transition: none; }
   .how-to-evaluate .reveal { opacity: 1; transform: none; }
 }

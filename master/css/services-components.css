@@ -2366,7 +2366,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
   color: #4B5563;
   line-height: 1.7;
-  max-width: 480px;
+  max-width: 650px;
   margin-inline: auto;
 }
 .wwd-section .card-grid {
@@ -2437,6 +2437,11 @@ body.page-template-template-testimonials .client-video-section iframe,
 .wwd-section .card.card--feat > * {
   position: relative;
   z-index: 1;
+}
+.wwd-section .card.card--feat ul li {
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  color: rgba(255, 255, 255, 0.7215686275);
+  border: 1px solid rgba(255, 255, 255, 0.1098039216);
 }
 .wwd-section .card.card--feat .feat-rule {
   position: absolute;
@@ -2557,7 +2562,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.11);
 }
-.wwd-section .card__cta {
+.wwd-section a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -2569,10 +2574,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-family: inherit;
   transition: gap 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.wwd-section .card__cta:hover {
+.wwd-section a:hover {
   gap: 10px;
 }
-.wwd-section .card__cta svg {
+.wwd-section a svg {
   width: 16px;
   height: 16px;
   stroke: currentColor;
@@ -2580,16 +2585,16 @@ body.page-template-template-testimonials .client-video-section iframe,
   fill: none;
   flex-shrink: 0;
 }
-.wwd-section .card__cta .arrow-icon {
+.wwd-section a .arrow-icon {
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.wwd-section .card__cta:hover .arrow-icon {
+.wwd-section a:hover .arrow-icon {
   transform: translateX(3px);
 }
-.wwd-section .card:not(.card--feat) .card__cta {
+.wwd-section .card:not(.card--feat) a {
   color: #05164d;
 }
-.wwd-section .card--feat .card__cta {
+.wwd-section .card--feat a {
   color: #FFAD00;
 }
 .wwd-section .stat-strip-wrap {
@@ -2685,7 +2690,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   .wwd-section .card::after,
   .wwd-section .card__icon,
   .wwd-section .pill--tech,
-  .wwd-section .card__cta,
+  .wwd-section a,
   .wwd-section .arrow-icon {
     transition: none;
   }

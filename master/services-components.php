@@ -237,11 +237,11 @@
 
 
     <!-- ══════════════════════════════════════
-     #css ---  WE veliver 
+     #css ---  WE deliver 
      sectio heading 
       praghraph
       cards 
-      card icon , card tegline , 
+      card icon , card tegline ,
 ══════════════════════════════════════ -->
     <section class="wwd-section" aria-labelledby="wwd-hd">
       <div class="container">
@@ -282,12 +282,12 @@
               <li>Web apps</li>
               <li>APIs</li>
             </ul>
-            <button class="card__cta" aria-label="Explore Product Engineering">
+            <a >
               Explore service
               <svg class="arrow-icon" viewBox="0 0 16 16">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </button>
+</a>
           </div>
 
           <!-- Card 2 -->
@@ -311,12 +311,12 @@
               <li>Re-architecture</li>
               <li>Cloud</li>
             </ul>
-            <button class="card__cta" aria-label="Explore Legacy Modernisation">
+            <a >
               Explore service
               <svg class="arrow-icon" viewBox="0 0 16 16">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </button>
+</a>
           </div>
 
           <!-- Card 3 — Featured -->
@@ -342,12 +342,12 @@
               <li>Agents</li>
               <li>Automation</li>
             </ul>
-            <button class="card__cta" aria-label="Explore AI and Automation">
+            <a >
               Explore service
               <svg class="arrow-icon" viewBox="0 0 16 16">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </button>
+            </a>
           </div>
 
           <!-- Card 4 -->
@@ -371,12 +371,12 @@
               <li>Dedicated teams</li>
               <li>Embedded</li>
 </ul>
-          <button class="card__cta" aria-label="Explore Dedicated Teams">
+          <a >
             Explore service
             <svg class="arrow-icon" viewBox="0 0 16 16">
               <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-          </button>
+          </a>
         </div>
 
         <!-- Card 5 -->
@@ -399,12 +399,12 @@
             <li>Kubernetes</li>
             <li>AWS/GCP</li>
 </ul>
-        <button class="card__cta" aria-label="Explore DevOps Engineering">
+        <a >
           Explore service
           <svg class="arrow-icon" viewBox="0 0 16 16">
             <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-        </button>
+        </a>
       </div>
 
       <!-- Card 6 -->
@@ -427,12 +427,12 @@
           <li>Performance</li>
           <li>Security QA</li>
 </ul>
-      <button class="card__cta" aria-label="Explore QA Engineering">
+      <a >
         Explore service
         <svg class="arrow-icon" viewBox="0 0 16 16">
           <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-      </button>
+      </a>
       </div>
 
       </div><!-- /card-grid -->

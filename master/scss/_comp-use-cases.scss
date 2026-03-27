@@ -1,9 +1,11 @@
+@use "_default" as *;
+
 /* ════════════════════════════
    SECTION SCOPE
 ════════════════════════════ */
 .what-they-build {
 
-  background-color: var(--canvas);
+  background-color: #efede8;
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.032'/%3E%3C/svg%3E"),
     radial-gradient(circle, rgba(5,22,77,.055) 1.2px, transparent 1.2px);
@@ -22,9 +24,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: var(--t-lbl);
+  font-size: 12px;
   font-weight: 700;
-  color: var(--ad);
+  color: $yellow;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 16px;
@@ -34,7 +36,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--amber);
+  background: $yellow;
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -63,12 +65,12 @@
  
 /* ── Card ── */
 .what-they-build .card-grid .card {
-  background: var(--white);
-  border-radius: var(--rl);
-  box-shadow: var(--sh);
+  background: $white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(5,22,77,.08), 0 1px 3px rgba(5,22,77,.05);
   padding: 32px;
   border: 1px solid rgba(5,22,77,.05);
-  transition: transform 150ms var(--ease), box-shadow 150ms var(--ease);
+  transition: transform 150ms cubic-bezier(.4,0,.2,1), box-shadow 150ms cubic-bezier(.4,0,.2,1);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -79,14 +81,14 @@
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 2px;
-  background: var(--amber);
+  background: $yellow;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform .3s var(--ease);
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
 }
 .what-they-build .card-grid .card:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shlg);
+  box-shadow: 0 14px 42px rgba(5,22,77,.12), 0 4px 8px rgba(5,22,77,.06);
 }
 .what-they-build .card-grid .card:hover::after {
   transform: scaleX(1);
@@ -103,20 +105,20 @@
 .what-they-build .card-grid .card .icon {
   width: 40px;
   height: 40px;
-  border-radius: var(--r);
-  border: 1.5px solid var(--bdr);
+  border-radius: 8px;
+  border: 1.5px solid rgba(5,22,77,.09);
   background: rgba(5,22,77,.03);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--navy);
-  transition: border-color 150ms var(--ease), background 150ms var(--ease), color 150ms var(--ease);
+  color: $bgVoilet;
+  transition: border-color 150ms cubic-bezier(.4,0,.2,1), background 150ms cubic-bezier(.4,0,.2,1), color 150ms cubic-bezier(.4,0,.2,1);
 }
 .what-they-build .card-grid .card:hover .icon {
   border-color: rgba(255,173,0,.3);
   background: rgba(255,173,0,.06);
-  color: var(--ad);
+  color: $yellow;
 }
 .what-they-build .card-grid .card .icon svg {
   width: 18px;
@@ -127,9 +129,9 @@
 }
  
 .what-they-build .card-grid .card span {
-  font-size: var(--t-lbl);
+  font-size: 12px;
   font-weight: 700;
-  color: var(--ad);
+  color: $yellow;
   text-transform: uppercase;
   letter-spacing: .08em;
   display: block;
@@ -154,13 +156,13 @@
     display: flex;
     gap: 0px;
     margin-bottom: 24px;
-    
+    gap: 10px;
     flex-direction: column;
 }
 .what-they-build .card-grid .card > ul li {
   display: flex;
   width: 100%;
-    align-items: baseline;
+    align-items: center;
     gap: 9px;
     line-height: 2;
 }
@@ -170,22 +172,22 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--amber);
+  background: $yellow;
   flex-shrink: 0;
-  margin-top: 6px;
+  margin-top: 1px;
 }
  
 /* Client types */
 .what-they-build .card-grid .card .tags span {
-  font-size: var(--t-lbl);
+  font-size: 12px;
   font-weight: 700;
-  color: var(--lite);
+  color: $gray;
   text-transform: uppercase;
   letter-spacing: .08em;
   display: block;
   margin-bottom: 10px;
   padding-top: 18px;
-  border-top: 1px solid var(--bdr);
+  border-top: 1px solid rgba(5,22,77,.09);
 }
  
 .what-they-build .card-grid .card .tags ul {
@@ -196,26 +198,26 @@
 .what-they-build .card-grid .card .tags ul li {
   display: inline-block;
   padding: 4px 10px;
-  font-size: var(--t-xs);
+  font-size: 12px;
   font-weight: 600;
-  color: var(--navy);
+  color: $bgVoilet;
   background: rgba(5,22,77,.05);
-  border: 1px solid var(--bdr);
-  border-radius: var(--r);
+  border: 1px solid rgba(5,22,77,.09) rgba(5,22,77,.09);
+  border-radius: 8px;
   letter-spacing: .01em;
-  transition: background 150ms var(--ease), border-color 150ms var(--ease), color 150ms var(--ease);
+  transition: background 150ms cubic-bezier(.4,0,.2,1), border-color 150ms cubic-bezier(.4,0,.2,1), color 150ms cubic-bezier(.4,0,.2,1);
 }
 .what-they-build .card-grid .card:hover .tags ul li {
   background: rgba(255,173,0,.08);
   border-color: rgba(255,173,0,.2);
-  color: var(--ad);
+  color: $yellow;
 }
  
 /* ── Scroll reveal ── */
 .what-they-build .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity .6s var(--ease), transform .6s var(--ease);
+  transition: opacity .6s cubic-bezier(.4,0,.2,1), transform .6s cubic-bezier(.4,0,.2,1);
 }
 .what-they-build .reveal.is-visible {
   opacity: 1;

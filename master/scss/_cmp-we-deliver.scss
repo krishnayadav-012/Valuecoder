@@ -96,7 +96,7 @@ $w:             1080px;
     font-size: $t-body;
     color: $natural-grey;
     line-height: 1.7;
-    max-width: 480px;
+    max-width: 650px;
     margin-inline: auto;
   }
 
@@ -180,6 +180,11 @@ $w:             1080px;
       }
 
       > * { position: relative; z-index: 1; }
+      ul li{
+        background-color: #ffffff14;
+        color: #ffffffb8;
+        border: 1px solid #ffffff1c;
+      }
 
       .feat-rule {
         position: absolute;
@@ -313,7 +318,7 @@ $w:             1080px;
   }
 
   // ── Ghost CTA ──────────────────────────────────────────────
-  .card__cta {
+  a {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -344,8 +349,8 @@ $w:             1080px;
     &:hover .arrow-icon { transform: translateX(3px); }
   }
 
-  .card:not(.card--feat) .card__cta { color: $themeMidNight; }
-  .card--feat .card__cta            { color: $darkYellow; }
+  .card:not(.card--feat) a { color: $themeMidNight; }
+  .card--feat a            { color: $darkYellow; }
 
   // ── Stat Strip ─────────────────────────────────────────────
   .stat-strip-wrap {
@@ -441,7 +446,7 @@ $w:             1080px;
     .card::after,
     .card__icon,
     .pill--tech,
-    .card__cta,
+    a,
     .arrow-icon { transition: none; }
 
     .stat-strip__number { animation: none !important; }

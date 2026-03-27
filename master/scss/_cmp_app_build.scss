@@ -1,12 +1,5 @@
-.vc-app-types {
-  
-}
+@use "_default" as *;
 
-.vc-app-types__container {
-  max-width: 1080px;
-  margin: auto;
-  padding: 0 24px;
-}
 
 
 /* HEADER */
@@ -18,16 +11,28 @@
 .vc-app-types__eyebrow span {
   font-size: 12px;
   font-weight: 700;
-  color: #cc8b00;
+  color: $yellow;
   text-transform: uppercase;
   margin-bottom: 16px;
+  gap: 10px;
+  position: relative;
+align-items: center;
+display: flex;
+  &::before{
+    content: "";
+    width: 26px;
+    height: 2px;
+    background: $yellow;
+
+
+  }
 }
 
 .vc-app-types h2 {
-  font-size: 42px;
+
   font-weight: 800;
   line-height: 1.1;
-  color: #05164D;
+  color: $bgVoilet;
   margin-bottom: 12px;
 }
 
@@ -53,7 +58,7 @@
   background: #fff;
   border-radius: 16px;
   border: 1px solid rgba(5,22,77,.1);
-  border-top: 3px solid #FFAD00;
+  border-top: 3px solid $yellow;
   padding: 28px;
   transition: .25s;
 }
@@ -80,7 +85,7 @@
 .vc-app-card__icon svg {
   width: 20px;
   height: 20px;
-  stroke: #05164D;
+  stroke: $bgVoilet;
   fill: none;
   stroke-width: 1.5;
 }
@@ -91,7 +96,7 @@
 .vc-app-card h3 {
   font-size: 15px;
   font-weight: 700;
-  color: #05164D;
+  color: $bgVoilet;
   margin-bottom: 10px;
 }
 
