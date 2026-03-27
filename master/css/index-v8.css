@@ -2347,9 +2347,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   .sc-down.header-bg .logo-size .dark {
     display: block !important;
   }
-  .master-header .btn-circle {
-    display: none;
-  }
 }
 .master-overlays {
   position: fixed;

@@ -6,6 +6,9 @@ position: relative;
     min-height: 700px;
     background:linear-gradient(270deg, #090C19 43.32%, #00060d 62.86%, rgba(9, 12, 25, 0) 100%);
 flex-wrap: wrap;
+@media (max-width:768px) {
+    min-height: auto;
+  }
 
 }
 
@@ -196,10 +199,11 @@ flex-wrap: wrap;
 @media (max-width: 640px) {
 
     .ai-right .ai-content {
-        padding: 60px 0;
+        padding: 48px 0;
     }
 
     
     .ai-list{padding-left: 20px;}
+    .ai-right .ai-content > p{margin-bottom: 0;}
 
 }

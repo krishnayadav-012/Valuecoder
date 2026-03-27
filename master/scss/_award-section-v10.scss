@@ -2,6 +2,10 @@
 .award-section-vten {
   padding-top: 60px;
   padding-bottom: 90px;
+
+  @media (max-width:768px) {
+   padding: 50px 0;
+  }
   .top-logo {
     text-align: center;
     font-size: $font-18;
@@ -259,7 +263,7 @@
     }
 
     .award-image {
-      padding: 20px 0 0;
+      padding: 00px 0 0;
 
       .award-heading {
         margin: 0 0 15px;

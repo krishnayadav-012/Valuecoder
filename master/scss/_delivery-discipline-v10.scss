@@ -5,7 +5,7 @@
 .delivery-discipline {
 
     background: #020b1f;
-    padding: 120px 0;
+    
 
     .delivery-grid {
 
@@ -277,6 +277,13 @@
 
 }
 
+
+@media screen and (max-width: 991px) { 
+  .delivery-discipline .delivery-left .left-image img{display: none !important;}
+  .delivery-discipline .delivery-left{background: none !important; padding: 0 0 0 20px;}
+  
+  
+}
 @media screen and (max-width: 500px) {
   :root {
     --progress-bar-width: 120px;

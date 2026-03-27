@@ -1,51 +1,5 @@
 @use "_default" as *;
-// ─────────────────────────────────────────────
-//  Types of Services Section — SCSS
-//  Uses variables from default.scss
-//  Parent class: .types-of-services-section
-// ─────────────────────────────────────────────
 
-// ── Variable Imports (from default.scss) ──
-// $themeMidNight : #05164d
-// $darkYellow    : #FFAD00
-// $amber-hover   : #E69A00  (local only — not in default.scss)
-// $amber-dark    : #CC8B00  (local only — not in default.scss)
-// $white         : #ffffff
-// $gray-600      : #4B5563
-// $natural-grey  : #4B5563
-// $gray-500      : #6B7280
-// $darkblack     : #111827
-// $bgWhiteGray   : #f6f6f6
-// $darkWhiteGray : #e5e5e5
-// $whiteLight    : #cecece
-// $greenclr      : #60b741
-
-// ── Local tokens (no match in default.scss) ──
-$_amber-hover  : #E69A00;
-$_amber-dark   : #CC8B00;
-$_border       : rgba($themeMidNight, .09);
-$_shadow       : 0 1px 3px rgba($themeMidNight, .08), 0 1px 2px rgba($themeMidNight, .06);
-$_shadow-lg    : 0 10px 24px rgba($themeMidNight, .10), 0 4px 8px rgba($themeMidNight, .06);
-$_shadow-xl    : 0 20px 48px rgba($themeMidNight, .14), 0 4px 12px rgba($themeMidNight, .08);
-$_radius-sm    : 4px;
-$_radius       : 8px;
-$_radius-lg    : 12px;
-$_radius-full  : 9999px;
-$_duration-fast: 150ms;
-$_duration-slow: 300ms;
-$_ease         : cubic-bezier(.4, 0, .2, 1);
-
-// ── Fluid type helpers ──
-$_t-heading : clamp(1.75rem, 3vw, 2.5rem);
-$_t-subhead : clamp(1rem, 1.5vw, 1.25rem);
-$_t-body    : clamp(.9375rem, 1.1vw, 1.0625rem);
-$_t-small   : .875rem;
-$_t-xs      : .8125rem;
-$_t-label   : .6875rem;
-
-// ─────────────────────────────────────────────
-//  Section wrapper
-// ─────────────────────────────────────────────
 .types-of-services-section {
   padding: 96px 0 108px;
   background: $white;
@@ -68,11 +22,11 @@ $_t-label   : .6875rem;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      font-size: $_t-label;
+      font-size: 0.6875rem;
       font-weight: 700;
-      color: $_amber-dark;
+      color: #CC8B00;
       text-transform: uppercase;
-      letter-spacing: .08em;
+      letter-spacing: 0.08em;
       margin-bottom: 18px;
 
       &::before,
@@ -88,17 +42,17 @@ $_t-label   : .6875rem;
     }
 
     h2 {
-      font-size: $_t-heading;
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
       font-weight: 800;
       color: $themeMidNight;
       line-height: 1.1;
-      letter-spacing: -.022em;
+      letter-spacing: -0.022em;
       margin-bottom: 14px;
       white-space: nowrap;
     }
 
     p {
-      font-size: $_t-body;
+      font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
       color: $gray-600;
       line-height: 1.7;
       max-width: 500px;
@@ -123,13 +77,13 @@ $_t-label   : .6875rem;
 
   .tabs {
     display: inline-flex;
-    border: 1px solid $_border;
-    border-radius: $_radius-full;
+    border: 1px solid rgba($themeMidNight, 0.09);
+    border-radius: 9999px;
     background: $white;
     padding: 4px;
     gap: 2px;
     flex-shrink: 0;
-    box-shadow: $_shadow;
+    box-shadow: 0 1px 3px rgba($themeMidNight, 0.08), 0 1px 2px rgba($themeMidNight, 0.06);
   }
 
   .tab {
@@ -137,26 +91,26 @@ $_t-label   : .6875rem;
     align-items: center;
     gap: 7px;
     padding: 9px 20px;
-    font-size: $_t-small;
+    font-size: 0.875rem;
     font-weight: 600;
     color: $gray-500;
     background: transparent;
     border: none;
-    border-radius: $_radius-full;
+    border-radius: 9999px;
     cursor: pointer;
     white-space: nowrap;
-    transition: all $_duration-fast $_ease;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: inherit;
 
     &:hover {
       color: $themeMidNight;
-      background: rgba($themeMidNight, .04);
+      background: rgba($themeMidNight, 0.04);
     }
 
     &.is-active {
       background: $themeMidNight;
       color: $white;
-      box-shadow: 0 2px 8px rgba($themeMidNight, .2);
+      box-shadow: 0 2px 8px rgba($themeMidNight, 0.2);
     }
 
     .tab__icon {
@@ -189,7 +143,7 @@ $_t-label   : .6875rem;
       display: flex;
       flex-direction: column;
       gap: 8px;
-      animation: tos-fadeIn .15s ease;
+      animation: tos-fadeIn 0.15s ease;
     }
   }
 
@@ -209,43 +163,47 @@ $_t-label   : .6875rem;
 
   .acc-item {
     background: $white;
-    border: 1px solid $_border;
-    border-radius: $_radius-lg;
+    border: 1px solid rgba($themeMidNight, 0.09);
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: $_shadow;
-    transition: border-color $_duration-fast, box-shadow $_duration-fast;
+    box-shadow: 0 1px 3px rgba($themeMidNight, 0.08), 0 1px 2px rgba($themeMidNight, 0.06);
+    transition: border-color 150ms, box-shadow 150ms;
+
+    &:not(.is-open) {
+      .acc-trigger {
+        border-left: 3px solid transparent;
+      }
+    }
 
     &.is-open {
-      border-color: rgba($themeMidNight, .14);
-      box-shadow: $_shadow-lg;
+      border-color: rgba($themeMidNight, 0.14);
+      box-shadow: 0 10px 24px rgba($themeMidNight, 0.10), 0 4px 8px rgba($themeMidNight, 0.06);
 
       .acc-trigger {
         border-left: 3px solid $darkYellow;
-        background: rgba($themeMidNight, .012);
+        background: rgba($themeMidNight, 0.012);
       }
 
       .acc-icon {
-        background: rgba($darkYellow, .10);
-        border-color: rgba($darkYellow, .28);
-        color: $_amber-dark;
+        background: rgba($darkYellow, 0.10);
+        border-color: rgba($darkYellow, 0.28);
+        color: #CC8B00;
       }
 
       .acc-chevron {
         transform: rotate(180deg);
-        color: $_amber-dark;
+        color: #CC8B00;
       }
 
-      .acc-body { grid-template-rows: 1fr; }
+      .acc-body {
+        grid-template-rows: 1fr;
+      }
 
       .pill--tech {
-        background: rgba($darkYellow, .06);
-        border-color: rgba($darkYellow, .18);
-        color: $_amber-dark;
+        background: rgba($darkYellow, 0.06);
+        border-color: rgba($darkYellow, 0.18);
+        color: #CC8B00;
       }
-    }
-
-    &:not(.is-open) {
-      .acc-trigger { border-left: 3px solid transparent; }
     }
   }
 
@@ -260,23 +218,25 @@ $_t-label   : .6875rem;
     cursor: pointer;
     text-align: left;
     font-family: inherit;
-    transition: background $_duration-fast, border-left $_duration-fast;
+    transition: background 150ms, border-left 150ms;
 
-    &:hover { background: rgba($themeMidNight, .018); }
+    &:hover {
+      background: rgba($themeMidNight, 0.018);
+    }
   }
 
   .acc-icon {
     width: 38px;
     height: 38px;
-    border-radius: $_radius;
-    background: rgba($themeMidNight, .04);
-    border: 1px solid $_border;
+    border-radius: 8px;
+    background: rgba($themeMidNight, 0.04);
+    border: 1px solid rgba($themeMidNight, 0.09);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     color: $themeMidNight;
-    transition: all $_duration-fast;
+    transition: all 150ms;
 
     svg {
       width: 17px;
@@ -289,11 +249,11 @@ $_t-label   : .6875rem;
 
   .acc-title {
     flex: 1;
-    font-size: $_t-subhead;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     font-weight: 700;
     color: $themeMidNight;
     line-height: 1.25;
-    letter-spacing: -.012em;
+    letter-spacing: -0.012em;
   }
 
   .acc-chevron {
@@ -304,7 +264,7 @@ $_t-label   : .6875rem;
     align-items: center;
     justify-content: center;
     color: $whiteLight;
-    transition: transform $_duration-fast $_ease, color $_duration-fast;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms;
 
     svg {
       width: 14px;
@@ -319,9 +279,11 @@ $_t-label   : .6875rem;
   .acc-body {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows .28s $_ease;
+    transition: grid-template-rows 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 
-    .acc-body-inner { overflow: hidden; }
+    .acc-body-inner {
+      overflow: hidden;
+    }
   }
 
   .acc-content {
@@ -329,7 +291,7 @@ $_t-label   : .6875rem;
   }
 
   .acc-desc {
-    font-size: $_t-small;
+    font-size: 0.875rem;
     color: $gray-600;
     line-height: 1.7;
     margin-bottom: 16px;
@@ -346,21 +308,21 @@ $_t-label   : .6875rem;
   .pill--tech {
     display: inline-block;
     padding: 4px 10px;
-    font-size: $_t-xs;
+    font-size: 0.8125rem;
     font-weight: 600;
-    border: 1px solid $_border;
-    border-radius: $_radius-sm;
+    border: 1px solid rgba($themeMidNight, 0.09);
+    border-radius: 4px;
     color: $themeMidNight;
     background: transparent;
-    transition: all $_duration-fast;
+    transition: all 150ms;
   }
 
-  // Ghost CTA link
+  // Ghost CTA
   .acc-cta {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: $_t-small;
+    font-size: 0.875rem;
     font-weight: 600;
     color: $themeMidNight;
     background: none;
@@ -368,9 +330,11 @@ $_t-label   : .6875rem;
     cursor: pointer;
     padding: 0;
     font-family: inherit;
-    transition: gap $_duration-fast;
+    transition: gap 150ms;
 
-    &:hover { gap: 10px; }
+    &:hover {
+      gap: 10px;
+    }
 
     svg {
       width: 16px;
@@ -386,18 +350,18 @@ $_t-label   : .6875rem;
   // ─────────────────────────────────────────────
   .scope-card {
     background: $themeMidNight;
-    border-radius: $_radius-lg;
+    border-radius: 12px;
     padding: 32px 28px;
     position: relative;
-    box-shadow: $_shadow-xl;
+    box-shadow: 0 20px 48px rgba($themeMidNight, 0.14), 0 4px 12px rgba($themeMidNight, 0.08);
   }
 
   .scope-label {
-    font-size: $_t-label;
+    font-size: 0.6875rem;
     font-weight: 700;
     color: $darkYellow;
     text-transform: uppercase;
-    letter-spacing: .09em;
+    letter-spacing: 0.09em;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -414,7 +378,7 @@ $_t-label   : .6875rem;
   }
 
   @keyframes tos-pulseGreen {
-    0%, 100% { box-shadow: 0 0 0 0 rgba($greenclr, .5); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba($greenclr, 0.5); }
     50%       { box-shadow: 0 0 0 5px rgba($greenclr, 0); }
   }
 
@@ -423,7 +387,7 @@ $_t-label   : .6875rem;
     font-weight: 800;
     color: $white;
     line-height: 1.2;
-    letter-spacing: -.018em;
+    letter-spacing: -0.018em;
     margin-bottom: 22px;
   }
 
@@ -438,10 +402,10 @@ $_t-label   : .6875rem;
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: $_t-small;
-      color: rgba($white, .72);
+      font-size: 0.875rem;
+      color: rgba($white, 0.72);
       line-height: 1.5;
-      margin-bottom: 0; // override default p/li margin
+      margin-bottom: 0;
     }
   }
 
@@ -450,8 +414,8 @@ $_t-label   : .6875rem;
     height: 20px;
     border-radius: 50%;
     flex-shrink: 0;
-    background: rgba($greenclr, .12);
-    border: 1.5px solid rgba($greenclr, .28);
+    background: rgba($greenclr, 0.12);
+    border: 1.5px solid rgba($greenclr, 0.28);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -474,28 +438,30 @@ $_t-label   : .6875rem;
     padding: 14px 20px;
     background: $darkYellow;
     color: $themeMidNight;
-    font-size: $_t-body;
+    font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
     font-weight: 800;
     border: none;
-    border-radius: $_radius-full;
+    border-radius: 9999px;
     cursor: pointer;
     font-family: inherit;
-    transition: all $_duration-fast $_ease;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      background: $_amber-hover;
+      background: #E69A00;
       transform: translateY(-1px);
-      box-shadow: 0 8px 28px rgba($darkYellow, .4);
+      box-shadow: 0 8px 28px rgba($darkYellow, 0.4);
     }
 
-    &:active { transform: scale(.98); }
+    &:active {
+      transform: scale(0.98);
+    }
   }
 
   .scope-micro {
     text-align: center;
     margin-top: 10px;
-    font-size: $_t-xs;
-    color: rgba($white, .3);
+    font-size: 0.8125rem;
+    color: rgba($white, 0.3);
     line-height: 1.5;
     margin-bottom: 0;
   }
@@ -506,15 +472,15 @@ $_t-label   : .6875rem;
   .reveal {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity .55s $_ease, transform .55s $_ease;
+    transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1), transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-visible {
       opacity: 1;
       transform: none;
     }
 
-    &.reveal-delay-1 { transition-delay: .08s; }
-    &.reveal-delay-2 { transition-delay: .16s; }
+    &.reveal-delay-1 { transition-delay: 0.08s; }
+    &.reveal-delay-2 { transition-delay: 0.16s; }
   }
 
   // ─────────────────────────────────────────────
@@ -529,11 +495,17 @@ $_t-label   : .6875rem;
   @media only screen and (max-width: 767px) {
     padding: 64px 0 76px;
 
-    .container { padding-inline: 16px; }
+    .container {
+      padding-inline: 16px;
+    }
 
-    .hdr h2 { white-space: normal; }
+    .hdr h2 {
+      white-space: normal;
+    }
 
-    .acc-content { padding: 0 16px 18px 16px; }
+    .acc-content {
+      padding: 0 16px 18px 16px;
+    }
   }
 
   // ─────────────────────────────────────────────
@@ -551,8 +523,12 @@ $_t-label   : .6875rem;
     .acc-icon,
     .acc-item,
     .tab,
-    .scope-btn { transition: none; }
+    .scope-btn {
+      transition: none;
+    }
 
-    .scope-dot { animation: none; }
+    .scope-dot {
+      animation: none;
+    }
   }
 }

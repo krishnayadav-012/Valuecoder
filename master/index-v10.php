@@ -86,9 +86,9 @@
                     </div>
                     <div class="award-section">
                         <picture>
-                            <source type="image/webp" srcset="images/index-v10/award.webp">
-                            <img loading="lazy" alt="valuecoders" src="images/index-v10/award.webp" width="1200"
-                                height="185">
+                            <source media="(max-width:650px)"
+                                srcset="images/index-v10/small-clints.png">
+                            <img src="images/index-v10/award.webp" alt="desk-img" width="1200" height="185">
                         </picture>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
 
     <!-- Build for team section start -->
 
-    <section class="help-section">
+    <section class="help-section  padding-t-120 padding-b-120">
         <div class="container">
 
             <!-- Heading -->
@@ -194,8 +194,8 @@
                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
-                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+                        <img src="images/index-v10/one-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/one-hover.svg" class="hover" alt="">
 
                     </div>
 
@@ -219,8 +219,8 @@
                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
-                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+                        <img src="images/index-v10/six-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/six-hover.svg" class="hover" alt="">
 
                     </div>
 
@@ -243,8 +243,8 @@
                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
-                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+                        <img src="images/index-v10/two-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/two-hover.svg" class="hover" alt="">
 
                     </div>
 
@@ -267,8 +267,8 @@
                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
-                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+                        <img src="images/index-v10/three-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/three-hover.svg" class="hover" alt="">
 
                     </div>
 
@@ -291,8 +291,8 @@
                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
-                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+                        <img src="images/index-v10/four-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/four-hover.svg" class="hover" alt="">
 
                     </div>
 
@@ -315,8 +315,8 @@
                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/help-card-icon.webp" class="normal" alt="">
-                        <img src="images/index-v10/hover-help-card.webp" class="hover" alt="">
+                        <img src="images/index-v10/five-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/five-hover.svg" class="hover" alt="">
 
                     </div>
 
@@ -388,7 +388,7 @@
                                     Claude, Gemini, and open-source
                                     foundation models — integrated into
                                     real business workflows.</p>
-                                    
+
                             </div>
 
                             <div class="progress"></div>
@@ -404,7 +404,7 @@
                             <div class="desc">
                                 <p> Build autonomous AI agents that automate
                                     workflows and decision-making.</p>
-                                    
+
                             </div>
                             <div class="progress"></div>
                         </div>
@@ -418,7 +418,7 @@
                             <div class="desc">
                                 <p> Design and deploy scalable ML systems
                                     tailored to business workflows.</p>
-                                    
+
                             </div>
 
                             <div class="progress"></div>
@@ -470,7 +470,7 @@
 
 
     <!-- new start -->
-    <section class="delivery-models">
+    <section class="delivery-models padding-t-120 padding-b-120">
         <div class="container">
 
             <div class="section-header">
@@ -485,7 +485,7 @@
                 <article class="model-card">
                     <div class="card-top">
                         <div class="icon-box">
-                            <img src="images/index-v10/grey-clock.svg" alt="">
+                            <img src="images/index-v10/team-normal.svg" alt="">
 
                         </div>
                         <span class="badge">CLIENT-LED</span>
@@ -506,7 +506,7 @@
                     <div class="card-top">
                         <div class="icon-box">
 
-                            <img src="images/index-v10/yellow-clock.svg" alt="">
+                            <img src="images/index-v10/pod-hover.svg" alt="">
                         </div>
                         <span class="badge">VALUECODERS-LED</span>
                     </div>
@@ -525,7 +525,7 @@
                 <article class="model-card">
                     <div class="card-top">
                         <div class="icon-box">
-                            <img src="images/index-v10/grey-clock.svg" alt="">
+                            <img src="images/index-v10/dev-normal.svg" alt="">
 
                             <img src="" alt="">
                         </div>
@@ -553,8 +553,9 @@
     <!-- capblieties secton start -->
 
 
-    <section id="capabilities-section">
-        <div class="container">
+   <section id="capabilities-section">
+<div class="container">
+    <div class="cap-wrapper">
             <div class="left-part">
                 <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
                 <p>ValueCoders provides engineering teams across four capability areas — each operating inside the same
@@ -636,6 +637,7 @@
 
             </div>
         </div>
+        </div>
     </section>
     <!-- capblieties secton end-->
 
@@ -643,7 +645,7 @@
 
     <!-- success story start -->
 
-    <section class="stories-section">
+    <section class="stories-section padding-t-120 padding-b-120">
         <div class="container">
             <div class="inner-part">
 
@@ -736,7 +738,7 @@
 
     <!-- induristries section -->
 
-    <section class="industries-section">
+    <section class="industries-section padding-t-120 padding-b-120">
         <div class="container">
             <div class="section-header">
                 <div class="header-text">
@@ -847,7 +849,7 @@
 
 
     <!-- new section  -->
-    <section class="delivery-discipline">
+    <section class="delivery-discipline padding-t-120 padding-b-120">
 
         <div class="container">
 
@@ -1000,11 +1002,11 @@
 
 
     <!-- Engineering Stacks start -->
-    <section class="stack-section">
+    <section class="stack-section padding-t-120 padding-b-120">
         <div class="container">
             <div class="section-header">
                 <div class="content-part">
-                    <h2>Engineering <strong>Expertise.</strong></h2>
+                    <h2>Engineering <em>Expertise.</em></h2>
                     <p>Delivered through staff augmentation, product pods, or long-term engineering programs.</p>
                 </div>
 
@@ -1024,27 +1026,43 @@
                         </div>
                         <ul class="tech-list">
                             <li>
-                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
                                 <div class="percentage">
-                                    <p>98%</p>
+
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
                                 <div class="percentage">
-                                    <p>98%</p>
+
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                </div>
                                 <div class="percentage">
-                                    <p>98%</p>
+
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Type-safe delivery</span></div>
+                                </div>
                                 <div class="percentage">
-                                    <p>98%</p>
+
                                 </div>
                             </li>
                         </ul>
@@ -1064,105 +1082,43 @@
                         </div>
                         <ul class="tech-list">
                             <li>
-                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
                                 <div class="percentage">
-                                    <p>98%</p>
+
+                                </div>
+                            </li>
+                           <li>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
+                                <div class="percentage">
+
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                </div>
                                 <div class="percentage">
-                                    <p>98%</p>
+
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Type-safe delivery</span></div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
                                 <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="card-footer">
-                            <div class="avatars">
-                                <img src="images/users-img.png" alt="Dev">
-                            </div>
-                            <p><strong>700+</strong> Senior Engineers available</p>
-                            <a href="#" class="btn-secondry">View All </a>
-                        </div>
-                    </div>
-                    <div class="stack-card">
-                        <div class="card-head">
-                            <h3>Frontend</h3>
-                            <p>Immediate Bench Ready</p>
-                        </div>
-                        <ul class="tech-list">
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="card-footer">
-                            <div class="avatars">
-                                <img src="images/users-img.png" alt="Dev">
-                            </div>
-                            <p><strong>700+</strong> Senior Engineers available</p>
-                            <a href="#" class="btn-secondry">View All </a>
-                        </div>
-                    </div>
-                    <div class="stack-card">
-                        <div class="card-head">
-                            <h3>Frontend</h3>
-                            <p>Immediate Bench Ready</p>
-                        </div>
-                        <ul class="tech-list">
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Enterprise SPA & Next.js</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>Angular</strong><span>Large-scale CRM/ERP</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Lightweight Dashboards</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tech-info"><strong>React</strong><span>Type-safe delivery</span></div>
-                                <div class="percentage">
-                                    <p>98%</p>
+
                                 </div>
                             </li>
                         </ul>
@@ -1175,6 +1131,120 @@
                             <a href="#" class="btn-secondry">View All </a>
                         </div>
                     </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Type-safe delivery</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                    </div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info"><img src="images/index-v10/react.svg" alt="">
+                                    <div class="text-part">
+                                        <strong>Angular</strong><span>Large-scale CRM/ERP</span>
+                                    </div>
+                                    <div class="percentage">
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>React</strong><span>Type-safe delivery</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="images/users-img.png" alt="Dev">
+
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="#" class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                   
+
                 </div>
             </div>
         </div>
@@ -1194,15 +1264,15 @@
                     <p>Real-world lessons on building, scaling, and maintaining production systems.</p>
                 </div>
 
-                 <div class="master-btn button-v10 second">
-                        <a href="/contact" class="btn-circle">
-                            <span class="text" data-text="Get in Touch">Get in Touch</span>
+                <div class="master-btn button-v10 second">
+                    <a href="/contact" class="btn-circle">
+                        <span class="text" data-text="Get in Touch">Get in Touch</span>
 
-                            <span class="circle">
-                                <img src="images/index-v10/move-right.svg" alt="">
-                            </span>
-                        </a>
-                    </div>
+                        <span class="circle">
+                            <img src="images/index-v10/move-right.svg" alt="">
+                        </span>
+                    </a>
+                </div>
             </div>
 
             <div class="insights__grid">
@@ -1372,7 +1442,7 @@
     <!-- feedback section start -->
 
 
-    <section class="testimonial-section-v9">
+    <section class="testimonial-section-v9 ">
         <div class="container">
             <div class="top-part">
                 <span>Client Feedback</span>
@@ -1384,8 +1454,8 @@
                     <div class="testimonial-card">
                         <div class="card-image">
                             <img src="images/testimonial-img.png" alt="James Kelly">
-                            <div class="play-icon" onclick="">
-                                 data-video="videos/testimonial1.mp4"
+                            <div class="play-icon"
+                                data-video="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4">
                                 <span class="play-btn"> Play </span>
                             </div>
                             <span class="close"></span>
@@ -1478,29 +1548,20 @@
                             </div>
                         </div>
                     </div>
-                    
-
-
                 </div>
 
                 <div id="dots" class="glider-dots"></div>
 
-<!--  -->
+                <!--  -->
                 <div class="video-popup-v9" id="videoPopupV9">
-
-    <div class="video-popup-inner">
-
-        <span class="video-close-btn" id="videoCloseV9"></span>
-
-        <video id="popupVideoV9" controls>
-            <source src="" type="video/mp4">
-        </video>
-
-    </div>
-
-</div>
-<!--  -->
-
+                    <div class="video-popup-inner">
+                        <span class="video-close-btn" id="videoCloseV9"></span>
+                        <video id="popupVideoV9" autoplay controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!--  -->
 
             </div>
         </div>
@@ -1651,61 +1712,52 @@
 
 
 
-<script>
-    const popup = document.getElementById("videoPopupV9");
-const video = document.getElementById("popupVideoV9");
-const closeBtn = document.getElementById("videoCloseV9");
+    <script>
 
+        // Run only if testimonial section exists
+        if (document.querySelector(".testimonial-section-v9")) {
 
-// Play Click (Multiple Cards Supported)
-document
-.querySelectorAll(".testimonial-section-v9 .play-icon")
-.forEach(icon => {
+            const section = document.querySelector(".testimonial-section-v9");
+            const popup = section.querySelector("#videoPopupV9");
+            const video = section.querySelector("#popupVideoV9");
+            const closeBtn = section.querySelector("#videoCloseV9");
 
-    icon.addEventListener("click", function () {
+            // Safety check before running
+            if (popup && video && closeBtn) {
 
-        // Get video from HTML
-        const videoSrc =
-            this.getAttribute("data-video");
+                // Play Click (Multiple Cards Supported)
+                section
+                    .querySelectorAll(".play-icon")
+                    .forEach(icon => {
+                        icon.addEventListener("click", function () {
+                            const videoSrc =
+                                this.getAttribute("data-video");
+                            if (videoSrc) {
+                                video.querySelector("source").src =
+                                    videoSrc;
+                                video.load();
+                                popup.classList.add("active");
+                            }
+                        });
+                    });
+                // Close Button
+                closeBtn.addEventListener("click", closeVideo);
+                // Click Outside Close
+                popup.addEventListener("click", function (e) {
+                    if (e.target === popup) {
+                        closeVideo();
+                    }
+                });
 
-        // Set video source
-        video.querySelector("source").src =
-            videoSrc;
+                function closeVideo() {
+                    popup.classList.remove("active");
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            }
 
-        // Reload video
-        video.load();
-
-        // Show popup
-        popup.classList.add("active");
-
-    });
-
-});
-
-
-// Close Button
-closeBtn.addEventListener("click", closeVideo);
-
-
-// Click Outside Close
-popup.addEventListener("click", function(e) {
-
-    if (e.target === popup) {
-        closeVideo();
-    }
-
-});
-
-
-function closeVideo() {
-
-    popup.classList.remove("active");
-
-    video.pause();
-    video.currentTime = 0;
-
-}
-</script>
+        }
+    </script>
 
 
 </body>

@@ -1829,7 +1829,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .delivery-models {
   background-color: #f5f7f9;
-  padding: 120px 0px;
 }
 
 .section-header {
@@ -1998,11 +1997,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .delivery-models {
-    padding: 60px 0;
-  }
-}
 @media (max-width: 480px) {
   .model-card {
     padding: 30px 20px;

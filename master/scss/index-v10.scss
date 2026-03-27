@@ -461,7 +461,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-
+    .master-header.sc-up .header-inner .btn-menu-toggle svg{fill: #fff !important;}
+    .master-header .header-inner .btn-menu-toggle svg{fill: #fff !important;}
+    .master-header.sc-down.header-bg .header-inner .btn-menu-toggle svg{fill: $bgVoilet !important;}
+    .master-header.header-bg.sc-up .header-inner .btn-menu-toggle svg{fill: $bgVoilet !important;}
+    .master-header {margin-top: 0px;}
+    .master-header.sc-up {
+    margin-top: 0px !important;
+}
+.get-connect{
+    display: none !important;
+}
    
     .btn-secondry::before {
         right: 15% !important;

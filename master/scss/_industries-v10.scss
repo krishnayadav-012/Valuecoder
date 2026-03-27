@@ -4,7 +4,7 @@ $text-gray: #314158;
 
 
 .industries-section {
-  padding: 100px 0;
+ 
   background-color: $white;
 
   .section-header {
@@ -234,8 +234,13 @@ display: block;
 }
 
 @media screen and (max-width: 992px) {
+   .industries-section .section-header .header-text{
+    padding-bottom: 10px;
+   }
   .industries-section .section-header {
     flex-direction: column;
+    padding-top: 0;
+    
   }
 
   .industries-section .glider-nav {

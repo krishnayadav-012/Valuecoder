@@ -1039,7 +1039,198 @@
     }, { threshold: 0.3 });
 
     document.querySelectorAll('.wwd-section .stat-strip-wrap').forEach(el => shimmerObs.observe(el));
+
+// ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+  
+/**
+ * Types of Services Section — JS
+ * Scoped 100% to .types-of-services-section
+ * Will NOT touch or affect any other section on the page
+ */
+
+(function () {
+  'use strict';
+
+  // ─────────────────────────────────────────────
+  //  Wait for DOM to be fully parsed before
+  //  running any querySelector calls
+  // ─────────────────────────────────────────────
+  function init() {
+
+    // ── Guard: exit immediately if section doesn't exist ──
+    var section = document.querySelector('.types-of-services-section');
+    if (!section) { return; }
+
+    // ─────────────────────────────────────────────
+    //  TABS
+    // ─────────────────────────────────────────────
+    var tabs      = section.querySelectorAll('.tab[data-tab]');
+    var tabPanels = section.querySelectorAll('.tab-panel');
+
+    // Guard: only run if tabs exist
+    if (tabs.length > 0) {
+
+      function activateTab(clickedTab) {
+        var key = clickedTab.getAttribute('data-tab');
+
+        // Deactivate every tab
+        tabs.forEach(function (t) {
+          t.classList.remove('is-active');
+          t.setAttribute('aria-selected', 'false');
+        });
+
+        // Hide every panel
+        tabPanels.forEach(function (p) {
+          p.classList.remove('is-active');
+        });
+
+        // Activate the clicked tab
+        clickedTab.classList.add('is-active');
+        clickedTab.setAttribute('aria-selected', 'true');
+
+        // Show its matching panel — only look inside section
+        var targetPanel = section.querySelector('#panel-' + key);
+        if (targetPanel) {
+          targetPanel.classList.add('is-active');
+        }
+      }
+
+      tabs.forEach(function (tab) {
+
+        // Click handler
+        tab.addEventListener('click', function () {
+          activateTab(tab);
+        });
+
+        // Keyboard: ArrowLeft / ArrowRight / Home / End
+        tab.addEventListener('keydown', function (e) {
+          var list     = Array.prototype.slice.call(tabs);
+          var idx      = list.indexOf(tab);
+          var next     = idx;
+
+          if      (e.key === 'ArrowRight') { next = (idx + 1) % list.length; }
+          else if (e.key === 'ArrowLeft')  { next = (idx - 1 + list.length) % list.length; }
+          else if (e.key === 'Home')       { next = 0; }
+          else if (e.key === 'End')        { next = list.length - 1; }
+          else { return; }
+
+          e.preventDefault();
+          list[next].focus();
+          activateTab(list[next]);
+        });
+
+      });
+
+    } // end tabs guard
+
+    // ─────────────────────────────────────────────
+    //  ACCORDION
+    //  Scoped per-panel: only one item open at a time
+    //  inside each tab panel.
+    //  Works on ALL panels (including hidden ones)
+    //  because we attach listeners at init, not on click.
+    // ─────────────────────────────────────────────
+    var accTriggers = section.querySelectorAll('.acc-trigger');
+
+    // Guard: only run if accordion triggers exist
+    if (accTriggers.length > 0) {
+
+      accTriggers.forEach(function (trigger) {
+
+        trigger.addEventListener('click', function (e) {
+          // Stop this click from bubbling to any parent handlers
+          e.stopPropagation();
+
+          var clickedItem = trigger.parentElement; // .acc-item is direct parent of .acc-trigger
+          if (!clickedItem || !clickedItem.classList.contains('acc-item')) {
+            // Fallback: walk up to find .acc-item
+            clickedItem = trigger.closest('.acc-item');
+          }
+          if (!clickedItem) { return; }
+
+          var wasOpen = clickedItem.classList.contains('is-open');
+
+          // Find sibling acc-items — walk up to .accordion wrapper
+          var accordion = clickedItem.parentElement;
+          if (!accordion) { return; }
+
+          // Close every item in this accordion
+          var siblings = accordion.querySelectorAll('.acc-item');
+          siblings.forEach(function (item) {
+            item.classList.remove('is-open');
+            var trig = item.querySelector('.acc-trigger');
+            if (trig) { trig.setAttribute('aria-expanded', 'false'); }
+          });
+
+          // If item was closed, open it now
+          if (!wasOpen) {
+            clickedItem.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+          // If item was already open → stays closed (toggle off)
+        });
+
+      });
+
+    } // end accordion guard
+
+    // ─────────────────────────────────────────────
+    //  SCROLL REVEAL
+    //  One-shot IntersectionObserver, respects
+    //  prefers-reduced-motion
+    // ─────────────────────────────────────────────
+    var revealEls = section.querySelectorAll('.reveal');
+
+    if (revealEls.length > 0) {
+
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (prefersReduced) {
+        // Show immediately — skip animation
+        revealEls.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      } else if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target); // fire once only
+            }
+          });
+        }, { threshold: 0.08 });
+
+        revealEls.forEach(function (el) {
+          observer.observe(el);
+        });
+      } else {
+        // Fallback for old browsers — show all immediately
+        revealEls.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+
+    } // end reveal guard
+
+  } // end init()
+
+  // ─────────────────────────────────────────────
+  //  Run init after DOM is ready
+  //  Handles both: script in <head> and script at
+  //  bottom of <body>
+  // ─────────────────────────────────────────────
+  if (document.readyState === 'loading') {
+    // DOM not yet parsed — wait for it
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    // DOM already parsed (script is at bottom of body)
+    init();
+  }
+
+})();
+
   </script>
+  
 
 </body>
 
