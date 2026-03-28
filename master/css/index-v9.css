@@ -6391,6 +6391,7 @@ button.tab-btn-base {
   bottom: 0;
   right: -65%;
   content: "";
+  background-size: cover;
   display: none;
   position: absolute;
   width: 100%;
