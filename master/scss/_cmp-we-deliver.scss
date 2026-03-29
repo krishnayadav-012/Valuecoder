@@ -12,11 +12,7 @@
 //  PARENT SCOPE: .wwd-section
 // ═════════════════════════════════════════════════════════════
 .wwd-section {
- 
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.032'/%3E%3C/svg%3E"),
-    radial-gradient(circle, rgba(5, 22, 77, 0.055) 1.2px, transparent 1.2px);
-  background-size: 300px 300px, 26px 26px;
+
   position: relative;
   padding: 96px 0 108px;
 
@@ -43,9 +39,8 @@
   .hdr {
     text-align: center;
     margin-bottom: 56px;
-  }
-
-   > span {
+    
+    span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +49,7 @@
     color: $darkYellow;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    position: relative;
     margin-bottom: 18px;
 
     &::before,
@@ -66,6 +62,7 @@
       display: block;
       flex-shrink: 0;
     }
+  }
   }
 
   h2 {

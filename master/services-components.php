@@ -474,8 +474,8 @@
  
     <!-- ── HEADER ── -->
     <div class="hdr reveal">
-      <div class="eyebrow">Types of services</div>
-      <h2 id="tos-hd">Depth across the full software delivery stack</h2>
+      <div class="eyebrow"><span>Types of services</span></div>
+      <h2 >Depth across the full software delivery stack</h2>
       <p>Browse by delivery area. Each service has a specific deliverable, a stated approach, and engineers with production experience in it.</p>
     </div>
  
@@ -526,7 +526,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><rect x="1" y="2" width="16" height="13" rx="2"/><path d="M5 7h8M5 10h5"/></svg>
                 </span>
-                <span class="acc-title">Web Application Development</span>
+                <h3 >Web Application Development</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -534,19 +534,19 @@
               <div class="acc-body" id="acc-1" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Full-stack web applications from prototype to production. React, Vue, Angular frontends wired to Node.js, Python, or Java backends. Delivered as Milestone-Based Pods or capacity extension to your existing team. Lendio: 14 integrations in 12 weeks — on schedule.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">React</span>
-                      <span class="pill--tech">Vue</span>
-                      <span class="pill--tech">Angular</span>
-                      <span class="pill--tech">Node.js</span>
-                      <span class="pill--tech">Python</span>
-                      <span class="pill--tech">PostgreSQL</span>
-                    </div>
-                    <button class="acc-cta" aria-label="Explore Web Application Development">
+                    <p >Full-stack web applications from prototype to production. React, Vue, Angular frontends wired to Node.js, Python, or Java backends. Delivered as Milestone-Based Pods or capacity extension to your existing team. Lendio: 14 integrations in 12 weeks — on schedule.</p>
+                    <ul >
+                      <li >React</li>
+                      <li >Vue</li>
+                      <li >Angular</li>
+                      <li >Node.js</li>
+                      <li >Python</li>
+                      <li >PostgreSQL</li>
+</ul>
+                    <a  href="#" class="acc-cta" aria-label="Explore Web Application Development">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -557,7 +557,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l2.5 2.5"/></svg>
                 </span>
-                <span class="acc-title">SaaS Platform Development</span>
+                <h3 >SaaS Platform Development</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -565,17 +565,17 @@
               <div class="acc-body" id="acc-2" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Multi-tenant SaaS platforms with role-based access, subscription billing, real-time data, and admin portals. Built for speed and scale from day one.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">React</span>
-                      <span class="pill--tech">Next.js</span>
-                      <span class="pill--tech">Stripe</span>
-                      <span class="pill--tech">PostgreSQL</span>
-                    </div>
-                    <button class="acc-cta" aria-label="Explore SaaS Platform Development">
+                    <p >Multi-tenant SaaS platforms with role-based access, subscription billing, real-time data, and admin portals. Built for speed and scale from day one.</p>
+                    <ul >
+                      <li >React</li>
+                      <li >Next.js</li>
+                      <li >Stripe</li>
+                      <li >PostgreSQL</li>
+</ul>
+                    <a href="#" class="acc-cta" aria-label="Explore SaaS Platform Development">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -586,7 +586,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
                 </span>
-                <span class="acc-title">API Development &amp; Integration</span>
+                <h3 >API Development &amp; Integration</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -594,17 +594,17 @@
               <div class="acc-body" id="acc-3" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">RESTful and GraphQL APIs designed for durability. Third-party integrations, webhooks, and event-driven architectures. Documented, versioned, and load-tested before delivery.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">REST</span>
-                      <span class="pill--tech">GraphQL</span>
-                      <span class="pill--tech">OpenAPI</span>
-                      <span class="pill--tech">Webhooks</span>
-                    </div>
-                    <button class="acc-cta" aria-label="Explore API Development">
+                    <p >RESTful and GraphQL APIs designed for durability. Third-party integrations, webhooks, and event-driven architectures. Documented, versioned, and load-tested before delivery.</p>
+                    <ul >
+                      <li >REST</li>
+                      <li >GraphQL</li>
+                      <li >OpenAPI</li>
+                      <li >Webhooks</li>
+                    </ul>
+                    <a  href="#" class="acc-cta" aria-label="Explore API Development">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -615,7 +615,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M3 4h2l2 9h7l2-6H7"/><circle cx="8" cy="15.5" r="1.2"/><circle cx="13" cy="15.5" r="1.2"/></svg>
                 </span>
-                <span class="acc-title">E-Commerce &amp; Marketplace Platforms</span>
+                <h3 >E-Commerce &amp; Marketplace Platforms</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -623,16 +623,16 @@
               <div class="acc-body" id="acc-4" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">High-conversion storefronts and two-sided marketplace UIs. Headless commerce with Shopify or Commercetools. Core Web Vitals targets built in from the start.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">Next.js</span>
-                      <span class="pill--tech">Shopify</span>
-                      <span class="pill--tech">Commercetools</span>
-                    </div>
-                    <button class="acc-cta" aria-label="Explore E-Commerce Development">
+                    <p >High-conversion storefronts and two-sided marketplace UIs. Headless commerce with Shopify or Commercetools. Core Web Vitals targets built in from the start.</p>
+                    <ul >
+                      <li >Next.js</li>
+                      <li >Shopify</li>
+                      <li >Commercetools</li>
+                    </ul>
+                    <a  href="#" class="acc-cta" aria-label="Explore E-Commerce Development">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -650,7 +650,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><circle cx="9" cy="9" r="3"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2"/></svg>
                 </span>
-                <span class="acc-title">LLM Integration &amp; RAG Systems</span>
+                <h3 >LLM Integration &amp; RAG Systems</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -658,17 +658,17 @@
               <div class="acc-body" id="acc-ai-1" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">LLM-powered applications with retrieval-augmented generation. Production-grade RAG pipelines with accuracy benchmarks, hallucination testing, and latency targets before ship.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">OpenAI</span>
-                      <span class="pill--tech">LangChain</span>
-                      <span class="pill--tech">Pinecone</span>
-                      <span class="pill--tech">Python</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >LLM-powered applications with retrieval-augmented generation. Production-grade RAG pipelines with accuracy benchmarks, hallucination testing, and latency targets before ship.</p>
+                    <ul >
+                      <li >OpenAI</li>
+                      <li >LangChain</li>
+                      <li >Pinecone</li>
+                      <li >Python</li>
+                    </ul>
+                    <a href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a >
                   </div>
                 </div>
               </div>
@@ -679,7 +679,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M4 9h2l2-5 2 10 2-5h2"/></svg>
                 </span>
-                <span class="acc-title">AI Agent Development</span>
+                <h3 >AI Agent Development</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -687,16 +687,16 @@
               <div class="acc-body" id="acc-ai-2" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Autonomous agents that plan, act, and self-correct. Tool-using agents with reliable fallback states and human escalation gates.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">Agents</span>
-                      <span class="pill--tech">Function calling</span>
-                      <span class="pill--tech">MCP</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Autonomous agents that plan, act, and self-correct. Tool-using agents with reliable fallback states and human escalation gates.</p>
+                    <ul >
+                      <li >Agents</li>
+                      <li >Function calling</li>
+                      <li >MCP</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -707,7 +707,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><rect x="2" y="5" width="14" height="9" rx="2"/><path d="M6 5V4a3 3 0 016 0v1"/></svg>
                 </span>
-                <span class="acc-title">Intelligent Workflow Automation</span>
+                <h3 >Intelligent Workflow Automation</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -715,17 +715,17 @@
               <div class="acc-body" id="acc-ai-3" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">End-to-end workflow automation: document processing, approval flows, data extraction, and system integration — governed by human review gates.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">RPA</span>
-                      <span class="pill--tech">n8n</span>
-                      <span class="pill--tech">Zapier</span>
-                      <span class="pill--tech">Custom</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >End-to-end workflow automation: document processing, approval flows, data extraction, and system integration — governed by human review gates.</p>
+                    <ul >
+                      <li >RPA</li>
+                      <li >n8n</li>
+                      <li >Zapier</li>
+                      <li >Custom</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -743,7 +743,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><circle cx="9" cy="9" r="7"/><path d="M2 9h3M13 9h3M9 2v3M9 13v3"/></svg>
                 </span>
-                <span class="acc-title">CI/CD Pipeline Engineering</span>
+                <h3 >CI/CD Pipeline Engineering</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -751,16 +751,16 @@
               <div class="acc-body" id="acc-do-1" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Build, test, and deploy pipelines that make releases a non-event. Automated testing gates, rollback triggers, and observability from the first commit.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">GitHub Actions</span>
-                      <span class="pill--tech">Jenkins</span>
-                      <span class="pill--tech">ArgoCD</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Build, test, and deploy pipelines that make releases a non-event. Automated testing gates, rollback triggers, and observability from the first commit.</p>
+                    <ul >
+                      <li >GitHub Actions</li>
+                      <li >Jenkins</li>
+                      <li >ArgoCD</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -771,7 +771,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M3 5l6 3 6-3M3 9l6 3 6-3M3 13l6 3 6-3"/></svg>
                 </span>
-                <span class="acc-title">Cloud Infrastructure &amp; Kubernetes</span>
+                <h3 >Cloud Infrastructure &amp; Kubernetes</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -779,17 +779,17 @@
               <div class="acc-body" id="acc-do-2" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Production-grade Kubernetes clusters on AWS, GCP, or Azure. Infrastructure as code, auto-scaling, cost optimisation, and incident runbooks.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">Kubernetes</span>
-                      <span class="pill--tech">Terraform</span>
-                      <span class="pill--tech">AWS</span>
-                      <span class="pill--tech">GCP</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Production-grade Kubernetes clusters on AWS, GCP, or Azure. Infrastructure as code, auto-scaling, cost optimisation, and incident runbooks.</p>
+                    <ul >
+                      <li >Kubernetes</li>
+                      <li >Terraform</li>
+                      <li >AWS</li>
+                      <li >GCP</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -807,7 +807,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><rect x="5" y="1" width="8" height="16" rx="2"/><circle cx="9" cy="14" r=".9" fill="currentColor"/></svg>
                 </span>
-                <span class="acc-title">React Native App Development</span>
+                <h3 >React Native App Development</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -815,16 +815,16 @@
               <div class="acc-body" id="acc-m-1" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Cross-platform mobile apps with native performance. iOS and Android from a single codebase. App Store delivery to agreed milestones.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">React Native</span>
-                      <span class="pill--tech">Expo</span>
-                      <span class="pill--tech">TypeScript</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Cross-platform mobile apps with native performance. iOS and Android from a single codebase. App Store delivery to agreed milestones.</p>
+                    <ul >
+                      <li >React Native</li>
+                      <li >Expo</li>
+                      <li >TypeScript</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -835,7 +835,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M5 3h8v12H5z" rx="1"/><path d="M5 6h8M5 12h8"/></svg>
                 </span>
-                <span class="acc-title">Flutter &amp; Native iOS/Android</span>
+                <h3 >Flutter &amp; Native iOS/Android</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -843,16 +843,16 @@
               <div class="acc-body" id="acc-m-2" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Flutter for pixel-perfect cross-platform UIs. Swift and Kotlin for native performance requirements. Both delivered to the same quality bar.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">Flutter</span>
-                      <span class="pill--tech">Swift</span>
-                      <span class="pill--tech">Kotlin</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Flutter for pixel-perfect cross-platform UIs. Swift and Kotlin for native performance requirements. Both delivered to the same quality bar.</p>
+                    <ul >
+                      <li >Flutter</li>
+                      <li >Swift</li>
+                      <li >Kotlin</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -870,7 +870,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M3 4l5 5-5 5"/><path d="M9 14h6"/></svg>
                 </span>
-                <span class="acc-title">Legacy Re-architecture</span>
+                <h3 >Legacy Re-architecture</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -878,16 +878,16 @@
               <div class="acc-body" id="acc-mo-1" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Strangler-fig migrations, microservices decomposition, and database modernisation. Assessment first — every migration has rollback criteria before work starts.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">Microservices</span>
-                      <span class="pill--tech">Docker</span>
-                      <span class="pill--tech">Event-driven</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Strangler-fig migrations, microservices decomposition, and database modernisation. Assessment first — every migration has rollback criteria before work starts.</p>
+                    <ul >
+                      <li >Microservices</li>
+                      <li >Docker</li>
+                      <li >Event-driven</li>
+                    </ul>
+                    <a  href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -898,7 +898,7 @@
                 <span class="acc-icon" aria-hidden="true">
                   <svg viewBox="0 0 18 18"><path d="M4 14l10-10M14 4h-5M14 4v5"/></svg>
                 </span>
-                <span class="acc-title">Cloud Migration</span>
+                <h3 >Cloud Migration</h3>
                 <span class="acc-chevron" aria-hidden="true">
                   <svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
@@ -906,17 +906,17 @@
               <div class="acc-body" id="acc-mo-2" role="region">
                 <div class="acc-body-inner">
                   <div class="acc-content">
-                    <p class="acc-desc">Lift-and-shift, re-platform, or re-architect. We scope the right approach first. Zero-downtime migration plans with fallback options.</p>
-                    <div class="acc-tags">
-                      <span class="pill--tech">AWS</span>
-                      <span class="pill--tech">Azure</span>
-                      <span class="pill--tech">GCP</span>
-                      <span class="pill--tech">Terraform</span>
-                    </div>
-                    <button class="acc-cta">
+                    <p >Lift-and-shift, re-platform, or re-architect. We scope the right approach first. Zero-downtime migration plans with fallback options.</p>
+                    <ul >
+                      <li >AWS</li>
+                      <li >Azure</li>
+                      <li >GCP</li>
+                      <li >Terraform</li>
+                    </ul>
+                    <a href="#" class="acc-cta">
                       Explore service
                       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -937,7 +937,7 @@
  
         <h3 class="scope-title">Not sure which service fits?</h3>
  
-        <ul class="scope-list" aria-label="What's included">
+        <ul >
           <li>
             <span class="proof-check" aria-hidden="true">
               <svg viewBox="0 0 10 10"><path d="M2 5.5l2 2 4-4"/></svg>
@@ -964,9 +964,9 @@
           </li>
         </ul>
  
-        <button class="scope-btn" aria-label="Book a Scoping Call">
+        <a href="#" >
           Book a Scoping Call →
-        </button>
+        </a>
  
         <p class="scope-micro">No obligation. Speak directly with a solution expert.</p>
  
@@ -980,6 +980,241 @@
 
 
     <!-- ```````````````````````````````````````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
+
+
+
+
+    <!-- =====================================================
+     COMPLIANCE & SECURITY SECTION
+     Parent class: .vc-cs
+     All child classes prefixed: .vc-cs__*
+     JS: fully IIFE-scoped, zero global footprint
+     ===================================================== -->
+<section class="vc-cs" aria-labelledby="vc-cs-title">
+  <div class="vc-cs__wrap">
+ 
+    <!-- HEADER -->
+    <div class="vc-cs__hdr vc-cs__reveal">
+      <div class="vc-cs__eyebrow">Compliance &amp; Security</div>
+      <h2 class="vc-cs__title" id="vc-cs-title">
+        Your code, your data, your IP — handled with care from day one
+      </h2>
+      <p class="vc-cs__subtitle">
+        Security and compliance aren't added at the end. They're scoped in Sprint 1 and tracked like any other deliverable.
+      </p>
+    </div>
+ 
+    <!-- TWO-COL GRID -->
+    <div class="vc-cs__grid">
+ 
+      <!-- ── LEFT: ACCORDION ── -->
+      <div class="vc-cs__reveal vc-cs__reveal--d1">
+        <div class="vc-cs__accordion" role="list">
+ 
+          <!-- Item 1: IP Ownership -->
+          <div class="vc-cs__acc-item" role="listitem">
+            <button class="vc-cs__acc-trigger" aria-expanded="false" aria-controls="vc-cs-body-1">
+              <span class="vc-cs__acc-icon" aria-hidden="true">
+                <svg viewBox="0 0 18 18">
+                  <rect x="3" y="8" width="12" height="9" rx="2"/>
+                  <path d="M6 8V6a3 3 0 016 0v2"/>
+                  <circle cx="9" cy="13" r="1.2" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="vc-cs__acc-text">
+                <span class="vc-cs__acc-title">100% IP Ownership — Contractual</span>
+              </span>
+              <span class="vc-cs__acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 14 14">
+                  <path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="vc-cs__acc-body" id="vc-cs-body-1" role="region">
+              <div class="vc-cs__acc-body-inner">
+                <div class="vc-cs__acc-content">
+                  <p>Everything built is owned by you from the first commit. NDA signed before work begins. IP ownership is a contract clause, not a policy statement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Item 2: AI Governance -->
+          <div class="vc-cs__acc-item" role="listitem">
+            <button class="vc-cs__acc-trigger" aria-expanded="false" aria-controls="vc-cs-body-2">
+              <span class="vc-cs__acc-icon" aria-hidden="true">
+                <svg viewBox="0 0 18 18">
+                  <path d="M9 2l1.5 3.5L14 6l-2.5 2.5.6 3.5L9 10.3 6.4 12l.6-3.5L4.5 6 8 5.5z"/>
+                </svg>
+              </span>
+              <span class="vc-cs__acc-text">
+                <span class="vc-cs__acc-title">AI Governance &amp; Zero Data Retention</span>
+              </span>
+              <span class="vc-cs__acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 14 14">
+                  <path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="vc-cs__acc-body" id="vc-cs-body-2" role="region">
+              <div class="vc-cs__acc-body-inner">
+                <div class="vc-cs__acc-content">
+                  <p>Enterprise-tier AI tools with ZDR agreements where contractually required. Your source code never enters AI model training pipelines. Audit logs for all AI-assisted work, on request.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Item 3: Secure Working Practices -->
+          <div class="vc-cs__acc-item" role="listitem">
+            <button class="vc-cs__acc-trigger" aria-expanded="false" aria-controls="vc-cs-body-3">
+              <span class="vc-cs__acc-icon" aria-hidden="true">
+                <svg viewBox="0 0 18 18">
+                  <path d="M9 2l6 2.5v5C15 13 12.3 16 9 17 5.7 16 3 13 3 9.5v-5L9 2z"/>
+                </svg>
+              </span>
+              <span class="vc-cs__acc-text">
+                <span class="vc-cs__acc-title">Secure Working Practices</span>
+              </span>
+              <span class="vc-cs__acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 14 14">
+                  <path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="vc-cs__acc-body" id="vc-cs-body-3" role="region">
+              <div class="vc-cs__acc-body-inner">
+                <div class="vc-cs__acc-content">
+                  <p>Controlled access to repositories, environments, and credentials. No shared credentials. Role-based access control. Security requirements scoped in the SOW before delivery starts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Item 4: Enterprise Readiness -->
+          <div class="vc-cs__acc-item" role="listitem">
+            <button class="vc-cs__acc-trigger" aria-expanded="false" aria-controls="vc-cs-body-4">
+              <span class="vc-cs__acc-icon" aria-hidden="true">
+                <svg viewBox="0 0 18 18">
+                  <rect x="2" y="4" width="14" height="11" rx="2"/>
+                  <path d="M6 4V3a3 3 0 016 0v1"/>
+                  <path d="M7 10l2 2 3-3"/>
+                </svg>
+              </span>
+              <span class="vc-cs__acc-text">
+                <span class="vc-cs__acc-title">Enterprise Readiness — SOC 2 &amp; ISO Support</span>
+              </span>
+              <span class="vc-cs__acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 14 14">
+                  <path d="M2 5l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="vc-cs__acc-body" id="vc-cs-body-4" role="region">
+              <div class="vc-cs__acc-body-inner">
+                <div class="vc-cs__acc-content">
+                  <p>SOC 2 architecture, ISO 27001-aligned practices, and audit readiness built in where required. Delivery Leadership confirms compliance feasibility before any regulated engagement starts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        </div><!-- /accordion -->
+ 
+        <!-- Info strip -->
+        <div class="vc-cs__strip">
+          → Security scoped in the SOW &nbsp;·&nbsp; NDA signed before Day 1 &nbsp;·&nbsp; IP clause in every contract &nbsp;·&nbsp; ZDR available
+        </div>
+      </div><!-- /left -->
+ 
+      <!-- ── RIGHT: BADGE GRID ── -->
+      <div class="vc-cs__reveal vc-cs__reveal--d2">
+        <div class="vc-cs__badge-grid" role="list">
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><path d="M10 2l7 3v5c0 4-3 7.5-7 8.5C3 17.5 0 14 0 10V5l7-3z" fill="none" stroke="currentColor"/><path d="M6 10l2.5 2.5 5-5"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">SOC 2</div>
+            <div class="vc-cs__badge-desc">Type II readiness support</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor"/><path d="M6.5 10l2.5 2.5 5-5"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">ISO 27001</div>
+            <div class="vc-cs__badge-desc">Aligned practices</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><rect x="3" y="8" width="14" height="10" rx="2" fill="none" stroke="currentColor"/><path d="M7 8V6a3 3 0 016 0v2"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">PCI-DSS</div>
+            <div class="vc-cs__badge-desc">FinTech architecture</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><path d="M10 2C5.6 2 2 5.6 2 10s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z" fill="none" stroke="currentColor"/><path d="M7 10h6M10 7v6"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">HIPAA</div>
+            <div class="vc-cs__badge-desc">Healthcare delivery</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><rect x="2" y="5" width="16" height="12" rx="2" fill="none" stroke="currentColor"/><path d="M6 5V4a1 1 0 011-1h6a1 1 0 011 1v1"/><circle cx="10" cy="11" r="2" fill="none" stroke="currentColor"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">GDPR</div>
+            <div class="vc-cs__badge-desc">Data residency ready</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><path d="M10 2l8 4v5c0 4.4-3.4 8.5-8 9.5C2.4 19.5-1 15.4-1 11V6z" fill="none" stroke="currentColor"/><path d="M7 10h6"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">ZDR</div>
+            <div class="vc-cs__badge-desc">AI zero data retention</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><path d="M4 4h12v12H4z" fill="none" stroke="currentColor"/><path d="M8 8h4M8 11h2"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">FERPA</div>
+            <div class="vc-cs__badge-desc">EdTech compliance</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><path d="M10 2l6 2v5c0 4-2.7 7-6 8-3.3-1-6-4-6-8V4l6-2z" fill="none" stroke="currentColor"/><path d="M7 10l2 2 4-4"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">CMMI L3</div>
+            <div class="vc-cs__badge-desc">Process maturity</div>
+          </div>
+ 
+          <div class="vc-cs__badge-card" role="listitem">
+            <div class="vc-cs__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="2" fill="none" stroke="currentColor"/><path d="M10 4v2M10 14v2M4 10h2M14 10h2"/><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-dasharray="2 2"/></svg>
+            </div>
+            <div class="vc-cs__badge-name">WCAG 2.1</div>
+            <div class="vc-cs__badge-desc">Accessibility AA</div>
+          </div>
+ 
+        </div>
+      </div><!-- /right -->
+ 
+    </div><!-- /grid -->
+  </div><!-- /wrap -->
+</section>
+
+
+
+
+
+
 
 
   </main>
@@ -1229,6 +1464,84 @@
 
 })();
 
+
+
+// ````````````````````````````````````````_cmp-compliance-security start````````````````````````````````````````````````````````````````
+
+ 
+// <!-- =====================================================
+//      JS — Fully IIFE-scoped  
+//      All selectors run on ROOT (.vc-cs) only
+//      Zero global variables / zero impact on other sections
+//      ===================================================== -->
+
+(function () {
+  'use strict';
+ 
+  /* Guard: only run if this section is in the DOM */
+  var ROOT = document.querySelector('.vc-cs');
+  if (!ROOT) return;
+ 
+  /* ── ACCORDION ── */
+  function vcCsToggle(item) {
+    var accordion = item.closest('.vc-cs__accordion');
+    if (!accordion) return;
+ 
+    var isOpen = item.classList.contains('is-open');
+ 
+    /* Close all siblings in the same accordion */
+    accordion.querySelectorAll('.vc-cs__acc-item').forEach(function (el) {
+      el.classList.remove('is-open');
+      var btn = el.querySelector('.vc-cs__acc-trigger');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+ 
+    /* Open if it was closed */
+    if (!isOpen) {
+      item.classList.add('is-open');
+      var btn = item.querySelector('.vc-cs__acc-trigger');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+ 
+  /* Click on trigger button */
+  ROOT.querySelectorAll('.vc-cs__acc-trigger').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation(); /* prevent bubbling to any parent handlers */
+      vcCsToggle(btn.closest('.vc-cs__acc-item'));
+    });
+ 
+    /* Keyboard: Enter / Space */
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        vcCsToggle(btn.closest('.vc-cs__acc-item'));
+      }
+    });
+  });
+ 
+  /* ── SCROLL REVEAL ── */
+  if ('IntersectionObserver' in window) {
+    var vcCsIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          vcCsIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+ 
+    ROOT.querySelectorAll('.vc-cs__reveal').forEach(function (el) {
+      vcCsIO.observe(el);
+    });
+  } else {
+    /* Fallback for very old browsers */
+    ROOT.querySelectorAll('.vc-cs__reveal').forEach(function (el) {
+      el.classList.add('is-visible');
+    });
+  }
+ 
+}());
   </script>
   
 
