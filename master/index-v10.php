@@ -1038,7 +1038,7 @@
                             <li>
                                 <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
                                     <div class="text-part">
-                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                        <strong>Angular</strong><span>Large-scale CRM/ERP</span>
                                     </div>
                                 </div>
                                 <div class="percentage">
@@ -1049,7 +1049,7 @@
                                 <div class="tech-info">
                                 <img src="images/index-v10/react.svg" alt="">  
                                     <div class="text-part">    
-                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <strong>Vue.js</strong><span>Lightweight Dashboards</span></div>
                                 </div>
                                 <div class="percentage">
 
@@ -1059,7 +1059,17 @@
                                 <div class="tech-info">
                                 <img src="images/index-v10/react.svg" alt="">  
                                     <div class="text-part">    
-                                <strong>React</strong><span>Type-safe delivery</span></div>
+                                <strong>Svelte</strong><span>Lightweight Dashboards</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>GitHub</strong><span>Lightweight Dashboards</span></div>
                                 </div>
                                 <div class="percentage">
 
@@ -1077,14 +1087,14 @@
                     </div>
                     <div class="stack-card">
                         <div class="card-head">
-                            <h3>Frontend</h3>
+                            <h3>Backend</h3>
                             <p>Immediate Bench Ready</p>
                         </div>
                         <ul class="tech-list">
                             <li>
                                 <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
                                     <div class="text-part">
-                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                        <strong>Node.js</strong><span>Event-driven APIs</span>
                                     </div>
                                 </div>
                                 <div class="percentage">
@@ -1094,7 +1104,7 @@
                            <li>
                                 <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
                                     <div class="text-part">
-                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                        <strong>Python</strong><span>Data-heavy services</span>
                                     </div>
                                 </div>
                                 <div class="percentage">
@@ -1105,7 +1115,7 @@
                                 <div class="tech-info">
                                 <img src="images/index-v10/react.svg" alt="">  
                                     <div class="text-part">    
-                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <strong>Java</strong><span>Legacy enterprise core</span></div>
                                 </div>
                                 <div class="percentage">
 
@@ -1115,7 +1125,17 @@
                                 <div class="tech-info">
                                 <img src="images/index-v10/react.svg" alt="">  
                                     <div class="text-part">    
-                                <strong>React</strong><span>Type-safe delivery</span></div>
+                                <strong>.NET</strong><span>Corporate ecosystems</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>PHP</strong><span>Corporate ecosystems</span></div>
                                 </div>
                                 <div class="percentage">
 
@@ -1133,14 +1153,14 @@
                     </div>
                     <div class="stack-card">
                         <div class="card-head">
-                            <h3>Frontend</h3>
+                            <h3>Cloud & Ai</h3>
                             <p>Immediate Bench Ready</p>
                         </div>
                         <ul class="tech-list">
                             <li>
                                 <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
                                     <div class="text-part">
-                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                        <strong>AWS</strong><span>Serverless & K8s</span>
                                     </div>
                                 </div>
                                 <div class="percentage">
@@ -1150,7 +1170,7 @@
                             <li>
                                 <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
                                     <div class="text-part">
-                                        <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                        <strong>Azure</strong><span>Enterprise Cloud</span>
                                     </div>
                                 </div>
                                 <div class="percentage">
@@ -1161,7 +1181,7 @@
                                 <div class="tech-info">
                                 <img src="images/index-v10/react.svg" alt="">  
                                     <div class="text-part">    
-                                <strong>React</strong><span>Lightweight Dashboards</span></div>
+                                <strong>LLMs</strong><span>RAG & Agentic AI</span></div>
                                 </div>
                                 <div class="percentage">
 
@@ -1171,7 +1191,17 @@
                                 <div class="tech-info">
                                 <img src="images/index-v10/react.svg" alt="">  
                                     <div class="text-part">    
-                                <strong>React</strong><span>Type-safe delivery</span></div>
+                                <strong>TensorFlow</strong><span>Custom ML Models</span></div>
+                                </div>
+                                <div class="percentage">
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tech-info">
+                                <img src="images/index-v10/react.svg" alt="">  
+                                    <div class="text-part">    
+                                <strong>Google Cloud Platform</strong><span>Custom ML Models</span></div>
                                 </div>
                                 <div class="percentage">
 
@@ -1652,10 +1682,10 @@
             });
 
             const avatars = [
-                'images/feedback-slid-icon.png',
-                'images/feedback-slid-icon.png',
-                'images/feedback-slid-icon.png',
-                'images/feedback-slid-icon.png',
+                'images/index-v10/feedback-slid-icon.png',
+                'images/index-v10/feedback-slid-icon-1.jpg',
+                'images/index-v10/feedback-slid-icon-2.jpg',
+                
 
 
             ];

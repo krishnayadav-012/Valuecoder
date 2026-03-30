@@ -1,0 +1,476 @@
+
+@use 'default' as *;
+
+  
+// ── Section ───────────────────────────────────────────────────────────────────
+.pod-section {
+  padding: 96px 0 108px;
+ 
+  
+  // ── HEADER ─────────────────────────────────────────────────────────────────
+  &__header {
+    text-align: center;
+    margin-bottom: 48px;
+ 
+    // Eyebrow label
+    span.pod-section__eyebrow span{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      color: #CC8B00;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+ 
+      &::before,
+      &::after {
+        content: '';
+        width: 20px;
+        height: 2px;
+        background: $darkYellow;
+        border-radius: 2px;
+        display: block;
+        flex-shrink: 0;
+      }
+    }
+ 
+    h2 {
+      color: $navy-blue;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      margin-bottom: 14px;
+      white-space: nowrap;
+    }
+ 
+    p {
+      color: $gray-600;
+      line-height: 1.75;
+      margin-inline: auto;
+      margin-bottom: 0;
+    }
+  }
+ 
+  // ── BODY GRID ──────────────────────────────────────────────────────────────
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    gap: 32px;
+    align-items: start;
+  }
+ 
+  // ── LEFT COLUMN ────────────────────────────────────────────────────────────
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+ 
+  // ── RIGHT COLUMN ───────────────────────────────────────────────────────────
+  &__right {
+    // intentionally empty — styling lives in .pod-box
+  }
+ 
+  // ── QUOTE STRIP ────────────────────────────────────────────────────────────
+  &__quote p{
+    background: rgba($darkYellow, 0.06);
+    border: 1px solid rgba(#CC8B00, 0.22);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-weight: 600;
+    color: #CC8B00;
+    line-height: 1.7;
+  }
+}
+ 
+ 
+// ── ACCORDION ────────────────────────────────────────────────────────────────
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+  // ── Item ───────────────────────────────────────────────────────────────────
+  &__item {
+    background: $white;
+    border: 1px solid rgba(5, 22, 77, 0.09);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(5, 22, 77, 0.08), 0 1px 2px rgba(5, 22, 77, 0.06);
+    transition:
+      border-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      background 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+ 
+    &:hover {
+      border-color: rgba(5, 22, 77, 0.15);
+      box-shadow: 0 10px 24px rgba(5, 22, 77, 0.1), 0 4px 8px rgba(5, 22, 77, 0.06);;
+    }
+ 
+    &.is-open {
+      border-color: rgba($darkYellow, 0.32);
+      box-shadow: 0 0 0 1px rgba($darkYellow, 0.1), 0 10px 24px rgba(5, 22, 77, 0.1), 0 4px 8px rgba(5, 22, 77, 0.06);;
+      background: rgba(255, 248, 230, 0.15);
+ 
+      // Amber left bar
+      .accordion__trigger {
+        &::before {
+          transform: scaleY(1);
+        }
+      }
+ 
+      // Chevron rotate
+      .accordion__chevron {
+        transform: rotate(180deg);
+        color: #CC8B00;
+      }
+ 
+      // Icon active state
+      .accordion__icon {
+        background: rgba($darkYellow, 0.1);
+        border-color: rgba($darkYellow, 0.28);
+        color: #CC8B00;
+      }
+ 
+      // Body open
+      .accordion__body {
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+ 
+  // ── Trigger button ─────────────────────────────────────────────────────────
+  &__trigger {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 18px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: relative;
+ 
+    // Left amber bar
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      bottom: 10px;
+      width: 3px;
+      background: $darkYellow;
+      border-radius: 0 2px 2px 0;
+      transform: scaleY(0);
+      transform-origin: center;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+ 
+    // h3 inside trigger — styled via parent
+    h3 {
+      flex: 1;
+      color: $navy-blue;
+      line-height: 1.3;
+      letter-spacing: -0.012em;
+      margin: 0;
+    }
+  }
+ 
+  // ── Icon circle ────────────────────────────────────────────────────────────
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: rgba(5, 22, 77, 0.04);
+    border: 1px solid rgba(5, 22, 77, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $navy-blue;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+ 
+    .accordion__item:hover & {
+      background: rgba(5, 22, 77, 0.07);
+    }
+  }
+ 
+  // ── Chevron arrow ──────────────────────────────────────────────────────────
+  &__chevron {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $whiteLight;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+ 
+  // ── Body (collapse container) ───────────────────────────────────────────────
+  &__body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
+  &__body-inner {
+    overflow: hidden;
+  }
+ 
+  // ── Content ────────────────────────────────────────────────────────────────
+  &__content {
+    padding: 2px 20px 18px 74px;
+ 
+    p {
+   
+      color: $gray-600;
+      line-height: 1.75;
+      margin: 0;
+    }
+  }
+}
+ 
+ 
+// ── POD BOX (Right navy card) ─────────────────────────────────────────────────
+.pod-box {
+  background: $navy-blue;
+  border-radius: 16px;
+  padding: 32px 24px 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(5, 22, 77, 0.14), 0 4px 12px rgba(5, 22, 77, 0.08);
+
+  .pod-rule {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 2;
+    background: linear-gradient(90deg, transparent, #ffad00 30%, #ffad00 70%, transparent);
+    opacity: .7;
+}
+
+ 
+  // Dual radial atmospheric glow
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 20%, rgba(#0D2E6B, 0.6) 0%, transparent 60%),
+      radial-gradient(ellipse 70% 70% at 90% 80%, rgba(#0D2E6B, 0.5) 0%, transparent 55%),
+      radial-gradient(ellipse 90% 45% at 50% 0%, rgba(#02091F, 0.7) 0%, transparent 60%);
+  }
+ 
+  // Dot grid texture
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: radial-gradient(circle, rgba($white, 0.02) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+ 
+  // Top amber rule
+  &__rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 2;
+    background: linear-gradient(90deg, transparent, $darkYellow 30%, $darkYellow 70%, transparent);
+    opacity: 0.7;
+  }
+ 
+  // All direct children above pseudo elements
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+ 
+  // ── 3-col role grid ─────────────────────────────────────────────────────────
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+ 
+  // ── Role card ───────────────────────────────────────────────────────────────
+  &__card {
+    background: rgba($white, 0.06);
+    border: 1px solid rgba($white, 0.09);
+    border-radius: 12px;
+    padding: 26px 14px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    transition:
+      background 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    &:hover {
+      background: rgba($white, 0.1);
+      border-color: rgba($darkYellow, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba($black, 0.25);
+ 
+      .pod-box__card-icon {
+        background: rgba($darkYellow, 0.14);
+        border-color: rgba($darkYellow, 0.5);
+      }
+    }
+ 
+    // h4 = role name
+    h4 {
+      font-size: 0.8125rem;
+      font-weight: 800;
+      color: $white;
+      line-height: 1.2;
+      letter-spacing: -0.005em;
+      white-space: nowrap;
+    }
+ 
+    // span = role label
+    span {
+      font-size: 0.6875rem;
+      color: rgba($white, 0.4);
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+  }
+ 
+  // ── Card icon circle ─────────────────────────────────────────────────────────
+  &__card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #0D2E6B;
+    border: 1.5px solid rgba($darkYellow, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $darkYellow;
+    flex-shrink: 0;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+ 
+  // ── Caption ──────────────────────────────────────────────────────────────────
+  &__caption {
+    text-align: center;
+    font-size: 0.8125rem;
+    color: rgba($white, 0.3);
+    font-style: italic;
+    line-height: 1.5;
+    border-top: 1px solid rgba($white, 0.07);
+    padding-top: 14px;
+    margin-bottom: 0;
+  }
+}
+ 
+ 
+// ── SCROLL REVEAL ─────────────────────────────────────────────────────────────
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1), transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+ 
+  &.d1 { transition-delay: 0.08s; }
+  &.d2 { transition-delay: 0.16s; }
+  &.d3 { transition-delay: 0.22s; }
+}
+ 
+ 
+// ── RESPONSIVE ───────────────────────────────────────────────────────────────
+@media only screen and (max-width: 860px) {
+  .pod-section {
+    &__body {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    &__right {
+      order: -1;
+    }
+  }
+}
+ 
+@media only screen and (max-width: 767px) {
+  .pod-section {
+    padding: 64px 0 76px;
+ 
+    &__header {
+      h2 {
+        white-space: normal;
+        line-height: 1.3;
+      }
+    }
+  }
+ 
+  .pod-box {
+    &__grid {
+      gap: 8px;
+    }
+    &__card {
+      padding: 18px 8px 14px;
+    }
+  }
+ 
+  .accordion {
+    &__content {
+      padding: 2px 16px 16px 16px;
+    }
+  }
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .accordion__body,
+  .accordion__chevron,
+  .accordion__trigger,
+  .accordion__item,
+  .pod-box__card,
+  .accordion__icon {
+    transition: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+ 

@@ -1909,13 +1909,13 @@ body.page-template-template-testimonials .client-video-section iframe,
   letter-spacing: 0.05em;
 }
 .model-card h3 {
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 700;
   color: #111827;
   margin-bottom: 15px;
 }
 .model-card p {
-  font-size: 16px;
+  font-size: 14px;
   color: #4B5563;
   margin-bottom: 20px;
 }
@@ -1926,7 +1926,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   flex-grow: 1;
 }
 .model-card ul li {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #364153;
   margin-bottom: 15px;
   padding-left: 26px;

@@ -224,6 +224,7 @@
             h3{
                 color: $white;
                 margin-bottom: 20px;
+                font-size: 26px;
                 em{
                     font-style: normal;
                     color: $darkYellow;
@@ -466,6 +467,7 @@
     .master-header.sc-down.header-bg .header-inner .btn-menu-toggle svg{fill: $bgVoilet !important;}
     .master-header.header-bg.sc-up .header-inner .btn-menu-toggle svg{fill: $bgVoilet !important;}
     .master-header {margin-top: 0px;}
+    #mobile-menu-open:focus i svg{fill: #000 !important;}
     .master-header.sc-up {
     margin-top: 0px !important;
 }

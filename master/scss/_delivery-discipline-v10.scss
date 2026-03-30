@@ -63,6 +63,7 @@
             img {
                 width: 100%;
                 object-fit: cover;
+                height: 100%;
             }
 
         }
@@ -90,6 +91,7 @@
     padding: 30px;
     border-radius: 18px;
     background: #161722A3;
+    height: 161px;
     overflow: hidden;
     transition: 0.35s ease;
     border: 1px solid transparent;
@@ -192,6 +194,8 @@
         box-shadow:
             0 0 0 1px #ffb400,
             0 0 20px rgba(255,180,0,0.2);
+            align-content: center;
+
 
     }
 
@@ -224,6 +228,9 @@
     }
     &:hover{
       padding-left: 150px;
+    }
+    &:hover > p{
+      display: none;
     }
 
 }
@@ -262,7 +269,7 @@
 @media screen and (max-width: 1024px) {
   .delivery-discipline .delivery-left h2{font-size: 30px;}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   :root {
     --progress-bar-width: 150px;
     --progress-bar-height: 150px;
@@ -270,8 +277,8 @@
   }
   .delivery-discipline{padding: 60px 0;}
   .delivery-discipline .delivery-left{padding: 20px;}
-  
-  .delivery-discipline .info-card .circle-progress{left: 32%; top: 80px;}
+  .delivery-discipline .info-card{height: unset; text-align: center;}
+  .delivery-discipline .info-card .circle-progress{left: 42%; top: 80px;}
   .delivery-discipline .info-card:hover{padding-left: 10px; padding-top: 150px;}
 
 
@@ -290,6 +297,8 @@
     --progress-bar-height: 120px;
     --font-size: 1rem;
   }
+  .delivery-discipline .info-card .circle-progress{left: 34%; top: 80px;}
+
 }
 
 

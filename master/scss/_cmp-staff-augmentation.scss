@@ -1,0 +1,601 @@
+@use 'default' as *;
+  
+// ════════════════════════════════════════
+// ROOT SCOPE — everything lives here
+// ════════════════════════════════════════
+.vc-vs-section {
+  padding: 96px 0 112px;
+  position: relative;
+  background-color: $bglight;
+  
+ 
+  // ════════════════════════════════════════
+  // 1. HEADER GRID
+  // ════════════════════════════════════════
+  &__hdr-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.72fr;
+    gap: 52px;
+    align-items: start;
+    margin-bottom: 60px;
+  }
+ 
+  // ── Eyebrow ──
+  &__eyebrow span{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.6875rem;
+    font-weight: $medium-font;
+    color: $darkYellow;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+ 
+    &::before {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: $darkYellow;
+      border-radius: 2px;
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+ 
+  // ── Title ──
+  h2 {
+
+    font-weight: $bold;
+    color: $navy-blue;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 18px;
+    max-width: 580px;
+  
+  }
+ 
+  // ── Sub ──
+  > p {
+
+    color: $gray-600;
+    line-height: 1.75;
+    max-width: 580px;
+    margin-bottom: 28px;
+    font-weight: $normal-font;
+  }
+ 
+  // ── Callout box ──
+  &__callout{
+    border-left: 4px solid $darkYellow;
+    background: rgba(255, 173, 0, 0.07);
+    border-radius: 0 12px 12px 0;
+    padding: 18px 22px;
+    max-width: 580px;
+    position: relative;
+ 
+    &::before {
+      content: '\201C';
+      position: absolute;
+      top: -8px;
+      left: 18px;
+      font-size: 3rem;
+      color: $darkYellow;
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+      pointer-events: none;
+    }
+ 
+    p em{
+     
+      color: $navy-blue;
+      line-height: 1.7;
+      font-weight: bold;
+      font-style: italic;
+      margin: 0;
+ 
+      
+    }
+  }
+ 
+  // ── Option label ──
+ > span {
+    font-size: 0.6875rem;
+    font-weight: $medium-font;
+    color: $gray;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+  }
+ 
+  &__option-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+ 
+  // ── Option Card ──
+  &__opt-card {
+    background: $white;
+    border: 1px solid rgba(5, 22, 77, 0.09);
+    border-radius: 12px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(5, 22, 77, 0.08), 0 1px 2px rgba(5, 22, 77, 0.06);
+    transition:
+      transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $darkYellow;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+ 
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(5, 22, 77, 0.1), 0 4px 8px rgba(5, 22, 77, 0.06);
+      border-color: rgba(5, 22, 77, 0.15);
+ 
+      &::after { transform: scaleX(1); }
+ 
+      .vc-vs-section__opt-icon {
+        border-color: rgba(255, 173, 0, 0.35);
+        background: rgba(255, 173, 0, 0.06);
+        color: $darkYellow;
+      }
+    }
+  }
+ 
+  // ── Option Icon ──
+  &__opt-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(5, 22, 77, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $navy-blue;
+    background: transparent;
+    transition:
+      border-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      background 150ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+    }
+  }
+ 
+  h4 {
+    font-size: 0.875rem;
+    font-weight: $medium-font;
+    color: $navy-blue;
+    margin-bottom: 4px;
+    line-height: 1.25;
+  }
+ 
+  p {
+    
+    color: $gray-600;
+    line-height: 1.6;
+    font-weight: $normal-font;
+  }
+ 
+  // ════════════════════════════════════════
+  // 2. TABLE SECTION
+  // ════════════════════════════════════════
+  &__table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+ 
+  &__table-eyebrow span {
+    font-size: 0.6875rem;
+    font-weight: $medium-font;
+    color: $gray;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+ 
+  &__scroll-hint {
+    font-size: 0.8125rem;
+    color: $gray;
+    display: none; // toggled via JS
+    align-items: center;
+    gap: 6px;
+    font-weight: $normal-font;
+ 
+    svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+    }
+  }
+ 
+  &__table-outer {
+    background: $white;
+    border-radius: 16px;
+    border: 1px solid rgba(5, 22, 77, 0.07);
+    box-shadow: 0 10px 24px rgba(5, 22, 77, 0.1), 0 4px 8px rgba(5, 22, 77, 0.06);
+    overflow: hidden;
+  }
+ 
+  &__table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(5, 22, 77, 0.15) transparent;
+ 
+    &::-webkit-scrollbar { height: 4px; }
+    &::-webkit-scrollbar-track { background: transparent; }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(5, 22, 77, 0.15);
+      border-radius: 4px;
+    }
+  }
+ 
+  // ── Comparison Table ──
+  &__comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+ 
+    thead tr {
+      background: $navy-blue;        // $themeMidNight / $navy-blue = #05164d
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  }
+ 
+  &__th-criterion {
+    width: 200px;
+    min-width: 180px;
+    padding: 16px 20px;
+    font-size: 0.6875rem;
+    font-weight: $medium-font;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    text-align: left;
+    position: sticky;
+    left: 0;
+    z-index: 11;
+    background: $navy-blue;
+  }
+ 
+  &__th-col {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 0.8125rem;
+    font-weight: $medium-font;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    min-width: 180px;
+  }
+ 
+  // ValueCoders column — $darkYellow accent
+  &__th-vc {
+    background: rgba(255, 173, 0, 0.12);
+    border-top: 3px solid $darkYellow;
+    color: $darkYellow;
+    position: relative;
+  }
+ 
+  &__th-vc-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.625rem;
+    font-weight: $medium-font;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(255, 173, 0, 0.2);
+    color: $darkYellow;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+ 
+  // ── Table Body Rows ──
+  &__comp-table tbody tr {
+    border-bottom: 1px solid rgba(5, 22, 77, 0.09);
+    transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    &:last-child { border-bottom: none; }
+ 
+    &:nth-child(even) { background: rgba(5, 22, 77, 0.025);; }
+ 
+    &:hover { background: rgba(5, 22, 77, 0.04); }
+  }
+ 
+  &__td-criterion {
+    padding: 18px 20px;
+    font-size: 0.875rem;
+    font-weight: $medium-font;
+    color: $navy-blue;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    vertical-align: top;
+    line-height: 1.35;
+    min-width: 180px;
+    width: 200px;
+  }
+ 
+  // Zebra sync for sticky criterion cell
+  &__comp-table tbody tr:nth-child(even) &__td-criterion {
+    background: $bgWhiteGray;
+  }
+  &__comp-table tbody tr:nth-child(odd) &__td-criterion {
+    background: $white;
+  }
+  &__comp-table tbody tr:hover &__td-criterion {
+    background: $bgWhiteGray;
+  }
+ 
+  &__td-col {
+    padding: 18px 20px;
+    font-size: 0.875rem;
+    color: $gray-600;
+    vertical-align: top;
+    line-height: 1.55;
+    font-weight: $normal-font;
+  }
+ 
+  // ValueCoders column — $darkYellow side borders
+  &__td-vc {
+    background: rgba(5, 22, 77, 0.025) !important;
+    border-left: 1px solid rgba(255, 173, 0, 0.15);
+    border-right: 1px solid rgba(255, 173, 0, 0.15);
+    font-weight: $medium-font;
+    color: $navy-blue;
+  }
+ 
+  &__comp-table tbody tr:hover &__td-vc {
+    background: rgba(255, 173, 0, 0.05) !important;
+  }
+ 
+  &__comp-table tbody tr:last-child &__td-vc {
+    border-bottom: 3px solid rgba(255, 173, 0, 0.25);
+  }
+ 
+  &__td-honest {
+    color: $contentDay;     // #656565 from your file
+    font-size: 0.8125rem;
+    font-style: italic;
+    font-weight: $normal-font;
+  }
+ 
+  // ── Icon indicators ──
+  &__ic {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    vertical-align: middle;
+ 
+    svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+      flex-shrink: 0;
+    }
+  }
+ 
+  &__ic--check { color: $greenclr; }   // #60b741 — actual green in your file
+  &__ic--dash  { color: $gray; }       // #9b9b9b
+  &__ic--cross { color: $monaLisa; }   // #fe8686 — coral/red in your file
+ 
+  // ════════════════════════════════════════
+  // MOBILE ACCORDION
+  // ════════════════════════════════════════
+  &__mob-table { display: none; }
+ 
+  &__mob-row {
+    border-bottom: 1px solid rgba(5, 22, 77, 0.09);
+    overflow: hidden;
+ 
+    &:last-child { border-bottom: none; }
+ 
+    &.is-open {
+      .vc-vs-section__mob-chevron {
+        transform: rotate(180deg);
+        color: $darkYellow;
+      }
+ 
+      .vc-vs-section__mob-body {
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+ 
+  &__mob-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px 20px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: $medium-font;
+    color: $navy-blue;
+  }
+ 
+  &__mob-chevron {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    svg {
+      width: 12px;
+      height: 12px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+  }
+ 
+  &__mob-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
+  &__mob-body-inner { overflow: hidden; }
+ 
+  &__mob-cols { padding: 0 20px 18px; }
+ 
+  &__mob-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(5, 22, 77, 0.09);
+    font-size: 0.8125rem;
+ 
+    // ValueCoders row — $darkYellow left border
+    &--vc {
+      background: rgba(255, 173, 0, 0.04);
+      margin-inline: -20px;
+      padding-inline: 20px;
+      border-left: 3px solid $darkYellow;
+      padding-left: 17px;
+ 
+      .vc-vs-section__mob-col-name {
+        color: $navy-blue;
+        font-weight: $medium-font;
+      }
+ 
+      .vc-vs-section__mob-col-val {
+        color: $navy-blue;
+        font-weight: $medium-font;
+      }
+    }
+  }
+ 
+  &__mob-col-name {
+    font-weight: $medium-font;
+    color: $gray-600;
+    min-width: 110px;
+    flex-shrink: 0;
+  }
+ 
+  &__mob-col-val {
+    color: $gray-600;
+    line-height: 1.5;
+    text-align: right;
+    font-weight: $normal-font;
+  }
+ 
+  // ════════════════════════════════════════
+  // SCROLL REVEAL
+  // ════════════════════════════════════════
+  .vc-vs-reveal {
+    transform: translateY(20px);
+    transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1), transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    &.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+  }
+ 
+  .vc-vs-d1 { transition-delay: 0.08s; }
+  .vc-vs-d2 { transition-delay: 0.16s; }
+ 
+  // ════════════════════════════════════════
+  // RESPONSIVE — all scoped inside parent
+  // ════════════════════════════════════════
+  @media only screen and (max-width: 1320px) {
+    padding: 80px 0 100px;
+  }
+ 
+  @media only screen and (max-width: 900px) {
+    &__hdr-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+ 
+    &__title,
+    &__sub,
+    &__callout {
+      max-width: 100%;
+    }
+  }
+ 
+  @media only screen and (max-width: 700px) {
+    padding: 64px 0 80px;
+ 
+    &__hdr-grid    { margin-bottom: 44px; }
+    &__table-scroll { display: none; }
+    &__mob-table    { display: block; }
+  }
+ 
+  @media only screen and (max-width: 767px) {
+    &__title {
+      font-size: 28px;
+      line-height: 37px;
+    }
+ 
+    &__sub {
+      font-size: $font-16;
+      line-height: 1.6;
+    }
+ 
+    &__opt-title { font-size: 0.8125rem; }
+    &__opt-desc  { font-size: 0.75rem; }
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .vc-vs-reveal,
+    &__opt-card,
+    &__mob-body,
+    &__mob-chevron {
+      transition: none;
+    }
+ 
+    .vc-vs-reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
