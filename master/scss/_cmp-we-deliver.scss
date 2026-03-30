@@ -68,6 +68,7 @@
   h2 {
    
     line-height: 1.1;
+    color: $bgVoilet;
     letter-spacing: -0.022em;
     margin-bottom: 14px;
   }
@@ -236,14 +237,14 @@
   // ── Title ──────────────────────────────────────────────────
   > h3 {
     
-    
+
     line-height: 1.25;
     letter-spacing: -0.015em;
     margin-bottom: 10px;
   }
 
-  .card:not(.card--feat) h3 { color: $themeMidNight; }
-  .card--feat h3            { color: $white; }
+  .card:not(.card--feat) h3 { color: $themeMidNight;     margin-bottom: 10px;}
+  .card--feat h3            { color: $white;     margin-bottom: 10px; }
 
   // ── Description ────────────────────────────────────────────
   > p {

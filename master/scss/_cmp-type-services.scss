@@ -43,7 +43,7 @@
       white-space: nowrap;
     }
 
-    p {
+     > p {
       
       line-height: 1.7;
       margin-bottom: 0;
@@ -279,15 +279,15 @@
 
   .acc-content {
     padding: 0 20px 22px 72px;
-  }
-
-  p {
     
-    color: $gray-600;
-    line-height: 1.7;
-    margin-bottom: 16px;
+    p {
+      
+      color: $gray-600;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    
   }
-
   // Tech pills
   ul {
     display: flex;
@@ -390,7 +390,14 @@
       transform: scale(0.98);
     }
   }
+ 
+   p {
+     text-align: center;
+     margin-top: 10px;
 
+     line-height: 1.5;
+
+    }
    h3 {
     
     font-weight: 800;
@@ -451,16 +458,10 @@
     }
   }
 
- 
 
-  .scope-micro {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 0.8125rem;
-    color: rgba($white, 0.3);
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
+
+  
+ 
 
   // ─────────────────────────────────────────────
   //  Scroll Reveal

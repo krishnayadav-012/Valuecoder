@@ -1,4 +1,5 @@
 
+@use "_default" as *;
 /* =====================================================
    .vc-cs — Compliance & Security Section
    ALL CSS scoped under .vc-cs parent
@@ -7,15 +8,6 @@
    ===================================================== */
  
 .vc-cs {
-  /* ── Tokens mapped from default SCSS ──
-     $darkYellow / $yellow / $amber   → #FFAD00
-     $themeMidNight / $navy-blue      → #05164D
-     $bgDarkBlue (deep navy)          → #17152f / darkened → #02091F
-     $white                           → #FFFFFF
-     $natural-grey / $gray-600        → #4B5563
-     $darkblack                       → #111827
-  */
-  font-family: 'Plus Jakarta Sans', sans-serif; /* matches body */
   font-size: 16px;          /* $font-16 */
   font-weight: 500;         /* $normal-font */
   line-height: 28px;
@@ -50,6 +42,14 @@
   background-size: 24px 24px;
 }
  
+/* ── Inner wrapper ── */
+.vc-cs__wrap {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  position: relative;
+  z-index: 1;
+}
  
 /* =====================================================
    HEADER
@@ -57,9 +57,8 @@
 .vc-cs__hdr {
   text-align: center;
   margin-bottom: 64px;
-}
- 
-.vc-cs__eyebrow {
+  
+  .vc-cs__eyebrow p{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -71,10 +70,19 @@
   letter-spacing: .08em;
   margin-bottom: 20px;
   opacity: .9;
-}
- 
-.vc-cs__eyebrow::before,
-.vc-cs__eyebrow::after {
+
+  
+  &::before{
+     content: '';
+  width: 20px;
+  height: 2px;
+  background: #FFAD00;
+  border-radius: 2px;
+  display: block;
+  flex-shrink: 0;
+  opacity: .6;
+  }
+&::after {
   content: '';
   width: 20px;
   height: 2px;
@@ -84,27 +92,29 @@
   flex-shrink: 0;
   opacity: .6;
 }
- 
-.vc-cs__title {
-  font-size: clamp(1.875rem, 3.5vw, 2.75rem); /* matches h2 scale */
-  font-weight: 800;
+
+
+}
+
+
+
+h2 {
+  
   color: #FFFFFF;           /* $white */
   line-height: 1.1;
   letter-spacing: -.025em;
-  max-width: 700px;
   margin-inline: auto;
   margin-bottom: 18px;
 }
- 
-.vc-cs__subtitle {
-  font-size: 16px;          /* $font-16 / p default */
+
+p {
   color: rgba(255,255,255,.55);
   line-height: 1.75;
-  max-width: 520px;
   margin-inline: auto;
   margin-bottom: 0;
 }
- 
+
+}
 /* =====================================================
    TWO-COL LAYOUT
    ===================================================== */
@@ -219,8 +229,8 @@
   min-width: 0;
 }
  
-.vc-cs__acc-title {
-  font-size: 14px;
+h3 {
+  margin-bottom: 0;
   font-weight: 700;         /* $bold */
   color: #FFFFFF;
   line-height: 1.3;
@@ -280,13 +290,12 @@
 }
  
 /* ── Info strip ── */
-.vc-cs__strip {
+.vc-cs__strip p {
   margin-top: 24px;
   padding: 14px 18px;
   background: rgba(255,173,0,.06);
   border: 1px solid rgba(255,173,0,.15);
   border-radius: 12px;
-  font-size: 13px;
   color: rgba(255,173,0,.8); /* $darkYellow */
   font-weight: 600;          /* $medium-font */
   letter-spacing: .01em;
@@ -377,18 +386,20 @@
 }
  
 /* ── Badge labels ── */
-.vc-cs__badge-name {
-  font-size: 14px;
-  font-weight: 800;
-  color: #FFFFFF;
-  line-height: 1.2;
-  letter-spacing: -.01em;
+.vc-cs__badge-card{
+
+  h4 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 1.2;
+    letter-spacing: -.01em;
   position: relative;
   z-index: 1;
 }
  
-.vc-cs__badge-desc {
-  font-size: 13px;
+p {
+  
   color: rgba(255,255,255,.4);
   line-height: 1.3;
   white-space: nowrap;
@@ -398,7 +409,8 @@
   position: relative;
   z-index: 1;
 }
- 
+}
+
 /* =====================================================
    SCROLL REVEAL
    ===================================================== */
@@ -434,7 +446,7 @@
   .vc-cs__hdr {
     margin-bottom: 48px;
   }
-  .vc-cs__title {
+  h2 {
     font-size: 28px;    /* h2 mobile: 28px in default SCSS */
     line-height: 37px;
   }
@@ -457,10 +469,10 @@
     width: 15px;
     height: 15px;
   }
-  .vc-cs__badge-name {
+  h4 {
     font-size: 12px;
   }
-  .vc-cs__badge-desc {
+  p {
     font-size: 11px;
   }
   .vc-cs__acc-content {
@@ -484,3 +496,4 @@
     transform: none;
   }
 }
+ 
