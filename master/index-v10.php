@@ -1036,7 +1036,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                <div class="tech-info"> <img src="images/index-v10/angular.svg" alt="">
                                     <div class="text-part">
                                         <strong>Angular</strong><span>Large-scale CRM/ERP</span>
                                     </div>
@@ -1047,7 +1047,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/Vue.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>Vue.js</strong><span>Lightweight Dashboards</span></div>
                                 </div>
@@ -1057,7 +1057,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/sveltejs.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>Svelte</strong><span>Lightweight Dashboards</span></div>
                                 </div>
@@ -1067,7 +1067,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/github.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>GitHub</strong><span>Lightweight Dashboards</span></div>
                                 </div>
@@ -1092,7 +1092,7 @@
                         </div>
                         <ul class="tech-list">
                             <li>
-                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                <div class="tech-info"> <img src="images/index-v10/nodejs.svg" alt="">
                                     <div class="text-part">
                                         <strong>Node.js</strong><span>Event-driven APIs</span>
                                     </div>
@@ -1102,7 +1102,7 @@
                                 </div>
                             </li>
                            <li>
-                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                <div class="tech-info"> <img src="images/index-v10/python.svg" alt="">
                                     <div class="text-part">
                                         <strong>Python</strong><span>Data-heavy services</span>
                                     </div>
@@ -1113,7 +1113,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/java.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>Java</strong><span>Legacy enterprise core</span></div>
                                 </div>
@@ -1123,7 +1123,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/microsoft-dotnet.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>.NET</strong><span>Corporate ecosystems</span></div>
                                 </div>
@@ -1133,7 +1133,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/php.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>PHP</strong><span>Corporate ecosystems</span></div>
                                 </div>
@@ -1158,7 +1158,7 @@
                         </div>
                         <ul class="tech-list">
                             <li>
-                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                <div class="tech-info"> <img src="images/index-v10/aws.svg" alt="">
                                     <div class="text-part">
                                         <strong>AWS</strong><span>Serverless & K8s</span>
                                     </div>
@@ -1168,7 +1168,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="tech-info"> <img src="images/index-v10/react.svg" alt="">
+                                <div class="tech-info"> <img src="images/index-v10/azure.svg" alt="">
                                     <div class="text-part">
                                         <strong>Azure</strong><span>Enterprise Cloud</span>
                                     </div>
@@ -1179,7 +1179,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/llms.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>LLMs</strong><span>RAG & Agentic AI</span></div>
                                 </div>
@@ -1189,7 +1189,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/tensorflow.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>TensorFlow</strong><span>Custom ML Models</span></div>
                                 </div>
@@ -1199,7 +1199,7 @@
                             </li>
                             <li>
                                 <div class="tech-info">
-                                <img src="images/index-v10/react.svg" alt="">  
+                                <img src="images/index-v10/g-cloud.svg" alt="">  
                                     <div class="text-part">    
                                 <strong>Google Cloud Platform</strong><span>Custom ML Models</span></div>
                                 </div>
