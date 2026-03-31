@@ -107,7 +107,7 @@
             </div>
             <div class="text-part">
               <h4>New York, USA</h4>
-                <a href="tel:+1 628 600 5055">+1 628 600 5055</a>             
+                <a href="tel:+1628600 5055">+1 628 600 5055</a>             
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
             </div>
             <div class="text-part">
               <h4>London, UK</h4>
-                <a href="tel:+44 20 3239 2299">+44 20 3239 2299</a>
+                <a href="tel:+44203239 2299">+44 20 3239 2299</a>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
             </div>
             <div class="text-part">
               <h4>Dubai, UAE</h4>
-                <a href="tel:+971 544954255">+971 544954255</a>
+                <a href="tel:+971544954255">+971 544954255</a>
 
              
             </div>
@@ -183,7 +183,7 @@
             </div>
             <div class="text-part">
               <h4>Noida, India</h4>
-                <a href="tel:+91 888 210 8080">+91 888 210 8080</a>             
+                <a href="tel:+918882108080">+91 888 210 8080</a>             
             </div>
           </div>
         </div>

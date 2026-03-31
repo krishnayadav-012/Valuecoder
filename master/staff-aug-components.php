@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>dedicated-components page</title>
+  <title>staff-aug-components page</title>
   <meta name="description"
     content="Want to hire PHP developers for your web development project? Hire PHP programmers / developers from us & build scalable & secure web apps. 17+ Yrs | 4200+ projects | Strict NDAs | dedicated PHP Programmers." />
   <meta name="keywords"
@@ -13,7 +13,6 @@
   <meta property="og:title" content="dedicated-components page" />
   <?php require_once './include/header-files.php'; ?>
   <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
-  <link rel="preload stylesheet" type="text/css" href="./css/dedicated-components.css" defer />
   <link rel="preload stylesheet" type="text/css" href="./css/staff-aug-components.css" defer />
   <link rel="preload stylesheet" type="text/css"
     href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
@@ -360,11 +359,24 @@ bottom -- three check cards
 </section>
 <!-- ````````````````````````````````````````````````````What makes us different end````````````````````````````````` -->
 
-<!-- ````````````````````````````````````````````````````Emerging Technologies start````````````````````````````````` -->
 
+
+
+
+<!-- ````````````````````````````````````````````````````Emerging Technologies start````````````````````````````````` -->
+<!-- 
+in section 
+eyebrow section title and paraghraph
+
+cards 6
+
+icon and category 
+title and praghraph 
+and tags also 
+
+-->
 <section class="emerging-tech" aria-labelledby="tech-hd">
   <div class="container">
- 
     <!-- HEADER -->
     <div class="emerging-tech__hdr emerging-tech__reveal emerging-tech__reveal--d0">
       <div class="emerging-tech__eyebrow"><span>Emerging Technologies</span></div>

@@ -172,4 +172,5 @@
   #capabilities-section > div{gap: 0;}
   #capabilities-section .right-part{gap: 40px;}
   #capabilities-section .right-part .card{padding: 22px;}
+  #capabilities-section .right-part .card ul li::before{top: 5px !important;}
 }

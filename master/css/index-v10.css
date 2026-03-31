@@ -4437,6 +4437,9 @@ button.tab-btn-base {
   #capabilities-section .right-part .card {
     padding: 22px;
   }
+  #capabilities-section .right-part .card ul li::before {
+    top: 5px !important;
+  }
 }
 .stories-section {
   background: #f6f6f6;
@@ -5782,6 +5785,7 @@ button.tab-btn-base {
   background: #ffffff;
   border-radius: 20px;
   border: 1px solid #EDEDED;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -5803,6 +5807,7 @@ button.tab-btn-base {
 .stack-section .tech-list {
   list-style: none;
   padding: 0;
+  margin-bottom: auto !important;
   margin: 0;
 }
 .stack-section .tech-list li {

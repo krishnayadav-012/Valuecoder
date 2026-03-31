@@ -1906,6 +1906,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   background: #ffffff;
   border-radius: 20px;
   border: 1px solid #EDEDED;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -1927,6 +1928,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stack-section .tech-list {
   list-style: none;
   padding: 0;
+  margin-bottom: auto !important;
   margin: 0;
 }
 .stack-section .tech-list li {

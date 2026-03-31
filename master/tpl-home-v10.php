@@ -157,36 +157,36 @@ if( isset($aiSection['required']) && ($aiSection['required'] == "yes") ) :
 ?>
 <section class="ai-production-loop">
 <!-- LEFT FULL IMAGE -->
-<div class="ai-left">
-<!-- <img src="<?php bloginfo('template_url'); ?>/v6.0/images/index-v10/ai-pro.webp" alt="AI"> -->
- <video autoplay muted loop playsinline>
-  <source src="images/index-v10/ai-video.mp4" type="video/mp4">
-</video>
+        <div class="ai-left">
+        <!-- <img src="<?php bloginfo('template_url'); ?>/v6.0/images/index-v10/ai-pro.webp" alt="AI"> -->
+        <video autoplay muted loop playsinline>
+        <source src="images/index-v10/ai-video.mp4" type="video/mp4">
+        </video>
 
-</div>
-
-<!-- RIGHT CONTENT -->
-<div class="ai-right">
-
-    <div class="container">
-        <div class="ai-content">
-            <?php echo isset($aiSection['content']) ? $aiSection['content'] : ''; 
-            if( $aiSection['rows'] ){
-                echo '<div class="ai-list">';
-                $i = 0;
-                foreach($aiSection['rows'] as $row){ $i++;
-                    $activeClass = ($i == 1) ? 'active' : '';
-                    echo '<div class="ai-item '.$activeClass.'">';
-                    echo '<div class="title"><h4>'.$row['title'].'</h4></div>';
-                    echo '<div class="desc"><p>'.$row['text'].'</p></div>';
-                    echo '<div class="progress"></div>';
-                echo '</div>';
-                }
-            }
-            ?>
         </div>
-    </div>
-</div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="ai-right">
+
+            <div class="container">
+                <div class="ai-content">
+                    <?php echo isset($aiSection['content']) ? $aiSection['content'] : ''; 
+                    if( $aiSection['rows'] ){
+                        echo '<div class="ai-list">';
+                        $i = 0;
+                        foreach($aiSection['rows'] as $row){ $i++;
+                            $activeClass = ($i == 1) ? 'active' : '';
+                            echo '<div class="ai-item '.$activeClass.'">';
+                            echo '<div class="title"><h4>'.$row['title'].'</h4></div>';
+                            echo '<div class="desc"><p>'.$row['text'].'</p></div>';
+                            echo '<div class="progress"></div>';
+                        echo '</div>';
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
 </section>
 <?php endif; ?>
 <!-- ai section end -->
@@ -392,7 +392,7 @@ if( isset($ddSection['required']) && ($ddSection['required'] == "yes") ) :
 <div class="container">
     <div class="section-header">
         <div class="content-part">
-            <h2>Engineering <strong>Expertise.</strong></h2>
+            <h2>Engineering <em>Expertise.</em></h2>
             <p>Delivered through staff augmentation, product pods, or long-term engineering programs.</p>
         </div>
 
@@ -616,7 +616,6 @@ if( isset($ddSection['required']) && ($ddSection['required'] == "yes") ) :
                                     </div>
                                 </div>
                                 <div class="percentage">
-
                                 </div>
                             </li>
                             <li>
@@ -767,7 +766,6 @@ if( isset($ddSection['required']) && ($ddSection['required'] == "yes") ) :
     </div>
     </div>
 </div>
-
 </div>
 </div>
 </section>
