@@ -4449,7 +4449,7 @@ button.tab-btn-base {
 .stories-section__top {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 24px;
 }
@@ -6971,12 +6971,12 @@ button.tab-btn-base {
 }
 .industries-section .glider-nav {
   position: relative;
-  width: 80px;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 .industries-section .glider-nav .glider-prev {
   transform: rotate(-180deg) translateY(17px);
