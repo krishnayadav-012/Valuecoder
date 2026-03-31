@@ -1,0 +1,503 @@
+
+@use 'default' as *;
+// ============================================================
+// How Team Extension Works — Scoped SCSS
+// All rules nested under .how-team-ext
+// Uses ONLY variables from your default _variables.scss
+// Where no variable matched → raw value used inline (commented)
+// No new variables created
+// No class on h2, h3, p tags — styled via parent
+// ============================================================
+
+.how-team-ext {
+  padding: 96px 0 112px;
+  font-weight: $normal-font;
+  line-height: 1.6;
+  color: $darkblack;
+  position: relative;
+
+
+
+  // ════════════════════════════
+  // HEADER
+  // ════════════════════════════
+  &__hdr {
+    text-align: center;
+    max-width: 640px;
+    margin-inline: auto;
+    margin-bottom: 60px;
+
+    // h2 via parent — no class on h2
+    h2 {
+      
+      color: $navy-blue;
+      line-height: 1.1;
+      letter-spacing: -.025em;
+      margin-bottom: 16px;
+    }
+
+    // p via parent — no class on p
+    p {
+
+      color: $gray-600;
+      line-height: 1.75;
+      margin: 0;
+    }
+  }
+
+  &__eyebrow span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: .6875rem;
+    font-weight: $medium-font;
+    color: $yellow;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 18px;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: $yellow;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+  }
+
+
+  // ════════════════════════════
+  // BODY GRID
+  // ════════════════════════════
+  &__body-grid {
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 28px;
+  }
+
+
+  // ════════════════════════════
+  // LEFT — PROCESS STEPS
+  // ════════════════════════════
+  &__steps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__step {
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    // Dashed amber connector between steps
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 23px;
+      top: 48px;
+      bottom: -8px;
+      width: 2px;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba($yellow, .35) 0px,
+        rgba($yellow, .35) 6px,
+        transparent 6px,
+        transparent 12px
+      );
+    }
+  }
+
+  // Number circle
+  &__step-num span{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: $yellow;
+    color: $navy-blue;
+    font-size: .875rem;
+    font-weight: $bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba($yellow, .3);
+    z-index: 1;
+    transition: transform 150ms, box-shadow 150ms;
+
+    .how-team-ext__step:hover & {
+      transform: scale(1.08);
+      box-shadow: 0 6px 18px rgba($yellow, .4);
+    }
+  }
+
+  // Step card
+  &__step-card {
+    flex: 1;
+    background: $white;
+    border: 1px solid rgba($navy-blue, .09);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba($navy-blue, .08), 0 1px 2px rgba($navy-blue, .06);
+    position: relative;
+    overflow: hidden;
+    transition: transform 150ms cubic-bezier(.4, 0, .2, 1),
+                border-color 150ms,
+                box-shadow 150ms;
+
+    &:hover {
+      transform: translateX(4px);
+      border-color: rgba($yellow, .3);
+      box-shadow: 0 10px 24px rgba($navy-blue, .1), 0 4px 8px rgba($navy-blue, .06);
+    }
+
+    // Amber left bar on hover
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      bottom: 12px;
+      width: 3px;
+      background: $yellow;
+      border-radius: 0 2px 2px 0;
+      transform: scaleY(0);
+      transform-origin: center;
+      transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    &:hover::before {
+      transform: scaleY(1);
+    }
+
+    // h3 via parent — no class on h3
+    h3 {
+   
+      font-weight: $medium-font;
+      color: $navy-blue;
+      margin-bottom: 7px;
+      line-height: 1.3;
+      letter-spacing: -.01em;
+    }
+
+    // p via parent — no class on p
+    p {
+     
+      color: $gray-600;
+      line-height: 1.7;
+      margin: 0;
+    }
+    
+    // Timeline pill
+    span{
+      display: inline-block;
+      font-size: .6875rem;
+      font-weight: $medium-font;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: $yellow;
+      background: rgba($yellow, .1);
+      border: 1px solid $yellow;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+    }
+    
+  }
+
+  // ════════════════════════════
+  // RIGHT — TIMELINE PANEL (navy)
+  // ════════════════════════════
+  &__timeline-panel {
+    background: $navy-blue;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 48px rgba($navy-blue, .14), 0 4px 12px rgba($navy-blue, .08);
+    position: sticky;
+    top: 32px;
+
+    // Atmospheric overlay — no variables for deep navy tints, raw values used
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 10% 10%, rgba(13, 46, 107, .7) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 70% at 90% 90%, rgba(13, 46, 107, .5) 0%, transparent 55%),
+        radial-gradient(ellipse 100% 60% at 50% 0%,  rgba(2, 9, 31, .7)   0%, transparent 60%);
+    }
+
+    // Dot texture
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image: radial-gradient(circle, rgba($white, .02) 1px, transparent 1px);
+      background-size: 22px 22px;
+    }
+  }
+
+  // Amber top rule
+  &__tl-rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 2;
+    background: linear-gradient(90deg, transparent, $yellow 30%, $yellow 70%, transparent);
+    opacity: .7;
+  }
+
+  &__tl-header {
+    padding: 28px 28px 20px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid rgba($white, .07);
+    
+    span {
+      font-size: .6875rem;
+      font-weight: $medium-font;
+      color: $yellow;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+  }
+
+  &__tl-body {
+    padding: 20px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  // Single timeline row
+  &__tl-item {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:not(:last-child) &-dot-col::after {
+      content: '';
+      position: absolute;
+      top: 22px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1.5px;
+      background: rgba($white, .08);
+    }
+
+    &:hover &-dot {
+      border-color: $yellow;
+      background: rgba($yellow, .2);
+    }
+  }
+
+  &__tl-item-dot-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  &__tl-item-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid rgba($yellow, .4);
+    background: rgba($yellow, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: border-color 150ms, background 150ms;
+
+    svg {
+      width: 9px;
+      height: 9px;
+      stroke: $yellow;
+      stroke-width: 2.5;
+      fill: none;
+    }
+  }
+
+  &__tl-item-content {
+    flex: 1;
+    
+    span{
+      display: inline-block;
+      font-size: .6875rem;
+      font-weight: $medium-font;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: $yellow;
+      margin-bottom: 5px;
+    }
+    
+    h3 {
+      font-weight: $medium-font;
+      color: $white;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    
+    // p via parent — no class on p
+     p {
+      
+      color: rgba($white, .4);
+      line-height: 1.65;
+      margin: 0;
+    }
+  }
+
+
+  // ════════════════════════════
+  // PROOF STRIP
+  // ════════════════════════════
+  &__proof-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  &__proof-item {
+    background: $white;
+    border: 1px solid rgba($navy-blue, .09);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba($navy-blue, .08), 0 1px 2px rgba($navy-blue, .06);
+    transition: border-color 150ms, box-shadow 150ms, transform 150ms;
+
+    &:hover {
+      border-color: rgba($navy-blue, .18);
+      box-shadow: 0 10px 24px rgba($navy-blue, .1), 0 4px 8px rgba($navy-blue, .06);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__proof-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: rgba($greenclr, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $greenclr;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+    }
+  }
+
+  &__proof-text p{
+    font-weight: $medium-font;
+    color: $navy-blue;
+    line-height: 1.4;
+
+    // strong via parent — no class on strong
+    strong {
+      color: $greenclr;
+    }
+  }
+
+
+  // ════════════════════════════
+  // SCROLL REVEAL
+  // ════════════════════════════
+  &__reveal {
+
+    transform: translateY(20px);
+    transition: opacity .55s cubic-bezier(.4, 0, .2, 1),
+                transform .55s cubic-bezier(.4, 0, .2, 1);
+
+    &.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    &--d0 { transition-delay: 0s; }
+    &--d1 { transition-delay: .1s; }
+    &--d2 { transition-delay: .18s; }
+    &--d3 { transition-delay: .26s; }
+    &--d4 { transition-delay: .34s; }
+    &--d5 { transition-delay: .42s; }
+    &--d6 { transition-delay: .08s; }
+  }
+
+
+  // ════════════════════════════
+  // RESPONSIVE
+  // ════════════════════════════
+  @media only screen and (max-width: 860px) {
+    &__body-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    &__timeline-panel {
+      position: static;
+    }
+
+    &__proof-strip {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    padding: 64px 0 80px;
+
+    &__hdr {
+      margin-bottom: 44px;
+    }
+
+    &__step-card {
+      padding: 18px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__reveal,
+    &__step-card,
+    &__step-num span,
+    &__step-card::before,
+    &__proof-item,
+    &__tl-item-dot {
+      transition: none;
+    }
+
+    &__reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+} // end .how-team-ext

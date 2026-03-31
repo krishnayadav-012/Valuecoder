@@ -60,6 +60,23 @@
                         </a>
                     </div>
 
+                    <div class="master-btn button-v10">
+                <!-- TEXT -->
+                <a href="#" class="btn-circle">
+                    <span class="text" data-text="Get in Touch">
+                        <span class="text-default">Get in Touch</span>
+                        <!-- <span class="text-hover">Get in Touch</span> -->
+                    </span>
+                    <!-- ARROW -->
+                    <span class="circle">
+                        <span class="arrow-default"><img src="/v6.0/images/index-v10/move-right.svg" alt=""></span>
+                        <!-- <span class="arrow-hover"><img src="/v6.0/images/index-v10/move-right.svg" alt=""></span> -->
+                    </span>
+                </a>
+            </div>
+
+
+
                 </div>
 
 
