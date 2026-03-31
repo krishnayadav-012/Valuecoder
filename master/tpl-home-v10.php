@@ -158,7 +158,11 @@ if( isset($aiSection['required']) && ($aiSection['required'] == "yes") ) :
 <section class="ai-production-loop">
 <!-- LEFT FULL IMAGE -->
 <div class="ai-left">
-<img src="<?php bloginfo('template_url'); ?>/v6.0/images/index-v10/ai-pro.webp" alt="AI">
+<!-- <img src="<?php bloginfo('template_url'); ?>/v6.0/images/index-v10/ai-pro.webp" alt="AI"> -->
+ <video autoplay muted loop playsinline>
+  <source src="images/index-v10/ai-video.mp4" type="video/mp4">
+</video>
+
 </div>
 
 <!-- RIGHT CONTENT -->

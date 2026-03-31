@@ -369,7 +369,10 @@
 
         <!-- LEFT FULL IMAGE -->
         <div class="ai-left">
-            <img src="images/index-v10/ai-pro.webp" alt="AI">
+            <!-- <img src="images/index-v10/ai-pro.webp" alt="AI"> -->
+           <video autoplay muted loop playsinline>
+  <source src="images/index-v10/ai-video.mp4" type="video/mp4">
+</video>
         </div>
 
         <!-- RIGHT CONTENT -->
