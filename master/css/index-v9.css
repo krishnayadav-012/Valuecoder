@@ -4437,9 +4437,33 @@ button.tab-btn-base {
 .stack-section .tech-list li {
   padding: 14px 24px;
   border-bottom: 1px solid #EDEDED;
-  display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
+}
+.stack-section .tech-list li a {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.stack-section .tech-list li::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  background: url(../images/index-v10/slide-arrow.svg);
+  content: "";
+  width: 35px;
+  height: 35px;
+  display: none;
+  border: 2px solid #99A1AF;
+  background-size: 15px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+.stack-section .tech-list li:hover::before {
+  display: block;
 }
 .stack-section .tech-list li:first-child {
   border-top: 1px solid #eee;
@@ -4466,40 +4490,10 @@ button.tab-btn-base {
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
-}
-.stack-section .tech-list li .percentage {
-  border: 2px solid #99A1AF;
-  width: 35px;
-  height: 35px;
-  position: relative;
-  border-radius: 16px;
   display: none;
-}
-.stack-section .tech-list li .percentage::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url(../images/index-v10/slide-arrow.svg);
-  background-size: 12px;
-  content: "";
-  width: 12px;
-  height: 12px;
-}
-.stack-section .tech-list li .percentage:hover {
-  border: #FFAD00;
-  background: #FFAD00;
-}
-.stack-section .tech-list li .percentage:hover::before {
-  background: url(../images/index-v10/right-black.svg);
-  transform: translate(-50%, -50%) rotate(177deg);
-  background-size: cover;
 }
 .stack-section .tech-list li:hover {
   background-color: #F9FAFB;
-}
-.stack-section .tech-list li:hover .percentage {
-  display: block;
 }
 .stack-section .card-footer {
   padding: 20px 23px 27px;
@@ -4567,6 +4561,13 @@ button.tab-btn-base {
   .stack-section .stack-section {
     padding: 48px 0;
   }
+}
+
+.stack-section .tech-list li::before:hover {
+  background: url(../images/index-v10/right-black.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  transform: translate(-50%, -50%) rotate(-180deg);
 }
 
 .faq-section {
@@ -4720,7 +4721,6 @@ button.tab-btn-base {
 .testimonial-section-v9 {
   background-color: #F3F4F6;
   padding: 80px 20px;
-  font-family: "Inter", sans-serif;
 }
 .testimonial-section-v9 .container {
   max-width: 1100px;
