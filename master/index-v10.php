@@ -61,19 +61,20 @@
                     </div>
 
                     <div class="master-btn button-v10">
-                <!-- TEXT -->
-                <a href="#" class="btn-circle">
-                    <span class="text" data-text="Get in Touch">
-                        <span class="text-default">Get in Touch</span>
-                        <!-- <span class="text-hover">Get in Touch</span> -->
-                    </span>
-                    <!-- ARROW -->
-                    <span class="circle">
-                        <span class="arrow-default"><img src="/v6.0/images/index-v10/move-right.svg" alt=""></span>
-                        <!-- <span class="arrow-hover"><img src="/v6.0/images/index-v10/move-right.svg" alt=""></span> -->
-                    </span>
-                </a>
-            </div>
+                        <!-- TEXT -->
+                        <a href="#" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">
+                                <span class="text-default">Get in Touch</span>
+                                <!-- <span class="text-hover">Get in Touch</span> -->
+                            </span>
+                            <!-- ARROW -->
+                            <span class="circle">
+                                <span class="arrow-default"><img src="/v6.0/images/index-v10/move-right.svg"
+                                        alt=""></span>
+                                <!-- <span class="arrow-hover"><img src="/v6.0/images/index-v10/move-right.svg" alt=""></span> -->
+                            </span>
+                        </a>
+                    </div>
 
 
 
@@ -103,8 +104,7 @@
                     </div>
                     <div class="award-section">
                         <picture>
-                            <source media="(max-width:650px)"
-                                srcset="images/index-v10/small-clints.png">
+                            <source media="(max-width:650px)" srcset="images/index-v10/small-clints.png">
                             <img src="images/index-v10/award.webp" alt="desk-img" width="1200" height="185">
                         </picture>
                     </div>
@@ -370,9 +370,9 @@
         <!-- LEFT FULL IMAGE -->
         <div class="ai-left">
             <!-- <img src="images/index-v10/ai-pro.webp" alt="AI"> -->
-           <video autoplay muted loop playsinline>
-  <source src="images/index-v10/ai-video.mp4" type="video/mp4">
-</video>
+            <video autoplay muted loop playsinline>
+                <source src="images/index-v10/ai-video.mp4" type="video/mp4">
+            </video>
         </div>
 
         <!-- RIGHT CONTENT -->
@@ -573,90 +573,93 @@
     <!-- capblieties secton start -->
 
 
-   <section id="capabilities-section">
-<div class="container">
-    <div class="cap-wrapper">
-            <div class="left-part">
-                <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
-                <p>ValueCoders provides engineering teams across four capability areas — each operating inside the same
-                    sprint cadence, QA gates, and delivery framework.</p>
-                <div class="btn-circle button-v10">
+    <section id="capabilities-section">
+        <div class="container">
+            <div class="cap-wrapper">
+                <div class="left-part">
+                    <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
+                    <p>ValueCoders provides engineering teams across four capability areas — each operating inside the
+                        same
+                        sprint cadence, QA gates, and delivery framework.</p>
+                    <div class="btn-circle button-v10">
 
-                    <div class="master-btn button-v10">
-                        <a href="/contact" class="btn-circle">
-                            <span class="text" data-text="Get in Touch">Get in Touch</span>
+                        <div class="master-btn button-v10">
+                            <a href="/contact" class="btn-circle">
+                                <span class="text" data-text="Get in Touch">Get in Touch</span>
 
-                            <span class="circle">
-                                <img src="images/index-v10/move-right.svg" alt="">
-                            </span>
-                        </a>
+                                <span class="circle">
+                                    <img src="images/index-v10/move-right.svg" alt="">
+                                </span>
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="engineering-design"></div>
                 </div>
 
-                <div class="engineering-design"></div>
+                <div class="right-part">
+                    <div class="card">
+                        <figure>
+                            <img src="images/index-v10/engineering-card-1.webp" alt="AI & Data">
+                        </figure>
+                        <h3>AI & Data Engineering</h3>
+                        <p>Production-ready AI systems and machine learning infrastructure — integrated into real
+                            business
+                            workflows, not proof-of-concept demos.</p>
+                        <ul>
+                            <li>Generative AI applications</li>
+                            <li>AI agent development</li>
+                            <li>Machine learning engineering</li>
+                            <li>Data pipelines and analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <figure>
+                            <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+                        </figure>
+                        <h3>Software Product Development</h3>
+                        <p>Full lifecycle product engineering — from architecture decisions made with 3-year
+                            divtainability
+                            in mind, to production deployment.</p>
+                        <ul>
+                            <li>SaaS platforms</li>
+                            <li>Enterprise applications</li>
+                            <li>MVP development</li>
+                            <li>Product engineering</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+                        </figure>
+                        <h3>Cloud & DevOps Engineering</h3>
+                        <p>Scalable infrastructure and platform reliability — built to scale with your product without a
+                            separate ops team to keep it alive.</p>
+                        <ul>
+                            <li>Cloud architecture</li>
+                            <li>Kubernetes and container platformss</li>
+                            <li>CI/CD automation</li>
+                            <li>Observability engineering</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
+                        </figure>
+                        <h3>Enterprise Integration & Automation</h3>
+                        <p>Systems integration and workflow automation that reduces manual work without creating new
+                            fragility. API-first architecture that connects without coupling.</p>
+                        <ul>
+                            <li>API development</li>
+                            <li>Enterprise integrations</li>
+                            <li>Workflow automation</li>
+                            <li>Robotic process automation</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="right-part">
-                <div class="card">
-                    <figure>
-                        <img src="images/index-v10/engineering-card-1.webp" alt="AI & Data">
-                    </figure>
-                    <h3>AI & Data Engineering</h3>
-                    <p>Production-ready AI systems and machine learning infrastructure — integrated into real business
-                        workflows, not proof-of-concept demos.</p>
-                    <ul>
-                        <li>Generative AI applications</li>
-                        <li>AI agent development</li>
-                        <li>Machine learning engineering</li>
-                        <li>Data pipelines and analytics</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <figure>
-                        <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
-                    </figure>
-                    <h3>Software Product Development</h3>
-                    <p>Full lifecycle product engineering — from architecture decisions made with 3-year divtainability
-                        in mind, to production deployment.</p>
-                    <ul>
-                        <li>SaaS platforms</li>
-                        <li>Enterprise applications</li>
-                        <li>MVP development</li>
-                        <li>Product engineering</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
-                    </figure>
-                    <h3>Cloud & DevOps Engineering</h3>
-                    <p>Scalable infrastructure and platform reliability — built to scale with your product without a
-                        separate ops team to keep it alive.</p>
-                    <ul>
-                        <li>Cloud architecture</li>
-                        <li>Kubernetes and container platformss</li>
-                        <li>CI/CD automation</li>
-                        <li>Observability engineering</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="images/index-v10/engineering-card-2.webp" alt="Software Dev">
-                    </figure>
-                    <h3>Enterprise Integration & Automation</h3>
-                    <p>Systems integration and workflow automation that reduces manual work without creating new
-                        fragility. API-first architecture that connects without coupling.</p>
-                    <ul>
-                        <li>API development</li>
-                        <li>Enterprise integrations</li>
-                        <li>Workflow automation</li>
-                        <li>Robotic process automation</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
         </div>
     </section>
     <!-- capblieties secton end-->
@@ -887,15 +890,18 @@
                         </h2>
 
                         <p>
-                            ValueCoders provides engineering teams across four capability
-                            areas — each operating inside the same sprint cadence,
-                            QA gates, and delivery framework.
+                            Market Context
+
+
                         </p>
 
                     </div>
 
                     <div class="left-image">
-                        <img src="images/index-v10/ai-circle.png" alt="">
+                        <!-- <img src="images/index-v10/ai-circle.png" alt=""> -->
+                         <video autoplay="" muted="" loop="" playsinline="">
+                <source src="images/index-v10/human-video.mp4" type="video/mp4">
+            </video>
                     </div>
 
                 </div>
@@ -1021,405 +1027,543 @@
 
 
 
+    
+
     <!-- Engineering Stacks start -->
+    <section id="engineering-stacks-v10" class="stack-section padding-t-120 padding-b-120">
+        <div class="container">
+            <div class="section-header">
+                <div class="content-part">
+                    <h2>Engineering <em>Expertise.</em></h2>
+                    <p>Delivered through staff augmentation, product pods, or long-term engineering programs.</p>
+                </div>
+                <div class="glider-arrows">
+                    <button class="stack-prev starc-arrow" aria-label="Previous" aria-disabled="true">
+                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/icons/arrow-right.svg"
+                            alt="">
+                    </button>
+                    <button class="stack-next starc-arrow" aria-label="Next" aria-disabled="false">
+                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/icons/arrow-right.svg"
+                            alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="glider-contain">
+                <div class="stack-grid glider">
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Frontend</h3>
+                            <p>Modern user interfaces</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-reactjs-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>React</strong><span>Enterprise SPA & Next.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-angularjs-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Angular</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-vuejs-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/Vue.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Vue.js</strong><span>Lightweight Dashboards</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/next-js-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/sveltejs.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Next</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.valuecoders.com/staging/hire-developers/hire-typescript-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/sveltejs.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>TypeScript</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/users-img.png"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire-developers/hire-front-end-developers"
+                                class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Backend</h3>
+                            <p>Business logic & APIs</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-python-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Python</strong><span>Data-heavy services</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-nodejs-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/nodejs.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Node.js</strong><span>Event-driven APIs</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
 
-<!-- Engineering Stacks start -->
-<section id="engineering-stacks-v10" class="stack-section padding-t-120 padding-b-120">
-    <div class="container">
-    <div class="section-header">
-    <div class="content-part">
-        <h2>Engineering <em>Expertise.</em></h2>
-        <p>Delivered through staff augmentation, product pods, or long-term engineering programs.</p>
-    </div>
-    <div class="glider-arrows">
-        <button class="stack-prev starc-arrow" aria-label="Previous" aria-disabled="true">
-            <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/icons/arrow-right.svg" alt="">
-        </button>
-        <button class="stack-next starc-arrow" aria-label="Next" aria-disabled="false">
-            <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/icons/arrow-right.svg" alt="">
-        </button>
-    </div>
-    </div>
-    <div class="glider-contain">
-    <div class="stack-grid glider">
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>Frontend</h3>
-            <p>Modern user interfaces</p>
-        </div>
-        <ul class="tech-list">
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-reactjs-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg" alt="">
-                <div class="text-part">
-                <strong>React</strong><span>Enterprise SPA & Next.js</span>
-                </div>
-                </div>
-                </a>
-            </li>
-            <li>
-            <a href="https://www.valuecoders.com/staging/hire-developers/hire-angularjs-developers">    
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg" alt="">
-                    <div class="text-part">
-                        <strong>Angular</strong><span>Large-scale CRM/ERP</span>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-java-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/java.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Java</strong><span>Legacy enterprise core</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-dotnet-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/microsoft-dotnet.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>.NET</strong><span>Corporate ecosystems</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-php-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/php.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>PHP</strong><span>Corporate ecosystems</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/02.webp"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire-developers/hire-backend-developers"
+                                class="btn-secondry">View All </a>
+                        </div>
                     </div>
-                </div>
-            </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-vuejs-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/Vue.svg" alt="">  
-                    <div class="text-part">    
-                <strong>Vue.js</strong><span>Lightweight Dashboards</span></div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/next-js-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/sveltejs.svg" alt="">  
-                    <div class="text-part">    
-                <strong>Next</strong></div>
-                </div>
-                </a>
-            </li>
-           <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-typescript-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/sveltejs.svg" alt="">  
-                    <div class="text-part">    
-                <strong>TypeScript</strong></div>
-                </div>
-                </a>
-            </li>
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/users-img.png" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire-developers/hire-front-end-developers" class="btn-secondry">View All </a>
-        </div>
-    </div>
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>Backend</h3>
-            <p>Business logic & APIs</p>
-        </div>
-        <ul class="tech-list">
-           <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-python-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg" alt="">
-                    <div class="text-part">
-                        <strong>Python</strong><span>Data-heavy services</span>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Mobile</h3>
+                            <p>Native & hybrid apps</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-ios-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>iOS</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-android-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Android</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-flutter-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Flutter</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.valuecoders.com/staging/hire-developers/hire-react-native-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>React Native</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/cross-platform-app-development-services">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Cross-Platform</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/03.webp"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire-developers/hire-mobile-app-developers"
+                                class="btn-secondry">View All </a>
+                        </div>
                     </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-nodejs-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/nodejs.svg" alt="">
-                    <div class="text-part">
-                        <strong>Node.js</strong><span>Event-driven APIs</span>
-                    </div>
-                </div>
-                </a>
-            </li>
-           
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-java-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/java.svg" alt="">  
-                    <div class="text-part">    
-                <strong>Java</strong><span>Legacy enterprise core</span></div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-dotnet-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/microsoft-dotnet.svg" alt="">  
-                    <div class="text-part">    
-                <strong>.NET</strong><span>Corporate ecosystems</span></div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-php-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/php.svg" alt="">  
-                    <div class="text-part">    
-                <strong>PHP</strong><span>Corporate ecosystems</span></div>
-                </div>
-                </a>
-            </li>
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/02.webp" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire-developers/hire-backend-developers" class="btn-secondry">View All </a>
-        </div>
-    </div>
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>Mobile</h3>
-            <p>Native & hybrid apps</p>
-        </div>
-        <ul class="tech-list">
-           <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-ios-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg" alt="">
-                    <div class="text-part">
-                        <strong>iOS</strong>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-android-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg" alt="">
-                    <div class="text-part">
-                        <strong>Android</strong>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-flutter-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg" alt="">
-                    <div class="text-part">
-                        <strong>Flutter</strong>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-react-native-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg" alt="">
-                    <div class="text-part">
-                        <strong>React Native</strong>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/cross-platform-app-development-services">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/python.svg" alt="">
-                    <div class="text-part">
-                        <strong>Cross-Platform</strong>
-                    </div>
-                </div>
-                </a>
-            </li>
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/03.webp" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire-developers/hire-mobile-app-developers" class="btn-secondry">View All </a>
-        </div>
-    </div>
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>Cloud & Ai</h3>
-            <p>Immediate Bench Ready</p>
-        </div>
-        <ul class="tech-list">
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-aws-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/aws.svg" alt="">
-                    <div class="text-part">
-                        <strong>AWS</strong><span>Serverless & K8s</span>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-azure-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/azure.svg" alt="">
-                    <div class="text-part">
-                        <strong>Azure</strong><span>Enterprise Cloud</span>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/cloud-services/google-cloud">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/g-cloud.svg" alt="">  
-                    <div class="text-part">    
-                <strong>GCP</strong></div>
-                </div>
-                </a>
-            </li>
-                        
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-devops-developers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/llms.svg" alt="">  
-                    <div class="text-part">    
-                <strong>DevOps</strong><span>RAG & Agentic AI</span></div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/kubernetes-engineers">
-                <div class="tech-info">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/tensorflow.svg" alt="">  
-                    <div class="text-part">    
-                <strong>Kubernetes</strong><span>Custom ML Models</span></div>
-                </div>
-                </a>
-            </li>
-            
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/07.webp" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire/cloud-developers" class="btn-secondry">View All </a>
-        </div>
-    </div>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Cloud & Ai</h3>
+                            <p>Immediate Bench Ready</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-aws-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/aws.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>AWS</strong><span>Serverless & K8s</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-azure-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/azure.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Azure</strong><span>Enterprise Cloud</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/cloud-services/google-cloud">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/g-cloud.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>GCP</strong>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
 
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>Data & AI</h3>
-            <p>Analytics & AI systems</p>
-        </div>
-        <ul class="tech-list">
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/data-engineers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg" alt="">
-                    <div class="text-part">
-                        <strong>Data Engineers</strong><span>Enterprise SPA & Next.js</span>
-                    </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-data-scientists">
-                <div class="tech-info"><img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg" alt="">
-                    <div class="text-part">
-                        <strong>Data Scientists</strong><span>Large-scale CRM/ERP</span>
-                    </div>                
-                </div>
-                </a>
-            </li>            
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/automl-developers ">
-                <div class="tech-info"><img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg" alt="">
-                    <div class="text-part">
-                        <strong>AutoML</strong><span>Large-scale CRM/ERP</span>
-                    </div>                
-                </div>
-                </a>
-            </li>            
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/ai-agent-developer">
-                <div class="tech-info"><img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg" alt="">
-                    <div class="text-part">
-                        <strong>AI Agent</strong><span>Large-scale CRM/ERP</span>
-                    </div>                
-                </div>
-                </a>
-            </li>            
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/04.webp" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire-developers/hire-ai-engineers" class="btn-secondry">View All </a>
-        </div>
-    </div>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-devops-developers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/llms.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>DevOps</strong><span>RAG & Agentic AI</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/kubernetes-engineers">
+                                    <div class="tech-info">
+                                        <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/tensorflow.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Kubernetes</strong><span>Custom ML Models</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
 
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>Full Stack</h3>
-            <p>End-to-end development</p>
-        </div>
-        <ul class="tech-list">
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-mern-stack-developers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg" alt="">
-                    <div class="text-part">
-                        <strong>MERN Stack</strong><span>Enterprise SPA & Next.js</span>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/07.webp"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire/cloud-developers"
+                                class="btn-secondry">View All </a>
+                        </div>
                     </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire-developers/hire-mean-stack-developers">
-                <div class="tech-info"><img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg" alt="">
-                    <div class="text-part">
-                        <strong>MEAN Stack</strong><span>Large-scale CRM/ERP</span>
-                    </div>                
-                </div>
-                </a>
-            </li>            
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/05.webp" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire-developers/hire-full-stack-developers" class="btn-secondry">View All </a>
-        </div>
-    </div>
 
-    <div class="stack-card">
-        <div class="card-head">
-            <h3>QA & Testing</h3>
-            <p>Quality assurance engineering</p>
-        </div>
-        <ul class="tech-list">
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/automation-test-engineers">
-                <div class="tech-info"> <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg" alt="">
-                    <div class="text-part">
-                        <strong>Automation Testing</strong><span>Enterprise SPA & Next.js</span>
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Data & AI</h3>
+                            <p>Analytics & AI systems</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/data-engineers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Data Engineers</strong><span>Enterprise SPA & Next.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire-developers/hire-data-scientists">
+                                    <div class="tech-info"><img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Data Scientists</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/automl-developers ">
+                                    <div class="tech-info"><img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>AutoML</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/ai-agent-developer">
+                                    <div class="tech-info"><img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>AI Agent</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/04.webp"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire-developers/hire-ai-engineers"
+                                class="btn-secondry">View All </a>
+                        </div>
                     </div>
-                </div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.valuecoders.com/staging/hire/performance-test-engineers">
-                <div class="tech-info"><img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg" alt="">
-                    <div class="text-part">
-                        <strong>Performance Testing</strong><span>Large-scale CRM/ERP</span>
-                    </div>                
-                </div>
-                </a>
-            </li> 
-             <li>
-                <a href="https://www.valuecoders.com/staging/hire/security-test-engineers">
-                <div class="tech-info"><img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg" alt="">
-                    <div class="text-part">
-                        <strong>Security Testing</strong><span>Large-scale CRM/ERP</span>
-                    </div>                
-                </div>
-                </a>
-            </li>            
-        </ul>
-        <div class="card-footer">
-            <div class="avatars">
-                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/06.webp" alt="Dev">
-            </div>
-            <p><strong>700+</strong> Senior Engineers available</p>
-            <a href="https://www.valuecoders.com/staging/hire-developers/software-qa-testers-india" class="btn-secondry">View All </a>
-        </div>
-    </div>
 
-    </div>
-    </div>
-    </div>
-</section>
-<!-- Engineering Stacks end -->
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>Full Stack</h3>
+                            <p>End-to-end development</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a
+                                    href="https://www.valuecoders.com/staging/hire-developers/hire-mern-stack-developers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>MERN Stack</strong><span>Enterprise SPA & Next.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.valuecoders.com/staging/hire-developers/hire-mean-stack-developers">
+                                    <div class="tech-info"><img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/angular.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>MEAN Stack</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/05.webp"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire-developers/hire-full-stack-developers"
+                                class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+
+                    <div class="stack-card">
+                        <div class="card-head">
+                            <h3>QA & Testing</h3>
+                            <p>Quality assurance engineering</p>
+                        </div>
+                        <ul class="tech-list">
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/automation-test-engineers">
+                                    <div class="tech-info"> <img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Automation Testing</strong><span>Enterprise SPA & Next.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/performance-test-engineers">
+                                    <div class="tech-info"><img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Performance Testing</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.valuecoders.com/staging/hire/security-test-engineers">
+                                    <div class="tech-info"><img
+                                            src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/react.svg"
+                                            alt="">
+                                        <div class="text-part">
+                                            <strong>Security Testing</strong><span>Large-scale CRM/ERP</span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage">
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="avatars">
+                                <img src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/dev-profiles/06.webp"
+                                    alt="Dev">
+                            </div>
+                            <p><strong>700+</strong> Senior Engineers available</p>
+                            <a href="https://www.valuecoders.com/staging/hire-developers/software-qa-testers-india"
+                                class="btn-secondry">View All </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Engineering Stacks end -->
 
 
 
@@ -1825,7 +1969,7 @@
                 'images/index-v10/feedback-slid-icon.png',
                 'images/index-v10/feedback-slid-icon-1.jpg',
                 'images/index-v10/feedback-slid-icon-2.jpg',
-                
+
 
 
             ];

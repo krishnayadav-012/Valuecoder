@@ -36,6 +36,18 @@
         z-index: 11;
         overflow: hidden;
 
+        &::before{
+            position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: url(../images/index-v10/human-sade.png);
+    background-size: cover;
+     
+        }
+
         h2 {
             font-size: clamp(30px, 3.7vw, 46px);
             color: #fff;
@@ -43,27 +55,45 @@
             em{ color: $darkYellow; font-style: normal;}
         }
 
-        p {
+        h3 {
             color: #FFFFFFB0;
             line-height: 1.7;
             font-size: 18px;
             font-weight: 500;
 
         }
+        p{
+           color: #FFAD00;
+            letter-spacing: 17%;
+            line-height: 29.99px;
+            margin-bottom: 10px;
+            text-transform: uppercase;            
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .left-content{
+          position: relative;
+          z-index: 11;
+        }
 
         .left-image {
-
-            position: absolute;
-            top: 0px;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-            width: 100%;
+         position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 57%;
+    top: auto;
 
             img {
                 width: 100%;
                 object-fit: cover;
                 height: 100%;
+            }
+            video{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
 
         }

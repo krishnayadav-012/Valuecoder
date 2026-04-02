@@ -4911,6 +4911,16 @@ button.tab-btn-base {
   z-index: 11;
   overflow: hidden;
 }
+.delivery-discipline .delivery-left::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: url(../images/index-v10/human-sade.png);
+  background-size: cover;
+}
 .delivery-discipline .delivery-left h2 {
   font-size: clamp(30px, 3.7vw, 46px);
   color: #fff;
@@ -4920,24 +4930,43 @@ button.tab-btn-base {
   color: #FFAD00;
   font-style: normal;
 }
-.delivery-discipline .delivery-left p {
+.delivery-discipline .delivery-left h3 {
   color: rgba(255, 255, 255, 0.6901960784);
   line-height: 1.7;
   font-size: 18px;
   font-weight: 500;
 }
+.delivery-discipline .delivery-left p {
+  color: #FFAD00;
+  letter-spacing: 17%;
+  line-height: 29.99px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.delivery-discipline .delivery-left .left-content {
+  position: relative;
+  z-index: 11;
+}
 .delivery-discipline .delivery-left .left-image {
   position: absolute;
-  top: 0px;
   left: 0;
   bottom: 0;
   z-index: -1;
   width: 100%;
+  height: 57%;
+  top: auto;
 }
 .delivery-discipline .delivery-left .left-image img {
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+.delivery-discipline .delivery-left .left-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .delivery-discipline {
   /* RIGHT */
@@ -5831,26 +5860,9 @@ button.tab-btn-base {
 .stack-section .tech-list li a {
   display: flex;
   position: relative;
+  min-height: 35px;
+  justify-content: space-between;
   width: 100%;
-}
-.stack-section .tech-list li::before {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translate(-50%, -50%);
-  background: url(../images/index-v10/slide-arrow.svg);
-  content: "";
-  width: 35px;
-  height: 35px;
-  display: none;
-  border: 2px solid #99A1AF;
-  background-size: 15px;
-  border-radius: 16px;
-  background-repeat: no-repeat;
-  background-position: 10px;
-}
-.stack-section .tech-list li:hover::before {
-  display: block;
 }
 .stack-section .tech-list li:first-child {
   border-top: 1px solid #eee;
@@ -5879,8 +5891,39 @@ button.tab-btn-base {
   line-height: normal;
   display: none;
 }
+.stack-section .tech-list li .percentage {
+  border: 2px solid #99A1AF;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  border-radius: 16px;
+  display: none;
+}
+.stack-section .tech-list li .percentage::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/index-v10/slide-arrow.svg);
+  background-size: 12px;
+  content: "";
+  width: 12px;
+  height: 12px;
+}
+.stack-section .tech-list li .percentage:hover {
+  border: #FFAD00;
+  background: #FFAD00;
+}
+.stack-section .tech-list li .percentage:hover::before {
+  background: url(../images/index-v10/right-black.svg);
+  transform: translate(-50%, -50%) rotate(177deg);
+  background-size: cover;
+}
 .stack-section .tech-list li:hover {
   background-color: #F9FAFB;
+}
+.stack-section .tech-list li:hover .percentage {
+  display: block;
 }
 .stack-section .card-footer {
   padding: 20px 23px 27px;
@@ -5955,6 +5998,11 @@ button.tab-btn-base {
   background-repeat: no-repeat;
   background-position: 10px;
   transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.stack-section .section-header .glider-arrows button:hover {
+  background: #FFAD00;
+  border-color: #FFAD00;
 }
 
 .testimonial-section-v9 {
