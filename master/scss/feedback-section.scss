@@ -117,7 +117,7 @@ $breakpoint-md: 768px;
     flex-direction: column;
     padding-top: 116px;
     position: relative;
-    clip-path: polygon(0 0, 100% 0%, 78% 100%, 0% 100%);
+    //clip-path: polygon(0 0, 100% 0%, 78% 100%, 0% 100%);
     padding-bottom: 70px;
 
     .rating {
@@ -147,7 +147,6 @@ $breakpoint-md: 768px;
       line-height: 150%;
       font-weight: 500;
       position: relative;
-
 
       &::after {
         content: "";
@@ -189,8 +188,8 @@ $breakpoint-md: 768px;
       }
 
       .details {
-        padding-left: 15px;
-        border-left: 1px solid #D1D5DC;
+        //padding-left: 15px;
+        //border-left: 1px solid #D1D5DC;
 
         span {
           display: block;
@@ -299,6 +298,10 @@ $breakpoint-md: 768px;
 
 @media screen and (max-width:650px) {
   .testimonial-section-v9 .video-popup-v9 .video-close-btn{right: 20px;}
-  
-  
+  .testimonial-section-v9 .testimonial-card .card-content{
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .testimonial-section-v9 .testimonial-card .card-content > p{font-size: 16px;}
 }

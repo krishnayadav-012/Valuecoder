@@ -1925,7 +1925,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   flex-direction: column;
   padding-top: 116px;
   position: relative;
-  clip-path: polygon(0 0, 100% 0%, 78% 100%, 0% 100%);
   padding-bottom: 70px;
 }
 .testimonial-section-v9 .testimonial-card .card-content .rating {
@@ -1985,10 +1984,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .testimonial-section-v9 .testimonial-card .card-content .author-info img {
   height: 35px;
-}
-.testimonial-section-v9 .testimonial-card .card-content .author-info .details {
-  padding-left: 15px;
-  border-left: 1px solid #D1D5DC;
 }
 .testimonial-section-v9 .testimonial-card .card-content .author-info .details span {
   display: block;
@@ -2074,6 +2069,14 @@ body.page-template-template-testimonials .client-video-section iframe,
 @media screen and (max-width: 650px) {
   .testimonial-section-v9 .video-popup-v9 .video-close-btn {
     right: 20px;
+  }
+  .testimonial-section-v9 .testimonial-card .card-content {
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .testimonial-section-v9 .testimonial-card .card-content > p {
+    font-size: 16px;
   }
 }
 
