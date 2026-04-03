@@ -57,7 +57,6 @@ cmp-team-extension-works style file `````
 
 
 
-
 <section class="how-team-ext">
   <div class="container">
  

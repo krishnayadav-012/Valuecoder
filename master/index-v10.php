@@ -369,6 +369,17 @@
 
         <!-- LEFT FULL IMAGE -->
         <div class="ai-left">
+            <div class="hands-img">
+
+    <div class="human-hand hand">
+        <img src="images/index-v10/human-hand.png" alt="Human">
+    </div>
+
+    <div class="ai-hand hand">
+        <img src="images/index-v10/ai-hand.png" alt="AI">
+    </div>
+
+</div>
             <!-- <img src="images/index-v10/ai-pro.webp" alt="AI"> -->
             <video autoplay muted loop playsinline>
                 <source src="images/index-v10/ai-video.mp4" type="video/mp4">
@@ -783,7 +794,7 @@
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="images/health-care.png" alt="Healthcare">
+                                <img src="images/index-v10/card-1.webp" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
@@ -804,7 +815,7 @@
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="images/medias.png" alt="Healthcare">
+                                <img src="images/index-v10/card-2.webp" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
@@ -823,7 +834,7 @@
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="images/travel.png" alt="Healthcare">
+                                <img src="images/index-v10/card-3.webp" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
@@ -843,7 +854,87 @@
                     <div class="industry-item">
                         <div class="industry-card">
                             <div class="card-image">
-                                <img src="images/health-care.png" alt="Healthcare">
+                                <img src="images/index-v10/card-4.webp" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Travel & Tourism</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <div class="inner-top">
+                                        <h4>Travel & Tourism</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
+                                    </div>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/index-v10/card-5.webp" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Travel & Tourism</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <div class="inner-top">
+                                        <h4>Travel & Tourism</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
+                                    </div>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/index-v10/card-6.webp" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Travel & Tourism</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <div class="inner-top">
+                                        <h4>Travel & Tourism</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
+                                    </div>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/index-v10/card-7.webp" alt="Healthcare">
+                            </div>
+                            <div class="card-body">
+                                <div class="title-wrap">
+                                    <h3>Travel & Tourism</h3>
+
+                                </div>
+                                <div class="hover-content">
+                                    <div class="inner-top">
+                                        <h4>Travel & Tourism</h4>
+                                        <p>Innovative software solutions to improve patient care.</p>
+                                    </div>
+                                    <a href="#" class="expand-btn">Expand</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="industry-item">
+                        <div class="industry-card">
+                            <div class="card-image">
+                                <img src="images/index-v10/card-8.webp" alt="Healthcare">
                             </div>
                             <div class="card-body">
                                 <div class="title-wrap">
@@ -898,10 +989,11 @@
                     </div>
 
                     <div class="left-image">
+
                         <!-- <img src="images/index-v10/ai-circle.png" alt=""> -->
-                         <video autoplay="" muted="" loop="" playsinline="">
-                <source src="images/index-v10/human-video.mp4" type="video/mp4">
-            </video>
+                        <video autoplay="" muted="" loop="" playsinline="">
+                            <source src="images/index-v10/human-video.mp4" type="video/mp4">
+                        </video>
                     </div>
 
                 </div>
@@ -1027,7 +1119,7 @@
 
 
 
-    
+
 
     <!-- Engineering Stacks start -->
     <section id="engineering-stacks-v10" class="stack-section padding-t-120 padding-b-120">
@@ -1066,7 +1158,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1079,7 +1171,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1092,7 +1184,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1105,7 +1197,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1119,7 +1211,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -1149,7 +1241,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1162,7 +1254,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
 
@@ -1176,7 +1268,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1189,7 +1281,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1202,7 +1294,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -1232,7 +1324,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1245,7 +1337,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1258,7 +1350,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1272,7 +1364,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1285,7 +1377,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -1315,7 +1407,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1328,7 +1420,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1341,7 +1433,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
 
@@ -1355,7 +1447,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1368,7 +1460,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
 
@@ -1400,7 +1492,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1413,7 +1505,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1426,7 +1518,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1439,7 +1531,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -1471,7 +1563,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1485,7 +1577,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -1516,7 +1608,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1529,7 +1621,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                             <li>
@@ -1542,7 +1634,7 @@
                                         </div>
                                     </div>
                                     <div class="percentage">
-                                </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -2071,6 +2163,68 @@
             }
 
         }
+
+
+// ````````````````````````````````````````````````````````````````````
+
+(function () {
+  'use strict';
+
+  const section =
+    document.querySelector('.ai-production-loop');
+
+  if (!section) return;
+
+  function handleScroll() {
+
+    const rect =
+      section.getBoundingClientRect();
+
+    const windowHeight =
+      window.innerHeight;
+
+    // Section center
+    const sectionCenter =
+      rect.top + rect.height / 2;
+
+    // Screen center
+    const screenCenter =
+      windowHeight / 2;
+
+    // Distance from center
+    const distance =
+      Math.abs(
+        sectionCenter - screenCenter
+      );
+
+    // Center sensitivity
+    const centerOffset = 120;
+
+    if (distance < centerOffset) {
+
+      section.classList.add(
+        'is-center'
+      );
+
+    } else {
+
+      section.classList.remove(
+        'is-center'
+      );
+
+    }
+
+  }
+
+  window.addEventListener(
+    'scroll',
+    handleScroll
+  );
+
+  handleScroll();
+
+})();
+
     </script>
 
 
