@@ -1,0 +1,351 @@
+
+@use "_default" as *;
+
+// ============================================================
+//  How to Engage Section — scoped to .how-to-engage-section
+//  Uses default SCSS variables from _default.scss
+//  No font-size overrides on h2, h3, p — inherits from default
+// ============================================================
+ 
+.how-to-engage-section {
+
+  position: relative;
+  overflow: hidden;
+ 
+  // Background dot texture
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba($themeMidNight, 0.055) 1.2px, transparent 1.2px);
+    background-size: 26px 26px;
+    pointer-events: none;
+    z-index: 0;
+  }
+ 
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+ 
+  // ── Header ──────────────────────────────────────────────
+  .hte-header {
+    margin-bottom: 60px;
+ 
+
+    .eyebrow span{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: $yellow;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 18px;
+
+      &::before, &::after {
+        content: '';
+        width: 16px;
+        height: 1.5px;
+        background: $yellow;
+        opacity: .55;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+    }
+    // h2 and p inherit size from default — no overrides
+    h2 {
+      color: $themeMidNight;
+    }
+ 
+    p {
+  
+      margin-left: auto;
+      margin-right: auto;
+      color: $gray-600;
+    }
+  }
+ 
+ 
+ 
+  // ── Reveal animations ───────────────────────────────────
+  .reveal {
+
+    transform: translateY(5px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+ 
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  .hte-reveal-delay-0 { transition-delay: 0s; }
+  .hte-reveal-delay-1 { transition-delay: 0.12s; }
+  .hte-reveal-delay-2 { transition-delay: 0.24s; }
+  .hte-reveal-delay-3 { transition-delay: 0.36s; }
+ 
+  // ── Cards Track ─────────────────────────────────────────
+  .hte-cards-track {
+    position: relative;
+  }
+ 
+ 
+ 
+ 
+ 
+  // ── Cards Grid ──────────────────────────────────────────
+  .hte-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+ 
+  // ── Base Step Card ───────────────────────────────────────
+  .hte-step-card {
+    background: $white;
+    border: 1px solid rgba($themeMidNight, 0.09);
+    border-radius: 24px;
+    padding: 32px 28px 28px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba($themeMidNight, 0.08), 0 1px 2px rgba($themeMidNight, 0.06);
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+ 
+    // Amber top-border sweep on hover
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent 0%, $yellow 50%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 24px 24px 0 0;
+    }
+ 
+    // Amber glow at bottom on hover
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 60px;
+      background: radial-gradient(ellipse, rgba($yellow, 0.12) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+ 
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 48px rgba($themeMidNight, 0.14), 0 4px 12px rgba($themeMidNight, 0.08);
+      border-color: rgba($yellow, 0.22);
+ 
+      &::before { opacity: 1; }
+      &::after  { opacity: 1; }
+ 
+      .hte-step-icon {
+        background: rgba($yellow, 0.08);
+        border-color: rgba($yellow, 0.25);
+        transform: scale(1.06);
+        color: $darkYellow;
+      }
+    }
+ 
+    // h3 inside card — size inherited from default, only color
+    h3 {
+      color: $themeMidNight;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    // p inside card — size inherited from default, only color
+    p {
+      color: $gray-600;
+      flex: 1;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0;
+    }
+ 
+    // ── Featured (navy) card ─────────────────────────────
+    &--featured {
+      background: $themeMidNight;
+      border-color: rgba($white, 0.06);
+ 
+      &::before {
+        background: linear-gradient(90deg, transparent 0%, rgba($yellow, 0.6) 50%, transparent 100%);
+      }
+ 
+      &::after {
+        background: radial-gradient(ellipse, rgba($yellow, 0.18) 0%, transparent 70%);
+      }
+ 
+      &:hover {
+        border-color: rgba($yellow, 0.3);
+ 
+        .hte-step-icon {
+          background: rgba($yellow, 0.18);
+          border-color: rgba($yellow, 0.45);
+        }
+      }
+ 
+      h3 {
+        color: $white;
+      }
+ 
+      p {
+        color: rgba($white, 0.58);
+      }
+ 
+      .hte-step-timeline {
+        color: $yellow;
+        background: rgba($yellow, 0.12);
+        border-color: rgba($yellow, 0.25);
+      }
+ 
+      .hte-step-footer {
+        border-color: rgba($white, 0.08);
+      }
+ 
+      .hte-step-proof {
+        color: $yellow;
+ 
+        &::before {
+          background: $yellow;
+        }
+      }
+ 
+      .hte-step-icon {
+        background: rgba($yellow, 0.1);
+        border-color: rgba($yellow, 0.25);
+        color: $yellow;
+      }
+    }
+  }
+ 
+  // Featured atmosphere overlay
+  .hte-card-atmosphere {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 80% 100%, rgba($themeDarkNight, 0.7) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 10% 0%, rgba($yellow, 0.06) 0%, transparent 65%);
+    pointer-events: none;
+  }
+ 
+  // ── Step Icon ────────────────────────────────────────────
+  .hte-step-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1.5px solid rgba($themeMidNight, 0.09);
+    background: rgba($themeMidNight, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    color: $themeMidNight;
+    position: relative;
+    z-index: 1;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  }
+ 
+  // ── Timeline Pill ────────────────────────────────────────
+  .hte-step-timeline {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $darkYellow;
+    background: rgba($yellow, 0.1);
+    border: 1px solid rgba($yellow, 0.2);
+    border-radius: 4px;
+    padding: 4px 9px;
+    margin-bottom: 14px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+  }
+ 
+  // ── Footer & Proof ───────────────────────────────────────
+  .hte-step-footer {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba($themeMidNight, 0.09);
+    position: relative;
+    z-index: 1;
+  }
+ 
+  .hte-step-proof {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $darkYellow;
+    letter-spacing: 0.01em;
+ 
+    &::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: $yellow;
+      flex-shrink: 0;
+      box-shadow: 0 0 6px rgba($yellow, 0.5);
+    }
+  }
+
+ 
+  @media only screen and (max-width: 900px) {
+    .hte-cards-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+ 
+   
+  }
+ 
+  @media only screen and (max-width: 767px) {
+    .hte-header {
+      margin-bottom: 30px;
+    }
+ 
+    .hte-cards-grid {
+      grid-template-columns: 1fr;
+    }
+ 
+    .hte-step-card {
+      padding: 24px 20px 20px;
+    }
+  }
+ 
+  // Reduced motion
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+ 
+    
+  }
+}
+ 

@@ -1,0 +1,464 @@
+@use "_default" as *;
+.delivery-system-section {
+  background: $bgWhiteGray;
+  position: relative;
+  overflow: hidden;
+ 
+  // Background dot texture
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba($themeMidNight, 0.055) 1.2px, transparent 1.2px);
+    background-size: 26px 26px;
+    pointer-events: none;
+    z-index: 0;
+  }
+ 
+
+ 
+  // ── Two-column inner layout ──────────────────────────────
+  .ds-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: start;
+  }
+ 
+  // ── Reveal animations ───────────────────────────────────
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+ 
+    &.is-visible {
+      opacity: 1;
+      
+      transform: translateY(0);
+    
+    }
+  }
+ 
+  .ds-reveal-delay-1 { transition-delay: 0.1s; }
+  .ds-reveal-delay-2 { transition-delay: 0.2s; }
+  .ds-reveal-delay-3 { transition-delay: 0.3s; }
+  .ds-reveal-delay-4 { transition-delay: 0.4s; }
+ 
+  // ════════════════════════════════════════════════════════
+  //  LEFT PANEL — Navy Architecture
+  // ════════════════════════════════════════════════════════
+  .ds-left {
+    background: $themeMidNight;
+    border-radius: 16px;
+    padding: 52px 48px 56px;
+    position: relative;
+    overflow: hidden;
+    min-height: 620px;
+ 
+    // Atmospheric radial overlays
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 55% at 20% 90%, rgba($themeDarkNight, 0.6) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 45% at 85% 10%, rgba($yellow, 0.08) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+ 
+    // Grain texture
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+      background-size: 128px 128px;
+      pointer-events: none;
+      z-index: 0;
+    }
+  }
+ 
+  .ds-left__content {
+    position: relative;
+    z-index: 1;
+  }
+ 
+  // Eyebrow shared style
+  .ds-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight:700 ;
+    letter-spacing: 0.08em;
+    margin-bottom: 24px;
+    line-height: 1;
+  }
+ 
+  .ds-eyebrow__line {
+    width: 28px;
+    height: 2px;
+    background: $yellow;
+    border-radius: 2px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+ 
+  // Left panel overrides for h2 and p
+  .ds-left {
+    h2 {
+      color: $white;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      margin-bottom: 20px;
+ 
+      em {
+        font-style: normal;
+        color: $yellow;
+      }
+    }
+  }
+ 
+  .ds-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba($white, 0.65);
+    margin-bottom: 40px;
+    
+  }
+ 
+  .ds-arch-label span{
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba($white, 0.35);
+    margin-bottom: 16px;
+    display: block;
+  }
+ 
+  // ── Architecture Stack ───────────────────────────────────
+  .ds-arch-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+ 
+    // Vertical connector line
+    &::before {
+      content: '';
+      position: absolute;
+      left:16px;
+      top: 44px;
+      bottom: 44px;
+      width: 1px;
+      background: linear-gradient(to bottom,
+        transparent,
+        rgba($yellow, 0.25) 15%,
+        rgba($yellow, 0.25) 85%,
+        transparent
+      );
+      z-index: 0;
+    }
+  }
+ 
+  @keyframes ds-layerIn {
+    from { opacity: 0; transform: translateX(-16px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+ 
+  .ds-arch-layer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px 14px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba($white, 0.06);
+    background: rgba($white, 0.04);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 6px;
+    cursor: default;
+    opacity: 0;
+    animation: ds-layerIn 0.5s ease both;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+ 
+    &:last-child { margin-bottom: 0; }
+ 
+    &:nth-child(1) { animation-delay: 0.35s; }
+    &:nth-child(3) { animation-delay: 0.48s; }
+    &:nth-child(5) { animation-delay: 0.61s; }
+    &:nth-child(7) { animation-delay: 0.74s; }
+    &:nth-child(9) { animation-delay: 0.87s; }
+ 
+    &:hover {
+      background: rgba($white, 0.07);
+      border-color: rgba($yellow, 0.3);
+      transform: translateX(3px);
+    }
+ 
+    &--featured {
+      background: rgba($yellow, 0.08);
+      border-color: rgba($yellow, 0.18);
+ 
+      &:hover {
+        background: rgba($yellow, 0.12);
+      }
+ 
+      .ds-arch-layer__icon {
+        background: rgba($yellow, 0.12);
+        border-color: rgba($yellow, 0.25);
+        color: $yellow;
+      }
+ 
+      .ds-arch-layer__title {
+        color: $yellow;
+      }
+    }
+ 
+    &--delivered {
+      background: rgba($themeMidNight, 0.5);
+      border-color: rgba($white, 0.12);
+    }
+  }
+ 
+  .ds-arch-layer__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba($white, 0.06);
+    border: 1px solid rgba($white, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: rgba($white, 0.6);
+  }
+ 
+  .ds-arch-layer__text { flex: 1; min-width: 0; }
+ 
+  .ds-arch-layer__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ 
+    &--green {
+      color: rgba(74, 222, 128, 0.9);
+    }
+  }
+ 
+  .ds-arch-layer__meta {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba($white, 0.42);
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+ 
+  // Connector dots
+  @keyframes ds-dotPulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50%       { opacity: 1;   transform: scale(1.4); }
+  }
+ 
+  .ds-arch-connector {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    position: relative;
+    z-index: 2;
+ 
+    &:nth-child(2) .ds-arch-connector__dot { animation-delay: 0.3s; }
+    &:nth-child(4) .ds-arch-connector__dot { animation-delay: 0.6s; }
+    &:nth-child(6) .ds-arch-connector__dot { animation-delay: 0.9s; }
+  }
+ 
+  .ds-arch-connector__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 auto !important;
+    background: rgba($yellow, 0.4);
+    margin-left: 17px;
+    box-shadow: 0 0 6px rgba($yellow, 0.3);
+    animation: ds-dotPulse 2.4s ease-in-out infinite;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+ 
+    &.is-active {
+      background: $yellow;
+      box-shadow: 0 0 10px rgba($yellow, 0.7);
+    }
+  }
+ 
+  // ════════════════════════════════════════════════════════
+  //  RIGHT PANEL — Principles
+  // ════════════════════════════════════════════════════════
+  .ds-right {
+    padding: 0 0 0 48px;
+  }
+ 
+  .ds-principles-eyebrow {
+    margin-bottom: 32px;
+    align-items: center;
+    font-size: 11px;
+    gap: 8px;
+    font-weight: 700;
+    display: inline-flex;
+  }
+ 
+  .ds-principle-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+ 
+  .ds-principle-card {
+    background: $white;
+    border: 1px solid rgba($themeMidNight, 0.09);
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba($themeMidNight, 0.08), 0 1px 2px rgba($themeMidNight, 0.06);
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+ 
+    // Amber top reveal line
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, $yellow, transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+ 
+    &:hover {
+      box-shadow: 0 10px 24px rgba($themeMidNight, 0.1), 0 4px 8px rgba($themeMidNight, 0.06);
+      border-color: rgba($yellow, 0.2);
+ 
+      &::before {
+        opacity: 1;
+      }
+ 
+      .ds-principle-card__icon {
+        background: rgba($yellow, 0.08);
+        border-color: rgba($yellow, 0.2);
+        color: $darkYellow;
+      }
+ 
+      .ds-proof-tag {
+        background: rgba($yellow, 0.14);
+      }
+    }
+ 
+    // h3 inside card
+    h3 {
+      color: $themeMidNight;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    
+      margin-bottom: 0;
+    }
+ 
+    // p inside card
+    p {
+
+      color: $gray-600;
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+  }
+ 
+  .ds-principle-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+ 
+  .ds-principle-card__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba($themeMidNight, 0.04);
+    border: 1px solid rgba($themeMidNight, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $themeMidNight;
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+ 
+  // Proof tags
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    li {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: $darkYellow;
+      background: rgba($yellow, 0.08);
+      border: 1px solid rgba($yellow, 0.18);
+      border-radius: 4px;
+      padding: 5px 10px;
+      letter-spacing: 0.01em;
+      transition: background 0.15s ease;
+      
+      &::before {
+        content: '→';
+        font-size: 11px;
+      }
+    }
+  }
+ 
+  // ── Responsive ──────────────────────────────────────────
+  @media only screen and (max-width: 1024px) {
+    .ds-inner {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+ 
+    .ds-right {
+      padding: 0;
+    }
+  }
+ 
+  @media only screen and (max-width: 767px) {
+    .ds-left {
+      padding: 36px 28px 40px;
+      min-height: auto;
+    }
+ 
+    .ds-desc {
+      max-width: 100%;
+    }
+  }
+ 
+  // Reduced motion
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .ds-arch-layer,
+    .ds-arch-connector__dot {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

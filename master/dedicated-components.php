@@ -43,6 +43,150 @@
     <h1>Dedicated Componenet</h1>
 
 <!-- new section -->
+
+
+
+
+
+
+<!-- ```````````````````````````````````````````````````````````````````````````````````````````````````` -->
+
+<!-- 
+scss file -- cmp-delivery-pod-benchmarks.scss
+ eyebrow , heading ,  pragraph  
+
+ left cards 
+  -- small cards 3  (coral , blue , vel )  each card has 
+     tag , number , description , meta
+
+
+     right part
+
+      -- bench card 
+          heading 
+          4 stat rows , stat-row-top ( heading and value ) and bar track with bar fill 
+      -- sla card
+       
+          tag 
+          number 
+          heading 
+          paragraph 
+          meta
+
+
+
+
+-->
+
+
+
+
+<section class="delivery-pod-benchmarks padding-t-120 padding-b-120" aria-labelledby="bench-hd">
+  <div class="container">
+
+    <div class="hdr reveal">
+      <div class="eyebrow"><span>Delivery Pod Benchmarks</span></div>
+      <h2 >Numbers we publish. Not headlines we print.</h2>
+      <p>Every benchmark below is measured per project. Methodology available on request. No benchmark appears here without a defined measurement method.</p>
+    </div>
+
+    <div class="body-grid">
+
+      <div class="left-col reveal d1">
+        <div class="sm-card sm-card--coral">
+          <div class="sm-blob"></div>
+          <div class="sm-tag">On-Time Delivery</div>
+          <h3>94%</h3>
+          <p> <strong> Projects delivered on or before the agreed milestone date.</strong></p>
+          <div class="sm-meta">Per project · Q1 2026 · Methodology on request</div>
+        </div>
+        <div class="sm-card sm-card--blue">
+          <div class="sm-blob"></div>
+          <div class="sm-tag">Engineer Matching</div>
+          <h3>48h</h3>
+          <p> <strong>Profiles from our vetted pool sent within 48 hours of agreement.</strong></p>
+          <div class="sm-meta">Contractual SLA · Written in SOW</div>
+        </div>
+        <div class="vel-card">
+          <div class="vel-blob"></div>
+          <div class="vel-tag">Velocity Uplift</div>
+          <h3>2.4×</h3>
+          <p><strong>AI-augmented pods vs traditional dedicated teams on equivalent scope.</strong></p>
+          <p>Internal benchmark · Measured on qualified sprints</p>
+        </div>
+      </div>
+
+      <div class="right-col reveal d2">
+        <div class="bench-card reveal d3">
+          <h3>Where dedicated teams outperform talent marketplace hiring</h3>
+          <div class="stat-row">
+            <div class="stat-row-top">
+              <h3>Sprint-1 meaningful contribution</h3>
+              <span class="stat-row-value val--navy">82% vs 34% marketplace avg</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bf--navy" data-width="82"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-row-top">
+              <h3>Retained engineers at Month 6</h3>
+              <span class="stat-row-value val--amber">91% vs 58% industry average</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bf--amber" data-width="91"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-row-top">
+              <h3>Milestone acceptance on first review</h3>
+              <span class="stat-row-value val--green">88% first-pass acceptance rate</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bf--green" data-width="88"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-row-top">
+              <h3>Same-day risk escalation compliance</h3>
+              <span class="stat-row-value val--coral">100% — contractual obligation</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill bf--coral" data-width="100"></div></div>
+          </div>
+        </div>
+
+        <div class="sla-card reveal d3">
+          <div class="sla-top-rule" aria-hidden="true"></div>
+          <div class="sla-tag"><span>Replacement SLA</span></div>
+          <span class="sla-num"> 10bd </span>
+          <h3>If an engineer isn't working out, a replacement is matched and starting within 10 business days.</h3>
+          <p>Written in every contract. Not a support ticket — a contractual obligation with consequences.</p>
+          <div class="sla-meta">Contract clause · Not a policy</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ```````````````````````````````````````````````````````````````````````````````````````````````````` -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ════════════════════════════════════════
   What a Delivery Pod includes
 ** cmp-deliverypod-includes  css file 
@@ -1093,6 +1237,49 @@
 
 
   <script>
+// `````````````````````````````````````````````````_cmp-delivery-pod-benchmarks-js````````````````````````````
+
+if (document.querySelector('.delivery-pod-benchmarks')) {
+
+  // Animated bars on scroll
+  const barObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.querySelectorAll('.bar-fill').forEach((bar, i) => {
+        const w = bar.dataset.width + '%';
+        bar.style.setProperty('--tw', w);
+        setTimeout(() => { bar.style.width = w; }, i * 130);
+      });
+      barObs.unobserve(e.target);
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.delivery-pod-benchmarks .bench-card')
+    .forEach(el => barObs.observe(el));
+
+  // Scroll reveal
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        revObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.delivery-pod-benchmarks .reveal')
+    .forEach(el => revObs.observe(el));
+
+}
+
+
+
+// `````````````````````````````````````````````````````````````````````````````
+
+
+
+
+    // ````````````````````````````````````````````````````````````````````````````````
 
     (function () {
       'use strict';

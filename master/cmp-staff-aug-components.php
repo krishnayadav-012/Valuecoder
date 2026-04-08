@@ -57,7 +57,7 @@ cmp-team-extension-works style file `````
 
 
 
-<section class="how-team-ext">
+<section class="how-team-ext padding-t-120 padding-b-120">
   <div class="container">
  
     <!-- HEADER -->
@@ -269,7 +269,7 @@ cmp-makes-us-different  style file
 bottom -- three check cards 
 
 // ============================================================ -->
-<section class="what-makes-diff">
+<section class="what-makes-diff padding-t-120 padding-b-120">
   <div class="container">
  
     <!-- HEADER -->
@@ -374,7 +374,7 @@ title and praghraph
 and tags also 
 
 -->
-<section class="emerging-tech" aria-labelledby="tech-hd">
+<section class="emerging-tech padding-t-120 padding-b-120" aria-labelledby="tech-hd">
   <div class="container">
     <!-- HEADER -->
     <div class="emerging-tech__hdr emerging-tech__reveal emerging-tech__reveal--d0">

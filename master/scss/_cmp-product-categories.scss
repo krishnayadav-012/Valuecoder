@@ -1,0 +1,417 @@
+@use "_default" as *;
+
+.product-categories-section {
+  
+  // ── Header ──────────────────────────────────────────────
+  .pcs-header {
+    margin-bottom: 50px;
+ 
+     .eyebrow span{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: $yellow;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 18px;
+
+      &::before, &::after {
+        content: '';
+        width: 16px;
+        height: 1.5px;
+        background: $yellow;
+        opacity: .55;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+    }
+    h2 {
+      color: $themeMidNight;
+      margin-bottom: 15px;
+    }
+ 
+    p {
+      margin: 0 auto;
+      color: $gray-600;
+    }
+  }
+ 
+  // ── Reveal animation ────────────────────────────────────
+  .reveal {
+    transform: translateY(5px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+ 
+    &.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+  }
+ 
+  .d0 { transition-delay: 0s; }
+  .d1 { transition-delay: 0.07s; }
+  .d2 { transition-delay: 0.14s; }
+  .d3 { transition-delay: 0.21s; }
+  .d4 { transition-delay: 0.28s; }
+  .d5 { transition-delay: 0.35s; }
+  .d6 { transition-delay: 0.42s; }
+  .d7 { transition-delay: 0.49s; }
+ 
+  // ── Bento Grid ──────────────────────────────────────────
+  .pcs-bento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+ 
+  // ── Base Card ───────────────────────────────────────────
+  .pcs-card {
+    background: $white;
+    border: 1px solid rgba($themeMidNight, 0.09);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    box-shadow: 0 1px 3px rgba($themeMidNight, 0.08), 0 1px 2px rgba($themeMidNight, 0.06);
+ 
+    // bottom amber reveal line
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $yellow;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.32s ease;
+    }
+ 
+    &:hover {
+      transform: translateY(-4px) scale(1.005);
+      box-shadow: 0 16px 40px rgba($themeMidNight, 0.12), 0 4px 12px rgba($themeMidNight, 0.08);
+      border-color: rgba($yellow, 0.25);
+ 
+      &::after {
+        transform: scaleX(1);
+      }
+ 
+      .pcs-card__icon {
+        border-color: rgba($yellow, 0.35);
+        background: rgba($yellow, 0.06);
+        color: $darkYellow;
+      }
+ 
+      > ul li {
+        border-color: rgba($themeMidNight, 0.2);
+      }
+    }
+ 
+    h3 {
+      
+      font-weight: 700;
+      color: $themeMidNight;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+ 
+    p {
+      color: $gray-600;
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+  }
+ 
+  // ── Category Label ──────────────────────────────────────
+  span {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $darkGray;
+    margin-bottom: 12px;
+    display: block;
+  }
+ 
+  // ── Icon Box ────────────────────────────────────────────
+  .pcs-card__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1.5px solid rgba($themeMidNight, 0.12);
+    background: rgba($themeMidNight, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $themeMidNight;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+    transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+ 
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+ 
+  // ── Separator ───────────────────────────────────────────
+  .pcs-sep {
+    height: 1px;
+    border: none;
+    background: rgba($themeMidNight, 0.09);
+    margin: 14px 0 12px;
+    flex-shrink: 0;
+  }
+ 
+  // ── Pill List (ul > li) ─────────────────────────────────
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+ 
+    li {
+      display: inline-block;
+      padding: 3px 9px;
+      font-size: 10px;
+      font-weight: 600;
+      border: 1px solid rgba($themeMidNight, 0.12);
+      border-radius: 4px;
+      color: $themeMidNight;
+      background: transparent;
+      white-space: nowrap;
+      transition: border-color 0.15s ease, background 0.15s ease;
+ 
+      // override default li::before from tick-icon-list or other lists
+      &::before {
+        display: none !important;
+      }
+    }
+ 
+    // Light variant for featured card right panel
+    &--light li {
+      background: rgba($white, 0.1);
+      border-color: rgba($white, 0.18);
+      color: rgba($white, 0.8);
+    }
+  }
+ 
+  // ── Featured Card ───────────────────────────────────────
+  .pcs-card--featured {
+    grid-column: span 2;
+    background: $themeMidNight;
+    border: 1px solid rgba($white, 0.1);
+    box-shadow: 0 20px 48px rgba($themeMidNight, 0.14), 0 4px 12px rgba($themeMidNight, 0.08);
+ 
+    // Atmospheric overlay
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 70% 70% at 0% 50%, rgba($themeDarkNight, 0.6) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 100% 20%, rgba($yellow, 0.07) 0%, transparent 55%);
+      z-index: 0;
+    }
+ 
+    // Dot texture — overrides base ::after
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image: radial-gradient(circle, rgba($white, 0.02) 1px, transparent 1px);
+      background-size: 22px 22px;
+      height: auto;
+      transform: none;
+      background-color: transparent;
+    }
+ 
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 56px rgba($themeMidNight, 0.2), 0 6px 14px rgba($themeMidNight, 0.1);
+      border-color: rgba($yellow, 0.35);
+ 
+      &::after {
+        transform: none;
+      }
+    }
+ 
+    // Amber top rule
+    .pcs-feat-rule {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 2;
+      background: linear-gradient(90deg, transparent, $yellow 20%, $yellow 80%, transparent);
+      opacity: 0.8;
+    }
+ 
+    > *:not(.pcs-feat-rule) {
+      position: relative;
+      z-index: 1;
+    }
+  }
+ 
+  // ── Featured Inner Layout ────────────────────────────────
+  .pcs-feat-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+ 
+  // Featured Left
+  .pcs-feat-left {
+    .pcs-cat-label {
+      color: rgba($white, 0.65);
+    }
+ 
+    .pcs-card__icon {
+      border-color: rgba($yellow, 0.35);
+      background: rgba($yellow, 0.1);
+      color: $yellow;
+    }
+ 
+    h3 {
+      color: $white;
+      font-size: 17px;
+    }
+ 
+    p {
+      color: rgba($white, 0.7);
+      margin-bottom: 16px;
+    }
+ 
+    .pcs-sep {
+      background: rgba($white, 0.1);
+    }
+ 
+    ul li {
+      background: rgba($yellow, 0.1);
+      border-color: rgba($yellow, 0.25);
+      color: $yellow;
+    }
+  }
+ 
+  // Featured Right Panel
+  .pcs-feat-right {
+    background: rgba($white, 0.06);
+    border: 1px solid rgba($white, 0.1);
+    border-radius: 12px;
+    padding: 18px;
+ 
+    .pcs-feat-right__label {
+      font-size: 10px;
+      font-weight: 700;
+      color: rgba($white, 0.65);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      display: block;
+    }
+ 
+    ul {
+      margin-bottom: 14px;
+
+      li{
+        display: inline-block;
+        padding: 3px 9px;
+        font-size: 10px;
+        font-weight: 600;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 4px;
+        color: #ffffff;
+        background: transparent;
+        white-space: nowrap;
+        transition: border;
+      }
+    }
+ 
+    .pcs-feat-note {
+      font-size: 11px;
+      color: rgba($white, 0.65);
+      line-height: 1.6;
+      font-style: italic;
+      padding-top: 12px;
+      border-top: 1px solid rgba($white, 0.07);
+      margin-bottom: 0;
+    }
+  }
+ 
+  // ── Responsive ──────────────────────────────────────────
+  @media only screen and (max-width: 991px) {
+    .pcs-bento {
+      grid-template-columns: 1fr 1fr;
+    }
+ 
+    .pcs-card--featured {
+      grid-column: span 2;
+    }
+ 
+    .pcs-feat-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+ 
+  @media only screen and (max-width: 767px) {
+    .pcs-header {
+      margin-bottom: 30px;
+    }
+ 
+    .pcs-bento {
+      grid-template-columns: 1fr;
+    }
+ 
+    .pcs-card--featured {
+      grid-column: span 1;
+    }
+ 
+    .pcs-feat-inner {
+      grid-template-columns: 1fr;
+    }
+ 
+    .pcs-card {
+      padding: 20px;
+ 
+      h3 {
+        font-size: 16px;
+      }
+ 
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .pcs-card,
+    .pcs-card::after,
+    .pcs-card__icon {
+      transition: none;
+    }
+ 
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

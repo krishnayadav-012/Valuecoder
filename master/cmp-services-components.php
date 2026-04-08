@@ -252,7 +252,7 @@ What we deliver section
       cards 
       card icon , card tegline , heading , praghraph , tages , link 
 ══════════════════════════════════════ -->
-    <section class="wwd-section" aria-labelledby="wwd-hd">
+    <section class="wwd-section padding-t-120 padding-b-120" aria-labelledby="wwd-hd">
       <div class="container">
 
         <!-- Header -->
@@ -475,6 +475,9 @@ What we deliver section
       </div><!-- /container -->
     </section>
 
+
+
+
     <!-- ```````````````````````````````````````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
     <!-- ══════════════════════════════════════
 Types of services section 
@@ -487,7 +490,7 @@ Types of services section
      2. left part  ineer accordion has praghraph ,tages and link 
      3 right part  cta box eyebrow ,heading ,  inner list and button , prahgraph    
 ══════════════════════════════════════ -->
-    <section class="types-of-services-section" aria-labelledby="tos-hd">
+    <section class="types-of-services-section padding-t-120 padding-b-120" aria-labelledby="tos-hd">
       <div class="container">
 
         <!-- ── HEADER ── -->
@@ -1122,6 +1125,10 @@ Types of services section
     </section>
 
     <!-- ```````````````````````````````````````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
+
+
+
+
     <!-- =====================================================
      COMPLIANCE & SECURITY SECTION
      #services-components.scsse 
@@ -1140,7 +1147,7 @@ Types of services section
      All child classes prefixed: 
      JS: fully IIFE-scoped, zero global footprint
      ===================================================== -->
-    <section class="vc-cs" aria-labelledby="vc-cs-title">
+    <section class="vc-cs  padding-t-120 padding-b-120" aria-labelledby="vc-cs-title">
       <div class="container">
 
         <!-- HEADER -->
