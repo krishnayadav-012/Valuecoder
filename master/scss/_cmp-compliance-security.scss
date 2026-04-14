@@ -8,14 +8,9 @@
    ===================================================== */
  
 .vc-cs {
-  font-size: 16px;          /* $font-16 */
-  font-weight: 500;         /* $normal-font */
-  line-height: 28px;
   background: #02091F;      /* deep navy — darkest navy in palette */
   position: relative;
   overflow: hidden;
-  padding: 96px 0 108px;
-  -webkit-font-smoothing: antialiased;
 }
  
 /* Atmospheric radial overlays */
@@ -41,15 +36,7 @@
   background-image: radial-gradient(circle, rgba(255,255,255,.018) 1px, transparent 1px);
   background-size: 24px 24px;
 }
- 
-/* ── Inner wrapper ── */
-.vc-cs__wrap {
-  max-width: 1080px;
-  margin-inline: auto;
-  padding-inline: 24px;
-  position: relative;
-  z-index: 1;
-}
+
  
 /* =====================================================
    HEADER
@@ -100,7 +87,7 @@
 
 h2 {
   
-  color: #FFFFFF;           /* $white */
+  color: #FFFFFF;      
   line-height: 1.1;
   letter-spacing: -.025em;
   margin-inline: auto;
@@ -227,16 +214,16 @@ p {
 .vc-cs__acc-text {
   flex: 1;
   min-width: 0;
-}
- 
-h3 {
-  margin-bottom: 0;
-  font-weight: 700;         /* $bold */
+  
+  h3 {
+    margin-bottom: 0;
+    font-weight: 700;        
   color: #FFFFFF;
   line-height: 1.3;
   display: block;
 }
- 
+
+}
 /* ── Chevron ── */
 .vc-cs__acc-chevron {
   width: 18px;
@@ -440,22 +427,20 @@ p {
  
 @media (max-width: 767px) {
   /* matches default SCSS @media (max-width: 767px) padding scale */
+
   .vc-cs {
-    padding: 64px 0 76px;
-  }
+  
+
   .vc-cs__hdr {
     margin-bottom: 48px;
   }
-  h2 {
-    font-size: 28px;    /* h2 mobile: 28px in default SCSS */
-    line-height: 37px;
-  }
+ 
   .vc-cs__subtitle {
-    font-size: 14px;    /* p mobile in default SCSS */
+    font-size: 14px;    
     line-height: 24px;
   }
   .vc-cs__badge-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
   .vc-cs__badge-card {
@@ -478,6 +463,7 @@ p {
   .vc-cs__acc-content {
     padding: 0 16px 18px 16px;
   }
+    }
 }
  
 @media (prefers-reduced-motion: reduce) {
