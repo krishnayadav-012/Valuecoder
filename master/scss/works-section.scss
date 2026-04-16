@@ -1,0 +1,128 @@
+@use "_default" as *;
+
+.software-product-dev-section {
+
+  background: $white;
+
+ 
+  // ── Header
+  .hdr {
+    text-align: center;
+
+    margin: 0 auto 70px;
+
+    .eyebrow span{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: $yellow;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+
+      
+    }
+
+    h2 {
+     
+      color: $navy-blue;
+      line-height: 1.1;
+      letter-spacing: -.025em;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: $gray-600;
+      line-height: 1.75;
+    }
+  }
+
+  // ── 3×2 grid
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+  
+
+  }
+
+  // ── Card
+  .card {
+    background: $white;
+    border: 1px solid rgba(5, 22, 77, .09);
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+box-shadow: 0px 4px 14px 3px #0000000F;
+
+    position: relative;
+    overflow: hidden;
+    transition: transform 150ms ease, box-shadow 150ms, border-color 150ms;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(5, 22, 77, .1);
+      border-color: rgba(5, 22, 77, .14);
+    }
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: $yellow;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform .32s ease;
+    }
+    &:hover::after { transform: scaleX(1); }
+
+   .tags{
+    background-color: #CC8B001A;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: fit-content;
+    span{
+      color: #CC8B00;
+      font-weight: 600;
+      padding: 5px 10px;
+    }
+  }
+  
+  h3 {
+      border-top: 1px solid #E5E7EB;
+      color: $navy-blue;
+      padding-top: 20px;
+      line-height: 1.25;
+      letter-spacing: -.01em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $gray-600;
+      line-height: 1.7;
+    }
+  }
+
+  // ── Responsive
+  @media only screen and (max-width: 860px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media only screen and (max-width: 520px) {
+    padding: 64px 0 80px;
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+   .card, .card::after { transition: none; }
+    
+  }
+}
