@@ -302,7 +302,6 @@
                     <h2>Built for Teams Stuck <br><em>After AI Prototypes</em></h2>
                     <p>If your AI system works in demos but breaks in production — this is for you.</p>
                     
-
                     <ul>
                         <li>Stuck between prototype and production</li>
                         <li>Stuck between prototype and production</li>
