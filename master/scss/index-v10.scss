@@ -1,4 +1,7 @@
+@use "core/variables" as *;
 @use "_default" as *;
+@use "_intent-popup";
+
 @use "_menu-v8";
 @use "award-section-v10";
 @use "delivery-problems-v10";
@@ -13,26 +16,28 @@
 @use "build-team";
 @use "engineering-stacks";
 @use "feedback-section";
+@use "_testimonials";
 @use "glider";
 @use "footer-section";
 @use "_faqs-v10";
 @use "_industries-v10";
 @use "_footer-form";
 @use "_home-award";
-@use "_intent-popup";
+
 
 
 
 
 // `````````cta button````````````
 .hero-section .master-btn{
-    margin-top: 30px;
+margin-top: 30px;
 
-    margin-bottom: 70px;}
+margin-bottom: 70px;}
 
-    .master-btn{text-decoration: none;     display: inline-flex;
-    }
-    .master-btn .btn-circle:hover{text-decoration: none !important;}
+.master-btn{text-decoration: none;     display: inline-flex;
+}
+.master-btn .btn-circle:hover{text-decoration: none !important;}
+.logo-size .dark{display: none !important;}
 .master-btn .btn-circle {
   display: inline-flex;
   align-items: center;
@@ -176,7 +181,7 @@
     position: relative;
     display: flex;
     display: -webkit-flex;
-    background: url(../icons/Banner-img.png);
+    background: url(../images/home-v10/hero-banner.webp);
     background-size: cover;
 
     &::before {

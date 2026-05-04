@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 .service-section {
   .flex-1,
   .flex-1,
@@ -100,7 +101,7 @@
       position: absolute;
       height: 11px;
       margin-left: 8px;
-      top: 6px;
+      top: 11px;
       transition: all 0.3s ease-in-out;
     }
 

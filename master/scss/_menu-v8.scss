@@ -1,4 +1,4 @@
-@use 'default' as *;
+@use "core/variables" as *;
 
 :root { 
   --menuhover: #FFAD00;
@@ -18,9 +18,9 @@
 
 
 
-.logo-size .dark{
-    display: none !important;
-}
+// .logo-size .dark{
+//     display: none !important;
+// }
 .master-header.header-bg.sc-up .logo-size .dark{
 display: block !important;
 }
@@ -620,7 +620,7 @@ ease-in-out;
     width: auto;
     transition: opacity 150ms;
   }
-
+  .site-logo-img.bg-logo{display: none;}
 }
 
 
@@ -1118,7 +1118,7 @@ button.tab-btn-base {
 
 .get-connect a:hover{
   background: #05164d;
-  color: #ffffff;
+  color: #05164D;
 }
 // .master-header .get-connect a:hover{
 //   background: unset;

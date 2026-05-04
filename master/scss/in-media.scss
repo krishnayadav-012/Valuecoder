@@ -1,10 +1,12 @@
-@import "_default";
-@import "_glider";
-@import "_cta-structure";
-@import "_menu-v3.12";
-@import "_ctabtn-structure";
-@import "_testimonials";
-@import "_footer-form";
+@use "_default" as *;
+@use "_glider" as *;
+@use "_cta-structure" as *;
+@use "_menu-v8" as *;
+@use "_footer-section" as *;
+@use "_ctabtn-structure" as *;
+@use "feedback-section";
+@use "_testimonials" as *;
+@use "_footer-form" as *;
 
 .for-media-banner-section {
   padding: 100px 0 80px;

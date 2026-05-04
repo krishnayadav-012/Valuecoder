@@ -1,5 +1,4 @@
-@use "_default" as *;
-
+@use "core/variables" as *;
 .second-level-section {
   .header-form {
     flex-basis: 38%;
@@ -460,4 +459,14 @@
       }
     }
   }
+}
+
+@media only screen and (max-width: 540px){
+  .second-level-section{padding: 100px 0 80px !important;}
+  .second-level-section .form-right-box .form-text-cont{margin-top: 10px !important;}
+  .second-level-section .left-box .for-client-logo-box{margin-bottom: 0 !important;}
+  .second-level-section .form-right-box .head{padding: 20px 15px;}
+  .second-level-section .form-right-box .form-text-cont label,
+  .second-level-section .form-right-box .head h3{margin-bottom: 5px !important;}
+  .second-level-section .form-right-box .button-section{margin-top: 20px !important;}
 }

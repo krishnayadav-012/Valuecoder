@@ -1,13 +1,14 @@
-@import "_default";
-@import "_intent-popup";
-@import "_client-logo";
-@import "_glider";
-@import "_calc-tab";
-@import "_testimonials";
-@import "_ctabtn-structure";
-@import "_success-slider";
-@import "_menu-v3.12";
-@import "_footer-form";
+@use "_default" as *;
+@use "_intent-popup" as *;
+@use "_client-logo" as *;
+@use "_glider" as *;
+@use "_calc-tab" as *;
+@use "_testimonials" as *;
+@use "_ctabtn-structure" as *;
+@use "_success-slider" as *;
+@use "_menu-v8" as *;
+@use "_footer-section" as *;
+@use "_footer-form" as *;
 
 .hero-section {
   padding: 145px 0 70px;
@@ -322,7 +323,3 @@
 }
 
 //Not Required
-
-
-
-

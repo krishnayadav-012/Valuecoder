@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 .three-column-icon-section {
   .top-content {
     .flex-2:first-child {
@@ -47,9 +48,9 @@
         border-image-slice: 1;
         border-image-source: linear-gradient(to right, #ffcf66, #e19b01);
         border-top: 4px solid;
-        // a{color:$gray-600;
-        // &:hover{text-decoration: underline;}
-        // }
+        a{color:$gray-600;
+        &:hover{text-decoration: underline;}
+        }
       }
     }
     .box-3 {

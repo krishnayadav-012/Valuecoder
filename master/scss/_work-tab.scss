@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 .tabs-section {
   background: linear-gradient(180deg, #fff8ea 0%, #fff8ea 100%);
 
@@ -289,7 +290,7 @@
           flex-basis: 32%;
             display: flex;
             align-items: center;
-            background: #FFF6E3;
+            background: $panel-warm;
             border: 2px solid transparent;
             border-radius: 10px;
             color: #05164d;

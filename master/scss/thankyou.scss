@@ -1,9 +1,10 @@
-@import "_default";
-@import "_cta-structure";
-@import "_ctabtn-structure";
-@import "_menu-v3.12";
-body{background: linear-gradient(180deg, #211f47 0%, #05164d 100%);
+@use "_default" as *;
+@use "_cta-structure" as *;
+@use "_ctabtn-structure" as *;
+@use "_menu-v8" as *;
+@use "_footer-section" as *;
 
+body{background: linear-gradient(180deg, #211f47 0%, #05164d 100%);
   color: #BDB7B7;}
   .bg-voilet {
     background-color: #2B294D;

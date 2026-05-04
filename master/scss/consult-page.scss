@@ -1,6 +1,7 @@
-@import "_default";
-@import "_menu-v3.12";
-@import "_ctabtn-structure";
+@use "_default" as *;
+@use "_footer-section" as *;
+@use "_ctabtn-structure" as *;
+@use "_menu-v8" as *;
 
 .header-two {
   border-bottom: 1px solid #1c2b5e;

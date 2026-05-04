@@ -1,5 +1,5 @@
 
-@use "_default" as *;
+@use "core/variables" as *;
 
 
 .delivery-discipline {
@@ -91,6 +91,7 @@
                 height: 100%;
             }
             video{
+              
               width: 100%;
               height: 100%;
               object-fit: cover;

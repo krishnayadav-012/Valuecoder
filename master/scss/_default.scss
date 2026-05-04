@@ -1,55 +1,9 @@
-$darkYellow: #FFAD00;
-$neonCarrot: #070707;
-$green: #FFAD00;
-$greenclr: #60b741;
-$yellow: #FFAD00;
-$themeMidNight: #05164d;
-$themeDarkNight: #05164d;
-$dodgerBlue: #2684ff;
-$monaLisa: #fe8686;
-$jacarta: #373660;
-$gray: #9b9b9b;
-$darkGray: #9f9f9f;
-$suvaGray: #8e8c8c;
-$white: #ffffff;
-$black: #000;
-$bg-blue: #006eff;
-$bg-pink: #ff6b6b;
-$bg-orange: #ff8900;
-$darkred: #8b0000;
-$bgVoilet: #05164d;
-$bgDarkBlue: #17152f;
-$whiteLight: #cecece;
-$headDay: #212121;
-$contentDay: #656565;
-$bgWhiteGray: #f6f6f6;
-$darkWhiteGray: #e5e5e5;
-$bglight: #f8f8f8;
-$greyBannerfont: #bdb7b7;
-$natural-grey:#4B5563;
-
-$darkblack: #111827;
-$font-18: 18px;
-$font-16: 16px;
-$normal-font: 500;
-$medium-font: 600;
-$semi-bold: bold;
-$bold: bold;
-
-$navy-blue: #05164d;
-$gradient: linear-gradient(90deg, #05164d 0%, #0c33b3 100%);
-$gray-900: #110302;
-$gray-600: #4B5563;
-$gray-500: #6B7280;
-$gray-50: #F9FAFB;
-
+@use "core/variables" as *;
 @media only screen and (min-width: 768px) {
   @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2"),
-      url("../fonts/PlusJakartaSans-VariableFont_wght.woff") format("woff"),
-      url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
-    font-weight: normal;
+    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
   }
@@ -106,14 +60,14 @@ h1 {
   font-size: 60px;
   line-height: 1.3;
   color: $yellow;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 
 h2 {
   font-size: 42px;
   line-height: 60px;
-  font-weight: bold;
+  font-weight: 700;
   color: $gray-900;
   margin: 0 0 15px;
 }
@@ -121,7 +75,7 @@ h2 {
 h3 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: $gray-900;
   margin: 0 0 15px;
 }
@@ -129,13 +83,19 @@ h3 {
 h4 {
   font-size: 18px;
   color: $gray-900;
- font-weight: bold;
+ font-weight: 600;
 }
 
 
 
 h6 {
   font-size: 18px;
+}
+
+.master-menu-text, .nav-link, h1, h2, h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); /* Subtle sub-pixel fix */
 }
 
 p {
@@ -955,6 +915,7 @@ textarea {
     padding: 20px 0;
 
     p {
+      //font-size: 14px;
       margin: 0 0 10px;
     }
 
@@ -962,8 +923,10 @@ textarea {
     ol {
       margin: 20px 0;
       padding-left: 0;
+      //font-size: 14px;
       li {
-        margin: 10px 0 0;
+        //font-size: 14px;
+        margin: 05px 0 0;
         position: relative;
         padding-left: 18px;
 
@@ -1350,7 +1313,8 @@ textarea {
     margin: 0 0 10px;
   }
   p {
-    font-size: $font-18;
+    font-size: $font-16;
+    font-weight: 500;
   }
 
   &.b-100 {

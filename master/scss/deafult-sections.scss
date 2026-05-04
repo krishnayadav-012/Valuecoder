@@ -1,5 +1,6 @@
-@import "_default";
-@import "_intent-popup";
-@import "_menu-v3.12";
-
-
+@use "_default" as *;
+@use "_intent-popup" as *;
+@use "_menu-v8" as *;
+@use "_new-version-changes" as *;
+@use "_ctabtn-structure" as *;
+@use "_footer-section" as *;

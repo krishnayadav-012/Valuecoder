@@ -1,5 +1,6 @@
+@use "core/variables" as *;
 .animated-tech {
-  background:url(../images/home-images/bg-image.png) 0 0 repeat;
+  //background:url(../images/home-images/bg-image.png) 0 0 repeat;
   position: relative;
   width: 100%;
   height: 100%;
@@ -8,11 +9,11 @@
 
   .top-section {
     h2 {
-      color: $white;
+      color: #110302;
     }
 
     p {
-      color: #bdb7b7;
+      color: #4B5563;
     }
   }
 
@@ -47,7 +48,7 @@
           font-size: 22px;
           font-weight: 500;
           line-height: 30px;
-          color: $white;
+          color: #110302;
           text-align: center;
           .tech-img {
             width: 110px;
@@ -68,7 +69,7 @@
             opacity: 1;
           }
           a {
-            color: $white;
+            color: #110302;
             &:hover {
               color: $yellow;
               opacity: 1;
@@ -85,12 +86,15 @@
 }
 
 .explore-btn {
-  color: $white !important;
-  &:after {
-    background: url(../images/home-images/white-arrow.svg) no-repeat center !important;
-  }
+  color: #05164d !important;
+  text-decoration: none;
+  // &:after {
+  //   background: url(../images/home-images/white-arrow.svg) no-repeat center !important;
+  // }
 }
-
+.explore-btn:hover {
+  text-decoration: underline;
+}
 //*Animation Key Frames
 
 @keyframes slide_to_left {

@@ -1,4 +1,4 @@
-@use "_default" as *;
+@use "core/variables" as *;
 
 // ── Non-color tokens (no SCSS color vars for these) ──────────
 
@@ -14,26 +14,26 @@
 .wwd-section {
 
   position: relative;
-  padding: 96px 0 108px;
+  //padding: 96px 0 108px;
 
   > * { position: relative; z-index: 1; }
 
 
   // ── Scroll Reveal ──────────────────────────────────────────
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  // .reveal {
+  //   opacity: 0;
+  //   transform: translateY(24px);
+  //   transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 
-    &.is-visible { opacity: 1; transform: translateY(0); }
-  }
+  //   &.is-visible { opacity: 1; transform: translateY(0); }
+  // }
 
-  .reveal-delay-1 { transition-delay: 0.08s; }
-  .reveal-delay-2 { transition-delay: 0.16s; }
-  .reveal-delay-3 { transition-delay: 0.24s; }
-  .reveal-delay-4 { transition-delay: 0.12s; }
-  .reveal-delay-5 { transition-delay: 0.20s; }
-  .reveal-delay-6 { transition-delay: 0.28s; }
+  // .reveal-delay-1 { transition-delay: 0.08s; }
+  // .reveal-delay-2 { transition-delay: 0.16s; }
+  // .reveal-delay-3 { transition-delay: 0.24s; }
+  // .reveal-delay-4 { transition-delay: 0.12s; }
+  // .reveal-delay-5 { transition-delay: 0.20s; }
+  // .reveal-delay-6 { transition-delay: 0.28s; }
 
   // ── Header ─────────────────────────────────────────────────
   .hdr {
@@ -183,6 +183,24 @@
         &::after { transform: none; }
       }
     }
+    .card-content ul{
+      margin-top: 10px;
+      li{
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        font-size: 15px;
+        &:before{
+          content: "";
+          background: url(../images/check.png) no-repeat center;
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+      }
+    }
   }
 
   // ── Icon ───────────────────────────────────────────────────
@@ -267,14 +285,14 @@
   .card--feat .card__div            { background: rgba(255, 255, 255, 0.08); }
 
   // ── Tech Pills ─────────────────────────────────────────────
-  ul {
+  ul.tag-list {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 20px;
   }
 
-  li {
+  ul.tag-list li {
     display: inline-block;
     padding: 4px 10px;
     font-size: 0.8125rem;

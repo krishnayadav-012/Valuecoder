@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 //
 // Variables
 //
@@ -42,7 +43,7 @@ $bold: 700;
 $navy-blue: #05164d;
 $gradient: linear-gradient(90deg, #05164d 0%, #0c33b3 100%);
 
-@import "_footer-section";
+@use "_footer-section" as *;
 
 @media only screen and (min-width: 768px) {
   @font-face {

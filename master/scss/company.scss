@@ -1,15 +1,16 @@
-@import "_default";
-@import "_glider";
-@import "_client-logo";
-@import "_glider";
-@import "_counter-column-section";
-@import "_award-section";
-@import "_three-column";
-@import "guide-topic";
-@import "_menu-v3.12";
-@import "_cta-structure";
-@import "_ctabtn-structure";
-@import "_footer-form";
+@use "_default" as *;
+@use "_glider" as *;
+@use "_client-logo" as *;
+@use "_glider" as *;
+@use "_counter-column-section" as *;
+@use "_award-section" as *;
+@use "_three-column" as *;
+@use "guide-topic" as *;
+@use "_menu-v8" as *;
+@use "_footer-section" as *;
+@use "_cta-structure" as *;
+@use "_ctabtn-structure" as *;
+@use "_footer-form" as *;
 
 .hero-section {
   background: $themeMidNight;

@@ -1,33 +1,47 @@
+@use "core/variables" as *;
+
 @use "_default" as *;
-@use "_header-form-white";
-@use "_accordion";
-@use "_client-logo";
-@use "_glider";
-@use "_three-column-section";
-@use "_work-tab";
-@use "_developer-costing";
-@use "_why-choose-us";
-@use "_code-quality";
-@use "_counter-column-section";
-@use "_award-section";
-@use "_success-slider";
-@use "_ctabtn-structure";
-@use "_new-version-changes";
-@use "_hire-process";
-@use "_software-costing";
-@use "_guide-topic";
-@use "_case-studies";
-@use "_tech-stack-v2";
-@use "_tech-stacks";
-@use "_menu-v3.12";
-@use "_intent-popup";
-@use "_testimonials";
-@use "_footer-form";
-@use "trusted-badge";
+@use "_menu-v8";
+//@use "_header-form-white" as *;
+//@use "_accordion" as *;
+@use "_client-logo" as *;
+@use "_glider" as *;
+@use "_three-column-section" as *;
+@use "_work-tab" as *;
+//@use "_developer-costing" as *; //SCSS Removed CWV Optimisation
+@use "_why-choose-us" as *;
+@use "_code-quality" as *;
+@use "_counter-column-section" as *;
+@use "_award-section" as *;
+//@use "_success-slider" as *;  //SCSS Removed CWV Optimisation
+@use "_ctabtn-structure" as *;
+@use "_new-version-changes" as *;
+@use "_hire-process" as *;
+//@use "_software-costing" as *;
+//@use "_guide-topic" as *;
+//@use "_case-studies" as *;
+//@use "_tech-stack-v2" as *;
+//@use "_tech-stacks" as *;
+
+@use "_intent-popup" as *;
+@use "feedback-section";
+@use "_testimonials" as *;
+@use "_footer-form" as *;
+@use "_footer-section" as *;
+
+
+//Importing components for Hire page
+// @use "_cmp_app_build" as *;
+// @use "_comp-pain-sec" as *;
+// @use "_comp-roadmap" as *;
+// @use "_comp-production-ready" as *;
+
+//@use "_comp-use-cases" as *; //Moved inside Sections folder as per new structure
+//@use "_comp-evaluate-sec" as *; //Moved inside Sections folder as per new structure
 
 
 .second-level-section {
-  background-color: #1d1c39;
+  background-color: #05164D;
   padding: 120px 0 30px;
   min-height: initial;
   background-position: top center;
@@ -156,7 +170,7 @@
     .title {
       font-size: 17px;
       font-weight: 600;
-      background: #f7e7c4;
+      background: $panel-warm;
        color: $gray-900;
       .sub-title {
         font-size: 14px;
@@ -950,7 +964,7 @@
 
 @media only screen and (max-width: 991px) {
   .second-level-section {
-    background-color: #1d1c39;
+    background-color: #05164D;
     background-size: 0;
     padding: 120px 0 80px;
     min-height: initial;

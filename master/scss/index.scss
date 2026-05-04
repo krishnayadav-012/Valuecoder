@@ -1,20 +1,21 @@
-@import "_default";
-@import "_intent-popup";
-@import "_counter-award";
-@import "_work-tab";
-@import "_scroll-section";
-@import "_button-section";
-@import "_it-initiative";
-@import "_glider";
-@import "_solution-slider";
-@import "_excellence";
-@import "_indstries-slider-section";
-@import "_home-techstack";
-@import "_success-slider";
-@import "_latest-insight";
-@import "_client-testimonials";
-@import "_menu-v3.12";
-@import "_footer-form";
+@use "_default" as *;
+@use "_intent-popup" as *;
+@use "_counter-award" as *;
+@use "_work-tab" as *;
+@use "_scroll-section" as *;
+@use "_button-section" as *;
+@use "_it-initiative" as *;
+@use "_glider" as *;
+@use "_solution-slider" as *;
+@use "_excellence" as *;
+@use "_indstries-slider-section" as *;
+@use "_home-techstack" as *;
+@use "_success-slider" as *;
+@use "_latest-insight" as *;
+@use "_client-testimonials" as *;
+@use "_menu-v8" as *;
+@use "_footer-form" as *;
+@use "_footer-section" as *;
 
 .hero-section {
   padding: 145px 0 70px;

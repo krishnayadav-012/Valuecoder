@@ -1,4 +1,4 @@
-@use "_default" as *;
+@use "core/variables" as *;
 
 /* ════════════════════════════
    SECTION SCOPE
@@ -162,7 +162,7 @@
 .what-they-build .card-grid .card > ul li {
   display: flex;
   width: 100%;
-    align-items: center;
+    align-items: start;
     gap: 9px;
     line-height: 2;
 }
@@ -174,7 +174,7 @@
   border-radius: 50%;
   background: $yellow;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 13px;
 }
  
 /* Client types */

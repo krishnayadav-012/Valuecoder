@@ -1,19 +1,20 @@
+@use "core/variables" as *;
 .it-services {
-  background: linear-gradient(180deg, #fff8ea 0%, #fff8ea 100%);
-
+  //background: linear-gradient(180deg, #fff8ea 0%, #fff8ea 100%);
+  background: $panel-warm;
   .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
   .service-card {
-    background-color: #fff5e6;
+    background-color: #EFEDE8;
     padding: 24px;
     display: flex;
     align-items: flex-start;
     gap: 15px;
     transition: transform 0.3s ease;
-    border-bottom: 3px solid #ffdc94;
+    //border-bottom: 3px solid #ffdc94;
 
     &:first-child {
       border-radius: 8px 0 0 8px;
@@ -23,19 +24,19 @@
     }
 
     &:nth-child(odd) {
-      background: #ffe8b7;
+      background: #ffffff;
     }
     &:nth-child(5) {
-      background: #fff5e6;
+      background: #EFEDE8;
     }
     &:nth-child(6) {
-      background: #ffe8b7;
+      background: #ffffff;
     }
     &:nth-child(7) {
-      background: #fff5e6;
+      background: #EFEDE8;
     }
     &:nth-child(8) {
-      background: #ffe8b7;
+      background: #ffffff;
     }
 
     &:nth-child(n + 5):nth-child(-n + 8),
@@ -86,27 +87,27 @@
       grid-template-columns: repeat(2, 1fr);
       .service-card {
         &:nth-child(3) {
-          background: #fff5e6;
+          background: #EFEDE8;
         }
         &:nth-child(4) {
-          background: #ffe8b7;
+          background: #ffffff;
         }
         &:nth-child(5) {
-          background: #ffe8b7;
+          background: #ffffff;
         }
         &:nth-child(6) {
-          background: #fff5e6;
+          background: #EFEDE8;
         }
         &:nth-child(7) {
-          background: #fff5e6;
+          background: #EFEDE8;
         }
         &:nth-child(8) {
-          background: #ffe8b7;
+          background: #ffffff;
         }
-        &:nth-child(5),
-        &:nth-child(6) {
-          border-bottom: 3px solid #ffdc94;
-        }
+        // &:nth-child(5),
+        // &:nth-child(6) {
+        //   border-bottom: 3px solid #ffdc94;
+        // }
       }
     }
   }
@@ -119,10 +120,10 @@
 
       .service-card {
         &:nth-child(odd) {
-          background: #ffe8b7;
+          background: #ffffff;
         }
         &:nth-child(even) {
-          background: #fff5e6;
+          background: #EFEDE8;
         }
         .service-content {
           h3 {

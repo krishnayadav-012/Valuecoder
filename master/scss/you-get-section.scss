@@ -1,5 +1,5 @@
 
-@use "_default" as *;
+@use "core/variables" as *;
 
 .what-you-get {
     background: $bgWhiteGray;
@@ -69,6 +69,12 @@
             font-weight: 600;
             margin-bottom: 12px;
             line-height: 1.4;
+            a{
+                color: #101828;
+                &:hover{
+                    color:#4B5563;
+                }
+            }
         }
 
         p {

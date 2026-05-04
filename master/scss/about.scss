@@ -1,10 +1,12 @@
-@import "_default";
-@import "_glider";
-@import "guide-topic";
-@import "_menu-v3.12";
-@import "_cta-structure";
-@import "_ctabtn-structure";
-@import "_footer-form";
+@use "_default" as *;
+@use "_default" as *;
+@use "_glider" as *;
+@use "guide-topic" as *;
+@use "_menu-v8" as *;
+@use "_cta-structure" as *;
+@use "_ctabtn-structure" as *;
+@use "_footer-form" as *;
+@use "_footer-section" as *;
 
 .hero-section {
   background: #1D1C39;

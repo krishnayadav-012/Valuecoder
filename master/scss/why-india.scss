@@ -1,12 +1,13 @@
-@use "_default";
-@use "_three-column";
-@use "_accordion";
-@use "_counter-column-section";
-@use "_award-section";
-@use "_cta-structure";
-@use "_ctabtn-structure";
-@use "_menu-v3.12";
-@use "_footer-form";
+@use "_default" as *;
+@use "_three-column" as *;
+@use "_accordion" as *;
+@use "_counter-column-section" as *;
+@use "_award-section" as *;
+@use "_cta-structure" as *;
+@use "_ctabtn-structure" as *;
+@use "_menu-v8" as *;
+@use "_footer-form" as *;
+@use "_footer-section" as *;
 
 .hero-section {
   background-color: $themeMidNight;

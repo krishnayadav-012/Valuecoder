@@ -1,12 +1,12 @@
-@use "_default" as *;
+@use "core/variables" as *;
 
 .contact-us-section {
-    background: linear-gradient(to right, #F3F4F6 40%, #fff 30%) !important;
+    background: linear-gradient(to right, #F7F5F0 40%, #fff 30%) !important;
 
 }
 @media screen and (max-width:992px) {
     .contact-us-section{
-        background:linear-gradient(to bottom, #F3F4F6 40%, #fff 30%) !important;
+        background:linear-gradient(to bottom, #F7F5F0 40%, #fff 30%) !important;
     }
 }
 
@@ -117,7 +117,7 @@
               font-size: 14px;
               margin: 5px 0 0;
               line-height: 24px;
-              color: #929292;
+              color: #4B5563;
               font-weight: 400;
             }
           }

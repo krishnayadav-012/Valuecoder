@@ -1,21 +1,23 @@
-@import "_default";
-@import "_accordion";
-@import "_glider";
-@import "_global-counter";
-@import "_client-logo";
-@import "_case-studies";
-@import "_guide-topic";
-@import "_tech-stack-v2";
-@import "_tech-stacks";
-@import "_three-column";
-@import "_menu-v3.12";
-@import "_industries-columns";
-@import "_hiring-models";
-@import "_footer-form";
-@import "_cta-structure";
-@import "_ctabtn-structure";
-@import "_testimonials";
-@import "_header-form";
+@use "_default" as *;
+@use "_accordion" as *;
+@use "_glider" as *;
+@use "_global-counter" as *;
+@use "_client-logo" as *;
+@use "_case-studies" as *;
+@use "_guide-topic" as *;
+@use "_tech-stack-v2" as *;
+@use "_tech-stacks" as *;
+@use "_three-column" as *;
+@use "_menu-v8" as *;
+@use "_industries-columns" as *;
+@use "_hiring-models" as *;
+@use "_footer-form" as *;
+@use "_cta-structure" as *;
+@use "_ctabtn-structure" as *;
+@use "feedback-section";
+@use "_testimonials" as *;
+@use "_header-form" as *;
+@use "_footer-section" as *;
 
 .hero-section {
   padding: 117px 0 80px;
@@ -603,5 +605,3 @@
     }
   }
 }
-
-

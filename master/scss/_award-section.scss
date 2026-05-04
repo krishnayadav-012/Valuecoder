@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 .client-img-section {
   .left-box {
     padding-right: 60px;
@@ -83,7 +84,7 @@
                 vertical-align: middle;
               }
               &:hover {
-                // color: $yellow;
+                color: $yellow;
               }
             }
           }

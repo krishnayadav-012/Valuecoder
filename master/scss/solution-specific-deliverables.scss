@@ -1,7 +1,4 @@
-@use "_default" as *;
-
-
-
+@use "core/variables" as *;
  
 // ─── Delivery Section ──────────────────────────────────────────────
 .delivery-section-new {
@@ -105,6 +102,100 @@
     
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @media screen and (max-width:767px) {
+   grid-template-columns: repeat(2, 1fr);
+      
+    
+    }
+    @media screen and (max-width:520px) {
+   grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    .card {
+    background: #05164D;
+    border: 1px solid rgba(5, 22, 77, 0.09);
+    border-radius: 16px;
+    padding: 30px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0px 4px 14px 3px #0000000F;
+
+    position: relative;
+    overflow: hidden;
+    transition: transform 150ms ease, box-shadow 150ms, border-color 150ms;
+
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //      top: -116px;
+    // right: -158px;
+    //   width: 522px;
+    //   height: 350px;
+    //   background: url(../images/section-added-img/round-elips.png);
+    //   background-repeat: no-repeat;
+    //   background-position: left center;
+    // }
+          .tags {
+          background-color: #FFAD0026;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          width: fit-content;
+          span{
+            color: #CC8B00;
+            padding: 5px 10px;
+          }
+      }
+        h3 {
+       
+        color: #FFFFFF;
+    
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+        margin-bottom: 15px;
+        a{
+          color: #FFFFFF;
+        }
+    }
+    p{      
+    color: #D1D5DC;
+    line-height: 1.7;
+    a{
+          color: #D1D5DC;
+        }
+    }        
+}
+}
+}
+
+.delivery-section-new.card-dl{
+  ul{
+      margin-top: 10px;
+      li{
+        color: #D1D5DC;
+        position: relative;
+        padding-left: 25px;
+        a{
+          color: #D1D5DC;
+        }
+        &::before{
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 15px;
+        height: 15px;
+        left: 0px;
+        background: url(../images/index-v10/white-check-round.svg);
+      }
+      }
+    }
+}
+.delivery-section-new.list-li{
   ul{
     display: flex;
     margin-top: 60px;
@@ -126,7 +217,7 @@
         content: '';
         position: absolute;
         left: 40px;
-        top: 50%;
+        top: 32px;
         transform: translateY(-50%);
         width: 20px;
         height: 20px;
@@ -134,90 +225,23 @@
         background-size: 20px;
         border-radius: 50%;
       }
-      &::after{
-        content: '';
-        position: absolute;
-        right: 0px;
-        top: 0;
-        width: 221px ;
-        height: 100%;
-        background: url(../images/section-added-img/eleps-right-sade.png);
-        background-repeat: no-repeat;
-      }
+      // &::after{
+      //   content: '';
+      //   position: absolute;
+      //   right: 0px;
+      //   top: 0;
+      //   width: 221px ;
+      //   height: 100%;
+      //   background: url(../images/section-added-img/eleps-right-sade.png);
+      //   background-repeat: no-repeat;
+      // }
     }
   } 
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    @media screen and (max-width:767px) {
-   grid-template-columns: repeat(2, 1fr);
-    
-    }
-    @media screen and (max-width:520px) {
-   grid-template-columns: repeat(1, 1fr);
-    
-    }
-
-    .card {
-    background: #05164D;
-    border: 1px solid rgba(5, 22, 77, 0.09);
-    border-radius: 16px;
-    padding: 30px 30px 40px 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-box-shadow: 0px 4px 14px 3px #0000000F;
-
-    position: relative;
-    overflow: hidden;
-    transition: transform 150ms ease, box-shadow 150ms, border-color 150ms;
-
-    &:before {
-      content: '';
-      position: absolute;
-         top: -116px;
-    right: -158px;
-      width: 522px;
-      height: 350px;
-      background: url(../images/section-added-img/round-elips.png);
-      background-repeat: no-repeat;
-      background-position: left center;
-    }
-          .tags {
-          background-color: #FFAD0026;
-          border-radius: 5px;
-          margin-bottom: 20px;
-          width: fit-content;
-          span{
-            color: #CC8B00;
-            padding: 5px 10px;
-          }
-      }
-        h3 {
-       
-        color: #FFFFFF;
-     
-        line-height: 1.25;
-        letter-spacing: -0.01em;
-        margin-bottom: 15px;
-    }
-    p{
-      
-    color: #D1D5DC;
-    line-height: 1.7;
-}
-    
-
-}
-
-}
 }
  
-
- 
-
-@media screen and (max-width:1024px) {
- 
+@media screen and (max-width:767px) {
+  .delivery-section-new.list-li ul li::after{display: none;}
+  .delivery-section-new.list-li ul{flex-direction: column; margin-top: 30px;}
+  .delivery-section-new.list-li ul li{width: 100%; padding: 17.5px 20px; font-size: 16px;}
+  .delivery-section-new.list-li ul li::before{display: none;}
 }

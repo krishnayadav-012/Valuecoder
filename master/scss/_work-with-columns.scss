@@ -1,5 +1,6 @@
+@use "core/variables" as *;
 .work-with {
-  background: #FFF8EA;
+  background: $panel-warm;
   padding: 65px 0;
   text-align: center;
 
@@ -28,10 +29,11 @@
 
   .card {
     background: #fff;
-    border: 1px solid #ffe3a9;
+    border: 1px solid rgba(255,173,0,.2);
+    box-shadow: 0 4px 16px rgba(5,22,77,.09);
     border-radius: 10px;
     overflow: hidden;
-    padding: 25px;
+    padding: 25px 25px 35px 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -56,27 +58,30 @@
     .card-content {
       margin: 20px 0 0;
       h3 {
+        color:#05164D;
         margin: 0 0 10px;
+        a{
+          color:#05164D;
+        }
       }
 
       p {
         color: $gray-600;
         margin: 0 0 20px;
       }
-
       .is-arrow {
         display: inline-flex;
         align-items: center;
         font-weight: 500;
         font-size: 16px;
-        color: $yellow;
+        color: #CC8B00;
         text-decoration: none;
-        margin: 0;
+        margin-top: 10px;
         line-height: 1;
         cursor: pointer;
 
         &:after {
-          background: url(../images/home-images/arrow-yellow.svg) no-repeat
+          background: url(../images/arrow-yellow-dark.svg) no-repeat
             center;
           margin: 2px 0 0 8px;
         }

@@ -1,9 +1,11 @@
-@import "_default";
-@import "_guide-topic";
-@import "_client-logo";
-@import "_menu-v3.12";
-@import "_ctabtn-structure";
-@import "_footer-form";
+@use "_default" as *;
+@use "_guide-topic" as *;
+@use "_client-logo" as *;
+@use "_menu-v8" as *;
+@use "_ctabtn-structure" as *;
+@use "_footer-form" as *;
+@use "_footer-section" as *;
+
 .hero-section {
   padding: 117px 0 80px;
   background-size: cover;

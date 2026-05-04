@@ -1,4 +1,4 @@
-@use 'default' as *;
+@use "core/variables" as *;
 .footer {
   width: 100%;
   background: #090C19;
@@ -55,7 +55,7 @@ overflow: hidden;
             padding-top: 10px;
             p{
               font-size: 16px;
-              font-weight: 500;
+              font-weight: 400;
               color: #D1D5DC;
             }
           }
@@ -87,10 +87,10 @@ overflow: hidden;
             }
           }
 
-
-          &:hover .normal{display: none;}
-          &:hover .hover{display: flex;}
-          &:hover{border: 1px solid #FFAD0080;}
+          
+          //&:hover .normal{display: none;}
+          //&:hover .hover{display: flex; position: relative; z-index: 9;}
+          //&:hover{border: 1px solid #FFAD0080;}
           &::before{
             background: url(../images/index-v10/footer-card.png);
             bottom: 0;
@@ -105,6 +105,13 @@ overflow: hidden;
             
           }
           &:hover::before{display: block;}
+        }
+        .card.has-hover{
+          &:hover .normal{display: none;}
+          &:hover .hover{display: flex; position: relative; z-index: 9;}
+          &:hover{border: 1px solid #FFAD0080;}
+          //.hover{display: flex; position: relative; z-index: 9;}
+          //.normal{display: none;}
         }
     }
   }
@@ -134,7 +141,7 @@ overflow: hidden;
         line-height: 26px;
         font-weight: 400;
         a {
-          color: #b9b9b9;
+          color: #99A1AF;
           &:hover {
             color: #fff;
           }

@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 .industries-slider-section {
   overflow: hidden;
   background: #f4f4f4;
@@ -94,12 +95,12 @@
           font-size: 16px;
           margin-bottom: 15px;
           text-transform: uppercase;
-          font-weight: $normal-font;
+          font-weight: 700;
         }
 
         h4 {
           font-size: 18px;
-          font-weight: $medium-font;
+          font-weight: 700;
           color: $white;
           margin: 0 0 10px;
         }
@@ -194,9 +195,9 @@
               background-size: 100%;
             }
           }
-          .hover-content {
-            transform: translateX(2%);
-          }
+          // .hover-content {
+          //   transform: translateX(2%);
+          // }
         }
 
         &:hover {

@@ -1,9 +1,10 @@
-@import "_default";
-@import "_three-column";
-@import "_cta-structure";
-@import "_menu-v3.12";
-@import "_ctabtn-structure";
-@import "_footer-form";
+@use "_default" as *;
+@use "_three-column" as *;
+@use "_cta-structure" as *;
+@use "_menu-v8" as *;
+@use "_ctabtn-structure" as *;
+@use "_footer-form" as *;
+@use "_footer-section" as *;
 
 .small-banner-section {
     padding: 305px 0 160px;
@@ -345,4 +346,3 @@
     }
             
 }
-

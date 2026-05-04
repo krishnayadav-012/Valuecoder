@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 .solution-slide-section {
   background: linear-gradient(to right, #0a1647, #1e3a8a);
 
@@ -7,7 +8,7 @@
     }
 
     p {
-      color: #bdb7b7;
+      color: #ffffffbf;
     }
   }
 
