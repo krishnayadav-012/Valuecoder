@@ -1,0 +1,121 @@
+@use "core/variables" as *;
+@use "_default" as *;
+
+// Mixin for the Gold Glowing Border
+@mixin glow-border($position) {
+  content: "";
+  position: absolute;
+  #{$position}: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $yellow, transparent);
+  transition: opacity 0.3s ease;
+}
+
+.who-we-serve {
+  
+  background-color: $white;
+ 
+
+  .intro-content {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      color: $themeMidNight;
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $natural-grey;
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+
+  .main-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: stretch;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+
+    .visual-panel {
+     
+        width: 470px;
+        display: block;
+     
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+
+    .services-grid {
+      width: calc(100% - 470px - 70px);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: #F9FAFB; 
+      gap: 1px; 
+     
+
+      .service-card {
+        background-color: #F9FAFB;
+        padding: 45px 40px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .icon-box {
+          width: 50px;
+          height: 50px;
+          background-color: #FFF3DA; // Using 10% opacity of your yellow
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          font-size: 22px;
+        }
+
+        span {
+          color: $themeMidNight;
+          font-size: $font-18;
+          font-weight: 700;
+        }
+
+        // Hover & Active States
+        &:hover, &.active {
+          background-color: #F2F7FF;
+          z-index: 5;
+
+          &::before { @include glow-border(top); }
+          &::after { @include glow-border(bottom); }
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 992px) {
+  .who-we-serve .main-layout {
+    flex-direction: column;
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

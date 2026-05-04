@@ -1,0 +1,204 @@
+.fintech-delivery {
+  position: relative;
+  display: flex;
+  background: #090C19;
+  flex-wrap: wrap;
+}
+.fintech-delivery::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  bottom: 0;
+  width: 477px;
+  height: 309px;
+  background: url(../images/industry-v11-images/fin-boxes.png);
+  background-repeat: no-repeat;
+}
+.fintech-delivery {
+  /* LEFT IMAGE FULL HEIGHT */
+}
+.fintech-delivery .inner-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 100px;
+}
+.fintech-delivery .inner-part .left-part {
+  width: calc(50% - 50px);
+}
+.fintech-delivery .inner-part .left-part > em {
+  font-style: normal;
+  color: #FFAD00;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.fintech-delivery .inner-part .left-part h2 {
+  color: #ffffff;
+  line-height: 120%;
+}
+.fintech-delivery .inner-part .left-part h2 em {
+  color: #FFAD00;
+  font-style: normal;
+}
+.fintech-delivery .inner-part .left-part p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #D1D5DC;
+}
+.fintech-delivery .inner-part {
+  /* RIGHT CONTENT */
+}
+.fintech-delivery .inner-part .right-part {
+  width: calc(50% - 50px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(270deg, #090c19 43.32%, rgba(9, 12, 25, 0.31) 62.86%, rgba(9, 12, 25, 0) 100%);
+  z-index: 11;
+}
+.fintech-delivery .inner-part .right-part .ai-content {
+  padding: 80px 0 80px 20px;
+  color: #ffffff;
+  max-width: 590px;
+  float: right;
+}
+.fintech-delivery .inner-part .right-part .ai-content h2 {
+  font-size: clamp(30px, 3.7vw, 46px);
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.fintech-delivery .inner-part .right-part .ai-content h2 em {
+  color: #FFAD00;
+  font-style: normal;
+}
+.fintech-delivery .inner-part .right-part .ai-content > p {
+  color: rgba(255, 255, 255, 0.6901960784);
+  margin-bottom: 60px;
+}
+.fintech-delivery .inner-part .right-part::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(270deg, #090C19 43.32%, rgba(9, 12, 25, 0.95) 62.86%, rgba(9, 12, 25, 0) 100%);
+  z-index: -1;
+}
+
+/* LIST */
+.ai-list {
+  height: 410px;
+}
+.ai-list .ai-item {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  /* Reserve space so layout doesn't jump */
+}
+.ai-list .ai-item:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6A7282;
+  position: absolute;
+  left: -18px;
+  top: 30px;
+  transition: 0.3s;
+}
+.ai-list .ai-item .title h4 {
+  font-size: 22px;
+  font-weight: 700;
+  transition: 0.3s;
+  color: #ffffff;
+}
+.ai-list .ai-item {
+  /* FIXED HEIGHT AREA */
+}
+.ai-list .ai-item .desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #D1D5DC;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+.ai-list .ai-item .desc p {
+  color: #D1D5DC;
+  margin-top: 10px;
+}
+.ai-list .ai-item .desc ul li {
+  position: relative;
+  color: #D1D5DC;
+}
+.ai-list .ai-item .desc ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #FFAD00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.ai-list .ai-item .progress {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #FFAD00;
+}
+.ai-list .ai-item {
+  /* ACTIVE */
+}
+.ai-list .ai-item.active:before {
+  background: #FFAD00;
+}
+.ai-list .ai-item.active .title h4 {
+  color: #FFAD00;
+}
+.ai-list .ai-item.active .desc {
+  max-height: 80px; /* fixed height */
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .ai-right {
+    width: 100%;
+  }
+  .ai-production-loop {
+    background: linear-gradient(270deg, #090C19 43.32%, rgba(9, 12, 25, 0.95) 62.86%, rgba(9, 12, 25, 0.89) 100%);
+  }
+  .ai-right .ai-content {
+    max-width: 100%;
+    float: unset;
+    padding-left: 20px;
+  }
+  .ai-left {
+    display: none;
+  }
+  .ai-right .ai-content h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .ai-right .ai-content {
+    padding: 48px 0;
+  }
+  .ai-list {
+    padding-left: 20px;
+  }
+  .ai-right .ai-content > p {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=fintech-delivery.css.map */

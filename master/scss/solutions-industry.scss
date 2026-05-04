@@ -1,0 +1,137 @@
+@use "core/variables" as *;
+@use "_default" as *;// Variables
+$darkYellow: #FFAD00;
+$themeMidNight: #05164d;
+$natural-grey: #4B5563;
+$white: #ffffff;
+
+section {
+  padding: 100px 0;
+  background-color: #fcfcfc; // Light background to make white cards pop
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    gap: 30px;
+
+    div {
+      max-width: 600px;
+      h1 {
+        font-size: 3rem;
+        color: $themeMidNight;
+        margin-bottom: 20px;
+      }
+      p {
+        color: $natural-grey;
+        line-height: 1.6;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 10px 10px 25px;
+      border: 1px solid rgba(5, 22, 77, 0.1);
+      border-radius: 50px;
+      background: $white;
+      color: $themeMidNight;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      white-space: nowrap;
+
+      span {
+        background: $themeMidNight;
+        color: $white;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        border-color: $themeMidNight;
+      }
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // 4 columns on desktop
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      background: $white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+
+      figure {
+        background: rgba(255, 173, 0, 0.1);
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+        }
+      }
+
+      h3 {
+        color: $themeMidNight;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        font-weight: 600;
+        max-width: 200px;
+      }
+
+      &:hover {
+        border-color: $darkYellow;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+}
+
+// Responsive Logic
+@media (max-width: 1200px) {
+  section ul { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 992px) {
+  section header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  section ul { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+  section ul { grid-template-columns: 1fr; }
+  section header h1 { font-size: 2.2rem; }
+}

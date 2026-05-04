@@ -1,0 +1,119 @@
+@use "core/variables" as *;
+@use "_default" as *;
+
+.stacking-cards-section {
+  background-color: #FFFFFF;
+  padding: 100px 0;
+.top-part{
+
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    h2{
+        color: #05164D;        
+    }  
+    p{
+        color: #364153;
+        margin-bottom: 0;
+    }
+}
+
+  .stack-card {
+    position: sticky;
+    top: 40px; // Base sticky position
+    width: 100%;
+    
+    padding-top: 20px;
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        top: calc(40px + (#{$i} * 25px));
+      }
+    }
+
+    .card-body {
+      background: #F9FAFB;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+      gap: 80px;
+      box-shadow: 0 20px 50px rgba($black, 0.05);
+     
+    }
+
+    .card-left {
+      width: calc(100% - 477px);
+
+      .card-num {
+        display: block;
+        font-size: 80px;
+        font-weight: 700;
+        color: rgba($whiteLight, 0.2);
+        line-height: 100%;
+      }
+
+      h3 {
+        color: #111827;
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 100%;
+      }
+
+      p {
+        color: #4B5563;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        
+      }
+
+      a{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #FFAD00;
+  position: relative;
+  &::after{
+        content: "";
+    background: url(../images/index-v10/right-yellow.svg) no-repeat;
+    width: 12px;
+    height: 9px;
+    background-size: 100%;
+    display: inline-block;
+    margin-left: 9px;
+    margin-top: 0px;
+  }
+}
+    }
+
+    .card-right {
+      width: 477px;
+      img {
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// Mobile View
+@media (max-width: 850px) {
+  .card-body {
+    flex-direction: column !important;
+    padding: 40px 25px !important;
+    text-align: center;
+
+    .card-link {
+      justify-content: center;
+    }
+    
+    .card-right {
+      order: -1;
+    }
+  }
+}

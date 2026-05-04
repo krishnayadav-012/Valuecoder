@@ -1,0 +1,97 @@
+@use "core/variables" as *;
+@use "_default" as *;
+
+$bg-dark: #05070a;
+$card-bg: rgba(255, 255, 255, 0.03);
+$border-color: rgba(255, 255, 255, 0.1);
+$gold-gradient: linear-gradient(90deg, #f0ad4e, #ec971f);
+
+.stack-fintech {
+  background-color: $bg-dark;
+  color: white;
+  padding: 80px 20px;
+
+  text-align: center;
+
+  aside {
+    span { color: #f0ad4e; font-size: 12px; letter-spacing: 2px; font-weight: bold; }
+    h1 { font-size: 2.5rem; margin: 20px 0; }
+    p { color: #94a3b8; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+
+    button {
+      background: #1e293b;
+      border: 1px solid $border-color;
+      color: #94a3b8;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &[data-active="true"] {
+        color: white;
+        border-color: #f0ad4e;
+        box-shadow: 0 0 15px rgba(240, 173, 78, 0.3);
+        background: rgba(240, 173, 78, 0.1);
+      }
+    }
+  }
+
+  .logos-part {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(180deg, #090C19 0%, #05164D 100%);
+border: 1px solid #FFAD0026;
+    // background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 100%);
+    border: 1px solid $border-color;
+    border-radius: 20px;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+
+      li {
+        background: $card-bg;
+        border: 1px solid $border-color;
+        border: 1px solid;
+border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
+        border-radius: 12px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        cursor: pointer;
+
+        img { max-width: 60%; filter: grayscale(1); opacity: 0.7; transition: 0.3s; }
+
+        &:hover {
+          border: 1px solid;
+
+border-image-source: linear-gradient(116.71deg, #FFAD00 3.55%, #251901 97.06%);
+
+
+          
+          img { filter: grayscale(0); opacity: 1; }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Logic
+@media (max-width: 768px) {
+  section aside h1 { font-size: 1.8rem; }
+  section div { padding: 20px; }
+}

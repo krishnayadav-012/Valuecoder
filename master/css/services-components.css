@@ -2,8 +2,8 @@
 @media only screen and (min-width: 768px) {
   @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2"), url("../fonts/PlusJakartaSans-VariableFont_wght.woff") format("woff"), url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
-    font-weight: normal;
+    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
   }
@@ -20,7 +20,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -56,41 +56,47 @@ h1 {
   font-size: 60px;
   line-height: 1.3;
   color: #FFAD00;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 
 h2 {
   font-size: 42px;
   line-height: 60px;
-  font-weight: bold;
-  color: #110302;
+  font-weight: 700;
+  color: #05164D;
   margin: 0 0 15px;
 }
 
 h3 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
-  color: #110302;
+  font-weight: 700;
+  color: #05164D;
   margin: 0 0 15px;
 }
 
 h4 {
   font-size: 18px;
-  color: #110302;
-  font-weight: bold;
+  color: #05164D;
+  font-weight: 600;
 }
 
 h6 {
   font-size: 18px;
 }
 
+.master-menu-text, .nav-link, h1, h2, h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); /* Subtle sub-pixel fix */
+}
+
 p {
   font-size: 16px;
   color: #4B5563;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0 0 15px;
 }
 
@@ -780,7 +786,7 @@ textarea {
   padding: 20px 20px 20px 0;
   position: relative;
   font-weight: 600;
-  color: #110302;
+  color: #05164D;
   border-bottom: 1px solid #e4e4e4;
   margin: 0;
   font-size: 20px;
@@ -825,7 +831,7 @@ textarea {
 }
 .faq-section .faq-accordion-content ul li,
 .faq-section .faq-accordion-content ol li {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   position: relative;
   padding-left: 18px;
 }
@@ -1140,7 +1146,7 @@ textarea {
   color: #05164d;
   text-align: left;
   margin: 40px 0 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
 }
 .is-arrow:after {
@@ -1166,7 +1172,8 @@ textarea {
   margin: 0 0 10px;
 }
 .top-section p {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .top-section.b-100 {
   max-width: 100%;
@@ -2287,38 +2294,10 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .wwd-section {
   position: relative;
-  padding: 96px 0 108px;
 }
 .wwd-section > * {
   position: relative;
   z-index: 1;
-}
-.wwd-section .reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.wwd-section .reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.wwd-section .reveal-delay-1 {
-  transition-delay: 0.08s;
-}
-.wwd-section .reveal-delay-2 {
-  transition-delay: 0.16s;
-}
-.wwd-section .reveal-delay-3 {
-  transition-delay: 0.24s;
-}
-.wwd-section .reveal-delay-4 {
-  transition-delay: 0.12s;
-}
-.wwd-section .reveal-delay-5 {
-  transition-delay: 0.2s;
-}
-.wwd-section .reveal-delay-6 {
-  transition-delay: 0.28s;
 }
 .wwd-section .hdr {
   text-align: center;
@@ -2449,6 +2428,24 @@ body.page-template-template-testimonials .client-video-section iframe,
 .wwd-section .card.card--feat:hover::after {
   transform: none;
 }
+.wwd-section .card .card-content ul {
+  margin-top: 10px;
+}
+.wwd-section .card .card-content ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 15px;
+}
+.wwd-section .card .card-content ul li:before {
+  content: "";
+  background: url(../images/check.png) no-repeat center;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
 .wwd-section .card__icon {
   width: 44px;
   height: 44px;
@@ -2526,13 +2523,13 @@ body.page-template-template-testimonials .client-video-section iframe,
 .wwd-section .card--feat .card__div {
   background: rgba(255, 255, 255, 0.08);
 }
-.wwd-section ul {
+.wwd-section ul.tag-list {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 20px;
 }
-.wwd-section li {
+.wwd-section ul.tag-list li {
   display: inline-block;
   padding: 4px 10px;
   font-size: 0.8125rem;
@@ -3128,9 +3125,14 @@ body.page-template-template-testimonials .client-video-section iframe,
    Font: Plus Jakarta Sans — matches body default
    ===================================================== */
 .vc-cs {
+  font-size: 16px; /* $font-16 */
+  font-weight: 500; /* $normal-font */
+  line-height: 28px;
   background: #02091F; /* deep navy — darkest navy in palette */
   position: relative;
   overflow: hidden;
+  padding: 96px 0 108px;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Atmospheric radial overlays */
@@ -3152,6 +3154,15 @@ body.page-template-template-testimonials .client-video-section iframe,
   z-index: 0;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+/* ── Inner wrapper ── */
+.vc-cs__wrap {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 /* =====================================================
@@ -3195,7 +3206,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   opacity: 0.6;
 }
 .vc-cs__hdr h2 {
-  color: #FFFFFF;
+  color: #FFFFFF; /* $white */
   line-height: 1.1;
   letter-spacing: -0.025em;
   margin-inline: auto;
@@ -3320,7 +3331,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .vc-cs__acc-text h3 {
   margin-bottom: 0;
-  font-weight: 700;
+  font-weight: 700; /* $bold */
   color: #FFFFFF;
   line-height: 1.3;
   display: block;
@@ -3524,35 +3535,42 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 @media (max-width: 767px) {
   /* matches default SCSS @media (max-width: 767px) padding scale */
-  .vc-cs .vc-cs__hdr {
+  .vc-cs {
+    padding: 64px 0 76px;
+  }
+  .vc-cs__hdr {
     margin-bottom: 48px;
   }
-  .vc-cs .vc-cs__subtitle {
-    font-size: 14px;
+  h2 {
+    font-size: 28px; /* h2 mobile: 28px in default SCSS */
+    line-height: 37px;
+  }
+  .vc-cs__subtitle {
+    font-size: 14px; /* p mobile in default SCSS */
     line-height: 24px;
   }
-  .vc-cs .vc-cs__badge-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .vc-cs__badge-grid {
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
-  .vc-cs .vc-cs__badge-card {
+  .vc-cs__badge-card {
     padding: 16px 10px 14px;
   }
-  .vc-cs .vc-cs__badge-icon {
+  .vc-cs__badge-icon {
     width: 36px;
     height: 36px;
   }
-  .vc-cs .vc-cs__badge-icon svg {
+  .vc-cs__badge-icon svg {
     width: 15px;
     height: 15px;
   }
-  .vc-cs h4 {
+  h4 {
     font-size: 12px;
   }
-  .vc-cs p {
+  p {
     font-size: 11px;
   }
-  .vc-cs .vc-cs__acc-content {
+  .vc-cs__acc-content {
     padding: 0 16px 18px 16px;
   }
 }
