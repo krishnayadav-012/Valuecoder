@@ -45,7 +45,7 @@
         <div class="container">
             <div class="dis-flex">
                 <div class="left-box">
-                    <h1>FinTech Engineering</h1>
+                    <h1>FinTech Engineering</h1s>
                     <p>ValueCoders delivers software engineering for FinTech and BFSI companies where regulatory
                         exposure, audit readiness.</p>
                     <div class="master-btn button-v10">
@@ -448,7 +448,7 @@
 
                 <aside>
                     <span>TRENDING TECH STACK FOR FINTECH</span>
-                    <h1>Technologies assessed for FinTech production</h1>
+                    <h2>Technologies assessed for FinTech production</h2>
                     <p>Every technology below represents engineers with production experience in regulated financial
                         environments.</p>
                 </aside>
@@ -499,7 +499,7 @@
                 <!-- Left Side: Content -->
                 <aside>
                     <span>REGULATORY & COMPLIANCE LANDSCAPE</span>
-                    <h1>Compliance frameworks we architect.</h1>
+                    <h2>Compliance frameworks we architect.</h2>
                     <p>Every FinTech engagement starts with compliance requirement mapping in the Discovery Sprint.</p>
                 </aside>
 
@@ -629,7 +629,7 @@
             <!-- Section Header -->
             <div class="top-part">
                 <div>
-                    <h1>Solution Industry Types</h1>
+                    <h2>Solution Industry Types</h2>
                     <p>Engagement structure follows your situation — not a fixed service catalogue. Choose the model
                         that fits your team, timeline, and governance requirements.</p>
                 </div>
