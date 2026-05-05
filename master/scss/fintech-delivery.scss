@@ -4,7 +4,7 @@
 .fintech-delivery {
 position: relative;
     display: flex;
-   
+   margin-bottom: -1px;
 background: #090C19;
 flex-wrap: wrap;
 
@@ -16,8 +16,11 @@ flex-wrap: wrap;
     bottom: 0;
     width: 477px;
     height: 309px;
-    background: url(../images/industry-v11-images/fin-boxes.png);
+    background: url(../images/industry-v11/fin-boxes.png);
     background-repeat: no-repeat;
+            @media screen and (max-width:992px) {
+            display: none;
+            }
 }
 
 
@@ -27,9 +30,16 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 gap: 100px;
+@media screen and (max-width:1024px) {
+    flex-direction: column;
+    gap: 40px;
+}
 .left-part {
     
     width: calc(50% - 50px);
+@media screen and (max-width:1024px) {
+width: 100%;
+}
 
     > em{
         font-style: normal;
@@ -61,12 +71,15 @@ gap: 100px;
 /* RIGHT CONTENT */
 
 .right-part {
-width: calc(50% - 50px);
+    width: calc(50% - 50px);
     display: flex;
     align-items: center;
     position: relative;
     background: linear-gradient(270deg, #090c19 43.32%, rgb(9 12 25 / 31%) 62.86%, rgba(9, 12, 25, 0) 100%);
     z-index: 11;
+    @media screen and (max-width:1024px) {
+    width: 100%;
+        }
 
     .ai-content {
         padding: 80px 0 80px 20px;
@@ -106,20 +119,26 @@ width: calc(50% - 50px);
     }
 
 }
-}
-}
+
 
 /* LIST */
 
 .ai-list {
-    height: 410px;
+  height: 510px;
+  @media screen and (max-width:1024px) {
+padding-left: 20px;
+height: 400px;
+}
 
     .ai-item {
 
         position: relative;
-        padding: 20px 0;
+        padding: 30px 0;
         border-bottom: 1px solid rgba(255,255,255,0.08);
         cursor: pointer;
+         @media screen and (max-width:1024px) {
+padding: 15px 0;
+}
 
         /* Reserve space so layout doesn't jump */
         
@@ -132,8 +151,14 @@ width: calc(50% - 50px);
             background: #6A7282;
             position: absolute;
             left: -18px;
-            top: 30px;
+            top: 42px;
             transition: 0.3s;
+             @media screen and (max-width:1024px) {
+top: 26px;
+}
+             @media screen and (max-width:640px) {
+top: 23px;
+}
         }
 
         .title h4 {
@@ -217,7 +242,8 @@ width: calc(50% - 50px);
     }
 
 }
-
+}
+}
 /* RESPONSIVE */
 
 @media (max-width: 1024px) {

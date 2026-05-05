@@ -1841,11 +1841,20 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin-bottom: 60px;
   gap: 30px;
 }
+@media screen and (max-width: 992px) {
+  .solution-industry .top-part {
+    flex-direction: column;
+    align-items: start;
+    max-width: 100%;
+  }
+  .solution-industry .top-part div {
+    width: 100% !important;
+  }
+}
 .solution-industry .top-part div {
   max-width: 600px;
 }
-.solution-industry .top-part div h1 {
-  font-size: 3rem;
+.solution-industry .top-part div h2 {
   color: #05164d;
   margin-bottom: 20px;
 }
@@ -1853,41 +1862,24 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #4B5563;
   line-height: 1.6;
 }
-.solution-industry .top-part button {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 10px 10px 10px 25px;
-  border: 1px solid rgba(5, 22, 77, 0.1);
-  border-radius: 50px;
-  background: #ffffff;
-  color: #05164d;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-  white-space: nowrap;
-}
-.solution-industry .top-part button span {
-  background: #05164d;
-  color: #ffffff;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 1.2rem;
-}
-.solution-industry .top-part button:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border-color: #05164d;
-}
 .solution-industry ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   list-style: none;
   padding: 0;
+}
+@media screen and (max-width: 1024px) {
+  .solution-industry ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .solution-industry ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15pxpx;
+  }
 }
 .solution-industry ul li {
   background: #ffffff;
@@ -1903,6 +1895,12 @@ body.page-template-template-testimonials .client-video-section iframe,
   align-items: center;
   justify-content: center;
   min-height: 220px;
+}
+@media screen and (max-width: 767px) {
+  .solution-industry ul li {
+    min-height: auto;
+    padding: 20px;
+  }
 }
 .solution-industry ul li figure {
   background: rgba(255, 173, 0, 0.1);

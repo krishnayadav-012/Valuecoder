@@ -12,9 +12,7 @@
     margin-bottom: 56px;
  
     h2 {
-  
       
-     
       color: $themeMidNight;
       margin: 0 0 15px;
       line-height: 1.2;
@@ -58,6 +56,7 @@
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0px 4px 14px 3px #0000000F;
+  border: 1px solid #F3F4F6;
 
  
   
@@ -65,7 +64,7 @@
   // ── Light variant ────────────────────────────────────────
   &--light {
     background-color: $white;
-    border: 1px solid $darkWhiteGray;
+    border: 1px solid #F3F4F6;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
  
     &:hover {
@@ -90,7 +89,7 @@
  
     .compliance-card__list {
       background-color: $white;
-      border-top: 1px solid $darkWhiteGray;
+  
       padding: 20px 17px 30px 30px;
  
       li {
@@ -102,7 +101,7 @@
         content: "";
     position: absolute;
     left: 0;
-    background: url(../images/industry-v11-images/black-check.svg);
+    background: url(../images/industry-v11/black-check.svg);
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
@@ -121,7 +120,7 @@
  
   // ── Dark variant (featu#FFF8E9) ──────────────────────────────
   &--dark {
-    background-color: $themeMidNight;
+    // background-color: $themeMidNight;
     border: none;
     box-shadow: 0px 4px 14px 3px #0000000F;
 
@@ -145,7 +144,7 @@
  
     .compliance-card__list {
       background-color: $white;
-      border-top: 1px solid rgba($white, 0.1);
+     
      padding: 20px 17px 30px 30px;
  
       li {
@@ -157,7 +156,7 @@
         content: "";
     position: absolute;
     left: 0;
-    background: url(../images/industry-v11-images/black-check.svg);
+    background: url(../images/industry-v11/black-check.svg);
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;

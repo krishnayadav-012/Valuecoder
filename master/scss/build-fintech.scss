@@ -1,33 +1,47 @@
 
 @use "core/variables" as *;
 @use "_default" as *;
-:root{
-  --bg:#0b0f1a;--bg2:#101728;--card-bg:#141c2e;
 
-  --muted:#8892a4;
-  --border:rgba(255,255,255,.07);
-}
 .fintech-section{
   background-color: #090C19;
 
 /* TOP */
 .s-top{display:flex;justify-content:space-between;  margin-bottom: 60px;
+  
+   @media screen and (max-width:1024px) {
+flex-direction: column;
+text-align: center;
+}
+
 h2{color:#fff; width: 40%;
 em{
   font-style: normal;
   color:$darkYellow
 }
+   @media screen and (max-width:1024px) {
+   width: 100%;
+  }
 }
 
-p{font-weight: 500; color: #D1D5DC; width: 40%;}
+p{font-weight: 500; color: #D1D5DC; width: 40%; 
+   @media screen and (max-width:1024px) {
+   width: 100%;
+  font-size: 16px;
+  }
 }
-/* GLIDER WRAPPER */
-// .slider-cards{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2.5rem 0;overflow:hidden}
+}
 
  .cards{    display: grid; margin-bottom: 40px;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;}
-// .glider-track{display:flex;width:100%}
+    gap: 30px;
+  
+       @media screen and (max-width:1024px) {
+margin-bottom: 80px;
+}
+
+
+  }
+
 
 
  .glider {
@@ -52,14 +66,34 @@ ul li.active {
   display: inline-block;
   .inner-card{
     min-width:100%;width:100%;
-    background:var(--card-bg);border-radius:20px;border:1px solid var(--border);
+    background:#141c2e;border-radius:20px;border:1px solid rgba(255,255,255,.07);
     display:flex!important;overflow:hidden;min-height:420px;
+
+       @media screen and (max-width:1024px) {
+        min-height: unset;
+      flex-direction: column; 
+      .card-l{width: 100%;}
+      .card-r{
+        display: none;
+      }
+      }
+
   }
 }
 .cards{
 
 /* CARD LEFT */
 .card-l{ width: 55%;  padding:98px 77px 97px 50px ;display:flex;flex-direction:column;justify-content:center;
+
+     @media screen and (max-width:1024px) {
+padding: 45px 20px 45px 40px;
+}
+
+     @media screen and (max-width:767px) {
+padding: 25px 10px 25px 20px;
+}
+
+
  h3{color:#fff; font-size: 24px; font-weight: 600; margin-bottom: 10px;}
 p{ color: #E5E7EB;}
 ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;
@@ -87,6 +121,9 @@ a{
   margin-top: 50px;
   color: #FFAD00;
   position: relative;
+       @media screen and (max-width:767px) {
+      margin-top: 30px; 
+      }
   &::after{
         content: "";
     background: url(../images/index-v10/right-yellow.svg) no-repeat;
@@ -96,10 +133,12 @@ a{
     display: inline-block;
     margin-left: 9px;
     margin-top: 0px;
+       @media screen and (max-width:1024px) {
+margin-left: 5px; height: 8px;
   }
 }
 
-
+}
 
 }
 
@@ -109,7 +148,7 @@ a{
   img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
   }
 } 
 
@@ -118,12 +157,17 @@ a{
 
 /* BOTTOM NAV */
 .slider-bottom{display:flex;align-items:center;justify-content:center;  position: relative;}
-ul{display:flex;list-style:none;
+ul{display:flex;list-style:none; gap: 10px;
 li{ color: #6A7282; font-weight: 600; font-size: 14px; margin-right: 25px;
 cursor: pointer;
   &:last-child{
     margin-right: 0;
   }
+
+     @media screen and (max-width:1024px) {
+margin-right: 0;
+
+}
 }
 
 }
@@ -140,6 +184,14 @@ cursor: pointer;
     justify-content: space-between;
     gap: 10px;
     margin-right: 0px;
+
+    @media screen and (max-width:767px) {
+      
+    top: -30px;
+    transform: translate(-68%, -50%);
+    left: 50%;
+    left: 50%;
+    }
 
      button {
     width: 35px;

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>indestry page</title>
@@ -15,7 +15,7 @@
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/industries-v11.css" defer />
 
- <link rel="preload stylesheet" type="text/css"
+    <link rel="preload stylesheet" type="text/css"
         href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
 
 
@@ -45,7 +45,7 @@
         <div class="container">
             <div class="dis-flex">
                 <div class="left-box">
-                    <h1>FinTech Engineering</h1s>
+                    <h1>FinTech Engineering</h1>
                     <p>ValueCoders delivers software engineering for FinTech and BFSI companies where regulatory
                         exposure, audit readiness.</p>
                     <div class="master-btn button-v10">
@@ -68,7 +68,7 @@
         </div>
         <div class="banner-video">
             <video autoplay muted loop>
-                <source src="images/industry-v11-images/banner-video.mp4" type="video/mp4">
+                <source src="images/industry-v11/banner-video.mp4" type="video/mp4">
             </video>
         </div>
     </section>
@@ -82,28 +82,28 @@
                     <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
                 </div>
                 <div class="logo-section">
-  <div class="logoslide glide" id="home-tpl-logoslide">
-    <div class="glide__track" data-glide-el="track">
-      <div class="glide__slides">
-        <div class="glide__slide">
-          <picture>
-            <img loading="lazy"
-              src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg"
-              alt="valuecoders">
-          </picture>
-        </div>
+                    <div class="logoslide glide" id="home-tpl-logoslide">
+                        <div class="glide__track" data-glide-el="track">
+                            <div class="glide__slides">
+                                <div class="glide__slide">
+                                    <picture>
+                                        <img loading="lazy"
+                                            src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg"
+                                            alt="valuecoders">
+                                    </picture>
+                                </div>
 
-        <div class="glide__slide">
-          <picture>
-            <img loading="lazy"
-              src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png"
-              alt="valuecoders">
-          </picture>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                                <div class="glide__slide">
+                                    <picture>
+                                        <img loading="lazy"
+                                            src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png"
+                                            alt="valuecoders">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="numbring-part">
                     <div class="box">
@@ -235,7 +235,7 @@
 
     <!-- we build for section  -->
 
-    <section class="fintech-section padding-t-100 padding-b-100">
+    <section class="fintech-section padding-t-120 padding-b-120">
         <div class="container">
             <div class="s-top">
 
@@ -251,38 +251,56 @@
                 <div class="slide-card">
                     <div class="inner-card">
                         <div class="card-l">
-                        <h3>Lending &amp; Underwriting Platforms</h3>
-                        <p>Full-stack lending platforms with automated underwriting, credit scoring
-                            API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
-                        <ul>
-                            <li>Compliance governance layer</li>
-                            <li>AI-Augmented engineering · ZDR standard</li>
-                            <li>Quality gates + acceptance criteria</li>
-                        </ul>
-                        <a href="#">Find Out More </a>
-                    </div>
-                    <div class="card-r">
-                        <img src="images/industry-v11-images/mob-frame.png" alt="">
-                    </div>
+                            <h3>Lending &amp; Underwriting Platforms</h3>
+                            <p>Full-stack lending platforms with automated underwriting, credit scoring
+                                API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
+                            <ul>
+                                <li>Compliance governance layer</li>
+                                <li>AI-Augmented engineering · ZDR standard</li>
+                                <li>Quality gates + acceptance criteria</li>
+                            </ul>
+                            <a href="#">Find Out More </a>
+                        </div>
+                        <div class="card-r">
+                            <img src="images/industry-v11/mob-frame.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="slide-card">
-                       <div class="inner-card">
-                    <div class="card-l">
-                        <h3>Lending &amp; Underwriting Platforms</h3>
-                        <p>Full-stack lending platforms with automated underwriting, credit scoring
-                            API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
-                        <ul>
-                            <li>Compliance governance layer</li>
-                            <li>AI-Augmented engineering · ZDR standard</li>
-                            <li>Quality gates + acceptance criteria</li>
-                        </ul>
-                        <a href="#">Find Out More </a>
-                    </div>
-                    <div class="card-r">
-                        <img src="images/industry-v11-images/mob-frame.png" alt="">
+                    <div class="inner-card">
+                        <div class="card-l">
+                            <h3>Lending &amp; Underwriting Platforms</h3>
+                            <p>Full-stack lending platforms with automated underwriting, credit scoring
+                                API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
+                            <ul>
+                                <li>Compliance governance layer</li>
+                                <li>AI-Augmented engineering · ZDR standard</li>
+                                <li>Quality gates + acceptance criteria</li>
+                            </ul>
+                            <a href="#">Find Out More </a>
+                        </div>
+                        <div class="card-r">
+                            <img src="images/industry-v11/mob-frame.png" alt="">
+                        </div>
                     </div>
                 </div>
+                <div class="slide-card">
+                    <div class="inner-card">
+                        <div class="card-l">
+                            <h3>Lending &amp; Underwriting Platforms</h3>
+                            <p>Full-stack lending platforms with automated underwriting, credit scoring
+                                API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
+                            <ul>
+                                <li>Compliance governance layer</li>
+                                <li>AI-Augmented engineering · ZDR standard</li>
+                                <li>Quality gates + acceptance criteria</li>
+                            </ul>
+                            <a href="#">Find Out More </a>
+                        </div>
+                        <div class="card-r">
+                            <img src="images/industry-v11/mob-frame.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="slider-bottom">
@@ -387,48 +405,48 @@
             <div class="main-layout">
 
                 <div class="visual-panel">
-                    <img src="images/industry-v11-images/component-img.png" alt="Fintech illustration">
+                    <img src="images/industry-v11/component-img.png" alt="Fintech illustration">
                 </div>
 
                 <!-- Right Side: Interactive Grid -->
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Banks</span>
                     </div>
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Insurance Companies</span>
                     </div>
                     <div class="service-card "> <!-- Mocking the hover/active state -->
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Lending Companies</span>
                     </div>
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Payment Service Providers</span>
                     </div>
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Investment Companies</span>
                     </div>
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Fintech Startups</span>
                     </div>
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>DeFi Companies</span>
                     </div>
                     <div class="service-card">
-                        <div class="icon-box"><img src="images/industry-v11-images/landing-icon.png"
+                        <div class="icon-box"><img src="images/industry-v11/landing-icon.png"
                                 alt="Fintech illustration"></div>
                         <span>Financial Product Companies</span>
                     </div>
@@ -463,22 +481,45 @@
                 </div>
 
                 <div class="logos-part">
-                    <ul>
-                        <!-- Logos as list items -->
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
-                        
+
+                    <ul data-tab="Backend & APIs">
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
                     </ul>
+
+                    <ul data-tab="Data & Streaming">
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Kafka"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Kafka"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Kafka"></a></li>
+                    </ul>
+
+                    <ul data-tab="Security & Compliance">
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Security"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Security"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Security"></a></li>
+                    </ul>
+
+                    <ul data-tab="AI & ML">
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="TensorFlow"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="TensorFlow"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="TensorFlow"></a></li>
+                    </ul>
+
+                    <ul data-tab="Cloud & Infrastructure">
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="AWS"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="AWS"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="AWS"></a></li>
+                    </ul>
+
+                    <ul data-tab="Frontend">
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="React"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="React"></a></li>
+                        <li><a href="#"><img src="images/industry-v11/node.png" alt="React"></a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -542,7 +583,7 @@
 
 
     <!-- our services -->
-    <section class="stacking-cards-section" id="unique-stacking-wrapper  padding-b-120 padding-t-120">
+    <section class="stacking-cards-section padding-b-120 padding-t-120" id="unique-stacking-wrapper  ">
         <div class="container">
 
             <div class="top-part">
@@ -564,7 +605,7 @@
                         <a href="#">Learn More </a>
                     </div>
                     <div class="card-right">
-                        <img src="images/industry-v11-images/img-1.png" alt="">
+                        <img src="images/industry-v11/img-1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -580,7 +621,7 @@
                         <a href="#">Learn More </a>
                     </div>
                     <div class="card-right">
-                        <img src="images/industry-v11-images/img-1.png" alt="">
+                        <img src="images/industry-v11/img-1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -596,7 +637,7 @@
                         <a href="#">Learn More </a>
                     </div>
                     <div class="card-right">
-                        <img src="images/industry-v11-images/img-1.png" alt="">
+                        <img src="images/industry-v11/img-1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -611,7 +652,7 @@
                         <a href="#">Learn More </a>
                     </div>
                     <div class="card-right">
-                        <img src="images/industry-v11-images/img-1.png" alt="">
+                        <img src="images/industry-v11/img-1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -624,7 +665,7 @@
 
 
     <!-- ??solution industry -->
-    <section class="solution-industry padding-t-120 padding-b-120" >
+    <section class="solution-industry padding-t-120 padding-b-120">
         <div class="container">
             <!-- Section Header -->
             <div class="top-part">
@@ -647,38 +688,38 @@
             <!-- Grid of Cards -->
             <ul>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
                 <li>
-                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <figure><img src="images/industry-v11/automation.svg" alt="Icon"></figure>
                     <h3>Underwriting automation systems</h3>
                 </li>
-               
+
             </ul>
         </div>
     </section>
@@ -999,119 +1040,120 @@
 
 
     <!-- complines sec -->
-       <section class="compliance-section padding-t-120 padding-b-120">
-    <div class="container">
-      <div class="compliance-section__header">
-        <h2>Three ways to engage Compliance.</h2>
-        <p>Governance, contractual commitments, and ZDR standards are identical across every model.</p>
-      </div>
-      <div class="compliance-section__grid">
- 
-        <div class="compliance-card compliance-card--light">
-          <div class="compliance-card__top">
-            <span >Team Extension</span>
-            <h3>Client-Led Delivery</h3>
-            <p>You run delivery · We add engineers who integrate fast</p>
-          </div>
-          <ul class="compliance-card__list">
-            <li>Your sprint process · your tools · your compliance posture</li>
-            <li>Engineers with FinTech domain experience — confirmed before profiling</li>
-            <li>ZDR standard · NDA before repo access · IP clause Day 1</li>
-            <li>48h matching · 7-day trial · 10-day replacement — in contract</li>
-          </ul>
-          <div class="compliance-card__footer">
-            <a href="#" class="btn-secondry">Start Team Extension</a>
-          </div>
-        </div>
- 
-        <div class="compliance-card compliance-card--dark">
-          <div class="compliance-card__top">
-            <span >Delivery Pod</span>
-            <h3>ValueCoders-Led Delivery</h3>
-            <p>We run delivery · You define what ships</p>
-          </div>
-          <ul class="compliance-card__list">
-            <li>Named Delivery Lead owns cadence, QA, and compliance gates</li>
-            <li>Weekly sprint reports — ticket data in your tools, not slides</li>
-            <li>Compliance architecture reviewed by Head of Delivery before kickoff</li>
-            <li>Milestone or Fixed-Cost billing — after Discovery Sprint</li>
-          </ul>
-          <div class="compliance-card__footer">
-            <a href="#" class="btn-secondry">Build a Delivery Pod</a>
-          </div>
-        </div>
- 
-        <div class="compliance-card compliance-card--light">
-          <div class="compliance-card__top">
-            <span class="compliance-card__badge compliance-card__badge--yellow">Discovery Sprint</span>
-            <h3>Start Here</h3>
-            <p>Fixed-Fee · 2–4 Weeks · Compliance-first scoping</p>
-          </div>
-          <ul class="compliance-card__list">
-            <li>Compliance requirements mapped before any architecture decision</li>
-            <li>PCI-DSS / SOC 2 / GDPR scope documented in deliverable</li>
-            <li>Milestone plan with compliance effort included in estimates</li>
-            <li>Required before any fixed-price FinTech build commitment</li>
-          </ul>
-          <div class="compliance-card__footer">
-            <a href="#" class="btn-secondry">Start Team Extension</a>
-          </div>
-        </div>
- 
-      </div>
-    </div>
-  </section>
+    <section class="compliance-section padding-t-120 padding-b-120">
+        <div class="container">
+            <div class="compliance-section__header">
+                <h2>Three ways to engage Compliance.</h2>
+                <p>Governance, contractual commitments, and ZDR standards are identical across every model.</p>
+            </div>
+            <div class="compliance-section__grid">
 
-<!--  -->
-   
-<section class="security-section padding-t-120 padding-b-120" >
-  <div class="container">
- 
-    <div class="security-section__header">
-      <h2>Compliance and Security of Financial Solutions</h2>
-      <p>Our compliance consultants and IT security teams help BFSI organizations achieve and maintain compliance.</p>
-    </div>
- 
-    <ul >
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-      <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      
-      <li>
-         <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-      <li>
-        <img src="images/industry-v11-images/alm-logo.png" />
-      </li>
-    </ul>
- 
-  </div>
-</section>
+                <div class="compliance-card compliance-card--light">
+                    <div class="compliance-card__top">
+                        <span>Team Extension</span>
+                        <h3>Client-Led Delivery</h3>
+                        <p>You run delivery · We add engineers who integrate fast</p>
+                    </div>
+                    <ul class="compliance-card__list">
+                        <li>Your sprint process · your tools · your compliance posture</li>
+                        <li>Engineers with FinTech domain experience — confirmed before profiling</li>
+                        <li>ZDR standard · NDA before repo access · IP clause Day 1</li>
+                        <li>48h matching · 7-day trial · 10-day replacement — in contract</li>
+                    </ul>
+                    <div class="compliance-card__footer">
+                        <a href="#" class="btn-secondry">Start Team Extension</a>
+                    </div>
+                </div>
+
+                <div class="compliance-card compliance-card--dark">
+                    <div class="compliance-card__top">
+                        <span>Delivery Pod</span>
+                        <h3>ValueCoders-Led Delivery</h3>
+                        <p>We run delivery · You define what ships</p>
+                    </div>
+                    <ul class="compliance-card__list">
+                        <li>Named Delivery Lead owns cadence, QA, and compliance gates</li>
+                        <li>Weekly sprint reports — ticket data in your tools, not slides</li>
+                        <li>Compliance architecture reviewed by Head of Delivery before kickoff</li>
+                        <li>Milestone or Fixed-Cost billing — after Discovery Sprint</li>
+                    </ul>
+                    <div class="compliance-card__footer">
+                        <a href="#" class="btn-secondry">Build a Delivery Pod</a>
+                    </div>
+                </div>
+
+                <div class="compliance-card compliance-card--light">
+                    <div class="compliance-card__top">
+                        <span class="compliance-card__badge compliance-card__badge--yellow">Discovery Sprint</span>
+                        <h3>Start Here</h3>
+                        <p>Fixed-Fee · 2–4 Weeks · Compliance-first scoping</p>
+                    </div>
+                    <ul class="compliance-card__list">
+                        <li>Compliance requirements mapped before any architecture decision</li>
+                        <li>PCI-DSS / SOC 2 / GDPR scope documented in deliverable</li>
+                        <li>Milestone plan with compliance effort included in estimates</li>
+                        <li>Required before any fixed-price FinTech build commitment</li>
+                    </ul>
+                    <div class="compliance-card__footer">
+                        <a href="#" class="btn-secondry">Start Team Extension</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="security-section padding-t-120 padding-b-120">
+        <div class="container">
+
+            <div class="security-section__header">
+                <h2>Compliance and Security of Financial Solutions</h2>
+                <p>Our compliance consultants and IT security teams help BFSI organizations achieve and maintain
+                    compliance.</p>
+            </div>
+
+            <ul>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+                <li>
+                    <img src="images/industry-v11/alm-logo.png" />
+                </li>
+            </ul>
+
+        </div>
+    </section>
 
 
-<!-- success stories -->
- <section class="stories-section padding-t-120 padding-b-120">
+    <!-- success stories -->
+    <section class="stories-section padding-t-120 padding-b-120">
         <div class="container">
             <div class="inner-part">
 
@@ -1188,14 +1230,14 @@
             </div>
         </div>
     </section>
-<!-- success stories -->
+    <!-- success stories -->
 
 
 
 
 
 
-       <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="js/industries-v11.js"></script>
 
 </body>

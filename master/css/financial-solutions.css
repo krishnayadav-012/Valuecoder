@@ -42,6 +42,18 @@
   align-items: center;
   justify-content: center;
   padding: 44px 24px;
+}
+@media screen and (max-width: 1024px) {
+  .security-section ul li {
+    grid-template-columns: repeat(4, 1fr);
+    border-right: 1px solid !important;
+    border-image-source: linear-gradient(90deg, #F2F2F2 0%, #B9B9B9 49.52%, #F2F2F2 100%) !important;
+    border-image-slice: 1;
+    border-right: 1px solid !important;
+    border-bottom: 1px solid !important;
+  }
+}
+.security-section ul li {
   transition: background-color 0.2s ease;
 }
 .security-section ul li:nth-child(5) {

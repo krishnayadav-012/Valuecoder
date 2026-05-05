@@ -21,9 +21,11 @@
 
 
 h2{
-    font-size: 46px;
+    font-size: clamp(30px, 3.7vw, 46px) !important;
     font-weight: 700;
 }
+
+
 
 
 // header css
@@ -92,7 +94,10 @@ background: transparent;
     z-index: 9;
     overflow: hidden;
     transition: 0.4s;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
+    @media screen and  (max-width:767px){
+        padding: 9px 5px;
+    }
 }
 
 .btn-secondry::before {
@@ -153,7 +158,7 @@ background: transparent;
 
 // page css
 .hero-section.indus.indus{
-    background-color: #000;
+    background-color: #050505;
     position: relative;
     overflow: hidden;
         min-height: calc(100vh - 350px);
@@ -319,7 +324,12 @@ margin-bottom: 70px;}
     line-height: 160%;
     color: rgba(252,252,252,.87);
     font-size: 20px;
-    font-weight: 400
+    font-weight: 400;
+
+    @media screen and (max-width:640px) {
+        font-size: 18px;
+    }
+    
 }
 
 .hero-section.indus .dis-flex .left-box p:first-of-type {
@@ -358,6 +368,35 @@ margin-bottom: 70px;}
 .hero-section.indus .dis-flex .left-box a:hover {
     text-decoration: underline
 }
+@media screen and (max-width: 1260px) {
+    .hero-section.indus .dis-flex .left-box h1 {
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero-section .dis-flex .left-box h1 {
+        font-size: 50px !important;
+        line-height: 1.4;
+    }
+    .hero-section.indus.indus .banner-video{
+        display: none;
+    }
+    .hero-section.indus.indus .dis-flex .left-box{width: 100%;}
+    .master-header.header-bg.sc-up  .header-inner .btn-menu-toggle svg{
+        fill: #05164d !important;
+
+    }
+        .master-header.sc-down.header-bg .header-inner .btn-menu-toggle svg {
+        fill: #05164d !important;
+    }
+        .master-header .header-inner .btn-menu-toggle svg {
+        fill: #fff !important;
+    }
+    .master-header.sc-up{
+        margin-top: 0;
+    }
+    .master-header{margin-top: 0;}
+}
 
 
 
@@ -388,6 +427,15 @@ margin-bottom: 70px;}
     border-right: 1px solid #F3F4F6;
     padding: 20px;
   width: 25%;
+
+  @media screen and (max-width:1024px) {
+    width: 50%;
+
+        &:nth-child(2){
+            border: none;
+        }
+
+  }
 }
 .slide-logo .numbring-part .box:last-child{
     border: none;
@@ -515,3 +563,11 @@ background: linear-gradient(180deg, #00196A 0%, #05164D 100%);
 }
 .client-img-section .right-box .award-sc h5{font-size: 16px; font-weight: 700;}
 .client-img-section .right-box .client-section{gap: 15px;}
+
+@media (max-width: 768px) {
+    .stories-section__top {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+}

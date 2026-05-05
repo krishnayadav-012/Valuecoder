@@ -1836,18 +1836,45 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .regulatory-section {
   background-color: #111827;
+  position: relative;
   color: #ffffff;
   overflow: hidden;
+}
+.regulatory-section::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  bottom: -50px;
+  width: 477px;
+  height: 309px;
+  background: url(../images/industry-v11/fin-boxes.png);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 992px) {
+  .regulatory-section::after {
+    display: none;
+  }
 }
 .regulatory-section .inner-part {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  .regulatory-section .inner-part {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 .regulatory-section aside {
   flex: 1;
   position: sticky;
   top: 50px;
   height: fit-content;
+}
+@media screen and (max-width: 992px) {
+  .regulatory-section aside {
+    position: static;
+  }
 }
 .regulatory-section aside span {
   color: #FFAD00;
@@ -1864,6 +1891,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #D1D5DC;
   max-width: 400px;
   line-height: 1.6;
+}
+@media screen and (max-width: 992px) {
+  .regulatory-section aside p {
+    width: 100%;
+  }
 }
 .regulatory-section main {
   flex: 1;
@@ -1889,6 +1921,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   border-radius: 16px;
   transition: 0.4s ease;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .regulatory-section main article {
+    padding: 20px;
+  }
 }
 .regulatory-section main article:hover {
   background: #2A2D3B;
@@ -1917,6 +1954,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   transition: 0.3s;
   margin: 0;
   color: #ffffff;
+  font-weight: 600;
 }
 .regulatory-section main article p {
   max-height: 0;

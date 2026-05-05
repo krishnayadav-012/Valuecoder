@@ -236,79 +236,36 @@ document.addEventListener("DOMContentLoaded", function () {
  // `````````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-        (function () {
-
-    const techData = {
-        "Backend & APIs": [
-            { alt: 'Node.js', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Node.js', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Node.js', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Node.js', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Node.js', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Node.js', src: 'images/industry-v11-images/node.png' },
-        ],
-        "Data & Streaming": [
-            { alt: 'Apache Kafka', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Apache Kafka', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Apache Kafka', src: 'images/industry-v11-images/node.png' },
-        ],
-        "Security & Compliance": [
-            { alt: 'Security Tool', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Security Tool', src: 'images/industry-v11-images/node.png' },
-            { alt: 'Security Tool', src: 'images/industry-v11-images/node.png' },
-        ],
-        "AI & ML": [
-            { alt: 'TensorFlow', src: 'images/industry-v11-images/node.png' },
-            { alt: 'TensorFlow', src: 'images/industry-v11-images/node.png' },
-            { alt: 'TensorFlow', src: 'images/industry-v11-images/node.png' },
-        ],
-        "Cloud & Infrastructure": [
-            { alt: 'AWS', src: 'images/industry-v11-images/node.png' },
-            { alt: 'AWS', src: 'images/industry-v11-images/node.png' },
-            { alt: 'AWS', src: 'images/industry-v11-images/node.png' },
-        ],
-        "Frontend": [
-            { alt: 'React', src: 'images/industry-v11-images/node.png' },
-            { alt: 'React', src: 'images/industry-v11-images/node.png' },
-            { alt: 'React', src: 'images/industry-v11-images/node.png' },
-        ],
-    };
+       (function () {
 
     const buttons = document.querySelectorAll('.production-tech button');
-    const logoList = document.querySelector('.logos-part ul');
+    const logoLists = document.querySelectorAll('.logos-part ul');
 
-    function updateLogos(key) {
-        const data = techData[key] || [];
-        logoList.innerHTML = '';
-        data.forEach(item => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="#"><img src="${item.src}" alt="${item.alt}"></a>`;
-            logoList.appendChild(li);
+    function showTab(key) {
+        logoLists.forEach(ul => {
+            ul.classList.toggle('active', ul.getAttribute('data-tab') === key);
         });
     }
 
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Update active state
             buttons.forEach(b => b.setAttribute('data-active', 'false'));
             btn.setAttribute('data-active', 'true');
 
-            // Update logos based on button text
             const key = btn.textContent.trim()
                 .replace(/&amp;/g, '&')
                 .replace(/\u00a0/g, ' ');
-            updateLogos(key);
+            showTab(key);
         });
     });
 
-    // Load default tab (first button) on page load
+    // Load first tab by default
     if (buttons.length > 0) {
         buttons[0].setAttribute('data-active', 'true');
         const defaultKey = buttons[0].textContent.trim()
             .replace(/&amp;/g, '&')
             .replace(/\u00a0/g, ' ');
-        updateLogos(defaultKey);
+        showTab(defaultKey);
     }
 
 })();
-

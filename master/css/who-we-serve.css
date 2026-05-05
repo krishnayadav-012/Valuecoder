@@ -1843,8 +1843,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .who-we-serve .intro-content h2 {
   color: #05164d;
-  font-size: 40px;
-  font-weight: 800;
   margin-bottom: 15px;
 }
 .who-we-serve .intro-content p {
@@ -1859,12 +1857,12 @@ body.page-template-template-testimonials .client-video-section iframe,
   justify-content: space-between;
   gap: 70px;
   align-items: stretch;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   overflow: hidden;
 }
 .who-we-serve .main-layout .visual-panel {
   width: 470px;
+  box-shadow: 0px 2px 7.5px 0px rgba(255, 255, 255, 0.2509803922) inset;
   display: block;
 }
 .who-we-serve .main-layout .visual-panel img {
@@ -1882,7 +1880,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .who-we-serve .main-layout .services-grid .service-card {
   background-color: #F9FAFB;
-  padding: 45px 40px;
+  padding: 35px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -1902,9 +1900,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: 22px;
 }
 .who-we-serve .main-layout .services-grid .service-card span {
-  color: #05164d;
-  font-size: 18px;
-  font-weight: 700;
+  color: #101828;
+  font-size: 20px;
+  font-weight: 600;
 }
 .who-we-serve .main-layout .services-grid .service-card:hover, .who-we-serve .main-layout .services-grid .service-card.active {
   background-color: #F2F7FF;
@@ -1913,30 +1911,52 @@ body.page-template-template-testimonials .client-video-section iframe,
 .who-we-serve .main-layout .services-grid .service-card:hover::before, .who-we-serve .main-layout .services-grid .service-card.active::before {
   content: "";
   position: absolute;
+  right: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #FFAD00, transparent);
+  width: 2px;
+  height: 127%;
+  background: linear-gradient(1deg, transparent, #FFAD00, transparent);
   transition: opacity 0.3s ease;
 }
 .who-we-serve .main-layout .services-grid .service-card:hover::after, .who-we-serve .main-layout .services-grid .service-card.active::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #FFAD00, transparent);
+  background: linear-gradient(1deg, transparent, #FFAD00, transparent);
   transition: opacity 0.3s ease;
 }
 
 @media (max-width: 992px) {
   .who-we-serve .main-layout {
-    flex-direction: column;
+    gap: 30px;
   }
   .who-we-serve .main-layout .services-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .who-we-serve .main-layout .services-grid {
+    width: 50%;
+    gap: 10px;
+    background-color: transparent;
+    max-height: 650px;
+    overflow: scroll;
+  }
+  .who-we-serve .main-layout .visual-panel {
+    width: 50%;
+  }
+  .who-we-serve .main-layout .services-grid .service-card {
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .who-we-serve .main-layout .visual-panel {
+    display: none;
+  }
+  .who-we-serve .main-layout .services-grid {
+    width: 100%;
   }
 }
 

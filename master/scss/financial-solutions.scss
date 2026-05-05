@@ -38,6 +38,7 @@
    
     @media (max-width: 1024px) {
       grid-template-columns: repeat(4, 1fr);
+
     }
  
     @media (max-width: 768px) {
@@ -53,8 +54,15 @@
       align-items: center;
       justify-content: center;
       padding: 44px 24px;
-      // border-right: 1px solid $darkWhiteGray;
-      // border-bottom: 1px solid $darkWhiteGray;
+       @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+         border-right: 1px solid !important;
+  border-image-source: linear-gradient(90deg, #F2F2F2 0%, #B9B9B9 49.52%, #F2F2F2 100%) !important;
+  border-image-slice: 1;
+  border-right: 1px solid !important;
+  border-bottom: 1px solid !important;
+      
+    }
 
       transition: background-color 0.2s ease;
       

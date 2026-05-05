@@ -2,18 +2,41 @@
 @use "_default" as *;
 .regulatory-section  {
   background-color: $darkblack;
-  
+  position: relative;
   color: $white;
   overflow: hidden;
+  &::after{
+        position: absolute;
+    left: 0;
+    content: "";
+    bottom: -50px;
+    width: 477px;
+    height: 309px;
+    background: url(../images/industry-v11/fin-boxes.png);
+    background-repeat: no-repeat;
+
+
+            @media screen and (max-width:992px) {
+            display: none;
+            }
+
+  }
 .inner-part{
   display: flex;
   flex-wrap: wrap;
+      @media screen and (max-width:992px) {
+        flex-direction: column;
+        gap: 40px;
+      }
 }
   aside {
     flex: 1;
     position: sticky;
     top: 50px;
     height: fit-content;
+          @media screen and (max-width:992px) {
+          position: static;
+          }
 
     span {
       color: $darkYellow;
@@ -32,6 +55,9 @@
       color: #D1D5DC;
       max-width: 400px;
       line-height: 1.6;
+            @media screen and (max-width:992px) {
+            width: 100%;
+            }
     }
   }
 
@@ -54,6 +80,10 @@
       // border: 1px solid rgba(255, 255, 255, 0.05);
       transition: 0.4s ease;
       cursor: pointer;
+@media screen and (max-width:767px) {
+  padding: 20px;
+}
+
       &:hover{
         background: #2A2D3B;
       }
@@ -80,7 +110,7 @@
         }
       }
 
-      h3 { font-size: 22px; transition: 0.3s; margin: 0; color: $white; }
+      h3 { font-size: 22px; transition: 0.3s; margin: 0; color: $white; font-weight: 600; }
 
       p {
         max-height: 0;
