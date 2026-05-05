@@ -32,11 +32,11 @@
           width:calc(45% - 30px) ;
             
             em{
-                color: $darkYellow;
+                color: #CC8B00;
                 text-transform: uppercase;
-                margin-bottom: 15px;
-                font-size: 14px;
-                font-weight: 600;
+                margin-bottom: 5px;
+                font-size: 16px;
+                font-weight: 500;
                 font-style: normal;
             }
 
@@ -151,7 +151,7 @@
                 // Active state
                 &.active {
                     .accordion-trigger .icon-placeholder::after {
-                        transform: rotate(-135deg);
+                        transform: rotate(-180deg);
                     }
                     .accordion-content {
                         max-height: 300px;

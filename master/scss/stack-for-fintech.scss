@@ -9,7 +9,7 @@ $gold-gradient: linear-gradient(90deg, #f0ad4e, #ec971f);
 .stack-fintech {
   background-color: $bg-dark;
   color: white;
-  padding: 80px 20px;
+
 
   text-align: center;
 
@@ -19,35 +19,58 @@ $gold-gradient: linear-gradient(90deg, #f0ad4e, #ec971f);
     p { color: #94a3b8; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
   }
 
-  nav {
+  .production-tech {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     margin-bottom: 50px;
 
     button {
-      background: #1e293b;
+      background: #FFFFFF26;
       border: 1px solid $border-color;
-      color: #94a3b8;
-      padding: 10px 20px;
-      border-radius: 30px;
+      padding: 15px 20px;
+      border-radius: 100px;
       cursor: pointer;
+      font-size: 18px ;
+      font-weight: 500;
+      color: #D1D5DC;
       transition: 0.3s;
-
       &[data-active="true"] {
-        color: white;
-        border-color: #f0ad4e;
-        box-shadow: 0 0 15px rgba(240, 173, 78, 0.3);
-        background: rgba(240, 173, 78, 0.1);
-      }
-    }
-  }
 
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    background: #05164D80;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    z-index: 0;
+    box-shadow: 3px 3px 6px 0px #FFAD0091;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 999px;
+    background: linear-gradient(92.78deg, #0133D6 0.86%, #FFAD00 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+
+  }
+}
+
+}
+  
+  }
   .logos-part {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px;
+    
+    padding-top: 60px;
+    padding-left: 59px;padding-right: 59px;
+    padding-bottom: 92px;
     background: linear-gradient(180deg, #090C19 0%, #05164D 100%);
 border: 1px solid #FFAD0026;
     // background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 100%);
@@ -56,37 +79,42 @@ border: 1px solid #FFAD0026;
 
     ul {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(6, 1fr);
       gap: 20px;
       list-style: none;
       padding: 0;
 
       li {
-        background: $card-bg;
-        border: 1px solid $border-color;
-        border: 1px solid;
-border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
-        border-radius: 12px;
-        height: 100px;
+border-radius: 20px;
+      
+         height: 127px;
+
+        a{
+height: 100%;
+          display: flex;
+          background: $card-bg;
+          border: 1px solid;
+  border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
+  border-image-slice: 1;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: 0.3s;
         cursor: pointer;
-
+        
         img { max-width: 60%; filter: grayscale(1); opacity: 0.7; transition: 0.3s; }
-
+        
         &:hover {
-          border: 1px solid;
-
-border-image-source: linear-gradient(116.71deg, #FFAD00 3.55%, #251901 97.06%);
-
-
+          border: 1px solid transparent; /* important */
+          border-image: linear-gradient(116.71deg, #FFAD00 3.55%, #251901 97.06%) 1;
+          
+          
           
           img { filter: grayscale(0); opacity: 1; }
         }
       }
     }
+  }
   }
 }
 

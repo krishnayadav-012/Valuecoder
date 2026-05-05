@@ -1,0 +1,107 @@
+.security-section {
+  background-color: #ffffff;
+}
+.security-section__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.security-section__header h2 {
+  color: #05164D;
+  margin-bottom: 15px;
+}
+.security-section__header p {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 18px;
+  color: #364153;
+}
+.security-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 1024px) {
+  .security-section ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .security-section ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .security-section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.security-section ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44px 24px;
+  transition: background-color 0.2s ease;
+}
+.security-section ul li:nth-child(5) {
+  border-right: 0 !important;
+}
+.security-section ul li:nth-child(10) {
+  border-right: 0 !important;
+}
+.security-section ul li:nth-child(n+6) {
+  border-right: 1px solid;
+  border-image-source: linear-gradient(90deg, #F2F2F2 0%, #B9B9B9 49.52%, #F2F2F2 100%);
+  border-image-slice: 1;
+}
+.security-section ul li:nth-child(-n+5) {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(90deg, #F2F2F2 0%, #B9B9B9 49.52%, #F2F2F2 100%);
+  border-image-slice: 1;
+}
+.security-section ul li img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 768px) {
+  .security-section ul li img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .security-section ul li img {
+    width: 64px;
+    height: 64px;
+  }
+}
+.security-section ul li.nist {
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.security-section ul li.nist span {
+  display: block;
+}
+.security-section ul li.nist span:first-child {
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 900;
+  color: #111827;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+.security-section ul li.nist span:last-child {
+  font-size: clamp(9px, 1vw, 11px);
+  color: #656565;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=financial-solutions.css.map */

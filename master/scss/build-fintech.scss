@@ -35,8 +35,11 @@ p{font-weight: 500; color: #D1D5DC; width: 40%;}
 }
 
 .slide-card {
-  display: flex;
-  gap: 30px;
+  .inner-card{
+
+    display: flex;
+    gap: 30px;
+  }
 }
 
 ul li.active {
@@ -46,9 +49,12 @@ ul li.active {
 
 /* CARD */
 .slide-card{
-  min-width:100%;width:100%;
-  background:var(--card-bg);border-radius:20px;border:1px solid var(--border);
-  display:flex!important;overflow:hidden;min-height:420px;
+  display: inline-block;
+  .inner-card{
+    min-width:100%;width:100%;
+    background:var(--card-bg);border-radius:20px;border:1px solid var(--border);
+    display:flex!important;overflow:hidden;min-height:420px;
+  }
 }
 .cards{
 
@@ -56,9 +62,10 @@ ul li.active {
 .card-l{ width: 55%;  padding:98px 77px 97px 50px ;display:flex;flex-direction:column;justify-content:center;
  h3{color:#fff; font-size: 24px; font-weight: 600; margin-bottom: 10px;}
 p{ color: #E5E7EB;}
-ul{list-style:none;display:flex;flex-direction:column;gap:12;margin-top:20px;
+ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;
 
  li{font-size:14px;color:#D1D5DC; font-weight: 500; position: relative;padding-left: 26px;
+
 &::before{
   content: "";
     position: absolute;
@@ -113,7 +120,7 @@ a{
 .slider-bottom{display:flex;align-items:center;justify-content:center;  position: relative;}
 ul{display:flex;list-style:none;
 li{ color: #6A7282; font-weight: 600; font-size: 14px; margin-right: 25px;
-
+cursor: pointer;
   &:last-child{
     margin-right: 0;
   }

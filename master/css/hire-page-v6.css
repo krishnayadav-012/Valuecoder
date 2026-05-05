@@ -4794,6 +4794,10 @@ button.tab-btn-base {
     top: 4px;
   }
 }
+.client-img-section .master-btn.button-v10 {
+  margin-top: 50px;
+}
+
 .btn-sec {
   display: flex;
   align-items: center;

@@ -14,12 +14,22 @@
 @use "stack-for-fintech" as *;
 @use "regulatory" as *;
 @use "solutions-industry" as *;
+@use "award-section" as *;
+@use "compliance" as *;
+@use "financial-solutions" as *;
+@use "success-stories-v10" as *;
 
 
-
+h2{
+    font-size: 46px;
+    font-weight: 700;
+}
 
 
 // header css
+.master-header.header-bg.sc-up .master-menu-desktop li a{
+color: #4b5563;
+}
 .master-header .logo-size .site-logo-img.bg-logo {
     display: block;
 }
@@ -51,7 +61,7 @@ background: transparent;
 }
 .master-menu-desktop .nav-item-base{
     font-size: 14px;
-    color: #F8FAFC !important;
+    color: #F8FAFC ;
     font-weight: 600;
 }
 .master-header.sc-up {
@@ -62,7 +72,84 @@ background: transparent;
 }
 
 
+.btn-secondry {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: #05164D;
+    padding: 9px 62px;
+    border: 1px solid #6A7282;
+    border-radius: 50px;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+    line-height: 30px;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    transition: 0.4s;
+    flex-direction: row-reverse
+}
 
+.btn-secondry::before {
+    background: url(../images/index-v10/view-all.svg);
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-size: 19px!important;
+    vertical-align: middle
+}
+
+.btn-secondry::after {
+    background-color: #05164D;
+    width: 8%;
+    height: 50%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    right: 50%;
+    border-radius: 50%;
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0
+}
+
+.btn-secondry:hover {
+    color: #FFAD00;
+    z-index: 10;
+    border: 1px solid #05164D;
+}
+
+.btn-secondry:hover::after {
+    left: 50%;
+    right: 0;
+    opacity: 1;
+    width: 100%;
+    transition: 0.4s;
+    height: 100%;
+    border-radius: 0
+}
+
+.btn-secondry:hover::before {
+    background: url(../images/index-v10/view-all-yellow.svg);
+    width: 19px;
+    height: 19px
+}
+
+.btn-secondry i {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    justify-content: center
+}
 
 // page css
 .hero-section.indus.indus{
@@ -104,6 +191,9 @@ background: transparent;
 margin-top: 30px;
 
 margin-bottom: 70px;}
+.dark-client-section .left-box a{
+    text-decoration: none;
+}
 
 .master-btn{text-decoration: none;     display: inline-flex;
 }
@@ -400,3 +490,28 @@ margin-bottom: 70px;}
         height: auto
     }
 }
+
+
+
+
+
+
+
+// ?
+.dark-client-section{
+background: linear-gradient(180deg, #00196A 0%, #05164D 100%);
+
+}
+.dark-client-section .right-box .client-section .client-row .client-stack ul li{background: #10256F;}
+.client-img-section .right-box .client-section .award-sc{margin-top: 35px;}
+.client-img-section .right-box .award-sc .award-row{margin-top: 10px;}
+.dark-client-section .left-box h2 em{
+    font-style: normal;
+    color: $yellow;
+}
+.dark-client-section .right-box .award-sc .award-row .award-col{background-color: #132E8E;}
+.dark-client-section .right-box .award-sc .award-row .award-col:hover{
+    background-color: #284CC9;
+}
+.client-img-section .right-box .award-sc h5{font-size: 16px; font-weight: 700;}
+.client-img-section .right-box .client-section{gap: 15px;}

@@ -1,0 +1,136 @@
+@use "core/variables" as *;
+
+
+// ============================================================
+// Security Section
+// ============================================================
+.security-section {
+  background-color: $white;
+ 
+ 
+  &__header {
+    text-align: center;
+    margin-bottom: 60px;
+ 
+    h2 {
+    
+     
+      color: #05164D;
+      margin-bottom:15px;
+      
+    }
+ 
+    p {
+    
+    margin: 0 auto;
+      max-width: 500px;
+      font-size: 18px;
+      color: #364153;
+    }
+  }
+ 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+   
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+ 
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+ 
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 44px 24px;
+      // border-right: 1px solid $darkWhiteGray;
+      // border-bottom: 1px solid $darkWhiteGray;
+
+      transition: background-color 0.2s ease;
+      
+      &:nth-child(5){
+        border-right: 0 !important;
+      }
+      
+      &:nth-child(10){
+        border-right: 0 !important;
+      }
+      &:nth-child(n+6) {
+
+        border-right: 1px solid;
+      
+  border-image-source: linear-gradient(90deg, #F2F2F2 0%, #B9B9B9 49.52%, #F2F2F2 100%);
+  border-image-slice: 1;
+      }
+      &:nth-child(-n+5) {
+// border-right: 1px solid #B9B9B9;
+// border-bottom: 1px solid #B9B9B9;
+
+border-right: 1px solid;
+border-bottom: 1px solid;
+      
+  border-image-source: linear-gradient(90deg, #F2F2F2 0%, #B9B9B9 49.52%, #F2F2F2 100%);
+  border-image-slice: 1;
+
+
+
+      }
+ 
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: block;
+ 
+        @media (max-width: 768px) {
+          width: 80px;
+          height: 80px;
+        }
+ 
+        @media (max-width: 480px) {
+          width: 64px;
+          height: 64px;
+        }
+      }
+ 
+      // NIST text-only item
+      &.nist {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+ 
+        span {
+          display: block;
+ 
+          &:first-child {
+            font-size: clamp(28px, 3vw, 36px);
+            font-weight: 900;
+            color: $darkblack;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+          }
+ 
+          &:last-child {
+            font-size: clamp(9px, 1vw, 11px);
+            color: $contentDay;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

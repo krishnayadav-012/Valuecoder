@@ -1834,30 +1834,26 @@ body.page-template-template-testimonials .client-video-section iframe,
     min-width: auto;
   }
 }
-section {
-  padding: 100px 0;
-  background-color: #fcfcfc;
-}
-section header {
+.solution-industry .top-part {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 60px;
   gap: 30px;
 }
-section header div {
+.solution-industry .top-part div {
   max-width: 600px;
 }
-section header div h1 {
+.solution-industry .top-part div h1 {
   font-size: 3rem;
   color: #05164d;
   margin-bottom: 20px;
 }
-section header div p {
+.solution-industry .top-part div p {
   color: #4B5563;
   line-height: 1.6;
 }
-section header button {
+.solution-industry .top-part button {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -1871,7 +1867,7 @@ section header button {
   transition: 0.3s;
   white-space: nowrap;
 }
-section header button span {
+.solution-industry .top-part button span {
   background: #05164d;
   color: #ffffff;
   width: 35px;
@@ -1882,23 +1878,23 @@ section header button span {
   border-radius: 50%;
   font-size: 1.2rem;
 }
-section header button:hover {
+.solution-industry .top-part button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   border-color: #05164d;
 }
-section ul {
+.solution-industry ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 40px;
   list-style: none;
   padding: 0;
 }
-section ul li {
+.solution-industry ul li {
   background: #ffffff;
   padding: 40px 20px;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 4px 14px 3px rgba(0, 0, 0, 0.0392156863);
   border: 1px solid transparent;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1908,32 +1904,30 @@ section ul li {
   justify-content: center;
   min-height: 220px;
 }
-section ul li figure {
+.solution-industry ul li figure {
   background: rgba(255, 173, 0, 0.1);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
 }
-section ul li figure img {
-  width: 30px;
-  height: 30px;
+.solution-industry ul li figure img {
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 }
-section ul li h3 {
-  color: #05164d;
-  font-size: 1.1rem;
+.solution-industry ul li h3 {
+  color: #111827;
+  font-size: 16px;
   line-height: 1.4;
   font-weight: 600;
-  max-width: 200px;
 }
-section ul li:hover {
-  border-color: #FFAD00;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+.solution-industry ul li:hover {
+  border: 1px solid #FFAD00;
+  box-shadow: 0px 4px 14px 3px rgba(0, 0, 0, 0.0392156863);
 }
 
 @media (max-width: 1200px) {

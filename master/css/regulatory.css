@@ -1872,17 +1872,19 @@ body.page-template-template-testimonials .client-video-section iframe,
   padding-right: 20px;
 }
 .regulatory-section main::-webkit-scrollbar {
-  width: 3px;
+  width: 7px;
 }
 .regulatory-section main::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(27, 30, 42, 0.6);
+  width: 7px;
 }
 .regulatory-section main::-webkit-scrollbar-thumb {
-  background: #FFAD00;
+  background: #1E2939;
+  height: 140px;
 }
 .regulatory-section main article {
   background: rgba(27, 30, 42, 0.6);
-  padding: 40px;
+  padding: 35px;
   margin-bottom: 24px;
   border-radius: 16px;
   transition: 0.4s ease;
@@ -1906,7 +1908,8 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .regulatory-section main article div strong {
   font-size: 2.5rem;
-  color: rgba(255, 255, 255, 0.03);
+  color: #FFFFFF;
+  opacity: 3%;
   transition: 0.3s;
 }
 .regulatory-section main article h3 {
@@ -1928,8 +1931,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   border-color: #FFAD00;
 }
 .regulatory-section main article:hover strong {
-  color: #FFAD00;
-  opacity: 0.2;
+  color: #FFFFFF;
+  opacity: 3%;
 }
 .regulatory-section main article:hover h3 {
   margin-bottom: 15px;

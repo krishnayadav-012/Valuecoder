@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>indestry page</title>
@@ -15,7 +15,9 @@
     <?php require_once './include/header-files.php'; ?>
     <link rel="preload stylesheet" type="text/css" href="./css/industries-v11.css" defer />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+ <link rel="preload stylesheet" type="text/css"
+        href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
+
 
     <script>
         var vcObj = {
@@ -80,27 +82,28 @@
                     <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
                 </div>
                 <div class="logo-section">
-                    <div class="logoslide" id="home-tpl-logoslide">
-                        <div class="glide__track" data-glide-el="track">
-                            <div class="glide__slides">
-                                <div class="glide__slide">
-                                    <picture>
-                                        <img loading="lazy"
-                                            src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg"
-                                            alt="valuecoders">
-                                    </picture>
-                                </div>
-                                <div class="glide__slide">
-                                    <picture>
-                                        <img loading="lazy"
-                                            src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png"
-                                            alt="valuecoders">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="logoslide glide" id="home-tpl-logoslide">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+        <div class="glide__slide">
+          <picture>
+            <img loading="lazy"
+              src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg"
+              alt="valuecoders">
+          </picture>
+        </div>
+
+        <div class="glide__slide">
+          <picture>
+            <img loading="lazy"
+              src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png"
+              alt="valuecoders">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
                 <div class="numbring-part">
                     <div class="box">
@@ -243,9 +246,28 @@
                     documented.</p>
             </div>
 
-            <div class="cards  glider ">
+            <div class="cards ">
                 <!-- CARD 1 -->
                 <div class="slide-card">
+                    <div class="inner-card">
+                        <div class="card-l">
+                        <h3>Lending &amp; Underwriting Platforms</h3>
+                        <p>Full-stack lending platforms with automated underwriting, credit scoring
+                            API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
+                        <ul>
+                            <li>Compliance governance layer</li>
+                            <li>AI-Augmented engineering · ZDR standard</li>
+                            <li>Quality gates + acceptance criteria</li>
+                        </ul>
+                        <a href="#">Find Out More </a>
+                    </div>
+                    <div class="card-r">
+                        <img src="images/industry-v11-images/mob-frame.png" alt="">
+                    </div>
+                    </div>
+                </div>
+                <div class="slide-card">
+                       <div class="inner-card">
                     <div class="card-l">
                         <h3>Lending &amp; Underwriting Platforms</h3>
                         <p>Full-stack lending platforms with automated underwriting, credit scoring
@@ -261,7 +283,7 @@
                         <img src="images/industry-v11-images/mob-frame.png" alt="">
                     </div>
                 </div>
-
+                </div>
             </div>
             <div class="slider-bottom">
                 <ul id="menu">
@@ -420,7 +442,7 @@
 
 
     <!-- tabing-part -->
-    <section class="stack-fintech">
+    <section class="stack-fintech padding-t-100 padding-b-100">
         <div class="container">
             <div class="inner-part">
 
@@ -431,30 +453,31 @@
                         environments.</p>
                 </aside>
 
-                <nav>
+                <div class="production-tech">
                     <button data-active="true">Backend & APIs</button>
                     <button>Data & Streaming</button>
                     <button>Security & Compliance</button>
                     <button>AI & ML</button>
                     <button>Cloud & Infrastructure</button>
                     <button>Frontend</button>
-                </nav>
+                </div>
 
                 <div class="logos-part">
                     <ul>
                         <!-- Logos as list items -->
-                        <li><img src="images/industry-v11-images/node.png" alt="Node"></li>
-                        <li><img src="java-logo.png" alt="Java"></li>
-                        <li><img src="python-logo.png" alt="Python"></li>
-                        <li><img src="go-logo.png" alt="Go"></li>
-                        <li><img src="net-logo.png" alt=".NET"></li>
-                        <li><img src="placeholder.png" alt="Tech"></li>
-                        <li><img src="graphql-logo.png" alt="GraphQL"></li>
-                        <li><img src="grpc-logo.png" alt="gRPC"></li>
-                        <li><img src="placeholder.png" alt="Tech"></li>
-                        <li><img src="placeholder.png" alt="Tech"></li>
-                        <li><img src="stripe-logo.png" alt="Stripe"></li>
-                        <li><img src="placeholder.png" alt="Tech"></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        <li><a href="#"><img src="images/industry-v11-images/node.png" alt="Node"></a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -466,53 +489,53 @@
 
 
     <!-- regulatory section -->
-     <section class="regulatory-section padding-t-120 padding-b-120 ">
-  <!-- Use your container here -->
-  <div class="container">
-  
-  <div class="inner-part">
+    <section class="regulatory-section padding-t-120 padding-b-120 ">
+        <!-- Use your container here -->
+        <div class="container">
+
+            <div class="inner-part">
 
 
-    <!-- Left Side: Content -->
-    <aside>
-      <span>REGULATORY & COMPLIANCE LANDSCAPE</span>
-      <h1>Compliance frameworks we architect.</h1>
-      <p>Every FinTech engagement starts with compliance requirement mapping in the Discovery Sprint.</p>
-    </aside>
+                <!-- Left Side: Content -->
+                <aside>
+                    <span>REGULATORY & COMPLIANCE LANDSCAPE</span>
+                    <h1>Compliance frameworks we architect.</h1>
+                    <p>Every FinTech engagement starts with compliance requirement mapping in the Discovery Sprint.</p>
+                </aside>
 
-    <!-- Right Side: Scrollable Cards -->
-    <main>
-      <article>
-        <div>
-          <span>PCI-DSS V4.0</span>
-          <strong>01</strong>
+                <!-- Right Side: Scrollable Cards -->
+                <main>
+                    <article>
+                        <div>
+                            <span>PCI-DSS V4.0</span>
+                            <strong>01</strong>
+                        </div>
+                        <h3>Payment Card Industry Data Security Standard</h3>
+                        <p>Cardholder data environment scoping, tokenisation vault design, network segmentation.</p>
+                    </article>
+
+                    <article>
+                        <div>
+                            <span>SOC 2 TYPE II</span>
+                            <strong>02</strong>
+                        </div>
+                        <h3>Service Organisation Control 2</h3>
+                        <p>Ensures service providers securely manage your data.</p>
+                    </article>
+
+                    <article>
+                        <div>
+                            <span>ISO 27001:2022</span>
+                            <strong>03</strong>
+                        </div>
+                        <h3>Information Security Management</h3>
+                        <p>The international standard for information security management systems.</p>
+                    </article>
+                </main>
+            </div>
+
         </div>
-        <h3>Payment Card Industry Data Security Standard</h3>
-        <p>Cardholder data environment scoping, tokenisation vault design, network segmentation.</p>
-      </article>
-
-      <article>
-        <div>
-          <span>SOC 2 TYPE II</span>
-          <strong>02</strong>
-        </div>
-        <h3>Service Organisation Control 2</h3>
-        <p>Ensures service providers securely manage your data.</p>
-      </article>
-
-      <article>
-        <div>
-          <span>ISO 27001:2022</span>
-          <strong>03</strong>
-        </div>
-        <h3>Information Security Management</h3>
-        <p>The international standard for information security management systems.</p>
-      </article>
-    </main>
-  </div>
-
-  </div>
-</section>
+    </section>
     <!-- regulatory section -->
 
 
@@ -577,6 +600,21 @@
                     </div>
                 </div>
             </div>
+            <!-- Card 04 -->
+            <div class="stack-card">
+                <div class="card-body">
+                    <div class="card-left">
+                        <span class="card-num">04.</span>
+                        <h3>KYC / AML Engineering</h3>
+                        <p>Identity verification pipelines, sanctions screening, document verification, and ongoing
+                            transaction monitoring.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+                    <div class="card-right">
+                        <img src="images/industry-v11-images/img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -586,15 +624,16 @@
 
 
     <!-- ??solution industry -->
-     <section>
-  <div class="container">
-    <!-- Section Header -->
-    <header>
-      <div>
-        <h1>Solution Industry Types</h1>
-        <p>Engagement structure follows your situation — not a fixed service catalogue. Choose the model that fits your team, timeline, and governance requirements.</p>
-      </div>
-      <div class="master-btn button-v10 second">
+    <section class="solution-industry padding-t-120 padding-b-120" >
+        <div class="container">
+            <!-- Section Header -->
+            <div class="top-part">
+                <div>
+                    <h1>Solution Industry Types</h1>
+                    <p>Engagement structure follows your situation — not a fixed service catalogue. Choose the model
+                        that fits your team, timeline, and governance requirements.</p>
+                </div>
+                <div class="master-btn button-v10 second">
                     <a href="/contact" class="btn-circle">
                         <span class="text" data-text="Get in Touch">Get in Touch</span>
 
@@ -603,298 +642,562 @@
                         </span>
                     </a>
                 </div>
-    </header>
+            </div>
 
-    <!-- Grid of Cards -->
-    <ul>
-      <li>
-        <figure><img src="icon1.png" alt="Icon"></figure>
-        <h3>Underwriting automation systems</h3>
-      </li>
-      <li>
-        <figure><img src="icon2.png" alt="Icon"></figure>
-        <h3>Insurance claims processing systems</h3>
-      </li>
-      <li>
-        <figure><img src="icon3.png" alt="Icon"></figure>
-        <h3>Policy administration systems</h3>
-      </li>
-      <li>
-        <figure><img src="icon4.png" alt="Icon"></figure>
-        <h3>Actuarial software</h3>
-      </li>
-      <li>
-        <figure><img src="icon5.png" alt="Icon"></figure>
-        <h3>Loan management software</h3>
-      </li>
-      <li>
-        <figure><img src="icon6.png" alt="Icon"></figure>
-        <h3>Mortgage automation systems</h3>
-      </li>
-      <li>
-        <figure><img src="icon7.png" alt="Icon"></figure>
-        <h3>Debt collection systems</h3>
-      </li>
-      <li>
-        <figure><img src="icon8.png" alt="Icon"></figure>
-        <h3>Investment portfolio management software</h3>
-      </li>
-    </ul>
-  </div>
-</section>
+            <!-- Grid of Cards -->
+            <ul>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+                <li>
+                    <figure><img src="images/industry-v11-images/automation.svg" alt="Icon"></figure>
+                    <h3>Underwriting automation systems</h3>
+                </li>
+               
+            </ul>
+        </div>
+    </section>
     <!-- ??solution industry -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
-    <script>
+    <!-- added -->
+
+    <!-- Why Opt. technology -->
+    <section class="client-img-section dark-client-section padding-t-120 padding-b-120">
+        <div class="container">
+            <div class="dis-flex justify-sb ">
+                <div class="flex-2 left-box">
+                    <div class="head-txt">
+                        <h2>Experience Excellence with <em>ValueCoders</em></h2>
+                        <p>Embrace the transformative power of technology with ValueCoders, where our expertise meets
+                            your vision.</p>
+                        <p>
+                            From startups to big enterprises, development organizations to digital agencies, and SMEs to
+                            Governments, we cater to varied software requirements, delivering .</p>
+                        <div class="master-btn button-v10">
+                            <!-- TEXT -->
+                            <a href="#t" class="btn-circle" target="_blank">
+                                <span class="text" data-text="Schedule a Call">
+                                    <span class="text-default">Schedule a Call</span>
+                                </span>
+                                <!-- ARROW -->
+                                <span class="circle">
+                                    <span class="arrow-default"><img
+                                            src="https://www.valuecoders.com/wp-content/themes/valuecoders/v6.0/images/index-v10/move-right.svg"
+                                            alt=""></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-2 right-box">
+                    <div class="client-section">
+                        <div class="client-row">
+                            <div class="client-stack award-animate-slide-to-left hover:pause">
+                                <ul>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo.png"
+                                                alt="Valuecoders" width="76" height="29">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo2.png"
+                                                alt="Valuecoders" width="113" height="17">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo3.png"
+                                                alt="Valuecoders" width="85" height="28">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo4.png"
+                                                alt="Valuecoders" width="68" height="46">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo5.png"
+                                                alt="Valuecoders" width="91" height="40">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo6.png"
+                                                alt="Valuecoders" width="98" height="49">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo7.png"
+                                                alt="Valuecoders" width="80" height="33">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo8.png"
+                                                alt="Valuecoders" width="110" height="50">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="client-row">
+                            <div class="client-stack award-animate-slide-to-right hover:pause">
+                                <ul>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo9.png"
+                                                alt="Valuecoders" width="83" height="82">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo10.png"
+                                                alt="Valuecoders" width="63" height="29">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo11.png"
+                                                alt="Valuecoders" width="102" height="32">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo12.png"
+                                                alt="Valuecoders" width="92" height="53">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo13.png"
+                                                alt="Valuecoders" width="61" height="26">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo14.png"
+                                                alt="Valuecoders" width="87" height="44">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo15.png"
+                                                alt="Valuecoders" width="94" height="38">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo16.png"
+                                                alt="Valuecoders" width="93" height="50">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="client-row">
+                            <div class="client-stack award-animate-slide-to-left hover:pause">
+                                <ul>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo17.png"
+                                                alt="Valuecoders" width="104" height="30">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo18.png"
+                                                alt="Valuecoders" width="96" height="30">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo19.png"
+                                                alt="Valuecoders" width="50" height="50">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo20.png"
+                                                alt="Valuecoders" width="82" height="49">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo21.png"
+                                                alt="Valuecoders" width="109" height="27">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo22.png"
+                                                alt="Valuecoders" width="103" height="54">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo23.png"
+                                                alt="Valuecoders" width="94" height="50">
+                                        </picture>
+                                    </li>
+                                    <li>
+                                        <picture>
+                                            <img loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo24.png"
+                                                alt="Valuecoders" width="100" height="33">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="award-sc">
+                            <h5>Awards &amp; Certifications -</h5>
+                            <div class="award-row">
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-01.svg"
+                                                alt="Valuecoders" width="58" height="38">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-02.svg"
+                                                alt="Valuecoders" width="53" height="40">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-03.svg"
+                                                alt="Valuecoders" width="96" height="33">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-04.svg"
+                                                alt="Valuecoders" width="96" height="15">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-05.svg"
+                                                alt="Valuecoders" width="36" height="36">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-06.svg"
+                                                alt="Valuecoders" width="81" height="34">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-07.svg"
+                                                alt="Valuecoders" width="53" height="45">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy"
+                                                src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-08.svg"
+                                                alt="Valuecoders" width="29" height="50">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- added -->
+
+
+
+    <!-- complines sec -->
+       <section class="compliance-section padding-t-120 padding-b-120">
+    <div class="container">
+      <div class="compliance-section__header">
+        <h2>Three ways to engage Compliance.</h2>
+        <p>Governance, contractual commitments, and ZDR standards are identical across every model.</p>
+      </div>
+      <div class="compliance-section__grid">
+ 
+        <div class="compliance-card compliance-card--light">
+          <div class="compliance-card__top">
+            <span >Team Extension</span>
+            <h3>Client-Led Delivery</h3>
+            <p>You run delivery · We add engineers who integrate fast</p>
+          </div>
+          <ul class="compliance-card__list">
+            <li>Your sprint process · your tools · your compliance posture</li>
+            <li>Engineers with FinTech domain experience — confirmed before profiling</li>
+            <li>ZDR standard · NDA before repo access · IP clause Day 1</li>
+            <li>48h matching · 7-day trial · 10-day replacement — in contract</li>
+          </ul>
+          <div class="compliance-card__footer">
+            <a href="#" class="btn-secondry">Start Team Extension</a>
+          </div>
+        </div>
+ 
+        <div class="compliance-card compliance-card--dark">
+          <div class="compliance-card__top">
+            <span >Delivery Pod</span>
+            <h3>ValueCoders-Led Delivery</h3>
+            <p>We run delivery · You define what ships</p>
+          </div>
+          <ul class="compliance-card__list">
+            <li>Named Delivery Lead owns cadence, QA, and compliance gates</li>
+            <li>Weekly sprint reports — ticket data in your tools, not slides</li>
+            <li>Compliance architecture reviewed by Head of Delivery before kickoff</li>
+            <li>Milestone or Fixed-Cost billing — after Discovery Sprint</li>
+          </ul>
+          <div class="compliance-card__footer">
+            <a href="#" class="btn-secondry">Build a Delivery Pod</a>
+          </div>
+        </div>
+ 
+        <div class="compliance-card compliance-card--light">
+          <div class="compliance-card__top">
+            <span class="compliance-card__badge compliance-card__badge--yellow">Discovery Sprint</span>
+            <h3>Start Here</h3>
+            <p>Fixed-Fee · 2–4 Weeks · Compliance-first scoping</p>
+          </div>
+          <ul class="compliance-card__list">
+            <li>Compliance requirements mapped before any architecture decision</li>
+            <li>PCI-DSS / SOC 2 / GDPR scope documented in deliverable</li>
+            <li>Milestone plan with compliance effort included in estimates</li>
+            <li>Required before any fixed-price FinTech build commitment</li>
+          </ul>
+          <div class="compliance-card__footer">
+            <a href="#" class="btn-secondry">Start Team Extension</a>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+
+<!--  -->
+   
+<section class="security-section padding-t-120 padding-b-120" >
+  <div class="container">
+ 
+    <div class="security-section__header">
+      <h2>Compliance and Security of Financial Solutions</h2>
+      <p>Our compliance consultants and IT security teams help BFSI organizations achieve and maintain compliance.</p>
+    </div>
+ 
+    <ul >
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+      <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      
+      <li>
+         <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+      <li>
+        <img src="images/industry-v11-images/alm-logo.png" />
+      </li>
+    </ul>
+ 
+  </div>
+</section>
+
+
+<!-- success stories -->
+ <section class="stories-section padding-t-120 padding-b-120">
+        <div class="container">
+            <div class="inner-part">
+
+                <!-- Top row -->
+                <div class="stories-section__top">
+                    <div class="stories-section__heading-wrap">
+                        <h2>Success Stories</h2>
+                        <p>
+                            Engagement structure follows your situation — not a fixed service catalogue. Choose the
+                            model that fits your team, timeline, and governance requirements.
+                        </p>
+                    </div>
+
+
+                    <!-- TEXT -->
+                    <div class="master-btn button-v10 second">
+                        <a href="/contact" class="btn-circle">
+                            <span class="text" data-text="Get in Touch">Get in Touch</span>
+
+                            <span class="circle">
+                                <img src="images/index-v10/move-right.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cards grid -->
+                <div class="stories-section__grid">
+
+                    <!-- Card 1: Featured (left, spans 2 rows) -->
+                    <div class="story-card story-card--featured">
+                        <div class="story-card__image-wrap">
+                            <div class="image-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
+                        </div>
+                        <div class="story-card__content">
+                            <h3>Project Management</h3>
+                            <p>
+                                The client wanted to build a web portal where customers could purchase
+                                motorcycles online and dealers could access and manage their agent accounts.
+                            </p>
+                            <a href="#" class="story-card__link">Learn More </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Best Travel Platform (small, right top) -->
+                    <div class="story-card story-card--small">
+                        <div class="story-card__image-wrap">
+                            <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
+                        </div>
+                        <div class="story-card__content">
+                            <h3>Best Travel Platform</h3>
+                            <p>
+                                The smart integrated platform is founded on the pillars…
+                            </p>
+                            <a href="#" class="story-card__link">Learn More </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: eCommerce Platform (small, right bottom) -->
+                    <div class="story-card story-card--small">
+                        <div class="story-card__image-wrap">
+                            <div class="img-part"><img src="images/index-v10/success-card-1.webp" alt=""></div>
+                        </div>
+                        <div class="story-card__content">
+                            <h3>eCommerce Platform</h3>
+                            <p>
+                                The smart integrated platform is founded on the pillars…
+                            </p>
+                            <a href="#" class="story-card__link">Learn More </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- success stories -->
+
+
+
+
+
+
+       <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="js/industries-v11.js"></script>
 
-
-
-        if (document.getElementById("home-tpl-logoslide")) {
-            new Glide("#home-tpl-logoslide", {
-                type: "carousel",
-                autoplay: 1,
-                animationDuration: 4000,
-                animationTimingFunc: "linear",
-                perView: 1,
-                gap: 30,
-                hoverpause: false
-            }).mount();
-        };
-
-
-        const section = document.querySelector(".fintech-delivery");
-
-        if (section) {
-
-            const items = section.querySelectorAll(".ai-item");
-
-            let current = 0;
-            let duration = 4000;
-            let timer;
-
-            function startProgress(index) {
-
-                clearTimeout(timer);
-
-                items.forEach(item => {
-
-                    item.classList.remove("active");
-
-                    let bar = item.querySelector(".progress");
-
-                    if (bar) {
-                        bar.style.transition = "none";
-                        bar.style.width = "0%";
-                    }
-
-                });
-
-                let activeItem = items[index];
-
-                if (!activeItem) return;
-
-                activeItem.classList.add("active");
-
-                let progress = activeItem.querySelector(".progress");
-
-                setTimeout(() => {
-                    if (progress) {
-                        progress.style.transition = `width ${duration}ms linear`;
-                        progress.style.width = "100%";
-                    }
-                }, 50);
-
-                timer = setTimeout(() => {
-
-                    current++;
-
-                    if (current >= items.length) {
-                        current = 0;
-                    }
-
-                    startProgress(current);
-
-                }, duration);
-
-            }
-
-            items.forEach((item, index) => {
-
-                item.addEventListener("click", () => {
-
-                    current = index;
-                    startProgress(current);
-
-                });
-
-            });
-
-            startProgress(0);
-        }
-
-
-        // ````````````````````````````````````````````````````````````````````````````````
-        // build section 
-
-        (function () {
-            const section = document.querySelector('.fintech-section');
-            if (!section) return;
-
-            const slider = section.querySelector('.cards');
-            const prevBtn = section.querySelector('#prev');
-            const nextBtn = section.querySelector('#next');
-            const menuItems = section.querySelectorAll('#menu li');
-
-            if (!slider) return;
-
-            const glider = new cards(slider, {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                draggable: true,
-                arrows: {
-                    prev: prevBtn,
-                    next: nextBtn
-                }
-            });
-
-            // MENU CLICK
-            menuItems.forEach((item, index) => {
-                item.addEventListener('click', () => {
-                    glider.scrollItem(index);
-
-                    menuItems.forEach(i => i.classList.remove('active'));
-                    item.classList.add('active');
-                });
-            });
-
-            // SYNC MENU
-            slider.addEventListener('glider-slide-visible', (e) => {
-                const index = e.detail.slide;
-
-                menuItems.forEach(i => i.classList.remove('active'));
-                if (menuItems[index]) {
-                    menuItems[index].classList.add('active');
-                }
-            });
-
-        })();
-
-        // // ````````````````````````````````````````````````````````````````````````````````
-        // /unique-stacking-wrapper
-
-        (function () {
-            const wrapper = document.getElementById('unique-stacking-wrapper');
-
-            if (wrapper) {
-                const cards = wrapper.querySelectorAll('.stack-card');
-
-                const updateStackingEffect = () => {
-                    cards.forEach((card, index) => {
-                        const rect = card.getBoundingClientRect();
-
-                        // If the card is "stuck" at the top
-                        // We add a class if you want to trigger extra animations
-                        if (rect.top <= (40 + (index * 25))) {
-                            card.classList.add('is-stacked');
-                        } else {
-                            card.classList.remove('is-stacked');
-                        }
-                    });
-                };
-
-                window.addEventListener('scroll', updateStackingEffect);
-                // Run once on load to catch initial state
-                updateStackingEffect();
-            }
-        })();
-
-
-
-        // ~~~~~~~~~~~~~~ delivery works ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        document.addEventListener('DOMContentLoaded', () => {
-            // Select the trigger divs within right-part
-            const triggers = document.querySelectorAll('.right-part .accordion-trigger');
-
-            triggers.forEach(trigger => {
-                trigger.addEventListener('click', function () {
-                    const currentItem = this.parentElement;
-                    const isOpen = currentItem.classList.contains('active');
-
-                    // Condition: Close all other open items in this section
-                    const allItems = document.querySelectorAll('.right-part .accordion-item');
-                    allItems.forEach(item => {
-                        item.classList.remove('active');
-                    });
-
-                    // Toggle current: Open if it was closed
-                    if (!isOpen) {
-                        currentItem.classList.add('active');
-                    }
-                });
-            });
-        });
-        // `````````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-        const buttons = document.querySelectorAll('section nav button');
-
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Condition: Remove active state from others
-                buttons.forEach(b => b.setAttribute('data-active', 'false'));
-
-                // Set active state to clicked button
-                btn.setAttribute('data-active', 'true');
-
-                // Logic to change content could go here
-                console.log(`Switching to: ${btn.innerText}`);
-            });
-        });
-
-        const buttons = document.querySelectorAll('section nav button');
-        const logoList = document.querySelector('section div ul');
-
-        // Dummy data for the "Data & Streaming" section
-        const streamingData = [
-            { alt: 'Apache Kafka', src: 'https://cdn.simpleicons.org/apachekafka/white' },
-            { alt: 'Spark', src: 'https://cdn.simpleicons.org/apachespark/E25A1C' },
-            { alt: 'Flink', src: 'https://cdn.simpleicons.org/apacheflink/E6522C' },
-            { alt: 'Redis', src: 'https://cdn.simpleicons.org/redis/DC382D' },
-            { alt: 'Snowflake', src: 'https://cdn.simpleicons.org/snowflake/29B5E8' },
-            { alt: 'Databricks', src: 'https://cdn.simpleicons.org/databricks/FF3621' }
-        ];
-
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // 1. Update active UI state
-                buttons.forEach(b => b.setAttribute('data-active', 'false'));
-                btn.setAttribute('data-active', 'true');
-
-                // 2. Condition: Check if clicked button is "Data & Streaming"
-                if (btn.textContent.trim() === "Data & Streaming") {
-                    updateLogos(streamingData);
-                } else {
-                    // Logic for other buttons or a default state
-                    logoList.innerHTML = '<li><p>Other Tech Data...</p></li>';
-                }
-            });
-        });
-
-        function updateLogos(data) {
-            // Clear current list
-            logoList.innerHTML = '';
-
-            // Inject new dummy data
-            data.forEach(item => {
-                const li = document.createElement('li');
-                li.innerHTML = `<img src="${item.src}" alt="${item.alt}" style="max-width: 50px;">`;
-                logoList.appendChild(li);
-            });
-        }
-
-    </script>
 </body>
 
 </html>

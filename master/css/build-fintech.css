@@ -1876,7 +1876,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .fintech-section .glider {
   overflow: hidden;
 }
-.fintech-section .slide-card {
+.fintech-section .slide-card .inner-card {
   display: flex;
   gap: 30px;
 }
@@ -1887,6 +1887,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   /* CARD */
 }
 .fintech-section .slide-card {
+  display: inline-block;
+}
+.fintech-section .slide-card .inner-card {
   min-width: 100%;
   width: 100%;
   background: var(--card-bg);
@@ -1919,7 +1922,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12;
+  gap: 12px;
   margin-top: 20px;
 }
 .fintech-section .cards .card-l ul li {
@@ -1987,6 +1990,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-weight: 600;
   font-size: 14px;
   margin-right: 25px;
+  cursor: pointer;
 }
 .fintech-section ul li:last-child {
   margin-right: 0;

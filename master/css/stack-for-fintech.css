@@ -1837,7 +1837,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stack-fintech {
   background-color: #05070a;
   color: white;
-  padding: 80px 20px;
   text-align: center;
 }
 .stack-fintech aside span {
@@ -1856,32 +1855,52 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin: 0 auto 40px;
   line-height: 1.6;
 }
-.stack-fintech nav {
+.stack-fintech .production-tech {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 50px;
 }
-.stack-fintech nav button {
-  background: #1e293b;
+.stack-fintech .production-tech button {
+  background: rgba(255, 255, 255, 0.1490196078);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #94a3b8;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 15px 20px;
+  border-radius: 100px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #D1D5DC;
   transition: 0.3s;
 }
-.stack-fintech nav button[data-active=true] {
-  color: white;
-  border-color: #f0ad4e;
-  box-shadow: 0 0 15px rgba(240, 173, 78, 0.3);
-  background: rgba(240, 173, 78, 0.1);
+.stack-fintech .production-tech button[data-active=true] {
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(5, 22, 77, 0.5019607843);
+  color: #ffffff;
+  border: none;
+  position: relative;
+  z-index: 0;
+  box-shadow: 3px 3px 6px 0px rgba(255, 173, 0, 0.568627451);
+}
+.stack-fintech .production-tech button[data-active=true]::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 999px;
+  background: linear-gradient(92.78deg, #0133D6 0.86%, #FFAD00 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
 }
 .stack-fintech .logos-part {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px;
+  padding-top: 60px;
+  padding-left: 59px;
+  padding-right: 59px;
+  padding-bottom: 92px;
   background: linear-gradient(180deg, #090C19 0%, #05164D 100%);
   border: 1px solid rgba(255, 173, 0, 0.1490196078);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1889,35 +1908,39 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .stack-fintech .logos-part ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   list-style: none;
   padding: 0;
 }
 .stack-fintech .logos-part ul li {
+  border-radius: 20px;
+  height: 127px;
+}
+.stack-fintech .logos-part ul li a {
+  height: 100%;
+  display: flex;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   border: 1px solid;
   border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
-  border-radius: 12px;
-  height: 100px;
+  border-image-slice: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
   cursor: pointer;
 }
-.stack-fintech .logos-part ul li img {
+.stack-fintech .logos-part ul li a img {
   max-width: 60%;
   filter: grayscale(1);
   opacity: 0.7;
   transition: 0.3s;
 }
-.stack-fintech .logos-part ul li:hover {
-  border: 1px solid;
-  border-image-source: linear-gradient(116.71deg, #FFAD00 3.55%, #251901 97.06%);
+.stack-fintech .logos-part ul li a:hover {
+  border: 1px solid transparent; /* important */
+  border-image: linear-gradient(116.71deg, #FFAD00 3.55%, #251901 97.06%) 1;
 }
-.stack-fintech .logos-part ul li:hover img {
+.stack-fintech .logos-part ul li a:hover img {
   filter: grayscale(0);
   opacity: 1;
 }
