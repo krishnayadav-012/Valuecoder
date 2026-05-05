@@ -15,7 +15,7 @@ $gold-gradient: linear-gradient(90deg, #f0ad4e, #ec971f);
 
   aside {
     span { color: #f0ad4e; font-size: 12px; letter-spacing: 2px; font-weight: bold; }
-    h1 { font-size: 2.5rem; margin: 20px 0; }
+    h2 { color: #fff; margin: 20px 0; }
     p { color: #94a3b8; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
   }
 
@@ -120,6 +120,6 @@ height: 100%;
 
 // Responsive Logic
 @media (max-width: 768px) {
-  section aside h1 { font-size: 1.8rem; }
+  section aside h2 { font-size: 1.8rem; }
   section div { padding: 20px; }
 }

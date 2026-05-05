@@ -1855,9 +1855,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: 14px;
   letter-spacing: 1.5px;
 }
-.regulatory-section aside h1 {
-  font-size: 3.5rem;
+.regulatory-section aside h2 {
   margin: 24px 0;
+  color: #fff;
   line-height: 1.1;
 }
 .regulatory-section aside p {

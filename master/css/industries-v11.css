@@ -5395,8 +5395,8 @@ button.tab-btn-base {
   letter-spacing: 2px;
   font-weight: bold;
 }
-.stack-fintech aside h1 {
-  font-size: 2.5rem;
+.stack-fintech aside h2 {
+  color: #fff;
   margin: 20px 0;
 }
 .stack-fintech aside p {
@@ -5496,7 +5496,7 @@ button.tab-btn-base {
 }
 
 @media (max-width: 768px) {
-  section aside h1 {
+  section aside h2 {
     font-size: 1.8rem;
   }
   section div {
@@ -5524,9 +5524,9 @@ button.tab-btn-base {
   font-size: 14px;
   letter-spacing: 1.5px;
 }
-.regulatory-section aside h1 {
-  font-size: 3.5rem;
+.regulatory-section aside h2 {
   margin: 24px 0;
+  color: #fff;
   line-height: 1.1;
 }
 .regulatory-section aside p {
