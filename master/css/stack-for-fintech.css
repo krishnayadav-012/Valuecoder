@@ -1974,8 +1974,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .stack-fintech .logos-part ul li a img {
   max-width: 60%;
-  filter: grayscale(1);
-  opacity: 0.7;
   transition: 0.3s;
 }
 .stack-fintech .logos-part ul li a:hover {

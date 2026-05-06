@@ -213,6 +213,10 @@ margin-right: 0;
  .glider-prev {
         transform: rotate(-180deg);
 }
+.glider-next{
+
+  transform: translateY(0px)!important;
+}
 .glider-next.disabled, .glider-prev.disabled {
   opacity: 11;
 }

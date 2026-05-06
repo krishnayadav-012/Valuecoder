@@ -81,13 +81,40 @@
       p {
         color: #4B5563;
         line-height: 1.6;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         
       }
 
+       ul {
+        margin-bottom: 20px;
+        list-style: none;
+        padding: 0;
+        
+        @media screen and (max-width:767px) {
+                 margin-bottom: 10px;
+                text-align: left;
+               }
+          li{font-size:14px;color:#364153; font-weight: 500; position: relative;padding-left: 26px;
+          &::before{
+            content: "";
+              position: absolute;
+              left: 0;
+              background: url(../images/industry-v11/black-check.svg);
+              width: 14px;
+              height: 14px;
+              background-repeat: no-repeat;
+              background-size: 14px;
+              top: 8px;
+             
+          }
+          }
+
+            }
+
+
       a{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 500;margin-top: 30px;
   margin-top: 50px;
   color: #CC8B00;
   position: relative;

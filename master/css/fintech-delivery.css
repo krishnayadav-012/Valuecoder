@@ -178,6 +178,8 @@
 .fintech-delivery .inner-part .ai-list .ai-item .desc p {
   color: #D1D5DC;
   margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .fintech-delivery .inner-part .ai-list .ai-item .desc ul li {
   position: relative;

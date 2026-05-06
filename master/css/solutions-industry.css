@@ -1896,6 +1896,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   justify-content: center;
   min-height: 220px;
 }
+.solution-industry ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (max-width: 767px) {
   .solution-industry ul li {
     min-height: auto;
@@ -1910,7 +1915,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .solution-industry ul li figure img {
   width: 35px;

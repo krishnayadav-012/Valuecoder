@@ -602,6 +602,11 @@
                         <h3>FinTech Product Development</h3>
                         <p>End-to-end product builds for lending, payments, trading, and InsurTech — from Discovery
                             Sprint to production.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
                         <a href="#">Learn More </a>
                     </div>
                     <div class="card-right">

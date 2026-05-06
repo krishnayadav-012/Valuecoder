@@ -2088,6 +2088,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 .fintech-section .glider-nav .glider-prev {
   transform: rotate(-180deg);
 }
+.fintech-section .glider-nav .glider-next {
+  transform: translateY(0px) !important;
+}
 .fintech-section .glider-nav .glider-next.disabled, .fintech-section .glider-nav .glider-prev.disabled {
   opacity: 11;
 }

@@ -3,7 +3,11 @@
 @use "_menu-v8" as *;
 @use "_footer-form" as *;
 @use "_footer-section" as *;
-
+@use "feedback-section";
+@use "_testimonials";
+@use "glider";
+@use "insights-v10";
+@use "_faqs-v10";
 
 // section scss 
 @use "fintech-delivery" as *;
@@ -31,6 +35,12 @@ h2{
 // header css
 .master-header.header-bg.sc-up .master-menu-desktop li a{
 color: #4b5563;
+}
+.master-header.sc-down.header-bg:hover .master-menu-desktop li a{
+    color: #4b5563;
+}
+.master-header.header-bg:hover{
+    border-bottom: 0;
 }
 .master-header .logo-size .site-logo-img.bg-logo {
     display: block;
