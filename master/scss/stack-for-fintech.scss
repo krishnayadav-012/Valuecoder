@@ -1,22 +1,20 @@
 @use "core/variables" as *;
 @use "_default" as *;
 
-$bg-dark: #05070a;
-$card-bg: rgba(255, 255, 255, 0.03);
-$border-color: rgba(255, 255, 255, 0.1);
-$gold-gradient: linear-gradient(90deg, #f0ad4e, #ec971f);
+
+
 
 .stack-fintech {
-  background-color: $bg-dark;
+  background-color: #090C19;
   color: white;
 
 
   text-align: center;
 
   aside {
-    span { color: #f0ad4e; font-size: 12px; letter-spacing: 2px; font-weight: bold; }
-    h2 { color: #fff; margin: 20px 0; }
-    p { color: #94a3b8; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
+    span { color: #FFAD00; font-size: 14px; font-weight: 600; letter-spacing: 2px; font-weight: bold; }
+    h2 { color: #fff; margin-bottom: 15px; margin-top: 5px; }
+    p { color: #D1D5DC; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
   }
 
   .production-tech {
@@ -132,7 +130,7 @@ border-radius: 20px;
         a{
 height: 100%;
           display: flex;
-          background: $card-bg;
+          background: rgba(255, 255, 255, 0.03);
           border: 1px solid;
   border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
   border-image-slice: 1;

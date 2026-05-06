@@ -46,7 +46,7 @@
     }
 
     h2 {
-      margin: 24px 0;
+      margin-bottom: 20px ;
       color: #fff;
       line-height: 1.1;
     }
@@ -96,10 +96,11 @@
 
         span {
           background: rgba(255, 173, 0, 0.1);
-          color: $darkYellow;
+          color: #CC8B00;
           padding: 6px 12px;
           border-radius: 6px;
-          font-size: 12px;
+          font-size: 14px;
+          font-weight: 600;
         }
 
         strong {
@@ -117,7 +118,7 @@
         opacity: 0;
         overflow: hidden;
         margin-top: 0;
-        color: $suvaGray;
+        color: #99A1AF;
         transition: all 0.4s ease;
       }
 

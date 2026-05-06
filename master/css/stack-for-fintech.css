@@ -1835,22 +1835,24 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 .stack-fintech {
-  background-color: #05070a;
+  background-color: #090C19;
   color: white;
   text-align: center;
 }
 .stack-fintech aside span {
-  color: #f0ad4e;
-  font-size: 12px;
+  color: #FFAD00;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 2px;
   font-weight: bold;
 }
 .stack-fintech aside h2 {
   color: #fff;
-  margin: 20px 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 .stack-fintech aside p {
-  color: #94a3b8;
+  color: #D1D5DC;
   max-width: 600px;
   margin: 0 auto 40px;
   line-height: 1.6;

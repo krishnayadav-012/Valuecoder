@@ -1875,8 +1875,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   width: calc(100% - 470px - 70px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #F9FAFB;
-  gap: 1px;
+  gap: 2px;
 }
 .who-we-serve .main-layout .services-grid .service-card {
   background-color: #F9FAFB;

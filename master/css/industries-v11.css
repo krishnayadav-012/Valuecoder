@@ -5229,15 +5229,15 @@ button.tab-btn-base {
   margin-bottom: 30px;
 }
 .stacking-cards-section .stack-card .card-left a {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   margin-top: 50px;
-  color: #FFAD00;
+  color: #CC8B00;
   position: relative;
 }
 .stacking-cards-section .stack-card .card-left a::after {
   content: "";
-  background: url(../images/index-v10/right-yellow.svg) no-repeat;
+  background: url(../images/industry-v11/yellow-right.svg) no-repeat;
   width: 12px;
   height: 9px;
   background-size: 100%;
@@ -5489,8 +5489,7 @@ button.tab-btn-base {
   width: calc(100% - 470px - 70px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #F9FAFB;
-  gap: 1px;
+  gap: 2px;
 }
 .who-we-serve .main-layout .services-grid .service-card {
   background-color: #F9FAFB;
@@ -5574,22 +5573,24 @@ button.tab-btn-base {
   }
 }
 .stack-fintech {
-  background-color: #05070a;
+  background-color: #090C19;
   color: white;
   text-align: center;
 }
 .stack-fintech aside span {
-  color: #f0ad4e;
-  font-size: 12px;
+  color: #FFAD00;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 2px;
   font-weight: bold;
 }
 .stack-fintech aside h2 {
   color: #fff;
-  margin: 20px 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 .stack-fintech aside p {
-  color: #94a3b8;
+  color: #D1D5DC;
   max-width: 600px;
   margin: 0 auto 40px;
   line-height: 1.6;
@@ -5781,7 +5782,7 @@ button.tab-btn-base {
   letter-spacing: 1.5px;
 }
 .regulatory-section aside h2 {
-  margin: 24px 0;
+  margin-bottom: 20px;
   color: #fff;
   line-height: 1.1;
 }
@@ -5836,10 +5837,11 @@ button.tab-btn-base {
 }
 .regulatory-section main article div span {
   background: rgba(255, 173, 0, 0.1);
-  color: #FFAD00;
+  color: #CC8B00;
   padding: 6px 12px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .regulatory-section main article div strong {
   font-size: 2.5rem;
@@ -5859,7 +5861,7 @@ button.tab-btn-base {
   opacity: 0;
   overflow: hidden;
   margin-top: 0;
-  color: #8e8c8c;
+  color: #99A1AF;
   transition: all 0.4s ease;
 }
 .regulatory-section main article:hover {

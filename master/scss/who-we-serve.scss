@@ -57,10 +57,8 @@
       width: calc(100% - 470px - 70px);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      background-color: #F9FAFB; 
-      gap: 1px; 
+      gap: 2px; 
      
-
       .service-card {
         background-color: #F9FAFB;
         padding: 35px;
