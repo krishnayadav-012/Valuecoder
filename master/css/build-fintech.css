@@ -2029,12 +2029,29 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   list-style: none;
   gap: 10px;
+  padding-bottom: 10px;
+  max-width: 900px;
+  overflow-x: scroll;
+}
+.fintech-section ul::-webkit-scrollbar {
+  width: auto;
+  height: 7px;
+}
+.fintech-section ul::-webkit-scrollbar-track {
+  background: rgba(27, 30, 42, 0.6);
+  width: 3px;
+  height: 3px;
+}
+.fintech-section ul::-webkit-scrollbar-thumb {
+  background: #1E2939;
+  height: 3px;
 }
 .fintech-section ul li {
   color: #6A7282;
   font-weight: 600;
   font-size: 14px;
   margin-right: 25px;
+  min-width: fit-content;
   cursor: pointer;
 }
 .fintech-section ul li:last-child {

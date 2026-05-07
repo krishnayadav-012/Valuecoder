@@ -153,7 +153,10 @@
 
                             <div class="desc">
                                 <p> Production applications built on OpenAI,
+                                    Claude, Gemini, and open-sourceroduction applications built on OpenAI,
                                     Claude, Gemini, and open-source
+                                    foundation models — integrated into
+                                    real business workflows
                                     foundation models — integrated into
                                     real business workflows.</p>
 
@@ -215,8 +218,7 @@
                             </div>
 
                             <div class="desc">
-                                <p>Seamlessly integrate AI into existing
-                                    enterprise systems.</p>
+                                <p>Seamlessly integrate AI into existing enterprise systems.</p>
                             </div>
 
                             <div class="progress" style="transition: none; width: 0%;"></div>
@@ -305,6 +307,12 @@
             </div>
             <div class="slider-bottom">
                 <ul id="menu">
+                    <li data-i="0">Lending &amp; Credit</li>
+                    <li data-i="1">Compliance</li>
+                    <li data-i="2">Payments</li>
+                    <li data-i="0">Lending &amp; Credit</li>
+                    <li data-i="1">Compliance</li>
+                    <li data-i="2">Payments</li>
                     <li data-i="0">Lending &amp; Credit</li>
                     <li data-i="1">Compliance</li>
                     <li data-i="2">Payments</li>

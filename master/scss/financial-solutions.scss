@@ -23,7 +23,7 @@
     p {
     
     margin: 0 auto;
-      max-width: 500px;
+      max-width: 630px;
       font-size: 18px;
       color: #364153;
     }
@@ -97,7 +97,7 @@ border-bottom: 1px solid;
       img {
         width: 100px;
         height: 100px;
-        object-fit: contain;
+        object-fit: none;
         display: block;
  
         @media (max-width: 768px) {

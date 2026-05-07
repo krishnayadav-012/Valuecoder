@@ -1939,8 +1939,16 @@ body.page-template-template-testimonials .client-video-section iframe,
     font-size: 16px !important;
   }
 }
-.delivery-section .inner-part .right-part > p {
+.delivery-section .inner-part .right-part p {
+  margin-bottom: 10px;
+}
+.delivery-section .inner-part .right-part p:last-of-type {
   margin-bottom: 35px;
+}
+@media screen and (max-width: 767px) {
+  .delivery-section .inner-part .right-part p:last-of-type {
+    margin-bottom: 15px;
+  }
 }
 .delivery-section .inner-part .right-part .accordion-item {
   border-top: 1px solid #e5e5e5;
@@ -1997,6 +2005,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #4B5563;
   font-size: 16px;
   line-height: 1.6;
+  margin-bottom: 0;
   padding-bottom: 20px;
 }
 .delivery-section .inner-part .right-part .accordion-item.active .accordion-trigger .icon-placeholder::after {

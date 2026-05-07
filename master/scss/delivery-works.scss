@@ -109,9 +109,19 @@
             font-size: 16px !important;
         }
             }
-            >p{
-                margin-bottom: 35px;
+            p{
+                margin-bottom: 10px;
+                  &:last-of-type{
+                    margin-bottom: 35px;
+
+                    @media screen and (max-width:767px) {
+                        margin-bottom: 15px;    
+                    }
+
+                  }
             }
+          
+           
 
             .accordion-item {
                 border-top: 1px solid $darkWhiteGray;
@@ -174,7 +184,7 @@
                         color: $natural-grey;
                         font-size: 16px;
                         line-height: 1.6;
-                        
+                        margin-bottom: 0;
                         padding-bottom: 20px;
                     }
                 }
@@ -192,3 +202,5 @@
         }
     }
 }
+
+

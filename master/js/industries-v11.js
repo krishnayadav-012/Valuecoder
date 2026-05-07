@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (slider) {
     new Glide(slider, {
       type: "carousel",
-      autoplay: 4000,
-      animationDuration: 4000,
+      autoplay: 6000,
+      animationDuration: 6000,
       animationTimingFunc: "linear",
       perView: 1,
       gap: 30,

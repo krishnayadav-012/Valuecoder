@@ -213,7 +213,7 @@
   color: #FFAD00;
 }
 .fintech-delivery .inner-part .ai-list .ai-item.active .desc {
-  max-height: 80px; /* fixed height */
+  max-height: max-content;
   opacity: 1;
 }
 

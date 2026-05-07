@@ -72,9 +72,9 @@ background: transparent;
     margin-top: 33px;
 }
 .master-menu-desktop .nav-item-base{
-    font-size: 14px;
+    
     color: #F8FAFC ;
-    font-weight: 600;
+    
 }
 .master-header.sc-up {
     margin-top: 30px;
@@ -193,7 +193,8 @@ background: transparent;
         top: 90px;
         video{
             width: 100%;
-            height: 100%;
+                height: calc(100% - 90px);
+
         }
 
     }
@@ -580,4 +581,12 @@ background: linear-gradient(180deg, #00196A 0%, #05164D 100%);
         align-items: start;
         gap: 20px;
     }
+}
+.client-img-section .master-btn.button-v10{margin-top: 50px;
+
+
+    @media screen and (max-width:767px) {
+        margin-top: 25px;
+    }
+
 }
