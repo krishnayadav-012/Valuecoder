@@ -14,10 +14,11 @@
     content="Hire PHP Developers | Dedicated PHP developers / Programmers India - @ValueCoders" />
   <?php require_once './include/header-files.php'; ?>
   <link rel="preload stylesheet" type="text/css" href="./css/index-v8.css" defer />
-  <!-- <link rel="preload stylesheet" type="text/css" href="./css/hire-page-v6.css" defer /> -->
+  <link rel="preload stylesheet" type="text/css" href="./css/dab-block.css" defer />
   <link rel="preload stylesheet" type="text/css" href="./css/trusted-badge.css" defer />
   <link rel="preload stylesheet" type="text/css"
     href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" defer />
+
   <script>
     var vcObj = {
       "_version": "1763614476",
@@ -39,6 +40,65 @@
 
 <body>
   <?php require_once './include/menu-v8.php'; ?>
+
+
+
+
+
+
+
+
+
+<section class="delivery-section">
+<!-- Left: copy -->
+<div class="container">
+    <div class="inner-part">
+        <div class="delivery-section__left">
+          <h2>What is SaaS <em>development?</em></h2>
+<p>SaaS development involves building cloud-hosted software delivered through a subscription model. It includes multi-tenant architecture, billing systems, secure access controls, and continuous product delivery.</p>
+<p>At ValueCoders, SaaS development is governed through platform-level ownership, delivery visibility, and production-first engineering, helping teams launch scalable products without delivery drift.</p>
+        </div>
+        <!-- Right: stats grid -->
+        <div class="delivery-section__right">
+            <!-- Card 1 -->
+            <div class="stat-card">
+                <div class="stat-card__number"><h3>700+</h3></div>
+                <div class="stat-card__label"><p>In-House Engineers</p></div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="stat-card">
+                <div class="stat-card__number"><h3>2,500+</h3></div>
+                <div class="stat-card__label"><p>Projects Delivered</p></div>
+            </div>            
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <section class="second-level-section vlazy"

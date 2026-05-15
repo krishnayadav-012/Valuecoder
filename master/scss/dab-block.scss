@@ -1,0 +1,252 @@
+@use "./core/variables" as *;
+ 
+// ─── Delivery Section ──────────────────────────────────────────────
+.delivery-section {
+background-color: $contentDay;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+
+ 
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   inset: 0;
+  //   background:
+  //     radial-gradient(ellipse 60% 60% at 80% 50%, rgba($dodgerBlue, 0.06) 0%, transparent 70%),
+  //     radial-gradient(ellipse 40% 40% at 20% 80%, rgba($navy-blue, 0.4) 0%, transparent 60%);
+  //   pointer-events: none;
+  // }
+  // &::after{
+  //   position: absolute;
+  //   right: 0;
+  //   content: "";
+  //   bottom: 0;
+  //   width: 520px;
+  //   height: 380px;
+  //   background: url(../../images/index-v10/frame-delevery.webp);
+  // }
+ 
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+  }
+ 
+  @media (max-width: 768px) {
+    padding: 48px 0;
+  }
+ 
+  // ── Inner part ─────────────────────────────────────────────────
+  .inner-part {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+      border: 1px solid #E4E4E7;
+  border-radius: 30px;
+    background: #F4F4F5;
+
+  padding: 70px 80px;
+ 
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 50px;
+    }
+ 
+    @media (max-width: 768px) {
+   padding: 40px 30px;
+    }
+  }
+ 
+  // ── Left Content ───────────────────────────────────────────────
+  &__left {
+    width: calc(100% - 310px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+ 
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    
+    h2 {
+    font-size: clamp(30px, 3.7vw, 46px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: $bgVoilet;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    
+    em {
+      color: $darkYellow;
+      font-style: normal;
+    }
+  }
+ 
+  p {
+    font-size: 18px;
+    color: #364153;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    
+  }
+}
+ 
+  // ── Right Stats Grid ───────────────────────────────────────────
+  &__right {
+    width: 250px;
+    display: grid;
+   gap: 20px;
+
+   .stat-card{
+    h3{
+      margin-bottom: 5px;
+    }
+    p{
+      color: #71717B;
+      font-weight: 500;
+    }
+   }
+ 
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+ 
+    @media (max-width: 768px) {
+      gap: 12px;
+    }
+ 
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+ 
+// ─── Stat Card ─────────────────────────────────────────────────────
+.stat-card {
+  background: #E5E7EB;
+border: 1px solid #E4E4E7;
+  border-radius: 15px;
+  backdrop-filter: blur(13.939393997192383px);
+  padding: 20px 40px;
+
+
+ 
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+// right: -55%;
+//     width: 100%;
+//     height: 100%;
+//     background: url(../../images/index-v10/right-sade.png);
+
+//     transition: opacity 0.3s ease;
+//   }
+ 
+ 
+ 
+  @media (max-width: 768px) {
+    padding: 24px 20px;
+  }
+ 
+  // ── Number ───────────────────────────────────────────────────
+  &__number {
+    h3{
+
+      font-size: clamp(36px, 4.5vw, 46px);
+      font-weight: 800;
+      color: #3F3F47;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      
+      .star {
+        color: $darkYellow;
+        font-size: 0.85em;
+      }
+    }
+    h4{
+      font-size: 46px;
+      font-weight: 800;
+      color: #fff;
+      .star {
+        color: $darkYellow;
+        font-size: 0.85em;
+      }
+    }
+  }
+ 
+  // ── Label ────────────────────────────────────────────────────
+  &__label {
+    p{
+
+      font-size: 16px;
+      font-weight: $normal-font;
+      color: $greyBannerfont;
+      color: $white;
+    }
+  }
+ 
+  // ── Platforms row ─────────────────────────────────────────────
+  &__platforms {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+ 
+  // ── Platform badge ────────────── ──────────────────────────────
+  span {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: rgba($white, 0.1);
+    border: 1px solid rgba($white, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: $bold;
+    color: $white;
+    padding: 0;
+    flex-shrink: 0;
+
+    // &::before{
+    //   display: none;
+    // }
+ 
+    &--google {
+      background: rgba(#EA4335, 0.18);
+      border-color: rgba(#EA4335, 0.3);
+      color: #EA4335;
+    }
+ 
+    &--blue {
+      background: rgba($dodgerBlue, 0.18);
+      border-color: rgba($dodgerBlue, 0.3);
+      color: $dodgerBlue;
+    }
+ 
+    &--green {
+      background: rgba($greenclr, 0.18);
+      border-color: rgba($greenclr, 0.3);
+      color: $greenclr;
+    }
+  }
+}
+ 
+
+@media screen and (max-width:1024px) {
+  .stat-card{
+    min-height: 130px;
+  }
+}
