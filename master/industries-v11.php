@@ -310,19 +310,29 @@
                     <li data-i="0">Lending &amp; Credit</li>
                     <li data-i="1">Compliance</li>
                     <li data-i="2">Payments</li>
-                    <li data-i="0">Lending &amp; Credit</li>
-                    <li data-i="1">Compliance</li>
-                    <li data-i="2">Payments</li>
-                    <li data-i="0">Lending &amp; Credit</li>
-                    <li data-i="1">Compliance</li>
-                    <li data-i="2">Payments</li>
+                    
                 </ul>
-                <div class="glider-nav">
+                <!-- <div class="glider-nav">
                     <button class="glider-prev disabled" aria-label="Previous" aria-disabled="true"><img
                             src="images/index-v10/slide-arrow.svg" alt=""></button>
                     <button class="glider-next" aria-label="Next" aria-disabled="false"><img
                             src="images/index-v10/slide-arrow.svg" alt=""></button>
-                </div>
+                </div> -->
+                
+                <div class="master-btn ">
+                        <!-- TEXT -->
+                        <a href="https://calendly.com/valuecoders/consult" class="btn-circle" target="_blank">
+                            <span class="text" data-text="View All">
+                                <span class="text-default">View All</span>
+                            </span>
+                            <!-- ARROW -->
+                            <span class="circle">
+                                <span class="arrow-default"><img src="https://www.valuecoders.com/wp-content/themes/valuecoders/v6.0/images/index-v10/move-right.svg" alt=""></span>
+                            </span>
+                        </a>
+                    </div>
+
+
             </div>
         </div>
     </section>

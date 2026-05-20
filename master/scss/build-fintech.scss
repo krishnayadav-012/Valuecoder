@@ -38,6 +38,9 @@ p{font-weight: 500; color: #D1D5DC; width: 40%;
        @media screen and (max-width:1024px) {
 margin-bottom: 80px;
 }
+   @media screen and (max-width:767px) {
+margin-bottom: 40px;
+}
 
 
   }
@@ -156,15 +159,36 @@ margin-left: 5px; height: 8px;
 }
 
 /* BOTTOM NAV */
-.slider-bottom{display:flex;align-items:center;justify-content:center;  position: relative;}
-ul{display:flex;list-style:none; gap: 10px;
-  padding-bottom: 10px;
+.slider-bottom{display:flex;align-items:center;justify-content:space-between;  position: relative;
+    @media screen and (max-width:767px) {
+    flex-direction: column;
+    gap: 10px;
+    }
+  &::after{
+    position: absolute;
+    right: 150px;
+    left: 330px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: 1px;
+    background: #3F3F47;
+    content: "";
 
-  max-width: 900px;
-overflow-x: scroll;
- &::-webkit-scrollbar { width: auto; height: 7px; }
-    &::-webkit-scrollbar-track { background: #1B1E2A99; width: 3px; height: 3px; }
-    &::-webkit-scrollbar-thumb { background: #1E2939; height: 3px; }
+    @media screen and (max-width:767px) {
+      display: none;
+    }
+
+  }
+
+ul{display:flex;list-style:none;
+  
+
+//   max-width: 900px;
+// overflow-x: scroll;
+//  &::-webkit-scrollbar { width: auto; height: 7px; }
+//     &::-webkit-scrollbar-track { background: #1B1E2A99; width: 3px; height: 3px; }
+//     &::-webkit-scrollbar-thumb { background: #1E2939; height: 3px; }
 
 
 li{ color: #6A7282; font-weight: 600; font-size: 14px; margin-right: 25px; min-width: fit-content;
@@ -174,11 +198,12 @@ cursor: pointer;
   }
 
      @media screen and (max-width:1024px) {
-margin-right: 0;
+margin-right: 15px;
 
 }
 }
 
+}
 }
  ul li.active{color:$darkYellow;}
 
@@ -233,3 +258,45 @@ margin-right: 0;
 }
 
 }
+
+.fintech-section .slider-bottom .master-btn .btn-circle {
+  border: 0.83px solid  #52525C !important;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 60px !important;
+  background: transparent !important;
+}
+.fintech-section .slider-bottom .master-btn .circle{
+  background: #FFAD00 !important;
+}
+.fintech-section .master-btn .text::before, .master-btn .text::after{
+  color: #9F9FA9 !important;
+  
+}
+
+// @media screen and (max-width:1600px) {
+//   .fintech-section .slider-bottom::after{
+//     width: 64%;
+//   }
+// }
+// @media screen and (max-width:1440px) {
+//   .fintech-section .slider-bottom::after{
+//     width: 60%;
+//   }
+// }
+// @media screen and (max-width:1320px) {
+//   .fintech-section .slider-bottom::after{
+//     width: 57%;
+//   }
+// }
+// @media screen and (max-width:1120px) {
+//   .fintech-section .slider-bottom::after{
+//     width: 55%;
+//   }
+// }
+
+// @media screen and (max-width:1100px) {
+//   .fintech-section .slider-bottom::after{
+//     width: 54%;
+//   }
+// }
