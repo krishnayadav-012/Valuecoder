@@ -490,12 +490,12 @@
                 </aside>
 
                 <div class="production-tech">
-                    <button data-active="true">Backend & APIs</button>
-                    <button>Data & Streaming</button>
-                    <button>Security & Compliance</button>
-                    <button>AI & ML</button>
-                    <button>Cloud & Infrastructure</button>
-                    <button>Frontend</button>
+                    <button data-active="true" class="tech">Backend & APIs</button>
+                    <button class="tech">Data & Streaming</button>
+                    <button class="tech" >Security & Compliance</button>
+                    <button class="tech">AI & ML</button>
+                    <button class="tech">Cloud & Infrastructure</button>
+                    <button class="tech">Frontend</button>
                 </div>
 
                 <div class="logos-part">

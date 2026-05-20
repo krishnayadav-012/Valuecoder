@@ -50,8 +50,8 @@
       }
 
     button {
-      background: #FFFFFF26;
-      border: 1px solid transparent;
+     
+      border:none;
       padding: 15px 20px;
       font-family: "Plus Jakarta Sans", sans-serif;
       cursor: pointer;
@@ -66,24 +66,24 @@
         font-size: 16px;
       }
 
-      &[data-active="true"] {
-box-shadow: 3px 3px 6px 0px #FFAD0091;
-   border: 1px solid;
-border-image: linear-gradient(92.78deg, #0133D6 0.86%, #FFAD00 100%) 1;
+//       &[data-active="true"] {
+// box-shadow: 3px 3px 6px 0px #FFAD0091;
+//    border: 1px solid;
+// border-image: linear-gradient(92.78deg, #0133D6 0.86%, #FFAD00 100%) 1;
 
-  &::before {
-    //  border-radius: 999px;
-color: #fff;
-cursor: pointer;
+//   &::before {
+//     //  border-radius: 999px;
+// color: #fff;
+// cursor: pointer;
 
 
 
-position: relative;
-z-index: 0;
-box-shadow: 3px 3px 6px 0px #FFAD0091;
+// position: relative;
+// z-index: 0;
+// box-shadow: 3px 3px 6px 0px #FFAD0091;
 
-  }
-}
+//   }
+// }
 
 }
   
@@ -128,27 +128,63 @@ border-radius: 20px;
          height: 127px;
 
         a{
-height: 100%;
-          display: flex;
-          background: rgba(255, 255, 255, 0.03);
-          border: 1px solid;
-  border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
-  border-image-slice: 1;
+        height: 100%;
+        display: flex;
+        background: rgba(255, 255, 255, 0.03);
+        //border: 1px solid;
+        //border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
+        //border-image-slice: 1;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: 0.3s;
+        position: relative;
+        border-radius: 16px;
+        padding: 20px;
+        z-index: 1;
         cursor: pointer;
-        
+        flex-wrap: wrap;
+        .itm-row{
+              flex: 0 0 100%;
+              &:nth-child(2) {
+              display: none;
+              color: #ffffff;
+              }
+        }
         img { max-width: 60%; transition: 0.3s; }
         
         &:hover {
-          border: 1px solid transparent; /* important */
-          border-image: linear-gradient(116.71deg, #FFAD00 3.55%, #251901 97.06%) 1;
-          
-          
-          
+          .itm-row:nth-child(2) { display: block; }
           img { filter: grayscale(0); opacity: 1; }
+          &:before{
+            background: linear-gradient(
+                116.71deg,
+                #FFAD00 3.55%,
+                #251901 97.06%
+            );
+          }
+        }
+        &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 1px;
+        border-radius: inherit;
+
+        background: linear-gradient(
+        290.79deg,
+        rgba(66, 45, 0, 0.24) 2.06%,
+        rgba(102, 102, 102, 0.438) 96.71%
+        );
+
+        -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+
+        pointer-events: none;
         }
       }
     }
@@ -166,3 +202,57 @@ height: 100%;
 .stack-fintech .logos-part ul.active {
     display: grid; /* or block, depending on your layout */
 }
+
+
+
+
+
+
+
+ .production-tech .tech{
+        height: 100%;
+        display: flex;
+        background: rgba(255, 255, 255, 0.03);
+        //border: 1px solid;
+        //border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
+        //border-image-slice: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        position: relative;
+        border-radius: 100px;
+        
+        z-index: 1;
+        cursor: pointer;
+        flex-wrap: wrap;
+       
+         &[data-active="true"] {
+          box-shadow: 3px 3px 6px 0px #FFAD0091;
+          &:before{
+            background:  linear-gradient(92.78deg, #0133D6 0.86%, #FFAD00 100%);
+          }
+        }
+        &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 1px;
+        border-radius: inherit;
+
+        background: linear-gradient(
+        290.79deg,
+        rgba(66, 45, 0, 0.24) 2.06%,
+        rgba(102, 102, 102, 0.438) 96.71%
+        );
+
+        -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+
+        pointer-events: none;
+        }
+      }
