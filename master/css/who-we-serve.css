@@ -1949,6 +1949,12 @@ body.page-template-template-testimonials .client-video-section iframe,
   .who-we-serve .main-layout .services-grid .service-card {
     padding: 25px;
   }
+  .who-we-serve .main-layout .services-grid .service-card:hover::after {
+    display: none;
+  }
+  .who-we-serve .main-layout .services-grid .service-card:hover::before {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .who-we-serve .main-layout .visual-panel {
@@ -1957,6 +1963,12 @@ body.page-template-template-testimonials .client-video-section iframe,
   .who-we-serve .main-layout .services-grid {
     width: 100%;
   }
+}
+.who-we-serve .main-layout .services-grid .service-card:hover:nth-child(2n+2)::before {
+  left: 0 !important;
+}
+.who-we-serve .main-layout .services-grid .service-card:hover:nth-child(2n+2)::after {
+  right: 10%;
 }
 
 /*# sourceMappingURL=who-we-serve.css.map */

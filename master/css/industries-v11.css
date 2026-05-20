@@ -6761,6 +6761,12 @@ button.tab-btn-base {
   .who-we-serve .main-layout .services-grid .service-card {
     padding: 25px;
   }
+  .who-we-serve .main-layout .services-grid .service-card:hover::after {
+    display: none;
+  }
+  .who-we-serve .main-layout .services-grid .service-card:hover::before {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .who-we-serve .main-layout .visual-panel {
@@ -6770,6 +6776,13 @@ button.tab-btn-base {
     width: 100%;
   }
 }
+.who-we-serve .main-layout .services-grid .service-card:hover:nth-child(2n+2)::before {
+  left: 0 !important;
+}
+.who-we-serve .main-layout .services-grid .service-card:hover:nth-child(2n+2)::after {
+  right: 10%;
+}
+
 .stack-fintech {
   background-color: #090C19;
   color: white;
