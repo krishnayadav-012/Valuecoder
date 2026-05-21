@@ -1953,7 +1953,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  flex-wrap: wrap;
+  transition: 0.5s;
   position: relative;
   border-radius: 16px;
   padding: 20px;
@@ -1971,6 +1972,12 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stack-fintech .logos-part ul li a img {
   max-width: 60%;
   transition: 0.3s;
+}
+.stack-fintech .logos-part ul li a:hover {
+  transition: 0.5s;
+}
+.stack-fintech .logos-part ul li a:hover .itm-row {
+  flex-basis: 55%;
 }
 .stack-fintech .logos-part ul li a:hover .itm-row:nth-child(2) {
   display: block;

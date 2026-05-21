@@ -66,10 +66,15 @@
 
             </div>
         </div>
-        <div class="banner-video">
+        <!-- <div class="banner-video">
             <video autoplay muted loop>
                 <source src="images/industry-v11/banner-video.mp4" type="video/mp4">
             </video>
+        </div> -->
+        <div class="banner-img">
+            <div class="img-part">
+                <img src="images/industry-v11/banner-img.png" alt="">
+            </div>
         </div>
     </section>
 
@@ -500,43 +505,238 @@
 
                 <div class="logos-part">
 
-                    <ul data-tab="Backend & APIs">
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Node"></a></li>
-                    </ul>
-
-                    <ul data-tab="Data & Streaming">
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Kafka"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Kafka"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Kafka"></a></li>
-                    </ul>
-
-                    <ul data-tab="Security & Compliance">
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Security"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Security"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="Security"></a></li>
-                    </ul>
-
-                    <ul data-tab="AI & ML">
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="TensorFlow"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="TensorFlow"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="TensorFlow"></a></li>
-                    </ul>
-
-                    <ul data-tab="Cloud & Infrastructure">
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="AWS"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="AWS"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="AWS"></a></li>
-                    </ul>
-
-                    <ul data-tab="Frontend">
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="React"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="React"></a></li>
-                        <li><a href="#"><img src="images/industry-v11/node.png" alt="React"></a></li>
-                    </ul>
+                   <ul data-tab="Backend & APIs"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2322.svg" alt="Node.js">
+                            </div>
+                            <div class="itm-row">Node.js</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2323.svg" alt="Java">
+                            </div>
+                            <div class="itm-row">Java</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2324.svg" alt="Python">
+                            </div>
+                            <div class="itm-row">Python</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2326.svg" alt=".NET">
+                            </div>
+                            <div class="itm-row">.NET</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2325.svg" alt=" Golang">
+                            </div>
+                            <div class="itm-row"> Golang</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2328-1.svg" alt="GraphQL">
+                            </div>
+                            <div class="itm-row">GraphQL</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Untitled-design-14-1.svg" alt="REST APIs">
+                            </div>
+                            <div class="itm-row">REST APIs</div>
+                            </a>
+                            </li></ul><ul data-tab="Frontend"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-81-1.svg" alt="React">
+                            </div>
+                            <div class="itm-row">React</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Angular_gradient_logo-1.svg" alt=" Angular">
+                            </div>
+                            <div class="itm-row"> Angular</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-82.svg" alt="Vue.js">
+                            </div>
+                            <div class="itm-row">Vue.js</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Vector-4.svg" alt="Next.js">
+                            </div>
+                            <div class="itm-row">Next.js</div>
+                            </a>
+                            </li></ul><ul data-tab="Mobile Technologies"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-10.svg" alt="Flutter">
+                            </div>
+                            <div class="itm-row">Flutter</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-81-1.svg" alt="React ">
+                            </div>
+                            <div class="itm-row">React </div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Vector-7.svg" alt="Swift">
+                            </div>
+                            <div class="itm-row">Swift</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Kotlin_Icon-1.svg" alt=" Kotlin">
+                            </div>
+                            <div class="itm-row"> Kotlin</div>
+                            </a>
+                            </li></ul><ul data-tab="Cloud & Infrastructure"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-79.svg" alt="AWS">
+                            </div>
+                            <div class="itm-row">AWS</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-2.svg" alt=" Azure">
+                            </div>
+                            <div class="itm-row"> Azure</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-80.svg" alt="Google Cloud">
+                            </div>
+                            <div class="itm-row">Google Cloud</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/layer1-1.svg" alt="Kubernetes">
+                            </div>
+                            <div class="itm-row">Kubernetes</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Vector-3.svg" alt="Docker">
+                            </div>
+                            <div class="itm-row">Docker</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-3.svg" alt="Terraform">
+                            </div>
+                            <div class="itm-row">Terraform</div>
+                            </a>
+                            </li></ul><ul data-tab="Industrial IoT & Connectivity"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-95.svg" alt="MQTT">
+                            </div>
+                            <div class="itm-row">MQTT</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-97.svg" alt="OPC UA">
+                            </div>
+                            <div class="itm-row">OPC UA</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-96.svg" alt=" Modbus">
+                            </div>
+                            <div class="itm-row"> Modbus</div>
+                            </a>
+                            </li></ul><ul data-tab="Data & Analytics"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-65.svg" alt="Kafka">
+                            </div>
+                            <div class="itm-row">Kafka</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-66.svg" alt="Spark">
+                            </div>
+                            <div class="itm-row">Spark</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-2335-1.svg" alt="BigQuery">
+                            </div>
+                            <div class="itm-row">BigQuery</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-68.svg" alt="Snowflake">
+                            </div>
+                            <div class="itm-row">Snowflake</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-69.svg" alt="Redis">
+                            </div>
+                            <div class="itm-row">Redis</div>
+                            </a>
+                            </li></ul><ul data-tab="Security & Compliance"><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/1_St3fqJKbsSZD_eAhE5HtAw-1.svg" alt="OAuth 2.0">
+                            </div>
+                            <div class="itm-row">OAuth 2.0</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Group-70.svg" alt="Okta">
+                            </div>
+                            <div class="itm-row">Okta</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/A.svg" alt="KMS">
+                            </div>
+                            <div class="itm-row">KMS</div>
+                            </a>
+                            </li><li>
+                            <a href="https://www.valuecoders.com/staging">
+                            <div class="itm-row">
+                            <img src="https://www.valuecoders.com/staging/wp-content/uploads/2026/05/Vector-1.svg" alt="HashiCorp ">
+                            </div>
+                            <div class="itm-row">HashiCorp </div>
+                            </a>
+                            </li></ul>  
 
                 </div>
             </div>

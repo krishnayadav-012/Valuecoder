@@ -131,13 +131,11 @@ border-radius: 20px;
         height: 100%;
         display: flex;
         background: rgba(255, 255, 255, 0.03);
-        //border: 1px solid;
-        //border-image-source: linear-gradient(290.79deg, rgba(66, 45, 0, 0.24) 2.06%, rgba(102, 102, 102, 0.438) 96.71%);
-        //border-image-slice: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.3s;
+        flex-wrap: wrap;
+        transition: 0.5s;
         position: relative;
         border-radius: 16px;
         padding: 20px;
@@ -154,6 +152,9 @@ border-radius: 20px;
         img { max-width: 60%; transition: 0.3s; }
         
         &:hover {
+        transition: 0.5s;
+
+            .itm-row{flex-basis: 55%;}
           .itm-row:nth-child(2) { display: block; }
           img { filter: grayscale(0); opacity: 1; }
           &:before{
