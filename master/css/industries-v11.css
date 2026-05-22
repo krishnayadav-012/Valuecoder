@@ -8637,6 +8637,25 @@ h2 {
   overflow: hidden;
   min-height: calc(100vh - 350px);
 }
+.hero-section.indus::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  margin-top: 0;
+  background-size: contain !important;
+  background: url("https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-1-scaled.webp");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .hero-section.indus::after {
+    display: none !important;
+  }
+}
 .hero-section.indus::before {
   content: "";
   position: absolute;

@@ -174,6 +174,28 @@ background: transparent;
     position: relative;
     overflow: hidden;
         min-height: calc(100vh - 350px);
+        
+    &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+    margin-top: 0;
+    background-size: contain !important;
+    background: url('https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-1-scaled.webp');
+    background-position: right center;
+    background-repeat: no-repeat;
+
+
+    @media screen and (max-width:1024px) {
+        display: none !important;
+    }
+
+            
+        }
 
         &::before{
             content: "";
@@ -185,6 +207,7 @@ background: transparent;
             background: linear-gradient(90deg, #000000 48.4%, rgba(0, 0, 0, 0) 100%);
             z-index: 1;
         }
+
 
 
     .dis-flex{

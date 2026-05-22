@@ -41,9 +41,7 @@
 <body>
     <?php require_once './include/menu-v8.php'; ?>
 
-    <section class="hero-section indus" style="background: url('images/industry-v11/banner-img.png'); 
-  background-position: 100% ;
-  background-size: contain; background-repeat: no-repeat;">
+    <section class="hero-section indus" >
         <div class="container">
             <div class="dis-flex">
                 <div class="left-box">
