@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   margin-bottom: -1px;
-  background: #090C19;
+  background: #0B1028;
   flex-wrap: wrap;
 }
 .fintech-delivery::after {
@@ -72,7 +72,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(270deg, #090c19 43.32%, rgba(9, 12, 25, 0.31) 62.86%, rgba(9, 12, 25, 0) 100%);
   z-index: 11;
 }
 @media screen and (max-width: 1024px) {
@@ -99,16 +98,6 @@
 .fintech-delivery .inner-part .right-part .ai-content > p {
   color: rgba(255, 255, 255, 0.6901960784);
   margin-bottom: 60px;
-}
-.fintech-delivery .inner-part .right-part::after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  content: "";
-  width: 70%;
-  height: 100%;
-  background: linear-gradient(270deg, #090C19 43.32%, rgba(9, 12, 25, 0.95) 62.86%, rgba(9, 12, 25, 0) 100%);
-  z-index: -1;
 }
 .fintech-delivery .inner-part {
   /* LIST */
