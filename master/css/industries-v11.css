@@ -6665,6 +6665,10 @@ button.tab-btn-base {
   color: #9F9FA9 !important;
 }
 
+.fintech-section .master-btn .btn-circle:hover .text::before, .master-btn .btn-circle:hover .text::after {
+  color: #9F9FA9 !important;
+}
+
 .stacking-cards-section {
   background-color: #FFFFFF;
 }
@@ -8644,10 +8648,8 @@ h2 {
   top: 0;
   width: 100%;
   height: 100%;
-  display: block !important;
   margin-top: 0;
   background-size: contain !important;
-  background: url("https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-1-scaled.webp");
   background-position: right center;
   background-repeat: no-repeat;
 }
@@ -8661,7 +8663,7 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 80%;
   height: 100%;
   background: linear-gradient(90deg, #000000 48.4%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;

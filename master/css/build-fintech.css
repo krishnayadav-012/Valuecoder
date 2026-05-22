@@ -2138,4 +2138,8 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #9F9FA9 !important;
 }
 
+.fintech-section .master-btn .btn-circle:hover .text::before, .master-btn .btn-circle:hover .text::after {
+  color: #9F9FA9 !important;
+}
+
 /*# sourceMappingURL=build-fintech.css.map */

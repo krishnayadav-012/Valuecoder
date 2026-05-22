@@ -1,4 +1,3 @@
-
 @use "core/variables" as *;
 @use "_default" as *;
 
@@ -272,6 +271,10 @@ margin-right: 15px;
 .fintech-section .master-btn .text::before, .master-btn .text::after{
   color: #9F9FA9 !important;
   
+}
+.fintech-section .master-btn .btn-circle:hover .text::before, .master-btn .btn-circle:hover .text::after{
+  color: #9F9FA9 !important;
+
 }
 
 // @media screen and (max-width:1600px) {

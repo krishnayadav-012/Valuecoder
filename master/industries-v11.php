@@ -66,11 +66,11 @@
 
             </div>
         </div>
-        <!-- <div class="banner-video">
+        <div class="banner-video">
             <video autoplay muted loop>
                 <source src="images/industry-v11/banner-video.mp4" type="video/mp4">
             </video>
-        </div> -->
+        </div>
         <!-- <div class="banner-img">
             <div class="img-part">
                 <img src="images/industry-v11/banner-img.png" alt="">
