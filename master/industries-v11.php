@@ -811,11 +811,11 @@
                 <div class="card-body">
                     <div class="card-left">
                         <div class="card-num"><span>01.</span></div>
-                        <h3>FinTech Product Development</h3>
+                        <h3>FinTech <a href="#">Product</a> Development</h3>
                         <p>End-to-end product builds for lending, payments, trading, and InsurTech — from Discovery
                             Sprint to production.</p>
                             <ul>
-                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem <a href="#">ipsum dolor s</a>it amet.</li>
                                 <li>Lorem ipsum dolor sit amet.</li>
                                 <li>Lorem ipsum dolor sit amet.</li>
                             </ul>
