@@ -5420,12 +5420,17 @@ button.tab-btn-base {
 .insights .insights__top-part {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 60px;
   gap: 20px;
 }
 .insights .insights__top-part h2 {
+  font-size: clamp(30px, 3.7vw, 46px);
   margin-bottom: 10px;
+}
+.insights .insights__top-part h2 em {
+  color: #FFAD00;
+  font-style: normal;
 }
 .insights .insights__top-part p {
   font-size: 18px;
@@ -5511,9 +5516,6 @@ button.tab-btn-base {
   color: #111827;
   line-height: 1.4;
 }
-.blog-card h3 a {
-  color: #111827;
-}
 .blog-card__footer {
   display: flex;
   justify-content: space-between;
@@ -5542,7 +5544,7 @@ button.tab-btn-base {
   font-weight: 500;
   color: #94a3b8;
 }
-.blog-card a.read-more {
+.blog-card a {
   color: #CC8B00;
   text-decoration: none;
   display: flex;
@@ -5551,7 +5553,7 @@ button.tab-btn-base {
   font-size: 16px;
   position: relative;
 }
-.blog-card a.read-more::after {
+.blog-card a::after {
   content: "";
   background: url(../images/index-v10/right-yellow.svg) no-repeat;
   width: 10px;

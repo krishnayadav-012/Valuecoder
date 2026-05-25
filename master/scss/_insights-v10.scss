@@ -7,15 +7,19 @@
   .insights__top-part {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: 60px;
     gap: 20px;
 
     h2 {
     
     
-    
+    font-size: clamp(30px, 3.7vw, 46px);
       margin-bottom: 10px;
+      em{
+         color: $darkYellow;
+         font-style: normal;
+      }
     }
 
     p {
@@ -106,9 +110,6 @@
     font-weight: 600;
     color: #111827;
     line-height: 1.4;
-    a{
-      color: #111827;
-    }
   }
 
   &__footer {
@@ -144,7 +145,7 @@
     }
   }
 
-  a.read-more {
+  a {
     
     color: #CC8B00;
     text-decoration: none;
