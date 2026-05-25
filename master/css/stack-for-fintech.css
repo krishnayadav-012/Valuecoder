@@ -1976,7 +1976,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stack-fintech .logos-part ul li a:hover {
   transition: 0.5s;
 }
-.stack-fintech .logos-part ul li a:hover .itm-row {
+.stack-fintech .logos-part ul li a:hover .itm-row:first-child {
   flex-basis: 55%;
 }
 .stack-fintech .logos-part ul li a:hover .itm-row:nth-child(2) {

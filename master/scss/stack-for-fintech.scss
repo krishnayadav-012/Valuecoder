@@ -1,9 +1,6 @@
 @use "core/variables" as *;
 @use "_default" as *;
 
-
-
-
 .stack-fintech {
   background-color: #090C19;
   color: white;
@@ -119,13 +116,10 @@
       @media screen and (max-width:640px) {
         gap: 20px;
       grid-template-columns: repeat(2, 1fr);
-      
       }
-
       li {
-border-radius: 20px;
-      
-         height: 127px;
+        border-radius: 20px;
+        height: 127px;
 
         a{
         height: 100%;
@@ -150,11 +144,10 @@ border-radius: 20px;
               }
         }
         img { max-width: 60%; transition: 0.3s; }
-        
         &:hover {
         transition: 0.5s;
 
-            .itm-row{flex-basis: 55%;}
+            .itm-row:first-child{flex-basis: 55%;}
           .itm-row:nth-child(2) { display: block; }
           img { filter: grayscale(0); opacity: 1; }
           &:before{

@@ -6665,7 +6665,7 @@ button.tab-btn-base {
   color: #9F9FA9 !important;
 }
 
-.fintech-section .master-btn .btn-circle:hover .text::before, .master-btn .btn-circle:hover .text::after {
+.fintech-section .master-btn .btn-circle:hover .text::before, .fintech-section .master-btn .btn-circle:hover .text::after {
   color: #9F9FA9 !important;
 }
 
@@ -6753,10 +6753,18 @@ button.tab-btn-base {
   font-weight: 700;
   line-height: 100%;
 }
+.stacking-cards-section .stack-card .card-left h3 a {
+  text-decoration: underline;
+  color: inherit;
+}
 .stacking-cards-section .stack-card .card-left p {
   color: #4B5563;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+.stacking-cards-section .stack-card .card-left p a {
+  text-decoration: underline;
+  color: inherit;
 }
 .stacking-cards-section .stack-card .card-left ul {
   margin-bottom: 20px;
@@ -6787,7 +6795,11 @@ button.tab-btn-base {
   background-size: 14px;
   top: 8px;
 }
-.stacking-cards-section .stack-card .card-left a {
+.stacking-cards-section .stack-card .card-left ul li a {
+  text-decoration: underline;
+  color: inherit;
+}
+.stacking-cards-section .stack-card .card-left > a {
   font-size: 16px;
   font-weight: 500;
   margin-top: 30px;
@@ -6795,7 +6807,7 @@ button.tab-btn-base {
   color: #CC8B00;
   position: relative;
 }
-.stacking-cards-section .stack-card .card-left a::after {
+.stacking-cards-section .stack-card .card-left > a::after {
   content: "";
   background: url(../images/industry-v11/yellow-right.svg) no-repeat;
   width: 12px;
@@ -7296,7 +7308,7 @@ button.tab-btn-base {
 .stack-fintech .logos-part ul li a:hover {
   transition: 0.5s;
 }
-.stack-fintech .logos-part ul li a:hover .itm-row {
+.stack-fintech .logos-part ul li a:hover .itm-row:first-child {
   flex-basis: 55%;
 }
 .stack-fintech .logos-part ul li a:hover .itm-row:nth-child(2) {
@@ -8694,7 +8706,7 @@ h2 {
   height: 100%;
   display: block !important;
   margin-top: 0;
-  background-size: contain !important;
+  background-size: cover !important;
   background: url("https://www.valuecoders.com/staging/wp-content/uploads/2026/05/image-1-scaled.webp");
   background-position: right center;
   background-repeat: no-repeat;
