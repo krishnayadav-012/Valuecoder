@@ -252,11 +252,11 @@
                 <div class="slide-card">
                     <div class="inner-card">
                         <div class="card-l">
-                            <h3>Lending &amp; Underwriting Platforms</h3>
+                            <h3>Lending &amp; <a href="#">Underwriting</a> Platforms</h3>
                             <p>Full-stack lending platforms with automated underwriting, credit scoring
                                 API integration, KYC/AML onboarding flows, and audit logging built from Sprint 1.</p>
                             <ul>
-                                <li>Compliance governance layer</li>
+                                <li>Compliance <a href="#">governance</a> layer</li>
                                 <li>AI-Augmented engineering · ZDR standard</li>
                                 <li>Quality gates + acceptance criteria</li>
                             </ul>

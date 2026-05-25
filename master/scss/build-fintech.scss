@@ -97,10 +97,15 @@ padding: 25px 10px 25px 20px;
 
 
  h3{color:#fff; font-size: 24px; font-weight: 600; margin-bottom: 10px;}
+ h3 a{color: $yellow;}
 p{ color: #E5E7EB;}
 ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;
 
  li{font-size:14px;color:#D1D5DC; font-weight: 500; position: relative;padding-left: 26px;
+
+  a{
+    color: $yellow;
+  }
 
 &::before{
   content: "";
@@ -117,7 +122,7 @@ ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;
 }
 
 }
-a{
+> a{
   font-size: 14px;
   font-weight: 600;
   margin-top: 50px;
