@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>consultion</title>
+    <title>Hire</title>
     <meta name="description"
         content="Want to hire PHP developers for your web development project? Hire PHP programmers / developers from us & build scalable & secure web apps. 17+ Yrs | 4200+ projects | Strict NDAs | dedicated PHP Programmers." />
     <meta name="keywords"
         content="Hire PHP developers, Hire PHP programmers, Hire PHP developers India, Hire PHP programmers India, Offshore PHP developers, Offshore PHP programmers, Offshore PHP developers India, Offshore PHP programmers India, Dedicated PHP developers, dedicated PHP Programmers" />
     <meta property="og:title" content="v10" />
     <?php require_once './include/header-files.php'; ?>
-    <link rel="preload stylesheet" type="text/css" href="./css/ai-consultion-v2.css" defer />
+    <link rel="preload stylesheet" type="text/css" href="./css/hire-v7.css" defer />
     <link rel="stylesheet" href="./css/swiper.css">
 
     <link rel="preload stylesheet" type="text/css"
@@ -254,6 +254,291 @@
 
 
 
+
+    <section class="use-cases-systems padding-t-120 padding-b-120">
+        <div class="container">
+
+            <!-- Top Area -->
+            <div class="top-row">
+
+                <div class="heading-col">
+                    <h2>
+                        Use Cases, Systems, and the
+                        <em>Teams that Hire Them</em>
+                    </h2>
+                </div>
+
+                <div class="content-col">
+                    <p>
+                        Engineering needs vary from fast product launches to long-term
+                        platform scaling. These are the common delivery areas where
+                        companies hire developers in India to expand execution capacity
+                        and ship faster.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Area -->
+
+            <div class="bottom-part">
+
+
+                <div class="tabs-wrapper">
+
+                    <!-- Left Side -->
+                    <div class="tabs-nav">
+
+                        <div class="tab-item active">
+                            <button class="acc-title" data-tab="tab1">
+                                <span class="number">01.</span>
+                                Product Platforms & Web Applications
+                            </button>
+                        </div>
+
+                        <div class="tab-item">
+                            <button class="acc-title" data-tab="tab2">
+                                <span class="number">02.</span>
+                                Mobile Apps & User Experiences
+                            </button>
+                        </div>
+
+                        <div class="tab-item">
+                            <button class="acc-title" data-tab="tab3">
+                                <span class="number">03.</span>
+                                Cloud, APIs & Backend Systems
+                            </button>
+                        </div>
+
+                        <div class="tab-item">
+                            <button class="acc-title" data-tab="tab4">
+                                <span class="number">04.</span>
+                                Data, AI & Analytics Solutions
+                            </button>
+                        </div>
+
+                        <div class="tab-item">
+                            <button class="acc-title" data-tab="tab5">
+                                <span class="number">05.</span>
+                                Commerce, CMS & Support Systems
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="tabs-content">
+
+                        <div class="content-pane active" id="tab1">
+
+                            <div class="icon-box">
+                                <img src="./images/consultion/products.svg" alt="">
+                            </div>
+
+                            <h3>Product Platforms & Web Applications</h3>
+
+                            <p>
+                                Digital products built for customer acquisition,
+                                daily usage, and continuous feature releases.
+                            </p>
+
+                            <ul>
+                                <li>SaaS platforms and subscription products</li>
+                                <li>Customer portals and self-service applications</li>
+                                <li>Internal dashboards and admin systems</li>
+                                <li>Ongoing feature delivery across web products</li>
+                            </ul>
+
+                            <div class="tags">
+                                <span>SAAS COMPANIES</span>
+                                <span>PRODUCT TEAMS</span>
+                                <span>DIGITAL BUSINESSES</span>
+                            </div>
+
+                        </div>
+
+                        <div class="content-pane" id="tab2">
+                            <div class="icon-box">
+                                <img src="./images/consultion/products.svg" alt="">
+                            </div>
+                            <h3>Mobile Apps & User Experiences</h3>
+                            <p>
+                                Native and cross-platform mobile apps designed
+                                for growth and retention.
+                            </p>
+                        </div>
+
+                        <div class="content-pane" id="tab3">
+                            <div class="icon-box">
+                                <img src="./images/consultion/products.svg" alt="">
+                            </div>
+                            <h3>Cloud, APIs & Backend Systems</h3>
+                            <p>
+                                Scalable backend infrastructure and API architecture.
+                            </p>
+                        </div>
+
+                        <div class="content-pane" id="tab4">
+                            <div class="icon-box">
+                                <img src="./images/consultion/products.svg" alt="">
+                            </div>
+                            <h3>Data, AI & Analytics Solutions</h3>
+                            <p>
+                                AI-powered systems and business intelligence solutions.
+                            </p>
+                        </div>
+
+                        <div class="content-pane" id="tab5">
+                            <div class="icon-box">
+                                <img src="./images/consultion/products.svg" alt="">
+                            </div>
+                            <h3>Commerce, CMS & Support Systems</h3>
+                            <p>
+                                Ecommerce, content management and support platforms.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="right-part">
+
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <div class="accordion-trigger">
+                            <h3>Zero Data Retention – AI Tool Standard, Not Option</h3>
+
+                        </div>
+                        <div class="accordion-content">
+                            <p>Details regarding zero data retention standards and AI tool integration protocols for
+                                high-security environments.</p>
+                        </div>
+
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-trigger">
+                            <h3>Zero Data Retention – AI Tool Standard, Not Option</h3>
+
+                        </div>
+                        <div class="accordion-content">
+                            <p>Details regarding zero data retention standards and AI tool integration protocols for
+                                high-security environments.</p>
+                        </div>
+
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-trigger">
+                            <h3>Zero Data Retention – AI Tool Standard, Not Option</h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Details regarding zero data retention standards and AI tool integration protocols for
+                                high-security environments.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-trigger">
+                            <h3>Same-Day Risk Escalation – Not Monthly Review</h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Immediate risk identification and escalation processes to ensure project stability
+                                without waiting for monthly cycles.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- How to evaluate v2 -->
+    <section class="how-to-evaluate-v2  padding-t-120 padding-b-120">
+        <div class="container">
+            <div class="top-part">
+                <em>How to evaluate</em>
+                <h2>What to Look for When Hiring Front-End Developers and How to Test for It</h2>
+                <p>Frontend developers should be evaluated on how well they build performant, scalable, and user-friendly interfaces.</p>
+
+            </div>
+            <div class="interview-guide">
+                <div class="ai-list">
+                    <div class="ai-item">
+                        <div class="card-number"> <span>01</span> </div>
+                        <div class="title">
+                            <h4>Marketing</h4>
+                        </div>
+                        <div class="desc">
+                            <p>SEO, paid media (Google, Meta, LinkedIn), content marketing, email, automation, social media, conversion optimisation, ORM, and analytics.</p>
+                            <ul>
+                                <li>SEO</li>
+                                <li>Paid Media</li>
+                                <li>Email</li>
+                                <li>ORM</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="ai-item">
+                        <div class="card-number"> <span>02</span> </div>
+                        <div class="title">
+                            <h4>Development</h4>
+                        </div>
+                        <div class="desc">
+                            <p>There’s limited visibility into how data is used, where it flows, and what gets retained. Without governance, speed increases—but so does risk.</p>
+                        </div>
+
+                    </div>
+                    <div class="ai-item">
+                        <div class="card-number"> <span>03</span> </div>
+                        <div class="title">
+                            <h4>Design</h4>
+                        </div>
+                        <div class="desc">
+                            <p>Payment gateways, KYC providers, and financial data APIs are critical. When integrations are treated as plug-and-play, teams underestimate failure scenarios, compliance implications, and ongoing maintenance overhead.</p>
+                        </div>
+
+                    </div>
+                    <div class="ai-item active">
+                        <div class="card-number"> <span>03</span> </div>
+                        <div class="title">
+                            <h4>AI Solutions</h4>
+                        </div>
+                        <div class="desc">
+                            <p>When ownership is unclear and delivery isn’t fully traceable, issues surface late. Fixes take longer, audits become harder, and confidence in releases drops.</p>
+                        </div>
+                        <div class="progress" style="transition: width 4000ms linear; width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="image-part">
+                    <img src="./images/consultion/evalute-img.webp" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- How to evaluate v2 -->
+
+
+
+
+
+
+
+
+
     <!-- cta v2 -->
     <section class="cta-v2">
         <div class="container">
@@ -273,147 +558,26 @@
     </section>
 
 
-    <!-- software type tabs  -->
 
-    <section class="software-usecases padding-t-120 padding-b-120">
+    <!-- clint image section -->
+    <section class="client-img-section dark-client-section padding-t-120 padding-b-120">
         <div class="container">
-
-            <div class="ai-usecase-header">
-                <div class="ai-usecase-title">
-                    <em>SOFTWARE TYPE</em>
-                    <h2>50+ AI Use Cases Evaluated<br>Across Consulting</h2>
-                </div>
-
-                <div class="ai-usecase-desc">
-                    <p>
-                        Enable organizations to identify, prioritize, and scale AI
-                        initiatives that deliver measurable business value across
-                        diverse use cases.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="ai-usecase-tabs">
-
-                <div class="ai-usecase-tab-buttons">
-                    <ul>
-                        <li class="active " data-tab="business"> By Business Function</li>
-                        <li data-tab="industry"> By Industry</li>
-                    </ul>
-                </div>
-
-
-                <div class="ai-usecase-content">
-
-                    <!-- Business Tab -->
-                    <div class="ai-tab-panel active" id="business">
-
-                        <div class="ai-card">
-                            <h3>Leadership & Strategy</h3>
-                            <p>Support informed AI investment decisions.</p>
-
-                            <ul>
-                                <li>AI roadmap and prioritization</li>
-                                <li>Risk-aware planning</li>
-                            </ul>
-                        </div>
-
-
-                        <div class="ai-card">
-                            <h3>IT & Engineering</h3>
-                            <p>Ensure technical feasibility and integration readiness.</p>
-
-                            <ul>
-                                <li>Architecture alignment</li>
-                                <li>Platform and data readiness</li>
-                            </ul>
-                        </div>
-
-
-                        <div class="ai-card">
-                            <h3>Product & Innovation</h3>
-                            <p>Embed intelligence into products.</p>
-
-                            <ul>
-                                <li>AI-powered features</li>
-                                <li>Differentiation opportunities</li>
-                            </ul>
-                        </div>
-
-
-                        <div class="ai-card">
-                            <h3>Operations</h3>
-                            <p>Improve efficiency and predictability.</p>
-
-                            <ul>
-                                <li>Process optimization</li>
-                                <li>Intelligent decision support</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Industry Tab -->
-                    <div class="ai-tab-panel" id="industry">
-
-                        <div class="ai-card">
-                            <h3>Healthcare</h3>
-                            <p>AI solutions for healthcare transformation.</p>
-
-                            <ul>
-                                <li>Patient analytics</li>
-                                <li>Workflow automation</li>
-                            </ul>
-                        </div>
-
-
-                        <div class="ai-card">
-                            <h3>Finance</h3>
-                            <p>AI driven financial intelligence.</p>
-
-                            <ul>
-                                <li>Fraud detection</li>
-                                <li>Risk analysis</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- software type tabs  -->
-
-
-
-
-
-    <section class="client-img-section padding-t-120 padding-b-120" id="cmn-profile">
-        <div class="container">
-            <div class="dis-flex justify-sb items-center">
+            <div class="dis-flex justify-sb ">
                 <div class="flex-2 left-box">
                     <div class="head-txt">
-                        <em>software type</em>
-                        <h2>Why Partner with ValueCoders for AI Consulting Services?</h2>
-                        <p>As a trusted provider of AI Consulting services, ValueCoders helps enterprises evaluate AI opportunities, modernize operational systems, and establish scalable AI adoption strategies before implementation begins.</p>
-                        <p>Our AI consultants and IT consultants in India work closely with business and technology teams to reduce implementation risks, improve AI readiness, and support long-term operational scalability.</p>
-                        <ul>
-                            <li>Proven AI Consulting Expertise</li>
-                            <li>Production-Ready AI Implementations</li>
-                            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Compliance governance built into delivery</span></li>
-                            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">AI-assisted engineering with Zero Data Retention</span></li>
-                            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Governance-focused AI adoption frameworks</span></li>
-                            <li><span style="font-weight: 400;">Audit-ready deployment planning from day one</span></li>
-                        </ul>
+                        <h2>Experience Excellence with <em>ValueCoders</em></h2>
+                        <p>Embrace the transformative power of technology with ValueCoders, where our expertise meets
+                            your vision.</p>
+                        <p>
+                            From startups to big enterprises, development organizations to digital agencies, and SMEs to
+                            Governments, we cater to varied software requirements, delivering .</p>
+                        <div class="btn-primary-two white right">
+                            <a href="#">
+                                Get in Touch
+                            </a>
+                        </div>
                     </div>
                 </div>
-
                 <div class="flex-2 right-box">
                     <div class="client-section">
                         <div class="client-row">
@@ -421,42 +585,42 @@
                                 <ul>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-01.png" alt="Valuecoders" width="76" height="29">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo.png" alt="Valuecoders" width="76" height="29">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-02.png" alt="Valuecoders" width="113" height="17">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo2.png" alt="Valuecoders" width="113" height="17">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-03.png" alt="Valuecoders" width="85" height="28">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo3.png" alt="Valuecoders" width="85" height="28">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-04.png" alt="Valuecoders" width="68" height="46">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo4.png" alt="Valuecoders" width="68" height="46">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-05.png" alt="Valuecoders" width="91" height="40">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo5.png" alt="Valuecoders" width="91" height="40">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-06.png" alt="Valuecoders" width="98" height="49">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo6.png" alt="Valuecoders" width="98" height="49">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-07.png" alt="Valuecoders" width="80" height="33">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo7.png" alt="Valuecoders" width="80" height="33">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-08.png" alt="Valuecoders" width="110" height="50">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo8.png" alt="Valuecoders" width="110" height="50">
                                         </picture>
                                     </li>
                                 </ul>
@@ -467,42 +631,42 @@
                                 <ul>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-09.png" alt="Valuecoders" width="83" height="82">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo9.png" alt="Valuecoders" width="83" height="82">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-10.png" alt="Valuecoders" width="63" height="29">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo10.png" alt="Valuecoders" width="63" height="29">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-11.png" alt="Valuecoders" width="102" height="32">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo11.png" alt="Valuecoders" width="102" height="32">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-12.png" alt="Valuecoders" width="92" height="53">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo12.png" alt="Valuecoders" width="92" height="53">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-13.png" alt="Valuecoders" width="61" height="26">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo13.png" alt="Valuecoders" width="61" height="26">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-14.png" alt="Valuecoders" width="87" height="44">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo14.png" alt="Valuecoders" width="87" height="44">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-15.png" alt="Valuecoders" width="94" height="38">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo15.png" alt="Valuecoders" width="94" height="38">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-16.png" alt="Valuecoders" width="93" height="50">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo16.png" alt="Valuecoders" width="93" height="50">
                                         </picture>
                                     </li>
                                 </ul>
@@ -513,42 +677,42 @@
                                 <ul>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-17.png" alt="Valuecoders" width="104" height="30">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo17.png" alt="Valuecoders" width="104" height="30">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-18.png" alt="Valuecoders" width="96" height="30">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo18.png" alt="Valuecoders" width="96" height="30">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-19.png" alt="Valuecoders" width="50" height="50">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo19.png" alt="Valuecoders" width="50" height="50">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-20.png" alt="Valuecoders" width="82" height="49">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo20.png" alt="Valuecoders" width="82" height="49">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-21.png" alt="Valuecoders" width="109" height="27">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo21.png" alt="Valuecoders" width="109" height="27">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-22.png" alt="Valuecoders" width="103" height="54">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo22.png" alt="Valuecoders" width="103" height="54">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-23.png" alt="Valuecoders" width="94" height="50">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo23.png" alt="Valuecoders" width="94" height="50">
                                         </picture>
                                     </li>
                                     <li>
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v4.0/images/whyI-24.png" alt="Valuecoders" width="100" height="33">
+                                            <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whcomp-logo24.png" alt="Valuecoders" width="100" height="33">
                                         </picture>
                                     </li>
                                 </ul>
@@ -560,44 +724,66 @@
                                 <div class="award-col">
                                     <span class="aw-icon">
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v5.0/images/award-01.svg" alt="Valuecoders" width="111" height="70">
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-01.svg" alt="Valuecoders" width="58" height="38">
                                         </picture>
                                     </span>
+
                                 </div>
                                 <div class="award-col">
                                     <span class="aw-icon">
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v5.0/images/award-02.svg" alt="Valuecoders" width="88" height="73">
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-02.svg" alt="Valuecoders" width="53" height="40">
                                         </picture>
                                     </span>
+
                                 </div>
                                 <div class="award-col">
                                     <span class="aw-icon">
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v5.0/images/award-03.svg" alt="Valuecoders" width="69" height="69">
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-03.svg" alt="Valuecoders" width="96" height="33">
                                         </picture>
                                     </span>
+
                                 </div>
                                 <div class="award-col">
                                     <span class="aw-icon">
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v5.0/images/award-04.svg" alt="Valuecoders" width="76" height="64">
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-04.svg" alt="Valuecoders" width="96" height="15">
                                         </picture>
                                     </span>
+
                                 </div>
                                 <div class="award-col">
                                     <span class="aw-icon">
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v5.0/images/award-05.svg" alt="Valuecoders" width="116" height="48">
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-05.svg" alt="Valuecoders" width="36" height="36">
                                         </picture>
                                     </span>
+
                                 </div>
                                 <div class="award-col">
                                     <span class="aw-icon">
                                         <picture>
-                                            <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v5.0/images/award-06.svg" alt="Valuecoders" width="69" height="69">
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-06.svg" alt="Valuecoders" width="81" height="34">
                                         </picture>
                                     </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-07.svg" alt="Valuecoders" width="53" height="45">
+                                        </picture>
+                                    </span>
+
+                                </div>
+                                <div class="award-col">
+                                    <span class="aw-icon">
+                                        <picture>
+                                            <img class="normal-mode" loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/whaw-08.svg" alt="Valuecoders" width="29" height="50">
+                                        </picture>
+                                    </span>
+
                                 </div>
                             </div>
                         </div>
@@ -606,257 +792,251 @@
             </div>
         </div>
     </section>
+    <!-- clint image section -->
 
-
-
-    <section class="counter-column-section blue-bg padding-t-70 padding-b-70">
+    <!-- tabel section -->
+    <section id="vhire-tbl-elm" class="table-list-section bg-dark-theme padding-t-150 padding-b-150">
         <div class="container">
-            <div class="dis-flex justify-sb">
-                <div class="left-sec">
-                    <div class="head-txt">
-                        <h2>Scale Product Without Reworks</h2>
-                        <p>Use our pod-based delivery, structured sprints, and engineering governance to evolve your product without constant rebuilding.</p>
-                    </div>
-                    <div class="btn-primary-two white right">
-                        <a href="#">
-                            Get in Touch
-                        </a>
-                    </div>
+            <div class="head-txt text-center">
+                <h2>Hire Software Developers: In-House, Freelancers Or From ValueCoders</h2>
+                <p>There are multiple ways to hire remote developers for building software solutions. You can hire freelancers, hire in-house developers, or you can hire a software development company like ValueCoders. Here is a comparative analysis of all three to help you make the right decision to hire programmers in India.</p>
+            </div>
+            <div class="dis-flex col-box-outer margin-t-100">
+                <div class="flex-4 table-list">
+                    <ul>
+                        <li class="  title clr-white ">Factor</li>
+                        <li class="">Time to get right developers</li>
+                        <li class="">Time to start a project</li>
+                        <li class="">Recurring cost of training</li>
+                        <li class="">Time to scale size of the team</li>
+                        <li class="">Pricing (weekly average)</li>
+                        <li class="">
+                            Project failure risk
+                        </li>
+                        <li class="">
+                            Developers backed by delivery team
+                        </li>
+                        <li class="">
+                            Dedicated resources
+                        </li>
+                        <li class="">
+                            Quality guarantee
+                        </li>
+                        <li class="">
+                            Tools and professional enviroment
+                        </li>
+                        <li class="">
+                            Agile development methodology
+                        </li>
+                        <li class="">
+                            Impact due to turnover
+                        </li>
+                        <li class="">
+                            Structured training programs
+                        </li>
+                        <li class="">
+                            Communications
+                        </li>
+                        <li class="">
+                            Termination costs
+                        </li>
+                        <li class="">
+                            Assured work rigor
+                        </li>
+                    </ul>
                 </div>
-                <div class="right-sec">
-                    <div class="cir-sec">
-                        <div class="cir-box">
-                            <div class="text-wrap">
-                                <span class="display">4200</span>
-                                <span class="paragraph">Projects Launched</span>
-                                <svg viewBox="0 0 100 100" class="animate-spin-slow wheel-sc">
-                                    <path id=":R8pm9la:" fill="none" d="M0,50a50,50 0 1,1 100,0a50,50 0 1,1 -100,0"></path>
-                                    <text class="origin-center">
-                                        <textPath class="fill-text" textLength="292" href="#:R8pm9la:">projects executed successfully</textPath>
-                                    </text>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cir-box">
-                            <div class="text-wrap">
-                                <span class="display">19+</span>
-                                <span class="paragraph">Years Experience</span>
-                                <svg viewBox="0 0 100 100" class="animate-spin-slow wheel-sc">
-                                    <path id=":R8pm9lb:" fill="none" d="M0,50a50,50 0 1,1 100,0a50,50 0 1,1 -100,0"></path>
-                                    <text class="origin-center">
-                                        <textPath class="fill-text" textLength="292" href="#:R8pm9lb:">Years Of Experience in this field</textPath>
-                                    </text>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cir-box">
-                            <div class="text-wrap">
-                                <span class="display">25,000</span>
-                                <span class="paragraph">Satisfied <br>Customers</span>
-                                <svg viewBox="0 0 100 100" class="animate-spin-slow wheel-sc">
-                                    <path id=":R8pm9lc:" fill="none" d="M0,50a50,50 0 1,1 100,0a50,50 0 1,1 -100,0"></path>
-                                    <text class="origin-center">
-                                        <textPath class="fill-text" textLength="292" href="#:R8pm9lc:">Total No. of Satisfied Customers</textPath>
-                                    </text>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                <div class="flex-4 table-list bg-row-yellow">
+                    <ul>
+                        <li class="   title">
+                            ValueCoders
+                        </li>
+                        <li class="">
+                            1 day - 2 weeks
+                        </li>
+                        <li class="">
+                            1 day - 2 weeks
+                        </li>
+                        <li class="">
+                            0
+                        </li>
+                        <li class="">
+                            48 hours - 1 week
+                        </li>
+                        <li class="">
+                            1.5X
+                        </li>
+                        <li class="">
+                            Extremely low, we have a 98% success ratio
+                        </li>
+                        <li class="">
+                            Yes
+                        </li>
+                        <li class="">
+                            Yes
+                        </li>
+                        <li class="">
+                            High
+                        </li>
+                        <li class="">
+                            Yes
+                        </li>
+                        <li class="">
+                            Yes
+                        </li>
+                        <li class="">
+                            None
+                        </li>
+                        <li class="">
+                            Yes
+                        </li>
+                        <li class="">
+                            Seamless
+                        </li>
+                        <li class="">
+                            None
+                        </li>
+                        <li class="">
+                            40hrs / week
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-4 table-list">
+                    <ul>
+                        <li class="  title clr-white  title">
+                            In-house
+                        </li>
+                        <li class="">
+                            4 - 12 weeks
+                        </li>
+                        <li class="">
+                            2 - 10 weeks
+                        </li>
+                        <li class="">$10,000 -$30,000</li>
+                        <li class="">
+                            4 - 16 weeks
+                        </li>
+                        <li class="">
+                            2X
+                        </li>
+                        <li class="">
+                            Low
+                        </li>
+                        <li class="">
+                            Some
+                        </li>
+                        <li class="">Yes
+                        </li>
+                        <li class="">
+                            High
+                        </li>
+                        <li class="">
+                            Yes
+                        </li>
+                        <li class="">
+                            Some
+                        </li>
+                        <li class="">
+                            High
+                        </li>
+                        <li class="">
+                            Some
+                        </li>
+                        <li class="">
+                            Seamless
+                        </li>
+                        <li class="">
+                            High
+                        </li>
+                        <li class="">
+                            40hrs / week
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-4 table-list">
+                    <ul>
+                        <li class="  title clr-white  title">
+                            Freelancer
+                        </li>
+                        <li class="">
+                            1 - 12 weeks
+                        </li>
+                        <li class="">
+                            1 - 10 weeks
+                        </li>
+                        <li class="">
+                            0
+                        </li>
+                        <li class="">
+                            1 - 12 weeks
+                        </li>
+                        <li class="">
+                            1X
+                        </li>
+                        <li class="">
+                            Very High
+                        </li>
+                        <li class="">
+                            No
+                        </li>
+                        <li class="">
+                            Some
+                        </li>
+                        <li class="">
+                            Uncertain
+                        </li>
+                        <li class="">
+                            Uncertain
+                        </li>
+                        <li class="">
+                            No
+                        </li>
+                        <li class="">
+                            High
+                        </li>
+                        <li class="">
+                            No
+                        </li>
+                        <li class="">
+                            Uncertain
+                        </li>
+                        <li class="">
+                            None
+                        </li>
+                        <li class="">
+                            40hrs / week
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+            <div class=" btn-primary-two margin-t-50 text-center"><a href="javascript:void(0);" onclick="hireTbl_showMore(this);">View More</a></div>
+        </div><!-- /container -->
     </section>
+    <!-- tabel section -->
 
 
 
-
-    <!-- induristries section -->
-
-    <section class="industries-section padding-t-120 padding-b-120">
+    <!-- second cta -->
+    <section id="cta-dis-1" class="experts-talk-first-section bg-blue-linear padding-t-70 padding-b-70">
         <div class="container">
-            <div class="section-header">
-                <div class="header-text">
-                    <h2>Industries We Cater to</h2>
-                    <p>Get what you are looking for to fulfill your software development and
-                        outsourcing needs at ValueCoders, with our expertise on all in-demand technologies & platforms.
-                    </p>
-                </div>
-                <div class="glider-nav">
-                    <button class="glider-prev" aria-label="Previous"><img src="images/index-v10/slide-arrow.svg"
-                            alt=""></button>
-                    <button class="glider-next" aria-label="Next"><img src="images/index-v10/slide-arrow.svg"
-                            alt=""></button>
-                </div>
+            <div class="head-txt text-center">
+                <h2>Beat Deadlines Without Hiring Delays</h2>
+                <p>Get skilled developers in 2 weeks - avoid losing 3 months of runway.</p>
             </div>
-
-            <div class="glider-contain">
-                <div class="glider">
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-1.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Healthcare</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Smarter Care, Better Outcomes</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-2.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Media & Entertainment</h3>
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Media & Entertainment</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-3.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Travel & Tourism</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Travel & Tourism</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-4.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Travel & Tourism</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Travel & Tourism</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-5.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Travel & Tourism</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Travel & Tourism</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-6.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Travel & Tourism</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Travel & Tourism</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-7.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Travel & Tourism</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Travel & Tourism</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry-item">
-                        <div class="industry-card">
-                            <div class="card-image">
-                                <img src="images/index-v10/card-8.webp" alt="Healthcare">
-                            </div>
-                            <div class="card-body">
-                                <div class="title-wrap">
-                                    <h3>Healthcare</h3>
-
-                                </div>
-                                <div class="hover-content">
-                                    <div class="inner-top">
-                                        <h4>Smarter Care, Better Outcomes</h4>
-                                        <p>Innovative software solutions to improve patient care.</p>
-                                    </div>
-                                    <a href="#" class="expand-btn">Expand</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="button-section margin-t-50 ustify-center">
+                <div class="btn-primary-two white right">
+                    <a href="#">
+                        Request GraphQL Experts
+                    </a>
+                </div>
+                <span class="devide">OR</span>
+                <div class="free-con">
+                    <a href="javascript:void(0);" onclick="consultCTA_cb();" target="_self">Book A Call</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- induristries section  -->
+
 
     <!-- new start -->
     <section class="delivery-models padding-t-120 padding-b-120">
@@ -1226,40 +1406,54 @@
         });
 
 
-        
 
-        (function() {
-            function initTabs(wrapper) {
 
-                const buttons = wrapper.querySelectorAll(
-                    ".ai-usecase-tab-buttons ul li"
-                );
+        // te trigger 
+        const aiItems = document.querySelectorAll('.ai-item');
 
-                const panels = wrapper.querySelectorAll(
-                    ".ai-tab-panel"
-                );
+        aiItems.forEach(item => {
+            item.addEventListener('click', () => {
 
-                buttons.forEach(btn => {
-                    btn.addEventListener("click", () => {
-                        let target = btn.dataset.tab;
-                        buttons.forEach(item => {
-                            item.classList.remove("active");
-                        });
-                        btn.classList.add("active");
-                        panels.forEach(panel => {
-                            panel.classList.remove("active");
-                            if (panel.id === target) {
-                                panel.classList.add("active");
-                            }
-                        });
-                    });
+                aiItems.forEach(el => {
+                    el.classList.remove('active');
                 });
-            }
-            document.querySelectorAll(".software-usecases")
-                .forEach(section => {
-                    initTabs(section);
-                });
-        })();
+
+                item.classList.add('active');
+
+            });
+        });
+
+
+
+
+
+        // ``````````````````````````````````````````````````
+        const tabButtons = document.querySelectorAll('.acc-title');
+
+        tabButtons.forEach(button => {
+
+            button.addEventListener('click', () => {
+
+                const target = button.dataset.tab;
+
+                // Left Active
+                document.querySelectorAll('.tab-item')
+                    .forEach(item => item.classList.remove('active'));
+
+                button.closest('.tab-item')
+                    .classList.add('active');
+
+                // Right Active
+                document.querySelectorAll('.content-pane')
+                    .forEach(content => content.classList.remove('active'));
+
+                document
+                    .getElementById(target)
+                    .classList.add('active');
+
+            });
+
+        });
     </script>
 
 

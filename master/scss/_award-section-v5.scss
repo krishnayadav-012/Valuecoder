@@ -3,6 +3,16 @@
   .dis-flex{align-items: flex-start;}
   .left-box {
     padding-right: 60px !important;
+    .head-txt{
+
+      em{
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 700;
+        color: $blue-lihgt;
+        text-transform: uppercase;
+      } 
+    }
 
     h5 {
       color: #0a1747;
@@ -20,11 +30,13 @@
         padding-left: 22px;
         &::before {
           content: "";
-          background: url(../images/list-check.svg) no-repeat;
-          width: 12px;
-          height: 13px;
+          // background: url(../images/list-check.svg) no-repeat;
+          background: url(../images/consultion/check-blue.svg);
+          width: 17px;
+          height: 17px;
+          background-size: contain;
           position: absolute;
-          top: 8px;
+          top: 5px;
           left: 0;
         }
         &:last-child {
@@ -38,6 +50,7 @@
 
     p {
       margin: 0 0 15px;
+      color: #60646C;
     }
     a{}
     .a-dotted {
@@ -142,7 +155,9 @@
           &:hover {
             
             cursor: default;
-            border-color:$yellow;
+            border-color:$blue-lihgt;
+            box-shadow: 0px 0px 20px 5px #2563EB26;
+
             p {
               opacity: 1;
             }

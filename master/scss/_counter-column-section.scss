@@ -1,6 +1,33 @@
 @use "core/variables" as *;
 .counter-column-section {
   &.bg-dark{background: #0D184B;}
+  &.blue-bg{background: linear-gradient(180deg, #211F47 0%, #05164D 100%);position: relative;
+    &::after{
+      position: absolute;
+    content: "";
+    background-image: url(../images/consultion/cta-bg-one.webp);
+    left: 0;
+    bottom: -10px;
+    width: 110px;
+    height: 113px;
+    }
+  
+    .left-sec{
+      .head-txt{
+        h2{
+          color: $white;
+        }
+        p{
+          color: #E8E8EC;
+        }
+
+      }
+      .btn-primary-two{
+        margin-top: 35px !important;
+        
+      }
+    }
+  }
   .dis-flex {
     .left-sec {
       flex-basis: 40%;

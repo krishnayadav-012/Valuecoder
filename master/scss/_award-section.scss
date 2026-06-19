@@ -19,10 +19,9 @@
         padding-left: 22px;
         &::before {
           content: "";
-          background-image: url(../images/consultion/check-blue.svg) ;
-          width: 17px;
-          background-size: cover;
-          height: 17px;
+          background: url(../images/list-check.svg) no-repeat;
+          width: 12px;
+          height: 13px;
           position: absolute;
           top: 4px;
           left: 0;
@@ -166,13 +165,11 @@
       color: $darkYellow;
     }
     p {
-      color: #D1D5DB ;
+      color: #D1D5DB !important;
     }
     ul {
       li {
-        color: #80838D;
-        font-size: 16px;
-        font-weight: 500;
+        color: #D1D5DB;
       }
     }
     a{color: #D1D5DB; text-decoration: underline;

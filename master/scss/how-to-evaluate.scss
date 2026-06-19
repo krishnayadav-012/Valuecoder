@@ -1,0 +1,165 @@
+@use "core/variables" as *;
+@use "_default" as *;
+
+.how-to-evaluate-v2 {
+    width: 100%;
+    background-color: #F0F0F3;
+
+    .top-part {
+        display: block;
+        margin-bottom: 70px;
+        max-width: 955px;
+
+        em {
+            font-style: normal;
+            font-size: 14px;
+            font-weight: 700;
+            color: $blue-lihgt;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: $themeMidNight;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        p {
+            color: #60646C;
+        }
+
+    }
+
+    .interview-guide {
+        padding: 50px;
+        box-shadow: 0px 0px 25px 0px #05164D33;
+        border: 1px solid #F0F0F3;
+        border-radius: 24px;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+
+.ai-list{
+    width: calc(58% - 30px);
+}
+        .ai-item {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            .title {
+                padding: 30px 0;
+                border-bottom: 1px solid #80838D;
+            
+                h4 {
+                    padding-left: 25px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    position: relative;
+                    color: #80838D;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        background-color: #D9D9E0;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 100px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            .desc {
+                display: none;
+            }
+
+            .card-number {
+                position: absolute;
+                bottom: 20px;
+                right: -5px;
+                font-size: 90px;
+                color: $white;
+                opacity: 5%;
+                font-weight: 700;
+            }
+
+            &.active {
+                background: linear-gradient(274.56deg, #092991 4.32%, #05164D 98.76%);
+
+                color: #fff;
+                padding: 30px;
+                border-radius: 20px;
+
+                .title {
+                    border: none;
+                    padding: 0;
+                    h4 {
+                        color: #FFFFFF;
+                        padding-left: 0;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+
+                .desc {
+                    display: block;
+
+                    p {
+                        color: #E8E8EC;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 22px;
+                    }
+
+                    ul {
+                        gap: 15px;
+                        display: flex;
+                        flex-direction: column;
+
+                        li {
+                            font-size: 14px;
+                            line-height: 1;
+                            font-weight: 500;
+                            position: relative;
+                            color: #D9D9E0;
+                            padding-left: 26px;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 0px;
+                                background-size: cover;
+                                width: 15px;
+                                height: 15px;
+                           
+                                background-image: url(../images/index-v10/white-check-round.svg) ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+.image-part{
+width: calc(52% - 30px);
+border-radius: 20px;
+img{width: 100%;}
+}
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .how-to-evaluate-v2 .interview-guide{padding: 25px; gap: 40px;}
+    .how-to-evaluate-v2 .top-part{margin-bottom: 30px;}
+}
+@media screen and (max-width:991px) {
+.how-to-evaluate-v2 .interview-guide .ai-list{width: 100%; padding-left: 0;}
+.how-to-evaluate-v2 .interview-guide .image-part{display: none;}
+.how-to-evaluate-v2 .interview-guide .ai-item.active{padding: 20px;}
+.how-to-evaluate-v2 .interview-guide .ai-item.active .desc ul li::after{width: 14px; height: 14px; margin-top: 0px;} 
+}

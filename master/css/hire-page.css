@@ -2635,6 +2635,28 @@ body.page-template-template-testimonials .client-video-section iframe,
 .counter-column-section.bg-dark {
   background: #0D184B;
 }
+.counter-column-section.blue-bg {
+  background: linear-gradient(180deg, #211F47 0%, #05164D 100%);
+  position: relative;
+}
+.counter-column-section.blue-bg::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/consultion/cta-bg-one.webp);
+  left: 0;
+  bottom: -10px;
+  width: 110px;
+  height: 113px;
+}
+.counter-column-section.blue-bg .left-sec .head-txt h2 {
+  color: #ffffff;
+}
+.counter-column-section.blue-bg .left-sec .head-txt p {
+  color: #E8E8EC;
+}
+.counter-column-section.blue-bg .left-sec .btn-primary-two {
+  margin-top: 35px !important;
+}
 .counter-column-section .dis-flex .left-sec {
   flex-basis: 40%;
 }
@@ -3306,10 +3328,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .client-img-section .left-box ul li::before {
   content: "";
-  background-image: url(../images/consultion/check-blue.svg);
-  width: 17px;
-  background-size: cover;
-  height: 17px;
+  background: url(../images/list-check.svg) no-repeat;
+  width: 12px;
+  height: 13px;
   position: absolute;
   top: 4px;
   left: 0;
@@ -3441,12 +3462,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #FFAD00;
 }
 .dark-client-section .left-box p {
-  color: #D1D5DB;
+  color: #D1D5DB !important;
 }
 .dark-client-section .left-box ul li {
-  color: #80838D;
-  font-size: 16px;
-  font-weight: 500;
+  color: #D1D5DB;
 }
 .dark-client-section .left-box a {
   color: #D1D5DB;
