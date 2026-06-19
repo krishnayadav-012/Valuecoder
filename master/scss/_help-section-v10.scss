@@ -14,12 +14,11 @@
     }
 
         h2 {
-            font-size: clamp(30px, 3.7vw, 46px);
             font-weight: 700;
             color: $navy-blue;
             margin-bottom: 10px;
             em{
-                color: $darkYellow;
+                color: $blue-lihgt;
                 font-style: normal;
             }
         }
@@ -111,32 +110,39 @@
         .learn-more {
             font-size: 16px;
             font-weight: $medium-font;
-            color: #CC8B00;
+            color: $dark-blue;
             text-decoration: none;
             transition: 0.3s;
 
 
             &::after{
                 content: "";
-                background: url('../images/index-v10/right-yellow.svg') no-repeat;
-                width: 12px;
-                height: 12px;
+                background: url('../images/index-v10/right-blue.svg') no-repeat;
+                width: 16px;
+                height: 17px;
+                margin-top: 3px;
                 background-size: 100%;
                 display: inline-block;
-                margin-left: 9px;
-                margin-top: 7px;
+                margin-left: 8px;
+                transition: 0.4s;
 
             }
 
             &:hover{
-                   color: #CC8B00 !important;
+                   color: $dark-blue !important;
+
+                   &::after{
+                    transform: translateX(2px);
+                    transition: 0.4s;
+                   }
             }
          
         }
         /* Hover Effect (like second card) */
         &:hover {
-            border: 1px solid $yellow;
-            box-shadow: 0px 4px 14px 3px #FFAD0024;
+            border: 1px solid $dark-blue;
+          box-shadow: 0px 0px 20px 5px #1D5BC426;
+
 
             
         }
@@ -154,6 +160,28 @@
             display: none;
         }
     }
+
+
+    .bottom-append-part{
+        margin-top: 30px;
+        width: 100%;
+        position: relative;
+      .btn-primary-two{
+        margin-left: auto;
+      }
+
+      &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: calc(100% - 140px);
+        background-color: #F0F0F3;
+        height: 2px;
+        top: 50%;
+
+      }
+    }
+
 
     /* RESPONSIVE */
 

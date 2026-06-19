@@ -73,7 +73,7 @@
  
     .compliance-card__top {
       padding: 30px;
-      background-color: #FFF8E9;
+      background-color: #F0F0F3;
  
       h3 {
         color: $themeMidNight;
@@ -87,10 +87,8 @@
       }
     }
  
-    .compliance-card__list {
+    ul {
       background-color: $white;
-  
-      padding: 20px 17px 30px 30px;
  
       li {
         color: #364153;position: relative;
@@ -142,10 +140,8 @@
       }
     }
  
-    .compliance-card__list {
+    ul {
       background-color: $white;
-     
-     padding: 20px 17px 30px 30px;
  
       li {
         color: #364153;
@@ -193,10 +189,23 @@
   }
  
   // ── Divider line between top and list ────────────────────
-  &__list {
+  .card-body-part{
+    padding: 20px 17px 30px 30px;
+    background-color: $white;
+
+h3{
+  color: $light-grey;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+
+  }
+  ul {
     list-style: none;
     margin: 0;
-   
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -208,6 +217,7 @@
       gap: 10px;
       font-size: 14px;
       font-weight: 500;
+      color: #60646C;
       line-height: 140%;
  
       &::before {
@@ -249,7 +259,7 @@
  
   .compliance-card {
     &__top,
-    &__list,
+    ul,
     &__footer {
       padding-left: 22px;
       padding-right: 22px;
@@ -258,14 +268,28 @@
 }
  
 .compliance-card__top{min-height: 188px;}
-.compliance-card--dark .compliance-card__top{background-color: $bgVoilet; }
+.compliance-card--dark .compliance-card__top{background-color: $themeMidNight; }
 .compliance-card--dark .compliance-card__top p{color: #D1D5DC; font-size: 16px ; font-weight: 500; }
- .compliance-card__top span{padding: 5px 10px; margin-bottom: 10px; background-color: #FFAD001A; border-radius: 5px; font-size: 14px ; font-weight: 600; color: #CC8B00;}
- .compliance-card--dark .compliance-card__top span{color: #CC8B00; background-color: #FFAD001A;}
+ .compliance-card__top span{padding: 5px 10px; margin-bottom: 10px; background-color: #2563EB26; border-radius: 5px; font-size: 14px ; font-weight: 400; color:$blue-lihgt;}
+ .compliance-card--dark .compliance-card__top span{color: $blue-lihgt; background-color: #2563EB33;}
 .compliance-card--dark .compliance-card__top h3{color: $white; font-weight: 700;}
 .compliance-card__footer {
-    padding: 20px 30px 30px;
-    border-top: 1px solid #F3F4F6;
+    padding: 30px 30px 30px;
+    border-top: 1px solid #F3F4F6;position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      top: -10px;
+      cursor: pointer;
+      background-image: url(../images/industry-v11/btn-more.svg);
+      width: 32px;
+      height: 29px;
+
+    }
  
     // a {
     //   border: 1px solid #6A7282;

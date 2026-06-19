@@ -1,3 +1,4 @@
+@use "core/variables" as *;
 @use "_default" as *;
 @use "_glider" as *;
 @use "_guide-topic" as *;
@@ -9,14 +10,17 @@
 @use "_case-studies" as *;
 @use "_tech-stacks" as *;
 @use "_cta-structure" as *;
-@use "_menu-v8" as *;
+
+//@use "_menu-v8" as *;
+
 @use "_three-column-section" as *;
 @use "_ctabtn-structure" as *;
 @use "_custom-cta" as *;
 @use "feedback-section";
 @use "_testimonials" as *;
-@use "_footer-form" as *;
-@use "_footer-section" as *;
+
+//@use "_footer-form" as *;
+//@use "_footer-section" as *;
 
 .hero-img-section {
   background-color: $themeDarkNight;

@@ -1,6 +1,6 @@
 @use "core/variables" as *;
 .faq-section-v10 {
-  padding: 120px 0;
+
   background: #F9FAFB;
   overflow: hidden;
   position: relative;
@@ -37,13 +37,13 @@
   /* LEFT */
   .faq-left {
     h2 {
-      font-size: clamp(30px, 3.7vw, 46px);
+  
       font-weight: 700;
       color: #05164D;
       line-height: 1.2;
 
       em {
-        color: #FFAD00;
+        color: $dark-blue;
         font-style: normal;
       }
     }
@@ -66,11 +66,11 @@
     transition: 0.3s ease;
 
     &.active {
-      border-color: #FFDC92;
+      border-color: $blue-off-light;
       box-shadow: 0 6px 18px rgba(79, 70, 229, 0.08);
       .faq-question {
         h3{
-          color: #FFAD00;
+          color: $blue-lihgt;
         }
       }
 
@@ -147,7 +147,7 @@
         content: "";
         width: 8px;
         height: 8px;
-        background-color: #FFAD00;
+        background-color: $blue-off-light;
         border-radius: 50%;
         position: absolute;
         left: 0;
@@ -170,9 +170,9 @@
   }
 }
   .faq-section-v10 .faq-item.active .faq-question{
-    color: #FFAD00;
-    background-color: #FFFBF3;
-    border-bottom: 1px solid #FFDC92;
+    
+    background-color: #F0F0F3;
+    border-bottom: 1px solid #6AA0FF;
   }
   .faq-section-v10 .faq-item.active .faq-question::before{
     transform: rotate(-180deg);

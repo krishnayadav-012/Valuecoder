@@ -3,9 +3,23 @@
 
 
 #capabilities-section {
-  background-color: $bgDarkBlue;
-  padding: 120px 0px;
+  background-color: #05164D;
+  overflow: hidden;
   color: $white;
+  z-index: 1;
+  position: relative;
+    &::after{
+        content: "";
+              position: absolute;
+              right: 0;
+              background: url(../images/index-v10/ellips-boxes.webp);
+              width: 572px;
+              z-index: -1;
+              height: 374px;
+              top: 300px;
+            left: 0;
+            background-repeat: no-repeat;
+      }
 
 
   .cap-wrapper {
@@ -29,16 +43,7 @@
     .engineering-design{
       position: relative;
 
-      // &::after{
-      //   content: "";
-      //         position: absolute;
-      //         right: 0;
-      //         background: url(../images/index-v10/engineering-design.png);
-      //         width: 160px;
-      //         height: 111px;
-      //         bottom: 8px;
-      //         background-size: 15px;
-      // }
+    
     }
 
     @media (max-width: 991px) {
@@ -48,7 +53,7 @@
     }
 
     h2 {
-      font-size: clamp(30px, 3.7vw, 46px);
+      
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 10px;
@@ -56,12 +61,12 @@
 
       em {
         font-style: normal;
-        color: $darkYellow;
+        color: $blue-off-light;
       }
     }
 
     p {
-      font-size: 18px;
+     
       color: #FFFFFFB0;
       margin-bottom: 60px;
       max-width: 450px;
@@ -85,7 +90,8 @@
 
     .card {
 
-      background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 34, 34, 0.2) 116.66%);
+      // background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 34, 34, 0.2) 116.66%);
+background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 34, 34, 0.2) 116.66%);
 
       border: 1px solid rgba($white, 0.1);
       border-radius: 24px;
@@ -97,7 +103,8 @@
               content: "";
               position: absolute;
               right: 0;
-              background: url(../images/index-v10/card-lines-design.png);
+              // background: url(../images/index-v10/card-lines-design.png);
+              background: url(../images/index-v10/sticky-card-ellips.webp);
               width: 160px;
               height: 111px;
               bottom: 8px;
@@ -167,7 +174,7 @@
               width: 15px;
               height: 15px;
               top: 8px;
-              background-size: 15px;
+              background-size: 15px;  
           
           }
           a{
@@ -179,6 +186,9 @@
           }
         }
       }
+      &:hover{
+        border: 1px solid #6AA0FF;
+      }
     }
     .card:nth-child(even){
       background: linear-gradient(153.09deg, rgba(255, 255, 255, 0.172) 2.06%, rgba(255, 255, 255, 0.04) 116.66%);
@@ -187,9 +197,7 @@
 }
 
 @media screen and (max-width:768px) {
-  #capabilities-section{
-    padding: 60px 0;
-  }
+  
   #capabilities-section > div{gap: 0;}
   #capabilities-section .right-part{gap: 40px; margin-top: 40px;}
   #capabilities-section .right-part .card{padding: 22px;}

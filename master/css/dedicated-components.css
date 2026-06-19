@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 29 \2502        color: $yellow; // use your variable e.g. darken($yellow, 20%)\d\a    \2502               ^^^^^^^\a    \2575 \a   scss\\_cmp-delivery-pod-benchmarks.scss 29:14  @use\a   scss\\dedicated-components.scss 2:1            root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 29 \2502        color: $yellow; // use your variable e.g. darken($yellow, 20%)\a    \2502               ^^^^^^^\a    \2575 \a   scss\\_cmp-delivery-pod-benchmarks.scss 29:14  @use\a   scss\\dedicated-components.scss 2:1            root stylesheet";
 }

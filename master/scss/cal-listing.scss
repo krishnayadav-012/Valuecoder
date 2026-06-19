@@ -1,7 +1,5 @@
-
-
+@use "core/variables" as *;
 @use 'default' as *;
-
 /* 1. Hero Strip */
 .hero-strip {
   background-color: $bglight;

@@ -72,7 +72,7 @@
         .icon-box {
           width: 50px;
           height: 50px;
-          background-color: #FFF3DA; // Using 10% opacity of your yellow
+          background-color: #6AA0FF33; // Using 10% opacity of your yellow
           display: flex;
           align-items: center;
           justify-content: center;
@@ -99,7 +99,7 @@
   top: 0;
   width: 2px;
   height: calc(100% + 27%);
-  background: linear-gradient(1deg, transparent, #FFAD00, transparent);
+  background: linear-gradient(1deg, transparent, #2563EB, transparent);
   transition: opacity 0.3s ease; }
 
           &::after { content: "";
@@ -107,7 +107,7 @@
  bottom: 0;
     width: 100%;
     height: 2px;
-  background: linear-gradient(1deg, transparent, #FFAD00, transparent);
+  background: linear-gradient(1deg, transparent, #2563EB, transparent);
   transition: opacity 0.3s ease; }
 
         }

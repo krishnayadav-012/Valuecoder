@@ -5,28 +5,39 @@
  
 // ─── Delivery Section ──────────────────────────────────────────────
 .delivery-section {
-  background: #090C19;
-  padding: 100px 0;
+  background: $navy-blue;
+
   position: relative;
   overflow: hidden;
  
-  &::before {
-    content: '';
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   inset: 0;
+  //   background:
+  //     radial-gradient(ellipse 60% 60% at 80% 50%, rgba($dodgerBlue, 0.06) 0%, transparent 70%),
+  //     radial-gradient(ellipse 40% 40% at 20% 80%, rgba($navy-blue, 0.4) 0%, transparent 60%);
+  //   pointer-events: none;
+  // }
+  &::before{
+    content: "";
     position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 60% 60% at 80% 50%, rgba($dodgerBlue, 0.06) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 80%, rgba($navy-blue, 0.4) 0%, transparent 60%);
-    pointer-events: none;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/index-v10/delivery-section__right.webp);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
   }
   &::after{
     position: absolute;
-    right: 0;
-    content: "";
     bottom: 0;
-    width: 520px;
-    height: 380px;
-    background: url(../images/index-v10/frame-delevery.webp);
+    left: -32px;
+    content: "";
+    bottom: -66px;
+    width: 371px;
+    height: 242px;
+    background: url(../images/index-v10/delivery-elipse.webp);
   }
  
   @media (max-width: 1024px) {
@@ -75,7 +86,7 @@
     font-weight: $medium-font;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: $darkYellow;
+    color: $blue-off-light;
     margin-bottom: 5px;
     position: relative;
     animation: fadeUp 0.5s ease both 0.1s;
@@ -94,7 +105,6 @@
   }
  
   h2 {
-    font-size: clamp(30px, 3.7vw, 46px);
     font-weight: 700;
     line-height: 1.1;
     color: $white;
@@ -102,7 +112,7 @@
     margin-bottom: 20px;
  
     em {
-      color: $darkYellow;
+      color: $blue-off-light;
       font-style: normal;
     }
   }
@@ -139,7 +149,7 @@
  
 // ─── Stat Card ─────────────────────────────────────────────────────
 .stat-card {
-  background: #161722A3;
+  background:$navy-blue;
 border: 1px solid var(--gray-500, #6A7282);
   border-radius: 16px;
   padding: 32px 28px;
@@ -161,14 +171,20 @@ border: 1px solid var(--gray-500, #6A7282);
     content: '';
     position: absolute;
     top: 0;
-right: -55%;
+right: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/index-v10/right-sade.png);
-
+    background: url(../images/index-v10/right-sade.webp);
+display: none;
     transition: opacity 0.3s ease;
   }
  
+  &:hover {
+
+    &::before{
+      display: block;
+    }
+  }
  
  
   @media (max-width: 768px) {

@@ -42,108 +42,98 @@
 
   <main>
 
-  <h1>tech stack</h1>
+    <h1>tech stack</h1>
 
 
-  <section class="vco-wrap " aria-label="Hire React Developers tech stack">
-  <div class="container">
-    <div class="vco-eyebrow">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h7v7H3zm0 11h7v7H3zm11-11h7v7h-7zm0 11h7v7h-7z"/></svg>
-      React Tech Stack
-    </div>
-    <h2 >Hire React Developers</h2>
-    <p >Our React engineers build fast, component-driven UIs with deep knowledge of state management, performance optimisation, and modern tooling.</p>
-    <div class="vco-grid">
-  <div class="vco-card">
-    <div class="vco-cat-head">
-      <span class="vco-cat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>
-      <span class="vco-cat-name">Core & State</span>
-    </div>
-    <div class="vco-chips">
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/react" alt="React" loading="lazy" onerror="this.style.display='none'">React</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/redux" alt="Redux" loading="lazy" onerror="this.style.display='none'">Redux</span>
-        <span class="vco-chip"><span class="vco-init">ZUS</span>Zustand</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/recoil" alt="Recoil" loading="lazy" onerror="this.style.display='none'">Recoil</span>
-        <span class="vco-chip"><span class="vco-init">JOT</span>Jotai</span>
-        <span class="vco-chip"><span class="vco-init">CA</span>Context API</span>
-    </div>
-  </div>
-  <div class="vco-card">
-    <div class="vco-cat-head">
-      <span class="vco-cat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 6h-2.18c.07-.44.18-.87.18-1.33C18 2.54 15.91.5 13.37.5c-1.3 0-2.43.52-3.37 1.33C9.06 1.02 7.93.5 6.63.5 4.09.5 2 2.54 2 4.67c0 .46.11.89.18 1.33H0v14h24V6h-4zm-6.63-3.5c1.28 0 2.13.93 2.13 2.17 0 1.21-.85 2.17-2.13 2.17-1.28 0-2.37-.93-2.37-2.17 0-1.24.94-2.17 2.37-2.17zM6.63 2.5c1.43 0 2.37.93 2.37 2.17 0 1.21-1.09 2.17-2.37 2.17-1.28 0-2.13-.96-2.13-2.17 0-1.24.85-2.17 2.13-2.17zM2 18V8h9v10H2zm11 0V8h9v10h-9z"/></svg></span>
-      <span class="vco-cat-name">Build & Routing</span>
-    </div>
-    <div class="vco-chips">
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/vite" alt="Vite" loading="lazy" onerror="this.style.display='none'">Vite</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/webpack" alt="Webpack" loading="lazy" onerror="this.style.display='none'">Webpack</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/reactrouter" alt="React Router" loading="lazy" onerror="this.style.display='none'">React Router</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js" loading="lazy" onerror="this.style.display='none'">Next.js</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/remix" alt="Remix" loading="lazy" onerror="this.style.display='none'">Remix</span>
-        <span class="vco-chip"><span class="vco-init">TBP</span>Turbopack</span>
-    </div>
-  </div>
-  <div class="vco-card">
-    <div class="vco-cat-head">
-      <span class="vco-cat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></span>
-      <span class="vco-cat-name">UI & Styling</span>
-    </div>
-    <div class="vco-chips">
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" loading="lazy" onerror="this.style.display='none'">Tailwind CSS</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/mui" alt="MUI" loading="lazy" onerror="this.style.display='none'">MUI</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/chakraui" alt="Chakra UI" loading="lazy" onerror="this.style.display='none'">Chakra UI</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/radixui" alt="Radix UI" loading="lazy" onerror="this.style.display='none'">Radix UI</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/styledcomponents" alt="Styled-components" loading="lazy" onerror="this.style.display='none'">Styled-components</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/sass" alt="Sass" loading="lazy" onerror="this.style.display='none'">Sass</span>
-    </div>
-  </div>
-  <div class="vco-card">
-    <div class="vco-cat-head">
-      <span class="vco-cat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></span>
-      <span class="vco-cat-name">Data & API</span>
-    </div>
-    <div class="vco-chips">
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/reactquery" alt="React Query" loading="lazy" onerror="this.style.display='none'">React Query</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/swr" alt="SWR" loading="lazy" onerror="this.style.display='none'">SWR</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/graphql" alt="GraphQL" loading="lazy" onerror="this.style.display='none'">GraphQL</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/apollographql" alt="Apollo" loading="lazy" onerror="this.style.display='none'">Apollo</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/axios" alt="Axios" loading="lazy" onerror="this.style.display='none'">Axios</span>
-        <span class="vco-chip"><span class="vco-init">RE</span>REST</span>
-    </div>
-  </div>
-  <div class="vco-card">
-    <div class="vco-cat-head">
-      <span class="vco-cat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93C9.33 17.79 7 14.5 7 11V7.18L12 5zm-2 6v2h4v-2h-4zm0-4v2h4V7h-4z"/></svg></span>
-      <span class="vco-cat-name">Testing & QA</span>
-    </div>
-    <div class="vco-chips">
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/jest" alt="Jest" loading="lazy" onerror="this.style.display='none'">Jest</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/vitest" alt="Vitest" loading="lazy" onerror="this.style.display='none'">Vitest</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/cypress" alt="Cypress" loading="lazy" onerror="this.style.display='none'">Cypress</span>
-        <span class="vco-chip"><span class="vco-init">PW</span>Playwright</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/testinglibrary" alt="Testing Library" loading="lazy" onerror="this.style.display='none'">Testing Library</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/eslint" alt="ESLint" loading="lazy" onerror="this.style.display='none'">ESLint</span>
-    </div>
-  </div>
-  <div class="vco-card">
-    <div class="vco-cat-head">
-      <span class="vco-cat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.64 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.79-.12-.25-.33-.44-.59-.52L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.38c-.26.08-.47.27-.59.52s-.15.53-.06.79L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z"/></svg></span>
-      <span class="vco-cat-name">CI/CD & Hosting</span>
-    </div>
-    <div class="vco-chips">
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/githubactions" alt="GitHub Actions" loading="lazy" onerror="this.style.display='none'">GitHub Actions</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/vercel" alt="Vercel" loading="lazy" onerror="this.style.display='none'">Vercel</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/netlify" alt="Netlify" loading="lazy" onerror="this.style.display='none'">Netlify</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/docker" alt="Docker" loading="lazy" onerror="this.style.display='none'">Docker</span>
-        <span class="vco-chip"><span class="vco-init">AWS</span>AWS</span>
-        <span class="vco-chip"><img src="https://cdn.simpleicons.org/circleci" alt="CircleCI" loading="lazy" onerror="this.style.display='none'">CircleCI</span>
-    </div>
-  </div>
-    </div>
-   
-  </div>
-</section>
 
-
+    <section data-rocket-location-hash="4da16820895fc982e87ab80d5474efa9" class="vco-wrap padding-t-70 padding-b-70 bg-blue">
+      <div data-rocket-location-hash="9977d61c3ff181bf93d694767789968e" class="container">
+        <div data-rocket-location-hash="ae94e648ea55ce30b76327c7a0bc1224" class="vco-header">
+          <h2>Technologies We Hold Expertise In</h2>
+          <p>We use the most advanced technologies to deliver world-class solutions and the varied demands of clients in the minimum possible time.</p>
+        </div>
+        <div data-rocket-location-hash="008bd0b1a2cbeca34ddf33b3c083749d" class="vco-grid">
+          <div class="vco-card">
+            <div class="vco-cat-head">
+              <div class="vco-cat-ico"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/zap-1.svg" alt="" onerror="this.style.display='none'"></div><span class="vco-cat-name">Core &amp; State</span>
+            </div>
+            <div class="vco-chips">
+              <div class="vco-chip has-link"> <a href="#"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/react.svg" alt="" onerror="this.style.display='none'"><span>React</span> </a></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/redux.svg" alt="" onerror="this.style.display='none'"><span>Redux</span></div>
+              <div class="vco-chip"><span class="vco-init">ZUS</span><span>Zustand</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/recoil.svg" alt="" onerror="this.style.display='none'"><span>Recoil</span></div>
+              <div class="vco-chip"><span class="vco-init">JOT</span><span>Jotai</span></div>
+              <div class="vco-chip"><span class="vco-init">CA</span><span>Context API</span></div>
+            </div>
+          </div>
+          <div class="vco-card">
+            <div class="vco-cat-head">
+              <div class="vco-cat-ico"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/package-open.svg" alt="" onerror="this.style.display='none'"></div><span class="vco-cat-name">Build &amp; Routing</span>
+            </div>
+            <div class="vco-chips">
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/vite.svg" alt="" onerror="this.style.display='none'"><span>Vite</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/webpack-1.svg" alt="" onerror="this.style.display='none'"><span>Webpack</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/reactrouter.svg" alt="" onerror="this.style.display='none'"><span>React Router</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/nextdotjs.svg" alt="" onerror="this.style.display='none'"><span>Next.js</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/remix.svg" alt="" onerror="this.style.display='none'"><span>Remix</span></div>
+              <div class="vco-chip"><span class="vco-init">TBP</span><span>Turbopack</span></div>
+            </div>
+          </div>
+          <div class="vco-card">
+            <div class="vco-cat-head">
+              <div class="vco-cat-ico"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/pen-line.svg" alt="" onerror="this.style.display='none'"></div><span class="vco-cat-name">UI &amp; Styling</span>
+            </div>
+            <div class="vco-chips">
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/tailwindcss.svg" alt="" onerror="this.style.display='none'"><span>Tailwind CSS</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/mui.svg" alt="" onerror="this.style.display='none'"><span>MUI</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/chakraui.svg" alt="" onerror="this.style.display='none'"><span>Chakra UI</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/radixui.svg" alt="" onerror="this.style.display='none'"><span>Radix UI</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/styledcomponents.svg" alt="" onerror="this.style.display='none'"><span>Styled-components</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/sass.svg" alt="" onerror="this.style.display='none'"><span>Sass</span></div>
+            </div>
+          </div>
+          <div class="vco-card">
+            <div class="vco-cat-head">
+              <div class="vco-cat-ico"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/link-2.svg" alt="" onerror="this.style.display='none'"></div><span class="vco-cat-name">Data &amp; API</span>
+            </div>
+            <div class="vco-chips">
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/reactquery.svg" alt="" onerror="this.style.display='none'"><span>React Query</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/swr.svg" alt="" onerror="this.style.display='none'"><span>SWR</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/graphql-1.svg" alt="" onerror="this.style.display='none'"><span>GraphQL</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/apollographql.svg" alt="" onerror="this.style.display='none'"><span>Apollo</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/axios.svg" alt="" onerror="this.style.display='none'"><span>Axios</span></div>
+              <div class="vco-chip"><span class="vco-init">RE</span><span>REST</span></div>
+            </div>
+          </div>
+          <div class="vco-card">
+            <div class="vco-cat-head">
+              <div class="vco-cat-ico"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/shield-check-1.svg" alt="" onerror="this.style.display='none'"></div><span class="vco-cat-name">Testing &amp; QA</span>
+            </div>
+            <div class="vco-chips">
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/jest.svg" alt="" onerror="this.style.display='none'"><span>Jest</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/vitest.svg" alt="" onerror="this.style.display='none'"><span>Vitest</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/cypress-1.svg" alt="" onerror="this.style.display='none'"><span>Cypress</span></div>
+              <div class="vco-chip"><span class="vco-init">PW</span><span>Playwright</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/testinglibrary.svg" alt="" onerror="this.style.display='none'"><span>Testing Library</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/eslint-2.svg" alt="" onerror="this.style.display='none'"><span>ESLint</span></div>
+            </div>
+          </div>
+          <div class="vco-card">
+            <div class="vco-cat-head">
+              <div class="vco-cat-ico"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/ship.svg" alt="" onerror="this.style.display='none'"></div><span class="vco-cat-name">CI/CD &amp; Hosting</span>
+            </div>
+            <div class="vco-chips">
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/githubactions.svg" alt="" onerror="this.style.display='none'"><span>GitHub Actions</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/vercel-1.svg" alt="" onerror="this.style.display='none'"><span>Vercel</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/netlify-1.svg" alt="" onerror="this.style.display='none'"><span>Netlify</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/docker-1.svg" alt="" onerror="this.style.display='none'"><span>Docker</span></div>
+              <div class="vco-chip"><span class="vco-init">AWS</span><span>AWS</span></div>
+              <div class="vco-chip"><img src="https://www.valuecoders.com/wp-content/uploads/2026/06/circleci.svg" alt="" onerror="this.style.display='none'"><span>CircleCI</span></div>
+            </div>
+          </div>
+        </div><!-- /grid -->
+      </div><!-- /container -->
+    </section>
 
 
 
@@ -638,7 +628,7 @@
 
 
     <!-- roadmap  -->
-<!-- 
+    <!-- 
      ```eyebrow
   ````title
   ```` praghraph
@@ -1355,7 +1345,9 @@
               <li>Ramp timeline with milestone commitment — not a rough estimate</li>
             </ul>
             <div class="card-bottom">
-              <div class="foot-text"><p><strong>Red flag</strong>Any commitment that lives only in conversation</p></div>
+              <div class="foot-text">
+                <p><strong>Red flag</strong>Any commitment that lives only in conversation</p>
+              </div>
               <span class="tag">Vendor stage</span>
             </div>
           </div>
@@ -1402,7 +1394,7 @@
             <!-- Body -->
             <ul id="cs-tbl-body" role="rowgroup">
 
-             
+
               <ul class="cs-tbl-row  " role="row">
                 <li>Time to get right developers</li>
                 <li>1 day – 2 weeks</li>
@@ -1417,7 +1409,7 @@
                 <li>1 – 10 weeks</li>
               </ul>
 
-              
+
               <ul class="cs-tbl-row  " role="row">
                 <li>Recurring cost of training</li>
                 <li>0</li>
@@ -1432,7 +1424,7 @@
                 <li>1 – 12 weeks</li>
               </ul>
 
-           
+
               <ul class="cs-tbl-row  " role="row">
                 <li>Pricing (weekly average)</li>
                 <li>1.5X</li>
@@ -1440,7 +1432,7 @@
                 <li>1X</li>
               </ul>
 
-    
+
               <ul class="cs-tbl-row   cs-tbl-row--hidden" role="row">
                 <li>Dedicated account manager</li>
                 <li>Included</li>
@@ -1455,7 +1447,7 @@
                 <li>Variable</li>
               </ul>
 
-        
+
               <ul class="cs-tbl-row   cs-tbl-row--hidden" role="row">
                 <li>Engineer replacement guarantee</li>
                 <li>10 business days</li>
@@ -1463,7 +1455,7 @@
                 <li>Not standard</li>
               </ul>
 
-         
+
               <ul class="cs-tbl-row   cs-tbl-row--hidden" role="row">
                 <li>Delivery accountability</li>
                 <li>Built-in oversight</li>
@@ -1531,11 +1523,10 @@
 
 
   <script>
-
-
     /* Accordion — scoped to .onboarding-roadmap */
     document.querySelectorAll('.onboarding-roadmap .bp-item').forEach(item => {
       const trigger = item.querySelector('.bp-trigger');
+
       function toggle() {
         const closed = item.classList.contains('is-closed');
         item.classList.toggle('is-closed', !closed);
@@ -1543,16 +1534,24 @@
       }
       trigger.addEventListener('click', toggle);
       trigger.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
       });
     });
 
     /* Scroll reveal — scoped to .onboarding-roadmap */
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
       });
-    }, { threshold: 0.06 });
+    }, {
+      threshold: 0.06
+    });
     document.querySelectorAll('.onboarding-roadmap .reveal').forEach(el => io.observe(el));
 
 
@@ -1580,16 +1579,24 @@
 
       trigger.addEventListener('click', toggle);
       trigger.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
       });
     });
 
     /* Scroll reveal — scoped to .production-delivery */
     const pdIo = new IntersectionObserver(entries => {
       entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('is-visible'); pdIo.unobserve(e.target); }
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          pdIo.unobserve(e.target);
+        }
       });
-    }, { threshold: 0.06 });
+    }, {
+      threshold: 0.06
+    });
     document.querySelectorAll('.production-delivery .reveal').forEach(el => pdIo.observe(el));
 
 
@@ -1604,9 +1611,14 @@
     /* Scroll reveal — scoped to .what-they-build */
     const wtbIo = new IntersectionObserver(entries => {
       entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('is-visible'); wtbIo.unobserve(e.target); }
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          wtbIo.unobserve(e.target);
+        }
       });
-    }, { threshold: 0.12 });
+    }, {
+      threshold: 0.12
+    });
     document.querySelectorAll('.what-they-build .reveal').forEach(el => wtbIo.observe(el));
 
 
@@ -1619,15 +1631,20 @@
     /* Scroll reveal — scoped to .how-to-evaluate */
     const hteIo = new IntersectionObserver(entries => {
       entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('is-visible'); hteIo.unobserve(e.target); }
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          hteIo.unobserve(e.target);
+        }
       });
-    }, { threshold: 0.08 });
+    }, {
+      threshold: 0.08
+    });
     document.querySelectorAll('.how-to-evaluate .reveal').forEach(el => hteIo.observe(el));
 
 
 
     // ````````````````````````````````````````````````````````````````````````````````````````````````````````````````tabel section```````````````````````````
-    (function () {
+    (function() {
       /* Guard — do nothing if this section is not on the page */
       const ROOT = document.querySelector('.comparison-section');
       if (!ROOT) return;
@@ -1651,9 +1668,14 @@
       /* ── Scroll reveal — only watches elements inside ROOT ── */
       const csIO = new IntersectionObserver(entries => {
         entries.forEach(e => {
-          if (e.isIntersecting) { e.target.classList.add('cs-in'); csIO.unobserve(e.target); }
+          if (e.isIntersecting) {
+            e.target.classList.add('cs-in');
+            csIO.unobserve(e.target);
+          }
         });
-      }, { threshold: 0.05 });
+      }, {
+        threshold: 0.05
+      });
 
       $$('.cs-rev').forEach(el => csIO.observe(el));
 

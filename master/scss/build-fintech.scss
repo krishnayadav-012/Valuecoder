@@ -2,7 +2,7 @@
 @use "_default" as *;
 
 .fintech-section{
-  background-color: #090C19;
+  background-color: $light-grey;
 
 /* TOP */
 .s-top{display:flex;justify-content:space-between;  margin-bottom: 60px;
@@ -15,7 +15,7 @@ text-align: center;
 h2{color:#fff; width: 40%;
 em{
   font-style: normal;
-  color:$darkYellow
+  color:$blue-off-light;
 }
    @media screen and (max-width:1024px) {
    width: 100%;
@@ -97,14 +97,14 @@ padding: 25px 10px 25px 20px;
 
 
  h3{color:#fff; font-size: 24px; font-weight: 600; margin-bottom: 10px;}
- h3 a{color: $yellow;}
+ h3 > a{color: $blue-off-light;}
 p{ color: #E5E7EB;}
 ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;
 
  li{font-size:14px;color:#D1D5DC; font-weight: 500; position: relative;padding-left: 26px;
 
   a{
-    color: $yellow;
+    color: $blue-off-light;
   }
 
 &::before{
@@ -121,25 +121,27 @@ ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;
 }
 }
 
+
 }
 > a{
   font-size: 14px;
   font-weight: 600;
   margin-top: 50px;
-  color: #FFAD00;
+  color: $blue-off-light;
   position: relative;
        @media screen and (max-width:767px) {
       margin-top: 30px; 
       }
   &::after{
         content: "";
-    background: url(../images/index-v10/right-yellow.svg) no-repeat;
-    width: 12px;
-    height: 9px;
+    background-image: url(../images/index-v10/right-blue.svg);
+    width: 16px;
+    height: 16px;
     background-size: 100%;
     display: inline-block;
     margin-left: 9px;
     margin-top: 0px;
+    background-position-y: -17px;
        @media screen and (max-width:1024px) {
 margin-left: 5px; height: 8px;
   }
@@ -176,6 +178,7 @@ margin-left: 5px; height: 8px;
     transform: translateY(-50%);
     width: auto;
     height: 1px;
+    margin: 0 20px;
     background: #3F3F47;
     content: "";
 
@@ -209,7 +212,7 @@ margin-right: 15px;
 
 }
 }
- ul li.active{color:$darkYellow;}
+ ul li.active{color:$blue-off-light;}
 
 .glider-nav {
     position: absolute;
@@ -280,6 +283,9 @@ margin-right: 15px;
 .fintech-section .master-btn .btn-circle:hover .text::before, .fintech-section .master-btn .btn-circle:hover .text::after{
   color: #9F9FA9 !important;
 
+}
+.fintech-section .primary_btn a{
+  color: $white !important;
 }
 
 // @media screen and (max-width:1600px) {

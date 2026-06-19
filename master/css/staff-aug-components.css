@@ -1,10 +1,10 @@
 /* Error: Undefined variable.
  *    ,
- * 14 |   font-weight: $normal-font;
- *    |                ^^^^^^^^^^^^
+ * 30 |     background-image: radial-gradient(circle, rgba($white, .022) 1px, transparent 1px);
+ *    |                                                    ^^^^^^
  *    '
- *   scss\_cmp-team-extension-works.scss 14:16  @use
- *   scss\staff-aug-components.scss 2:1         root stylesheet */
+ *   scss\_cmp-emerging-technologies.scss 30:52  @use
+ *   scss\staff-aug-components.scss 5:1          root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 14 \2502    font-weight: $normal-font;\d\a    \2502                 ^^^^^^^^^^^^\a    \2575 \a   scss\\_cmp-team-extension-works.scss 14:16  @use\a   scss\\staff-aug-components.scss 2:1         root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 30 \2502      background-image: radial-gradient(circle, rgba($white, .022) 1px, transparent 1px);\a    \2502                                                     ^^^^^^\a    \2575 \a   scss\\_cmp-emerging-technologies.scss 30:52  @use\a   scss\\staff-aug-components.scss 5:1          root stylesheet";
 }

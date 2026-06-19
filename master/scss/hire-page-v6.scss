@@ -1,7 +1,7 @@
 @use "core/variables" as *;
-
 @use "_default" as *;
-@use "_menu-v8";
+//@use "_menu-v8";
+
 //@use "_header-form-white" as *;
 //@use "_accordion" as *;
 @use "_client-logo" as *;
@@ -17,6 +17,7 @@
 @use "_ctabtn-structure" as *;
 @use "_new-version-changes" as *;
 @use "_hire-process" as *;
+
 //@use "_software-costing" as *;
 //@use "_guide-topic" as *;
 //@use "_case-studies" as *;
@@ -24,11 +25,12 @@
 //@use "_tech-stacks" as *;
 
 @use "_intent-popup" as *;
+
 @use "feedback-section";
 @use "_testimonials" as *;
-@use "_footer-form" as *;
-@use "_footer-section" as *;
 
+//@use "_footer-form" as *;
+//@use "_footer-section" as *;
 
 //Importing components for Hire page
 // @use "_cmp_app_build" as *;

@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   margin-bottom: -1px;
-  background: #0B1028;
+  background: #05164d;
   flex-wrap: wrap;
 }
 .fintech-delivery::after {
@@ -45,7 +45,7 @@
 }
 .fintech-delivery .inner-part .left-part > em {
   font-style: normal;
-  color: #FFAD00;
+  color: #6AA0FF;
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
@@ -56,7 +56,7 @@
   line-height: 120%;
 }
 .fintech-delivery .inner-part .left-part h2 em {
-  color: #FFAD00;
+  color: #6AA0FF;
   font-style: normal;
 }
 .fintech-delivery .inner-part .left-part p {
@@ -190,16 +190,16 @@
   left: 0;
   height: 2px;
   width: 0%;
-  background: #FFAD00;
+  background: #6AA0FF;
 }
 .fintech-delivery .inner-part .ai-list .ai-item {
   /* ACTIVE */
 }
 .fintech-delivery .inner-part .ai-list .ai-item.active:before {
-  background: #FFAD00;
+  background: #6AA0FF;
 }
 .fintech-delivery .inner-part .ai-list .ai-item.active .title h4 {
-  color: #FFAD00;
+  color: #6AA0FF;
 }
 .fintech-delivery .inner-part .ai-list .ai-item.active .desc {
   max-height: max-content;

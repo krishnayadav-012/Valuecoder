@@ -71,8 +71,8 @@
   color: #94a3b8;
 }
 .model-card .badge {
-  background: rgba(255, 173, 0, 0.1019607843);
-  color: #CC8B00;
+  background-color: rgba(37, 99, 235, 0.1490196078);
+  color: #2563EB;
   font-size: 14px;
   font-weight: 600;
   padding: 5px 10px;
@@ -139,8 +139,8 @@
   border: 1px solid rgba(229, 231, 235, 0.2);
 }
 .model-card.highlighted .badge {
-  background: rgba(255, 173, 0, 0.1490196078);
-  color: #CC8B00;
+  background: rgba(37, 99, 235, 0.2);
+  color: #6AA0FF;
 }
 .model-card.highlighted h3 {
   color: #fff;

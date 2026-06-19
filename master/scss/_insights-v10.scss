@@ -1,6 +1,6 @@
 @use "core/variables" as *;
 .insights {
-  padding: 120px 0;
+
   background: #ffffff;
 
  
@@ -12,18 +12,14 @@
     gap: 20px;
 
     h2 {
-    
-    
-    font-size: clamp(30px, 3.7vw, 46px);
       margin-bottom: 10px;
       em{
-         color: $darkYellow;
+         color: $blue-off-light;
          font-style: normal;
       }
     }
 
     p {
-      font-size: 18px;
       margin-bottom: 0;
     }
   }
@@ -147,7 +143,7 @@
 
   a {
     
-    color: #CC8B00;
+    color: $dark-blue;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -156,9 +152,9 @@
     position: relative;
   &::after {
     content: "";
-    background: url(../images/index-v10/right-yellow.svg) no-repeat;
-    width: 10px;
-    height: 7px;
+    background: url("../images/index-v10/right-blue.svg") no-repeat;
+    width: 16px;
+    height: 16px;
     background-size: 100%;
     display: inline-block;
     transition: 0.2s;
@@ -167,8 +163,9 @@
   }
 
   &:hover {
-    border: 1px solid  #CC8B00;
-    box-shadow: 0px 2px 14px 3px #0400F526;
+    border: 1px solid  $dark-blue;
+   box-shadow: 0px 0px 20px 5px #1D5BC426;
+
 
     
   }

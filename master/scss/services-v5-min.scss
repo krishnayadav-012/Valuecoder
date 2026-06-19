@@ -1,6 +1,8 @@
 @use "core/variables" as *;
 @use "_default" as *;
-@use "_menu-v8" as *;
+
+//@use "_menu-v8" as *;
+
 @use "_three-column" as *;
 @use "_accordion" as *;
 @use "_client-logo" as *;
@@ -39,8 +41,9 @@
 @use "feedback-section";
 @use "_testimonials" as *;
 @use "_ctabtn-structure" as *;
-@use "_footer-form" as *;
-@use "_footer-section" as *;
+
+//@use "_footer-form" as *;
+//@use "_footer-section" as *;
 
 //added component scss files here for services page
 // @use "_cmp-type-services" as *;
@@ -263,6 +266,7 @@
       }
     }
   }
+  
   /*
   &:before {
     content: "";

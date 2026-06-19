@@ -77,15 +77,9 @@
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
             <!-- <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now"> -->
-             <div class="master-btn button-v10 ">
-                        <a href="/contact" class="btn-circle">
-                            <span class="text" data-text="Get in Touch">Get in Touch</span>
-
-                            <span class="circle">
-                                <img src="images/index-v10/move-right.svg" alt="">
-                            </span>
-                        </a>
-            </div>
+             <div class="btn-primary-two grey-right">
+                    <a href="#">Enquire Now</a>
+                </div>
          </div>
       </div>
    </div>

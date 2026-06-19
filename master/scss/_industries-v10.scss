@@ -19,7 +19,7 @@ $text-gray: #314158;
       text-align: left;
 
       .subtitle {
-        color: $darkYellow;
+        color: $dark-blue;
 
         margin-top: 0;
         font-size: 12px;
@@ -27,7 +27,6 @@ $text-gray: #314158;
       }
 
       h2 {
-        font-size: clamp(30px, 3.7vw, 46px);
         color: $themeMidNight;
         margin: 10px 0;
 
@@ -77,9 +76,9 @@ border: 2px solid #99A1AF;
       top: 88%;
 
       &:hover {
-        background: $darkYellow;
+        background: $dark-blue;
         color: white;
-        border-color: $darkYellow;
+        border-color: $dark-blue;
       }
     }
 
@@ -181,26 +180,26 @@ display: block;
         
         h4 {
           font-weight: 700;
-          font-size: 15px;
+          font-size: 16px;
           margin: 15px 0 5px;
-          color: #E5E7EB;
+          color: $white;
         }
         
         p {
           font-size: 14px;
           line-height: 1.5;
-          color: #99A1AF;
+          color: #F0F0F3;
           margin-bottom: 20px;
         }
       }
 
       .expand-btn {
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 500;
         text-decoration: underline;
         color: inherit;
-                margin-bottom: 22px;
-        color: #fff;
+                margin-bottom: 34px;
+        color: #F0F0F3;
       }
     }
 
@@ -233,7 +232,7 @@ display: block;
 }
 
 .industries-section .industry-card:hover .card-body .title-wrap h3 {
-  color: #FFFFFF;
+  color: $blue-off-light;
 }
 
 @media screen and (max-width: 992px) {
@@ -273,7 +272,7 @@ display: block;
 }
 
 .industry-card .card-body::after {
-  background: url(../images/index-v10/white-arrow.svg);
+  background: url(../images/index-v10/right-arrow-big.svg);
   width: 24px;
   display: none;
   height: 24px;

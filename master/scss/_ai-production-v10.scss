@@ -51,13 +51,12 @@ flex-wrap: wrap;
         float: right;
 
         h2 {
-            font-size: clamp(30px, 3.7vw, 46px);
             font-weight: 700;
             margin-bottom: 10px;
             color: #fff;
 
             em{
-                color: $darkYellow;
+                color: $blue-off-light;
                 font-style: normal;
             }
         }
@@ -77,7 +76,9 @@ flex-wrap: wrap;
         content: "";
         width: calc(100% - 30%);
         height: 100%;
-        background: linear-gradient(270deg, #090C19 43.32%, rgba(9, 12, 25, 0.95) 62.86%, rgba(9, 12, 25, 0) 100%); 
+        // background: linear-gradient(270deg, #090C19 43.32%, rgba(9, 12, 25, 0.95) 62.86%, rgba(9, 12, 25, 0) 100%); 
+background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%, rgba(5, 22, 77, 0) 100%);
+
         z-index: -1;
     }
 
@@ -143,7 +144,7 @@ flex-wrap: wrap;
                             content: "";
                             width: 8px;
                             height: 8px;
-                            background-color: #FFAD00;
+                            background-color: $blue-off-light;
                             border-radius: 50%;
                             position: absolute;
                             left: 0;
@@ -163,7 +164,7 @@ flex-wrap: wrap;
             height: 2px;
             width: 0%;
 
-            background: $yellow;
+            background: $blue-off-light;
 
         }
 
@@ -172,11 +173,11 @@ flex-wrap: wrap;
         &.active {
 
             &:before {
-                background: $yellow;
+                background: $blue-off-light;
             }
 
             .title h4 {
-                color: $yellow;
+                color: $blue-off-light;
             }
 
             .desc {

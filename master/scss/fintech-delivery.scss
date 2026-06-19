@@ -5,7 +5,7 @@
 position: relative;
     display: flex;
    margin-bottom: -1px;
-background: #0B1028;
+background: $themeMidNight;
 flex-wrap: wrap;
 
 
@@ -43,7 +43,7 @@ width: 100%;
 
     > em{
         font-style: normal;
-        color: #FFAD00;
+        color: $blue-off-light;
         text-transform: uppercase;
         margin-bottom: 5px;
         font-size: 14px;
@@ -53,7 +53,7 @@ width: 100%;
         color: $white;
         line-height: 120%;
         em{
-            color: #FFAD00;
+            color: $blue-off-light;
             font-style: normal;
 
         }
@@ -217,7 +217,7 @@ top: 23px;
             height: 2px;
             width: 0%;
 
-            background: $yellow;
+            background: $blue-off-light;
 
         }
 
@@ -226,11 +226,11 @@ top: 23px;
         &.active {
 
             &:before {
-                background: $yellow;
+                background: $blue-off-light;
             }
 
             .title h4 {
-                color: $yellow;
+                color: $blue-off-light;
             }
 
             .desc {

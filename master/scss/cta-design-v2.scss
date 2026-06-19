@@ -1,0 +1,67 @@
+@use "core/variables" as *;
+@use "_default" as *;
+.cta-v2{
+    display: inline-block;
+    background: linear-gradient(180deg, #211F47 0%, #05164D 100%);
+    padding: 60px 0 67px 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        content: "";
+        background-image: url(../images/consultion/cta-bg-one.webp);
+        left: 0;
+        bottom: -10px;
+            width: 110px;
+    height: 113px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../images/consultion/line.webp);
+        right: 0;
+        top: 0;
+            width: 265px;
+    height: 100%;
+    }
+
+
+    .inner-part{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+        }
+
+
+        .left-part{
+            width: calc(65% - 10px);
+               @media screen and (max-width:767px) {
+         width: 100%;
+        }
+            h2{
+                color: $white;
+            }
+            p{
+                color: #E8E8EC;
+                margin-bottom: 35px;
+            }
+            .primary_btn a{
+                color: $white;
+            }
+        }
+        .right-part{
+            width: 35%;
+            text-align: right;
+               @media screen and (max-width:767px) {
+         display: none;
+        }
+        }
+
+    }
+
+}

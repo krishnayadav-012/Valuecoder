@@ -53,9 +53,6 @@
     border-bottom: 1px solid !important;
   }
 }
-.security-section ul li {
-  transition: background-color 0.2s ease;
-}
 .security-section ul li:nth-child(5) {
   border-right: 0 !important;
 }

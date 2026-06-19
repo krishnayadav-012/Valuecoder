@@ -1,8 +1,10 @@
 @use "core/variables" as *;
 @use "_default" as *;
-@use "_menu-v8" as *;
-@use "_footer-form" as *;
-@use "_footer-section" as *;
+
+//@use "_menu-v8" as *;
+//@use "_footer-form" as *;
+//@use "_footer-section" as *;
+
 @use "feedback-section";
 @use "_testimonials";
 @use "glider";
@@ -30,9 +32,6 @@ h2{
     font-size: clamp(30px, 3.7vw, 46px) !important;
     font-weight: 700;
 }
-
-
-
 
 // header css
 .master-header.header-bg.sc-up .master-menu-desktop li a{
@@ -448,6 +447,10 @@ margin-bottom: 70px;
     color: #fff
 }
 
+.hero-section.indus .dis-flex .left-box .breadcrumbs a {
+    color: #bababa;
+}
+
 .hero-section.indus .dis-flex .left-box a:hover {
     text-decoration: underline
 }
@@ -631,16 +634,25 @@ margin-bottom: 70px;
 
 // ?
 .dark-client-section{
-background: linear-gradient(180deg, #00196A 0%, #05164D 100%);
+// background: linear-gradient(180deg, #00196A 0%, #05164D 100%);
+background-color: $white;
 
 }
-.dark-client-section .right-box .client-section .client-row .client-stack ul li{background: #10256F;}
+.dark-client-section .right-box .client-section .client-row .client-stack ul li{background: #FAFAFA;}
 .client-img-section .right-box .client-section .award-sc{margin-top: 35px;}
 .client-img-section .right-box .award-sc .award-row{margin-top: 10px;}
-.dark-client-section .left-box h2 em{
+.dark-client-section .left-box em{
+    color: $blue-lihgt;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
     font-style: normal;
-    color: $yellow;
 }
+.dark-client-section .left-box h2{
+    color: $themeMidNight;
+}
+.client-img-section .left-box .head-txt  p{color: #60646C !important;}
+
 .dark-client-section .right-box .award-sc .award-row .award-col{background-color: #132E8E;}
 .dark-client-section .right-box .award-sc .award-row .award-col:hover{
     background-color: #284CC9;

@@ -1,4 +1,4 @@
-@use 'default' as *;
+@use "core/variables" as *;
 
 // ============================================================
 // What Makes Us Different — Scoped SCSS
@@ -10,16 +10,10 @@
 // ============================================================
 
 .what-makes-diff {
-
-
   font-weight: $normal-font;
   line-height: 1.6;
   color: $darkblack;
   position: relative;
-
-
-
-
 
   // ════════════════════════════
   // HEADER

@@ -1,0 +1,53 @@
+@use "core/variables" as *;
+.running-bar {
+    background: linear-gradient(90deg, #011C71 0%, #0026A0 100%);
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;
+width: 100%;
+
+    .awards-marquee-track {
+line-height: 1;
+padding: 22px 0;
+        .awards-marquee-inner {
+
+            display: inline-flex;
+            gap: 12px;
+            padding: .5rem clamp(1.25rem, 5vw, 3.5rem);
+            animation: marquee 40s linear infinite;
+            
+            
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+                
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+            .award-tile{
+                span{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $white;
+                    padding-left: 16px;
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        background-color: #F59E0B;
+                        border-radius: 50%;
+                        left: 0;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            
+        }
+    }
+}

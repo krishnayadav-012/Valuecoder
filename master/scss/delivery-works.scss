@@ -1,14 +1,14 @@
 @use "core/variables" as *;
 @use "_default" as *;
-/// Mixin for the Checkmark icon in the list
-// List Checkmark Icon
+
 
 
 .delivery-section {
     position: relative;
     z-index: 1;
-    background-color:#F9FAFB;
-    &::after{
+    background-color: #F9FAFB;
+
+    &::after {
         content: "";
         z-index: -1;
         position: absolute;
@@ -19,16 +19,12 @@
         height: 100%;
 
         @media screen and (max-width:1024px) {
-            width: 100%;
-            height: 54%;
-            bottom: 0;
-            left: 0;
-            top: auto;
+           display: none;
         }
     }
 
 
-   
+
 
     .inner-part {
         display: flex;
@@ -40,29 +36,31 @@
         @media screen and (max-width:1024px) {
             flex-direction: column;
             padding: 0;
-            .left-part{
+
+            .left-part {
                 width: 100% !important;
             }
-            .right-part{
+
+            .right-part {
                 width: 100% !important;
             }
 
         }
 
         .left-part {
-          width:calc(45% - 30px) ;
-            
-            em{
-                color: #CC8B00;
+            width: calc(45% - 30px);
+
+            em {
+                color: $blue-lihgt;
                 text-transform: uppercase;
                 margin-bottom: 5px;
-                font-size: 16px;
-                font-weight: 500;
+                font-size: 14px;
+                font-weight: 700;
                 font-style: normal;
             }
 
             h2 {
-                color:#05164D;
+                color: $themeMidNight;
                 line-height: 1.2;
                 margin-bottom: 15px;
             }
@@ -77,21 +75,27 @@
                 list-style: none;
                 padding: 0;
 
-               
- li{font-size:14px;color:#364153; font-weight: 500; position: relative;padding-left: 26px;
-&::before{
-  content: "";
-    position: absolute;
-    left: 0;
-    background: url(../images/industry-v11/black-check.svg);
-    width: 16px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-size: 16px;
-    top: 8px;
-    background-size: 15px;
-}
-}
+
+                li {
+                    font-size: 14px;
+                    color: #364153;
+                    font-weight: 500;
+                    position: relative;
+                    padding-left: 26px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        background: url(../images/industry-v11/black-check.svg);
+                        width: 16px;
+                        height: 16px;
+                        background-repeat: no-repeat;
+                        background-size: 16px;
+                        top: 8px;
+                        background-size: 15px;
+                    }
+                }
 
             }
         }
@@ -99,56 +103,47 @@
         .right-part {
             width: calc(55% - 40px);
             padding-top: 30px;
-            h3{
+
+            h3 {
                 font-size: 22px;
-        @media screen and (max-width:1024px) {
-            font-size: 18px !important;
-            line-height: 1.3;
-        }
-        @media screen and (max-width:767px) {
-            font-size: 16px !important;
-        }
+
+                @media screen and (max-width:1024px) {
+                    font-size: 18px !important;
+                    line-height: 1.3;
+                }
+
+                @media screen and (max-width:767px) {
+                    font-size: 16px !important;
+                }
             }
-            p{
+
+            p {
                 margin-bottom: 10px;
-                  &:last-of-type{
+
+                &:last-of-type {
                     margin-bottom: 35px;
 
                     @media screen and (max-width:767px) {
-                        margin-bottom: 15px;    
+                        margin-bottom: 15px;
                     }
 
-                  }
+                }
             }
-          
-           
+
+
 
             .accordion-item {
-                border-top: 1px solid $darkWhiteGray;
+               
                 border-bottom: 1px solid $darkWhiteGray;
+                z-index: 1;
+                position: relative;
+                  padding: 35px 60px 33px 0;
 
-                .accordion-trigger {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 25px 20px;
-                    cursor: pointer;
-                    position: relative;
-        @media screen and (max-width:1024px) {
-        padding: 20px 30px 20px 5px;
-        }
 
-                    h3 {
-                        margin: 0;
-                        font-size: 22px;
-                        font-weight: 600;
-                        color: #101828;
-                        
-                    }
-
-                    .icon-placeholder {
-                        width: 45px;
+                &::after{
+                        width: 55px;
                         height: 60px;
+                        content: "";
                         position: absolute;
                         right: 0;
                         bottom: 0;
@@ -156,22 +151,42 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                       
+                        background: url(../images/index-v10/open-tab-icon.svg) no-repeat center;
 
-                        &::after{
-                            content: "";
-    width: 16px;
-    height: 9px;
-    background: url(../images/view-icon.png) no-repeat center;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-size: 100%;
+
+                        @media screen and (max-width:1024px) {
+                            width: 40px;
+                            height: 40px;
+                            background-size: 15px;
                         }
 
-                       
+
                     }
+
+
+
+
+
+                .accordion-trigger {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+
+                    // @media screen and (max-width:1024px) {
+                    //     padding: 20px 30px 20px 5px;
+                    // }
+
+                    h3 {
+                        margin: 0;
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: #101828;
+
+                    }
+
+                    
                 }
 
                 .accordion-content {
@@ -185,17 +200,30 @@
                         font-size: 16px;
                         line-height: 1.6;
                         margin-bottom: 0;
-                        padding-bottom: 20px;
+                        
                     }
                 }
 
-                // Active state
                 &.active {
-                    .accordion-trigger .icon-placeholder::after {
-                        transform: rotate(-180deg);
-                    }
+              
+
+
+                        &::after {
+                            display: none;
+                        }
+                
+                     
+                            .accordion-trigger{
+                                padding-bottom: 15px;
+                                h3{
+                                    color: #2563EB;
+                                    font-weight: 700;
+                                }
+                            }
+                     
                     .accordion-content {
                         max-height: 300px;
+                            padding: 0 ;
                     }
                 }
             }
@@ -204,3 +232,7 @@
 }
 
 
+
+.delivery-section .inner-part .right-part .accordion-item:first-of-type{
+padding-top: 0;
+}
