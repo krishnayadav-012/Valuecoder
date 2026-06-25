@@ -34,11 +34,11 @@
         };
     </script>
 
-    <script defer src="menu.js"></script>
+    <script defer src="js/menu-v9.js"></script>
 </head>
 
 <body>
-    <?php require_once './include/menu-v8.php'; ?>
+    <?php require_once './include/menu-v9.php'; ?>
 
     <section class="hero-section">
         <div class="container">

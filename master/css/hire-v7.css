@@ -9987,6 +9987,12 @@ button.tab-btn-base {
 }
 
 @media screen and (max-width: 1024px) {
+  .use-cases-systems .right-part .accordion-item .accordion-content p {
+    color: #ffffff !important;
+  }
+  .use-cases-systems .right-part .accordion-item:first-of-type {
+    padding-top: 5px;
+  }
   .use-cases-systems .bottom-part .tabs-wrapper {
     display: none;
   }
@@ -9997,6 +10003,117 @@ button.tab-btn-base {
   }
   .use-cases-systems .bottom-part .right-part {
     display: block;
+    background-color: #05164D;
+  }
+  .right-part .accordion-item .accordion-trigger h3 {
+    color: #ffffff;
+  }
+  .use-cases-systems .right-part {
+    width: 100%;
+    padding: 30px;
+  }
+  .use-cases-systems .right-part .content-pane {
+    display: block !important;
+  }
+  .use-cases-systems .right-part h3 {
+    font-size: 22px;
+    color: #ffffff !important;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .use-cases-systems .right-part h3 {
+    font-size: 18px !important;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  .use-cases-systems .right-part h3 {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .use-cases-systems .right-part p {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .use-cases-systems .right-part p:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  .use-cases-systems .right-part p:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .use-cases-systems .right-part .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1;
+    position: relative;
+    padding: 35px 60px 33px 0;
+  }
+  .use-cases-systems .right-part .accordion-item::after {
+    width: 55px;
+    height: 60px;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/index-v10/open-tab-icon.svg) no-repeat center;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .use-cases-systems .right-part .accordion-item::after {
+    width: 40px;
+    height: 40px;
+    background-size: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .use-cases-systems .right-part .accordion-item .accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .use-cases-systems .right-part .accordion-item .accordion-trigger h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #101828;
+  }
+  .use-cases-systems .right-part .accordion-item .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+  }
+  .use-cases-systems .right-part .accordion-item .accordion-content p {
+    color: #4B5563;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .use-cases-systems .right-part .accordion-item.active {
+    padding: 10px 10px 33px 0;
+  }
+  .use-cases-systems .right-part .accordion-item.active::after {
+    display: none;
+  }
+  .use-cases-systems .right-part .accordion-item.active .accordion-trigger {
+    padding-bottom: 15px;
+  }
+  .use-cases-systems .right-part .accordion-item.active .accordion-trigger h3 {
+    font-weight: 700;
+  }
+  .use-cases-systems .right-part .accordion-item.active .accordion-content {
+    max-height: fit-content !important;
+    padding: 0;
   }
 }
 .how-to-evaluate-v2 {

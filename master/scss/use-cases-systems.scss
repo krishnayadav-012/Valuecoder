@@ -195,6 +195,14 @@ padding-left: 26px;
 
 
 @media screen and (max-width:1024px) {
+    .use-cases-systems .right-part .accordion-item .accordion-content p{
+        color: $white !important;
+    }
+    .use-cases-systems .right-part .accordion-item{
+        &:first-of-type{
+            padding-top: 5px;
+        }
+    }
     .use-cases-systems .bottom-part .tabs-wrapper{
         display: none;
     }
@@ -205,5 +213,150 @@ padding-left: 26px;
     }
      .use-cases-systems .bottom-part .right-part{
         display: block;
+        background-color: #05164D;
      }
+     .right-part .accordion-item .accordion-trigger h3{
+        color: $white;
+     }
+ .use-cases-systems{
+
+
+      .right-part {
+            width: 100%;
+            padding: 30px;
+
+             .content-pane{
+                display: block !important;
+             }
+
+            h3 {
+                font-size: 22px;
+                color: $white !important;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 18px !important;
+                    line-height: 1.3;
+                }
+
+                @media screen and (max-width:767px) {
+                    font-size: 16px !important;
+                }
+            }
+
+            p {
+                margin-bottom: 10px;
+                color: $white;
+
+                &:last-of-type {
+                    margin-bottom: 35px;
+
+                    @media screen and (max-width:767px) {
+                        margin-bottom: 15px;
+                    }
+
+                }
+            }
+
+
+
+            .accordion-item {
+               
+                border-bottom: 1px solid $darkWhiteGray;
+                z-index: 1;
+                position: relative;
+                  padding: 35px 60px 33px 0;
+
+
+                &::after{
+                        width: 55px;
+                        height: 60px;
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        border: 1px solid $darkWhiteGray;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: url(../images/index-v10/open-tab-icon.svg) no-repeat center;
+
+
+                        @media screen and (max-width:1024px) {
+                            width: 40px;
+                            height: 40px;
+                            background-size: 15px;
+                        }
+
+
+                    }
+
+
+
+
+
+                .accordion-trigger {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+
+                    // @media screen and (max-width:1024px) {
+                    //     padding: 20px 30px 20px 5px;
+                    // }
+
+                    h3 {
+                        margin: 0;
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: #101828;
+
+                    }
+
+                    
+                }
+
+                .accordion-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.4s ease;
+                    padding: 0 20px;
+
+                    p {
+                        color: $natural-grey;
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 0;
+                        
+                    }
+                }
+
+                &.active {
+              
+
+                  padding: 10px 10px 33px 0;
+
+                        &::after {
+                            display: none;
+                        }
+                
+                     
+                            .accordion-trigger{
+                                padding-bottom: 15px;
+                                h3{
+                                   
+                                    font-weight: 700;
+                                }
+                            }
+                     
+                    .accordion-content {
+                        max-height:fit-content !important;
+                            padding: 0 ;
+                    }
+                }
+            }
+        }
+ }
+
+     
 }

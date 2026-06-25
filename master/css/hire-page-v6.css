@@ -1982,13 +1982,13 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin: 0 35px;
   background: #ffffff;
 }
+.slide-logo .logo-heading h4 span strong {
+  color: #2563EB;
+}
 .slide-logo .logo-heading {
   flex-basis: 100%;
   margin: 0 0 25px;
   justify-content: center;
-}
-.slide-logo .logo-heading strong {
-  color: #FFAD00;
 }
 .slide-logo .logo-heading:before {
   width: 90%;
@@ -2005,7 +2005,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   width: 90%;
   margin: 0 auto;
   padding: 0 0 30px;
-  border-bottom: 1px solid rgba(5, 22, 77, 0.4);
 }
 .slide-logo .logo-section .glide__slide {
   height: 70px;

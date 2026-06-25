@@ -24,7 +24,19 @@
       <span class="kbd">⌘K</span>
     </div>
 
-    <a class="cta" href="https://www.valuecoders.com/staging/contact" data-nav="cta" data-nav-id="talk-to-us">Talk to Us <svg class="arr" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M9 4.5L12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  
+
+    <!-- <a class="cta" href="https://www.valuecoders.com/staging/contact" data-nav="cta" data-nav-id="talk-to-us">Talk to Us <svg class="arr" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M9 4.5L12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a> -->
+     <div class="get-connect">
+          <a href="/contact" class="btn-circle">
+            <span class="text" data-text="talk-to-us">talk-to-us</span>
+
+            <span class="circle">
+              <img src="images/index-v10/move-right.svg" alt="">
+            </span>
+          </a>
+        </div>
+    
 
     <button class="hamb" id="hamb" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
@@ -278,8 +290,7 @@
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
   <div class="drawer__hd">
     <a class="logo" href="/" aria-label="ValueCoders — Home">
-      <span class="logo__mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1.6" fill="#F59E0B"></rect><rect x="10" y="1" width="7" height="7" rx="1.6" fill="#4D8DF0"></rect><rect x="1" y="10" width="7" height="7" rx="1.6" fill="#4D8DF0"></rect><rect x="10" y="10" width="7" height="7" rx="1.6" fill="#4D8DF0"></rect></svg></span>
-      <span class="logo__word" style="color:#fff">Value<em style="color:var(--azure-dark)">Coders</em></span>
+       <img loading="lazy" src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/dev-img/logo-valucoders-light-v9.svg" alt="ValueCoders Logo" width="400" height="88" class="site-logo-light">
     </a>
     <button class="drawer__close" id="drawer-close" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"></path></svg></button>
   </div>

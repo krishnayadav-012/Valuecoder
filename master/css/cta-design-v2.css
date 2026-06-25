@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
   @font-face {
-    font-family: "Plus Jakarta Sans";
-    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2");
+    font-family: "Inter Variable";
+    src: url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -132,7 +132,7 @@
 body {
   background-color: #ffffff;
   color: #4B5563;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter Variable", sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
@@ -622,7 +622,7 @@ strong {
 
 ::placeholder {
   color: #6B7280;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter Variable", sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -637,13 +637,13 @@ input[type=number] {
 
 ::placeholder {
   color: #6B7280;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter Variable", sans-serif;
   text-transform: capitalize;
 }
 
 input,
 textarea {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter Variable", sans-serif;
 }
 
 .lighter-theme-img {

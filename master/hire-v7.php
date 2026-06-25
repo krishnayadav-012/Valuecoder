@@ -401,6 +401,7 @@
                     </div>
 
                 </div>
+<div class="delivery-section">
 
 
                 <div class="right-part">
@@ -412,8 +413,33 @@
 
                         </div>
                         <div class="accordion-content">
-                            <p>Details regarding zero data retention standards and AI tool integration protocols for
-                                high-security environments.</p>
+                          <div class="content-pane active" id="tab1">
+
+                            <div class="icon-box">
+                                <img src="./images/consultion/products.svg" alt="">
+                            </div>
+
+                            <h3>Product Platforms & Web Applications</h3>
+
+                            <p>
+                                Digital products built for customer acquisition,
+                                daily usage, and continuous feature releases.
+                            </p>
+
+                            <ul>
+                                <li>SaaS platforms and subscription products</li>
+                                <li>Customer portals and self-service applications</li>
+                                <li>Internal dashboards and admin systems</li>
+                                <li>Ongoing feature delivery across web products</li>
+                            </ul>
+
+                            <div class="tags">
+                                <span>SAAS COMPANIES</span>
+                                <span>PRODUCT TEAMS</span>
+                                <span>DIGITAL BUSINESSES</span>
+                            </div>
+
+                        </div>
                         </div>
 
                     </div>
@@ -453,6 +479,7 @@
                     </div>
                 </div>
 
+</div>
 
             </div>
 
@@ -1358,8 +1385,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
-    <script src="js/js-v10.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
 
 
     <script>
@@ -1454,6 +1481,31 @@
             });
 
         });
+
+         // ~~~~~~~~~~~~~~ delivery works ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the trigger divs within right-part
+            const triggers = document.querySelectorAll('.right-part .accordion-trigger');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', function () {
+                    const currentItem = this.parentElement;
+                    const isOpen = currentItem.classList.contains('active');
+
+                    // Condition: Close all other open items in this section
+                    const allItems = document.querySelectorAll('.right-part .accordion-item');
+                    allItems.forEach(item => {
+                        item.classList.remove('active');
+                    });
+
+                    // Toggle current: Open if it was closed
+                    if (!isOpen) {
+                        currentItem.classList.add('active');
+                    }
+                });
+            });
+        });
+        // `````````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     </script>
 
 
