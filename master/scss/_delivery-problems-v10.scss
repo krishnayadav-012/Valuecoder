@@ -180,9 +180,10 @@ display: none;
   }
  
   &:hover {
-
+border: 1px solid #6AA0FF;
     &::before{
       display: block;
+      background-size: cover;
     }
   }
  

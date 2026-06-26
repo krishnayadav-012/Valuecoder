@@ -4,10 +4,14 @@
 
 #capabilities-section {
   background-color: #05164D;
-  overflow: hidden;
+
   color: $white;
   z-index: 1;
   position: relative;
+
+  @media screen and (max-width:992px) {
+    overflow: hidden;
+  }
     &::after{
         content: "";
               position: absolute;
@@ -40,6 +44,7 @@
     position: sticky;
     top: 100px;
     padding-bottom: 40px;
+    height: fit-content;
     .engineering-design{
       position: relative;
 

@@ -25,7 +25,7 @@
 @use "_footer-form";
 @use "_home-award";
 
-
+.help-section{background-color: $white;}
 
 .back-to-top-btn{
     box-shadow: 0px 4px 20px 0px #00000033;
@@ -288,7 +288,7 @@ margin-bottom: 70px;}
                 margin-bottom: 20px;
 
                 em {
-                    color: $darkYellow;
+                 
                     font-style: normal;
                 }
             }
@@ -298,7 +298,6 @@ margin-bottom: 70px;}
                 font-size: 26px;
                 em{
                     font-style: normal;
-                    color: $darkYellow;
                 }
             }
 
@@ -922,7 +921,7 @@ margin-bottom: 70px;}
 }
 
 .slide-logo .logo-heading h4 {
-    color: #52606d;
+    color: #1C2024;
     font-size: 20px;
     margin: 0 35px;
     background: #fff;
@@ -935,7 +934,8 @@ margin-bottom: 70px;}
 }
 
 .slide-logo .logo-heading strong {
-    color: $darkYellow
+    color: $blue-lihgt;
+    font-weight: 800;
 }
 
 .slide-logo .logo-heading:before {
@@ -953,8 +953,8 @@ margin-bottom: 70px;}
 .slide-logo .logo-section {
     width: 100%;
     margin: 0 auto;
-    padding: 0 0 30px;
-    border-bottom: 1px solid rgba(5,22,77,.4)
+    
+
 }
 
 .slide-logo .logo-section .glide__slide {

@@ -258,10 +258,9 @@
 
             <!-- Heading -->
             <div class="section-head">
-                <h2>What We Help You Do</h2>
+                <h2>Your Challenges. <em>Our Solutions</em></h2>
                 <p>
-                    We align our delivery structure to your current stage.
-                    Select a model below to see how we integrate with your roadmap.
+                   We assess your current stage and align our delivery structure accordingly. Below are some scenarios where most businesses require our assistance.
                 </p>
             </div>
 
@@ -280,6 +279,7 @@
                     <p>
                         You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
                     </p>
+                    <h4>How We Help:</h4>
                     <ul>
                         <li>Scaling engineering capacity fast</li>
                         <li>Accelerating feature releases</li>
@@ -293,10 +293,10 @@
                     </a>
                 </div>
 
-                <!-- Card 1 -->
+                 <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/six-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/one-normal.svg" class="normal" alt="">
                         <img src="images/index-v10/blue-card-icon.svg" class="hover" alt="">
 
                     </div>
@@ -305,6 +305,7 @@
                     <p>
                         You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
                     </p>
+                    <h4>How We Help:</h4>
                     <ul>
                         <li>Scaling engineering capacity fast</li>
                         <li>Accelerating feature releases</li>
@@ -317,22 +318,23 @@
                         Learn More
                     </a>
                 </div>
-                <!-- Card 1 -->
+                    <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
-                        <img src="images/index-v10/two-normal.svg" class="normal" alt="">
-                        <img src="images/index-v10/two-hover.svg" class="hover" alt="">
+                        <img src="images/index-v10/one-normal.svg" class="normal" alt="">
+                        <img src="images/index-v10/one-hover.svg" class="hover" alt="">
 
                     </div>
 
-                    <h3>You need to scale your India engineering centre</h3>
+                    <h3>You need to accelerate your software roadmap</h3>
                     <p>
-                        You're running or building a GCC. You need a partner who can staff, onboard.
+                        You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
                     </p>
+                    <h4>How We Help:</h4>
                     <ul>
-                        <li>Dedicated engineering hubs</li>
-                        <li>Engineering capacity at scale</li>
-                        <li>Governance and quality assurance</li>
+                        <li>Scaling engineering capacity fast</li>
+                        <li>Accelerating feature releases</li>
+                        <li>Consistent sprint delivery</li>
                     </ul>
 
                     <div class="border-line"></div>

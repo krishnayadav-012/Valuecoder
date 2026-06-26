@@ -98,7 +98,7 @@ svg {
 .nav.header-bg {
   box-shadow: var(--sh-1);
   border-bottom-color: transparent;
-  background: rgba(252, 252, 253, 0.88);
+  background: rgb(255, 255, 255);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--bd);
@@ -1404,6 +1404,14 @@ a.col__head:hover .arr {
 
 .nav-v9 .btn-circle:hover .circle img {
   transform: translateX(150%);
+}
+
+.nav.nav-v9.header-bg .search__txt {
+  color: #80838D;
+}
+.nav.nav-v9.header-bg .search svg {
+  stroke: #80838D;
+  color: #80838D;
 }
 
 /*# sourceMappingURL=menu-v9.css.map */

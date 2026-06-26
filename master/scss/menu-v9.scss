@@ -44,7 +44,7 @@ svg{display:block}
 .nav.header-bg{
   box-shadow:var(--sh-1);  
   border-bottom-color:transparent;
-  background:rgba(252,252,253,.88);
+  background:rgb(255, 255, 255);
   backdrop-filter:saturate(180%) blur(14px);
   -webkit-backdrop-filter:saturate(180%) blur(14px);
   border-bottom:1px solid var(--bd);
@@ -427,4 +427,15 @@ a.col__head:hover .arr{transform:translateX(3px);color:var(--azure-text)}
 }
 .nav-v9 .btn-circle:hover .circle img {
     transform: translateX(150%);
+}
+.nav.nav-v9.header-bg{
+  .search__txt{
+    color: #80838D;
+  }
+  .search{
+    svg{
+      stroke: #80838D;
+      color: #80838D;
+    }
+  }
 }

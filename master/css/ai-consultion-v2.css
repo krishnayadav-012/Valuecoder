@@ -4559,6 +4559,7 @@ button.tab-btn-base {
 .model-card h3 {
   font-size: 22px;
   font-weight: 700;
+  line-height: 100%;
   color: #111827;
   margin-bottom: 15px;
 }
@@ -4568,6 +4569,7 @@ button.tab-btn-base {
 .model-card p {
   font-size: 14px;
   color: #4B5563;
+  line-height: 160%;
   margin-bottom: 20px;
 }
 .model-card ul {
@@ -4582,6 +4584,7 @@ button.tab-btn-base {
   margin-bottom: 15px;
   padding-left: 26px;
   display: flex;
+  line-height: 100%;
   align-items: flex-start;
   position: relative;
   gap: 10px;
@@ -4593,7 +4596,7 @@ button.tab-btn-base {
   background: url(../images/index-v10/grey-check.svg);
   width: 15px;
   height: 15px;
-  top: 8px;
+  top: 0px !important;
   background-size: 15px;
 }
 .model-card .card-footer {
@@ -4602,6 +4605,9 @@ button.tab-btn-base {
   font-size: 14px;
   color: #364153;
   font-weight: 500;
+}
+.model-card .card-footer p {
+  margin-bottom: 0;
 }
 .model-card .card-footer strong {
   color: #364153;
@@ -4646,9 +4652,11 @@ button.tab-btn-base {
 }
 .model-card.highlighted .card-footer p {
   border-top-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+  color: #CDCED6;
 }
 .model-card.highlighted .card-footer p strong {
-  color: #fff;
+  color: #CDCED6;
 }
 
 @media (max-width: 480px) {
