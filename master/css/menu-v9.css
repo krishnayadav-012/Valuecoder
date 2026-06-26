@@ -1416,6 +1416,12 @@ a.col__head:hover .arr {
 header:hover {
   background-color: #fff;
 }
+header:hover .site-logo-light {
+  display: none;
+}
+header:hover .site-logo-dark {
+  display: block;
+}
 header:hover .search__txt {
   color: #80838D;
 }

@@ -444,7 +444,8 @@ header{
 
     &:hover{
       background-color: #fff;
-
+.site-logo-light{display: none;}
+.site-logo-dark{display: block;}
       .search__txt{
     color: #80838D;
   }
