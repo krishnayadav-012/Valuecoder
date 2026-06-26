@@ -164,6 +164,7 @@ background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 3
           display: flex;
           font-weight: 500;
           position: relative;
+          line-height: 1;
           align-items: center;
           gap: 10px;
           color:#D1D5DC;
@@ -178,7 +179,7 @@ background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 3
               background: url(../images/index-v10/white-check-round.svg);
               width: 15px;
               height: 15px;
-              top: 8px;
+              top: 0px;
               background-size: 15px;  
           
           }
