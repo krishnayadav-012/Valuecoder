@@ -4910,7 +4910,7 @@ button.tab-btn-base {
 .industries-section .industry-card .card-image {
   height: 350px;
   transition: height 0.4s ease;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
