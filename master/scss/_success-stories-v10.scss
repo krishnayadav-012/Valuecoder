@@ -151,13 +151,17 @@
     
  
     h3 {
-      font-size: 24px;
-      margin-bottom: 12px;
+      font-size: 22px;
+font-width: 600;
+line-height: 100%;
+      margin-bottom: 10px;
     }
  
     p {
       font-size: 16px;
-      line-height: 1.7;
+      font-weight: 500;
+      line-height: 160%;
+      color: #60646C;
     }
   }
  
@@ -263,6 +267,7 @@
     align-items: center;
     font-size: 16px;
     font-weight: 500;
+    line-height: 100%;
     color: $dark-blue;
     margin-top: auto;
     transition: gap 0.2s ease;

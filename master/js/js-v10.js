@@ -1,3 +1,22 @@
+const topIcon = document.querySelector(".fixed_top_icon");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 500) {
+        topIcon.classList.add("active");
+    } else {
+        topIcon.classList.remove("active");
+    }
+});
+
+topIcon.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+
 const items = document.querySelectorAll(".ai-item");
 
 let current = 0;

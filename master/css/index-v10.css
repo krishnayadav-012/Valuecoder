@@ -13,6 +13,47 @@
   right: 30px;
   bottom: 30px;
   z-index: 999;
+  display: none;
+}
+.fixed_top_icon .back-to-top-btn {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border: 1px solid #D4D4D8;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  gap: 5px;
+  height: 73px;
+  align-items: center;
+  border-radius: 100px;
+}
+.fixed_top_icon .back-to-top-btn .arrow {
+  background-image: url(../images/index-v10/top-icon-grey.svg);
+  width: 12px;
+  display: block;
+  background-repeat: no-repeat;
+  height: 25px;
+}
+.fixed_top_icon .back-to-top-btn .text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #9F9FA9;
+}
+.fixed_top_icon .back-to-top-btn:hover {
+  background-color: #1D5BC4;
+  border-color: #1D5BC4;
+}
+.fixed_top_icon .back-to-top-btn:hover .arrow {
+  background-image: url(../images/index-v10/top-icon-white.svg);
+}
+.fixed_top_icon .back-to-top-btn:hover .text {
+  color: #ffffff;
+}
+
+.fixed_top_icon.active {
+  display: block;
 }
 
 .mb-70 {
@@ -3936,8 +3977,8 @@ header:hover .trigger .chev {
   font-size: clamp(36px, 4.5vw, 46px);
   font-weight: 800;
   color: #ffffff;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  line-height: 119%;
+  margin-bottom: 5px;
 }
 .stat-card__number h3 .star {
   color: #FFAD00;
@@ -3957,6 +3998,7 @@ header:hover .trigger .chev {
   font-weight: 400;
   color: #bdb7b7;
   color: #ffffff;
+  font-weight: 500;
 }
 .stat-card__platforms {
   display: flex;
@@ -4217,6 +4259,7 @@ header:hover .trigger .chev {
   line-height: 1.6;
   font-size: 18px;
   color: #364153;
+  font-weight: 500;
 }
 .help-section {
   /* GRID */
@@ -4252,7 +4295,7 @@ header:hover .trigger .chev {
   font-weight: 600;
   color: #1C2024;
   margin-bottom: 10px;
-  line-height: 1.4;
+  line-height: 150%;
 }
 .help-section .help-card p {
   font-size: 16px;
@@ -4263,7 +4306,7 @@ header:hover .trigger .chev {
 .help-section .help-card h4 {
   color: #60646C;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 100%;
 }
 .help-section .help-card ul {
@@ -4297,6 +4340,7 @@ header:hover .trigger .chev {
 .help-section .help-card .border-line {
   border-top: 1px solid #E5E7EB;
   margin-bottom: 49px;
+  margin-top: 15px;
 }
 .help-section .help-card .learn-more {
   font-size: 16px;
@@ -4692,7 +4736,7 @@ header:hover .trigger .chev {
   margin-bottom: 0;
 }
 .model-card .card-footer strong {
-  color: #364153;
+  color: #60646C;
   font-weight: 700;
 }
 .model-card.highlighted {
@@ -4877,12 +4921,16 @@ header:hover .trigger .chev {
   }
 }
 .story-card--featured h3 {
-  font-size: 24px;
-  margin-bottom: 12px;
+  font-size: 22px;
+  font-width: 600;
+  line-height: 100%;
+  margin-bottom: 10px;
 }
 .story-card--featured p {
   font-size: 16px;
-  line-height: 1.7;
+  font-weight: 500;
+  line-height: 160%;
+  color: #60646C;
 }
 .story-card--small {
   flex-direction: row;
@@ -4971,6 +5019,7 @@ header:hover .trigger .chev {
   align-items: center;
   font-size: 16px;
   font-weight: 500;
+  line-height: 100%;
   color: #1D5BC4;
   margin-top: auto;
   transition: gap 0.2s ease;
@@ -8581,43 +8630,6 @@ header:hover .trigger .chev {
 }
 .help-section {
   background-color: #ffffff;
-}
-
-.back-to-top-btn {
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
-  border: 1px solid #D4D4D8;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 45px;
-  gap: 5px;
-  height: 73px;
-  align-items: center;
-  border-radius: 100px;
-}
-.back-to-top-btn .arrow {
-  background-image: url(../images/index-v10/top-icon-grey.svg);
-  width: 12px;
-  display: block;
-  background-repeat: no-repeat;
-  height: 25px;
-}
-.back-to-top-btn .text {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
-  color: #9F9FA9;
-}
-.back-to-top-btn:hover {
-  background-color: #1D5BC4;
-  border-color: #1D5BC4;
-}
-.back-to-top-btn:hover .arrow {
-  background-image: url(../images/index-v10/top-icon-white.svg);
-}
-.back-to-top-btn:hover .text {
-  color: #ffffff;
 }
 
 .primary_btn {

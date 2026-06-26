@@ -1273,22 +1273,16 @@
 
                 <!-- dots -->
                 <div class="swiper-pagination"></div>
-
-
             </div>
-
-
         </div>
     </section>
     <!-- feedback section end -->
-
 <!-- go top -->
  <div class="fixed_top_icon">
        <a href="#" class="back-to-top-btn">
     <span class="arrow"></span>
     <span class="text">TOP</span>
 </a>
-
     </div>
 <!-- go top -->
 

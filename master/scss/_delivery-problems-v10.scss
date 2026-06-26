@@ -199,8 +199,8 @@ border: 1px solid #6AA0FF;
       font-size: clamp(36px, 4.5vw, 46px);
       font-weight: 800;
       color: $white;
-      line-height: 1;
-      letter-spacing: -0.02em;
+      line-height: 119%;
+      margin-bottom: 5px;
       
       .star {
         color: $darkYellow;
@@ -226,6 +226,7 @@ border: 1px solid #6AA0FF;
       font-weight: $normal-font;
       color: $greyBannerfont;
       color: $white;
+      font-weight: 500;
     }
   }
  

@@ -13,6 +13,47 @@
   right: 30px;
   bottom: 30px;
   z-index: 999;
+  display: none;
+}
+.fixed_top_icon .back-to-top-btn {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border: 1px solid #D4D4D8;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  gap: 5px;
+  height: 73px;
+  align-items: center;
+  border-radius: 100px;
+}
+.fixed_top_icon .back-to-top-btn .arrow {
+  background-image: url(../images/index-v10/top-icon-grey.svg);
+  width: 12px;
+  display: block;
+  background-repeat: no-repeat;
+  height: 25px;
+}
+.fixed_top_icon .back-to-top-btn .text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #9F9FA9;
+}
+.fixed_top_icon .back-to-top-btn:hover {
+  background-color: #1D5BC4;
+  border-color: #1D5BC4;
+}
+.fixed_top_icon .back-to-top-btn:hover .arrow {
+  background-image: url(../images/index-v10/top-icon-white.svg);
+}
+.fixed_top_icon .back-to-top-btn:hover .text {
+  color: #ffffff;
+}
+
+.fixed_top_icon.active {
+  display: block;
 }
 
 .mb-70 {

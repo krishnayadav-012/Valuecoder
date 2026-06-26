@@ -27,6 +27,7 @@
             line-height: 1.6;
             font-size: 18px;
             color: #364153;
+            font-weight: 500;
         }
     }
 
@@ -60,10 +61,11 @@
 
         h3 {
             font-size: 22px;
+
             font-weight: $medium-font;
             color: $light-grey;
             margin-bottom: 10px;
-            line-height: 1.4;
+            line-height: 150%;
         }
 
         p {
@@ -75,7 +77,7 @@
 h4{
     color: #60646C;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 100%;
 }
         ul {
@@ -112,6 +114,7 @@ h4{
         .border-line{
             border-top: 1px solid #E5E7EB ;
             margin-bottom: 49px;
+            margin-top: 15px;
         }
         .learn-more {
             font-size: 16px;
