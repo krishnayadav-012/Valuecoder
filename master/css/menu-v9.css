@@ -251,7 +251,6 @@ svg {
 }
 
 .nav-v9 .search:hover {
-  border-color: #FFFFFF;
   box-shadow: var(--sh-1);
   background: rgba(255, 255, 255, 0.3019607843);
 }
@@ -1349,8 +1348,8 @@ a.col__head:hover .arr {
   top: 50%;
   right: 2px;
   transform: translateY(-50%);
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 39px;
   border-radius: 50%;
   background: #0b2a6f;
   display: flex;
@@ -1412,6 +1411,23 @@ a.col__head:hover .arr {
 .nav.nav-v9.header-bg .search svg {
   stroke: #80838D;
   color: #80838D;
+}
+
+header:hover {
+  background-color: #fff;
+}
+header:hover .search__txt {
+  color: #80838D;
+}
+header:hover .search svg {
+  stroke: #80838D;
+  color: #80838D;
+}
+header:hover .trigger {
+  color: var(--navy);
+}
+header:hover .trigger .chev {
+  color: var(--navy);
 }
 
 /*# sourceMappingURL=menu-v9.css.map */

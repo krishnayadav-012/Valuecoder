@@ -5081,6 +5081,39 @@ button.tab-btn-base {
     right: 4px;
   }
 }
+.btn-primary-two {
+  border: 1px solid #9F9FA9;
+  border-radius: 100px;
+  width: fit-content;
+  overflow: hidden;
+}
+.btn-primary-two input {
+  background: rgba(255, 174, 0, 0) url(../images/index-v10/grey-right.svg) no-repeat right 15% center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: #60646C;
+  padding: 11.5px 41px 11.5px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  gap: 10px;
+  line-height: 100%;
+  transition: background 0.3s ease;
+  position: relative !important;
+  transition: 0.4s;
+  border: 1px solid #CDCED6;
+}
+.btn-primary-two:hover input {
+  border-color: #1D5BC4;
+  background: #1D5BC4;
+  color: #ffffff;
+  background: #1D5BC4 url(../images/index-v10/white-right.svg) no-repeat right 15% center;
+}
+
 .footer {
   width: 100%;
   background: #1C2024;

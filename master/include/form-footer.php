@@ -77,9 +77,10 @@
             <input type="hidden" name="page_url" value="https://www.valuecoders.com/v2wp/">
             <input type="hidden" name="vc_csrf" value="">
             <!-- <input type="submit" id="submitButton cta" class="cta-button" value="Enquire Now"> -->
-             <div class="btn-primary-two grey-right">
-                    <a href="#">Enquire Now</a>
-                </div>
+            
+                <div class="btn-primary-two grey-right">
+                <input type="submit" id="submitButton" class="prime-submit" value="Enquire Now" />
+              </div>
          </div>
       </div>
    </div>

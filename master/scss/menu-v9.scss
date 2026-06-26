@@ -88,7 +88,7 @@ svg{display:block}
   background:#FFFFFF26;border: 1px solid  #80838D;border-radius:100px;
   padding:4px 4px 4px 13px;color:#CDCED6;font-size:12px;  cursor:text;white-space:nowrap;overflow:hidden;
   transition:border-color var(--t),box-shadow var(--t)}
-.nav-v9 .search:hover{border-color:#FFFFFF;box-shadow:var(--sh-1); background: #FFFFFF4D;}
+.nav-v9 .search:hover{box-shadow:var(--sh-1); background: #FFFFFF4D;}
 .nav-v9 .search svg{flex-shrink:0}
 .nav-v9 .search__txt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .nav-v9 .search .kbd{margin-left:auto;flex-shrink:0;font-weight:600;font-size:11px;color:#60646C;
@@ -380,8 +380,8 @@ a.col__head:hover .arr{transform:translateX(3px);color:var(--azure-text)}
     top: 50%;
     right: 2px;
     transform: translateY(-50%);
-    width: 41px;
-    height: 41px;
+    width: 40px;
+    height: 39px;
     border-radius: 50%;
     background: #0b2a6f;
     display: flex;
@@ -439,3 +439,29 @@ a.col__head:hover .arr{transform:translateX(3px);color:var(--azure-text)}
     }
   }
 }
+header{
+  
+
+    &:hover{
+      background-color: #fff;
+
+      .search__txt{
+    color: #80838D;
+  }
+  .search{
+    svg{
+      stroke: #80838D;
+      color: #80838D;
+    }
+  }
+
+
+    .trigger {
+      color: var(--navy);
+      .chev{
+        color: var(--navy);
+      }
+    }
+
+    }
+  }
