@@ -4136,7 +4136,7 @@ header:hover .trigger .chev {
   content: "";
   position: absolute;
   right: 0;
-  background: url(../images/index-v10/sticky-card-ellips.webp);
+  background: url(../images/index-v10/sticky-card-ellips.svg);
   width: 160px;
   height: 111px;
   bottom: 8px;
@@ -6036,6 +6036,7 @@ header:hover .trigger .chev {
 }
 .client-feedback .feedback-slider .swiper-slide.swiper-slide-active {
   opacity: 1;
+  transition: 0.5s;
   margin: 0 auto;
 }
 .client-feedback .feedback-slider .feedback-card {
@@ -6162,6 +6163,10 @@ header:hover .trigger .chev {
 
 .swiper-slide .feedback-card .client-image.before {
   display: none;
+}
+
+.swiper-slide.swiper-slide-next {
+  transition: 0.5s;
 }
 
 .testimonial-section .testlider {

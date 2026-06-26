@@ -260,7 +260,7 @@
             <div class="section-head">
                 <h2>Your Challenges. <em>Our Solutions</em></h2>
                 <p>
-                   We assess your current stage and align our delivery structure accordingly. Below are some scenarios where most businesses require our assistance.
+                    We assess your current stage and align our delivery structure accordingly. Below are some scenarios where most businesses require our assistance.
                 </p>
             </div>
 
@@ -293,7 +293,7 @@
                     </a>
                 </div>
 
-                 <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
                         <img src="images/index-v10/one-normal.svg" class="normal" alt="">
@@ -318,7 +318,7 @@
                         Learn More
                     </a>
                 </div>
-                    <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="help-card">
                     <div class="icon">
                         <img src="images/index-v10/one-normal.svg" class="normal" alt="">
@@ -583,7 +583,7 @@
     <!-- capblieties secton start -->
 
 
-    <section id="capabilities-section" class="padding-t-120 padding-b-120"> 
+    <section id="capabilities-section" class="padding-t-120 padding-b-120">
         <div class="container">
             <div class="cap-wrapper">
                 <div class="left-part">
@@ -1162,7 +1162,7 @@
                             <div class="client-image">
                                 <img src="./images/index-v10/client-img-one.webp" alt="">
                             </div>
-                          <div class="client-image before">
+                            <div class="client-image before">
                                 <img src="./images/index-v10/client-img-one.webp" alt="">
                             </div>
 
@@ -1179,7 +1179,7 @@
                                     recommended them!
                                 </p>
 
-                               <div class="clint-bio">
+                                <div class="clint-bio">
                                     <h4>Michael Brown</h4>
                                     <p>
                                         Founder
@@ -1198,7 +1198,8 @@
                             <div class="client-image">
                                 <img src="./images/index-v10/client-img-two.webp" alt="">
 
-                            </div>    <div class="client-image before">
+                            </div>
+                            <div class="client-image before">
                                 <img src="./images/index-v10/client-img-one.webp" alt="">
                             </div>
 
@@ -1234,7 +1235,7 @@
                             <div class="client-image">
                                 <img src="./images/index-v10/client-img-one.webp" alt="">
                             </div>
-  <div class="client-image before">
+                            <div class="client-image before">
                                 <img src="./images/index-v10/client-img-one.webp" alt="">
                             </div>
                             <div class="content">
@@ -1262,6 +1263,41 @@
                         </div>
                     </div>
 
+                      <div class="swiper-slide">
+                        <div class="feedback-card">
+
+                            <div class="client-image">
+                                <img src="./images/index-v10/client-img-two.webp" alt="">
+
+                            </div>
+                            <div class="client-image before">
+                                <img src="./images/index-v10/client-img-one.webp" alt="">
+                            </div>
+
+                            <div class="content">
+
+
+                                <p>
+                                    ValueCoders played a key role in helping our
+                                    startup grow rapidly. Their development team
+                                    delivered high-quality work, communicated
+                                    exceptionally well, and onboarded to new projects
+                                    quickly and smoothly. Their contributions made a
+                                    meaningful impact on our growth. I would highly
+                                    recommended them!
+                                </p>
+
+                                <div class="clint-bio">
+                                    <h4>Michael Brown</h4>
+                                    <p>
+                                        Founder
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
 
@@ -1277,14 +1313,14 @@
         </div>
     </section>
     <!-- feedback section end -->
-<!-- go top -->
- <div class="fixed_top_icon">
-       <a href="#" class="back-to-top-btn">
-    <span class="arrow"></span>
-    <span class="text">TOP</span>
-</a>
+    <!-- go top -->
+    <div class="fixed_top_icon">
+        <a href="#" class="back-to-top-btn">
+            <span class="arrow"></span>
+            <span class="text">TOP</span>
+        </a>
     </div>
-<!-- go top -->
+    <!-- go top -->
 
     <section class="contact-us-section padding-t-120 padding-b-120">
         <?php require_once 'include/contact-form.php'; ?>
@@ -1299,7 +1335,6 @@
 
 
     <script>
-
         document.addEventListener("DOMContentLoaded", function() {
             const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
             // condition: run only if this section exists
@@ -1330,7 +1365,7 @@
                         1200: {
                             slidesPerView: 1.3,
                         },
-                       
+
                         768: {
                             slidesPerView: 1
                         },

@@ -2029,6 +2029,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .client-feedback .feedback-slider .swiper-slide.swiper-slide-active {
   opacity: 1;
+  transition: 0.5s;
   margin: 0 auto;
 }
 .client-feedback .feedback-slider .feedback-card {
@@ -2155,6 +2156,10 @@ body.page-template-template-testimonials .client-video-section iframe,
 
 .swiper-slide .feedback-card .client-image.before {
   display: none;
+}
+
+.swiper-slide.swiper-slide-next {
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=client-feedback-v11.css.map */
