@@ -6425,6 +6425,7 @@ button.tab-btn-base {
   width: 100%;
   text-align: center;
   color: #60646C;
+  cursor: pointer;
   padding: 11.5px 41px 11.5px 15px;
   border-radius: 50px;
   text-decoration: none;
