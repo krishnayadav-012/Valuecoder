@@ -123,7 +123,7 @@
   background-size: 15px;
 }
 .model-card .card-footer {
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid #F0F0F3;
   padding-top: 10px;
   font-size: 14px;
   color: #364153;
@@ -172,6 +172,9 @@
   height: 15px;
   top: 8px;
   background-size: 15px;
+}
+.model-card.highlighted .card-footer {
+  border-color: #0D2A8A;
 }
 .model-card.highlighted .card-footer p {
   border-top-color: rgba(255, 255, 255, 0.1);
