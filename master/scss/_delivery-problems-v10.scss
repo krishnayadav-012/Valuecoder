@@ -9,16 +9,7 @@
 
   position: relative;
   overflow: hidden;
- 
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   inset: 0;
-  //   background:
-  //     radial-gradient(ellipse 60% 60% at 80% 50%, rgba($dodgerBlue, 0.06) 0%, transparent 70%),
-  //     radial-gradient(ellipse 40% 40% at 20% 80%, rgba($navy-blue, 0.4) 0%, transparent 60%);
-  //   pointer-events: none;
-  // }
+
   &::before{
     content: "";
     position: absolute;
@@ -51,7 +42,7 @@
   // ── Inner part ─────────────────────────────────────────────────
   .inner-part {
     display: flex;
-    align-items: center;
+  
     justify-content: space-between;
     gap: 60px;
     position: relative;
@@ -106,7 +97,7 @@
  
   h2 {
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 130%;
     color: $white;
     letter-spacing: -0.02em;
     margin-bottom: 20px;
@@ -119,7 +110,7 @@
  
   p {
     font-size: 16px;
-    
+    line-height: 160%;
     color: #D1D5DC;
     width: 100%;
     font-weight: $normal-font;
@@ -225,6 +216,7 @@ border: 1px solid #6AA0FF;
       font-size: 16px;
       font-weight: $normal-font;
       color: $greyBannerfont;
+      line-height: 160%;
       color: $white;
       font-weight: 500;
     }

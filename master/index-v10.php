@@ -44,13 +44,13 @@
         <div class="container">
             <div class="dis-flex">
                 <div class="left-box">
-                    <h1>Engineering Partner for <em>Predictable Software Delivery</em></h1>
+                    <h1>Engineering teams that ship <br>
+                        production software
+                    </h1>
                     <h3>AI Augmented. <em>Human Governed.</em></h3>
-                    <p>We help SaaS companies, funded startups, and global engineering teams ship software with
-                        structured milestones, defined ownership, and measurable execution.
-
+                    <p>
+                        We help tech product companies, funded startups, and engineering teams ship software, not just plan it. From MVPs to enterprise systems, we design, build, and maintain software that works, scales, and delivers on time without surprises.
                     </p>
-
                     <div class="primary_btn mb-70">
                         <a href="#">Start Free Trial</a>
                     </div>
@@ -185,15 +185,11 @@
                     <span>The Delivery Problem</span>
 
                     <h2>
-                        Most teams can hire engineers.
-                        <em>Few can ship software.</em>
+                        Most Teams Hire Engineers. <br> <em>Only a Few Deliver Outcome.</em>
                     </h2>
 
                     <p>
-                        The gap between having engineers and shipping predictably is the problem
-                        every engineering leader faces. Roadmaps stall not because the team lacks
-                        capability, but because delivery requires coordination, governance, and
-                        consistent process — not just headcount.
+                        In 20+ years of serving businesses across the globe, we’ve learned the biggest hindrance they face in meeting deadlines. It’s their software outsourcing partners who prioritize their own continuity. They hire when the scope expands. Scale down when the scope softens. We don’t.
                     </p>
                 </div>
 
@@ -301,7 +297,7 @@
 
                     </div>
 
-                    <h3>You need to accelerate your software roadmap</h3>
+                    <h3>You need to modernise legacy systems</h3>
                     <p>
                         You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
                     </p>
@@ -326,7 +322,7 @@
 
                     </div>
 
-                    <h3>You need to accelerate your software roadmap</h3>
+                    <h3>You need to scale your India engineering centre</h3>
                     <p>
                         You have a roadmap, a delivery gap, and a release cadence that can't afford to slip.
                     </p>
@@ -393,16 +389,12 @@
                 <div class="ai-content">
 
                     <h2>
-
-                        <em>
-                            AI that ships to production.
-                        </em>
-
-                        Not AI that demos well.
+<em>Build an AI Ecosystem</em><br>
+That Drives Real Business Outcomes
                     </h2>
 
                     <p class="sub-text">
-                        AI tooling is standard in every ValueCoders engagement.
+                       We help enterprises move from experimentation to execution. From custom LLMs to workflow automation, we design, deploy, and scale AI systems that deliver measurable impact.
                     </p>
 
                     <div class="ai-list">
@@ -528,7 +520,7 @@
                         <li> Incremental migration, zero downtime</li>
                     </ul>
                     <div class="card-footer">
-                        <p> <strong>Best for:</strong> You interview & select. Scale up/down with 30 days notice.</p>
+                        <p> <strong>Best for: </strong> Specific skill gaps, capacity crunches</p>
                     </div>
                 </article>
 
@@ -587,10 +579,8 @@
         <div class="container">
             <div class="cap-wrapper">
                 <div class="left-part">
-                    <h2>Software Engineering <em>Capabilities</em> Across Four Areas</h2>
-                    <p>ValueCoders provides engineering teams across four capability areas — each operating inside the
-                        same
-                        sprint cadence, QA gates, and delivery framework.</p>
+                    <h2>Software Engineering <em>Capabilities</em> </h2>
+                    <p>ValueCoders provides engineering teams across four capability areas – each operating inside the same sprint cadence, QA gates, and delivery framework.</p>
                     <div class="btn-primary-two white right">
                         <a href="#">
                             View All
@@ -679,9 +669,7 @@
                     <div class="stories-section__heading-wrap">
                         <h2>Success Stories</h2>
                         <p>
-                            Engagement structure follows your situation — not a fixed service catalogue. Choose the
-                            model that fits your team, timeline, and governance requirements.
-                        </p>
+                          From simple CRM to complex applications, our experts are capable of handling projects of all sizes. Here’s a glimpse into some of our previous work.     </p>
                     </div>
 
 
@@ -1150,7 +1138,6 @@
                 <h2>What Engineering Leaders Say</h2>
             </div>
 
-
             <div class="feedback-slider swiper">
 
                 <div class="swiper-wrapper">
@@ -1263,7 +1250,7 @@
                         </div>
                     </div>
 
-                      <div class="swiper-slide">
+                    <div class="swiper-slide">
                         <div class="feedback-card">
 
                             <div class="client-image">
@@ -1326,10 +1313,7 @@
         <?php require_once 'include/contact-form.php'; ?>
     </section>
     <?php require_once 'include/footer.php'; ?>
-
-
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-
     <script src="js/js-v10.js"></script>
     <script src="js/swiper.js"></script>
 

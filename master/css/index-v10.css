@@ -3855,7 +3855,6 @@ header:hover .trigger .chev {
 }
 .delivery-section .inner-part {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 60px;
   position: relative;
@@ -3896,7 +3895,7 @@ header:hover .trigger .chev {
 }
 .delivery-section h2 {
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 130%;
   color: #ffffff;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
@@ -3907,6 +3906,7 @@ header:hover .trigger .chev {
 }
 .delivery-section p {
   font-size: 16px;
+  line-height: 160%;
   color: #D1D5DC;
   width: 100%;
   font-weight: 400;
@@ -3997,6 +3997,7 @@ header:hover .trigger .chev {
   font-size: 16px;
   font-weight: 400;
   color: #bdb7b7;
+  line-height: 160%;
   color: #ffffff;
   font-weight: 500;
 }
@@ -4098,7 +4099,7 @@ header:hover .trigger .chev {
 }
 #capabilities-section .left-part h2 {
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 130%;
   margin-bottom: 10px;
   color: #ffffff;
 }
@@ -4108,7 +4109,8 @@ header:hover .trigger .chev {
 }
 #capabilities-section .left-part p {
   color: rgba(255, 255, 255, 0.6901960784);
-  margin-bottom: 60px;
+  line-height: 160%;
+  margin-bottom: 40px;
   max-width: 450px;
 }
 #capabilities-section .left-part .master-btn .text {
@@ -4185,7 +4187,7 @@ header:hover .trigger .chev {
   display: flex;
   font-weight: 500;
   position: relative;
-  line-height: 1;
+  line-height: 100%;
   align-items: center;
   gap: 10px;
   color: #D1D5DC;
@@ -4250,6 +4252,7 @@ header:hover .trigger .chev {
   font-weight: 700;
   color: #05164d;
   margin-bottom: 10px;
+  line-height: 100%;
 }
 .help-section .section-head h2 em {
   color: #2563EB;
@@ -4259,6 +4262,7 @@ header:hover .trigger .chev {
   line-height: 1.6;
   font-size: 18px;
   color: #364153;
+  line-height: 160%;
   font-weight: 500;
 }
 .help-section {
@@ -4301,7 +4305,7 @@ header:hover .trigger .chev {
   font-size: 16px;
   color: #60646C;
   margin-bottom: 25px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .help-section .help-card h4 {
   color: #60646C;
@@ -4311,7 +4315,7 @@ header:hover .trigger .chev {
 }
 .help-section .help-card ul {
   padding: 0;
-  margin: 15px 0;
+  margin: 0px 0;
 }
 .help-section .help-card ul li {
   list-style: none;
@@ -4340,7 +4344,7 @@ header:hover .trigger .chev {
 .help-section .help-card .border-line {
   border-top: 1px solid #E5E7EB;
   margin-bottom: 49px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .help-section .help-card .learn-more {
   font-size: 16px;
@@ -4469,6 +4473,7 @@ header:hover .trigger .chev {
 .ai-right .ai-content h2 {
   font-weight: 700;
   margin-bottom: 10px;
+  line-height: 130%;
   color: #fff;
 }
 .ai-right .ai-content h2 em {
@@ -4478,6 +4483,7 @@ header:hover .trigger .chev {
 .ai-right .ai-content > p {
   color: rgba(255, 255, 255, 0.6901960784);
   margin-bottom: 60px;
+  line-height: 160%;
 }
 .ai-right::after {
   position: absolute;
@@ -4514,6 +4520,7 @@ header:hover .trigger .chev {
 }
 .ai-list .ai-item .title h4 {
   font-size: 22px;
+  line-height: 100%;
   font-weight: 700;
   transition: 0.3s;
   color: #ffffff;
@@ -4532,6 +4539,7 @@ header:hover .trigger .chev {
 }
 .ai-list .ai-item .desc p {
   color: #D1D5DC;
+  line-height: 160%;
   margin-top: 10px;
 }
 .ai-list .ai-item .desc ul li {
@@ -4635,7 +4643,7 @@ header:hover .trigger .chev {
   background: #fff;
   border-radius: 20px;
   position: relative;
-  padding: 40px;
+  padding: 30px 30px 40px 30px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 14px 3px rgba(0, 0, 0, 0.0588235294);
@@ -4678,6 +4686,7 @@ header:hover .trigger .chev {
   color: #2563EB;
   font-size: 14px;
   font-weight: 600;
+  line-height: 100%;
   padding: 5px 10px;
   border-radius: 6px;
   letter-spacing: 0.05em;
@@ -4693,7 +4702,7 @@ header:hover .trigger .chev {
   color: #111827;
 }
 .model-card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #4B5563;
   line-height: 160%;
   margin-bottom: 20px;
@@ -4702,40 +4711,42 @@ header:hover .trigger .chev {
   list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
-  flex-grow: 1;
 }
 .model-card ul li {
   font-size: 14px;
-  color: #364153;
+  color: #80838D;
   margin-bottom: 15px;
   padding-left: 26px;
   display: flex;
   line-height: 100%;
   align-items: flex-start;
   position: relative;
-  gap: 10px;
+}
+.model-card ul li:last-of-type {
+  margin-bottom: 0;
 }
 .model-card ul li::before {
   content: "";
   position: absolute;
   left: 0;
-  background: url(../images/index-v10/grey-check.svg);
-  width: 15px;
-  height: 15px;
+  background: url(../images/index-v10/d-grey-check.svg);
+  width: 14px;
+  height: 14px;
   top: 0px !important;
-  background-size: 15px;
+  background-size: 14px;
 }
 .model-card .card-footer {
   border-top: 1px solid #F0F0F3;
   padding-top: 10px;
-  font-size: 14px;
-  color: #364153;
-  font-weight: 500;
 }
 .model-card .card-footer p {
   margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #60646C;
+  line-height: 160%;
 }
-.model-card .card-footer strong {
+.model-card .card-footer p strong {
   color: #60646C;
   font-weight: 700;
 }
@@ -4831,15 +4842,14 @@ header:hover .trigger .chev {
 .stories-section h2 {
   font-weight: 800;
   color: #05164d;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 14px;
+  line-height: 100%;
+  margin-bottom: 10px;
 }
 .stories-section p {
-  line-height: 1.7;
+  line-height: 160%;
   color: #656565;
   font-weight: 400;
-  max-width: 560px;
+  max-width: 590px;
 }
 .stories-section__btn-wrap {
   display: flex;
@@ -5062,6 +5072,7 @@ header:hover .trigger .chev {
 }
 .insights .insights__top-part h2 {
   margin-bottom: 10px;
+  line-height: 100%;
 }
 .insights .insights__top-part h2 em {
   color: #6AA0FF;
@@ -5139,16 +5150,16 @@ header:hover .trigger .chev {
 }
 .blog-card span {
   font-size: 10px;
+  font-weight: 400;
   color: #6A7282;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  line-height: 140%;
 }
 .blog-card h3 {
-  font-size: 20px;
-  margin: 10px 0 20px;
+  font-size: 22px;
+  margin: 5px 0 30px;
   font-weight: 600;
   color: #111827;
-  line-height: 1.4;
+  line-height: 140%;
 }
 .blog-card__footer {
   display: flex;
@@ -5460,13 +5471,11 @@ header:hover .trigger .chev {
     padding: 60px 0;
   }
 }
-
-.section-header {
-  padding-top: 10px;
+.build-team .section-header {
   position: relative;
   margin-bottom: 6%;
 }
-.section-header > span {
+.build-team .section-header > span {
   color: #FFAD00;
   font-size: 12px;
   font-weight: 800;
@@ -5474,20 +5483,20 @@ header:hover .trigger .chev {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-.section-header h2 {
-  font-size: clamp(30px, 3.7vw, 46px);
+.build-team .section-header h2 {
+  line-height: 100%;
   margin: 0;
   color: #0c104c;
 }
-.section-header h2 em {
+.build-team .section-header h2 em {
   color: #FFAD00;
   font-style: normal;
 }
-.section-header p {
-  margin-top: 15px;
+.build-team .section-header p {
+  margin-top: 10px;
   font-size: 18px;
-  line-height: 1.5;
-  color: #364153;
+  line-height: 160%;
+  color: #60646C;
 }
 
 .card-grid {
@@ -6083,7 +6092,7 @@ header:hover .trigger .chev {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .client-feedback .feedback-slider .feedback-card .content .clint-bio {
   margin-top: auto;
@@ -7323,9 +7332,9 @@ header:hover .trigger .chev {
   color: inherit;
 }
 .industries-section .section-header .header-text .description {
-  color: #314158;
+  color: #60646C;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .industries-section .glider-nav {
   position: relative;

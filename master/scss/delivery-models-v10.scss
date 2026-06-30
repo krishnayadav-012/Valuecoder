@@ -47,7 +47,7 @@ $transition: all 0.3s ease;
   background: #fff;
   border-radius: 20px;
   position: relative;
-  padding: 40px;
+  padding: 30px 30px 40px 30px;
   display: flex;
   flex-direction: column;
 box-shadow: 0px 4px 14px 3px #0000000F;
@@ -96,6 +96,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
     color: $blue-lihgt;
     font-size: 14px;
     font-weight: 600;
+    line-height: 100%;
     padding: 5px 10px;
     border-radius: 6px;
     letter-spacing: 0.05em;
@@ -113,7 +114,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
     color: $natural-grey;
     line-height: 160%;
     margin-bottom: 20px;
@@ -123,28 +124,31 @@ box-shadow: 0px 4px 14px 3px #0000000F;
     list-style: none;
     padding: 0;
     margin: 0 0 40px 0;
-    flex-grow: 1; 
+
 
     li {
       font-size: 14px;
-      color: #364153;
+      color: #80838D;
       margin-bottom: 15px;
       padding-left: 26px;
       display: flex;
       line-height: 100%;
       align-items: flex-start;
       position: relative;
-      gap: 10px;
+
+      &:last-of-type{
+        margin-bottom: 0;
+      }
 
       &::before {
         content: "";
         position: absolute;
         left: 0;
-        background: url(../images/index-v10/grey-check.svg);
-        width: 15px;
-        height: 15px;
+        background: url(../images/index-v10/d-grey-check.svg);
+        width: 14px;
+        height: 14px;
         top: 0px !important;
-        background-size: 15px;
+        background-size: 14px;
         
       }
     }
@@ -153,17 +157,20 @@ box-shadow: 0px 4px 14px 3px #0000000F;
   .card-footer {
     border-top: 1px solid #F0F0F3;
     padding-top: 10px;
-    font-size: 14px;
-    color: #364153;
-    font-weight: 500;
     p{
       margin-bottom: 0;
-    }
-
-    strong {
+      font-size: 14px;
+      font-weight: 500;
+      color: #60646C;
+      line-height: 160%;
+       strong {
       color: $color-heading;
       font-weight: 700;
     }
+
+    }
+
+   
   }
 
   // Highlighted Variant (Dark)
@@ -206,7 +213,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
         }
     }
      .card-footer{
-      border-color: #0D2A8A;
+      border-color: #0D2A8A ;
      }
     .card-footer p{ 
       border-top-color: rgba(255,255,255,0.1); 

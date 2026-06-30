@@ -13,6 +13,7 @@
 
     h2 {
       margin-bottom: 10px;
+      line-height: 100%;
       em{
          color: $blue-off-light;
          font-style: normal;
@@ -95,19 +96,17 @@
 
   span {
     font-size: 10px;
+    font-weight: 400;
     color: #6A7282;
-    font-weight: $semi-bold;
-    letter-spacing: 0.5px;
+    line-height: 140%;
   }
-
   h3 {
-    font-size: 20px;
-    margin: 10px 0 20px;
+    font-size: 22px;
+    margin: 5px 0 30px;
     font-weight: 600;
     color: #111827;
-    line-height: 1.4;
+    line-height: 140%;
   }
-
   &__footer {
     display: flex;
     justify-content: space-between;

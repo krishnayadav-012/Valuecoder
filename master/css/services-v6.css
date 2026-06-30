@@ -4217,9 +4217,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: inherit;
 }
 .industries-section .section-header .header-text .description {
-  color: #314158;
+  color: #60646C;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .industries-section .glider-nav {
   position: relative;

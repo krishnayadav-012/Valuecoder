@@ -7,13 +7,11 @@
     padding: 60px 0;
   }
 }
-
-.section-header {
-  padding-top: 10px;
+.build-team .section-header {
   position: relative;
   margin-bottom: 6%;
 }
-.section-header > span {
+.build-team .section-header > span {
   color: #FFAD00;
   font-size: 12px;
   font-weight: 800;
@@ -21,20 +19,20 @@
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-.section-header h2 {
-  font-size: clamp(30px, 3.7vw, 46px);
+.build-team .section-header h2 {
+  line-height: 100%;
   margin: 0;
   color: #0c104c;
 }
-.section-header h2 em {
+.build-team .section-header h2 em {
   color: #FFAD00;
   font-style: normal;
 }
-.section-header p {
-  margin-top: 15px;
+.build-team .section-header p {
+  margin-top: 10px;
   font-size: 18px;
-  line-height: 1.5;
-  color: #364153;
+  line-height: 160%;
+  color: #60646C;
 }
 
 .card-grid {

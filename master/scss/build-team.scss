@@ -14,10 +14,10 @@ $text-muted: #555;
     @media (max-width: 992px) {
         padding: 60px 0;
     }
-}
+
 
 .section-header {
-    padding-top: 10px;
+  
     position: relative;
     margin-bottom: 6%;
 
@@ -31,8 +31,9 @@ $text-muted: #555;
     }
 
     h2 {
-        font-size: clamp(30px, 3.7vw, 46px);
+        line-height: 100%;
         margin: 0;
+
         color: #0c104c;
 
         em {
@@ -42,11 +43,12 @@ $text-muted: #555;
     }
 
     p {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 18px;
-        line-height: 1.5;
-        color: #364153;
+        line-height: 160%;
+        color: #60646C;
     }
+}
 }
 
 .card-grid {

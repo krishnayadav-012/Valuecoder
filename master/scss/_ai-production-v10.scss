@@ -53,6 +53,7 @@ flex-wrap: wrap;
         h2 {
             font-weight: 700;
             margin-bottom: 10px;
+            line-height: 130%;
             color: #fff;
 
             em{
@@ -65,6 +66,7 @@ flex-wrap: wrap;
             
             color: #FFFFFFB0;
             margin-bottom: 60px;
+            line-height: 160%;
         }
 
     }
@@ -113,6 +115,7 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
 
         .title h4 {
             font-size: 22px;
+            line-height: 100%;
             font-weight: 700;
             transition: 0.3s;
             color: $white;
@@ -134,6 +137,7 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
 
             p {
                 color: #D1D5DC;
+                line-height: 160%;
                 margin-top: 10px;
             }
             ul{

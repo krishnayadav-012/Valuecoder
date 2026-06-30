@@ -2788,6 +2788,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .insights .insights__top-part h2 {
   margin-bottom: 10px;
+  line-height: 100%;
 }
 .insights .insights__top-part h2 em {
   color: #6AA0FF;
@@ -2865,16 +2866,16 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .blog-card span {
   font-size: 10px;
+  font-weight: 400;
   color: #6A7282;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  line-height: 140%;
 }
 .blog-card h3 {
-  font-size: 20px;
-  margin: 10px 0 20px;
+  font-size: 22px;
+  margin: 5px 0 30px;
   font-weight: 600;
   color: #111827;
-  line-height: 1.4;
+  line-height: 140%;
 }
 .blog-card__footer {
   display: flex;
@@ -5676,15 +5677,14 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stories-section h2 {
   font-weight: 800;
   color: #05164d;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 14px;
+  line-height: 100%;
+  margin-bottom: 10px;
 }
 .stories-section p {
-  line-height: 1.7;
+  line-height: 160%;
   color: #656565;
   font-weight: 400;
-  max-width: 560px;
+  max-width: 590px;
 }
 .stories-section__btn-wrap {
   display: flex;

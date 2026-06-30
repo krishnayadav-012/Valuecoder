@@ -60,7 +60,7 @@
     h2 {
       
       font-weight: 700;
-      line-height: 1.2;
+      line-height: 130%;
       margin-bottom: 10px;
       color: $white;
 
@@ -73,7 +73,8 @@
     p {
      
       color: #FFFFFFB0;
-      margin-bottom: 60px;
+      line-height: 160%;
+      margin-bottom: 40px;
       max-width: 450px;
     }
     .master-btn .text{
@@ -164,7 +165,7 @@ background: linear-gradient(153.09deg, rgba(56, 103, 255, 0.2) 2.06%, rgba(34, 3
           display: flex;
           font-weight: 500;
           position: relative;
-          line-height: 1;
+          line-height: 100%;
           align-items: center;
           gap: 10px;
           color:#D1D5DC;

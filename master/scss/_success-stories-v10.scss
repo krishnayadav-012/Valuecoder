@@ -44,16 +44,15 @@
   h2 {
     font-weight: 800;
     color: $navy-blue;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-    margin-bottom: 14px;
+    line-height: 100%;
+    margin-bottom: 10px;
   }
  
   p {
-    line-height: 1.7;
+    line-height: 160%;
     color: $contentDay;
     font-weight: $normal-font;
-    max-width: 560px;
+    max-width: 590px;
   }
  
   &__btn-wrap {

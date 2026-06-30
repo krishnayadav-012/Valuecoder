@@ -2073,7 +2073,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .client-feedback .feedback-slider .feedback-card .content .clint-bio {
   margin-top: auto;
