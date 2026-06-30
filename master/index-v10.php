@@ -1250,6 +1250,44 @@ That Drives Real Business Outcomes
                         </div>
                     </div>
 
+
+                    <div class="swiper-slide">
+                        <div class="feedback-card">
+
+                            <div class="client-image">
+                                <img src="./images/index-v10/client-img-two.webp" alt="">
+
+                            </div>
+                            <div class="client-image before">
+                                <img src="./images/index-v10/client-img-one.webp" alt="">
+                            </div>
+
+                            <div class="content">
+
+
+                                <p>
+                                    ValueCoders played a key role in helping our
+                                    startup grow rapidly. Their development team
+                                    delivered high-quality work, communicated
+                                    exceptionally well, and onboarded to new projects
+                                    quickly and smoothly. Their contributions made a
+                                    meaningful impact on our growth. I would highly
+                                    recommended them!
+                                </p>
+
+                                <div class="clint-bio">
+                                    <h4>Michael Brown</h4>
+                                    <p>
+                                        Founder
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
                     <div class="swiper-slide">
                         <div class="feedback-card">
 
@@ -1319,47 +1357,38 @@ That Drives Real Business Outcomes
 
 
     <script>
+       
         document.addEventListener("DOMContentLoaded", function() {
-            const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
-            // condition: run only if this section exists
-            if (feedbackSlider) {
-                new Swiper(feedbackSlider, {
-                    loop: true,
-                    // center mode
-                    centeredSlides: true,
-                    slidesPerView: 1.6,
-                    spaceBetween: 30,
-                    // autoplay: {
-                    //     delay: 4000,
-                    //     disableOnInteraction: false
-                    // },
-                    navigation: {
-
-                        nextEl: ".client-feedback .swiper-button-next",
-                        prevEl: ".client-feedback .swiper-button-prev"
-
-                    },
-                    pagination: {
-
-                        el: ".client-feedback .swiper-pagination",
-                        clickable: true
-
-                    },
-                    breakpoints: {
-                        1200: {
-                            slidesPerView: 1.3,
-                        },
-
-                        768: {
-                            slidesPerView: 1
-                        },
-                        0: {
-                            slidesPerView: 1
-                        }
-                    }
-                });
+    const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
+    if (feedbackSlider) {
+        const swiper = new Swiper(feedbackSlider, {
+            loop: true,
+            loopAdditionalSlides: 4,
+            centeredSlides: true,
+            slidesPerView: 1.6,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".client-feedback .swiper-button-next",
+                prevEl: ".client-feedback .swiper-button-prev"
+            },
+            pagination: {
+                el: ".client-feedback .swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                1200: { slidesPerView: 1.3 },
+                768:  { slidesPerView: 1 },
+                0:    { slidesPerView: 1 }
+            },
+            on: {
+                init: function () {
+                    this.slideToLoop(1, 0, false);
+                    // 1 = second slide (0-indexed), 0 = no transition speed, false = don't trigger callbacks
+                }
             }
         });
+    }
+});
     </script>
 
 

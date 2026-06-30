@@ -1,3 +1,9 @@
+<?php 
+function site_url( $url ){
+  return 'https://www.valuecoders.com/staging'.$url;
+}
+?>
+
 <div class="scrim" id="scrim" aria-hidden="true"></div>
 <div class="drawer__ov" id="drawer-ov" aria-hidden="true"></div>
 
@@ -56,37 +62,37 @@
       </div>
       <div class="cols">
         <div class="col rv">
-          <a class="col__head" href="https://www.valuecoders.com/staging/ai" data-nav="link">AI &amp; Automation <span class="arr">→</span></a>
+          <a class="col__head" href="<?php echo site_url('/ai'); ?>" data-nav="link">AI &amp; Automation <span class="arr">→</span></a>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/ai/ai-consulting" data-nav="link"><span class="dot"></span>AI Consulting</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/ai/ai-augmented-software-development" data-nav="link"><span class="dot"></span>AI-Augmented Development</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/ai/genai-development" data-nav="link"><span class="dot"></span>Generative AI &amp; LLMs</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/ai/ai-agent-development" data-nav="link"><span class="dot"></span>AI Agents &amp; Automation</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/ai/production-assurance" data-nav="link"><span class="dot"></span>Production Assurance</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/ai/managed-ai-services" data-nav="link"><span class="dot"></span>Managed AI Services</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/ai/consulting-services-company'); ?>" data-nav="link"><span class="dot"></span>AI Consulting</a></li>
+            <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>AI-Augmented Development</a></li>
+            <li><a class="lnk" href="<?php echo site_url('https://www.valuecoders.com/ai/custom-ai-agent-development'); ?>" data-nav="link"><span class="dot"></span>Generative AI &amp; LLMs</a></li>
+            <li><a class="lnk" href="<?php echo site_url('https://www.valuecoders.com/ai/custom-ai-agent-development'); ?>" data-nav="link"><span class="dot"></span>AI Agents &amp; Automation</a></li>
+            <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>Production Assurance</a></li>
+            <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>Managed AI Services</a></li>
           </ul>
-          <a class="viewall-col" href="https://www.valuecoders.com/staging/ai" data-nav="viewall">View all <span class="arr">→</span></a>
+          <a class="viewall-col" href="<?php echo site_url('/ai'); ?>" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
         <div class="col rv">
-          <a class="col__head" href="https://www.valuecoders.com/staging/services/product-engineering" data-nav="link">Product Engineering <span class="arr">→</span></a>
+          <a class="col__head" href="<?php echo site_url('/product-engineering-process'); ?>" data-nav="link">Product Engineering <span class="arr">→</span></a>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/software-development" data-nav="link"><span class="dot"></span>Custom Software Development</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/web-app-development" data-nav="link"><span class="dot"></span>Web App Development</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/mobile-app-development" data-nav="link"><span class="dot"></span>Mobile App Development</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/mvp-development" data-nav="link"><span class="dot"></span>MVP Development</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/saas-development" data-nav="link"><span class="dot"></span>SaaS Development</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/ui-ux-design" data-nav="link"><span class="dot"></span>UI/UX &amp; Product Design</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/custom-software-development-services-company'); ?>" data-nav="link"><span class="dot"></span>Custom Software Development</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/web-application-development'); ?>" data-nav="link"><span class="dot"></span>Web App Development</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/mobile-application-development'); ?>" data-nav="link"><span class="dot"></span>Mobile App Development</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/mvp-app-development-company'); ?>" data-nav="link"><span class="dot"></span>MVP Development</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/outsource-software-product-development-services'); ?>" data-nav="link"><span class="dot"></span>SaaS Development</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/product-ui-ux-design'); ?>" data-nav="link"><span class="dot"></span>UI/UX &amp; Product Design</a></li>
           </ul>
           <a class="viewall-col" href="https://www.valuecoders.com/staging/services/product-engineering" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
         <div class="col rv">
           <a class="col__head" href="https://www.valuecoders.com/staging/data" data-nav="link">Data &amp; Cloud <span class="arr">→</span></a>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/data/engineering" data-nav="link"><span class="dot"></span>Data Engineering</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/data/business-intelligence" data-nav="link"><span class="dot"></span>Analytics &amp; BI</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/data-engineering'); ?>" data-nav="link"><span class="dot"></span>Data Engineering</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/data-analytics'); ?>" data-nav="link"><span class="dot"></span>Analytics &amp; BI</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/data/warehouse" data-nav="link"><span class="dot"></span>Data Warehouse</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/cloud/migration" data-nav="link"><span class="dot"></span>Cloud Migration</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/cloud/devops" data-nav="link"><span class="dot"></span>DevOps &amp; DevSecOps</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/cloud-services/cloud-migration'); ?>" data-nav="link"><span class="dot"></span>Cloud Migration</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/cloud-services/devops-automation'); ?>" data-nav="link"><span class="dot"></span>DevOps &amp; DevSecOps</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/cloud" data-nav="link"><span class="dot"></span>AWS, Azure &amp; GCP</a></li>
           </ul>
           <a class="viewall-col" href="https://www.valuecoders.com/staging/cloud" data-nav="viewall">View all <span class="arr">→</span></a>
@@ -94,23 +100,23 @@
         <div class="col rv">
           <a class="col__head" href="https://www.valuecoders.com/staging/services/enterprise-platforms" data-nav="link">Enterprise &amp; ERP <span class="arr">→</span></a>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/salesforce" data-nav="link"><span class="dot"></span>Salesforce</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/sap" data-nav="link"><span class="dot"></span>SAP</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/servicenow" data-nav="link"><span class="dot"></span>ServiceNow</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/microsoft/dynamics" data-nav="link"><span class="dot"></span>Microsoft Dynamics</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/salesforce'); ?>" data-nav="link"><span class="dot"></span>Salesforce</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/hire/sap-developers'); ?>" data-nav="link"><span class="dot"></span>SAP</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/servicenow-development'); ?>" data-nav="link"><span class="dot"></span>ServiceNow</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/microsoft-dynamics'); ?>" data-nav="link"><span class="dot"></span>Microsoft Dynamics</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/services/oracle" data-nav="link"><span class="dot"></span>Oracle</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/system-integration" data-nav="link"><span class="dot"></span>System Integration</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/services/system-integration'); ?>" data-nav="link"><span class="dot"></span>System Integration</a></li>
           </ul>
           <a class="viewall-col" href="https://www.valuecoders.com/staging/services/enterprise-platforms" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
         <div class="col rv">
           <a class="col__head" href="https://www.valuecoders.com/staging/services/digital-transformation" data-nav="link">Modernise &amp; Advisory <span class="arr">→</span></a>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/legacy-modernization" data-nav="link"><span class="dot"></span>Legacy Modernisation</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/digital-transformation" data-nav="link"><span class="dot"></span>Digital Transformation</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/technology-consulting" data-nav="link"><span class="dot"></span>Technology Consulting</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/cybersecurity" data-nav="link"><span class="dot"></span>Cybersecurity &amp; Pen Testing</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/quality-engineering" data-nav="link"><span class="dot"></span>Quality Engineering</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/modernization-services'); ?>" data-nav="link"><span class="dot"></span>Legacy Modernisation</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/digital-transformation-services'); ?>" data-nav="link"><span class="dot"></span>Digital Transformation</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/it-strategy-consulting-firms'); ?>" data-nav="link"><span class="dot"></span>Technology Consulting</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/cybersecurity-services'); ?>" data-nav="link"><span class="dot"></span>Cybersecurity &amp; Pen Testing</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/services/quality-engineering'); ?>" data-nav="link"><span class="dot"></span>Quality Engineering</a></li>
           </ul>
           <a class="viewall-col" href="https://www.valuecoders.com/staging/services" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
@@ -148,14 +154,14 @@
         <div class="siderail rv">
           <div class="siderail__head">Not sure where to start</div>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/solutions/project-scoping" data-nav="link"><span class="dot"></span>Project Scoping</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/project-discovery-phase'); ?>" data-nav="link"><span class="dot"></span>Project Scoping</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/solutions/codebase-assessment" data-nav="link"><span class="dot"></span>Codebase Assessment</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/solutions/team-trial" data-nav="link"><span class="dot"></span>Team Trial</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/pricing" data-nav="link"><span class="dot"></span>Transparent Pricing</a></li>
           </ul>
           <div class="siderail__head">By industry</div>
           <div class="chips">
-            <a class="chip" href="https://www.valuecoders.com/staging/industries/fintech" data-nav="link">FinTech &amp; BFSI</a><a class="chip" href="https://www.valuecoders.com/staging/industries/healthcare" data-nav="link">Healthcare</a><a class="chip" href="https://www.valuecoders.com/staging/industries/insurance" data-nav="link">Insurance</a><a class="chip" href="https://www.valuecoders.com/staging/industries/ecommerce" data-nav="link">eCommerce</a><a class="chip" href="https://www.valuecoders.com/staging/industries/edtech" data-nav="link">EdTech</a><a class="chip" href="https://www.valuecoders.com/staging/industries/logistics" data-nav="link">Logistics</a><a class="chip chip--more" href="https://www.valuecoders.com/staging/industries" data-nav="link">All industries ›</a>
+            <a class="chip" href="<?php echo site_url('/industries/fintech/bfsi'); ?>" data-nav="link">FinTech &amp; BFSI</a><a class="chip" href="<?php echo site_url('/industries/healthcare'); ?>" data-nav="link">Healthcare</a><a class="chip" href="<?php echo site_url('/industries/insurance'); ?>" data-nav="link">Insurance</a><a class="chip" href="<?php echo site_url('/industries/retail-ecommerce'); ?>" data-nav="link">eCommerce</a><a class="chip" href="<?php echo site_url('/industries/edtech'); ?>" data-nav="link">EdTech</a><a class="chip" href="<?php echo site_url('/industries/logistics'); ?>" data-nav="link">Logistics</a><a class="chip chip--more" href="https://www.valuecoders.com/staging/industries" data-nav="link">All industries ›</a>
           </div>
         </div>
       </div>
@@ -182,41 +188,41 @@
       </div>
       <div class="cols">
         <div class="col rv"><span class="col__head">Frontend &amp; Mobile</span><ul>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/react-developers" data-nav="link"><span class="dot"></span>React Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/react-native-developers" data-nav="link"><span class="dot"></span>React Native Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/angular-developers" data-nav="link"><span class="dot"></span>Angular Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/vuejs-developers" data-nav="link"><span class="dot"></span>Vue.js Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/android-developers" data-nav="link"><span class="dot"></span>Android Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/flutter-developers" data-nav="link"><span class="dot"></span>Flutter Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/ios-developers" data-nav="link"><span class="dot"></span>iOS Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-reactjs-developers'); ?>" data-nav="link"><span class="dot"></span>React Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-react-native-developers'); ?>" data-nav="link"><span class="dot"></span>React Native Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-angularjs-developers'); ?>" data-nav="link"><span class="dot"></span>Angular Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-vuejs-developers'); ?>" data-nav="link"><span class="dot"></span>Vue.js Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-android-developers'); ?>" data-nav="link"><span class="dot"></span>Android Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-flutter-developers'); ?>" data-nav="link"><span class="dot"></span>Flutter Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-ios-developers'); ?>" data-nav="link"><span class="dot"></span>iOS Developers</a></li>
         </ul></div>
         <div class="col rv"><span class="col__head">Backend &amp; Full-Stack</span><ul>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/php-developers" data-nav="link"><span class="dot"></span>PHP Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/python-developers" data-nav="link"><span class="dot"></span>Python Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/java-developers" data-nav="link"><span class="dot"></span>Java Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/dotnet-developers" data-nav="link"><span class="dot"></span>.NET Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/full-stack-developers" data-nav="link"><span class="dot"></span>Full-Stack Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/golang-developers" data-nav="link"><span class="dot"></span>Go Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/nodejs-developers" data-nav="link"><span class="dot"></span>Node.js Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-php-developers'); ?>" data-nav="link"><span class="dot"></span>PHP Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-python-developers'); ?>" data-nav="link"><span class="dot"></span>Python Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-java-developers'); ?>" data-nav="link"><span class="dot"></span>Java Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-dotnet-developers'); ?>" data-nav="link"><span class="dot"></span>.NET Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-full-stack-developers'); ?>" data-nav="link"><span class="dot"></span>Full-Stack Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-golang-web-developers'); ?>" data-nav="link"><span class="dot"></span>Go Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-nodejs-developers'); ?>" data-nav="link"><span class="dot"></span>Node.js Developers</a></li>
           <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/ruby-developers" data-nav="link"><span class="dot"></span>Ruby on Rails Developers</a></li>
         </ul></div>
         <div class="col rv"><span class="col__head">AI, Cloud &amp; QA</span><ul>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/ai-engineers" data-nav="link"><span class="dot"></span>AI Engineers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/azure-developers" data-nav="link"><span class="dot"></span>Azure Engineers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/salesforce-developers" data-nav="link"><span class="dot"></span>Salesforce Developers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/sap-developers" data-nav="link"><span class="dot"></span>SAP Consultants</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/aws-developers" data-nav="link"><span class="dot"></span>AWS Engineers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/data-engineers" data-nav="link"><span class="dot"></span>Data Engineers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/devops-engineers" data-nav="link"><span class="dot"></span>DevOps Engineers</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/hire/qa-engineers" data-nav="link"><span class="dot"></span>QA Engineers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-ai-engineers'); ?>" data-nav="link"><span class="dot"></span>AI Engineers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-azure-developers'); ?>" data-nav="link"><span class="dot"></span>Azure Engineers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire/salesforce-developer'); ?>" data-nav="link"><span class="dot"></span>Salesforce Developers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire/sap-developers'); ?>" data-nav="link"><span class="dot"></span>SAP Consultants</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-aws-developers'); ?>" data-nav="link"><span class="dot"></span>AWS Engineers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire/data-engineers'); ?>" data-nav="link"><span class="dot"></span>Data Engineers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/hire-devops-developers'); ?>" data-nav="link"><span class="dot"></span>DevOps Engineers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/hire-developers/software-qa-testers-india'); ?>" data-nav="link"><span class="dot"></span>QA Engineers</a></li>
         </ul></div>
         <div class="col rv">
           <a class="col__head" href="https://www.valuecoders.com/staging/dedicated-teams" data-nav="link">Engagement Models <span class="arr">→</span></a>
           <ul>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/dedicated-teams/team-extension" data-nav="link"><span class="dot"></span>Team Extension</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/dedicated-teams/delivery-pods" data-nav="link"><span class="dot"></span>Delivery Pods</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/it-staff-augmentation-services'); ?>" data-nav="link"><span class="dot"></span>Team Extension</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/dedicated-development-teams/product-pods'); ?>" data-nav="link"><span class="dot"></span>Delivery Pods</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/dedicated-teams/ai-engineering-pods" data-nav="link"><span class="dot"></span>AI Engineering Pods</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/dedicated-teams/development-centers" data-nav="link"><span class="dot"></span>Development Centres</a></li>
+            <li><a class="lnk" href="<?php echo site_url('/offshore-software-development-center-india'); ?>" data-nav="link"><span class="dot"></span>Development Centres</a></li>
             <li><a class="lnk" href="https://www.valuecoders.com/staging/solutions/team-trial" data-nav="link"><span class="dot"></span>Team Trial</a></li>
           </ul>
           <a class="viewall-col" href="https://www.valuecoders.com/staging/dedicated-teams" data-nav="viewall">How engagement works <span class="arr">→</span></a>
@@ -245,25 +251,25 @@
       </div>
       <div class="cols">
         <div class="col rv"><span class="col__head">About ValueCoders</span><ul>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/company/how-we-work" data-nav="link"><span class="dot"></span>How We Work</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/company/security" data-nav="link"><span class="dot"></span>Security &amp; Compliance</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/company/credentials" data-nav="link"><span class="dot"></span>Credentials &amp; Awards</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/company/careers" data-nav="link"><span class="dot"></span>Life at ValueCoders</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/company/careers" data-nav="link"><span class="dot"></span>Careers</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/how-it-works'); ?>" data-nav="link"><span class="dot"></span>How We Work</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/gdpr-compliance'); ?>" data-nav="link"><span class="dot"></span>Security &amp; Compliance</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/in-media'); ?>" data-nav="link"><span class="dot"></span>Credentials &amp; Awards</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/about'); ?>" data-nav="link"><span class="dot"></span>Life at ValueCoders</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/careers'); ?>" data-nav="link"><span class="dot"></span>Careers</a></li>
         </ul></div>
         <div class="col rv"><span class="col__head">Case Studies &amp; Proof</span><ul>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/case-studies" data-nav="link"><span class="dot"></span>Case Studies</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/company/reviews" data-nav="link"><span class="dot"></span>Client Reviews</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/case-studies/'); ?>" data-nav="link"><span class="dot"></span>Case Studies</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/testimonials'); ?>" data-nav="link"><span class="dot"></span>Client Reviews</a></li>
           <li><a class="lnk" href="https://www.valuecoders.com/staging/company/benchmarks" data-nav="link"><span class="dot"></span>Delivery Benchmarks</a></li>
           <li><a class="lnk" href="https://www.valuecoders.com/staging/company/vs-toptal" data-nav="link"><span class="dot"></span>ValueCoders vs. Others</a></li>
           <li><a class="lnk" href="https://www.valuecoders.com/staging/pricing" data-nav="link"><span class="dot"></span>Transparent Pricing</a></li>
         </ul></div>
         <div class="col rv"><span class="col__head">Guides &amp; Insights</span><ul>
           <li><a class="lnk" href="https://www.valuecoders.com/staging/resources/guides" data-nav="link"><span class="dot"></span>Guides &amp; Reports</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/blog" data-nav="link"><span class="dot"></span>Blog</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/blog/'); ?>" data-nav="link"><span class="dot"></span>Blog</a></li>
           <li><a class="lnk" href="https://www.valuecoders.com/staging/webinars" data-nav="link"><span class="dot"></span>Webinars</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/partners/programme" data-nav="link"><span class="dot"></span>Partner Programme</a></li>
-          <li><a class="lnk" href="https://www.valuecoders.com/staging/contact" data-nav="link"><span class="dot"></span>Contact Us</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/partnership-program'); ?>" data-nav="link"><span class="dot"></span>Partner Programme</a></li>
+          <li><a class="lnk" href="<?php echo site_url('/contact'); ?>" data-nav="link"><span class="dot"></span>Contact Us</a></li>
         </ul></div>
       </div>
     </div>
@@ -298,120 +304,120 @@
     <button class="acc" data-acc="m-services" aria-expanded="false">Services <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-services">
       <div class="acc-sub">AI &amp; Automation</div>
-      <a href="https://www.valuecoders.com/staging/ai/ai-consulting">AI Consulting</a>
+      <a href="<?php echo site_url('/ai/consulting-services-company'); ?>">AI Consulting</a>
       <a href="https://www.valuecoders.com/staging/ai/ai-augmented-software-development">AI-Augmented Development</a>
-      <a href="https://www.valuecoders.com/staging/ai/genai-development">Generative AI &amp; LLMs</a>
-      <a href="https://www.valuecoders.com/staging/ai/ai-agent-development">AI Agents &amp; Automation</a>
+      <a href="<?php echo site_url('/ai/generative-ai-services'); ?>">Generative AI &amp; LLMs</a>
+      <a href="<?php echo site_url('/ai/custom-ai-agent-development'); ?>">AI Agents &amp; Automation</a>
       <a href="https://www.valuecoders.com/staging/ai/production-assurance">Production Assurance</a>
       <a href="https://www.valuecoders.com/staging/ai/managed-ai-services">Managed AI Services</a>
       <div class="acc-sub">Product Engineering</div>
-      <a href="https://www.valuecoders.com/staging/services/software-development">Custom Software Development</a>
-      <a href="https://www.valuecoders.com/staging/services/web-app-development">Web App Development</a>
-      <a href="https://www.valuecoders.com/staging/services/mobile-app-development">Mobile App Development</a>
-      <a href="https://www.valuecoders.com/staging/services/mvp-development">MVP Development</a>
-      <a href="https://www.valuecoders.com/staging/services/saas-development">SaaS Development</a>
-      <a href="https://www.valuecoders.com/staging/services/ui-ux-design">UI/UX &amp; Product Design</a>
+      <a href="<?php echo site_url('/custom-software-development-services-company'); ?>">Custom Software Development</a>
+      <a href="<?php echo site_url('/web-application-development'); ?>">Web App Development</a>
+      <a href="<?php echo site_url('/mobile-application-development'); ?>">Mobile App Development</a>
+      <a href="<?php echo site_url('/mvp-app-development-company'); ?>">MVP Development</a>
+      <a href="<?php echo site_url('/outsource-software-product-development-services'); ?>">SaaS Development</a>
+      <a href="<?php echo site_url('/product-ui-ux-design'); ?>">UI/UX &amp; Product Design</a>
       <div class="acc-sub">Data &amp; Cloud</div>
-      <a href="https://www.valuecoders.com/staging/data/engineering">Data Engineering</a>
-      <a href="https://www.valuecoders.com/staging/data/business-intelligence">Analytics &amp; BI</a>
+      <a href="<?php echo site_url('/data-engineering'); ?>">Data Engineering</a>
+      <a href="<?php echo site_url('/data-analytics'); ?>">Analytics &amp; BI</a>
       <a href="https://www.valuecoders.com/staging/data/warehouse">Data Warehouse</a>
-      <a href="https://www.valuecoders.com/staging/cloud/migration">Cloud Migration</a>
-      <a href="https://www.valuecoders.com/staging/cloud/devops">DevOps &amp; DevSecOps</a>
+      <a href="<?php echo site_url('/cloud-services/cloud-migration'); ?>">Cloud Migration</a>
+      <a href="<?php echo site_url('/cloud-services/devops-automation'); ?>">DevOps &amp; DevSecOps</a>
       <a href="https://www.valuecoders.com/staging/cloud">AWS, Azure &amp; GCP</a>
       <div class="acc-sub">Enterprise &amp; ERP</div>
-      <a href="https://www.valuecoders.com/staging/services/salesforce">Salesforce</a>
-      <a href="https://www.valuecoders.com/staging/services/sap">SAP</a>
-      <a href="https://www.valuecoders.com/staging/services/servicenow">ServiceNow</a>
-      <a href="https://www.valuecoders.com/staging/services/microsoft/dynamics">Microsoft Dynamics</a>
+      <a href="<?php echo site_url('/salesforce'); ?>">Salesforce</a>
+      <a href="<?php echo site_url('/hire/sap-developers'); ?>">SAP</a>
+      <a href="<?php echo site_url('/servicenow-development'); ?>">ServiceNow</a>
+      <a href="<?php echo site_url('/microsoft-dynamics'); ?>">Microsoft Dynamics</a>
       <a href="https://www.valuecoders.com/staging/services/oracle">Oracle</a>
-      <a href="https://www.valuecoders.com/staging/services/system-integration">System Integration</a>
+      <a href="<?php echo site_url('/services/system-integration'); ?>">System Integration</a>
       <div class="acc-sub">Modernise &amp; Advisory</div>
-      <a href="https://www.valuecoders.com/staging/services/legacy-modernization">Legacy Modernisation</a>
-      <a href="https://www.valuecoders.com/staging/services/digital-transformation">Digital Transformation</a>
-      <a href="https://www.valuecoders.com/staging/services/technology-consulting">Technology Consulting</a>
-      <a href="https://www.valuecoders.com/staging/services/cybersecurity">Cybersecurity &amp; Pen Testing</a>
-      <a href="https://www.valuecoders.com/staging/services/quality-engineering">Quality Engineering</a>
+      <a href="<?php echo site_url('/modernization-services'); ?>">Legacy Modernisation</a>
+      <a href="<?php echo site_url('/digital-transformation-services'); ?>">Digital Transformation</a>
+      <a href="<?php echo site_url('/it-strategy-consulting-firms'); ?>">Technology Consulting</a>
+      <a href="<?php echo site_url('/cybersecurity-services'); ?>">Cybersecurity &amp; Pen Testing</a>
+      <a href="<?php echo site_url('/services/quality-engineering'); ?>">Quality Engineering</a>
       <a class="acc-all" href="https://www.valuecoders.com/staging/services">View all services →</a>
     </div>
     <button class="acc" data-acc="m-solutions" aria-expanded="false">Solutions <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-solutions">
       <div class="acc-sub">Start with your goal</div>
-      <a href="https://www.valuecoders.com/staging/solutions/ship-your-roadmap">Ship Your Roadmap</a>
-      <a href="https://www.valuecoders.com/staging/solutions/build-your-product">Build Your Product</a>
-      <a href="https://www.valuecoders.com/staging/solutions/modernise-legacy-systems">Modernise Legacy Systems</a>
-      <a href="https://www.valuecoders.com/staging/solutions/scale-your-india-centre">Scale Your India Centre</a>
-      <a href="https://www.valuecoders.com/staging/solutions/build-your-mvp">Build Your MVP</a>
-      <a href="https://www.valuecoders.com/staging/solutions/ai-built-rescue">AI-Built Rescue</a>
+      <a href="<?php echo site_url('/solutions/ship-your-roadmap'); ?>">Ship Your Roadmap</a>
+      <a href="<?php echo site_url('/solutions/build-your-product'); ?>">Build Your Product</a>
+      <a href="<?php echo site_url('/modernization-services'); ?>">Modernise Legacy Systems</a>
+      <a href="<?php echo site_url('/offshore-software-development-center-india'); ?>">Scale Your India Centre</a>
+      <a href="<?php echo site_url('/solutions/build-your-mvp'); ?>">Build Your MVP</a>
+      <a href="<?php echo site_url('/solutions/ai-built-rescue'); ?>">AI-Built Rescue</a>
       <div class="acc-sub">Not sure where to start</div>
-      <a href="https://www.valuecoders.com/staging/solutions/project-scoping">Project Scoping</a>
+      <a href="<?php echo site_url('/project-discovery-phase'); ?>">Project Scoping</a>
       <a href="https://www.valuecoders.com/staging/solutions/codebase-assessment">Codebase Assessment</a>
       <a href="https://www.valuecoders.com/staging/solutions/team-trial">Team Trial</a>
       <a href="https://www.valuecoders.com/staging/pricing">Transparent Pricing</a>
       <div class="acc-sub">By industry</div>
-      <a href="https://www.valuecoders.com/staging/industries/fintech">FinTech &amp; BFSI</a>
-      <a href="https://www.valuecoders.com/staging/industries/healthcare">Healthcare</a>
-      <a href="https://www.valuecoders.com/staging/industries/insurance">Insurance</a>
-      <a href="https://www.valuecoders.com/staging/industries/ecommerce">eCommerce</a>
-      <a href="https://www.valuecoders.com/staging/industries/edtech">EdTech</a>
-      <a href="https://www.valuecoders.com/staging/industries/logistics">Logistics</a>
+      <a href="<?php echo site_url('/industries/fintech/bfsi'); ?>">FinTech &amp; BFSI</a>
+      <a href="<?php echo site_url('/industries/healthcare'); ?>">Healthcare</a>
+      <a href="<?php echo site_url('/industries/insurance'); ?>">Insurance</a>
+      <a href="<?php echo site_url('/industries/retail-ecommerce'); ?>">eCommerce</a>
+      <a href="<?php echo site_url('/industries/edtech'); ?>">EdTech</a>
+      <a href="<?php echo site_url('/industries/logistics'); ?>">Logistics</a>
       <a class="acc-all" href="https://www.valuecoders.com/staging/industries">All industries →</a>
     </div>
     <button class="acc" data-acc="m-hire" aria-expanded="false">Hire &amp; Teams <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-hire">
       <div class="acc-sub">Frontend &amp; Mobile</div>
-      <a href="https://www.valuecoders.com/staging/hire/react-developers">React Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/react-native-developers">React Native Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/angular-developers">Angular Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/vuejs-developers">Vue.js Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/android-developers">Android Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/flutter-developers">Flutter Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/ios-developers">iOS Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-reactjs-developers'); ?>">React Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-react-native-developers'); ?>">React Native Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-angularjs-developers'); ?>">Angular Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-vuejs-developers'); ?>">Vue.js Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-android-developers'); ?>">Android Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-flutter-developers'); ?>">Flutter Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-ios-developers'); ?>">iOS Developers</a>
       <div class="acc-sub">Backend &amp; Full-Stack</div>
-      <a href="https://www.valuecoders.com/staging/hire/php-developers">PHP Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/python-developers">Python Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/java-developers">Java Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/dotnet-developers">.NET Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/full-stack-developers">Full-Stack Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/golang-developers">Go Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/nodejs-developers">Node.js Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-php-developers'); ?>">PHP Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-python-developers'); ?>">Python Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-java-developers'); ?>">Java Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-dotnet-developers'); ?>">.NET Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-full-stack-developers'); ?>">Full-Stack Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-golang-web-developers'); ?>">Go Developers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-nodejs-developers'); ?>">Node.js Developers</a>
       <a href="https://www.valuecoders.com/staging/hire/ruby-developers">Ruby on Rails Developers</a>
       <div class="acc-sub">AI, Cloud &amp; QA</div>
-      <a href="https://www.valuecoders.com/staging/hire/ai-engineers">AI Engineers</a>
-      <a href="https://www.valuecoders.com/staging/hire/azure-developers">Azure Engineers</a>
-      <a href="https://www.valuecoders.com/staging/hire/salesforce-developers">Salesforce Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/sap-developers">SAP Consultants</a>
-      <a href="https://www.valuecoders.com/staging/hire/aws-developers">AWS Engineers</a>
-      <a href="https://www.valuecoders.com/staging/hire/data-engineers">Data Engineers</a>
-      <a href="https://www.valuecoders.com/staging/hire/devops-engineers">DevOps Engineers</a>
-      <a href="https://www.valuecoders.com/staging/hire/qa-engineers">QA Engineers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-ai-engineers'); ?>">AI Engineers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-azure-developers'); ?>">Azure Engineers</a>
+      <a href="<?php echo site_url('/hire/salesforce-developer'); ?>">Salesforce Developers</a>
+      <a href="<?php echo site_url('/hire/sap-developers'); ?>">SAP Consultants</a>
+      <a href="<?php echo site_url('/hire-developers/hire-aws-developers'); ?>">AWS Engineers</a>
+      <a href="<?php echo site_url('/hire/data-engineers'); ?>">Data Engineers</a>
+      <a href="<?php echo site_url('/hire-developers/hire-devops-developers'); ?>">DevOps Engineers</a>
+      <a href="<?php echo site_url('/hire-developers/software-qa-testers-india'); ?>">QA Engineers</a>
       <div class="acc-sub">Engagement Models</div>
-      <a href="https://www.valuecoders.com/staging/dedicated-teams/team-extension">Team Extension</a>
-      <a href="https://www.valuecoders.com/staging/dedicated-teams/delivery-pods">Delivery Pods</a>
+      <a href="<?php echo site_url('/it-staff-augmentation-services'); ?>">Team Extension</a>
+      <a href="<?php echo site_url('/dedicated-development-teams/product-pods'); ?>">Delivery Pods</a>
       <a href="https://www.valuecoders.com/staging/dedicated-teams/ai-engineering-pods">AI Engineering Pods</a>
-      <a href="https://www.valuecoders.com/staging/dedicated-teams/development-centers">Development Centres</a>
+      <a href="<?php echo site_url('/offshore-software-development-center-india'); ?>">Development Centres</a>
       <a href="https://www.valuecoders.com/staging/solutions/team-trial">Team Trial</a>
       <a class="acc-all" href="https://www.valuecoders.com/staging/hire">Browse all 60+ roles →</a>
     </div>
     <button class="acc" data-acc="m-company" aria-expanded="false">Company <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-company">
       <div class="acc-sub">About ValueCoders</div>
-      <a href="https://www.valuecoders.com/staging/company/how-we-work">How We Work</a>
-      <a href="https://www.valuecoders.com/staging/company/security">Security &amp; Compliance</a>
-      <a href="https://www.valuecoders.com/staging/company/credentials">Credentials &amp; Awards</a>
-      <a href="https://www.valuecoders.com/staging/company/careers">Life at ValueCoders</a>
-      <a href="https://www.valuecoders.com/staging/company/careers">Careers</a>
+      <a href="<?php echo site_url('/how-it-works'); ?>">How We Work</a>
+      <a href="<?php echo site_url('/gdpr-compliance'); ?>">Security &amp; Compliance</a>
+      <a href="<?php echo site_url('/in-media'); ?>">Credentials &amp; Awards</a>
+      <a href="<?php echo site_url('/about'); ?>">Life at ValueCoders</a>
+      <a href="<?php echo site_url('/careers'); ?>">Careers</a>
       <div class="acc-sub">Case Studies &amp; Proof</div>
-      <a href="https://www.valuecoders.com/case-studies/">Case Studies</a>
-      <a href="https://www.valuecoders.com/staging/company/reviews">Client Reviews</a>
+      <a href="<?php echo site_url('/case-studies/'); ?>">Case Studies</a>
+      <a href="<?php echo site_url('/testimonials'); ?>">Client Reviews</a>
       <a href="https://www.valuecoders.com/staging/company/benchmarks">Delivery Benchmarks</a>
       <a href="https://www.valuecoders.com/staging/company/vs-toptal">ValueCoders vs. Others</a>
       <a href="https://www.valuecoders.com/staging/pricing">Transparent Pricing</a>
       <div class="acc-sub">Guides &amp; Insights</div>
       <a href="https://www.valuecoders.com/staging/resources/guides">Guides &amp; Reports</a>
-      <a href="https://www.valuecoders.com/blog/">Blog</a>
+      <a href="<?php echo site_url('/blog/'); ?>">Blog</a>
       <a href="https://www.valuecoders.com/staging/webinars">Webinars</a>
-      <a href="https://www.valuecoders.com/staging/partners/programme">Partner Programme</a>
-      <a href="https://www.valuecoders.com/staging/contact">Contact Us</a>
+      <a href="<?php echo site_url('/partnership-program'); ?>">Partner Programme</a>
+      <a href="<?php echo site_url('/contact'); ?>">Contact Us</a>
     </div>
   </div>
   <div class="drawer__ft">
