@@ -65,11 +65,11 @@ function site_url( $url ){
           <a class="col__head" href="<?php echo site_url('/ai'); ?>" data-nav="link">AI &amp; Automation <span class="arr">→</span></a>
           <ul>
             <li><a class="lnk" href="<?php echo site_url('/ai/consulting-services-company'); ?>" data-nav="link"><span class="dot"></span>AI Consulting</a></li>
-            <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>AI-Augmented Development</a></li>
+            <!-- <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>AI-Augmented Development</a></li> -->
             <li><a class="lnk" href="<?php echo site_url('https://www.valuecoders.com/ai/custom-ai-agent-development'); ?>" data-nav="link"><span class="dot"></span>Generative AI &amp; LLMs</a></li>
             <li><a class="lnk" href="<?php echo site_url('https://www.valuecoders.com/ai/custom-ai-agent-development'); ?>" data-nav="link"><span class="dot"></span>AI Agents &amp; Automation</a></li>
-            <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>Production Assurance</a></li>
-            <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>Managed AI Services</a></li>
+            <!-- <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>Production Assurance</a></li> -->
+            <!-- <li><a class="lnk" href="<?php echo site_url('#'); ?>" data-nav="link"><span class="dot"></span>Managed AI Services</a></li> -->
           </ul>
           <a class="viewall-col" href="<?php echo site_url('/ai'); ?>" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
@@ -83,31 +83,31 @@ function site_url( $url ){
             <li><a class="lnk" href="<?php echo site_url('/outsource-software-product-development-services'); ?>" data-nav="link"><span class="dot"></span>SaaS Development</a></li>
             <li><a class="lnk" href="<?php echo site_url('/product-ui-ux-design'); ?>" data-nav="link"><span class="dot"></span>UI/UX &amp; Product Design</a></li>
           </ul>
-          <a class="viewall-col" href="https://www.valuecoders.com/staging/services/product-engineering" data-nav="viewall">View all <span class="arr">→</span></a>
+          <a class="viewall-col" href="<?php echo site_url('/outsource-software-product-development-services'); ?>" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
         <div class="col rv">
-          <a class="col__head" href="https://www.valuecoders.com/staging/data" data-nav="link">Data &amp; Cloud <span class="arr">→</span></a>
+          <a class="col__head" href="<?php echo site_url('/data-engineering'); ?>" data-nav="link">Data &amp; Cloud <span class="arr">→</span></a>
           <ul>
             <li><a class="lnk" href="<?php echo site_url('/data-engineering'); ?>" data-nav="link"><span class="dot"></span>Data Engineering</a></li>
             <li><a class="lnk" href="<?php echo site_url('/data-analytics'); ?>" data-nav="link"><span class="dot"></span>Analytics &amp; BI</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/data/warehouse" data-nav="link"><span class="dot"></span>Data Warehouse</a></li>
+            <!-- <li><a class="lnk" href="https://www.valuecoders.com/staging/data/warehouse" data-nav="link"><span class="dot"></span>Data Warehouse</a></li> -->
             <li><a class="lnk" href="<?php echo site_url('/cloud-services/cloud-migration'); ?>" data-nav="link"><span class="dot"></span>Cloud Migration</a></li>
             <li><a class="lnk" href="<?php echo site_url('/cloud-services/devops-automation'); ?>" data-nav="link"><span class="dot"></span>DevOps &amp; DevSecOps</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/cloud" data-nav="link"><span class="dot"></span>AWS, Azure &amp; GCP</a></li>
+            <!-- <li><a class="lnk" href="https://www.valuecoders.com/staging/cloud" data-nav="link"><span class="dot"></span>AWS, Azure &amp; GCP</a></li> -->
           </ul>
           <a class="viewall-col" href="https://www.valuecoders.com/staging/cloud" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
         <div class="col rv">
-          <a class="col__head" href="https://www.valuecoders.com/staging/services/enterprise-platforms" data-nav="link">Enterprise &amp; ERP <span class="arr">→</span></a>
+          <a class="col__head" href="javascript:void(0);" data-nav="link">Enterprise &amp; ERP <span class="arr">→</span></a>
           <ul>
             <li><a class="lnk" href="<?php echo site_url('/salesforce'); ?>" data-nav="link"><span class="dot"></span>Salesforce</a></li>
             <li><a class="lnk" href="<?php echo site_url('/hire/sap-developers'); ?>" data-nav="link"><span class="dot"></span>SAP</a></li>
             <li><a class="lnk" href="<?php echo site_url('/servicenow-development'); ?>" data-nav="link"><span class="dot"></span>ServiceNow</a></li>
             <li><a class="lnk" href="<?php echo site_url('/microsoft-dynamics'); ?>" data-nav="link"><span class="dot"></span>Microsoft Dynamics</a></li>
-            <li><a class="lnk" href="https://www.valuecoders.com/staging/services/oracle" data-nav="link"><span class="dot"></span>Oracle</a></li>
+            <!-- <li><a class="lnk" href="https://www.valuecoders.com/staging/services/oracle" data-nav="link"><span class="dot"></span>Oracle</a></li> -->
             <li><a class="lnk" href="<?php echo site_url('/services/system-integration'); ?>" data-nav="link"><span class="dot"></span>System Integration</a></li>
           </ul>
-          <a class="viewall-col" href="https://www.valuecoders.com/staging/services/enterprise-platforms" data-nav="viewall">View all <span class="arr">→</span></a>
+          <a class="viewall-col" href="<?php echo site_url('/enterprise-software-development-services'); ?>" data-nav="viewall">View all <span class="arr">→</span></a>
         </div>
         <div class="col rv">
           <a class="col__head" href="https://www.valuecoders.com/staging/services/digital-transformation" data-nav="link">Modernise &amp; Advisory <span class="arr">→</span></a>
@@ -337,7 +337,7 @@ function site_url( $url ){
       <a href="<?php echo site_url('/it-strategy-consulting-firms'); ?>">Technology Consulting</a>
       <a href="<?php echo site_url('/cybersecurity-services'); ?>">Cybersecurity &amp; Pen Testing</a>
       <a href="<?php echo site_url('/services/quality-engineering'); ?>">Quality Engineering</a>
-      <a class="acc-all" href="https://www.valuecoders.com/staging/services">View all services →</a>
+      <a class="acc-all" href="<?php echo site_url('/services'); ?>">View all services →</a>
     </div>
     <button class="acc" data-acc="m-solutions" aria-expanded="false">Solutions <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-solutions">
@@ -350,9 +350,11 @@ function site_url( $url ){
       <a href="<?php echo site_url('/solutions/ai-built-rescue'); ?>">AI-Built Rescue</a>
       <div class="acc-sub">Not sure where to start</div>
       <a href="<?php echo site_url('/project-discovery-phase'); ?>">Project Scoping</a>
+      <!-- 
       <a href="https://www.valuecoders.com/staging/solutions/codebase-assessment">Codebase Assessment</a>
       <a href="https://www.valuecoders.com/staging/solutions/team-trial">Team Trial</a>
-      <a href="https://www.valuecoders.com/staging/pricing">Transparent Pricing</a>
+      <a href="https://www.valuecoders.com/staging/pricing">Transparent Pricing</a> 
+      -->
       <div class="acc-sub">By industry</div>
       <a href="<?php echo site_url('/industries/fintech/bfsi'); ?>">FinTech &amp; BFSI</a>
       <a href="<?php echo site_url('/industries/healthcare'); ?>">Healthcare</a>
@@ -360,7 +362,7 @@ function site_url( $url ){
       <a href="<?php echo site_url('/industries/retail-ecommerce'); ?>">eCommerce</a>
       <a href="<?php echo site_url('/industries/edtech'); ?>">EdTech</a>
       <a href="<?php echo site_url('/industries/logistics'); ?>">Logistics</a>
-      <a class="acc-all" href="https://www.valuecoders.com/staging/industries">All industries →</a>
+      <a class="acc-all" href="<?php echo site_url('/industries'); ?>">All industries →</a>
     </div>
     <button class="acc" data-acc="m-hire" aria-expanded="false">Hire &amp; Teams <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-hire">
@@ -380,7 +382,7 @@ function site_url( $url ){
       <a href="<?php echo site_url('/hire-developers/hire-full-stack-developers'); ?>">Full-Stack Developers</a>
       <a href="<?php echo site_url('/hire-developers/hire-golang-web-developers'); ?>">Go Developers</a>
       <a href="<?php echo site_url('/hire-developers/hire-nodejs-developers'); ?>">Node.js Developers</a>
-      <a href="https://www.valuecoders.com/staging/hire/ruby-developers">Ruby on Rails Developers</a>
+      <!-- <a href="https://www.valuecoders.com/staging/hire/ruby-developers">Ruby on Rails Developers</a> -->
       <div class="acc-sub">AI, Cloud &amp; QA</div>
       <a href="<?php echo site_url('/hire-developers/hire-ai-engineers'); ?>">AI Engineers</a>
       <a href="<?php echo site_url('/hire-developers/hire-azure-developers'); ?>">Azure Engineers</a>
@@ -393,10 +395,10 @@ function site_url( $url ){
       <div class="acc-sub">Engagement Models</div>
       <a href="<?php echo site_url('/it-staff-augmentation-services'); ?>">Team Extension</a>
       <a href="<?php echo site_url('/dedicated-development-teams/product-pods'); ?>">Delivery Pods</a>
-      <a href="https://www.valuecoders.com/staging/dedicated-teams/ai-engineering-pods">AI Engineering Pods</a>
+      <!-- <a href="https://www.valuecoders.com/staging/dedicated-teams/ai-engineering-pods">AI Engineering Pods</a> -->
       <a href="<?php echo site_url('/offshore-software-development-center-india'); ?>">Development Centres</a>
-      <a href="https://www.valuecoders.com/staging/solutions/team-trial">Team Trial</a>
-      <a class="acc-all" href="https://www.valuecoders.com/staging/hire">Browse all 60+ roles →</a>
+      <a href="<?php echo site_url('/solutions/team-trial'); ?>">Team Trial</a>
+      <a class="acc-all" href="<?php echo site_url('/hire'); ?>">Browse all 60+ roles →</a>
     </div>
     <button class="acc" data-acc="m-company" aria-expanded="false">Company <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6l4 4 4-4"></path></svg></button>
     <div class="acc-body" id="m-company">
@@ -409,18 +411,18 @@ function site_url( $url ){
       <div class="acc-sub">Case Studies &amp; Proof</div>
       <a href="<?php echo site_url('/case-studies/'); ?>">Case Studies</a>
       <a href="<?php echo site_url('/testimonials'); ?>">Client Reviews</a>
-      <a href="https://www.valuecoders.com/staging/company/benchmarks">Delivery Benchmarks</a>
-      <a href="https://www.valuecoders.com/staging/company/vs-toptal">ValueCoders vs. Others</a>
-      <a href="https://www.valuecoders.com/staging/pricing">Transparent Pricing</a>
+      <!-- <a href="https://www.valuecoders.com/staging/company/benchmarks">Delivery Benchmarks</a> -->
+      <!-- <a href="https://www.valuecoders.com/staging/company/vs-toptal">ValueCoders vs. Others</a> -->
+      <!-- <a href="https://www.valuecoders.com/staging/pricing">Transparent Pricing</a> -->
       <div class="acc-sub">Guides &amp; Insights</div>
       <a href="https://www.valuecoders.com/staging/resources/guides">Guides &amp; Reports</a>
       <a href="<?php echo site_url('/blog/'); ?>">Blog</a>
-      <a href="https://www.valuecoders.com/staging/webinars">Webinars</a>
+      <!-- <a href="https://www.valuecoders.com/staging/webinars">Webinars</a> -->
       <a href="<?php echo site_url('/partnership-program'); ?>">Partner Programme</a>
       <a href="<?php echo site_url('/contact'); ?>">Contact Us</a>
     </div>
   </div>
   <div class="drawer__ft">
-    <a class="drawer__cta" href="https://www.valuecoders.com/staging/contact">Talk to Us <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M9 4.5L12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a class="drawer__cta" href="<?php echo site_url('/contact'); ?>">Talk to Us <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M9 4.5L12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
   </div>
 </div>
