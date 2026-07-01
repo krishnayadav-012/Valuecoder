@@ -5980,6 +5980,11 @@ button.tab-btn-base {
   background: #1D5BC4 url(../images/index-v10/white-right.svg) no-repeat right 15% center;
 }
 
+@media screen and (min-width: 1992px) {
+  .contact-us-section {
+    background: linear-gradient(to right, #F0F0F3 42%, #fff 30%) !important;
+  }
+}
 .delivery-section {
   color: #FCFCFD;
 }

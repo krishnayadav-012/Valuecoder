@@ -3,6 +3,7 @@
 .contact-us-section {
     background: linear-gradient(to right, #F0F0F3 39%, #fff 30%) !important;
 }
+
 @media screen and (max-width:992px) {
     .contact-us-section{
         background:linear-gradient(to bottom, #F0F0F3 39%, #fff 30%) !important;
@@ -1069,4 +1070,12 @@
         
     }
   }
+}
+
+
+
+@media screen and (min-width:1992px) {
+    .contact-us-section{
+        background: linear-gradient(to right, #F0F0F3 42%, #fff 30%) !important;
+    }
 }

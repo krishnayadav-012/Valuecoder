@@ -4449,6 +4449,11 @@ button.tab-btn-base {
   background: #1D5BC4 url(../images/index-v10/white-right.svg) no-repeat right 15% center;
 }
 
+@media screen and (min-width: 1992px) {
+  .contact-us-section {
+    background: linear-gradient(to right, #F0F0F3 42%, #fff 30%) !important;
+  }
+}
 .footer {
   width: 100%;
   background: #1C2024;
@@ -6159,6 +6164,8 @@ button.tab-btn-base {
 }
 .client-feedback .feedback-slider .swiper-button-next::after {
   transform: rotate(180deg);
+  top: 17px;
+  position: relative;
 }
 .client-feedback .feedback-slider .swiper-pagination {
   bottom: 10px;
