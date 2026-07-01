@@ -1,8 +1,9 @@
 @use "core/variables" as *;
 @use "_default" as *;
+@use "menu-v9.scss" as *;
 @use "_intent-popup";
 @use "running-bar";
-@use "menu-v9.scss";
+
 @use "award-section-v10";
 @use "delivery-problems-v10";
 @use "capabilities-section-v10";
@@ -13,6 +14,7 @@
 @use "insights-v10";
 @use "risk-friction";
 @use "build-team";
+//@use "engineering-stacks";
 @use "sections/tech-stacks-v2";
 @use "client-feedback-v11";
 @use "_testimonials";
@@ -24,10 +26,6 @@
 @use "_home-award";
 
 .help-section{background-color: $white;}
-
-
-
-
 
 
 // `````````cta button````````````
@@ -186,35 +184,10 @@ margin-bottom: 70px;}
     position: relative;
     display: flex;
     display: -webkit-flex;
-    background: url(../images/index-v10/banner-image.webp);
+    background: url(../images/index-v10/hero-banner.webp);
     background-size: cover;
     z-index: 1;
-    &::after {
-        content: "";
-        background-image: url(../images/index-v10/banner-sade.webp);
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin-top: 0;
-        display: block;
-        z-index: -1;
 
-    }
-    &::before {
-        content: "";
-        background-color:#05164DBA;
-        width: 100%;
-        height: 100%;
-        opacity: 70%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-    }
-   
 
     #background-video {
         width: 100%;
@@ -912,7 +885,7 @@ margin-bottom: 70px;}
 }
 
 .slide-logo .logo-section .glide__slide {
-    height: 70px
+    height: 92px
 }
 
 .slide-logo .logo-section .glide__slide img {

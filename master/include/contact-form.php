@@ -7,7 +7,7 @@
         <a href="mailto:sales@valuecoders.com" target="_blank"><i><img loading="lazy" src="images/home-images/connect-03.svg" alt="valuecoders" width="20" height="20"></i><span>Email us</span></a>
       </div>
       <div class="award-box">
-        <p>Trusted by startups and Fortune 500 companies</p>
+        <p>Trusted by startups and Fortune <strong>500</strong> companies</p>
         <div class="row-box">
           <div class="col-box dis-flex">
             <div class="icon"><img loading="lazy" src="images/home-images/cont-01.svg" alt="pixel" width="40" height="40"></div>
@@ -35,17 +35,42 @@
           <ul>
             <li>
               <picture>
-                <img loading="lazy" src="images/home-images/fot-01.svg" alt="Valuecoders" width="107" height="60">
+                <img loading="lazy" src="images/home-images/fot-one.svg" alt="Valuecoders" width="107" height="60">
               </picture>
             </li>
             <li>
               <picture>
-                <img loading="lazy" src="images/home-images/fot-02.svg" alt="Valuecoders" width="107" height="60">
+                <img loading="lazy" src="images/home-images/fot-two.svg" alt="Valuecoders" width="107" height="60">
               </picture>
             </li>
             <li>
               <picture>
-                <img loading="lazy" src="images/home-images/fot-03.svg" alt="Valuecoders" width="107" height="60">
+                <img loading="lazy" src="images/home-images/fot-three.svg" alt="Valuecoders" width="107" height="60">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <img loading="lazy" src="images/home-images/fot-four.svg" alt="Valuecoders" width="107" height="60">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <img loading="lazy" src="images/home-images/fot-five.svg" alt="Valuecoders" width="107" height="60">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <img loading="lazy" src="images/home-images/fot-six.svg" alt="Valuecoders" width="107" height="60">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <img loading="lazy" src="images/home-images/fot-seven.svg" alt="Valuecoders" width="107" height="60">
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <img loading="lazy" src="images/home-images/fot-eight.svg" alt="Valuecoders" width="107" height="60">
               </picture>
             </li>
           </ul>

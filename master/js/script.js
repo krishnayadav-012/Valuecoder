@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollNote.style.display = "none";
         }
     }
-
-
-    
 });
 
 
@@ -950,13 +947,34 @@ function closeYT_video() {
     thisFrame.style.display = "none";
 }
 if (document.getElementById("home-tpl-logoslide")) {
-    new Glide(".logoslide", {
-        type: "carousel",
-        autoplay: 1,
-        animationDuration: 10000,
-        animationTimingFunc: "linear",
-        perView: 1
-    }).mount();
+    // new Glide(".logoslide", {
+    //     type: "carousel",
+    //     autoplay: 1,
+    //     animationDuration: 10000,
+    //     animationTimingFunc: "linear",
+    //     hoverpause: true,
+    //     perView: 1
+    // }).mount();
+    const glide = new Glide(".logoslide", {
+    type: "carousel",
+    perView: 1,
+    autoplay: 1,
+    hoverpause: true,
+    animationDuration: 10000,
+    animationTimingFunc: "linear"
+    });
+
+    glide.mount();
+
+    const slider = document.querySelector(".logoslide");
+
+    slider.addEventListener("mouseenter", () => {
+    glide.pause();
+    });
+
+    slider.addEventListener("mouseleave", () => {
+    glide.play();
+    });
 }
 if (document.getElementById("ht-testlider")) {
     const testGlide = new Glide("#ht-testlider", {
@@ -1431,7 +1449,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }).filter(item => item.section);
 
     // -------------------------
-    // CLICK → Smooth scroll
+    // CLICK â†’ Smooth scroll
     // -------------------------
     sections.forEach(({
         link,
@@ -1457,7 +1475,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // -------------------------
-    // SCROLL → Auto active
+    // SCROLL â†’ Auto active
     // -------------------------
     window.addEventListener("scroll", function() {
 
@@ -2048,7 +2066,7 @@ async function getPageCaseStudiesV3_bkp(pageId) {
             thumbnail: "https://www.valuecoders.com/blog/wp-content/uploads/2022/05/android-app-with-kotlin.jpg.webp",
             title: "Guide to Android App Development: Tips, Tricks, and Strategies",
             permalink: "https://www.valuecoders.com/blog/technology-and-apps/guide-to-android-app-development-tips-tricks-and-strategies-for-building-successful-apps/",
-            experpt: "Android app development is booming, and it doesn’t seem to be slowing down anytime soon..."
+            experpt: "Android app development is booming, and it doesnâ€™t seem to be slowing down anytime soon..."
         },
         {
             thumbnail: "https://www.valuecoders.com/blog/wp-content/uploads/2017/02/future-of-mobile-application-development.png.webp",
@@ -2165,7 +2183,7 @@ async function getPageCaseStudiesV3(pageId) {
             thumbnail: "https://www.valuecoders.com/blog/wp-content/uploads/2022/05/android-app-with-kotlin.jpg.webp",
             title: "Guide to Android App Development: Tips, Tricks, and Strategies",
             permalink: "https://www.valuecoders.com/blog/technology-and-apps/guide-to-android-app-development-tips-tricks-and-strategies-for-building-successful-apps/",
-            experpt: "Android app development is booming, and it doesn’t seem to be slowing down anytime soon..."
+            experpt: "Android app development is booming, and it doesnâ€™t seem to be slowing down anytime soon..."
         },
         {
             thumbnail: "https://www.valuecoders.com/blog/wp-content/uploads/2017/02/future-of-mobile-application-development.png.webp",
@@ -2190,7 +2208,7 @@ async function getPageCaseStudiesV3(pageId) {
     // --- Start HTML ---
     let html = `<div class="dis-flex">`;
 
-    // --- 1️⃣ Blog index 0 ---
+    // --- 1ï¸âƒ£ Blog index 0 ---
     if (blogs[0]) {
         const b = blogs[0];
         html += `
@@ -2209,7 +2227,7 @@ async function getPageCaseStudiesV3(pageId) {
       </div>`;
     }
 
-    // --- 2️⃣ Case Studies index 0 & 1 ---
+    // --- 2ï¸âƒ£ Case Studies index 0 & 1 ---
     post_cs_cards.slice(0, 2).forEach(card => {
         const csLink = "https://www.valuecoders.com/" + card.link.replace(/^\//, "");
         html += `
@@ -2230,7 +2248,7 @@ async function getPageCaseStudiesV3(pageId) {
       </div>`;
     });
 
-    // --- 3️⃣ Blog index 1 ---
+    // --- 3ï¸âƒ£ Blog index 1 ---
     if (blogs[1]) {
         const b = blogs[1];
         html += `
@@ -2483,7 +2501,7 @@ if (document.getElementById("testimonial-section-v10")) {
     });
   }
 
-  // ✅ Observe dot changes (this is the real fix)
+  // âœ… Observe dot changes (this is the real fix)
   const observer = new MutationObserver(() => {
     applyDotImages();
   });
@@ -2585,7 +2603,88 @@ const circularProgress = document.querySelectorAll(".circular-progress");
     });
 }
 
+function _viewElm(parentClass, key, trigger) {
+    const parent = document.querySelector(`.${parentClass}`);
+    if (!parent) return;
+
+    const items = parent.querySelectorAll("[data-key]");
+    const isExpanded = [...items].some(
+        el => Number(el.dataset.key) > key && el.style.display !== "none"
+    );
+
+    items.forEach(el => {
+        if (Number(el.dataset.key) > key) {
+            el.style.display = isExpanded ? "none" : "";
+        }
+    });
+
+    if (trigger) {
+        trigger.textContent = isExpanded ? "View More" : "View Less";
+
+        // Toggle rotate class on the trigger itself
+        trigger.classList.toggle("rotate", !isExpanded);
+
+        // OR, if you have an icon inside the trigger:
+        // const icon = trigger.querySelector("i, svg, .icon");
+        // if (icon) {
+        //     icon.classList.toggle("rotate", !isExpanded);
+        // }
+    }
+}
 
 
+ document.addEventListener("DOMContentLoaded", function() {
+    if( document.getElementById("testimonails-v11") ) {
+        const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
+        if (feedbackSlider) {
+            new Swiper(feedbackSlider, {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 1.6,
+                spaceBetween: 30,
+                navigation: {
+
+                    nextEl: ".client-feedback .swiper-button-next",
+                    prevEl: ".client-feedback .swiper-button-prev"
+
+                },
+                pagination: {
+                    el: ".client-feedback .swiper-pagination",
+                    clickable: true
+
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 1.3,
+                    },
+                    
+                    768: {
+                        slidesPerView: 1
+                    },
+                    0: {
+                        slidesPerView: 1
+                    }
+                }
+            });
+        }
+    }
+});
 
 
+const _pushTpTop = document.querySelector(".fixed_top_icon");
+if( _pushTpTop ) {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 500) {
+            _pushTpTop.classList.add("active");
+        } else {
+            _pushTpTop.classList.remove("active");
+        }
+    });
+
+    _pushTpTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

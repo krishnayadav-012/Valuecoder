@@ -195,9 +195,9 @@
     @media screen and (max-width:767px) {
 
         .feedback-card {
-            flex-direction: column;
+            flex-wrap: wrap;
             width: 100%;
-            height: unset !important;
+            height: auto !important;
 
             .client-image {
                 // height: 400px;
@@ -230,7 +230,7 @@
 
 @media screen and (max-width:540px) {
     .client-feedback .feedback-slider .feedback-card .client-image {
-        width: 100% !important;
+        width: auto;
     }
 
     .client-feedback .feedback-slider .feedback-card .content {

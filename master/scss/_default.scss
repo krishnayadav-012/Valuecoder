@@ -1,8 +1,16 @@
 @use "core/variables" as *;
 @media only screen and (min-width: 768px) {
+  // @font-face {
+  // font-family: "Inter-Variable-Hold";
+  //   src: url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+  //   font-weight: 100 900;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+  
   @font-face {
-  font-family: "Inter Variable";
-    src: url("../fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2");
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJakartaSans-VariableFont_wght.woff2") format("woff2");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -68,7 +76,6 @@ border-radius: 100px;
 
 }
 .fixed_top_icon.active{
-
   display: block;
 }
 
@@ -140,6 +147,11 @@ border-radius: 100px;
 
     
   }
+  a.rotate{
+    &::after{
+      transform: rotate(180deg);
+    }
+  }
   &:hover{
     a{
       
@@ -208,7 +220,7 @@ border-radius: 100px;
 body {
   background-color: $white;
   color: $gray-600;
-  font-family: "Inter Variable", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: $normal-font;
@@ -744,7 +756,7 @@ strong {
 
 ::placeholder {
   color: $gray-500;
-  font-family: "Inter Variable", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 // Chrome, Safari, Edge, Opera
@@ -761,13 +773,13 @@ input[type="number"] {
 
 ::placeholder {
   color: $gray-500;
-  font-family: "Inter Variable", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   text-transform: capitalize;
 }
 
 input,
 textarea {
-  font-family: "Inter Variable", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .lighter-theme-img {
@@ -1413,6 +1425,12 @@ textarea {
     .btn-sec {
       justify-content: center;
     }
+  }
+}
+
+.experts-talk-first-section.bg-blue-linear {
+  .primary_btn a{
+    color: #ffffff;
   }
 }
 
@@ -2526,4 +2544,42 @@ $border-color_2: #05164d;
       }
     }
   }
+}
+
+
+.back-to-top-btn{
+    box-shadow: 0px 4px 20px 0px #00000033;
+    background-color: $white;
+    border: 1px solid #D4D4D8;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    gap: 5px;
+    height: 73px;
+    align-items: center;
+    border-radius: 100px;
+    .arrow{
+        background-image: url(../images/index-v10/top-icon-grey.svg);
+        width: 12px;
+        display: block;
+        background-repeat: no-repeat;
+        height: 25px;
+    }
+    .text{
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        color: #9F9FA9;
+    }
+    &:hover{
+        background-color: $dark-blue;
+        border-color:  $dark-blue;
+        .arrow{
+            background-image: url(../images/index-v10/top-icon-white.svg);
+        }
+        .text{
+            color: $white;
+        }
+    }
 }

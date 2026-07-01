@@ -36,9 +36,10 @@ $text-gray: #314158;
       }
 
       .description {
-        color: #60646C;
+        color: $text-gray;
         font-size: 18px;
-        line-height: 160%;
+
+        line-height: 1.6;
       }
     }
   }
@@ -99,7 +100,7 @@ border: 2px solid #99A1AF;
   // Spacing for slider
 
   .industry-card {
-    border-radius: 24px;
+    border-radius: 25px;
     overflow: hidden;
     height: 430px;
     display: flex;
@@ -124,7 +125,7 @@ border: 2px solid #99A1AF;
     .card-body {
       padding: 20px 15px;
       flex-grow: 1;
-      border-radius: 20px;
+      border-radius: 25px;
       background-color: #F4F4F4;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
       border: 1px solid #E5E7EB;
@@ -198,18 +199,21 @@ display: block;
         text-decoration: underline;
         color: inherit;
                 margin-bottom: 34px;
-        color: #F0F0F3;
+        color: #FFFFFF;
       }
     }
 
     
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(0px);
 
       .card-image {
-        height: 180px;
-
+        height: 120px;
+        img{
+              object-fit: cover;
+    object-position: top;
+        }
       }
 
       // Shrink image to expand text

@@ -1355,40 +1355,103 @@ That Drives Real Business Outcomes
     <script src="js/js-v10.js"></script>
     <script src="js/swiper.js"></script>
 
-
     <script>
        
-        document.addEventListener("DOMContentLoaded", function() {
+//         document.addEventListener("DOMContentLoaded", function() {
+//     const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
+//     if (feedbackSlider) {
+//         const swiper = new Swiper(feedbackSlider, {
+//             loop: true,
+//             loopAdditionalSlides: 4,
+//             centeredSlides: true,
+//             slidesPerView: 1.6,
+//             spaceBetween: 30,
+//             navigation: {
+//                 nextEl: ".client-feedback .swiper-button-next",
+//                 prevEl: ".client-feedback .swiper-button-prev"
+//             },
+//             pagination: {
+//                 el: ".client-feedback .swiper-pagination",
+//                 clickable: true
+//             },
+//             breakpoints: {
+//                 1200: { slidesPerView: 1.3 },
+//                 768:  { slidesPerView: 1 },
+//                 0:    { slidesPerView: 1 }
+//             },
+//             on: {
+//                 init: function () {
+//                     this.slideToLoop(1, 0, false);
+//                 }
+//             }
+//         });
+//     }
+// });
+document.addEventListener("DOMContentLoaded", function () {
+
     const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
+
     if (feedbackSlider) {
+
         const swiper = new Swiper(feedbackSlider, {
+
             loop: true,
-            loopAdditionalSlides: 4,
+
+            // important for centered loop
             centeredSlides: true,
+
             slidesPerView: 1.6,
+
             spaceBetween: 30,
+
+            loopedSlides: 5,
+
             navigation: {
                 nextEl: ".client-feedback .swiper-button-next",
                 prevEl: ".client-feedback .swiper-button-prev"
             },
+
             pagination: {
                 el: ".client-feedback .swiper-pagination",
                 clickable: true
             },
+
             breakpoints: {
-                1200: { slidesPerView: 1.3 },
-                768:  { slidesPerView: 1 },
-                0:    { slidesPerView: 1 }
-            },
-            on: {
-                init: function () {
-                    this.slideToLoop(1, 0, false);
-                    // 1 = second slide (0-indexed), 0 = no transition speed, false = don't trigger callbacks
+
+                1200: {
+                    slidesPerView: 1.3,
+                    loopedSlides: 5
+                },
+
+                768: {
+                    slidesPerView: 1,
+                    loopedSlides: 5
+                },
+
+                0: {
+                    slidesPerView: 1,
+                    loopedSlides: 5
                 }
+
+            },
+
+            on: {
+
+                init: function () {
+                    this.slideToLoop(0, 0);
+                },
+
+                resize: function () {
+                    this.update();
+                }
+
             }
+
         });
+
     }
-});
+
+}); 
     </script>
 
 
