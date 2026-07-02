@@ -4039,6 +4039,7 @@ header:hover .trigger .chev {
   min-height: 180px;
   align-items: flex-start;
   justify-content: center;
+  z-index: 11;
   gap: 5px;
   position: relative;
   overflow: hidden;
@@ -4051,6 +4052,7 @@ header:hover .trigger .chev {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background: url(../images/index-v10/right-sade.webp);
@@ -4563,7 +4565,7 @@ header:hover .trigger .chev {
   z-index: 11;
 }
 .ai-right .ai-content {
-  padding: 80px 0 80px 20px;
+  padding: 80px 0 91px 20px;
   color: #ffffff;
   max-width: 590px;
   float: right;
@@ -4597,6 +4599,7 @@ header:hover .trigger .chev {
 /* LIST */
 .ai-list {
   height: 280px;
+  padding-left: 25px;
 }
 .ai-list .ai-item:first-of-type {
   padding-top: 0;
@@ -4622,7 +4625,7 @@ header:hover .trigger .chev {
   border-radius: 50%;
   background: #6A7282;
   position: absolute;
-  left: -18px;
+  left: -24px;
   top: 10px;
   transition: 0.3s;
 }
@@ -4705,7 +4708,7 @@ header:hover .trigger .chev {
     padding-left: 20px;
   }
   .ai-right .ai-content > p {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 .delivery-models {
@@ -8950,7 +8953,7 @@ header:hover .trigger .chev {
   position: relative;
   display: flex;
   display: -webkit-flex;
-  background: url(../images/index-v10/hero-banner.webp);
+  background: url("../images/home-v10/hero-banner.webp");
   background-size: cover;
   z-index: 1;
 }
@@ -9501,22 +9504,6 @@ header:hover .trigger .chev {
   justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
-  .slide-logo-part .logo-heading:before {
-    display: none;
-  }
-  .slide-logo-part .logo-heading h4 span {
-    margin: 0 auto !important;
-  }
-  .slide-logo-part .logo-heading h4 {
-    margin: 0 auto;
-    font-size: 16px;
-    text-align: center;
-  }
-  .slide-logo-part {
-    padding: 30px 0 30px;
-  }
-}
 .slide-logo-part .logo-heading h4 {
   color: #1C2024;
   font-size: 20px;

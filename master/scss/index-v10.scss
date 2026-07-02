@@ -184,7 +184,7 @@ margin-bottom: 70px;}
     position: relative;
     display: flex;
     display: -webkit-flex;
-    background: url(../images/index-v10/hero-banner.webp);
+    background: url('../images/home-v10/hero-banner.webp');
     background-size: cover;
     z-index: 1;
 
@@ -846,22 +846,6 @@ margin-bottom: 70px;}
     margin: 0 0 25px;
     justify-content: center
 }
-@media screen and (max-width:767px) {
-    .slide-logo-part .logo-heading:before{
-        display: none;
-    }
-    .slide-logo-part .logo-heading h4 span{
-        margin: 0 auto !important;
-    }
-    .slide-logo-part .logo-heading h4{
-        margin: 0 auto;
-        font-size: 16px ;
-        text-align: center;
-    }
-    .slide-logo-part{
-        padding: 30px 0 30px;
-    }
-}
 
 .slide-logo-part .logo-heading h4 {
     color: #1C2024;
@@ -891,7 +875,6 @@ margin-bottom: 70px;}
     left: 0;
     right: 0;
     margin: 0 auto
-    
 }
 
 .slide-logo-part  {

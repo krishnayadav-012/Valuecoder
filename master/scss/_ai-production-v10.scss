@@ -44,7 +44,7 @@ flex-wrap: wrap;
     z-index: 11;
 
     .ai-content {
-        padding: 80px 0 80px 20px;
+        padding: 80px 0 91px 20px;
         color: $white;
         max-width: 590px;
         float: right;
@@ -89,7 +89,7 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
 
 .ai-list {
     height: 280px;
-
+    padding-left: 25px;
     .ai-item {
 &:first-of-type{
     padding-top: 0;
@@ -100,8 +100,6 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
         cursor: pointer;
 
         /* Reserve space so layout doesn't jump */
-        
-
        
 
         .title h4 {
@@ -117,7 +115,7 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
             border-radius: 50%;
             background: #6A7282;
             position: absolute;
-            left: -18px;
+            left: -24px;
             top: 10px;
             transition: 0.3s;
         }
@@ -230,6 +228,6 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
 
     
     .ai-list{padding-left: 20px;}
-    .ai-right .ai-content > p{margin-bottom: 0;}
+    .ai-right .ai-content > p{margin-bottom: 20px;}
 
 }
