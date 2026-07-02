@@ -9518,6 +9518,19 @@ header:hover .trigger .chev {
   background: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .slide-logo-part .logo-heading h4 {
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+  }
+  .slide-logo-part .logo-heading h4 span {
+    margin: 0;
+  }
+  .slide-logo-part {
+    padding-bottom: 30px;
+  }
+}
 .slide-logo-part .logo-heading strong {
   color: #2563EB;
   font-weight: 800;

@@ -858,8 +858,22 @@ margin-bottom: 70px;}
 .slide-logo-part .logo-heading h4 span {
     margin: 0 35px;
     background: #fff
+
+  
 }
 
+@media screen and (max-width:767px) {
+    .slide-logo-part .logo-heading h4{
+        margin: 0 auto;
+        font-size: 16px;
+        text-align: center;
+    }
+    .slide-logo-part .logo-heading h4 span {
+        margin: 0 ;   }
+        .slide-logo-part{
+            padding-bottom: 30px;
+        }
+}
 .slide-logo-part .logo-heading strong {
     color: $blue-lihgt;
     font-weight: 800;
