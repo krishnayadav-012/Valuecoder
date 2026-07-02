@@ -149,13 +149,27 @@
                   padding: 35px 60px 33px 0;
 
 
-                &::after{
+               
+
+
+
+
+
+                .accordion-trigger {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+
+                     &::after{
                         width: 55px;
                         height: 60px;
                         content: "";
                         position: absolute;
-                        right: 0;
-                        bottom: 0;
+                       right: -60px;
+    bottom: -33px;
+
                         border: 1px solid $darkWhiteGray;
                         display: flex;
                         align-items: center;
@@ -171,21 +185,6 @@
 
 
                     }
-
-
-
-
-
-                .accordion-trigger {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    cursor: pointer;
-                    position: relative;
-
-                    // @media screen and (max-width:1024px) {
-                    //     padding: 20px 30px 20px 5px;
-                    // }
 
                     h3 {
                         margin: 0;
@@ -218,13 +217,14 @@
               
 
 
-                        &::after {
-                            display: none;
-                        }
+                       
                 
                      
                             .accordion-trigger{
                                 padding-bottom: 15px;
+                                 &::after {
+                            display: none;
+                        }
                                 h3{
                                     color: #2563EB;
                                     font-weight: 700;
