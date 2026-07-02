@@ -166,8 +166,9 @@
         .swiper-pagination {
 
 
-            bottom: 10px;
-
+            // bottom: 10px;
+            position: static;
+                margin-top: 20px;
 
             .swiper-pagination-bullet {
 

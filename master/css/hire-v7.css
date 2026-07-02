@@ -6498,7 +6498,8 @@ button.tab-btn-base {
   position: relative;
 }
 .client-feedback .feedback-slider .swiper-pagination {
-  bottom: 10px;
+  position: static;
+  margin-top: 20px;
 }
 .client-feedback .feedback-slider .swiper-pagination .swiper-pagination-bullet {
   width: 7px;
