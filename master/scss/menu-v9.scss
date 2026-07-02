@@ -423,9 +423,9 @@ a.col__head:hover .arr{transform:translateX(3px);color:var(--azure-text)}
     content: "";
     position: absolute;
     inset: 0;
-    background: url(../../images/index-v10/move-right.svg) center / 20px no-repeat;
+    background: url(../images/index-v10/move-right.svg) center / 20px no-repeat;
     transform: translateX(-150%);
-    background-size: 50px;
+    background-size: 40px;
     transition: transform 0.4s ease;
 }
 .nav-v9 .text::before, .nav-v9 .text::after {

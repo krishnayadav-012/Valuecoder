@@ -79,95 +79,95 @@
                     <span>10-DAY REPLACEMENT GUARANTEE</span>
                 </div>
                 <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
+                    <span>PROFILES IN 48 HOURS</span>
+                </div>
+                <div class="award-tile">
+                    <span>94% ON-TIME DELIVERY</span>
+                </div>
+                <div class="award-tile">
+                    <span>2,500+ PROJECTS DELIVERED</span>
+                </div>
+                <div class="award-tile">
+                    <span>675+ ENGINEERS ACTIVE</span>
+                </div>
+                <div class="award-tile">
+                    <span>4.8* ON CLUTCH</span>
+                </div>
+                <div class="award-tile">
+                    <span>20+ YEARS IN SOFTWARE DELIVERY</span>
                 </div>
                 <div class="award-tile">
                     <span>10-DAY REPLACEMENT GUARANTEE</span>
                 </div>
                 <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
+                    <span>PROFILES IN 48 HOURS</span>
                 </div>
                 <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
+                    <span>94% ON-TIME DELIVERY</span>
                 </div>
                 <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
+                    <span>2,500+ PROJECTS DELIVERED</span>
                 </div>
                 <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
+                    <span>675+ ENGINEERS ACTIVE</span>
                 </div>
                 <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
-                </div>
-                <div class="award-tile">
-                    <span>10-DAY REPLACEMENT GUARANTEE</span>
+                    <span>4.8* ON CLUTCH</span>
                 </div>
 
-
+                <div class="award-tile">
+                    <span>20+ YEARS IN SOFTWARE DELIVERY</span>
+                </div>
 
             </div>
         </div>
     </section>
 
 
-    <div class="slide-logo  dis-flex items-center justify-sb padding-t-50 padding-b-80">
+
+
+    <div class="slide-logo-part  dis-flex items-center justify-sb ">
         <div class="container">
             <div class="dis-flex">
                 <div class="logo-heading">
                     <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
                 </div>
-                <div class="logo-section">
-                    <div class="logoslide glide" id="home-tpl-logoslide">
-                        <div class="glide__track" data-glide-el="track">
-                            <div class="glide__slides">
-                                <div class="glide__slide">
-                                    <picture>
-                                        <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg" alt="valuecoders">
-                                    </picture>
-                                </div>
+                <div class="logo-slider">
+                    <div class="logo-track">
 
-                                <div class="glide__slide">
-                                    <picture>
-                                        <img loading="lazy" src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png" alt="valuecoders">
-                                    </picture>
-                                </div>
-                            </div>
+                        <div class="logos">
+                            <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg" alt="valuecoders">
                         </div>
+
+                        <div class="logos">
+                            <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png" alt="valuecoders">
+                        </div>
+                        <!-- duplicate -->
+                        <div class="logos">
+                            <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo.svg" alt="valuecoders">
+                        </div>
+
+                        <div class="logos">
+                            <img src="https://www.valuecoders.com/wp-content/themes/valuecoders/v4.0/images/banner-client-logo-2.png" alt="valuecoders">
+                        </div>
+
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </div>
 
-    <!-- new start -->
-
-    <!-- risk-friction start -->
+    <!-- The Delivery Problem  -->
 
     <section class="delivery-section padding-t-120 padding-b-120">
-        <!-- Left: copy -->
+
         <div class="container">
             <div class="inner-part">
                 <div class="delivery-section__left">
                     <span>The Delivery Problem</span>
-
                     <h2>
                         Most Teams Hire Engineers. <br> <em>Only a Few Deliver Outcome.</em>
                     </h2>
@@ -345,23 +345,12 @@
 
 
     <section class="ai-production-loop">
-
         <!-- LEFT FULL IMAGE -->
         <div class="ai-left">
-            <div class="hands-img">
-
-                <div class="human-hand hand">
-                    <img src="images/index-v10/human-hand.png" alt="Human">
-                </div>
-
-                <div class="ai-hand hand">
-                    <img src="images/index-v10/ai-hand.png" alt="AI">
-                </div>
-
-            </div>
-            <!-- <img src="images/index-v10/ai-pro.webp" alt="AI"> -->
-            <video autoplay muted loop playsinline>
-                <source src="images/index-v10/ai-video.mp4" type="video/mp4">
+            <span class=""></span>
+            <video preload="metadata" poster="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/images/index-v10/ai-pro.webp" autoplay="" muted="" loop="" playsinline="">
+                <source src="https://www.valuecoders.com/staging/wp-content/themes/valuecoders/v6.0/video/ai-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
         </div>
 
@@ -369,106 +358,41 @@
         <div class="ai-right">
 
             <div class="container">
-
                 <div class="ai-content">
-
-                    <h2>
-<em>Build an AI Ecosystem</em><br>
-That Drives Real Business Outcomes
-                    </h2>
-
-                    <p class="sub-text">
-                       We help enterprises move from experimentation to execution. From custom LLMs to workflow automation, we design, deploy, and scale AI systems that deliver measurable impact.
-                    </p>
-
+                    <h2><em>Build an AI Ecosystem</em> <br>That Drives Real Business <br> Outcomes</h2>
+                    <p>We help enterprises move from experimentation to execution. From custom LLMs to workflow automation, we design, deploy, and scale AI systems that deliver measurable impact.</p>
                     <div class="ai-list">
-
                         <div class="ai-item active">
-
                             <div class="title">
-                                <h4> Generative AI Development</h4>
+                                <h4>GenAI Integration</h4>
                             </div>
-
                             <div class="desc">
-                                <p> Production applications built on OpenAI,
-                                    Claude, Gemini, and open-source
-                                    foundation models — integrated into
-                                    real business workflows.</p>
-
-                            </div>
-
-                            <div class="progress"></div>
-
-                        </div>
-
-                        <div class="ai-item">
-
-                            <div class="title">
-                                <h4>AI Agent Development</h4>
-                            </div>
-
-                            <div class="desc">
-                                <p> Build autonomous AI agents that automate
-                                    workflows and decision-making.</p>
-
+                                <p>Integrate LLMs into products and workflows, including AI agents, enterprise chatbots, and developer copilots.</p>
                             </div>
                             <div class="progress"></div>
                         </div>
-
-                        <div class="ai-item">
-
+                        <div class="ai-item ">
                             <div class="title">
-                                <h4> Machine Learning Engineering</h4>
+                                <h4>Computer Vision</h4>
                             </div>
-
                             <div class="desc">
-                                <p> Design and deploy scalable ML systems
-                                    tailored to business workflows.</p>
-
+                                <p>Use computer vision for visual quality control and facial recognition.</p>
                             </div>
-
                             <div class="progress"></div>
-
                         </div>
-
-                        <div class="ai-item">
-
+                        <div class="ai-item ">
                             <div class="title">
                                 <h4>Data Engineering</h4>
                             </div>
-
                             <div class="desc">
-                                <p> Build reliable pipelines and scalable
-                                    AI-ready infrastructure.</p>
+                                <p>Build scalable pipelines and data infrastructure to support reliable production systems.</p>
                             </div>
-
                             <div class="progress"></div>
-
                         </div>
-
-                        <div class="ai-item">
-
-                            <div class="title">
-                                <h4> AI Integration</h4>
-                            </div>
-
-                            <div class="desc">
-                                <p>Seamlessly integrate AI into existing
-                                    enterprise systems.</p>
-                            </div>
-
-                            <div class="progress"></div>
-
-                        </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
     <!-- ai section end -->
@@ -653,7 +577,7 @@ That Drives Real Business Outcomes
                     <div class="stories-section__heading-wrap">
                         <h2>Success Stories</h2>
                         <p>
-                          From simple CRM to complex applications, our experts are capable of handling projects of all sizes. Here’s a glimpse into some of our previous work.     </p>
+                            From simple CRM to complex applications, our experts are capable of handling projects of all sizes. Here’s a glimpse into some of our previous work. </p>
                     </div>
 
 
@@ -739,10 +663,14 @@ That Drives Real Business Outcomes
                     </p>
                 </div>
                 <div class="glider-nav">
-                    <button class="glider-prev" aria-label="Previous"><img src="images/index-v10/slide-arrow.svg"
-                            alt=""></button>
-                    <button class="glider-next" aria-label="Next"><img src="images/index-v10/slide-arrow.svg"
-                            alt=""></button>
+                    <button class="glider-prev" aria-label="Previous">
+                        <img  class="default" src="images/index-v10/ind-grey-v2.svg"alt="">
+                        <img  class="hover" src="images/index-v10/ind-white-v2.svg"alt="">
+                        </button>
+                    <button class="glider-next" aria-label="Next">
+                        <img class="default"  src="images/index-v10/ind-grey-v2.svg"alt="">
+                        <img  class="hover" src="images/index-v10/ind-white-v2.svg"alt="">
+                    </button>
                 </div>
             </div>
 
@@ -945,7 +873,7 @@ That Drives Real Business Outcomes
                 </div>
 
                 <div class="btn-primary-two grey-right">
-                    <a href="#">View All Stories</a>
+                    <a href="#">View All Blogs</a>
                 </div>
             </div>
 
@@ -1336,77 +1264,76 @@ That Drives Real Business Outcomes
     </section>
     <?php require_once 'include/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="js/js-v10.js"></script>
+    <!-- <script src="js/js-v10.js"></script> -->
+    <script src="js/script.js"></script>
     <script src="js/swiper.js"></script>
 
     <script>
-       
+        document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function () {
+            const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
 
-    const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
+            if (feedbackSlider) {
 
-    if (feedbackSlider) {
+                const swiper = new Swiper(feedbackSlider, {
 
-        const swiper = new Swiper(feedbackSlider, {
+                    loop: true,
 
-            loop: true,
+                    // important for centered loop
+                    centeredSlides: true,
 
-            // important for centered loop
-            centeredSlides: true,
+                    slidesPerView: 1.6,
 
-            slidesPerView: 1.6,
+                    spaceBetween: 30,
 
-            spaceBetween: 30,
+                    loopedSlides: 5,
 
-            loopedSlides: 5,
+                    navigation: {
+                        nextEl: ".client-feedback .swiper-button-next",
+                        prevEl: ".client-feedback .swiper-button-prev"
+                    },
 
-            navigation: {
-                nextEl: ".client-feedback .swiper-button-next",
-                prevEl: ".client-feedback .swiper-button-prev"
-            },
+                    pagination: {
+                        el: ".client-feedback .swiper-pagination",
+                        clickable: true
+                    },
 
-            pagination: {
-                el: ".client-feedback .swiper-pagination",
-                clickable: true
-            },
+                    breakpoints: {
 
-            breakpoints: {
+                        1200: {
+                            slidesPerView: 1.3,
+                            loopedSlides: 5
+                        },
 
-                1200: {
-                    slidesPerView: 1.3,
-                    loopedSlides: 5
-                },
+                        768: {
+                            slidesPerView: 1,
+                            loopedSlides: 5
+                        },
 
-                768: {
-                    slidesPerView: 1,
-                    loopedSlides: 5
-                },
+                        0: {
+                            slidesPerView: 1,
+                            loopedSlides: 5
+                        }
 
-                0: {
-                    slidesPerView: 1,
-                    loopedSlides: 5
-                }
+                    },
 
-            },
+                    on: {
 
-            on: {
+                        init: function() {
+                            this.slideToLoop(0, 0);
+                        },
 
-                init: function () {
-                    this.slideToLoop(0, 0);
-                },
+                        resize: function() {
+                            this.update();
+                        }
 
-                resize: function () {
-                    this.update();
-                }
+                    }
+
+                });
 
             }
 
         });
-
-    }
-
-}); 
     </script>
 
 

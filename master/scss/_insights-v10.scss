@@ -22,6 +22,8 @@
 
     p {
       margin-bottom: 0;
+      font-weight: 500;
+      color: #60646C;
     }
   }
 
@@ -96,15 +98,16 @@
 
   span {
     font-size: 10px;
-    font-weight: 400;
-    color: #6A7282;
+    font-weight: 600;
+    color: #80838D;
+    text-transform: uppercase;
     line-height: 140%;
   }
   h3 {
     font-size: 22px;
     margin: 5px 0 30px;
     font-weight: 600;
-    color: #111827;
+    color: #1C2024;
     line-height: 140%;
   }
   &__footer {

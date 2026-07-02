@@ -947,34 +947,25 @@ function closeYT_video() {
     thisFrame.style.display = "none";
 }
 if (document.getElementById("home-tpl-logoslide")) {
-    // new Glide(".logoslide", {
-    //     type: "carousel",
-    //     autoplay: 1,
-    //     animationDuration: 10000,
-    //     animationTimingFunc: "linear",
-    //     hoverpause: true,
-    //     perView: 1
-    // }).mount();
-    const glide = new Glide(".logoslide", {
+    const glideCLients = new Glide(".logoslide", {
     type: "carousel",
     perView: 1,
     autoplay: 1,
     hoverpause: true,
     animationDuration: 10000,
-    animationTimingFunc: "linear"
+    //animationTimingFunc: "linear"
     });
 
-    glide.mount();
+    glideCLients.mount();
 
-    const slider = document.querySelector(".logoslide");
+    // const slider = document.querySelector(".logoslide");
+    // slider.addEventListener("mouseenter", () => {        
+    //     glideCLients.pause();
+    // });
 
-    slider.addEventListener("mouseenter", () => {
-    glide.pause();
-    });
-
-    slider.addEventListener("mouseleave", () => {
-    glide.play();
-    });
+    // slider.addEventListener("mouseleave", () => {
+    // glideCLients.play();
+    // });
 }
 if (document.getElementById("ht-testlider")) {
     const testGlide = new Glide("#ht-testlider", {
@@ -2535,43 +2526,68 @@ if( faqItems.length > 0 ){
 }
 });
 
+
+
 const items = document.querySelectorAll(".ai-item");
-if( items.length > 0 ){
-let current = 0;
-let duration = 4000; // 4 sec
-let timer;
-function startProgress(index) {
-    clearTimeout(timer);
-    items.forEach(item => {
-        item.classList.remove("active");
-        let bar = item.querySelector(".progress");
-        bar.style.transition = "none";
-        bar.style.width = "0%";
+
+if (items.length > 0) {
+
+    let current = 0;
+    let duration = 4000; // 4 sec
+    let timer;
+
+    function startProgress(index) {
+
+        clearTimeout(timer);
+
+        items.forEach(item => {
+            item.classList.remove("active");
+
+            let bar = item.querySelector(".progress");
+            bar.style.transition = "none";
+            bar.style.width = "0%";
+        });
+
+        let activeItem = items[index];
+        activeItem.classList.add("active");
+
+        let progress = activeItem.querySelector(".progress");
+
+        setTimeout(() => {
+            progress.style.transition = `width ${duration}ms linear`;
+            progress.style.width = "100%";
+        }, 50);
+
+
+        timer = setTimeout(() => {
+
+            current++;
+
+            if (current >= items.length) {
+                current = 0;
+            }
+
+            startProgress(current);
+
+        }, duration);
+    }
+
+
+    items.forEach((item, index) => {
+
+        item.addEventListener("click", () => {
+
+            current = index;
+            startProgress(current);
+
+        });
+
     });
-    let activeItem = items[index];
-    activeItem.classList.add("active");
-    let progress =
-    activeItem.querySelector(".progress");
-    /* small delay before animation */
-    setTimeout(() => {
-        progress.style.transition =
-            `width ${duration}ms linear`;
-        progress.style.width = "100%";
-    }, 50);
-    timer = setTimeout(() => {
-        current++;
-        if (current >= items.length) {
-            current = 0;
-        }
-        startProgress(current);
-    }, duration);
-}
-items.forEach((item, index) => {
-    item.addEventListener("click", () => {
-        current = index;
-        startProgress(current);
-    });
-});
+
+
+    // Default first active item
+    startProgress(0);
+
 }
 
 const circularProgress = document.querySelectorAll(".circular-progress");
@@ -2620,15 +2636,7 @@ function _viewElm(parentClass, key, trigger) {
 
     if (trigger) {
         trigger.textContent = isExpanded ? "View More" : "View Less";
-
-        // Toggle rotate class on the trigger itself
         trigger.classList.toggle("rotate", !isExpanded);
-
-        // OR, if you have an icon inside the trigger:
-        // const icon = trigger.querySelector("i, svg, .icon");
-        // if (icon) {
-        //     icon.classList.toggle("rotate", !isExpanded);
-        // }
     }
 }
 
@@ -2637,36 +2645,62 @@ function _viewElm(parentClass, key, trigger) {
     if( document.getElementById("testimonails-v11") ) {
         const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
         if (feedbackSlider) {
-            new Swiper(feedbackSlider, {
-                loop: true,
-                centeredSlides: true,
-                slidesPerView: 1.6,
-                spaceBetween: 30,
-                navigation: {
+            const swiper = new Swiper(feedbackSlider, {
+            loop: true,
 
-                    nextEl: ".client-feedback .swiper-button-next",
-                    prevEl: ".client-feedback .swiper-button-prev"
+            // important for centered loop
+            centeredSlides: true,
 
+            slidesPerView: 1.6,
+
+            spaceBetween: 30,
+
+            loopedSlides: 5,
+
+            navigation: {
+                nextEl: ".client-feedback .swiper-button-next",
+                prevEl: ".client-feedback .swiper-button-prev"
+            },
+
+            pagination: {
+                el: ".client-feedback .swiper-pagination",
+                clickable: true
+            },
+
+            breakpoints: {
+
+                1200: {
+                    slidesPerView: 1.3,
+                    loopedSlides: 5
                 },
-                pagination: {
-                    el: ".client-feedback .swiper-pagination",
-                    clickable: true
 
+                768: {
+                    slidesPerView: 1,
+                    loopedSlides: 5
                 },
-                breakpoints: {
-                    1200: {
-                        slidesPerView: 1.3,
-                    },
-                    
-                    768: {
-                        slidesPerView: 1
-                    },
-                    0: {
-                        slidesPerView: 1
-                    }
+
+                0: {
+                    slidesPerView: 1,
+                    loopedSlides: 5
                 }
+
+            },
+
+            on: {
+
+                init: function () {
+                    this.slideToLoop(0, 0);
+                },
+
+                resize: function () {
+                    this.update();
+                }
+
+            }
+
             });
-        }
+
+    }
     }
 });
 

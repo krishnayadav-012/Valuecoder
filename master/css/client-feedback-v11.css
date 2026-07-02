@@ -2218,4 +2218,14 @@ body.page-template-template-testimonials .client-video-section iframe,
   object-position: 100px 0px;
 }
 
+.client-feedback .feedback-slider .swiper-button-prev:after {
+  left: 35px;
+  position: relative;
+}
+
+.client-feedback .feedback-slider .swiper-button-next:after {
+  right: 35px;
+  position: relative;
+}
+
 /*# sourceMappingURL=client-feedback-v11.css.map */

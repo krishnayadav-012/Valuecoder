@@ -2840,6 +2840,8 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .insights .insights__top-part p {
   margin-bottom: 0;
+  font-weight: 500;
+  color: #60646C;
 }
 .insights .insights__grid {
   display: grid;
@@ -2910,15 +2912,16 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .blog-card span {
   font-size: 10px;
-  font-weight: 400;
-  color: #6A7282;
+  font-weight: 600;
+  color: #80838D;
+  text-transform: uppercase;
   line-height: 140%;
 }
 .blog-card h3 {
   font-size: 22px;
   margin: 5px 0 30px;
   font-weight: 600;
-  color: #111827;
+  color: #1C2024;
   line-height: 140%;
 }
 .blog-card__footer {
@@ -5689,7 +5692,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stories-section .inner-part {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 70px;
 }
 @media (max-width: 768px) {
   .stories-section .inner-part {
@@ -5726,8 +5729,8 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .stories-section p {
   line-height: 160%;
-  color: #656565;
-  font-weight: 400;
+  font-weight: 500;
+  color: #60646C;
   max-width: 590px;
 }
 .stories-section__btn-wrap {
@@ -5739,28 +5742,6 @@ body.page-template-template-testimonials .client-video-section iframe,
   .stories-section__btn-wrap {
     padding-top: 0;
   }
-}
-.stories-section__btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #05164d;
-  white-space: nowrap;
-}
-.stories-section__btn-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #05164d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 16px;
-  transition: background 0.2s ease, transform 0.2s ease;
 }
 .stories-section__grid {
   width: 100%;
@@ -5866,8 +5847,18 @@ body.page-template-template-testimonials .client-video-section iframe,
   flex-direction: column;
 }
 .story-card--small .story-card__content h3 {
-  font-size: 24px;
-  color: #101828;
+  font-size: 22px;
+  font-weight: 600 !important;
+  color: #1C2024;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+.story-card--small .story-card__content p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #60646C;
+  margin-bottom: 0;
+  line-height: 160%;
 }
 .story-card--small .story-card__name {
   font-size: 24px;

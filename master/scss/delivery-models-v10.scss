@@ -12,30 +12,30 @@ $transition: all 0.3s ease;
   background-color: $color-bg;
  
  
-}
+
 
 .section-header {
   text-align: center;
   margin-bottom: 80px;
 
-  h3 {
-    font-size: clamp(2rem, 5vw, 46px);
+  h2{
+   
     color: $darkblack;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
   }
 
   p {
     font-size: 18px;
-    color: #364153;
+    color: #60646C;
     font-weight: 500;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 160%;
   }
 }
-
+}
 .models-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -103,7 +103,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
 
   h3 {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 100%;
     color: $darkblack;
     margin-bottom: 15px;
@@ -116,6 +116,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
     font-size: 16px;
     color: $natural-grey;
     line-height: 160%;
+    font-weight: 500;
     margin-bottom: 20px;
   }
 
@@ -127,6 +128,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
 
     li {
       font-size: 14px;
+      font-weight: 500;
       color: #80838D;
       margin-bottom: 15px;
       padding-left: 26px;
@@ -163,7 +165,7 @@ box-shadow: 0px 4px 14px 3px #0000000F;
       color: #60646C;
       line-height: 160%;
        strong {
-      color: $color-heading;
+      color: $list-color;
       font-weight: 700;
     }
 

@@ -10,7 +10,7 @@ $text-gray: #314158;
   .section-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     margin-top: 0;
     position: relative;
 
@@ -28,17 +28,16 @@ $text-gray: #314158;
 
       h2 {
         color: $themeMidNight;
-        margin: 10px 0;
+        margin-bottom: 10px;
 
-        span {
+        em {
           color: inherit;
         }
       }
 
-      .description {
-        color: $text-gray;
-        font-size: 18px;
-
+      p {
+        color: #60646C;
+        font-weight: 500;
         line-height: 1.6;
       }
     }
@@ -54,6 +53,11 @@ $text-gray: #314158;
     justify-content: space-between;
     gap: 10px;
     margin-right: 0px;
+
+    .hover{
+      display: none;
+    
+    }
 
     .glider-prev {
           transform: rotate(-180deg) translateY(17px);
@@ -79,6 +83,17 @@ border: 2px solid #99A1AF;
         background: $dark-blue;
         color: white;
         border-color: $dark-blue;
+        .hover{
+          display: block;
+            
+        width: 21px;
+        height: 21px;
+      
+        }
+        .default{
+          display: none;
+        }
+
       }
     }
 
@@ -142,7 +157,7 @@ border: 2px solid #99A1AF;
 
         h3 {
           font-size: 18px;
-          color: $text-gray;
+          color: #1C2024;
           font-weight: 600;
           margin: 0;
           
@@ -156,7 +171,7 @@ border: 2px solid #99A1AF;
           right: 0;
                     transform: rotate(359deg);
           top: 0;
-          background: url(../images/index-v10/blue-arrow.svg);
+          background: url(../images/index-v10/d-black.svg);
           width: 24px;
           height: 24px;
           background-size: auto;

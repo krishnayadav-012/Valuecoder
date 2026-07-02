@@ -30,7 +30,6 @@ flex-wrap: wrap;
         width: 100%;
         height: 100%;
     }
-
 }
 
 /* RIGHT CONTENT */
@@ -53,6 +52,7 @@ flex-wrap: wrap;
         h2 {
             font-weight: 700;
             margin-bottom: 10px;
+            line-height:130%;
             color: #fff;
 
             em{
@@ -63,7 +63,8 @@ flex-wrap: wrap;
 
     > p {
             
-            color: #FFFFFFB0;
+            color: #F0F0F3;
+            line-height: 160%;
             margin-bottom: 60px;
         }
 
@@ -87,10 +88,12 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
 /* LIST */
 
 .ai-list {
-    height: 410px;
+    height: 280px;
 
     .ai-item {
-
+&:first-of-type{
+    padding-top: 0;
+}
         position: relative;
         padding: 20px 0;
         border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -99,7 +102,15 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
         /* Reserve space so layout doesn't jump */
         
 
-        &:before {
+       
+
+        .title h4 {
+            font-size: 22px;
+            font-weight: 700;
+            transition: 0.3s;
+            color: $white;
+            position: relative;
+             &:before {
             content: "";
             width: 10px;
             height: 10px;
@@ -107,24 +118,17 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
             background: #6A7282;
             position: absolute;
             left: -18px;
-            top: 30px;
+            top: 10px;
             transition: 0.3s;
         }
-
-        .title h4 {
-            font-size: 22px;
-            font-weight: 700;
-            transition: 0.3s;
-            color: $white;
         }
 
         /* FIXED HEIGHT AREA */
 
         .desc {
 
-            font-size: 14px;
-            font-weight: 500;
-            color: #D1D5DC;
+           
+        
             max-height: 0px;
             opacity: 0;
             overflow: hidden;
@@ -133,8 +137,11 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
                 opacity 0.3s ease;
 
             p {
-                color: #D1D5DC;
+                color: #E8E8EC;
                 margin-top: 10px;
+                 font-size: 16px;
+            font-weight: 500;
+
             }
             ul{
                 li{
@@ -172,12 +179,13 @@ background: linear-gradient(270deg, #05164D 43.32%, rgba(5, 22, 77, 0.95) 62.86%
 
         &.active {
 
-            &:before {
-                background: $blue-off-light;
-            }
+           
 
             .title h4 {
                 color: $blue-off-light;
+                 &:before {
+                background: $blue-off-light;
+            }
             }
 
             .desc {

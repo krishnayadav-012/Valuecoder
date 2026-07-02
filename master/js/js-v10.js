@@ -16,7 +16,6 @@ topIcon.addEventListener("click", function () {
 });
 
 
-
 const items = document.querySelectorAll(".ai-item");
 
 let current = 0;
@@ -42,19 +41,15 @@ function startProgress(index) {
 
     activeItem.classList.add("active");
 
-    let progress =
-        activeItem.querySelector(".progress");
-
-    /* small delay before animation */
+    let progress = activeItem.querySelector(".progress");
 
     setTimeout(() => {
 
-        progress.style.transition =
-            `width ${duration}ms linear`;
-
+        progress.style.transition = `width ${duration}ms linear`;
         progress.style.width = "100%";
 
     }, 50);
+
 
     timer = setTimeout(() => {
 
@@ -70,6 +65,11 @@ function startProgress(index) {
 
 }
 
+
+// start first item by default
+if (items.length > 0) {
+    startProgress(current);
+}
 /* CLICK */
 
 items.forEach((item, index) => {

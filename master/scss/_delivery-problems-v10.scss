@@ -81,18 +81,7 @@
     margin-bottom: 5px;
     position: relative;
     animation: fadeUp 0.5s ease both 0.1s;
- 
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   left: 0;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    //   width: 6px;
-    //   height: 6px;
-    //   background: $darkYellow;
-    //   border-radius: 50%;
-    // }
+
   }
  
   h2 {
@@ -111,7 +100,7 @@
   p {
     font-size: 16px;
     line-height: 160%;
-    color: #D1D5DC;
+    color: #E8E8EC;
     width: 100%;
     font-weight: $normal-font;
     
