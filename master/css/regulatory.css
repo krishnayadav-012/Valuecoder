@@ -2074,7 +2074,6 @@ body.page-template-template-testimonials .client-video-section iframe,
 .regulatory-section aside {
   flex: 1;
   position: sticky;
-  top: 50px;
   height: fit-content;
 }
 @media screen and (max-width: 992px) {

@@ -216,6 +216,7 @@
 .compliance-card--dark .compliance-card__top span {
   color: #2563EB;
   background-color: rgba(37, 99, 235, 0.2);
+  text-transform: uppercase;
 }
 
 .compliance-card--dark .compliance-card__top h3 {

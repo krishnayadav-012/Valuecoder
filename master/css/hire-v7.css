@@ -7255,7 +7255,7 @@ button.tab-btn-base {
 .fintech-section .slide-card .inner-card {
   min-width: 100%;
   width: 100%;
-  background: #141c2e;
+  background: rgba(53, 64, 91, 0.2);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   display: flex !important;
@@ -8262,7 +8262,6 @@ button.tab-btn-base {
 .regulatory-section aside {
   flex: 1;
   position: sticky;
-  top: 50px;
   height: fit-content;
 }
 @media screen and (max-width: 992px) {
@@ -8992,6 +8991,7 @@ button.tab-btn-base {
 .compliance-card--dark .compliance-card__top span {
   color: #2563EB;
   background-color: rgba(37, 99, 235, 0.2);
+  text-transform: uppercase;
 }
 
 .compliance-card--dark .compliance-card__top h3 {
