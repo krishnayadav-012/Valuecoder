@@ -6130,6 +6130,7 @@ header:hover .trigger .chev {
   width: 100%;
   overflow: hidden;
   padding-bottom: 60px;
+  border-radius: 10px;
 }
 .client-feedback .feedback-slider .swiper-slide {
   opacity: 0.25;
@@ -6245,6 +6246,17 @@ header:hover .trigger .chev {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .client-feedback .feedback-slider .feedback-card .client-image {
+    display: none;
+  }
+  .client-feedback .feedback-slider .swiper-button-prev {
+    display: none !important;
+  }
+  .client-feedback .feedback-slider .swiper-button-next {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 540px) {
   .client-feedback .feedback-slider .feedback-card .client-image {
     width: auto;
@@ -9489,6 +9501,22 @@ header:hover .trigger .chev {
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .slide-logo-part .logo-heading:before {
+    display: none;
+  }
+  .slide-logo-part .logo-heading h4 span {
+    margin: 0 auto !important;
+  }
+  .slide-logo-part .logo-heading h4 {
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+  }
+  .slide-logo-part {
+    padding: 30px 0 30px;
+  }
+}
 .slide-logo-part .logo-heading h4 {
   color: #1C2024;
   font-size: 20px;

@@ -37,6 +37,7 @@
         width: 100%;
         overflow: hidden;
         padding-bottom: 60px;
+        border-radius: 10px;
 
         .swiper-slide {
             opacity: .25;
@@ -196,6 +197,9 @@
 
     @media screen and (max-width:767px) {
 
+
+
+
         .feedback-card {
             flex-wrap: wrap;
             width: 100%;
@@ -230,6 +234,17 @@
 
 }
 
+@media screen and (max-width:640px) {
+.client-feedback .feedback-slider .feedback-card .client-image{
+    display: none;
+}
+.client-feedback .feedback-slider .swiper-button-prev{
+    display: none !important;
+}
+ .client-feedback .feedback-slider .swiper-button-next{
+    display: none !important;
+}
+}
 @media screen and (max-width:540px) {
     .client-feedback .feedback-slider .feedback-card .client-image {
         width: auto;
