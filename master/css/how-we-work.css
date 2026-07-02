@@ -4091,7 +4091,7 @@ button.tab-btn-base {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #F3F4F6;
+  background-color: #F0F0F3;
   width: 53%;
   height: 100%;
 }
@@ -4127,17 +4127,19 @@ button.tab-btn-base {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
+  letter-spacing: 17%;
   font-weight: 700;
   font-style: normal;
 }
 .delivery-section .inner-part .left-part h2 {
   color: #05164d;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .delivery-section .inner-part .left-part p {
   color: #4B5563;
-  line-height: 1.6;
+  line-height: 160%;
+  font-weight: 500;
   margin-bottom: 34px;
 }
 .delivery-section .inner-part .left-part ul {
@@ -4145,11 +4147,16 @@ button.tab-btn-base {
   padding: 0;
 }
 .delivery-section .inner-part .left-part ul li {
-  font-size: 14px;
-  color: #364153;
+  font-size: 16px;
+  color: #60646C;
   font-weight: 500;
   position: relative;
+  line-height: 100%;
   padding-left: 26px;
+  margin-bottom: 15px;
+}
+.delivery-section .inner-part .left-part ul li:last-of-type {
+  margin-bottom: 0;
 }
 .delivery-section .inner-part .left-part ul li::before {
   content: "";
@@ -4160,7 +4167,7 @@ button.tab-btn-base {
   height: 16px;
   background-repeat: no-repeat;
   background-size: 16px;
-  top: 8px;
+  top: 0px;
   background-size: 15px;
 }
 .delivery-section .inner-part .right-part {
@@ -4229,7 +4236,7 @@ button.tab-btn-base {
   margin: 0;
   font-size: 22px;
   font-weight: 500;
-  color: #101828;
+  color: #1C2024;
 }
 .delivery-section .inner-part .right-part .accordion-item .accordion-content {
   max-height: 0;
@@ -4238,9 +4245,10 @@ button.tab-btn-base {
   padding: 0 20px;
 }
 .delivery-section .inner-part .right-part .accordion-item .accordion-content p {
-  color: #4B5563;
+  color: #80838D;
   font-size: 16px;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 160%;
   margin-bottom: 0;
 }
 .delivery-section .inner-part .right-part .accordion-item.active::after {

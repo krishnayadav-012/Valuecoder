@@ -4780,7 +4780,7 @@ button.tab-btn-base {
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   border-radius: 10px;
 }
 .client-feedback .feedback-slider .swiper-slide {

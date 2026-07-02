@@ -6087,7 +6087,7 @@ button.tab-btn-base {
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   border-radius: 10px;
 }
 .client-feedback .feedback-slider .swiper-slide {
@@ -6665,11 +6665,13 @@ button.tab-btn-base {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 17%;
 }
 .fintech-delivery .inner-part .left-part h2 {
   color: #ffffff;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 .fintech-delivery .inner-part .left-part h2 em {
   color: #6AA0FF;
@@ -6977,6 +6979,7 @@ button.tab-btn-base {
 }
 .fintech-section .cards .card-l p {
   color: #E5E7EB;
+  margin-bottom: 0;
 }
 .fintech-section .cards .card-l ul {
   list-style: none;
@@ -6991,6 +6994,7 @@ button.tab-btn-base {
   font-weight: 500;
   position: relative;
   padding-left: 26px;
+  line-height: 100%;
 }
 .fintech-section .cards .card-l ul li a {
   color: #6AA0FF;
@@ -7004,7 +7008,7 @@ button.tab-btn-base {
   height: 16px;
   background-repeat: no-repeat;
   background-size: 16px;
-  top: 8px;
+  top: 0px;
   background-size: 15px;
 }
 .fintech-section .cards .card-l > a {
@@ -7089,6 +7093,7 @@ button.tab-btn-base {
   font-size: 14px;
   margin-right: 25px;
   min-width: fit-content;
+  line-height: 100%;
   cursor: pointer;
 }
 .fintech-section .slider-bottom ul li:last-child {
@@ -7189,9 +7194,10 @@ button.tab-btn-base {
 }
 .stacking-cards-section .top-part h2 {
   color: #05164d;
+  margin-bottom: 20px;
 }
 .stacking-cards-section .top-part p {
-  color: #364153;
+  color: #60646C;
   margin-bottom: 0;
 }
 .stacking-cards-section .stack-card {
@@ -7216,7 +7222,7 @@ button.tab-btn-base {
   top: calc(40px + 5 * 25px);
 }
 .stacking-cards-section .stack-card .card-body {
-  background: #F9FAFB;
+  background: #FCFCFD;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -7241,6 +7247,7 @@ button.tab-btn-base {
 .stacking-cards-section .stack-card .card-left .card-num {
   display: block;
   font-size: 80px;
+  margin-bottom: 5px;
   font-weight: 700;
   color: rgba(206, 206, 206, 0.2);
   line-height: 100%;
@@ -7251,7 +7258,7 @@ button.tab-btn-base {
   }
 }
 .stacking-cards-section .stack-card .card-left h3 {
-  color: #111827;
+  color: #1C2024;
   font-size: 22px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -7262,8 +7269,10 @@ button.tab-btn-base {
   color: inherit;
 }
 .stacking-cards-section .stack-card .card-left p {
-  color: #4B5563;
-  line-height: 1.6;
+  color: #80838D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
   margin-bottom: 10px;
 }
 .stacking-cards-section .stack-card .card-left p a {
@@ -7282,9 +7291,11 @@ button.tab-btn-base {
   }
 }
 .stacking-cards-section .stack-card .card-left ul li {
-  font-size: 14px;
-  color: #364153;
+  font-size: 16px;
+  color: #80838D;
   font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 100%;
   position: relative;
   padding-left: 26px;
 }
@@ -7297,7 +7308,10 @@ button.tab-btn-base {
   height: 14px;
   background-repeat: no-repeat;
   background-size: 14px;
-  top: 8px;
+  top: 0px;
+}
+.stacking-cards-section .stack-card .card-left ul li:last-of-type {
+  margin-bottom: 0;
 }
 .stacking-cards-section .stack-card .card-left ul li a {
   text-decoration: underline;
@@ -7363,7 +7377,7 @@ button.tab-btn-base {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #F3F4F6;
+  background-color: #F0F0F3;
   width: 53%;
   height: 100%;
 }
@@ -7399,17 +7413,19 @@ button.tab-btn-base {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
+  letter-spacing: 17%;
   font-weight: 700;
   font-style: normal;
 }
 .delivery-section .inner-part .left-part h2 {
   color: #05164d;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .delivery-section .inner-part .left-part p {
   color: #4B5563;
-  line-height: 1.6;
+  line-height: 160%;
+  font-weight: 500;
   margin-bottom: 34px;
 }
 .delivery-section .inner-part .left-part ul {
@@ -7417,11 +7433,16 @@ button.tab-btn-base {
   padding: 0;
 }
 .delivery-section .inner-part .left-part ul li {
-  font-size: 14px;
-  color: #364153;
+  font-size: 16px;
+  color: #60646C;
   font-weight: 500;
   position: relative;
+  line-height: 100%;
   padding-left: 26px;
+  margin-bottom: 15px;
+}
+.delivery-section .inner-part .left-part ul li:last-of-type {
+  margin-bottom: 0;
 }
 .delivery-section .inner-part .left-part ul li::before {
   content: "";
@@ -7432,7 +7453,7 @@ button.tab-btn-base {
   height: 16px;
   background-repeat: no-repeat;
   background-size: 16px;
-  top: 8px;
+  top: 0px;
   background-size: 15px;
 }
 .delivery-section .inner-part .right-part {
@@ -7501,7 +7522,7 @@ button.tab-btn-base {
   margin: 0;
   font-size: 22px;
   font-weight: 500;
-  color: #101828;
+  color: #1C2024;
 }
 .delivery-section .inner-part .right-part .accordion-item .accordion-content {
   max-height: 0;
@@ -7510,9 +7531,10 @@ button.tab-btn-base {
   padding: 0 20px;
 }
 .delivery-section .inner-part .right-part .accordion-item .accordion-content p {
-  color: #4B5563;
+  color: #80838D;
   font-size: 16px;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 160%;
   margin-bottom: 0;
 }
 .delivery-section .inner-part .right-part .accordion-item.active::after {
@@ -7539,18 +7561,18 @@ button.tab-btn-base {
 }
 .who-we-serve .intro-content {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .who-we-serve .intro-content h2 {
   color: #05164d;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .who-we-serve .intro-content p {
-  color: #4B5563;
+  color: #60646C;
   max-width: 720px;
+  font-weight: 500;
   margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .who-we-serve .main-layout {
   display: flex;
@@ -7599,9 +7621,9 @@ button.tab-btn-base {
   font-size: 22px;
 }
 .who-we-serve .main-layout .services-grid .service-card span {
-  color: #101828;
+  color: #1C2024;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .who-we-serve .main-layout .services-grid .service-card:hover, .who-we-serve .main-layout .services-grid .service-card.active {
   background-color: #F2F7FF;
@@ -7926,18 +7948,18 @@ button.tab-btn-base {
   color: #6AA0FF;
   font-weight: bold;
   font-size: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 17%;
   font-weight: 700;
 }
 .regulatory-section aside h2 {
   margin-bottom: 20px;
-  color: #fff;
-  line-height: 1.1;
+  color: #ffffff;
+  line-height: 120%;
 }
 .regulatory-section aside p {
-  color: #D1D5DC;
-  max-width: 400px;
-  line-height: 1.6;
+  color: #D9D9E0;
+  max-width: 500px;
+  line-height: 160%;
 }
 @media screen and (max-width: 992px) {
   .regulatory-section aside p {
@@ -7986,8 +8008,9 @@ button.tab-btn-base {
 .regulatory-section .main article div span {
   background: rgba(37, 99, 235, 0.2);
   color: #6AA0FF;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  line-height: 100%;
   font-size: 14px;
   font-weight: 600;
 }
@@ -8003,13 +8026,16 @@ button.tab-btn-base {
   margin: 0;
   color: #ffffff;
   font-weight: 600;
+  line-height: 100%;
 }
 .regulatory-section .main article p {
   max-height: 0;
+  font-weight: 500;
   opacity: 0;
+  line-height: 160%;
   overflow: hidden;
   margin-top: 0;
-  color: #99A1AF;
+  color: #D9D9E0;
   transition: all 0.4s ease;
 }
 .regulatory-section .main article:hover {
@@ -8021,7 +8047,7 @@ button.tab-btn-base {
   opacity: 3%;
 }
 .regulatory-section .main article:hover h3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .regulatory-section .main article:hover p {
   max-height: 150px;
@@ -8065,11 +8091,12 @@ button.tab-btn-base {
 }
 .solution-industry .top-part div h2 {
   color: #05164d;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .solution-industry .top-part div p {
   color: #4B5563;
-  line-height: 1.6;
+  font-weight: 500;
+  line-height: 160%;
 }
 .solution-industry ul {
   display: grid;
@@ -8134,7 +8161,7 @@ button.tab-btn-base {
 .solution-industry ul li h3 {
   color: #1C2024;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 140%;
   font-weight: 700;
 }
 .solution-industry ul li:hover {
@@ -8313,12 +8340,20 @@ button.tab-btn-base {
 }
 .dark-client-section .left-box h2 {
   color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 120%;
 }
 .dark-client-section .left-box h5 {
   color: #FFAD00;
 }
 .dark-client-section .left-box p {
-  color: #D1D5DB !important;
+  color: #E8E8EC !important;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 10px;
+}
+.dark-client-section .left-box p:last-of-type {
+  margin-bottom: 0;
 }
 .dark-client-section .left-box ul li {
   color: #D1D5DB;

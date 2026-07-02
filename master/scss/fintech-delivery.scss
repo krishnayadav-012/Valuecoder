@@ -47,11 +47,13 @@ width: 100%;
         text-transform: uppercase;
         margin-bottom: 5px;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
+        letter-spacing: 17%;
     }
     h2{
         color: $white;
         line-height: 120%;
+        margin-bottom: 20px;
         em{
             color: $blue-off-light;
             font-style: normal;

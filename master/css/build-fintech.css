@@ -2164,6 +2164,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .fintech-section .cards .card-l p {
   color: #E5E7EB;
+  margin-bottom: 0;
 }
 .fintech-section .cards .card-l ul {
   list-style: none;
@@ -2178,6 +2179,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-weight: 500;
   position: relative;
   padding-left: 26px;
+  line-height: 100%;
 }
 .fintech-section .cards .card-l ul li a {
   color: #6AA0FF;
@@ -2191,7 +2193,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   height: 16px;
   background-repeat: no-repeat;
   background-size: 16px;
-  top: 8px;
+  top: 0px;
   background-size: 15px;
 }
 .fintech-section .cards .card-l > a {
@@ -2276,6 +2278,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: 14px;
   margin-right: 25px;
   min-width: fit-content;
+  line-height: 100%;
   cursor: pointer;
 }
 .fintech-section .slider-bottom ul li:last-child {

@@ -2045,18 +2045,18 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .who-we-serve .intro-content {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .who-we-serve .intro-content h2 {
   color: #05164d;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .who-we-serve .intro-content p {
-  color: #4B5563;
+  color: #60646C;
   max-width: 720px;
+  font-weight: 500;
   margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .who-we-serve .main-layout {
   display: flex;
@@ -2105,9 +2105,9 @@ body.page-template-template-testimonials .client-video-section iframe,
   font-size: 22px;
 }
 .who-we-serve .main-layout .services-grid .service-card span {
-  color: #101828;
+  color: #1C2024;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .who-we-serve .main-layout .services-grid .service-card:hover, .who-we-serve .main-layout .services-grid .service-card.active {
   background-color: #F2F7FF;

@@ -49,11 +49,13 @@
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 17%;
 }
 .fintech-delivery .inner-part .left-part h2 {
   color: #ffffff;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 .fintech-delivery .inner-part .left-part h2 em {
   color: #6AA0FF;

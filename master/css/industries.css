@@ -3650,12 +3650,20 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .dark-client-section .left-box h2 {
   color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 120%;
 }
 .dark-client-section .left-box h5 {
   color: #FFAD00;
 }
 .dark-client-section .left-box p {
-  color: #D1D5DB !important;
+  color: #E8E8EC !important;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 10px;
+}
+.dark-client-section .left-box p:last-of-type {
+  margin-bottom: 0;
 }
 .dark-client-section .left-box ul li {
   color: #D1D5DB;

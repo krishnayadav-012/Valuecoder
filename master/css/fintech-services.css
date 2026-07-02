@@ -2056,9 +2056,10 @@ body.page-template-template-testimonials .client-video-section iframe,
 }
 .stacking-cards-section .top-part h2 {
   color: #05164d;
+  margin-bottom: 20px;
 }
 .stacking-cards-section .top-part p {
-  color: #364153;
+  color: #60646C;
   margin-bottom: 0;
 }
 .stacking-cards-section .stack-card {
@@ -2083,7 +2084,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   top: calc(40px + 5 * 25px);
 }
 .stacking-cards-section .stack-card .card-body {
-  background: #F9FAFB;
+  background: #FCFCFD;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -2108,6 +2109,7 @@ body.page-template-template-testimonials .client-video-section iframe,
 .stacking-cards-section .stack-card .card-left .card-num {
   display: block;
   font-size: 80px;
+  margin-bottom: 5px;
   font-weight: 700;
   color: rgba(206, 206, 206, 0.2);
   line-height: 100%;
@@ -2118,7 +2120,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 .stacking-cards-section .stack-card .card-left h3 {
-  color: #111827;
+  color: #1C2024;
   font-size: 22px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -2129,8 +2131,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: inherit;
 }
 .stacking-cards-section .stack-card .card-left p {
-  color: #4B5563;
-  line-height: 1.6;
+  color: #80838D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
   margin-bottom: 10px;
 }
 .stacking-cards-section .stack-card .card-left p a {
@@ -2149,9 +2153,11 @@ body.page-template-template-testimonials .client-video-section iframe,
   }
 }
 .stacking-cards-section .stack-card .card-left ul li {
-  font-size: 14px;
-  color: #364153;
+  font-size: 16px;
+  color: #80838D;
   font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 100%;
   position: relative;
   padding-left: 26px;
 }
@@ -2164,7 +2170,10 @@ body.page-template-template-testimonials .client-video-section iframe,
   height: 14px;
   background-repeat: no-repeat;
   background-size: 14px;
-  top: 8px;
+  top: 0px;
+}
+.stacking-cards-section .stack-card .card-left ul li:last-of-type {
+  margin-bottom: 0;
 }
 .stacking-cards-section .stack-card .card-left ul li a {
   text-decoration: underline;

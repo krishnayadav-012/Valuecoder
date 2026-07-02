@@ -38,7 +38,7 @@
     p {
       margin: 0 0 15px;
     }
-    a{}
+
     .a-dotted {
       position: relative;
       color: rgba(255, 255, 255, 0.8);
@@ -160,12 +160,21 @@
   .left-box {
     h2 {
       color: $white;
+      margin-bottom: 15px;
+      line-height: 120%;
     }
     h5 {
       color: $darkYellow;
     }
     p {
-      color: #D1D5DB !important;
+      color: #E8E8EC !important;
+      font-weight: 500;
+      line-height: 160%;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
     ul {
       li {

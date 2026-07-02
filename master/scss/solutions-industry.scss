@@ -23,13 +23,13 @@
     div {
       max-width: 600px;
       h2 {
-    
         color: $themeMidNight;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       p {
         color: $natural-grey;
-        line-height: 1.6;
+        font-weight: 500;
+        line-height: 160%;
       }
     }
 
@@ -99,7 +99,7 @@
       h3 {
         color: $light-grey;
         font-size: 16px;
-        line-height: 1.4;
+        line-height: 140%;
         font-weight: 700;
         
       }

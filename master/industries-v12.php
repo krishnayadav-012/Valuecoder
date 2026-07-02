@@ -1672,47 +1672,6 @@
     <script>
 
 
- document.addEventListener("DOMContentLoaded", function() {
-            const feedbackSlider = document.querySelector(".client-feedback .feedback-slider");
-            // condition: run only if this section exists
-            if (feedbackSlider) {
-                new Swiper(feedbackSlider, {
-                    loop: true,
-                    // center mode
-                    centeredSlides: true,
-                    slidesPerView: 1.6,
-                    spaceBetween: 30,
-                    // autoplay: {
-                    //     delay: 4000,
-                    //     disableOnInteraction: false
-                    // },
-                    navigation: {
-
-                        nextEl: ".client-feedback .swiper-button-next",
-                        prevEl: ".client-feedback .swiper-button-prev"
-
-                    },
-                    pagination: {
-
-                        el: ".client-feedback .swiper-pagination",
-                        clickable: true
-
-                    },
-                    breakpoints: {
-                        1200: {
-                            slidesPerView: 1.3,
-                        },
-                       
-                        768: {
-                            slidesPerView: 1
-                        },
-                        0: {
-                            slidesPerView: 1
-                        }
-                    }
-                });
-            }
-        });
     </script>
 
         </body>

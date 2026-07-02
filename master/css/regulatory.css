@@ -2086,18 +2086,18 @@ body.page-template-template-testimonials .client-video-section iframe,
   color: #6AA0FF;
   font-weight: bold;
   font-size: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 17%;
   font-weight: 700;
 }
 .regulatory-section aside h2 {
   margin-bottom: 20px;
-  color: #fff;
-  line-height: 1.1;
+  color: #ffffff;
+  line-height: 120%;
 }
 .regulatory-section aside p {
-  color: #D1D5DC;
-  max-width: 400px;
-  line-height: 1.6;
+  color: #D9D9E0;
+  max-width: 500px;
+  line-height: 160%;
 }
 @media screen and (max-width: 992px) {
   .regulatory-section aside p {
@@ -2146,8 +2146,9 @@ body.page-template-template-testimonials .client-video-section iframe,
 .regulatory-section .main article div span {
   background: rgba(37, 99, 235, 0.2);
   color: #6AA0FF;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  line-height: 100%;
   font-size: 14px;
   font-weight: 600;
 }
@@ -2163,13 +2164,16 @@ body.page-template-template-testimonials .client-video-section iframe,
   margin: 0;
   color: #ffffff;
   font-weight: 600;
+  line-height: 100%;
 }
 .regulatory-section .main article p {
   max-height: 0;
+  font-weight: 500;
   opacity: 0;
+  line-height: 160%;
   overflow: hidden;
   margin-top: 0;
-  color: #99A1AF;
+  color: #D9D9E0;
   transition: all 0.4s ease;
 }
 .regulatory-section .main article:hover {
@@ -2181,7 +2185,7 @@ body.page-template-template-testimonials .client-video-section iframe,
   opacity: 3%;
 }
 .regulatory-section .main article:hover h3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .regulatory-section .main article:hover p {
   max-height: 150px;
